@@ -4,7 +4,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="robots" content="index, follow">
-    <link rel="stylesheet" type="text/css" href="/css/reset.css">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -19,7 +25,7 @@
       <div class="container">
         <div class="header-wrap"><a class="logo hidden-item" href="/"><img class="logo__desktop" src="/images/header-logo.png"><img class="logo__mobile" src="/images/mobile-header-logo.png"></a>
           <nav class="main-nav">
-            <ul class="main-nav__list hidden-item">
+            <ul class="main-nav__list hidden-item" href="/">
               <li class="main-nav__item"><a class="main-nav__link" href="#exposition">выставка</a></li>
               <li class="main-nav__item"><a class="main-nav__link">участники</a><span class="caret"></span>
                 <div class="main-nav__drop-menu">
@@ -81,55 +87,55 @@
       <section class="info"><span class="link-target" id="exposition"></span>
         <div class="container">
           <div class="row">
-            <div class="col-xs-12 col-sm-6" id="index__exposition">
-              <h3 class="info__title hidden-item">Выставка</h3>
-              <p class="info__desc hidden-item">Крупнейшая в Восточной Европе выставка передовых технологий 3D-печати и сканирования – 3D Print Expo. Здесь каждый сможет узнать, что такое аддитивные технологии, посмотреть, как работают и где используются 3D-печатные принтеры и сканеры в современном мире, а также узнать о последних достижениях в области 3D-печати.</p>
-              <p class="info__desc accent hidden-item">Вас ждёт встреча с главными компаниями индустрии, гигантами трёхмерных технологий, которые определяют завтрашнее состояние этого рынка.</p>
-              <div class="info__btn-wrp"><a class="btn-empty hidden-item" data-description="участники"></a></div>
+            <div class="col-xs-12 col-sm-6">
+              <h3 class="info__title hidden-item" id="index__exposition-title">Выставка</h3>
+              <p class="info__desc hidden-item" id="index__exposition-desc">Крупнейшая в Восточной Европе выставка передовых технологий 3D-печати и сканирования – 3D Print Expo. Здесь каждый сможет узнать, что такое аддитивные технологии, посмотреть, как работают и где используются 3D-печатные принтеры и сканеры в современном мире, а также узнать о последних достижениях в области 3D-печати.</p>
+              <p class="info__desc accent hidden-item" id="index__exposition-desc-acent">Вас ждёт встреча с главными компаниями индустрии, гигантами трёхмерных технологий, которые определяют завтрашнее состояние этого рынка.</p>
+              <div class="info__btn-wrp"><a class="btn-empty hidden-item" data-description="участники" id="index__exposition-btn"></a></div>
             </div>
             <div class="col-xs-12 col-sm-6 hidden-item" id="index__exposition-image"><img class="info__pic" src="/images/exposition.png" alt="Выставка"></div>
           </div>
         </div>
       </section>
-      <section class="info light-back">
+      <section class="info light-back lekory">
         <div class="container">
           <div class="row">
             <div class="col-xs-12 col-sm-6 hidden-item" id="index__lekory-image"><img class="info__pic" src="/images/lekory.png" alt="Лекторий"></div>
-            <div class="col-xs-12 col-sm-6 col-lg-offset-1 col-lg-5 info__left-indent" id="index__lekory">
-              <h3 class="info__title hidden-item">лекорий</h3>
-              <p class="info__desc hidden-item">Лекторий 3D Print Expo 2019 соберет лучших специалистов индустрии, которые представят актуальные и успешные кейсы, расскажут о достижениях и прорывах этого года, обсудят тенденции и стратегии, охватывающие самые различные сферы применения 3D-технологий.</p>
-              <div class="info__btn-wrp"><a class="btn-empty hidden-item" data-description="программа"></a></div>
+            <div class="col-xs-12 col-sm-6 col-lg-offset-1 col-lg-5 info__left-indent">
+              <h3 class="info__title hidden-item" id="index__lektory-title">лекорий</h3>
+              <p class="info__desc hidden-item" id="index__lektory-desc">Лекторий 3D Print Expo 2019 соберет лучших специалистов индустрии, которые представят актуальные и успешные кейсы, расскажут о достижениях и прорывах этого года, обсудят тенденции и стратегии, охватывающие самые различные сферы применения 3D-технологий.</p>
+              <div class="info__btn-wrp"><a class="btn-empty hidden-item" data-description="программа" id="index__lektory-btn"></a></div>
             </div>
           </div>
         </div>
       </section>
-      <section class="info">
+      <section class="info master">
         <div class="container">
           <div class="row">
-            <div class="col-xs-12 col-sm-6" id="index__master">
-              <h3 class="info__title hidden-item">Мастер-классы</h3>
-              <p class="info__desc hidden-item">Захватывающие мастер-классы для детей и взрослых дадут возможность расширить круг интересов и насладиться увлекательным процессом.</p>
-              <div class="info__btn-wrp"><a class="btn-empty hidden-item" data-description="программа"></a></div>
+            <div class="col-xs-12 col-sm-6">
+              <h3 class="info__title hidden-item" id="index__master-title">Мастер-классы</h3>
+              <p class="info__desc hidden-item" id="index__master-desc">Захватывающие мастер-классы для детей и взрослых дадут возможность расширить круг интересов и насладиться увлекательным процессом.</p>
+              <div class="info__btn-wrp"><a class="btn-empty hidden-item" data-description="программа" id="index__master-btn"></a></div>
             </div>
             <div class="col-xs-12 col-sm-6 hidden-item" id="index__master-image"><img class="info__pic" src="/images/master.jpg" alt="Мастер-классы"></div>
           </div>
         </div>
       </section>
-      <section class="info light-back">
+      <section class="info light-back awwards">
         <div class="container">
           <div class="row">
             <div class="col-xs-12 col-sm-6 hidden-item" id="index__awwards-image"><img class="info__pic" src="/images/awwards.jpg" alt="Шоу-программа"></div>
-            <div class="col-xs-12 col-sm-6 col-lg-offset-1 col-lg-5 info__left-indent" id="index__awwards">
-              <h3 class="info__title hidden-item">Шоу-программа</h3>
-              <p class="info__desc hidden-item">Розыгрыши ценных призов, презентация новой продукции и конкурсы от участников, награждение победителей 3D Print Awards – на сцене мероприятия вы увидите много интересных активностей.</p>
-              <div class="info__btn-wrp"><a class="btn-empty hidden-item" data-description="программа"></a></div>
+            <div class="col-xs-12 col-sm-6 col-lg-offset-1 col-lg-5 info__left-indent">
+              <h3 class="info__title hidden-item" id="index__awwards-title">Шоу-программа</h3>
+              <p class="info__desc hidden-item" id="index__awwards-desc">Розыгрыши ценных призов, презентация новой продукции и конкурсы от участников, награждение победителей 3D Print Awards – на сцене мероприятия вы увидите много интересных активностей.</p>
+              <div class="info__btn-wrp"><a class="btn-empty hidden-item" data-description="программа" id="index__awwards-btn"></a></div>
             </div>
           </div>
         </div>
       </section>
-      <section class="ticket" id="index__tickets">
-        <h3 class="section__title hidden-item">купить билет</h3>
-        <div class="container">
+      <section class="ticket">
+        <h3 class="section__title hidden-item" id="index__tickets-title">купить билет</h3>
+        <div class="container" id="index__tickets">
           <div class="row ticket__wrap">
             <div class="col-xs-12 col-sm-6 col-md-3 hidden-item">
               <div class="ticket__item"> 
@@ -198,9 +204,9 @@
           </div>
         </div>
       </section>
-      <section class="cooperation light-back" id="index__cooperation">
-        <h3 class="section__title hidden-item">сотрудничество</h3>
-        <div class="container">
+      <section class="cooperation light-back">
+        <h3 class="section__title hidden-item" id="index__cooperation-title">сотрудничество</h3>
+        <div class="container" id="index__cooperation">
           <div class="row cooperation__wrap">
             <div class="col-xs-12 col-sm-4 hidden-item">
               <div class="cooperation__item">
@@ -227,10 +233,10 @@
         </div>
       </section>
       <div class="logotypes">
-        <section class="sponsors" id="index__sponsors">
-          <h3 class="section__title hidden-item">спонсоры</h3>
+        <section class="sponsors">
+          <h3 class="section__title hidden-item" id="index__sponsors-title">спонсоры</h3>
           <div class="container">
-            <div class="row sponsors__wrap hidden-item">
+            <div class="row sponsors__wrap hidden-item" id="index__sponsors">
               <div class="col-xs-6 col-sm-4 col-md-3 sponsors__item-wrap"><a class="sponsors__item" href="#"><span class="sponsors__titel">Генеральный спонсор пакетов</span><span class="sponsors__pic"><img src="" alt=""/></span></a></div>
               <div class="col-xs-6 col-sm-4 col-md-3 sponsors__item-wrap"><a class="sponsors__item" href="#"><span class="sponsors__titel">Официальный спонсор</span><span class="sponsors__pic"><img src="" alt=""/></span></a></div>
               <div class="col-xs-6 col-sm-4 col-md-3 sponsors__item-wrap"><a class="sponsors__item" href="#"><span class="sponsors__titel">Платиновый спонсор</span><span class="sponsors__pic"><img src="" alt=""/></span></a></div>
@@ -240,10 +246,10 @@
             </div>
           </div>
         </section>
-        <section class="partners" id="index__partners">
-          <h3 class="section__title hidden-item">Информационные партнеры</h3>
+        <section class="partners">
+          <h3 class="section__title hidden-item" id="index__partners-title">Информационные партнеры</h3>
           <div class="container">
-            <div class="row hidden-item">
+            <div class="row hidden-item" id="index__partners">
               <div class="col-xs-6 col-sm-3 col-md-2 partners__item-wrap"><a class="partners__item" href="#"><img src="" alt=""/></a></div>
               <div class="col-xs-6 col-sm-3 col-md-2 partners__item-wrap"><a class="partners__item" href="#"><img src="" alt=""/></a></div>
               <div class="col-xs-6 col-sm-3 col-md-2 partners__item-wrap"><a class="partners__item" href="#"><img src="" alt=""/></a></div>
@@ -255,18 +261,18 @@
               <div class="col-xs-6 col-sm-3 col-md-2 partners__item-wrap"><a class="partners__item" href="#"><img src="" alt=""/></a></div>
               <div class="col-xs-6 col-sm-3 col-md-2 partners__item-wrap"><a class="partners__item" href="#"><img src="" alt=""/></a></div>
               <div class="clearfix"></div>
-              <div class="partners__btn-wrap">
-                <div class="col-xs-12 col-sm-6 btn-to-right hidden-item"><a class="btn-default" data-description="стать партнером"></a></div>
-                <div class="col-xs-12 col-sm-6 hidden-item"><a class="btn-empty" data-description="все партнеры"></a></div>
+              <div class="partners__btn-wrap" id="index__partners">
+                <div class="col-xs-12 col-sm-6 btn-to-right"><a class="btn-default hidden-item" data-description="стать партнером"></a></div>
+                <div class="col-xs-12 col-sm-6"><a class="btn-empty hidden-item" data-description="все партнеры"></a></div>
               </div>
             </div>
           </div>
         </section>
       </div>
-      <section class="newslist light-back" id="index__newslist">
-        <h3 class="section__title hidden-item">новости</h3>
+      <section class="newslist light-back">
+        <h3 class="section__title hidden-item" id="index__newslist-title">новости</h3>
         <div class="container">
-          <div class="row">
+          <div class="row" id="index__newslist">
             <div class="col-xs-12 col-sm-4 hidden-item">
               <div class="newslist__item"><a class="newslist__pic" href="#"><img class="newslist__pic" src="/images/nl1.jpg" alt=""/></a>
                 <div class="newslist__date">24.05.2019</div><a class="newslist__desc" href="#">Как разбогатеть внедряя в бизнес искусственный интеллект в бизнес</a>
@@ -283,28 +289,28 @@
               </div>
             </div>
           </div>
-          <div class="newslist__btn-wrap btn-centered"><a class="btn-empty hidden-item" data-description="все новости"></a></div>
+          <div class="newslist__btn-wrap btn-centered"><a class="btn-empty hidden-item" data-description="все новости" id="index__newslist-btn"></a></div>
         </div>
       </section>
-      <section class="subscribe" id="index__subscribe">
-        <h3 class="section__title hidden-item">подписаться новости</h3>
+      <section class="subscribe">
+        <h3 class="section__title hidden-item" id="index__subscribe-title">подписаться новости</h3>
         <div class="container">
           <div class="row">
-            <form class="subscribe-form hidden-item" id="" action="" method="post">
+            <form class="subscribe-form" id="" action="" method="post">
               <div class="col-xs-12 col-sm-5 col-sm-offset-1 col-md-4 col-md-offset-2 col-lg-3 col-lg-offset-3">
-                <div class="form-group field-newssubscribe-name required">
+                <div class="form-group field-newssubscribe-name required hidden-item" id="index__subscribe-input1">
                   <input class="form-control" type="text" id="" name="" placeholder="Имя*" aria-required="true" aria-invalid="true"/>
                   <p class="help-block help-block-error"></p>
                 </div>
               </div>
               <div class="col-xs-12 col-sm-5 col-md-4 col-lg-3">
-                <div class="form-group field-newssubscribe-email required">
+                <div class="form-group field-newssubscribe-email required hidden-item" id="index__subscribe-input2">
                   <input class="form-control" type="email" id="" name="" placeholder="E-mail*" aria-required="true" aria-invalid="true"/>
                   <p class="help-block help-block-error"></p>
                 </div>
               </div>
               <div class="clearfix"></div>
-              <div class="subscribe__checkbox-wrp">
+              <div class="subscribe__checkbox-wrp hidden-item" id="index__subscribe-check">
                 <div class="form-group field-newssubscribe-confirmppd required checkbox">
                   <label>
                     <input type="checkbox" id="" name="" value="1"/><span class="controller"></span>Я даю согласие на обработку своих персональных данных в соответствии с политикой конфиденциальности, доступной <a class="offerta" href="" rel="nofollow">здесь</a>
@@ -313,15 +319,15 @@
                 </div>
               </div>
               <div class="clearfix"></div>
-              <div class="subscribe__btn-wrap"><a class="btn-default" data-description="отправить"></a></div>
+              <div class="subscribe__btn-wrap"><a class="btn-default hidden-item" data-description="отправить" id="index__subscribe-btn"></a></div>
             </form>
           </div>
         </div>
       </section>
-      <section class="contacts light-back" id="index__contacts"><span class="link-target" id="contacts"></span>
-        <h3 class="section__title hidden-item">контакты</h3>
+      <section class="contacts light-back"><span class="link-target" id="contacts"></span>
+        <h3 class="section__title hidden-item" id="index__contacts-title">контакты</h3>
         <div class="container">
-          <div class="row contacts__wrap">
+          <div class="row contacts__wrap" id="index__contacts">
             <div class="col-xs-12 col-sm-6 col-md-3 hidden-item">
               <div class="contacts__name">александр архангельский</div>
               <div class="contacts__position">руководитель проекта</div>
@@ -353,10 +359,10 @@
           </div>
         </div>
       </section>
-      <section class="location" id="index__location"><img class="location__stub" src="/images/map-stub.jpg" alt="КВЦ Сокольники">
+      <section class="location"><img class="location__stub" src="/images/map-stub.jpg" alt="КВЦ Сокольники">
         <div class="container location__desc-wrap">
           <div class="row">
-            <div class="col-sm-4 col-sm-offset-8 col-lg-offset-0 hidden-item">
+            <div class="col-sm-4 col-sm-offset-8 col-lg-offset-0 hidden-item" id="index__location">
               <div class="location__desc">
                 <h3 class="location__title">Москва</h3>
                 <div class="location__addres"> 
@@ -368,7 +374,7 @@
             </div>
           </div>
         </div>
-        <div class="location__btn-wrap"><a class="btn-dark btn-shadow hidden-item" data-description="подробнее"></a></div>
+        <div class="location__btn-wrap"><a class="btn-dark btn-shadow hidden-item" data-description="подробнее" id="index__location-btn"></a></div>
       </section>
     </div>
     <footer class="footer">
