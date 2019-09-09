@@ -362,6 +362,8 @@ let selector = document.querySelectorAll('.parameter-item__content .button_actio
 
 			modal__content.style.left = '-200vw';
 			modal__content.style.position = 'absolute';
+			modal__content.style.height = '100px';
+			modal__content.style.overflow = 'hidden';
 			modal.appendChild(askModal);
 
 			return [buttonFalse, buttonTure, modal];
