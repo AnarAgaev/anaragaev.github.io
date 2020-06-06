@@ -1,2 +1,2 @@
 # anaragaev.github.io
-This is a test of github pages servise
+This is a test work for Pizza Fabrica comp.
