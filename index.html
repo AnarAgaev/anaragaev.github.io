@@ -1,4 +1,70 @@
-<!DOCTYPE html><html lang="ru"><head><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="robots" content="no-index, follow"><link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon"><meta name="description" content="Write description for the page here"><meta name="keywords" content="Write keywords for the page here"><title>Quiz24</title><link href="/css/vendors.48083a88aacb8aeb7806.css" rel="stylesheet"><link href="/css/main.48083a88aacb8aeb7806.css" rel="stylesheet"></head><body class="page-index"><main class="main"><div class="steps" id="steps"><div class="steps__bar"><span class="active passed"></span><span></span></div><div class="steps__question">Вопрос
- <span id="stepValue">1</span> 
-из 2</div></div><div class="cards" id="cards"><h2 class="cards__title">Какой тип грунта на вашем участке?</h2><h3 class="cards__subtitle">От типа грунта зависит технология монтажа септика</h3><ul class="cards__list"><li><span class="cards__pic" style="background-image: url(/img/type-1.jpg)"><span class="cards__check"></span></span><span class="cards__desc">Песок</span></li><li><span class="cards__pic" style="background-image: url(/img/type-2.jpg)"><span class="cards__check"></span></span><span class="cards__desc">Суглинок</span></li><li><span class="cards__pic" style="background-image: url(/img/type-3.jpg)"><span class="cards__check"></span></span><span class="cards__desc">Торф</span></li><li><span class="cards__pic" style="background-image: url(/img/type-4.jpg)"><span class="cards__check"></span></span><span class="cards__desc">Глина</span></li></ul><label class="cards__question"><span class="cards__check"></span><input class="cards__control" id="customType" type="text" placeholder="Введите Ваш вариант ответа..."></label><button class="btn btn_next inactive" id="btnShowNextQuestion">Дальше</button></div><div class="form invisible hidden" id="form"><div class="form__title">Расчет стоимости
- <span class="accent">сформирован</span></div><div class="progress"><div class="value" id="progressVal">0%</div><svg viewBox="0 0 100 100" width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle class="bar" cx="50" cy="50" r="45"></circle></svg></div><div class="form__subtitle invisible hidden" id="formCaption">Он откроется на этой странице сразу после ввода вашего номера телефона</div><form class="invisible hidden" id="formControls" action="/" method="GET"><label class="form__controll-wrap"><input class="form__control" id="phone" type="text" placeholder="Введите ваш номер телефона"></label><button class="btn btn_send inactive" id="sendForm" type="submit">Получить расчет и мини-курс</button></form></div><div class="banner invisible hidden" id="banner"><div class="banner__body"><img class="banner__pic" src="/img/lock.svg" alt=""><p class="banner__desc">Подходящие модели септика и расчет стоимости монтажа</p></div></div><div class="modal invisible hidden" id="madal"><p class="modal__dialog"><span class="modal__txt">Сообщение отправлено</span><button class="btn modal__close">Закрыть</button></p></div></main><script type="text/javascript" src="/js/vendors.48083a88aacb8aeb7806.js"></script><script type="text/javascript" src="/js/main.48083a88aacb8aeb7806.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="robots" content="no-index, follow" />
+        <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+        <meta name="description" content="Write description for the page here" />
+        <meta name="keywords" content="Write keywords for the page here" />
+        <title>Quiz24</title>
+        <link href="/css/vendors.48083a88aacb8aeb7806.css" rel="stylesheet" />
+        <link href="/css/main.48083a88aacb8aeb7806.css" rel="stylesheet" />
+    </head>
+    <body class="page-index">
+        <main class="main">
+            <div class="steps" id="steps">
+                <div class="steps__bar"><span class="active passed"></span><span></span></div>
+                <div class="steps__question">
+                    Вопрос
+                    <span id="stepValue">1</span>
+                    из 2
+                </div>
+            </div>
+            <div class="cards" id="cards">
+                <h2 class="cards__title">Какой тип грунта на вашем участке?</h2>
+                <h3 class="cards__subtitle">От типа грунта зависит технология монтажа септика</h3>
+                <ul class="cards__list">
+                    <li>
+                        <span class="cards__pic" style="background-image: url(/img/type-1.jpg);"><span class="cards__check"></span></span><span class="cards__desc">Песок</span>
+                    </li>
+                    <li>
+                        <span class="cards__pic" style="background-image: url(/img/type-2.jpg);"><span class="cards__check"></span></span><span class="cards__desc">Суглинок</span>
+                    </li>
+                    <li>
+                        <span class="cards__pic" style="background-image: url(/img/type-3.jpg);"><span class="cards__check"></span></span><span class="cards__desc">Торф</span>
+                    </li>
+                    <li>
+                        <span class="cards__pic" style="background-image: url(/img/type-4.jpg);"><span class="cards__check"></span></span><span class="cards__desc">Глина</span>
+                    </li>
+                </ul>
+                <label class="cards__question"><span class="cards__check"></span><input class="cards__control" id="customType" type="text" placeholder="Введите Ваш вариант ответа..." /></label>
+                <button class="btn btn_next inactive" id="btnShowNextQuestion">Дальше</button>
+            </div>
+            <div class="form invisible hidden" id="form">
+                <div class="form__title">Расчет стоимости <span class="accent">сформирован</span></div>
+                <div class="progress">
+                    <div class="value" id="progressVal">0%</div>
+                    <svg viewBox="0 0 100 100" width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle class="bar" cx="50" cy="50" r="45"></circle></svg>
+                </div>
+                <div class="form__subtitle invisible hidden" id="formCaption">Он откроется на этой странице сразу после ввода вашего номера телефона</div>
+                <form class="invisible hidden" id="formControls" action="/" method="GET">
+                    <label class="form__controll-wrap"><input class="form__control" id="phone" type="text" placeholder="Введите ваш номер телефона" /></label>
+                    <button class="btn btn_send inactive" id="sendForm" type="submit">Получить расчет и мини-курс</button>
+                </form>
+            </div>
+            <div class="banner invisible hidden" id="banner">
+                <div class="banner__body">
+                    <img class="banner__pic" src="/img/lock.svg" alt="" />
+                    <p class="banner__desc">Подходящие модели септика и расчет стоимости монтажа</p>
+                </div>
+            </div>
+            <div class="modal invisible hidden" id="madal">
+                <p class="modal__dialog"><span class="modal__txt">Сообщение отправлено</span><button class="btn modal__close">Закрыть</button></p>
+            </div>
+        </main>
+        <script src="/js/vendors.48083a88aacb8aeb7806.js"></script>
+        <script src="/js/main.48083a88aacb8aeb7806.js"></script>
+    </body>
+</html>
