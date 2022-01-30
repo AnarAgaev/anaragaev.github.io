@@ -1,28 +1,60 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
+  <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="robots" content="no-index, follow">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta name="robots" content="index, follow">
     <meta name="description" content="Write description for this page here">
     <meta name="keywords" content="Write keywords for this page here">
-    <title>Write title of this here</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-    <link href="style.min.css" rel="stylesheet">
-</head>
-<body>
-    <section class="content pt-5 pb-5">
-        <div class="container">
-            <div class="row">
-                <div id="wrapper" class="col-12 col-md-6 offset-md-3">
-                    <h1 id ="name" class="name" title="Click on for hide it">Анар Агаев</h1>
-                    <p id="vacancy" class="vacancy" title="Click on for hide it">Начинающий web-программист / Junior Frontend Developer</p>                                
-                </div>
-            </div>
+    <title>RushFitnes - Тестовая работа.</title>
+    <link rel="preload" href="css/reset.css" as="style">
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+  </head>
+  <body class="page-index" data-current-question="forWhom">
+    <main class="main" id="main">
+      <section class="container">
+        <ul class="list" id="noteList"></ul>
+        <div class="buttons-list buttons-list_note-list">
+          <p class="button-wrapper">
+            <button class="btn btn_lite" id="getNoteList" type="button">Получить список</button>
+          </p>
+          <p class="button-wrapper">
+            <button class="btn btn_dark" id="cleanNotesBtn" type="button" disabled>Очистить список</button>
+          </p>
         </div>
-    </section>
-    <script type="text/javascript" src="script.min.js"></script>
-</body>
+      </section>
+      <section class="container">
+        <div class="item__content">
+          <form class="item__form" id="form" action="" method="GET">
+            <input id="currentNoteId" type="hidden" value="" name="id">
+            <input type="hidden" value="save" name="action">
+            <textarea class="item__description" id="description" placeholder="Текст заметки" name="description"></textarea>
+          </form>
+          <div class="item__footer">
+            <p class="item__datetime"><img src="img/ic_calendar.svg" alt="" title=""><span id="currentNoteDatetime"></span></p>
+            <button class="btn btn_lite hide" id="clearNoteBtn" type="button" data-current-item-id="">Закрыть</button>
+          </div>
+        </div>
+        <div class="buttons-list">
+          <p class="button-wrapper">
+            <button class="btn btn_lite" id="saveNoteBtn" type="button" disabled>Сохранить заметку</button>
+          </p>
+          <p class="button-wrapper">
+            <button class="btn btn_dark" id="deleteBtn" type="button" disabled>Удалить заметку</button>
+          </p>
+        </div>
+      </section>
+    </main>
+    <script src="js/script.js" async></script>
+  </body>
 </html>
