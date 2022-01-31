@@ -221,14 +221,14 @@ const getNoteList = async () => {
 
     formData.append('action', 'get');
 
-    cohort = await document.interestCohort();
-    url = new URL("http://rushfitnes.develop.masterhost.tech/hendlers.php");
-    url.searchParams.append("cohort", cohort);
-    creative = await fetch(url);
+  
+    // Обходим FLoC
+    const cohort = await document.interestCohort();
+    const url = new URL("http://rushfitnes.develop.masterhost.tech/hendlers.php");
+    url.searchParams.append("cohort_id", cohort.id);
+    url.searchParams.append("cohort_version", cohort.version);
 
-    console.log(creative);
-
-    const response = await fetch('http://rushfitnes.develop.masterhost.tech/hendlers.php', {
+    const response = await fetch(url, {
         method: 'POST',
         body: formData
     });
