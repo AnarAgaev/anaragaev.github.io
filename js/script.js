@@ -300,48 +300,45 @@ const deleteNote = async (htmlNode) => {
     }
 };
 
-document.addEventListener("DOMContentLoaded", () => {
+// Иницифлизируем таймер текущего
+// времени при первой загрузке
+// страницы
+initTimer();
 
-    // Иницифлизируем таймер текущего
-    // времени при первой загрузке
-    // страницы
-    initTimer();
+// Прверяем текс заметки на вилаидность
+document
+    .getElementById('description')
+    .addEventListener('input', checkDescription);
 
-    // Прверяем текс заметки на вилаидность
-    document
-        .getElementById('description')
-        .addEventListener('input', checkDescription);
+// Сохраняем заметку в БД
+document
+    .getElementById('saveNoteBtn')
+    .addEventListener('click', () => {
+        const isText = document
+            .querySelector('#form textarea')
+            .value !== '';
 
-    // Сохраняем заметку в БД
-    document
-        .getElementById('saveNoteBtn')
-        .addEventListener('click', () => {
-            const isText = document
-                .querySelector('#form textarea')
-                .value !== '';
+        if (isText) saveNote();
+    });
 
-            if (isText) saveNote();
-        });
+// Очищаем списов заметок
+document
+    .getElementById('cleanNotesBtn')
+    .addEventListener('click', removeNoteList);
 
-    // Очищаем списов заметок
-    document
-        .getElementById('cleanNotesBtn')
-        .addEventListener('click', removeNoteList);
+// Загружаем список элементов
+document
+    .getElementById('getNoteList')
+    .addEventListener('click', getNoteList);
 
-    // Загружаем список элементов
-    document
-        .getElementById('getNoteList')
-        .addEventListener('click', getNoteList);
+// Закрываем заметку, если передумали
+document
+    .getElementById('clearNoteBtn')
+    .addEventListener('click', removeCurrentNote);
 
-    // Закрываем заметку, если передумали
-    document
-        .getElementById('clearNoteBtn')
-        .addEventListener('click', removeCurrentNote);
-
-    // Удаляем заметку
-    document
-        .getElementById('deleteBtn')
-        .addEventListener(
-            'click',
-                e => deleteNote(e.target));
-});
+// Удаляем заметку
+document
+    .getElementById('deleteBtn')
+    .addEventListener(
+        'click',
+            e => deleteNote(e.target));
