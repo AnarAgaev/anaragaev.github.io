@@ -1,10 +1,10 @@
 <?php
 
     function dbConnectOpen() {
-        $host = 'localhost';
-        $user = 'g99322e8_notes';
-        $password = '8XgU&xNB';
-        $db = 'g99322e8_notes';
+        $host = '';
+        $user = '';
+        $password = '';
+        $db = '';
 
         $link = mysqli_connect($host, $user, $password, $db);
         mysqli_set_charset($link, "utf8"); // for UTF-8 encoding
@@ -69,7 +69,6 @@
 
         $notes = [];
 
-
         while ($row = mysqli_fetch_assoc($result)) {
 
             $caption = iconv_strlen($row['description']) > 80
@@ -85,7 +84,6 @@
         }
 
         return $notes;
-
     }
 
     function noteDelete($link, $id) {
