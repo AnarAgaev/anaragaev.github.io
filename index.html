@@ -1,61 +1,81 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Developer: Anar.N.Agaev">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="robots" content="index, follow">
     <meta name="description" content="Write description for this page here">
     <meta name="keywords" content="Write keywords for this page here">
-    <title>RushFitnes - Тестовая работа.</title>
-    <link rel="preload" href="css/reset.css" as="style">
-    <link rel="stylesheet" href="css/reset.css" type="text/css">
-    <link rel="preload" href="css/style.css" as="style">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet">
+    <title>Topverstka - тестовая работа</title>
+    <link rel="preload" href="style.css" as="style">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/manifest.json">
-    <meta http-equiv="Permissions-Policy" content="interest-cohort=()"/>
   </head>
-  <body class="page-index" data-current-question="forWhom">
+  <body class="page-index">
     <main class="main" id="main">
-      <section class="container">
-        <ul class="list" id="noteList"></ul>
-        <div class="buttons-list buttons-list_note-list">
-          <p class="button-wrapper">
-            <button class="btn btn_lite" id="getNoteList" type="button">Получить список</button>
-          </p>
-          <p class="button-wrapper">
-            <button class="btn btn_dark" id="cleanNotesBtn" type="button" disabled>Очистить список</button>
-          </p>
+      <div class="start-button">
+        <div class="container">
+          <button class="btn btn_dark" id="btnStart" type="button">Начать демонстрацию</button>
         </div>
-      </section>
-      <section class="container">
-        <div class="item__content">
-          <form class="item__form" id="form" action="" method="GET">
-            <input id="currentNoteId" type="hidden" value="" name="id">
-            <input type="hidden" value="save" name="action">
-            <textarea class="item__description" id="description" placeholder="Текст заметки" name="description"></textarea>
-          </form>
-          <div class="item__footer">
-            <p class="item__datetime"><img src="img/ic_calendar.svg" alt="" title=""><span id="currentNoteDatetime"></span></p>
-            <button class="btn btn_lite hide" id="clearNoteBtn" type="button" data-current-item-id="">Закрыть</button>
-          </div>
+      </div>
+      <section class="slider" id="slider">
+        <button class="slider__controller slider__controller_prev" data-direction="prev"></button>
+        <button class="slider__controller slider__controller_next" data-direction="next"></button>
+        <div class="slider__body">
+          <ul class="slider__item-list">
+            <li class="slider__item active" id="slide-1">
+              <div class="slider__item-content">
+                <p>Этот текст добавлен для демонстрации на странице</p><span class="d-none d-lg-block">Акция действует с 01.07.18 по 31.07.18</span><span class="d-lg-none">Тест на внимательность</span>
+                <div><a class="btn btn_dark" href="#">Подробнее</a><a class="btn btn_lite d-none d-lg-flex" href="#">Все акции</a></div>
+              </div>
+            </li>
+            <li class="slider__item" id="slide-2">
+              <div class="slider__item-content">
+                <p>Этот текст добавлен для демонстрации на странице</p><span class="d-none d-lg-block">Акция действует с 01.07.18 по 31.07.18</span><span class="d-lg-none">Тест на внимательность</span>
+                <div><a class="btn btn_dark" href="#">Подробнее</a><a class="btn btn_lite d-none d-lg-flex" href="#">Все акции</a></div>
+              </div>
+            </li>
+            <li class="slider__item" id="slide-3">
+              <div class="slider__item-content">
+                <p>Этот текст добавлен для демонстрации на странице</p><span class="d-none d-lg-block">Акция действует с 01.07.18 по 31.07.18</span><span class="d-lg-none">Тест на внимательность</span>
+                <div><a class="btn btn_dark" href="#">Подробнее</a><a class="btn btn_lite d-none d-lg-flex" href="#">Все акции</a></div>
+              </div>
+            </li>
+            <li class="slider__item" id="slide-4">
+              <div class="slider__item-content">
+                <p>Этот текст добавлен для демонстрации на странице</p><span class="d-none d-lg-block">Акция действует с 01.07.18 по 31.07.18</span><span class="d-lg-none">Тест на внимательность</span>
+                <div><a class="btn btn_dark" href="#">Подробнее</a><a class="btn btn_lite d-none d-lg-flex" href="#">Все акции</a></div>
+              </div>
+            </li>
+          </ul>
         </div>
-        <div class="buttons-list">
-          <p class="button-wrapper">
-            <button class="btn btn_lite" id="saveNoteBtn" type="button" disabled>Сохранить заметку</button>
-          </p>
-          <p class="button-wrapper">
-            <button class="btn btn_dark" id="deleteBtn" type="button" disabled>Удалить заметку</button>
-          </p>
+        <div class="slider__nav">
+          <ul class="slider__nav-list">
+            <li class="slider__nav-item active" data-target-slide-id="slide-1"><span style="background-image: url('img/slider_1pre.jpg')"></span>
+              <p>Акция действует с 01.07.18</p>
+              <h3>Этот текст добавлен для демонстрации на странице</h3>
+            </li>
+            <li class="slider__nav-item" data-target-slide-id="slide-2"><span style="background-image: url('img/slider_2pre.jpg')"></span>
+              <p>Акция действует с 01.07.18</p>
+              <h3>Этот текст добавлен для демонстрации на странице</h3>
+            </li>
+            <li class="slider__nav-item" data-target-slide-id="slide-3"><span style="background-image: url('img/slider_3pre.jpg')"></span>
+              <p>Акция действует с 01.07.18</p>
+              <h3>Этот текст добавлен для демонстрации на странице</h3>
+            </li>
+            <li class="slider__nav-item" data-target-slide-id="slide-4"><span style="background-image: url('img/slider_4pre.jpg')"></span>
+              <p>Акция действует с 01.07.18</p>
+              <h3>Этот текст добавлен для демонстрации на странице</h3>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
-    <script src="js/script.js" async></script>
+    <script src="script.js" async></script>
   </body>
 </html>
