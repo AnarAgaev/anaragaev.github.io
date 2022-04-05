@@ -108,14 +108,14 @@
                   <h3 class="profit__title">Ваш доход</h3>
                   <div class="profit__controlles">
                     <div class="btn btn_sml btn_lite profit__date"><img src="" alt><span>05.01.22 &#183; 09.01.22</span></div>
-                    <div class="btn btn_sml btn_lite profit__offers"><img src="" alt><span>Доход по офферам</span>
-                      <div class="profit__offers__drop"><span>Выберите тип данных:</span>
+                    <div class="btn btn_sml btn_lite profit__offers-btn"><img src="" alt><span>Доход по офферам</span>
+                      <div class="dropdown"><span>Выберите тип данных:</span>
                         <ul>
-                          <li class="active">Доход: общий</li>
-                          <li>Доход: SpamGuard RU</li>
-                          <li>Доход: SpamGuard ENG</li>
-                          <li>Доход: InstaParser</li>
-                          <li>Доход: ИнстаШпион</li>
+                          <li><a class="active" href="#">Доход: общий</a></li>
+                          <li><a href="#">Доход: SpamGuard RU</a></li>
+                          <li><a href="#">Доход: SpamGuard ENG</a></li>
+                          <li><a href="#">Доход: InstaParser</a></li>
+                          <li><a href="#">Доход: ИнстаШпион</a></li>
                         </ul>
                       </div>
                     </div>
@@ -128,21 +128,33 @@
               <h3 class="tabs__title">Статистика</h3>
               <ul class="tabs__list">
                 <li class="tabs__item">
-                  <button class="tabs__toggle active" type="button" data-target-id="statistics-cpa">CPA</button>
+                  <button class="tabs__toggle active" type="button" data-target-id="cpa">CPA</button>
                 </li>
                 <li class="tabs__item">
-                  <button class="tabs__toggle" type="button" data-target-id="statistics-revshare">RevShare</button>
+                  <button class="tabs__toggle" type="button" data-target-id="revshare">RevShare</button>
+                </li>
+                <li class="tabs__item">
+                  <button class="tabs__toggle" type="button" data-target-id="offercpa">OfferCPA</button>
+                </li>
+                <li class="tabs__item">
+                  <button class="tabs__toggle" type="button" data-target-id="offerrevshare">OfferRevShare</button>
+                </li>
+                <li class="tabs__item">
+                  <button class="tabs__toggle" type="button" data-target-id="newoffers">NewOffers</button>
+                </li>
+                <li class="tabs__item">
+                  <button class="tabs__toggle" type="button" data-target-id="finance">Finance</button>
                 </li>
               </ul>
               <div class="content content_block content_offer-tabs">
                 <div class="tabs__content">
-                  <div class="tabs__pane active" id="statistics-cpa">
-                    <table class="table" cellpadding="0" cellspacing="0" border="0">
+                  <div class="tabs__pane active" id="cpa">
+                    <table class="table table_seven-columns" cellpadding="0" cellspacing="0">
                       <thead>
                         <tr>
                           <th>
                             <!-- Для изменеия иконки типа сортировки добавить класс .flip к кнопке-->
-                            <button class="table__sort-btn flip" type="button"></button>Дата<span class="informer"><span class="informer__body"><span class="informer__title">Заголовок инфоблока</span><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span>
+                            <button class="sort-btn flip" type="button"></button>Дата<span class="informer"><span class="informer__body"><span class="informer__title">Заголовок инфоблока</span><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span>
                           </th>
                           <th>Регистрации<span class="informer"><span class="informer__body"><span class="informer__title">Заголовок инфоблока</span><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span></th>
                           <th>Привязки<span class="informer"><span class="informer__body"><span class="informer__title">Заголовок инфоблока</span><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span></th>
@@ -153,110 +165,280 @@
                         </tr>
                       </thead>
                       <tbody>
-                        <tr class="table__totals">
-                          <th>Total</th>
-                          <th>XXXX</th>
-                          <th>XXXX</th>
-                          <th>XXXX</th>
-                          <th>XXXX</th>
-                          <th>XXXX</th>
-                          <th>XXXX</th>
+                        <tr>
+                          <td><span>MM.DD.YYYY</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
                         </tr>
                         <tr>
-                          <td>MM.DD.YYYY</td>
-                          <td>XXXX</td>
-                          <td>XXXX</td>
-                          <td>XXXX</td>
-                          <td>XXXX</td>
-                          <td>XXXX</td>
-                          <td>XXXX</td>
-                        </tr>
-                        <tr>
-                          <td>MM.DD.YYYY</td>
-                          <td>XXXX</td>
-                          <td>XXXX</td>
-                          <td>XXXX</td>
-                          <td>XXXX</td>
-                          <td>XXXX</td>
-                          <td>XXXX</td>
-                        </tr>
-                        <tr>
-                          <td>MM.DD.YYYY</td>
-                          <td>XXXX</td>
-                          <td>XXXX</td>
-                          <td>XXXX</td>
-                          <td>XXXX</td>
-                          <td>XXXX</td>
-                          <td>XXXX</td>
-                        </tr>
-                        <tr>
-                          <td>MM.DD.YYYY</td>
-                          <td>XXXX</td>
-                          <td>XXXX</td>
-                          <td>XXXX</td>
-                          <td>XXXX</td>
-                          <td>XXXX</td>
-                          <td>XXXX</td>
-                        </tr>
-                        <tr>
-                          <td>MM.DD.YYYY</td>
-                          <td>XXXX</td>
-                          <td>XXXX</td>
-                          <td>XXXX</td>
-                          <td>XXXX</td>
-                          <td>XXXX</td>
-                          <td>XXXX</td>
+                          <td><span>MM.DD.YYYY</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
                         </tr>
                       </tbody>
+                      <tfoot>
+                        <tr>
+                          <td><span>Total</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                        </tr>
+                      </tfoot>
                     </table>
                     <div class="dashboard-statistics__btn"><a class="btn btn_sml btn_lite" href="#">Перейти к подробной таблице</a></div>
                   </div>
-                  <div class="tabs__pane" id="statistics-revshare">
-                    <table class="table" cellpadding="0" cellspacing="0" border="0">
+                  <div class="tabs__pane" id="revshare">
+                    <table class="table table_seven-columns" cellpadding="0" cellspacing="0">
                       <thead>
                         <tr>
                           <th>
-                            <button class="table__sort-btn" type="button"></button>Дата<span class="informer"><span class="informer__body"><span class="informer__title">Заголовок инфоблока</span><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span>
+                            <!-- Для изменеия иконки типа сортировки добавить класс .flip к кнопке-->
+                            <button class="sort-btn flip" type="button"></button>Дата<span class="informer"><span class="informer__body"><span class="informer__title">Заголовок инфоблока</span><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span>
                           </th>
                           <th>Регистрации<span class="informer"><span class="informer__body"><span class="informer__title">Заголовок инфоблока</span><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span></th>
                           <th>Привязки<span class="informer"><span class="informer__body"><span class="informer__title">Заголовок инфоблока</span><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span></th>
-                          <th>Оплаты<span class="informer"><span class="informer__body"><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span></th>
-                          <th>Сумма, $<span class="informer"><span class="informer__body"><span class="informer__title">Заголовок инфоблока</span><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span></th>
+                          <th>1 Оплата, $<span class="informer"><span class="informer__body"><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span></th>
+                          <th>2 оплаты, $<span class="informer"><span class="informer__body"><span class="informer__title">Заголовок инфоблока</span><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span></th>
                           <th>Отписки<span class="informer"><span class="informer__body"><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span></th>
                           <th>Доход, $<span class="informer"><span class="informer__body"><span class="informer__title">Заголовок инфоблока</span><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span></th>
                         </tr>
                       </thead>
                       <tbody>
-                        <tr class="table__totals">
-                          <th>Total</th>
-                          <th>XXXX</th>
-                          <th>XXXX</th>
-                          <th>XXXX</th>
-                          <th>XXXX</th>
-                          <th>XXXX</th>
-                          <th>XXXX</th>
+                        <tr>
+                          <td><span>MM.DD.YYYY</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
                         </tr>
                         <tr>
-                          <td>MM.DD.YYYY</td>
-                          <td>XXXX</td>
-                          <td>XXXX</td>
-                          <td>XXXX</td>
-                          <td>XXXX</td>
-                          <td>XXXX</td>
-                          <td>XXXX</td>
-                        </tr>
-                        <tr>
-                          <td>MM.DD.YYYY</td>
-                          <td>XXXX</td>
-                          <td>XXXX</td>
-                          <td>XXXX</td>
-                          <td>XXXX</td>
-                          <td>XXXX</td>
-                          <td>XXXX</td>
+                          <td><span>MM.DD.YYYY</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
                         </tr>
                       </tbody>
+                      <tfoot>
+                        <tr>
+                          <td><span>Total</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                        </tr>
+                      </tfoot>
                     </table>
-                    <div class="dashboard-statistics__btn"><a class="btn btn_sml btn_lite" href="#">Перейти к подробной таблице RevShare</a></div>
+                    <div class="dashboard-statistics__btn"><a class="btn btn_sml btn_lite" href="#">Перейти к подробной таблице</a></div>
+                  </div>
+                  <div class="tabs__pane" id="offercpa">
+                    <table class="table table_four-columns" cellpadding="0" cellspacing="0">
+                      <thead>
+                        <tr>
+                          <th>
+                            <!-- Для изменеия иконки типа сортировки добавить класс .flip к кнопке-->
+                            <button class="sort-btn" type="button"></button>Дата<span class="informer"><span class="informer__body"><span class="informer__title">Заголовок инфоблока</span><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span>
+                          </th>
+                          <th>Регистрации<span class="informer"><span class="informer__body"><span class="informer__title">Заголовок инфоблока</span><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span></th>
+                          <th>Привязки<span class="informer"><span class="informer__body"><span class="informer__title">Заголовок инфоблока</span><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span></th>
+                          <th>Доход, $<span class="informer"><span class="informer__body"><span class="informer__title">Заголовок инфоблока</span><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><span>MM.DD.YYYY</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                        </tr>
+                        <tr>
+                          <td><span>MM.DD.YYYY</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                        </tr>
+                      </tbody>
+                      <tfoot>
+                        <tr>
+                          <td><span>Total</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                        </tr>
+                      </tfoot>
+                    </table>
+                    <div class="dashboard-statistics__btn"><a class="btn btn_sml btn_lite" href="#">Перейти к подробной таблице</a></div>
+                  </div>
+                  <div class="tabs__pane" id="offerrevshare">
+                    <table class="table table_seven-columns" cellpadding="0" cellspacing="0">
+                      <thead>
+                        <tr>
+                          <th>
+                            <!-- Для изменеия иконки типа сортировки добавить класс .flip к кнопке-->
+                            <button class="sort-btn" type="button"></button>Оффер<span class="informer"><span class="informer__body"><span class="informer__title">Заголовок инфоблока</span><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span>
+                          </th>
+                          <th>Регистрации<span class="informer"><span class="informer__body"><span class="informer__title">Заголовок инфоблока</span><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span></th>
+                          <th>Привязки<span class="informer"><span class="informer__body"><span class="informer__title">Заголовок инфоблока</span><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span></th>
+                          <th>1 Оплата, $<span class="informer"><span class="informer__body"><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span></th>
+                          <th>2 оплаты, $<span class="informer"><span class="informer__body"><span class="informer__title">Заголовок инфоблока</span><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span></th>
+                          <th>Отписки<span class="informer"><span class="informer__body"><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span></th>
+                          <th>Доход, $<span class="informer"><span class="informer__body"><span class="informer__title">Заголовок инфоблока</span><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><span>Оффер</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                        </tr>
+                        <tr>
+                          <td><span>Оффер</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                        </tr>
+                      </tbody>
+                      <tfoot>
+                        <tr>
+                          <td><span>Total</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                        </tr>
+                      </tfoot>
+                    </table>
+                    <div class="dashboard-statistics__btn"><a class="btn btn_sml btn_lite" href="#">Перейти к подробной таблице</a></div>
+                  </div>
+                  <div class="tabs__pane" id="newoffers">
+                    <table class="table table_five-columns" cellpadding="0" cellspacing="0">
+                      <thead>
+                        <tr>
+                          <th>
+                            <!-- Для изменеия иконки типа сортировки добавить класс .flip к кнопке-->
+                            <button class="sort-btn" type="button"></button>Оффер<span class="informer"><span class="informer__body"><span class="informer__title">Заголовок инфоблока</span><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span>
+                          </th>
+                          <th>Средний чек, $<span class="informer"><span class="informer__body"><span class="informer__title">Заголовок инфоблока</span><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span></th>
+                          <th>Конверсия, %<span class="informer"><span class="informer__body"><span class="informer__title">Заголовок инфоблока</span><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span></th>
+                          <th>Конверсия, %<span class="informer"><span class="informer__body"><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span></th>
+                          <th>Выплаты, $<span class="informer"><span class="informer__body"><span class="informer__title">Заголовок инфоблока</span><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><span>Оффер</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                        </tr>
+                        <tr>
+                          <td><span>Оффер</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                        </tr>
+                      </tbody>
+                      <tfoot>
+                        <tr>
+                          <td><span>Total</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                        </tr>
+                      </tfoot>
+                    </table>
+                    <div class="dashboard-statistics__btn"><a class="btn btn_sml btn_lite" href="#">Перейти к подробной таблице</a></div>
+                  </div>
+                  <div class="tabs__pane" id="finance">
+                    <table class="table table_six-columns" cellpadding="0" cellspacing="0">
+                      <thead>
+                        <tr>
+                          <th>
+                            <!-- Для изменеия иконки типа сортировки добавить класс .flip к кнопке-->
+                            <button class="sort-btn" type="button"></button>ID<span class="informer"><span class="informer__body"><span class="informer__title">Заголовок инфоблока</span><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span>
+                          </th>
+                          <th>Дата создания<span class="informer"><span class="informer__body"><span class="informer__title">Заголовок инфоблока</span><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span></th>
+                          <th>Сумма, $<span class="informer"><span class="informer__body"><span class="informer__title">Заголовок инфоблока</span><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span></th>
+                          <th>Кошелек<span class="informer"><span class="informer__body"><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span></th>
+                          <th>Выполнено<span class="informer"><span class="informer__body"><span class="informer__title">Заголовок инфоблока</span><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span></th>
+                          <th>Статус<span class="informer"><span class="informer__body"><span class="informer__title">Заголовок инфоблока</span><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><span>id_number</span></td>
+                          <td><span>mm.dd.yyyy</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>mm.dd.yyyy</span></td>
+                          <td><span class="status status_completed">status</span></td>
+                        </tr>
+                        <tr>
+                          <td><span>id_number</span></td>
+                          <td><span>mm.dd.yyyy</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>mm.dd.yyyy</span></td>
+                          <td><span class="status status_pending">status</span></td>
+                        </tr>
+                        <tr>
+                          <td><span>id_number</span></td>
+                          <td><span>mm.dd.yyyy</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>mm.dd.yyyy</span></td>
+                          <td><span class="status status_error">status</span></td>
+                        </tr>
+                        <tr>
+                          <td><span>id_number</span></td>
+                          <td><span>mm.dd.yyyy</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>mm.dd.yyyy</span></td>
+                          <td><span class="status">status</span></td>
+                        </tr>
+                      </tbody>
+                      <tfoot>
+                        <tr>
+                          <td><span>Total</span></td>
+                          <td><span>mm.dd.yyyy</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>XXXX</span></td>
+                          <td><span>mm.dd.yyyy</span></td>
+                          <td><span class="status">status</span></td>
+                        </tr>
+                      </tfoot>
+                    </table>
+                    <div class="dashboard-statistics__btn"><a class="btn btn_sml btn_lite" href="#">Перейти к подробной таблице</a></div>
                   </div>
                 </div>
               </div>

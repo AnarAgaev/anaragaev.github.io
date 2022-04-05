@@ -633,24 +633,38 @@ button {
     border-spacing: 0;
 }
 
-.table thead {
-    background: #f7f7f8;
+.table thead tr {
+    border-bottom: 1px solid #e2e5ea;
 }
 
 .table thead th {
     position: relative;
-    width: calc(100% / 7);
-    padding: 7px 11px 7px;
+    padding: 6px 11px;
     font-weight: 400;
     font-size: 11px;
     line-height: 16px;
     color: #686E78;
     text-align: left;
+    background: #f7f7f8;
 }
 
 .table thead th .informer {
     float: right;
     margin: 1px 0 0;
+}
+
+.table thead th .sort-btn {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url("../img/i-sort.svg") center no-repeat;
+    float: left;
+    margin-right: 3px;
+}
+
+.table thead th .sort-btn.flip {
+    -webkit-transform: scale(1, -1);
+    transform: scale(1, -1);
 }
 
 .table thead th::after {
@@ -675,23 +689,20 @@ button {
 }
 
 .table tbody tr {
-    background-color: transparent;
-    -webkit-transition: background-color .1s linear;
-    transition: background-color .1s linear;
-    cursor: pointer;
+    border-bottom: 1px solid #e2e5ea;
 }
 
-.table tbody tr:hover {
+.table tbody tr:nth-child(even) td {
+    background-color: #f7f7f8;
+    background-clip: content-box;
+}
+
+.table tbody tr:nth-child(even) td span {
+    font-weight: 600;
     background-color: #f7f7f8;
 }
 
-.table tbody tr:first-child {
-    cursor: default;
-    background: #f7f7f8 !important;
-}
-
-.table tbody th::after,
-  .table tbody td::after {
+.table td span::after {
     content: '';
     display: block;
     position: absolute;
@@ -704,51 +715,104 @@ button {
     background-color: #e2e5ea;
 }
 
-.table tbody th:last-child::after,
-  .table tbody td:last-child::after {
+.table td:last-child span::after {
     display: none;
-}
-
-.table tbody th {
-    position: relative;
-    font-weight: 600;
-    font-size: 13px;
-    line-height: 20px;
-    color: #212224;
-    padding: 17px 11px 17px 14px;
-    text-align: left;
 }
 
 .table tbody td {
     position: relative;
+    padding-top: 20px;
+}
+
+.table tbody td span {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding: 12px 11px 12px 14px;
     font-weight: 400;
     font-size: 13px;
     line-height: 20px;
     color: #3b3e43;
-    padding: 12px 11px 12px 14px;
     text-align: left;
 }
 
-.table tbody tr:last-child {
-    border-bottom: none;
+.table tfoot tr {
+    background-color: #f7f7f8;
+    background-clip: content-box;
 }
 
-.table tr {
-    border-bottom: 1px solid #e2e5ea;
+.table tfoot td {
+    position: relative;
+    padding-top: 20px;
 }
 
-.table__sort-btn {
+.table tfoot td span {
     display: inline-block;
-    width: 18px;
-    height: 18px;
-    background: url("../img/i-sort.svg") center no-repeat;
-    float: left;
-    margin-right: 2px;
+    position: relative;
+    width: 100%;
+    padding: 12px 11px 12px 14px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+    color: #212224;
 }
 
-.table__sort-btn.flip {
-    -webkit-transform: scale(1, -1);
-    transform: scale(1, -1);
+.table_four-columns thead th {
+    width: calc(100% / 4);
+}
+
+.table_five-columns thead th {
+    width: calc(100% / 5);
+}
+
+.table_six-columns thead th {
+    width: calc(100% / 6);
+}
+
+.table_seven-columns thead th {
+    width: calc(100% / 4);
+}
+
+.table .status {
+    position: relative;
+    font-weight: 600;
+}
+
+.table .status::before {
+    content: '';
+    display: inline-block;
+    position: relative;
+    width: 5px;
+    height: 5px;
+    background-color: #3b3e43;
+    border-radius: 50%;
+    margin-right: 5px;
+    top: -1px;
+}
+
+.table .status_completed {
+    color: #40cc90;
+}
+
+.table .status_completed::before {
+    background-color: #40cc90;
+}
+
+.table .status_pending {
+    color: #ffcc69;
+}
+
+.table .status_pending::before {
+    background-color: #ffcc69;
+}
+
+.table .status_error {
+    color: #f36476;
+}
+
+.table .status_error::before {
+    background-color: #f36476;
 }
 
 .header {
@@ -1767,6 +1831,94 @@ button {
 
 .profit__controlles .btn {
     margin-left: 2px;
+}
+
+.profit__offers-btn {
+    position: relative;
+    overflow: visible;
+}
+
+.profit__offers-btn:hover .dropdown {
+    z-index: 1;
+    opacity: 1;
+}
+
+.profit__offers-btn .dropdown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    padding: 18px 30px 40px;
+    background: #3b3e43;
+    -webkit-box-shadow: 0 2px 3px rgba(97, 115, 145, 0.45), 0 4px 9px rgba(97, 115, 144, 0.25), 0 15px 25px rgba(97, 115, 144, 0.2);
+    box-shadow: 0 2px 3px rgba(97, 115, 145, 0.45), 0 4px 9px rgba(97, 115, 144, 0.25), 0 15px 25px rgba(97, 115, 144, 0.2);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    z-index: -1;
+    opacity: 0;
+    border-radius: 12px 0 12px 12px;
+}
+
+.profit__offers-btn .dropdown span {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #ffffff;
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+.profit__offers-btn .dropdown ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.profit__offers-btn .dropdown li {
+    margin-bottom: 10px;
+}
+
+.profit__offers-btn .dropdown li a {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+    color: #ffcc69;
+    text-decoration: none;
+    -webkit-transition: color .1s linear;
+    transition: color .1s linear;
+}
+
+.profit__offers-btn .dropdown li a:hover {
+    color: #a1a8b4;
+}
+
+.profit__offers-btn .dropdown li a.active {
+    color: #a1a8b4;
+    cursor: default;
+}
+
+.profit__offers-btn .dropdown li:last-child {
+    margin-bottom: 0 !important;
 }
 
 .profit__chart-wrap {
