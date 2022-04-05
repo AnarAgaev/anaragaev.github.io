@@ -181,6 +181,11 @@ button {
     border-top-left-radius: 0;
 }
 
+.content_dashboard-profit {
+    padding: 30px 40px 40px;
+    border-radius: 12px;
+}
+
 .tabs {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -355,6 +360,7 @@ button {
     text-align: center;
     text-decoration: none;
     letter-spacing: 0.2px;
+    cursor: pointer;
     -webkit-transition: all .1s linear;
     transition: all .1s linear;
 }
@@ -738,6 +744,11 @@ button {
     background: url("../img/i-sort.svg") center no-repeat;
     float: left;
     margin-right: 2px;
+}
+
+.table__sort-btn.flip {
+    -webkit-transform: scale(1, -1);
+    transform: scale(1, -1);
 }
 
 .header {
@@ -1723,6 +1734,48 @@ button {
     position: relative;
     -webkit-transform: none;
     transform: none;
+}
+
+.profit__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.profit__title {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 34px;
+    color: #3b3e43;
+}
+
+.profit__controlles {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+.profit__controlles .btn {
+    margin-left: 2px;
+}
+
+.profit__chart-wrap {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border: 1px solid #e2e5ea;
+    border-radius: 6px;
+    padding: 20px 20px 10px;
 }
 
 .dashboard-no-have-offers__tilte {
