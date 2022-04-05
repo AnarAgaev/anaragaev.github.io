@@ -56,9 +56,8 @@ function removeActiveClassFromNodeList(nodeList) {
     });
 }
 
-document.addEventListener(
-"DOMContentLoaded",
-function() {
+window.addEventListener("load",
+function(event) {
     document.addEventListener('click', hideEffects);
 
     const tabs = nodeListToArray(document
@@ -68,38 +67,40 @@ function() {
         el.addEventListener('click', handleTabClick);
     });
 });
-document.addEventListener(
-"DOMContentLoaded",
-function () {
+// Стики хедер
+let lastScrollTop = 0;
+
+window.addEventListener('scroll', function() {
+    const header = document
+        .getElementById('header').classList;
+
+    let scrollTop = window.pageYOffset;
+
+    scrollTop > 0
+        ? header.add('shadow')
+        : header.remove('shadow');
+
+    scrollTop > 50 && scrollTop > lastScrollTop
+        ? header.add('hide')
+        : header.remove('hide');
+
+    lastScrollTop = window.pageYOffset;
+});
+
+window.addEventListener("load",
+function(event) {
     // Блокируем активную ссылку меню в хедере
     const headerNavLinksActive = document
         .querySelector('.header__nav .active');
-    headerNavLinksActive.addEventListener('click', function (e) {
-        e.preventDefault();
-        e.stopPropagation();
-        return false;
-    });
-
-    // Стики хедер
-    let lastScrollTop = 0;
-
-    window.addEventListener('scroll', function() {
-        const header = document
-            .getElementById('header').classList;
-
-        let scrollTop = window.pageYOffset;
-
-        scrollTop > 0
-            ? header.add('shadow')
-            : header.remove('shadow');
-
-        scrollTop > 50 && scrollTop > lastScrollTop
-            ? header.add('hide')
-            : header.remove('hide');
-
-        lastScrollTop = window.pageYOffset;
-    });
+    headerNavLinksActive.addEventListener(
+        'click',
+        function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            return false;
+        });
 });
+
 
 
 window.collapseAllSelects = function() {
@@ -391,10 +392,9 @@ function handleSelectClick(e) {
     e.target.classList.add('active');
 }
 
+window.addEventListener("load",
+function(event) {
 
-document.addEventListener(
-    "DOMContentLoaded",
-function() {
     // Открыть/Закрыть модальное окно
     const modalToggles = nodeListToArray(document
         .querySelectorAll("[data-toggle='modal']"));
@@ -449,3 +449,4 @@ function() {
         el.addEventListener('click', handleSelectClick);
     });
 });
+
