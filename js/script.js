@@ -194,10 +194,24 @@ function() {
         modalClasses.remove('show');
     }
 
-    function switchDialog(dialogId) {
+    function switchDialog(dialogId, modalId = undefined) {
         const dialog = document.getElementById(dialogId);
-        const modal = document.getElementById(dialogId).closest('.modal');
-        const otherDialogs = nodeListToArray(modal.getElementsByClassName('modal__dialog'))
+
+        let modal;
+
+        if (modalId) {
+            modal = document.getElementById(modalId);
+        } else {
+            modal = document.getElementById(dialogId)
+                .closest('.modal');
+        }
+
+        if (!modal.classList.contains('show')) {
+            modal.classList.add('show');
+        }
+
+        const otherDialogs = nodeListToArray(
+            modal.getElementsByClassName('modal__dialog'))
             .filter(function (el) { return  el.id !== dialogId; });
 
         const DURATION = 300; // Get the property in css from .modal-dialog styles.
