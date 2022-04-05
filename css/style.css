@@ -617,6 +617,129 @@ button {
     transform: translateY(0);
 }
 
+.table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border: 1px solid #e2e5ea;
+    border-radius: 8px;
+    border-spacing: 0;
+}
+
+.table thead {
+    background: #f7f7f8;
+}
+
+.table thead th {
+    position: relative;
+    width: calc(100% / 7);
+    padding: 7px 11px 7px;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    color: #686E78;
+    text-align: left;
+}
+
+.table thead th .informer {
+    float: right;
+    margin: 1px 0 0;
+}
+
+.table thead th::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 1px;
+    height: 14px;
+    background-color: #3b3e43;
+}
+
+.table thead th:first-child {
+    font-weight: 600;
+}
+
+.table thead th:last-child::after {
+    display: none;
+}
+
+.table tbody tr {
+    background-color: transparent;
+    -webkit-transition: background-color .1s linear;
+    transition: background-color .1s linear;
+    cursor: pointer;
+}
+
+.table tbody tr:hover {
+    background-color: #f7f7f8;
+}
+
+.table tbody tr:first-child {
+    cursor: default;
+    background: #f7f7f8 !important;
+}
+
+.table tbody th::after,
+  .table tbody td::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 1px;
+    height: 14px;
+    background-color: #e2e5ea;
+}
+
+.table tbody th:last-child::after,
+  .table tbody td:last-child::after {
+    display: none;
+}
+
+.table tbody th {
+    position: relative;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+    color: #212224;
+    padding: 17px 11px 17px 14px;
+    text-align: left;
+}
+
+.table tbody td {
+    position: relative;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #3b3e43;
+    padding: 12px 11px 12px 14px;
+    text-align: left;
+}
+
+.table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.table tr {
+    border-bottom: 1px solid #e2e5ea;
+}
+
+.table__sort-btn {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url("../img/i-sort.svg") center no-repeat;
+    float: left;
+    margin-right: 2px;
+}
+
 .header {
     position: fixed;
     width: 100%;
@@ -1932,4 +2055,14 @@ button {
     font-size: 13px;
     line-height: 20px;
     color: #40cc90;
+}
+
+.dashboard-statistics__btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    margin-top: 20px;
 }
