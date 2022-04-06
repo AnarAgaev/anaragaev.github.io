@@ -194,6 +194,10 @@ button {
     padding: 26px 40px 60px;
 }
 
+.content_offers-no {
+    padding: 56px 30px 24px;
+}
+
 .tabs {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2259,7 +2263,7 @@ button {
     border: 1px solid #e2e5ea;
     border-radius: 8px;
     margin: 0 0 10px;
-    padding: 30px 30px 30px 190px;
+    padding: 30px 30px 28px 190px;
 }
 
 .dashboard-offer-tabs__item:last-child {
@@ -2277,7 +2281,7 @@ button {
     background-color: #e2e5ea;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 .dashboard-offer-tabs__header {
@@ -2322,12 +2326,13 @@ button {
 }
 
 .dashboard-offer-tabs__desc {
-    margin: 0 0 14px;
+    margin: 0 0 8px;
     padding: 0;
     font-weight: 400;
     font-size: 15px;
     line-height: 26px;
     color: #3b3e43;
+    min-height: 50px;
 }
 
 .dashboard-offer-tabs__footer {
@@ -2370,7 +2375,7 @@ button {
 }
 
 .dashboard-offer-tabs__statistic li:first-child {
-    width: 250px;
+    min-width: 250px;
     padding-right: 15px;
 }
 
@@ -2788,4 +2793,162 @@ button {
 
 .offers-enabled__stat .btn {
     margin-top: 20px;
+}
+
+.offers-no__title {
+    display: block;
+    margin: 0 0 14px;
+    padding: 0;
+    font-weight: 400;
+    font-size: 31px;
+    line-height: 38px;
+    text-align: center;
+    color: #3b3e43;
+}
+
+.offers-no__subtitle {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    text-align: center;
+    color: #3b3e43;
+}
+
+.offers-no__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.offers-no__list-item {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    border: 1px solid #e2e5ea;
+    border-radius: 8px;
+    margin: 0 0 20px;
+    padding: 26px 30px 21px 205px;
+}
+
+.offers-no__list-item:last-child {
+    margin-bottom: 0 !important;
+}
+
+.offers-no__list-pic {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 173px;
+    height: 100%;
+    background-color: #e2e5ea;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.offers-no__list-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 7px;
+}
+
+.offers-no__list-caption {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 32px;
+    color: #3b3e43;
+}
+
+.offers-no__list-desc {
+    font-family: 'Roboto';
+    margin: 0 0 5px;
+    padding: 0;
+    max-width: 550px;
+    min-height: 50px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    color: #3b3e43;
+}
+
+.offers-no__list-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.offers-no__list-footer .btn {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+}
+
+.offers-no__list-statistic {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.offers-no__list-statistic li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.offers-no__list-statistic li:first-child {
+    min-width: 230px;
+    padding-right: 15px;
+}
+
+.offers-no__list-statistic li > span:first-child {
+    display: inline-block;
+    margin-right: 8px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    color: #3b3e43;
+}
+
+.offers-no__list-statistic li > span:nth-child(2) {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+    color: #40cc90;
 }

@@ -418,7 +418,9 @@ function checkPromo() {
 }
 
 // Показать конкретное промо
-function showPromo(promoId) {
+// При использовании showPromo сразу после иницилизации страницы
+// добавить опциональный timout примерно в 1000 ms.
+function showPromo(promoId, timeout = 0) {
     const promos = nodeListToArray(document
         .querySelectorAll('#modalPromoContainer li'));
 
@@ -436,7 +438,10 @@ function showPromo(promoId) {
     });
 
     targetPromo.classList.add('active');
-    showModal('modalPromo');
+
+    setTimeout(function () {
+        showModal('modalPromo');
+    }, timeout);
 }
 
 function toggleModalPromo (e) {
