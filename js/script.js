@@ -18,6 +18,22 @@ window.nodeListToArray = function (nodeList) {
     return arr;
 }
 
+// Получаем ширину скроллбара
+window.getScrollbarWidth = function() {
+    let div = document.createElement('div');
+    let scrollWidth;
+
+    div.style.overflowY = 'scroll';
+    div.style.width = '50px';
+    div.style.height = '50px';
+
+    document.body.append(div);
+    scrollWidth = div.offsetWidth - div.clientWidth;
+    div.remove();
+
+    return scrollWidth;
+}
+
 function handleTabClick (e) {
     const node =  e.target;
     const id = node.dataset.targetId;
@@ -142,9 +158,15 @@ function showModal(modalId, dialogId = undefined) {
     const modal = document.getElementById(modalId);
     const bodyClasses = document.body.classList;
     const modalClasses = modal.classList;
+    const scrollbarWidth = getScrollbarWidth();
+    const header = document.getElementById('header');
 
     bodyClasses.add('modal-open');
+    document.body.style.paddingRight = scrollbarWidth + 'px';
     modalClasses.add('show');
+    modal.style.paddingRight = scrollbarWidth + 'px';
+    header.style.paddingRight = scrollbarWidth + 'px';
+    header.style.transition = 'none';
 
     switch (modalId) {
         case 'modalArticles':
@@ -169,6 +191,7 @@ function hideModal(modalId) {
     const modal = document.getElementById(modalId);
     const bodyClasses = document.body.classList;
     const modalClasses = modal.classList;
+    const header = document.getElementById('header');
 
     const dialogs = nodeListToArray(document.getElementById(modalId)
         .getElementsByClassName('modal__dialog'));
@@ -182,7 +205,15 @@ function hideModal(modalId) {
     }
 
     bodyClasses.remove('modal-open');
+    document.body.style.removeProperty('padding-right');
     modalClasses.remove('show');
+    modal.style.removeProperty('padding-right');
+    header.style.removeProperty('padding-right');
+
+    setTimeout(function () {
+        header.style.removeProperty('transition');
+    }, 100);
+
 }
 
 function switchDialog(dialogId, modalId = undefined) {
