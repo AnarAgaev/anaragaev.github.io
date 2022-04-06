@@ -54,7 +54,7 @@
             </nav>
           </div>
           <div class="col-3 header__button">
-            <button class="header__nav-toggle" type="button"></button>
+            <button class="header__nav-toggle" type="button" data-toggle="modal" data-direction="show" data-target-id="settingMenu"></button>
           </div>
         </div>
       </div>
@@ -94,6 +94,27 @@
         </div>
       </div>
     </main>
+    <div class="modal" id="settingMenu">
+      <div class="container">
+        <div class="modal__dialog">
+          <div class="modal__content">
+            <button class="modal__close" type="button" data-toggle="modal" data-direction="hide" data-target-id="settingMenu"></button>
+            <div class="modal__header">
+              <h4 class="modal__title">Константинов Константин</h4>
+              <p class="modal__post">Почта:<a href="mailto:konstantinov@yandex.ru">konstantinov@yandex.ru</a></p>
+            </div>
+            <div class="modal__body">
+              <ul class="modal__link-list">
+                <li><a href="#">Настройки профиля</a></li>
+                <li><a href="#">Платежные данные</a></li>
+                <li><a href="#">Политика конфиденцииальности</a></li>
+                <li><a href="#">Выйти из профиля</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="modal modal_change-recovery-password" id="modalChangeRecoveryPassword">
       <div class="modal__dialog hidden hide" id="dialogPasswordChange">
         <div class="modal__content">
