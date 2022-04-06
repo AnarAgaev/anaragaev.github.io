@@ -72,6 +72,59 @@ function removeActiveClassFromNodeList(nodeList) {
     });
 }
 
+
+function showInfo(e) {
+    const el = e.target;
+    const popover = el.querySelector('.informer__body');
+    const popoverWidth = popover.offsetWidth;
+    const popoverHeight = popover.offsetHeight;
+    const distances = getDistances(el);
+
+    // Возможные классы для поповера
+    // informer_tl, informer_tr,
+    // informer_bl, informer_br
+    let clazz = 'informer_'
+
+    clazz += popoverHeight < distances.top
+        ? 't' : 'b';
+
+    clazz += popoverWidth < distances.left
+        ? 'l' : 'r'
+
+    el.classList.add('show');
+
+    setTimeout(function () {
+        el.classList.add(clazz);
+    }, 10);
+}
+
+function hideInfo(e) {
+    e.target.classList.remove(
+        'show',
+        'informer_tl',
+        'informer_tr',
+        'informer_br',
+        'informer_bl'
+    );
+}
+
+// Возвращает объект расстояний от элемента до краёв окна
+const getDistances = (el) => {
+    const winWidth = window.innerWidth;
+    const winHeight = window.innerHeight;
+    const elWidth = el.getBoundingClientRect().width;
+    const elHeight= el.getBoundingClientRect().height;
+    const top = el.getBoundingClientRect().top;
+    const left = el.getBoundingClientRect().left;
+
+    return {
+        top,
+        left,
+        bottom: winHeight - top - elHeight,
+        right: winWidth - left - elWidth
+    }
+}
+
 window.addEventListener("load",
 function(event) {
     document.addEventListener('click', hideEffects);
@@ -81,6 +134,15 @@ function(event) {
 
     tabs.forEach(function (el) {
         el.addEventListener('click', handleTabClick);
+    });
+
+    // Ховер на информ поповера
+    const informers = nodeListToArray(document
+        .getElementsByClassName('informer'));
+
+    informers.forEach(function (el) {
+        el.addEventListener('mouseenter', showInfo);
+        el.addEventListener('mouseleave', hideInfo);
     });
 });
 // Стики хедер
@@ -138,12 +200,15 @@ function toggleModal(e) {
     const targetId = e.target.dataset.targetId;
     const dialogId = e.target.dataset.dialogShowId;
     const direction = e.target.dataset.direction;
+    const promoId = e.target.dataset.promoId;
 
     switch (direction) {
         case 'show':
-            dialogId
-                ? showModal(targetId, dialogId)
-                : showModal(targetId);
+            promoId
+                ? showPromo(promoId)
+                : dialogId
+                    ? showModal(targetId, dialogId)
+                    : showModal(targetId);
             break;
         case 'hide':
             hideModal(targetId);
@@ -332,8 +397,46 @@ function initialModalPromo() {
     const promoContainer = document
         .getElementById('modalPromoContainer');
 
+    checkPromo();
     setModalContainerHeight(promoContainer);
     setModalContainerWidth(promoContainer);
+}
+
+function checkPromo() {
+    const promos = nodeListToArray(document
+        .querySelectorAll('#modalPromoContainer li'));
+
+    const activePromos = promos.filter(function (el) {
+        return el.classList.contains('active');
+    })
+
+    if (activePromos.length === 0) {
+        promos[0].classList.add('active');
+    }
+
+    return promos[0];
+}
+
+// Показать конкретное промо
+function showPromo(promoId) {
+    const promos = nodeListToArray(document
+        .querySelectorAll('#modalPromoContainer li'));
+
+    let targetPromo = document.getElementById(promoId);
+
+    // Если нет promoId или нет узла с
+    // полученным в параметрах id на странице
+    // открываем первый промо материал
+    if (!promoId || targetPromo === null) {
+        targetPromo = promos[0];
+    }
+
+    promos.forEach(function (el) {
+        el.classList.remove('active');
+    });
+
+    targetPromo.classList.add('active');
+    showModal('modalPromo');
 }
 
 function toggleModalPromo (e) {
