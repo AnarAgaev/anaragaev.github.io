@@ -125,6 +125,32 @@ const getDistances = (el) => {
     }
 }
 
+// Показать отдельный tab при инициализации страницы
+function showTabPane(tabPaneId) {
+    const tabPane = document.getElementById(tabPaneId);
+
+    if (tabPane) {
+        const tab = document.querySelector('[data-target-id="'+tabPaneId+'"]');
+
+        const siblingsTabs = tab.closest('.tabs__list')
+            .getElementsByClassName('tabs__toggle');
+
+        const siblingsPanes = tabPane.closest('.tabs__content')
+            .getElementsByClassName('tabs__pane');
+
+        for (let i = 0; i < siblingsPanes.length; i++) {
+            siblingsPanes[i].classList.remove('active');
+        }
+
+        for (let i = 0; i < siblingsTabs.length; i++) {
+            siblingsTabs[i].classList.remove('active');
+        }
+
+        tab.classList.add('active');
+        tabPane.classList.add('active');
+    }
+}
+
 window.addEventListener("load",
 function(event) {
     document.addEventListener('click', hideEffects);
