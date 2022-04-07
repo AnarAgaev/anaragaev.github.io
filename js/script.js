@@ -570,8 +570,10 @@ function(event) {
     const formPasswordCreate = document
         .querySelector('#modalPasswordCreate form');
 
-    formPasswordCreate.addEventListener('submit',
-        handlerFormPasswordCreate);
+    if (formPasswordCreate) {
+        formPasswordCreate.addEventListener('submit',
+            handlerFormPasswordCreate);
+    }
 
     // Кастомные селекты
     const selectInputs = nodeListToArray(document
