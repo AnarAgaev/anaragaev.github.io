@@ -143,10 +143,86 @@
                     </form>
                   </div>
                   <div class="tabs__pane" id="profile-contacts">
-                    <h2 class="profile-settings__form-title">Плажетная информация</h2>
+                    <form class="profile-settings__form" action="#">
+                      <fieldset class="profile-settings__fieldset">
+                        <legend class="profile-settings__fieldset-title">Плажетная информация</legend><span class="profile-settings__group-title">Система для вывода средств</span>
+                        <div class="profile-settings__group">
+                          <div class="profile-settings__form-group-select">
+                            <label class="select"><span class="wrapper"><span class="arr"></span>
+                                <input class="input" type="text" value="YooMoney" readonly><span class="options"><span class="active">YooMoney</span><span>Robokassa</span><span>PayPall</span></span></span></label>
+                          </div>
+                          <div class="profile-settings__form-group">
+                            <!-- Полю с ошибкой добавлять класс .error-->
+                            <label class="error">
+                              <input class="input" type="text" placeholder="Номер кошелька">
+                            </label>
+                            <!-- После каждого input может стоять блок с ошибкой--><span class="error-msg">Текст ошибки</span>
+                          </div>
+                        </div>
+                        <button class="btn btn_primary" type="button">+ Добавить резервный кошелек</button>
+                      </fieldset>
+                      <fieldset class="profile-settings__fieldset">
+                        <legend class="profile-settings__fieldset-title">Контактная информация</legend>
+                        <div class="profile-settings__form-group">
+                          <label><span class="profile-settings__label">Телефон</span>
+                            <input class="input" type="text" placeholder="+7 (000) 000 00 00">
+                          </label><span class="error-msg">Текст ошибки</span>
+                        </div>
+                        <div class="profile-settings__form-group">
+                          <label><span class="profile-settings__label">Telegram</span>
+                            <input class="input" type="text" placeholder="@konst_kkk">
+                          </label><span class="error-msg">Текст ошибки</span>
+                        </div>
+                        <div class="profile-settings__form-group">
+                          <label><span class="profile-settings__label">Skype</span>
+                            <input class="input" type="text" placeholder="Укажите контактные данные">
+                          </label><span class="error-msg">Текст ошибки</span>
+                        </div>
+                      </fieldset>
+                      <div class="profile-settings__button-group">
+                        <!-- Заблокированной кнопке добавлять атрибут disabled-->
+                        <button class="btn btn_primary" type="submit" disabled>Сохранить изменения</button>
+                      </div>
+                    </form>
                   </div>
                   <div class="tabs__pane" id="profile-traffic">
-                    <h2 class="profile-settings__form-title">Используемые площадки</h2>
+                    <form class="profile-settings__form" action="#">
+                      <h3 class="profile-settings__title">Используемые площадки</h3>
+                      <p class="profile-settings__subtitle">Пожалуйста, перечислите все используемые вами площадки, откуда поступает трафик. Это нужно для чего-то там, где-то там, кому-то там.</p>
+                      <fieldset class="profile-settings__fieldset profile-settings__fieldset_traffic">
+                        <legend class="profile-settings__group-title">Площадка 1
+                          <div class="profile-settings__form-group">
+                            <label><span class="profile-settings__label profile-settings__label_traffic">Ссылка</span>
+                              <input class="input" type="text" placeholder="" value="https://in-scale.ru/">
+                            </label><span class="error-msg">Текст ошибки</span>
+                          </div>
+                          <div class="profile-settings__form-group">
+                            <label><span class="profile-settings__label profile-settings__label_traffic">Описание</span>
+                              <input class="input" type="text" placeholder="" value="Основной блог компании">
+                            </label><span class="error-msg">Текст ошибки</span>
+                          </div>
+                        </legend>
+                      </fieldset>
+                      <fieldset class="profile-settings__fieldset profile-settings__fieldset_traffic">
+                        <legend class="profile-settings__group-title">Площадка 2
+                          <div class="profile-settings__form-group">
+                            <label><span class="profile-settings__label profile-settings__label_traffic">Ссылка</span>
+                              <input class="input" type="text" placeholder="" value="https://my-micro-blog.ru/">
+                            </label><span class="error-msg">Текст ошибки</span>
+                          </div>
+                          <div class="profile-settings__form-group">
+                            <label><span class="profile-settings__label profile-settings__label_traffic">Описание</span>
+                              <input class="input" type="text" placeholder="" value="Дополнительный микро-блог">
+                            </label><span class="error-msg">Текст ошибки</span>
+                          </div>
+                        </legend>
+                      </fieldset>
+                      <div class="profile-settings__button-group">
+                        <button class="btn btn_primary" type="button">+ Добавить площадку</button>
+                        <!-- Заблокированной кнопке добавлять атрибут disabled-->
+                        <button class="btn btn_primary" type="submit" disabled>Сохранить изменения</button>
+                      </div>
+                    </form>
                   </div>
                 </div>
               </div>
