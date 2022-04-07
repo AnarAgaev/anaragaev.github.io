@@ -59,9 +59,8 @@ function hideSiblingTabs (node) {
 }
 
 function hideSiblingsTabPanes (node) {
-    const siblings = nodeListToArray(
-        node.closest('.tabs__content')
-            .getElementsByClassName('tabs__pane'));
+    let siblings = nodeListToArray(node
+        .closest('.tabs__content').children);
 
     removeActiveClassFromNodeList(siblings);
 }
@@ -196,13 +195,16 @@ function(event) {
     // Блокируем активную ссылку меню в хедере
     const headerNavLinksActive = document
         .querySelector('.header__nav .active');
-    headerNavLinksActive.addEventListener(
-        'click',
-        function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-            return false;
-        });
+
+    if (headerNavLinksActive) {
+        headerNavLinksActive.addEventListener(
+            'click',
+            function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                return false;
+            });
+    }
 });
 
 
