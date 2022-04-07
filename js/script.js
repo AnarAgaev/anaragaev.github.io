@@ -23,6 +23,10 @@ window.getScrollbarWidth = function() {
     let div = document.createElement('div');
     let scrollWidth;
 
+    if (!isScrollBarVisible()) {
+        return 0;
+    }
+
     div.style.overflowY = 'scroll';
     div.style.width = '50px';
     div.style.height = '50px';
@@ -32,6 +36,11 @@ window.getScrollbarWidth = function() {
     div.remove();
 
     return scrollWidth;
+}
+
+window.isScrollBarVisible = function () {
+    return window.innerWidth
+        !== document.documentElement.clientWidth;
 }
 
 function handleTabClick (e) {
@@ -448,6 +457,7 @@ function checkPromo() {
 // Показать конкретное промо
 // При использовании showPromo сразу после иницилизации страницы
 // добавить опциональный timout примерно в 1000 ms.
+// Чтобы успела проинициализироваться моальное окно с промо материалами
 function showPromo(promoId, timeout = 0) {
     const promos = nodeListToArray(document
         .querySelectorAll('#modalPromoContainer li'));
@@ -485,6 +495,12 @@ function toggleModalPromo (e) {
 
     promos[newActiveIdx].classList.add('active');
     initialModalPromo();
+
+    const src = promos[newActiveIdx]
+        .querySelector('img').src;
+
+    const downloadBtn = document.querySelector('#modalPromo .modal__controller-group a');
+    downloadBtn.href = src;
 }
 
 function toggleVisiblePassword(e) {
@@ -559,6 +575,41 @@ function handleSelectClick(e) {
     e.target.classList.add('active');
 }
 
+/* При создании модального окна не учитвается тип
+ * добавляемого промо материала.
+ * Промо добавляется только как картинка.
+ *
+ * При необходимости добавления промо других типов,
+ * читать тип промо материала из параметра data-type
+ * и добавлять промо в соответствии с его типом.
+ *
+ * Типы промо должны быть корректно указаны
+ * в соответствующием дата атрибуте превью промо.
+ * */
+function setModalPromo(promoArr) {
+    const container = document.getElementById('modalPromoContainer');
+
+    promoArr.forEach(function (el, idx) {
+        const id = 'promo_' + idx;
+
+        const li = document.createElement('li');
+        li.id = id
+
+        const img = document.createElement('img');
+        img.src = el.dataset.src;
+
+        li.appendChild(img);
+        container.appendChild(li);
+
+        el.dataset.promoId = id;
+
+        if (idx === 0) {
+            const downloadBtn = document.querySelector('#modalPromo .modal__controller-group a');
+            downloadBtn.href = el.dataset.src;
+        }
+    });
+}
+
 window.addEventListener("load",
 function(event) {
 
@@ -617,5 +668,10 @@ function(event) {
     selects.forEach(function (el) {
         el.addEventListener('click', handleSelectClick);
     });
+
+    //Собираем промо материалы в модал .modal_promo
+    const promos = nodeListToArray(document
+        .querySelectorAll('[data-target-id="modalPromo"][data-type]'));
+    if (promos.length > 0 ) setModalPromo(promos);
 });
 
