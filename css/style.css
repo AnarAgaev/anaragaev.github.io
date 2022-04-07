@@ -100,6 +100,17 @@ button {
     padding: 0;
 }
 
+fieldset, legend {
+    display: block;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+label {
+    position: relative;
+}
+
 .hidden {
     display: none !important;
 }
@@ -196,6 +207,20 @@ button {
 
 .content_offers-no {
     padding: 56px 30px 24px;
+}
+
+.content_privacy-policy {
+    padding: 30px;
+}
+
+.content_statistics-widht-btns {
+    padding: 35px 40px 10px;
+    border-top-left-radius: 0;
+}
+
+.content_profile-settings {
+    padding: 10px 40px 40px;
+    border-top-left-radius: 0;
 }
 
 .tabs {
@@ -867,6 +892,41 @@ button {
 
 .table .status_error::before {
     background-color: #f36476;
+}
+
+.error-msg {
+    display: none;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: 52px;
+    background: #ffc4cb;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 16px;
+    color: #bb3f4e;
+}
+
+.error input {
+    border-color: #f36476;
+    color: #f36476;
+}
+
+.error path {
+    fill: #f36476;
+}
+
+.error + .modal__err,
+.error + .error-msg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 14px;
 }
 
 .header {
@@ -2406,6 +2466,20 @@ button {
     margin-top: 20px;
 }
 
+.statistics-width-btns .buttons-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    margin-bottom: -25px;
+}
+
+.statistics-width-btns .buttons-group .btn {
+    margin-left: 10px;
+}
+
 .offers__title {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2951,4 +3025,117 @@ button {
     font-size: 13px;
     line-height: 20px;
     color: #40cc90;
+}
+
+.privacy-policy {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+}
+
+.privacy-policy__title {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 26px;
+    color: #3b3e43;
+}
+
+.privacy-policy__content {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    color: #3b3e43;
+}
+
+.profile-settings__title {
+    display: block;
+    position: relative;
+    margin: 0 0 10px;
+    padding: 0;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 34px;
+    color: #3b3e43;
+}
+
+.profile-settings__form {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 380px;
+}
+
+.profile-settings__fieldset {
+    display: block;
+    position: relative;
+    margin: 30px 0 0 0;
+}
+
+.profile-settings__fieldset-title {
+    display: block;
+    margin: 0 0 14px 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    color: #3b3e43;
+}
+
+.profile-settings__form-group {
+    display: block;
+    position: relative;
+    margin: 0 0 14px;
+    padding: 0;
+}
+
+.profile-settings__form-group:last-child {
+    margin-bottom: 0 !important;
+}
+
+.profile-settings__label {
+    display: block;
+    position: relative;
+    margin-bottom: 8px;
+    padding: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #3b3e43;
+}
+
+.profile-settings__button-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    margin: 30px 0 0;
+    padding: 0;
 }
