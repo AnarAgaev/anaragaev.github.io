@@ -103,26 +103,26 @@
               <div class="dashboard-connected-offers__button"><a class="btn btn_primary" href="">Выбрать оффер</a></div>
             </div>
             <div class="content content_block content_dashboard-profit">
-              <div class="profit">
-                <div class="profit__header">
-                  <h3 class="profit__title">Ваш доход</h3>
-                  <div class="profit__controlles">
-                    <div class="btn btn_sml btn_lite profit__date"><img src="" alt><span>05.01.22 &#183; 09.01.22</span></div>
-                    <div class="btn btn_sml btn_lite profit__offers-btn"><img src="" alt><span>Доход по офферам</span>
-                      <div class="dropdown"><span>Выберите тип данных:</span>
-                        <ul>
-                          <li><a class="active" href="#">Доход: общий</a></li>
-                          <li><a href="#">Доход: SpamGuard RU</a></li>
-                          <li><a href="#">Доход: SpamGuard ENG</a></li>
-                          <li><a href="#">Доход: InstaParser</a></li>
-                          <li><a href="#">Доход: ИнстаШпион</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="profit__chart-wrap"></div>
-              </div>
+                          <div class="profit">
+                            <div class="profit__header">
+                              <h3 class="profit__title">Ваш доход</h3>
+                              <div class="profit__controlles">
+                                <div class="btn btn_sml btn_lite profit__date"><img src="" alt><span>05.01.22 &#183; 09.01.22</span></div>
+                                <div class="btn btn_sml btn_lite profit__offers-btn"><img src="" alt><span>Доход по офферам</span>
+                                  <div class="dropdown"><span>Выберите тип данных:</span>
+                                    <ul>
+                                      <li><a class="active" href="#">Доход: общий</a></li>
+                                      <li><a href="#">Доход: SpamGuard RU</a></li>
+                                      <li><a href="#">Доход: SpamGuard ENG</a></li>
+                                      <li><a href="#">Доход: InstaParser</a></li>
+                                      <li><a href="#">Доход: ИнстаШпион</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="profit__chart-wrap"></div>
+                          </div>
             </div>
             <div class="dashboard-statistics">
               <h3 class="tabs__title">Статистика</h3>
@@ -965,6 +965,73 @@
                 <li><a href="#"><img src="img/i-google-enter.svg" alt></a></li>
               </ul>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal_request-sent-order" id="requestSentOrder">
+      <div class="modal__dialog hidden hide" id="requestOrder">
+        <div class="modal__content">
+          <button class="modal__close" type="button" data-toggle="modal" data-direction="hide" data-target-id="requestSentOrder"></button>
+          <div class="modal__header">
+            <h4 class="modal__title">Заявка на вывод</h4>
+            <p class="modal__subtitle">Оставьте заявку на вывод средств. Обработка заявки может занять некоторое время</p>
+          </div>
+          <div class="modal__body">
+            <div class="balance__card balance__card_dark">
+              <h4>Доступно для вывода</h4>
+              <p>6 240 000 ₽</p><span class="informer"><span class="informer__body"><span class="informer__title">Infoblock title</span><span class="informer__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span></span></span>
+            </div>
+            <form class="modal__form" action="#">
+              <div class="modal__form-group"><span class="profile-settings__label">Укажите сумму вывода</span>
+                <!-- Полю с ошибкой добавлять класс .error-->
+                <label>
+                  <!-- Для блокировки и разблокировки поля ввода использовать атрибут disabled-->
+                  <input class="input" type="text" placeholder="Укажите сумму вывода" disabled>
+                  <!-- После каждого input может стоять блок с ошибкой-->
+                </label><span class="modal__err">Текст ошибки почты</span>
+              </div>
+              <div class="modal__form-group"><span class="profile-settings__label">Кошелек для вывода</span>
+                <!-- Показывать эту кнопку только для состояний Положительный баланс и есть кошельки-->
+                <!-- Для того чтобы скрыть поле ввода, можно использовать класс .hidden на лэйбле-->
+                <label class="select"><span class="wrapper"><span class="arr"></span>
+                    <input class="input" type="text" value="Выберите куда вывести ср-ва" readonly><span class="options"><span>YooMoney (94298148218482184)</span><span>PayPal (94292321328148218482184)</span><span>Visa (4555122345674321)</span><span class="link"><a href="profile.html">Перейти в Настройки вывода</a></span></span></span></label>
+              </div>
+              <div class="modal__form-group modal__form-group_btn-vertical">
+                <!-- Показывать эту кнопку только для состояний Нет балланса и Нет кошелька-->
+                <!-- Для того чтобы скрыть кнопку, можно использовать класс .hidden--><a class="btn btn_primary w-100" href="profile.html">Настройки вывода</a>
+                <!-- Для переключения диалоговых окон, можно использовать-->
+                <!-- функцию switchDialog(dialogId, modalId = undefined);-->
+                <!-- Для блокировки кнопки Вывода средств использовать атрибут disabled-->
+                <button class="btn btn_lite" role="dialog" data-toggle="modal" data-direction="toggle" data-target-id="requestSent">Заказать вывод средств</button>
+              </div>
+            </form>
+          </div>
+          <div class="modal__footer">
+            <div class="modal__contacts">По всем вопросам обращайтесь&nbsp;<a class="link" href="mailto:partners@zen-cpa.ru">partners@zen-cpa.ru</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal__dialog hidden hide" id="requestSent">
+        <div class="modal__content">
+          <button class="modal__close" type="button" data-toggle="modal" data-direction="hide" data-target-id="requestSentOrder"></button>
+          <div class="modal__header">
+            <h4 class="modal__title">Заявка на вывод</h4>
+          </div>
+          <div class="modal__body">
+            <form class="modal__form" action="#">
+              <div class="modal__results-txt"><img src="img/i-res-check.svg" alt>
+                <h4>Ваша заявка успешно создана</h4>
+                <p>Отслеживать статус заявки вы можете на странице<span> «История выплат»</span></p>
+              </div>
+              <div class="modal__form-group modal__form-group_btn-vertical">
+                <button class="btn btn_primary" id="showHistoryBtn" data-toggle="modal" data-direction="hide" data-target-id="requestSentOrder">История выплат</button>
+                <button class="btn btn_lite" type="button" data-toggle="modal" data-direction="hide" data-target-id="requestSentOrder">Закрыть</button>
+              </div>
+            </form>
+          </div>
+          <div class="modal__footer">
+            <div class="modal__contacts">По всем вопросам обращайтесь&nbsp;<a class="link" href="mailto:partners@zen-cpa.ru">partners@zen-cpa.ru</a></div>
           </div>
         </div>
       </div>

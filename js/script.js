@@ -138,21 +138,11 @@ function showTabPane(tabPaneId) {
     const tabPane = document.getElementById(tabPaneId);
 
     if (tabPane) {
-        const tab = document.querySelector('[data-target-id="'+tabPaneId+'"]');
+        const tab = document.querySelector(
+            '[data-target-id="'+tabPaneId+'"]');
 
-        const siblingsTabs = tab.closest('.tabs__list')
-            .getElementsByClassName('tabs__toggle');
-
-        const siblingsPanes = tabPane.closest('.tabs__content')
-            .getElementsByClassName('tabs__pane');
-
-        for (let i = 0; i < siblingsPanes.length; i++) {
-            siblingsPanes[i].classList.remove('active');
-        }
-
-        for (let i = 0; i < siblingsTabs.length; i++) {
-            siblingsTabs[i].classList.remove('active');
-        }
+        hideSiblingTabs(tab);
+        hideSiblingsTabPanes(tabPane);
 
         tab.classList.add('active');
         tabPane.classList.add('active');
@@ -590,13 +580,20 @@ function setModalPromo(promoArr) {
     const container = document.getElementById('modalPromoContainer');
 
     promoArr.forEach(function (el, idx) {
+        const src = el.dataset.src;
         const id = 'promo_' + idx;
 
         const li = document.createElement('li');
         li.id = id
 
         const img = document.createElement('img');
-        img.src = el.dataset.src;
+        img.src = src;
+
+        if(isImgSvg(el.dataset.src)) {
+            img.style.maxWidth = '400px';
+            img.style.height = 'auto';
+            img.style.width = '90vw';
+        }
 
         li.appendChild(img);
         container.appendChild(li);
@@ -608,6 +605,10 @@ function setModalPromo(promoArr) {
             downloadBtn.href = el.dataset.src;
         }
     });
+}
+
+function isImgSvg(string) {
+    return string.indexOf('.svg') !== -1;
 }
 
 window.addEventListener("load",
@@ -673,5 +674,14 @@ function(event) {
     const promos = nodeListToArray(document
         .querySelectorAll('[data-target-id="modalPromo"][data-type]'));
     if (promos.length > 0 ) setModalPromo(promos);
+
+    // Открываем историю выплат, полсе отправки запроса
+    const showHistoryBtn = document.getElementById('showHistoryBtn');
+
+    if (showHistoryBtn) {
+        showHistoryBtn.addEventListener('click', function () {
+            showTabPane('history');
+        });
+    }
 });
 
