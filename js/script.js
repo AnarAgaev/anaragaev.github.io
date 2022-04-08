@@ -518,8 +518,9 @@ function toggleModalPromo (e) {
     const src = promos[newActiveIdx]
         .querySelector('img').src;
 
-    const downloadBtn = document.querySelector('#modalPromo .modal__controller-group a');
-    downloadBtn.href = src;
+    const downloadPromoBtn = document
+        .getElementById('downloadPromo');
+    downloadPromoBtn.href = src;
 }
 
 function toggleVisiblePassword(e) {
