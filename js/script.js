@@ -449,6 +449,9 @@ function checkPromo() {
 // добавить опциональный timout примерно в 1000 ms.
 // Чтобы успела проинициализироваться моальное окно с промо материалами
 function showPromo(promoId, timeout = 0) {
+    const downloadPromoBtn = document
+        .getElementById('downloadPromo');
+
     const promos = nodeListToArray(document
         .querySelectorAll('#modalPromoContainer li'));
 
@@ -466,10 +469,36 @@ function showPromo(promoId, timeout = 0) {
     });
 
     targetPromo.classList.add('active');
+    downloadPromoBtn.href = getPromoSrc(promoId);
 
     setTimeout(function () {
         showModal('modalPromo');
     }, timeout);
+}
+
+function getPromoSrc(promoId) {
+    const children = nodeListToArray(document
+        .getElementById(promoId)
+        .getElementsByTagName("*"));
+
+        const childrenSrc = children.filter(function (el) {
+            return el.src;
+        });
+
+        if (childrenSrc.length > 0 ) {
+            return childrenSrc[0].src;
+        }
+
+        const childrenHref = children.filter(function (el) {
+            return el.href;
+        });
+
+        if (childrenHref.length > 0 ) {
+            return childrenHref[0].href;
+        }
+
+        console.log('*** Invalid promo material URL. No src and href.');
+        return '';
 }
 
 function toggleModalPromo (e) {
@@ -601,7 +630,8 @@ function setModalPromo(promoArr) {
         el.dataset.promoId = id;
 
         if (idx === 0) {
-            const downloadBtn = document.querySelector('#modalPromo .modal__controller-group a');
+            const downloadBtn = document.querySelector(
+                '#modalPromo .modal__controller-group a');
             downloadBtn.href = el.dataset.src;
         }
     });
