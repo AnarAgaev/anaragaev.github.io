@@ -54,6 +54,7 @@
             </nav>
           </div>
           <div class="col-3 header__button">
+            <button class="btn btn_sml btn_lite" id="managerCardShow">Ваш менеджер</button>
             <button class="header__nav-toggle" type="button" data-toggle="modal" data-direction="show" data-target-id="settingMenu"></button>
           </div>
         </div>
@@ -62,7 +63,7 @@
     <main class="main" id="main">
       <div class="container">
         <div class="row">
-          <div class="col-9">
+          <div class="col-9" id="contentWrap">
             <div class="profile-settings">
               <h3 class="tabs__title">Настройки</h3>
               <ul class="tabs__list">
@@ -234,8 +235,9 @@
               </div>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-3" id="asideWrap">
             <aside class="aside" id="aside">
+              <button class="modal__close" id="managerCardHide" type="button"></button>
               <h3 class="aside__caption">Ваш менеджер</h3>
               <!-- Картинку менеджера добавлять как инлайновый стиль--><span class="aside__pic" style="background-image: url('img/temp/manager.jpg');"></span>
               <h4 class="aside__name">Константинов Константин</h4>
@@ -265,6 +267,10 @@
                 <li><a href="profile.html">Платежные данные</a></li>
                 <li><a href="profile.html">Политика конфиденцииальности</a></li>
                 <li><a href="#">Выйти из профиля</a></li>
+                <li class="modal__nav-item"><a href="dashboard.html">Дашборд</a></li>
+                <li class="modal__nav-item"><a href="statistics.html">Статистика</a></li>
+                <li class="modal__nav-item"><a href="offers.html">Офферы</a></li>
+                <li class="modal__nav-item"><a href="payments.html">Выплаты</a></li>
               </ul>
             </div>
           </div>

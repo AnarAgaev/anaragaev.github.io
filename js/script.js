@@ -5,6 +5,10 @@ window.hideEffects = function (e) {
     // Selects
     const isSelect = _this.closest('.select');
     if (!isSelect) collapseAllSelects();
+
+    // Info popovers
+    const isPopOver = _this.closest('.informer');
+    if (!isPopOver) resetAllInfos();
 }
 
 // Переклаывает html коллекцию в массив
@@ -80,23 +84,29 @@ function removeActiveClassFromNodeList(nodeList) {
     });
 }
 
-
 function showInfo(e) {
     const el = e.target;
     const popover = el.querySelector('.informer__body');
     const popoverWidth = popover.offsetWidth;
     const popoverHeight = popover.offsetHeight;
     const distances = getDistances(el);
+    const isTableChild = el.closest('.table');
+    const topOffset = distances.top;
+    const leftOffset = isTableChild
+        ? distances.left - 35
+        : distances.left;
 
     // Возможные классы для поповера
     // informer_tl, informer_tr,
     // informer_bl, informer_br
     let clazz = 'informer_'
 
-    clazz += popoverHeight < distances.top
-        ? 't' : 'b';
+    clazz += isTableChild
+        ? 'b'
+        : popoverHeight < topOffset
+            ? 't' : 'b';
 
-    clazz += popoverWidth < distances.left
+    clazz += popoverWidth < leftOffset
         ? 'l' : 'r'
 
     el.classList.add('show');
@@ -106,14 +116,27 @@ function showInfo(e) {
     }, 10);
 }
 
-function hideInfo(e) {
-    e.target.classList.remove(
-        'show',
-        'informer_tl',
-        'informer_tr',
-        'informer_br',
-        'informer_bl'
-    );
+function toggleInfo(e) {
+    const isVisible = e.target
+        .classList.contains('show');
+
+    resetAllInfos();
+    isVisible ? resetAllInfos() : showInfo(e);
+}
+
+function resetAllInfos() {
+    const nodes = nodeListToArray(document
+        .getElementsByClassName('informer'));
+
+    nodes.forEach(function (el) {
+        el.classList.remove(
+            'show',
+            'informer_tl',
+            'informer_tr',
+            'informer_br',
+            'informer_bl'
+        );
+    });
 }
 
 // Возвращает объект расстояний от элемента до краёв окна
@@ -165,8 +188,24 @@ function(event) {
         .getElementsByClassName('informer'));
 
     informers.forEach(function (el) {
-        el.addEventListener('mouseenter', showInfo);
-        el.addEventListener('mouseleave', hideInfo);
+        el.addEventListener('mouseenter', function (e) {
+            const  windowWidth = window.innerWidth;
+            if (windowWidth > 1024) {
+                showInfo(e);
+            }
+        });
+        el.addEventListener('mouseleave', function (e) {
+            const  windowWidth = window.innerWidth;
+            if (windowWidth > 1024) {
+                resetAllInfos();
+            }
+        });
+        el.addEventListener('click', function (e) {
+            const  windowWidth = window.innerWidth;
+            if (windowWidth <= 1024) {
+                toggleInfo(e);
+            }
+        });
     });
 });
 // Стики хедер
@@ -189,6 +228,34 @@ window.addEventListener('scroll', function() {
     lastScrollTop = window.pageYOffset;
 });
 
+function showManagerModal() {
+    const wrap = document.getElementById('asideWrap');
+    const bodyClasses = document.body.classList;
+    const wrapClasses = wrap.classList;
+    const scrollbarWidth = getScrollbarWidth();
+    const header = document.getElementById('header');
+
+    bodyClasses.add('modal-open');
+    document.body.style.paddingRight = scrollbarWidth + 'px';
+    wrapClasses.add('show');
+    wrap.style.paddingRight = scrollbarWidth + 'px';
+    header.style.paddingRight = scrollbarWidth + 'px';
+    header.style.transition = 'none';
+}
+
+function hideManagerModal() {
+    const wrap = document.getElementById('asideWrap');
+    const bodyClasses = document.body.classList;
+    const wrapClasses = wrap.classList;
+    const header = document.getElementById('header');
+
+    bodyClasses.remove('modal-open');
+    document.body.style.removeProperty('padding-right');
+    wrapClasses.remove('show');
+    wrap.style.removeProperty('padding-right');
+    header.style.removeProperty('padding-right');
+}
+
 window.addEventListener("load",
 function(event) {
     // Блокируем активную ссылку меню в хедере
@@ -203,6 +270,24 @@ function(event) {
                 e.stopPropagation();
                 return false;
             });
+    }
+
+    // Переключаем карточку мэнеджера для мобильных устройств
+    const managerCardShowBtn = document
+        .getElementById('managerCardShow');
+
+    const managerCardHideBtn = document
+        .getElementById('managerCardHide');
+
+
+    if (managerCardShowBtn) {
+        managerCardShowBtn.addEventListener(
+            'click', showManagerModal);
+    }
+
+    if (managerCardHideBtn) {
+        managerCardHideBtn.addEventListener(
+            'click', hideManagerModal);
     }
 });
 
