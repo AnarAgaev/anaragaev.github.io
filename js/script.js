@@ -93,7 +93,7 @@ function showInfo(e) {
     const isTableChild = el.closest('.table');
     const topOffset = distances.top;
     const leftOffset = isTableChild
-        ? distances.left - 35
+        ? distances.left - 60
         : distances.left;
 
     // Возможные классы для поповера
@@ -661,6 +661,8 @@ function toggleSelect(e) {
         : dropSelect(select)
 }
 
+const event = new CustomEvent("optionEventClick");
+
 function handleSelectClick(e) {
     const otherOptions = nodeListToArray(e.target
         .closest('.options')
@@ -678,6 +680,8 @@ function handleSelectClick(e) {
     });
 
     e.target.classList.add('active');
+
+    input.dispatchEvent(event);
 }
 
 /* При создании модального окна не учитвается тип
@@ -705,9 +709,9 @@ function setModalPromo(promoArr) {
         img.src = src;
 
         if(isImgSvg(el.dataset.src)) {
-            img.style.maxWidth = '400px';
+            img.style.maxWidth = '100%';
             img.style.height = 'auto';
-            img.style.width = '90vw';
+            img.style.width = '100%';
         }
 
         li.appendChild(img);
