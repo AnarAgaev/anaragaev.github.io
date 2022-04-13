@@ -639,7 +639,6 @@ function handlerFormPasswordCreate(e) {
         return;
     }
 
-
     // Здесь должна быть обработка данных формы!
     console.log('Здесь должна быть обработка данных формы!');
 }
@@ -804,4 +803,3 @@ function(event) {
         });
     }
 });
-
