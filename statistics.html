@@ -64,7 +64,326 @@
       <div class="container">
         <div class="row">
           <div class="col-9" id="contentWrap">
-            <!--include blog-caption-->
+            <div class="statistic">
+              <h3 class="tabs__title">Подробная статистика</h3>
+              <ul class="tabs__list">
+                <li class="tabs__item">
+                  <button class="tabs__toggle active" type="button" data-target-id="days">По дням</button>
+                </li>
+                <li class="tabs__item">
+                  <button class="tabs__toggle" type="button" data-target-id="offers">По офферам</button>
+                </li>
+              </ul>
+              <div class="content content_block content_offer-tabs">
+                <div class="tabs__content">
+                  <div class="tabs__pane active" id="days">
+                    <div class="statistics-width-btns">
+                      <div class="buttons-group">
+                        <button class="btn btn_sml btn_lite">Выбрать дату</button>
+                        <button class="btn btn_sml btn_lite">Скачать отчет</button>
+                      </div>
+                      <ul class="tabs__list">
+                        <li class="tabs__item">
+                          <button class="tabs__toggle active" type="button" data-target-id="day-cpa">CPA</button>
+                        </li>
+                        <li class="tabs__item">
+                          <button class="tabs__toggle" type="button" data-target-id="day-revshare">RevShare</button>
+                        </li>
+                      </ul>
+                      <div class="content content_block content_offer-tabs">
+                        <div class="tabs__content">
+                          <div class="tabs__pane active" id="day-cpa">
+                            <table class="table table_four-columns" cellpadding="0" cellspacing="0">
+                              <thead>
+                                <tr>
+                                  <th>
+                                    <!-- Для изменеия иконки типа сортировки добавить класс .flip к кнопке-->
+                                    <button class="sort-btn" type="button"></button>Дата<span class="informer"><span class="informer__body"><span class="informer__title">Заголовок инфоблока</span><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span>
+                                  </th>
+                                  <th>Регистрации<span class="informer"><span class="informer__body"><span class="informer__title">Заголовок инфоблока</span><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span></th>
+                                  <th>Привязки<span class="informer"><span class="informer__body"><span class="informer__title">Заголовок инфоблока</span><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span></th>
+                                  <th>Доход, $<span class="informer"><span class="informer__body"><span class="informer__title">Заголовок инфоблока</span><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span></th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td><span>MM.DD.YYYY</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                </tr>
+                                <tr>
+                                  <td><span>MM.DD.YYYY</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                </tr>
+                                <tr>
+                                  <td><span>MM.DD.YYYY</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                </tr>
+                                <tr>
+                                  <td><span>MM.DD.YYYY</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                </tr>
+                                <tr>
+                                  <td><span>MM.DD.YYYY</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                </tr>
+                              </tbody>
+                              <tfoot>
+                                <tr>
+                                  <td><span>Total</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                </tr>
+                              </tfoot>
+                            </table>
+                            <div class="dashboard-statistics__btn dashboard-statistics__btn_centered"><a class="btn btn_sml btn_lite" href="#">Показать ещё 20 строк</a></div>
+                          </div>
+                          <div class="tabs__pane" id="day-revshare">
+                            <table class="table table_seven-columns" cellpadding="0" cellspacing="0">
+                              <thead>
+                                <tr>
+                                  <th>
+                                    <!-- Для изменеия иконки типа сортировки добавить класс .flip к кнопке-->
+                                    <button class="sort-btn flip" type="button"></button>Дата<span class="informer"><span class="informer__body"><span class="informer__title">Заголовок инфоблока</span><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span>
+                                  </th>
+                                  <th>Регистрации<span class="informer"><span class="informer__body"><span class="informer__title">Заголовок инфоблока</span><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span></th>
+                                  <th>Привязки<span class="informer"><span class="informer__body"><span class="informer__title">Заголовок инфоблока</span><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span></th>
+                                  <th>1 Оплата, $<span class="informer"><span class="informer__body"><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span></th>
+                                  <th>2 оплаты, $<span class="informer"><span class="informer__body"><span class="informer__title">Заголовок инфоблока</span><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span></th>
+                                  <th>Отписки<span class="informer"><span class="informer__body"><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span></th>
+                                  <th>Доход, $<span class="informer"><span class="informer__body"><span class="informer__title">Заголовок инфоблока</span><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span></th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td><span>MM.DD.YYYY</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                </tr>
+                                <tr>
+                                  <td><span>MM.DD.YYYY</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                </tr>
+                                <tr>
+                                  <td><span>MM.DD.YYYY</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                </tr>
+                                <tr>
+                                  <td><span>MM.DD.YYYY</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                </tr>
+                              </tbody>
+                              <tfoot>
+                                <tr>
+                                  <td><span>Total</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                </tr>
+                              </tfoot>
+                            </table>
+                            <div class="dashboard-statistics__btn dashboard-statistics__btn_centered"><a class="btn btn_sml btn_lite" href="#">Показать ещё 20 строк</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tabs__pane" id="offers">
+                    <div class="statistics-width-btns">
+                      <div class="buttons-group">
+                        <div class="btn btn_sml btn_primary btn_with-drop">Выбрать оффер
+                          <div class="button-dropdown"><span class="button-dropdown__title">Выберите оффер:</span>
+                            <label class="radio__container">
+                              <input class="invisible" type="radio" name="offers" value="WinBerry"><span class="radio__label">WinBerry</span>
+                            </label>
+                            <label class="radio__container">
+                              <input class="invisible" type="radio" name="offers" value="GhostHunter"><span class="radio__label">GhostHunter</span>
+                            </label>
+                            <label class="radio__container">
+                              <!-- Выбранному по умолчанию элементу добавлять атрибут checked в input-->
+                              <input class="invisible" type="radio" name="offers" value="DataJam" checked><span class="radio__label">DataJam</span>
+                            </label>
+                            <label class="radio__container">
+                              <input class="invisible" type="radio" name="offers" value="AvoData"><span class="radio__label">AvoData</span>
+                            </label>
+                          </div>
+                        </div>
+                        <button class="btn btn_sml btn_lite">Выбрать дату</button>
+                        <button class="btn btn_sml btn_lite">Скачать отчет</button>
+                      </div>
+                      <ul class="tabs__list">
+                        <li class="tabs__item">
+                          <button class="tabs__toggle active" type="button" data-target-id="offers-cpa">CPA</button>
+                        </li>
+                        <li class="tabs__item">
+                          <button class="tabs__toggle" type="button" data-target-id="offers-revshare">RevShare</button>
+                        </li>
+                      </ul>
+                      <div class="content content_block content_offer-tabs">
+                        <div class="tabs__content">
+                          <div class="tabs__pane active" id="offers-cpa">
+                            <table class="table table_four-columns" cellpadding="0" cellspacing="0">
+                              <thead>
+                                <tr>
+                                  <th>
+                                    <!-- Для изменеия иконки типа сортировки добавить класс .flip к кнопке-->
+                                    <button class="sort-btn" type="button"></button>Дата<span class="informer"><span class="informer__body"><span class="informer__title">Заголовок инфоблока</span><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span>
+                                  </th>
+                                  <th>Регистрации<span class="informer"><span class="informer__body"><span class="informer__title">Заголовок инфоблока</span><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span></th>
+                                  <th>Привязки<span class="informer"><span class="informer__body"><span class="informer__title">Заголовок инфоблока</span><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span></th>
+                                  <th>Доход, $<span class="informer"><span class="informer__body"><span class="informer__title">Заголовок инфоблока</span><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span></th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td><span>MM.DD.YYYY</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                </tr>
+                                <tr>
+                                  <td><span>MM.DD.YYYY</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                </tr>
+                                <tr>
+                                  <td><span>MM.DD.YYYY</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                </tr>
+                                <tr>
+                                  <td><span>MM.DD.YYYY</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                </tr>
+                                <tr>
+                                  <td><span>MM.DD.YYYY</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                </tr>
+                              </tbody>
+                              <tfoot>
+                                <tr>
+                                  <td><span>Total</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                </tr>
+                              </tfoot>
+                            </table>
+                            <div class="dashboard-statistics__btn dashboard-statistics__btn_centered"><a class="btn btn_sml btn_lite" href="#">Показать ещё 20 строк</a></div>
+                          </div>
+                          <div class="tabs__pane" id="offers-revshare">
+                            <table class="table table_seven-columns" cellpadding="0" cellspacing="0">
+                              <thead>
+                                <tr>
+                                  <th>
+                                    <!-- Для изменеия иконки типа сортировки добавить класс .flip к кнопке-->
+                                    <button class="sort-btn flip" type="button"></button>Дата<span class="informer"><span class="informer__body"><span class="informer__title">Заголовок инфоблока</span><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span>
+                                  </th>
+                                  <th>Регистрации<span class="informer"><span class="informer__body"><span class="informer__title">Заголовок инфоблока</span><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span></th>
+                                  <th>Привязки<span class="informer"><span class="informer__body"><span class="informer__title">Заголовок инфоблока</span><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span></th>
+                                  <th>1 Оплата, $<span class="informer"><span class="informer__body"><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span></th>
+                                  <th>2 оплаты, $<span class="informer"><span class="informer__body"><span class="informer__title">Заголовок инфоблока</span><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span></th>
+                                  <th>Отписки<span class="informer"><span class="informer__body"><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span></th>
+                                  <th>Доход, $<span class="informer"><span class="informer__body"><span class="informer__title">Заголовок инфоблока</span><span class="informer__desc">Иноформаионный текст идет полсе заголовка. Заголовок можно не писать</span></span></span></th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td><span>MM.DD.YYYY</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                </tr>
+                                <tr>
+                                  <td><span>MM.DD.YYYY</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                </tr>
+                                <tr>
+                                  <td><span>MM.DD.YYYY</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                </tr>
+                                <tr>
+                                  <td><span>MM.DD.YYYY</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                </tr>
+                              </tbody>
+                              <tfoot>
+                                <tr>
+                                  <td><span>Total</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                  <td><span>XXXX</span></td>
+                                </tr>
+                              </tfoot>
+                            </table>
+                            <div class="dashboard-statistics__btn dashboard-statistics__btn_centered"><a class="btn btn_sml btn_lite" href="#">Показать ещё 20 строк</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="col-3" id="asideWrap">
             <aside class="aside" id="aside">
