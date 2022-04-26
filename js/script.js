@@ -9,6 +9,18 @@ window.hideEffects = function (e) {
     // Info popovers
     const isPopOver = _this.closest('.informer');
     if (!isPopOver) resetAllInfos();
+
+    // Card infos
+    const isCardInfo = _this.closest('.inform');
+    if (!isCardInfo) resetAllCardInfos();
+
+    // Card menu
+    const isCardMenu = _this.closest('.dashboard__card-menu');
+    if (!isCardMenu) resetAllCardMenu();
+
+    // Card recommendations
+    const isCardRecom = _this.closest('.dashboard__card-recommendation');
+    if (!isCardRecom) resetAllCardRecom();
 }
 
 // Переклаывает html коллекцию в массив
@@ -139,6 +151,40 @@ function resetAllInfos() {
     });
 }
 
+function resetAllCardInfos() {
+    const nodes = nodeListToArray(document
+        .querySelectorAll('.dashboard__card-data .inform.show'));
+
+    nodes.forEach(function (el) {
+        el.classList.remove(
+            'show'
+        );
+    });
+}
+
+function resetAllCardMenu() {
+    const nodes = nodeListToArray(document
+        .querySelectorAll('.dashboard__card-menu ul.show'));
+
+    nodes.forEach(function (el) {
+        el.classList.remove(
+            'show'
+        );
+    });
+}
+
+function resetAllCardRecom() {
+    const nodes = nodeListToArray(document
+        .querySelectorAll('.dashboard__card-recommendation.show'));
+
+    nodes.forEach(function (el) {
+        el.classList.remove(
+            'show'
+        );
+    });
+}
+
+
 // Возвращает объект расстояний от элемента до краёв окна
 const getDistances = (el) => {
     const winWidth = window.innerWidth;
@@ -176,123 +222,22 @@ window.addEventListener("load",
 function(event) {
     document.addEventListener('click', hideEffects);
 
-    const tabs = nodeListToArray(document
-        .getElementsByClassName('tabs__toggle'));
+//     const tabs = nodeListToArray(document
+//         .getElementsByClassName('tabs__toggle'));
+//
+//     tabs.forEach(function (el) {
+//         el.addEventListener('click', handleTabClick);
+//     });
+//
 
-    tabs.forEach(function (el) {
-        el.addEventListener('click', handleTabClick);
-    });
-
-    // Ховер на информ поповера
+    // Показываем информ тултип
     const informers = nodeListToArray(document
         .getElementsByClassName('informer'));
 
     informers.forEach(function (el) {
-        el.addEventListener('mouseenter', function (e) {
-            const  windowWidth = window.innerWidth;
-            if (windowWidth > 1024) {
-                showInfo(e);
-            }
-        });
-        el.addEventListener('mouseleave', function (e) {
-            const  windowWidth = window.innerWidth;
-            if (windowWidth > 1024) {
-                resetAllInfos();
-            }
-        });
-        el.addEventListener('click', function (e) {
-            const  windowWidth = window.innerWidth;
-            if (windowWidth <= 1024) {
-                toggleInfo(e);
-            }
-        });
+        el.addEventListener('click', toggleInfo);
     });
-});
-// Стики хедер
-let lastScrollTop = 0;
-
-window.addEventListener('scroll', function() {
-    const header = document
-        .getElementById('header').classList;
-
-    let scrollTop = window.pageYOffset;
-
-    scrollTop > 0
-        ? header.add('shadow')
-        : header.remove('shadow');
-
-    scrollTop > 50 && scrollTop > lastScrollTop
-        ? header.add('hide')
-        : header.remove('hide');
-
-    lastScrollTop = window.pageYOffset;
-});
-
-function showManagerModal() {
-    const wrap = document.getElementById('asideWrap');
-    const bodyClasses = document.body.classList;
-    const wrapClasses = wrap.classList;
-    const scrollbarWidth = getScrollbarWidth();
-    const header = document.getElementById('header');
-
-    bodyClasses.add('modal-open');
-    document.body.style.paddingRight = scrollbarWidth + 'px';
-    wrapClasses.add('show');
-    wrap.style.paddingRight = scrollbarWidth + 'px';
-    header.style.paddingRight = scrollbarWidth + 'px';
-    header.style.transition = 'none';
-}
-
-function hideManagerModal() {
-    const wrap = document.getElementById('asideWrap');
-    const bodyClasses = document.body.classList;
-    const wrapClasses = wrap.classList;
-    const header = document.getElementById('header');
-
-    bodyClasses.remove('modal-open');
-    document.body.style.removeProperty('padding-right');
-    wrapClasses.remove('show');
-    wrap.style.removeProperty('padding-right');
-    header.style.removeProperty('padding-right');
-}
-
-window.addEventListener("load",
-function(event) {
-    // Блокируем активную ссылку меню в хедере
-    const headerNavLinksActive = document
-        .querySelector('.header__nav .active');
-
-    if (headerNavLinksActive) {
-        headerNavLinksActive.addEventListener(
-            'click',
-            function (e) {
-                e.preventDefault();
-                e.stopPropagation();
-                return false;
-            });
-    }
-
-    // Переключаем карточку мэнеджера для мобильных устройств
-    const managerCardShowBtn = document
-        .getElementById('managerCardShow');
-
-    const managerCardHideBtn = document
-        .getElementById('managerCardHide');
-
-
-    if (managerCardShowBtn) {
-        managerCardShowBtn.addEventListener(
-            'click', showManagerModal);
-    }
-
-    if (managerCardHideBtn) {
-        managerCardHideBtn.addEventListener(
-            'click', hideManagerModal);
-    }
-});
-
-
-
+})
 window.collapseAllSelects = function() {
     const selects = nodeListToArray(document
         .getElementsByClassName('select'));
@@ -312,13 +257,10 @@ function toggleModal(e) {
     const targetId = e.target.dataset.targetId;
     const dialogId = e.target.dataset.dialogShowId;
     const direction = e.target.dataset.direction;
-    const promoId = e.target.dataset.promoId;
 
     switch (direction) {
         case 'show':
-            promoId
-                ? showPromo(promoId)
-                : dialogId
+            dialogId
                     ? showModal(targetId, dialogId)
                     : showModal(targetId);
             break;
@@ -336,23 +278,11 @@ function showModal(modalId, dialogId = undefined) {
     const bodyClasses = document.body.classList;
     const modalClasses = modal.classList;
     const scrollbarWidth = getScrollbarWidth();
-    const header = document.getElementById('header');
 
     bodyClasses.add('modal-open');
     document.body.style.paddingRight = scrollbarWidth + 'px';
     modalClasses.add('show');
     modal.style.paddingRight = scrollbarWidth + 'px';
-    header.style.paddingRight = scrollbarWidth + 'px';
-    header.style.transition = 'none';
-
-    switch (modalId) {
-        case 'modalArticles':
-            initialModalArticles();
-            break;
-        case 'modalPromo':
-            initialModalPromo();
-            break;
-    }
 
     if (dialogId) {
         const dialog = document.getElementById(dialogId);
@@ -368,7 +298,6 @@ function hideModal(modalId) {
     const modal = document.getElementById(modalId);
     const bodyClasses = document.body.classList;
     const modalClasses = modal.classList;
-    const header = document.getElementById('header');
 
     const dialogs = nodeListToArray(document.getElementById(modalId)
         .getElementsByClassName('modal__dialog'));
@@ -385,12 +314,6 @@ function hideModal(modalId) {
     document.body.style.removeProperty('padding-right');
     modalClasses.remove('show');
     modal.style.removeProperty('padding-right');
-    header.style.removeProperty('padding-right');
-
-    setTimeout(function () {
-        header.style.removeProperty('transition');
-    }, 100);
-
 }
 
 function switchDialog(dialogId, modalId = undefined) {
@@ -431,183 +354,6 @@ function switchDialog(dialogId, modalId = undefined) {
     }, DURATION + 50);
 }
 
-// Изменение размеров контенера для модальных окон со слайдерами
-function setModalContainerHeight(container) {
-    const activeElHeight = container
-        .querySelector('.active')
-        .clientHeight;
-
-    container.style.maxHeight = activeElHeight + 'px';
-}
-
-function setModalContainerWidth(container) {
-    const activeElWidth = container
-        .querySelector('.active')
-        .clientWidth + 60;
-
-    const modal = container
-        .closest('.modal__dialog');
-
-    modal.style.width = activeElWidth + 'px';
-}
-
-function getCurrentModalElIdx(arr) {
-    let activeIdx;
-
-    arr.find(function (el, idx) {
-        if (el.classList.contains('active')) {
-            activeIdx = idx;
-            el.classList.remove('active');
-            return true;
-        }
-        return false;
-    });
-
-    return activeIdx;
-}
-
-function getNextModalElIdx(direction, current, count) {
-    let newIdx;
-
-    if (direction === 'next') {
-        newIdx = current + 1;
-
-        newIdx = newIdx === count
-            ? 0 : newIdx;
-    } else {
-        newIdx = current - 1;
-        newIdx = newIdx === -1
-            ? count - 1 : newIdx;
-    }
-
-    return newIdx;
-}
-
-function initialModalArticles() {
-    const articlesContainer = document
-        .getElementById('modalArticlesContainer');
-
-    setModalContainerHeight(articlesContainer);
-}
-
-function toggleModalArticle (e) {
-    e.stopPropagation();
-
-    const direction = e.target.dataset.direction;
-
-    const articles = nodeListToArray(document
-        .querySelectorAll('#modalArticlesContainer li'));
-
-    const currentActiveIdx = getCurrentModalElIdx(articles);
-    const newActiveIdx = getNextModalElIdx(direction, currentActiveIdx, articles.length);
-
-    articles[newActiveIdx].classList.add('active');
-    initialModalArticles();
-}
-
-function initialModalPromo() {
-    const promoContainer = document
-        .getElementById('modalPromoContainer');
-
-    checkPromo();
-    setModalContainerHeight(promoContainer);
-    setModalContainerWidth(promoContainer);
-}
-
-function checkPromo() {
-    const promos = nodeListToArray(document
-        .querySelectorAll('#modalPromoContainer li'));
-
-    const activePromos = promos.filter(function (el) {
-        return el.classList.contains('active');
-    })
-
-    if (activePromos.length === 0) {
-        promos[0].classList.add('active');
-    }
-
-    return promos[0];
-}
-
-// Показать конкретное промо
-// При использовании showPromo сразу после иницилизации страницы
-// добавить опциональный timout примерно в 1000 ms.
-// Чтобы успела проинициализироваться моальное окно с промо материалами
-function showPromo(promoId, timeout = 0) {
-    const downloadPromoBtn = document
-        .getElementById('downloadPromo');
-
-    const promos = nodeListToArray(document
-        .querySelectorAll('#modalPromoContainer li'));
-
-    let targetPromo = document.getElementById(promoId);
-
-    // Если нет promoId или нет узла с
-    // полученным в параметрах id на странице
-    // открываем первый промо материал
-    if (!promoId || targetPromo === null) {
-        targetPromo = promos[0];
-    }
-
-    promos.forEach(function (el) {
-        el.classList.remove('active');
-    });
-
-    targetPromo.classList.add('active');
-    downloadPromoBtn.href = getPromoSrc(promoId);
-
-    setTimeout(function () {
-        showModal('modalPromo');
-    }, timeout);
-}
-
-function getPromoSrc(promoId) {
-    const children = nodeListToArray(document
-        .getElementById(promoId)
-        .getElementsByTagName("*"));
-
-        const childrenSrc = children.filter(function (el) {
-            return el.src;
-        });
-
-        if (childrenSrc.length > 0 ) {
-            return childrenSrc[0].src;
-        }
-
-        const childrenHref = children.filter(function (el) {
-            return el.href;
-        });
-
-        if (childrenHref.length > 0 ) {
-            return childrenHref[0].href;
-        }
-
-        console.log('*** Invalid promo material URL. No src and href.');
-        return '';
-}
-
-function toggleModalPromo (e) {
-    e.stopPropagation();
-
-    const direction = e.target.dataset.direction;
-
-    const promos = nodeListToArray(document
-        .querySelectorAll('#modalPromoContainer li'));
-
-    const currentActiveIdx = getCurrentModalElIdx(promos);
-    const newActiveIdx = getNextModalElIdx(direction, currentActiveIdx, promos.length);
-
-    promos[newActiveIdx].classList.add('active');
-    initialModalPromo();
-
-    const src = promos[newActiveIdx]
-        .querySelector('img').src;
-
-    const downloadPromoBtn = document
-        .getElementById('downloadPromo');
-    downloadPromoBtn.href = src;
-}
-
 function toggleVisiblePassword(e) {
     const input = e.target.closest('.label_password')
         .querySelector('input');
@@ -638,6 +384,7 @@ function handlerFormPasswordCreate(e) {
 
         return;
     }
+
 
     // Здесь должна быть обработка данных формы!
     console.log('Здесь должна быть обработка данных формы!');
@@ -683,53 +430,6 @@ function handleSelectClick(e) {
     input.dispatchEvent(event);
 }
 
-/* При создании модального окна не учитвается тип
- * добавляемого промо материала.
- * Промо добавляется только как картинка.
- *
- * При необходимости добавления промо других типов,
- * читать тип промо материала из параметра data-type
- * и добавлять промо в соответствии с его типом.
- *
- * Типы промо должны быть корректно указаны
- * в соответствующием дата атрибуте превью промо.
- * */
-function setModalPromo(promoArr) {
-    const container = document.getElementById('modalPromoContainer');
-
-    promoArr.forEach(function (el, idx) {
-        const src = el.dataset.src;
-        const id = 'promo_' + idx;
-
-        const li = document.createElement('li');
-        li.id = id
-
-        const img = document.createElement('img');
-        img.src = src;
-
-        if(isImgSvg(el.dataset.src)) {
-            img.style.maxWidth = '100%';
-            img.style.height = 'auto';
-            img.style.width = '100%';
-        }
-
-        li.appendChild(img);
-        container.appendChild(li);
-
-        el.dataset.promoId = id;
-
-        if (idx === 0) {
-            const downloadBtn = document.querySelector(
-                '#modalPromo .modal__controller-group a');
-            downloadBtn.href = el.dataset.src;
-        }
-    });
-}
-
-function isImgSvg(string) {
-    return string.indexOf('.svg') !== -1;
-}
-
 window.addEventListener("load",
 function(event) {
 
@@ -739,22 +439,6 @@ function(event) {
 
     modalToggles.forEach(function (el) {
         el.addEventListener('click', toggleModal);
-    });
-
-    // Модальное окно с промо статьями
-    const modalArticlesControllers = nodeListToArray(document
-        .querySelectorAll('#modalArticles .modal__controller'));
-
-    modalArticlesControllers.forEach(function (el) {
-        el.addEventListener('click', toggleModalArticle);
-    });
-
-    // Модальное окно с другими промо материалами
-    const modalPromoControllers = nodeListToArray(document
-        .querySelectorAll('#modalPromo .modal__controller'));
-
-    modalPromoControllers.forEach(function (el) {
-        el.addEventListener('click', toggleModalPromo);
     });
 
     // Показываем/скрываем пароль
@@ -774,32 +458,84 @@ function(event) {
             handlerFormPasswordCreate);
     }
 
-    // Кастомные селекты
-    const selectInputs = nodeListToArray(document
-        .querySelectorAll('.select input'));
-
-    selectInputs.forEach(function (el) {
-        el.addEventListener('click', toggleSelect);
-    });
-
-    const selects = nodeListToArray(document
-        .querySelectorAll('.select .options span'));
-
-    selects.forEach(function (el) {
-        el.addEventListener('click', handleSelectClick);
-    });
-
-    //Собираем промо материалы в модал .modal_promo
-    const promos = nodeListToArray(document
-        .querySelectorAll('[data-target-id="modalPromo"][data-type]'));
-    if (promos.length > 0 ) setModalPromo(promos);
-
-    // Открываем историю выплат, полсе отправки запроса
-    const showHistoryBtn = document.getElementById('showHistoryBtn');
-
-    if (showHistoryBtn) {
-        showHistoryBtn.addEventListener('click', function () {
-            showTabPane('history');
-        });
-    }
+    // // Кастомные селекты
+    // const selectInputs = nodeListToArray(document
+    //     .querySelectorAll('.select input'));
+    //
+    // selectInputs.forEach(function (el) {
+    //     el.addEventListener('click', toggleSelect);
+    // });
+    //
+    // const selects = nodeListToArray(document
+    //     .querySelectorAll('.select .options span'));
+    //
+    // selects.forEach(function (el) {
+    //     el.addEventListener('click', handleSelectClick);
+    // });
 });
+
+function handlerMenuTogglesClick(e) {
+    const parent = e.target.closest('.dashboard__card-menu');
+    const list = parent.querySelector('ul');
+
+    list.classList.toggle('show');
+}
+
+function handlerAvatarTogglesClick(e) {
+    const container = e.target
+        .closest('.dashboard__card-recommendation');
+
+    container.classList.toggle('show');
+}
+
+function handlerInformTogglesClick(e) {
+    const classes = e.target.classList;
+    const isShown = classes.contains('show');
+    const inform = e.target.closest('.inform');
+    const isInformShow = inform.classList.contains('show');
+
+    if (isShown || isInformShow) {
+        classes.remove('show');
+        inform.classList.remove('show');
+    } else {
+        clearAllInfos();
+        classes.add('show');
+    }
+}
+
+function clearAllInfos() {
+    const nodes = nodeListToArray(document
+        .querySelectorAll('.dashboard__card-data .inform'));
+
+    nodes.forEach(function (el) {
+        el.classList.remove(
+            'show'
+        );
+    });
+}
+
+window.addEventListener("load",
+    function(event) {
+    const cardMenuToggles = nodeListToArray(document
+        .querySelectorAll('.dashboard__card-menu button'));
+
+    cardMenuToggles.forEach(function (el) {
+        el.addEventListener('click', handlerMenuTogglesClick);
+    });
+
+    const cardAvatarToggles = nodeListToArray(document
+        .querySelectorAll('.dashboard__card-recommendation button'));
+
+        cardAvatarToggles.forEach(function (el) {
+        el.addEventListener('click', handlerAvatarTogglesClick);
+    });
+
+    const cardInformToggles = nodeListToArray(document
+        .querySelectorAll('.dashboard__card-data .inform'));
+
+        cardInformToggles.forEach(function (el) {
+        el.addEventListener('click', handlerInformTogglesClick);
+    });
+
+
+})

@@ -18,492 +18,489 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/manifest.json">
   </head>
-  <body>
-    <header class="header" id="header">
-      <div class="container">
-        <div class="row">
-          <div class="col-3 header__logo"><a href="/"><img src="img/logo.png" alt></a></div>
-          <div class="col-6 header__nav">
-            <nav>
-              <ul>
-                <li><a href="dashboard.html"><svg class="i-dashboard" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.75 8.75H14.25V7.75H9.75V8.75ZM14.5 9V14.25H15.5V9H14.5ZM14.25 14.5H9.75V15.5H14.25V14.5ZM9.5 14.25V9H8.5V14.25H9.5ZM3.75 3.5H6V2.5H3.75V3.5ZM6.25 3.75V14.25H7.25V3.75H6.25ZM6 14.5H3.75V15.5H6V14.5ZM3.5 14.25V3.75H2.5V14.25H3.5ZM3.75 14.5C3.61193 14.5 3.5 14.3881 3.5 14.25H2.5C2.5 14.9404 3.05964 15.5 3.75 15.5V14.5ZM6.25 14.25C6.25 14.3881 6.13807 14.5 6 14.5V15.5C6.69036 15.5 7.25 14.9404 7.25 14.25H6.25ZM6 3.5C6.13807 3.5 6.25 3.61193 6.25 3.75H7.25C7.25 3.05964 6.69036 2.5 6 2.5V3.5ZM3.75 2.5C3.05964 2.5 2.5 3.05964 2.5 3.75H3.5C3.5 3.61193 3.61193 3.5 3.75 3.5V2.5ZM9.75 3.5H14.25V2.5H9.75V3.5ZM14.5 3.75V5.25H15.5V3.75H14.5ZM14.25 5.5H9.75V6.5H14.25V5.5ZM9.5 5.25V3.75H8.5V5.25H9.5ZM9.75 5.5C9.61193 5.5 9.5 5.38807 9.5 5.25H8.5C8.5 5.94036 9.05964 6.5 9.75 6.5V5.5ZM14.5 5.25C14.5 5.38807 14.3881 5.5 14.25 5.5V6.5C14.9404 6.5 15.5 5.94036 15.5 5.25H14.5ZM14.25 3.5C14.3881 3.5 14.5 3.61193 14.5 3.75H15.5C15.5 3.05964 14.9404 2.5 14.25 2.5V3.5ZM9.75 2.5C9.05964 2.5 8.5 3.05964 8.5 3.75H9.5C9.5 3.61193 9.61193 3.5 9.75 3.5V2.5ZM9.75 14.5C9.61193 14.5 9.5 14.3881 9.5 14.25H8.5C8.5 14.9404 9.05964 15.5 9.75 15.5V14.5ZM14.5 14.25C14.5 14.3881 14.3881 14.5 14.25 14.5V15.5C14.9404 15.5 15.5 14.9404 15.5 14.25H14.5ZM14.25 8.75C14.3881 8.75 14.5 8.86193 14.5 9H15.5C15.5 8.30964 14.9404 7.75 14.25 7.75V8.75ZM9.75 7.75C9.05964 7.75 8.5 8.30964 8.5 9H9.5C9.5 8.86193 9.61193 8.75 9.75 8.75V7.75Z" fill="#A1A8B4"/>
+  <body class="page-modals">
+    <section class="section" id="section">
+      <aside class="aside" id="aside">
+        <div class="sidebar"><a class="sidebar__logo" href="#"><img src="img/logo.svg" alt></a>
+          <nav class="nav">
+            <ul class="nav__list">
+              <!-- Активному пункту меню добавлять класс active-->
+              <li class="nav__item nav__item_dashboard"><a class="nav__link" href="#"><span class="nav__icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M15.7212 8.06604L14.25 6.69287V3.1666C14.25 2.8446 13.9887 2.58326 13.6667 2.58326H11.9167C11.5947 2.58326 11.3333 2.8446 11.3333 3.1666V3.9646L9.39842 2.15684C9.17383 1.94801 8.82617 1.94743 8.60217 2.15684L2.26425 8.08004C2.09392 8.25038 2 8.47379 2 8.7083C2 9.19071 2.39258 9.5833 2.875 9.5833H3.75V14.5417C3.75 15.3455 4.4045 16 5.20833 16H6C6.55229 16 7 15.5523 7 15V12.5C7 11.5 8.0335 10.5 9 10.5C9.9665 10.5 11 11.5 11 12.5V15C11 15.5523 11.4477 16 12 16H12.7917C13.5955 16 14.25 15.3455 14.25 14.5417V9.5833H15.125C15.6074 9.5833 16 9.19071 16 8.7083C16 8.47379 15.9061 8.25038 15.7212 8.06604ZM9 8C9.55228 8 10 7.55228 10 7C10 6.44772 9.55228 6 9 6C8.44772 6 8 6.44772 8 7C8 7.55228 8.44772 8 9 8Z" fill="#2B2B30"/>
 </svg>
-<span>Дашборд</span></a></li>
-                <li>
-                  <!-- Ссылки для текущей страницы добавлять класс .active к ссылке--><a href="statistics.html"><svg class="i-statistic" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M12 7.5V12.75" stroke="#A1A8B4" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M9 5.25V12.75" stroke="#A1A8B4" stroke-linecap="round" stroke-linejoin="round"/>
-    <rect x="2.25" y="2.25" width="13.5" height="13.5" rx="2" stroke="#A1A8B4" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M6 9.75L6 12.75" stroke="#A1A8B4" stroke-linecap="round" stroke-linejoin="round"/>
+</span><span class="nav__desc">Dashboard</span></a></li>
+              <li class="nav__item nav__item_analysis"><a class="nav__link" href="#"><span class="nav__icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11.6175 12.5317C10.7315 13.1424 9.6575 13.5 8.5 13.5C5.46243 13.5 3 11.0376 3 8C3 4.96243 5.46243 2.5 8.5 2.5C11.5376 2.5 14 4.96243 14 8C14 9.1575 13.6424 10.2315 13.0317 11.1175L15.7071 13.7929C16.0976 14.1834 16.0976 14.8166 15.7071 15.2071C15.3166 15.5976 14.6834 15.5976 14.2929 15.2071L11.6175 12.5317ZM12 8C12 9.933 10.433 11.5 8.5 11.5C6.567 11.5 5 9.933 5 8C5 6.067 6.567 4.5 8.5 4.5C10.433 4.5 12 6.067 12 8Z" fill="#2B2B30"/>
 </svg>
-<span>Статистика</span></a>
-                </li>
-                <li><a href="offers.html"><svg class="i-offers" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M8.17157 2.25H4.25C3.14543 2.25 2.25 3.14543 2.25 4.25V8.17157C2.25 8.70201 2.46071 9.21071 2.83579 9.58579L7.62868 14.3787C8.80025 15.5503 10.6997 15.5503 11.8713 14.3787L14.3787 11.8713C15.5503 10.6997 15.5503 8.80025 14.3787 7.62868L9.58579 2.83579C9.21071 2.46071 8.70201 2.25 8.17157 2.25Z" stroke="#A1A8B4" stroke-linecap="round" stroke-linejoin="round"/>
-<circle cx="5.625" cy="5.625" r="1.125" fill="#A1A8B4"/>
+</span><span class="nav__desc">Analysis and cleanup</span></a></li>
+              <li class="nav__item nav__item_account active"><a class="nav__link" href="#"><span class="nav__icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 6.5C12 6.86371 11.9445 7.21446 11.8416 7.54425C11.2257 7.61607 10.6149 7.74536 10.0173 7.93213L9 8.25002V9.96456C8.8367 9.98791 8.66976 10 8.5 10C6.567 10 5 8.433 5 6.5C5 4.567 6.567 3 8.5 3C10.433 3 12 4.567 12 6.5Z" fill="#2B2B30"/>
+<path d="M9 11.5593V11.0134C8.83827 11.0046 8.67165 11 8.5 11C4.1 11 3 14 3 15C3 16 4.1 16 4.1 16H11.1258C9.81005 14.9403 9 13.3221 9 11.5593Z" fill="#2B2B30"/>
+<path d="M16 9C14.0527 8.35089 11.9473 8.35089 10 9V11.8377C10 13.7262 11.2084 15.4028 13 16C14.7916 15.4028 16 13.7262 16 11.8377V9Z" fill="#2B2B30"/>
 </svg>
-<span>Офферы</span></a></li>
-                <li><a href="payments.html"><svg class="i-payments" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="2.25" y="4.5" width="13.5" height="9.75" rx="2" stroke="#A1A8B4" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M2.25 7.5H15.375" stroke="#A1A8B4" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M5.25 11.25H6.75" stroke="#A1A8B4" stroke-linecap="round" stroke-linejoin="round"/>
+</span><span class="nav__desc">Account protection</span></a></li>
+              <li class="nav__item nav__item_setup"><a class="nav__link" href="#"><span class="nav__icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.7576 10.5342L14.4362 9.52793C14.4529 9.37275 14.4673 9.19135 14.4673 8.99943C14.4673 8.8075 14.4535 8.6261 14.4362 8.47093L15.7589 7.4641C16.0045 7.2751 16.0716 6.93968 15.9152 6.66028L14.541 4.345C14.3942 4.08368 14.0726 3.9495 13.7461 4.06675L12.1868 4.67632C11.8879 4.46632 11.5746 4.289 11.2505 4.14725L11.0133 2.53668C10.9743 2.231 10.7012 2 10.3783 2H7.62277C7.29988 2 7.02734 2.231 6.98898 2.532L6.75117 4.14843C6.43727 4.2861 6.12879 4.4611 5.81668 4.6775L4.2532 4.06618C3.96024 3.95593 3.60981 4.07957 3.46424 4.33975L2.08828 6.65793C1.92595 6.9251 1.99303 7.27218 2.24403 7.46585L3.5655 8.4721C3.54452 8.66868 3.53436 8.8396 3.53436 9.00003C3.53436 9.16045 3.54455 9.33135 3.5655 9.52853L2.24283 10.5354C1.99721 10.7249 1.93072 11.0604 2.08707 11.3392L3.46126 13.6544C3.60804 13.9152 3.92671 14.0505 4.25617 13.9327L5.81547 13.3231C6.11379 13.5325 6.42708 13.7099 6.75117 13.8522L6.98839 15.4622C7.02731 15.769 7.29988 16 7.62336 16H10.3789C10.7018 16 10.975 15.769 11.0133 15.468L11.2511 13.8522C11.565 13.7139 11.8729 13.5395 12.1856 13.3225L13.7491 13.9338C13.8246 13.9624 13.903 13.977 13.9839 13.977C14.2163 13.977 14.4302 13.8533 14.538 13.6608L15.9182 11.3333C16.0716 11.0603 16.0044 10.7249 15.7576 10.5342ZM9.00053 11.3333C7.67907 11.3333 6.6044 10.2868 6.6044 9C6.6044 7.71318 7.67907 6.66668 9.00053 6.66668C10.322 6.66668 11.3967 7.71318 11.3967 9C11.3967 10.2868 10.322 11.3333 9.00053 11.3333Z" fill="#2B2B30"/>
 </svg>
-<span>Выплаты</span></a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="col-3 header__button">
-            <button class="btn btn_sml btn_lite" id="managerCardShow">Ваш менеджер</button>
-            <button class="header__nav-toggle" type="button" data-toggle="modal" data-direction="show" data-target-id="settingMenu"></button>
-          </div>
-        </div>
-      </div>
-    </header>
-    <main class="main" id="main">
-      <div class="container">
-        <div class="row">
-          <div class="col-9" id="contentWrap">
-            <div class="container">
-              <div class="d-flex flex-wrap">
-                <button class="btn btn_primary mr-3 mb-4" type="button" data-toggle="modal" data-direction="show" data-target-id="modalEnterRegistration" data-dialog-show-id="dialogRegistration">Регистрация</button>
-                <button class="btn btn_primary mr-3 mb-4" type="button" data-toggle="modal" data-direction="show" data-target-id="modalEnterRegistration" data-dialog-show-id="dialogEnter">Вход</button>
-                <button class="btn btn_primary mr-3 mb-4" type="button" data-toggle="modal" data-direction="show" data-target-id="modalChangeRecoveryPassword" data-dialog-show-id="dialogPasswordRecovery">Восстановление пароля</button>
-                <button class="btn btn_primary mr-3 mb-4" type="button" data-toggle="modal" data-direction="show" data-target-id="modalPasswordCreate">Создание пароля</button>
-                <button class="btn btn_primary mr-3 mb-4" type="button" data-toggle="modal" data-direction="show" data-target-id="modalChangeRecoveryPassword" data-dialog-show-id="dialogPasswordChange">Смена пароля</button>
-                <button class="btn btn_primary mr-3 mb-4" type="button" data-toggle="modal" data-direction="show" data-target-id="modalGoToSkype">Перейти в скайп</button>
-                <button class="btn btn_primary mr-3 mb-4" type="button" data-toggle="modal" data-direction="show" data-target-id="modalGoToTelegram">Перейти в телеграм</button>
-                <button class="btn btn_primary mr-3 mb-4" type="button" data-toggle="modal" data-direction="show" data-target-id="modalArticles">Полезная статья</button>
-                <button class="btn btn_primary mr-3 mb-4" type="button" data-toggle="modal" data-direction="show" data-target-id="modalPromo">Промо материалы</button>
-                <button class="btn btn_primary mr-3 mb-4" type="button" data-toggle="modal" data-direction="show" data-target-id="modalConsultation">Консультация</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-3" id="asideWrap">
-            <aside class="aside" id="aside">
-              <button class="modal__close" id="managerCardHide" type="button"></button>
-              <h3 class="aside__caption">Ваш менеджер</h3>
-              <!-- Картинку менеджера добавлять как инлайновый стиль--><span class="aside__pic" style="background-image: url('img/temp/manager.jpg');"></span>
-              <h4 class="aside__name">Константинов Константин</h4>
-              <ul class="aside__contacts">
-                <li><span>Телефон:</span><a href="tel:+79999999999" target="_blank">+7 999 999 99 99</a></li>
-                <li><span>E-mail:</span><a href="mailto:konstantinov@yandex.ru" target="_blank">konstantinov@yandex.ru</a></li>
-                <li><span>Telegram:</span><a href="https://telegram.org/" target="_blank">@konstantonov</a></li>
-                <li><span>Skype:</span><a href="https://www.skype.com/ru/" target="_blank">@konstantonov</a></li>
-              </ul>
-            </aside>
-          </div>
-        </div>
-      </div>
-    </main>
-    <div class="modal" id="settingMenu">
-      <div class="container">
-        <div class="modal__dialog">
-          <div class="modal__content">
-            <button class="modal__close" type="button" data-toggle="modal" data-direction="hide" data-target-id="settingMenu"></button>
-            <div class="modal__header">
-              <h4 class="modal__title">Константинов Константин</h4>
-              <p class="modal__post">Почта:<a href="mailto:konstantinov@yandex.ru">konstantinov@yandex.ru</a></p>
-            </div>
-            <div class="modal__body">
-              <ul class="modal__link-list">
-                <li><a href="profile.html">Настройки профиля</a></li>
-                <li><a href="profile.html">Платежные данные</a></li>
-                <li><a href="profile.html">Политика конфиденцииальности</a></li>
-                <li><a href="#">Выйти из профиля</a></li>
-                <li class="modal__nav-item"><a href="dashboard.html">Дашборд</a></li>
-                <li class="modal__nav-item"><a href="statistics.html">Статистика</a></li>
-                <li class="modal__nav-item"><a href="offers.html">Офферы</a></li>
-                <li class="modal__nav-item"><a href="payments.html">Выплаты</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal modal_change-recovery-password" id="modalChangeRecoveryPassword">
-      <div class="modal__dialog hidden hide" id="dialogPasswordChange">
-        <div class="modal__content">
-          <button class="modal__close" type="button" data-toggle="modal" data-direction="hide" data-target-id="modalChangeRecoveryPassword"></button>
-          <div class="modal__header">
-            <h4 class="modal__title">Смена пароля</h4>
-            <p class="modal__subtitle">Для смены пароля укажите текущий пароль и придумайте новый. Новый пароль необходимо подтвердить в поле ниже и по почте.</p>
-          </div>
-          <div class="modal__body">
-            <form class="modal__form" action="#">
-              <div class="modal__form-group">
-                <!-- Полю с ошибкой добавлять класс .error-->
-                <label class="modal__label label_password error"><span class="modal__show-password"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 9C12 10.6569 10.6569 12 9 12C7.34315 12 6 10.6569 6 9C6 7.34315 7.34315 6 9 6C9.30747 6 9.60413 6.04625 9.88341 6.13218C9.36251 6.36736 9 6.89135 9 7.5C9 8.32843 9.67157 9 10.5 9C11.1087 9 11.6326 8.63749 11.8678 8.11659C11.9537 8.39587 12 8.69253 12 9Z" fill="#686E78"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M9 14C5.53498 14 2.94819 11.4646 1.74589 10.0047C1.25852 9.41293 1.25852 8.58707 1.7459 7.99527C2.94819 6.53536 5.53498 4 9 4C12.465 4 15.0518 6.53536 16.2541 7.99527C16.7415 8.58707 16.7415 9.41293 16.2541 10.0047C15.0518 11.4646 12.465 14 9 14ZM8.47253 12.9771C3.98843 12.5888 3.98843 5.41115 8.47252 5.02285C8.64677 5.00776 8.82263 5 9 5C9.17736 5 9.35322 5.00776 9.52745 5.02285C14.0116 5.41113 14.0116 12.5889 9.52745 12.9771C9.35322 12.9922 9.17736 13 9 13C8.82263 13 8.64677 12.9922 8.47253 12.9771Z" fill="#686E78"/>
+</span><span class="nav__desc">Setup</span></a></li>
+              <li class="nav__item nav__item_blog"><a class="nav__link" href="#" target="_blank"><span class="nav__icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5 14H12C14.2091 14 16 12.2091 16 10V7C16 4.79086 14.2091 3 12 3H6C3.79086 3 2 4.79086 2 7V17L5 14ZM6 7C6 6.44772 6.52233 6 7.16667 6H11.8333C12.4777 6 13 6.44772 13 7C13 7.55228 12.4777 8 11.8333 8H7.16667C6.52233 8 6 7.55228 6 7ZM7.25 9C6.55964 9 6 9.44772 6 10C6 10.5523 6.55964 11 7.25 11H9.75C10.4404 11 11 10.5523 11 10C11 9.44772 10.4404 9 9.75 9H7.25Z" fill="#2B2B30"/>
 </svg>
-</span>
-                  <input class="input" type="password" placeholder="Текущий пароль">
-                </label>
-                <!-- После каждого input может стоять блок с ошибкой--><span class="modal__err">Введен не верный пароль</span>
-              </div>
-              <div class="modal__form-group">
-                <label class="modal__label label_password error"><span class="modal__show-password"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 9C12 10.6569 10.6569 12 9 12C7.34315 12 6 10.6569 6 9C6 7.34315 7.34315 6 9 6C9.30747 6 9.60413 6.04625 9.88341 6.13218C9.36251 6.36736 9 6.89135 9 7.5C9 8.32843 9.67157 9 10.5 9C11.1087 9 11.6326 8.63749 11.8678 8.11659C11.9537 8.39587 12 8.69253 12 9Z" fill="#686E78"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M9 14C5.53498 14 2.94819 11.4646 1.74589 10.0047C1.25852 9.41293 1.25852 8.58707 1.7459 7.99527C2.94819 6.53536 5.53498 4 9 4C12.465 4 15.0518 6.53536 16.2541 7.99527C16.7415 8.58707 16.7415 9.41293 16.2541 10.0047C15.0518 11.4646 12.465 14 9 14ZM8.47253 12.9771C3.98843 12.5888 3.98843 5.41115 8.47252 5.02285C8.64677 5.00776 8.82263 5 9 5C9.17736 5 9.35322 5.00776 9.52745 5.02285C14.0116 5.41113 14.0116 12.5889 9.52745 12.9771C9.35322 12.9922 9.17736 13 9 13C8.82263 13 8.64677 12.9922 8.47253 12.9771Z" fill="#686E78"/>
+</span><span class="nav__desc">Blog</span><span class="nav__arr"><svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.2028 9.60617L13.3798 2.93097C13.4757 2.38708 13.1126 1.86842 12.5687 1.77251L5.89348 0.595497C5.50889 0.527683 5.14214 0.784482 5.07433 1.16907C5.00651 1.55366 5.26331 1.92041 5.6479 1.98823L10.5225 2.84774L0.692629 9.73066C0.240225 10.0474 0.130276 10.671 0.447054 11.1234C0.763831 11.5758 1.38738 11.6857 1.83978 11.369L11.6696 4.48604L10.8101 9.36059C10.7423 9.74519 10.9991 10.1119 11.3837 10.1797C11.7683 10.2476 12.135 9.99076 12.2028 9.60617Z" fill="#5851DB"/>
 </svg>
-</span>
-                  <input class="input" type="password" placeholder="Придумайте пароль">
-                </label>
-              </div>
-              <div class="modal__form-group">
-                <label class="modal__label label_password error"><span class="modal__show-password"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 9C12 10.6569 10.6569 12 9 12C7.34315 12 6 10.6569 6 9C6 7.34315 7.34315 6 9 6C9.30747 6 9.60413 6.04625 9.88341 6.13218C9.36251 6.36736 9 6.89135 9 7.5C9 8.32843 9.67157 9 10.5 9C11.1087 9 11.6326 8.63749 11.8678 8.11659C11.9537 8.39587 12 8.69253 12 9Z" fill="#686E78"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M9 14C5.53498 14 2.94819 11.4646 1.74589 10.0047C1.25852 9.41293 1.25852 8.58707 1.7459 7.99527C2.94819 6.53536 5.53498 4 9 4C12.465 4 15.0518 6.53536 16.2541 7.99527C16.7415 8.58707 16.7415 9.41293 16.2541 10.0047C15.0518 11.4646 12.465 14 9 14ZM8.47253 12.9771C3.98843 12.5888 3.98843 5.41115 8.47252 5.02285C8.64677 5.00776 8.82263 5 9 5C9.17736 5 9.35322 5.00776 9.52745 5.02285C14.0116 5.41113 14.0116 12.5889 9.52745 12.9771C9.35322 12.9922 9.17736 13 9 13C8.82263 13 8.64677 12.9922 8.47253 12.9771Z" fill="#686E78"/>
+</span></a></li>
+              <!-- При динамическом выводе ссылок, эта ссылка должна быть последней-->
+              <li class="nav__item nav__item_support"><a class="nav__link" href="#"><span class="nav__icon nav__icon_support"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="9" cy="9" r="6" fill="#2B2B30"/>
+<path d="M9 5C8.44772 5 8 5.44772 8 6C8 6.55228 8.44772 7 9 7C9.55228 7 10 6.55228 10 6C10 5.44772 9.55228 5 9 5Z" fill="white"/>
+<path d="M9 8C8.44772 8 8 8.44772 8 9V12C8 12.5523 8.44772 13 9 13C9.55228 13 10 12.5523 10 12V9C10 8.44772 9.55228 8 9 8Z" fill="white"/>
 </svg>
-</span>
-                  <input class="input" type="password" placeholder="Подтвердите пароль">
-                </label><span class="modal__err">Пароли не совпадают</span>
-              </div>
-              <button class="btn btn_primary w-100" type="submit">Зарегистрироваться</button>
-            </form>
-            <div class="modal__footer">
-              <div class="modal__footer-link"><span role="dialog" data-toggle="modal" data-direction="toggle" data-target-id="dialogPasswordRecovery">Если забыли пароль</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal__dialog hidden hide" id="dialogPasswordRecovery">
-        <div class="modal__content">
-          <button class="modal__close" type="button" data-toggle="modal" data-direction="hide" data-target-id="modalChangeRecoveryPassword"></button>
-          <div class="modal__header">
-            <h4 class="modal__title">Восстановление вашего пароля</h4>
-            <p class="modal__subtitle">Для восстановления пароля укажите вашу почту, на которую будет отправлена ссылка для сброса пароля.</p>
-          </div>
-          <div class="modal__body">
-            <form class="modal__form" action="#">
-              <div class="modal__form-group">
-                <label>
-                  <input class="input" placeholder="example@mail.ru">
-                </label>
-              </div>
-              <button class="btn btn_primary w-100" type="submit">Зарегистрироваться</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal modal_password-create" id="modalPasswordCreate">
-      <div class="modal__dialog">
-        <div class="modal__content">
-          <button class="modal__close" type="button" data-toggle="modal" data-direction="hide" data-target-id="modalPasswordCreate"></button>
-          <div class="modal__header">
-            <h4 class="modal__title">Создание пароля</h4>
-            <p class="modal__subtitle">Придумайте надежный пароль и подтвердите его указав данные в полях ниже.</p>
-          </div>
-          <div class="modal__body">
-            <form class="modal__form" action="#">
-              <div class="modal__form-group">
-                <label class="modal__label label_password"><span class="modal__show-password"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 9C12 10.6569 10.6569 12 9 12C7.34315 12 6 10.6569 6 9C6 7.34315 7.34315 6 9 6C9.30747 6 9.60413 6.04625 9.88341 6.13218C9.36251 6.36736 9 6.89135 9 7.5C9 8.32843 9.67157 9 10.5 9C11.1087 9 11.6326 8.63749 11.8678 8.11659C11.9537 8.39587 12 8.69253 12 9Z" fill="#686E78"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M9 14C5.53498 14 2.94819 11.4646 1.74589 10.0047C1.25852 9.41293 1.25852 8.58707 1.7459 7.99527C2.94819 6.53536 5.53498 4 9 4C12.465 4 15.0518 6.53536 16.2541 7.99527C16.7415 8.58707 16.7415 9.41293 16.2541 10.0047C15.0518 11.4646 12.465 14 9 14ZM8.47253 12.9771C3.98843 12.5888 3.98843 5.41115 8.47252 5.02285C8.64677 5.00776 8.82263 5 9 5C9.17736 5 9.35322 5.00776 9.52745 5.02285C14.0116 5.41113 14.0116 12.5889 9.52745 12.9771C9.35322 12.9922 9.17736 13 9 13C8.82263 13 8.64677 12.9922 8.47253 12.9771Z" fill="#686E78"/>
-</svg>
-</span>
-                  <input class="input" type="password" placeholder="Придумайте пароль">
-                </label>
-              </div>
-              <div class="modal__form-group">
-                <label class="modal__label label_password"><span class="modal__show-password"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 9C12 10.6569 10.6569 12 9 12C7.34315 12 6 10.6569 6 9C6 7.34315 7.34315 6 9 6C9.30747 6 9.60413 6.04625 9.88341 6.13218C9.36251 6.36736 9 6.89135 9 7.5C9 8.32843 9.67157 9 10.5 9C11.1087 9 11.6326 8.63749 11.8678 8.11659C11.9537 8.39587 12 8.69253 12 9Z" fill="#686E78"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M9 14C5.53498 14 2.94819 11.4646 1.74589 10.0047C1.25852 9.41293 1.25852 8.58707 1.7459 7.99527C2.94819 6.53536 5.53498 4 9 4C12.465 4 15.0518 6.53536 16.2541 7.99527C16.7415 8.58707 16.7415 9.41293 16.2541 10.0047C15.0518 11.4646 12.465 14 9 14ZM8.47253 12.9771C3.98843 12.5888 3.98843 5.41115 8.47252 5.02285C8.64677 5.00776 8.82263 5 9 5C9.17736 5 9.35322 5.00776 9.52745 5.02285C14.0116 5.41113 14.0116 12.5889 9.52745 12.9771C9.35322 12.9922 9.17736 13 9 13C8.82263 13 8.64677 12.9922 8.47253 12.9771Z" fill="#686E78"/>
-</svg>
-</span>
-                  <input class="input" type="password" placeholder="Подтвердите пароль">
-                </label><span class="modal__err">Пароли не совпадают</span>
-              </div>
-              <button class="btn btn_primary w-100" type="submit">Зарегистрироваться</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal modal_go-to-skype" id="modalGoToSkype">
-      <div class="modal__dialog">
-        <div class="modal__content">
-          <button class="modal__close" type="button" data-toggle="modal" data-direction="hide" data-target-id="modalGoToSkype"></button>
-          <div class="modal__header">
-            <h4 class="modal__title">Перейти в скайп</h4>
-            <p class="modal__subtitle">Вы будете перенаправлены в приложение скайп для связи с вашим персональным менеджером.</p>
-          </div>
-          <div class="modal__body">
-            <div class="modal__button-group"><a class="btn btn_primary" href="https://www.skype.com" target="_blank">Перейти в скайп</a>
-              <button class="btn btn_lite" type="button" data-toggle="modal" data-direction="hide" data-target-id="modalGoToSkype">Отмена</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal modal_go-to-telegram" id="modalGoToTelegram">
-      <div class="modal__dialog">
-        <div class="modal__content">
-          <button class="modal__close" type="button" data-toggle="modal" data-direction="hide" data-target-id="modalGoToTelegram"></button>
-          <div class="modal__header">
-            <h4 class="modal__title">Перейти в телеграм</h4>
-            <p class="modal__subtitle">Вы будете перенаправлены в приложение телеграм для связи с вашим персональным менеджером.</p>
-          </div>
-          <div class="modal__body">
-            <div class="modal__button-group"><a class="btn btn_primary" href="https://telegram.org" target="_blank">Перейти в телеграм</a>
-              <button class="btn btn_lite" type="button" data-toggle="modal" data-direction="hide" data-target-id="modalGoToTelegram">Отмена</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal modal_articles" id="modalArticles">
-      <div class="modal__dialog">
-        <div class="modal__content">
-          <button class="modal__close" type="button" data-toggle="modal" data-direction="hide" data-target-id="modalArticles"></button>
-          <button class="modal__controller modal__controller_prev" type="button" data-direction="prev"></button>
-          <button class="modal__controller modal__controller_next" type="button" data-direction="next"></button>
-          <div class="modal__header">
-            <ul class="modal__article-list" id="modalArticlesContainer">
-              <li>
-                <h4 class="modal__title">Полезная статья</h4>
-                <p class="modal__subtitle">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.</p>
-                <div class="modal__button-group"><a class="btn btn_primary" href="#" target="_blank" download>Скачать файл</a></div>
-              </li>
-              <li class="active">
-                <h4 class="modal__title">Полезная статья</h4>
-                <p class="modal__subtitle">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.</p>
-                <div class="modal__button-group"><a class="btn btn_primary" href="#" target="_blank" download>Скачать файл</a></div>
-              </li>
-              <li>
-                <h4 class="modal__title">Полезная статья</h4>
-                <p class="modal__subtitle">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.</p>
-                <div class="modal__button-group"><a class="btn btn_primary" href="#" target="_blank" download>Скачать файл</a></div>
-              </li>
-              <li>
-                <h4 class="modal__title">Полезная статья</h4>
-                <p class="modal__subtitle">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.</p>
-                <div class="modal__button-group"><a class="btn btn_primary" href="#" target="_blank" download>Скачать файл</a></div>
-              </li>
-              <li>
-                <h4 class="modal__title">Полезная статья</h4>
-                <p class="modal__subtitle">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.</p>
-                <div class="modal__button-group"><a class="btn btn_primary" href="#" target="_blank" download>Скачать файл</a></div>
-              </li>
+</span><span class="nav__desc">Support</span></a></li>
             </ul>
-          </div>
+          </nav>
         </div>
-      </div>
-    </div>
-    <div class="modal modal_promo" id="modalPromo">
+      </aside>
+      <main class="main" id="main">
+        <div class="container">
+          <button class="btn btn_primary" type="button" data-toggle="modal" data-direction="show" data-target-id="modalAddingAnAccount">Adding an account</button>
+          <button class="btn btn_primary" type="button" data-toggle="modal" data-direction="show" data-target-id="modal2ScanLeft">2 scan left!</button>
+          <button class="btn btn_primary" type="button" data-toggle="modal" data-direction="show" data-target-id="modalYouHaveNoScansLeft">You have no scans left!</button>
+          <button class="btn btn_primary" type="button" data-toggle="modal" data-direction="show" data-target-id="howToAddressYou">How to address you?</button>
+          <button class="btn btn_primary" type="button" data-toggle="modal" data-direction="show" data-target-id="launchScanning">Launch scanning</button>
+          <button class="btn btn_primary" type="button" data-toggle="modal" data-direction="show" data-target-id="modalPromoCode">Promo code</button>
+          <button class="btn btn_primary" type="button" data-toggle="modal" data-direction="show" data-target-id="modalChangingEmail">Changing Email</button>
+          <button class="btn btn_primary" type="button" data-toggle="modal" data-direction="show" data-target-id="modalAuthorizationOnInstagram">Authorization on Instagram</button>
+          <button class="btn btn_primary" type="button" data-toggle="modal" data-direction="show" data-target-id="ScanningAccount">Scanning account for 1$</button>
+          <button class="btn btn_primary" type="button" data-toggle="modal" data-direction="show" data-target-id="modalChangeMailPassword">Enter your email and change your password to a new!</button>
+          <button class="btn btn_primary" type="button" data-toggle="modal" data-direction="show" data-target-id="modalOrderingAudit">Заказать аудит</button>
+          <button class="btn btn_primary" type="button" data-toggle="modal" data-direction="show" data-target-id="modalErrorOrderingAudit">Заказать аудит - скан не завершон</button>
+          <button class="btn btn_primary" type="button" data-toggle="modal" data-direction="show" data-target-id="modalConfirmAccountDelete">Подтвердить удалние аккаунта</button>
+          <!-- Кнопка для показа модалки с несколькими диалогами-->
+          <button class="btn btn_primary" type="button" data-toggle="modal" data-direction="show" data-target-id="modalChangingPassword" data-dialog-show-id="dialogChangingPassword">Changing password</button>
+        </div>
+      </main>
+    </section>
+    <div class="modal" id="modalAddingAnAccount">
       <div class="modal__dialog">
-        <div class="modal__content modal__content_promo">
-          <button class="modal__close" type="button" data-toggle="modal" data-direction="hide" data-target-id="modalPromo"></button>
-          <div class="modal__body">
-            <ul class="modal__promo-list" id="modalPromoContainer"></ul>
+        <div class="modal__content">
+          <button class="modal__close" type="button" data-toggle="modal" data-direction="hide" data-target-id="modalAddingAnAccount"></button>
+          <div class="modal__header">
+            <h4 class="modal__title">Adding an account</h4>
+            <p class="modal__subtitle">In order to our system to be able to scan, clean and protect your Instagram account, add an account, specifying only the login.</p>
           </div>
-          <div class="modal__footer">
-            <div class="modal__controller-group">
-              <button class="modal__controller modal__controller_prev" type="button" data-direction="prev"></button><a class="btn btn_primary" id="downloadPromo" href="#" target="_blank" download>Скачать файл</a>
-              <button class="modal__controller modal__controller_next" type="button" data-direction="next"></button>
-            </div>
+          <div class="modal__body">
+            <form class="modal__form" action="#">
+              <div class="modal__form-group">
+                <!-- Для поля с ошибкой - лэблу добавлять класс .error-->
+                <label class="modal__label">
+                  <!-- Заблокированному input добавлять атрибут disabled-->
+                  <input class="input" placeholder="Enter your account login">
+                </label><span class="modal__err">Place Error message here</span>
+              </div>
+              <div class="modal__form-group">
+                <button class="btn btn_primary w-100" type="submit">
+                  <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.5 10.5C10.433 10.5 12 8.933 12 7C12 5.067 10.433 3.5 8.5 3.5C6.567 3.5 5 5.067 5 7C5 8.933 6.567 10.5 8.5 10.5Z" fill="white"/>
+<path d="M14 10.5C13.4477 10.5 13 10.9477 13 11.5V12.5H12C11.4477 12.5 11 12.9477 11 13.5C11 14.0523 11.4477 14.5 12 14.5H13V15.5C13 16.0523 13.4477 16.5 14 16.5C14.5523 16.5 15 16.0523 15 15.5V14.5H16C16.5523 14.5 17 14.0523 17 13.5C17 12.9477 16.5523 12.5 16 12.5H15V11.5C15 10.9477 14.5523 10.5 14 10.5Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10.8644 11.8535C10.3422 12.2143 10 12.8172 10 13.5C10 14.6046 10.8954 15.5 12 15.5C12 15.8643 12.0974 16.2058 12.2676 16.5H4.1C4.1 16.5 3 16.5 3 15.5C3 14.5 4.1 11.5 8.5 11.5C9.42805 11.5 10.2093 11.6335 10.8644 11.8535Z" fill="white"/>
+</svg>
+                  Add account
+                </button>
+              </div><span class="modal__attention w-100">Don't forget to disable two-factor authentication!</span>
+            </form>
           </div>
         </div>
       </div>
     </div>
-    <div class="modal modal_consultation" id="modalConsultation">
+    <div class="modal" id="modal2ScanLeft">
       <div class="modal__dialog">
         <div class="modal__content">
-          <button class="modal__close" type="button" data-toggle="modal" data-direction="hide" data-target-id="modalConsultation"></button>
+          <button class="modal__close" type="button" data-toggle="modal" data-direction="hide" data-target-id="modal2ScanLeft"></button>
           <div class="modal__header">
-            <h4 class="modal__title">Консультация</h4>
-            <p class="modal__subtitle">Укажите данные для связи и коротко опишите свой вопрос, после чего наш специалист свяжется с вами для бесплатной консультации.</p>
+            <h4 class="modal__title">2 scan left!</h4>
+            <p class="modal__subtitle">You had your last scan on *mm.dd.yyyyy*. We recommend scanning your account no more than once in two weeks</p>
           </div>
           <div class="modal__body">
             <form class="modal__form" action="#">
-              <div class="modal__form-group">
-                <label class="modal__label">
-                  <input class="input" placeholder="Ваш телефон">
-                </label><span class="modal__err">Не указан телефон</span>
+              <div class="modal__form-group_buttons">
+                <button class="btn btn_primary" type="submit">Launch scanning</button>
+                <button class="btn btn_empty" type="button" data-toggle="modal" data-direction="hide" data-target-id="modal2ScanLeft">Cancel</button>
               </div>
-              <div class="modal__form-group modal__form-group_double">
-                <label class="select"><span class="wrapper"><span class="arr"></span>
-                    <input class="input" type="text" value="Telegram" readonly><span class="options"><span class="active">Telegram</span><span>WhatsApp</span><span>Skype</span></span></span></label>
-                <label class="modal__label">
-                  <input class="input" placeholder="@nickname">
-                </label><span class="modal__err">Не указан никнэйм</span>
-              </div>
-              <button class="btn btn_primary w-100" type="submit">Отправить заявку</button>
             </form>
           </div>
         </div>
       </div>
     </div>
-    <div class="modal modal_enter-registration" id="modalEnterRegistration">
-      <div class="modal__dialog hidden hide" id="dialogEnter">
+    <div class="modal" id="modalYouHaveNoScansLeft">
+      <div class="modal__dialog">
         <div class="modal__content">
-          <button class="modal__close" type="button" data-toggle="modal" data-direction="hide" data-target-id="modalEnterRegistration"></button>
+          <button class="modal__close" type="button" data-toggle="modal" data-direction="hide" data-target-id="modalYouHaveNoScansLeft"></button>
           <div class="modal__header">
-            <h4 class="modal__title">Вход</h4>
-            <p class="modal__subtitle">Заполните поля, чтобы получить возможность зарабатывать вместе с нашими офферами.</p>
+            <h4 class="modal__title">You have no scans left!</h4>
+            <p class="modal__subtitle">Unfortunately, you do not have any account scans left. You can buy more scans in control panel.</p>
           </div>
           <div class="modal__body">
             <form class="modal__form" action="#">
-              <div class="modal__form-group">
-                <label class="modal__label">
-                  <input class="input" type="text" placeholder="Укажите почту">
-                </label><span class="modal__err">Текст ошибки почты</span>
-              </div>
-              <div class="modal__form-group">
-                <label class="modal__label label_password"><span class="modal__show-password"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 9C12 10.6569 10.6569 12 9 12C7.34315 12 6 10.6569 6 9C6 7.34315 7.34315 6 9 6C9.30747 6 9.60413 6.04625 9.88341 6.13218C9.36251 6.36736 9 6.89135 9 7.5C9 8.32843 9.67157 9 10.5 9C11.1087 9 11.6326 8.63749 11.8678 8.11659C11.9537 8.39587 12 8.69253 12 9Z" fill="#686E78"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M9 14C5.53498 14 2.94819 11.4646 1.74589 10.0047C1.25852 9.41293 1.25852 8.58707 1.7459 7.99527C2.94819 6.53536 5.53498 4 9 4C12.465 4 15.0518 6.53536 16.2541 7.99527C16.7415 8.58707 16.7415 9.41293 16.2541 10.0047C15.0518 11.4646 12.465 14 9 14ZM8.47253 12.9771C3.98843 12.5888 3.98843 5.41115 8.47252 5.02285C8.64677 5.00776 8.82263 5 9 5C9.17736 5 9.35322 5.00776 9.52745 5.02285C14.0116 5.41113 14.0116 12.5889 9.52745 12.9771C9.35322 12.9922 9.17736 13 9 13C8.82263 13 8.64677 12.9922 8.47253 12.9771Z" fill="#686E78"/>
-</svg>
-</span>
-                  <input class="input" type="password" placeholder="Введите пароль">
-                </label><span class="modal__err">Текст ошибки пароля</span>
-              </div>
-              <div class="modal__form-group modal__form-group_buttons">
-                <button class="btn btn_primary" type="submit">Войти</button>
-                <button class="btn btn_lite" role="dialog" data-toggle="modal" data-direction="toggle" data-target-id="dialogRegistration">Регистрация</button>
+              <div class="modal__form-group_buttons">
+                <button class="btn btn_primary" type="submit">Buy scans</button>
+                <button class="btn btn_empty" type="button" data-toggle="modal" data-direction="hide" data-target-id="modalYouHaveNoScansLeft">Cancel</button>
               </div>
             </form>
-          </div>
-          <div class="modal__footer">
-            <div class="modal__socials">
-              <p>Или войдите через любимую соц.сеть:</p>
-              <ul>
-                <li><a href="#"><img src="img/i-facebook-enter.svg" alt></a></li>
-                <li><a href="#"><img src="img/i-google-enter.svg" alt></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal__dialog hidden hide" id="dialogRegistration">
-        <div class="modal__content">
-          <button class="modal__close" type="button" data-toggle="modal" data-direction="hide" data-target-id="modalEnterRegistration"></button>
-          <div class="modal__header">
-            <h4 class="modal__title">Регистрация</h4>
-            <p class="modal__subtitle">Заполните поля, чтобы получить возможность зарабатывать вместе с нашими офферами.</p>
-          </div>
-          <div class="modal__body">
-            <form class="modal__form" action="#">
-              <div class="modal__form-group">
-                <label class="modal__label">
-                  <input class="input" type="text" placeholder="Укажите почту">
-                </label><span class="modal__err">Текст ошибки почты</span>
-              </div>
-              <div class="modal__form-group">
-                <label class="modal__label">
-                  <input class="input" type="text" placeholder="Придумайте логин">
-                </label><span class="modal__err">Текст ошибки логина</span>
-              </div>
-              <div class="modal__form-group">
-                <label class="modal__label label_password"><span class="modal__show-password"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 9C12 10.6569 10.6569 12 9 12C7.34315 12 6 10.6569 6 9C6 7.34315 7.34315 6 9 6C9.30747 6 9.60413 6.04625 9.88341 6.13218C9.36251 6.36736 9 6.89135 9 7.5C9 8.32843 9.67157 9 10.5 9C11.1087 9 11.6326 8.63749 11.8678 8.11659C11.9537 8.39587 12 8.69253 12 9Z" fill="#686E78"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M9 14C5.53498 14 2.94819 11.4646 1.74589 10.0047C1.25852 9.41293 1.25852 8.58707 1.7459 7.99527C2.94819 6.53536 5.53498 4 9 4C12.465 4 15.0518 6.53536 16.2541 7.99527C16.7415 8.58707 16.7415 9.41293 16.2541 10.0047C15.0518 11.4646 12.465 14 9 14ZM8.47253 12.9771C3.98843 12.5888 3.98843 5.41115 8.47252 5.02285C8.64677 5.00776 8.82263 5 9 5C9.17736 5 9.35322 5.00776 9.52745 5.02285C14.0116 5.41113 14.0116 12.5889 9.52745 12.9771C9.35322 12.9922 9.17736 13 9 13C8.82263 13 8.64677 12.9922 8.47253 12.9771Z" fill="#686E78"/>
-</svg>
-</span>
-                  <input class="input" type="password" placeholder="Придумайте пароль">
-                </label><span class="modal__err">Текст ошибки пароля</span>
-              </div>
-              <div class="modal__form-group modal__form-group_double">
-                <label class="select"><span class="wrapper"><span class="arr"></span>
-                    <input class="input" type="text" value="Telegram" readonly><span class="options"><span class="active">Telegram</span><span>WhatsApp</span><span>Skype</span></span></span></label>
-                <label class="modal__label">
-                  <input class="input" placeholder="@nickname">
-                </label><span class="modal__err">Не указан никнэйм</span>
-              </div>
-              <div class="modal__form-group modal__form-group_checkboxes">
-                <label class="label">
-                  <input class="invisible" type="checkbox" name="" checked><span>Я прочитал(а) и согласен(на) с условиями<a href="" target="_blank">Пользовательского соглашения</a></span>
-                </label>
-                <label class="label">
-                  <input class="invisible" type="checkbox" name="" checked><span>Мне есть 18 лет</span>
-                </label>
-                <label class="label">
-                  <input class="invisible" type="checkbox" name="" checked><span>Я даю согласие на&nbsp;<a href="" target="_blank">обработку своих данных</a></span>
-                </label>
-              </div>
-              <div class="modal__form-group modal__form-group_buttons">
-                <button class="btn btn_primary" type="submit">Зарегистрироваться</button>
-                <button class="btn btn_lite" role="dialog" data-toggle="modal" data-direction="toggle" data-target-id="dialogEnter">Войти</button>
-              </div>
-            </form>
-          </div>
-          <div class="modal__footer">
-            <div class="modal__socials">
-              <p>Или зарегистрируйтесь через любимую соц.сеть</p>
-              <ul>
-                <li><a href="#"><img src="img/i-facebook-enter.svg" alt></a></li>
-                <li><a href="#"><img src="img/i-google-enter.svg" alt></a></li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="modal modal_request-sent-order" id="requestSentOrder">
-      <div class="modal__dialog hidden hide" id="requestOrder">
+    <div class="modal" id="howToAddressYou">
+      <div class="modal__dialog">
         <div class="modal__content">
-          <button class="modal__close" type="button" data-toggle="modal" data-direction="hide" data-target-id="requestSentOrder"></button>
+          <button class="modal__close" type="button" data-toggle="modal" data-direction="hide" data-target-id="howToAddressYou"></button>
           <div class="modal__header">
-            <h4 class="modal__title">Заявка на вывод</h4>
-            <p class="modal__subtitle">Оставьте заявку на вывод средств. Обработка заявки может занять некоторое время</p>
+            <h4 class="modal__title">How to address you?</h4>
+            <p class="modal__subtitle">Enter your name to let GhostHunter know how to address you.</p>
           </div>
           <div class="modal__body">
-            <div class="balance__card balance__card_dark">
-              <h4>Доступно для вывода</h4>
-              <p>6 240 000 ₽</p><span class="informer"><span class="informer__body"><span class="informer__title">Infoblock title</span><span class="informer__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span></span></span>
-            </div>
             <form class="modal__form" action="#">
-              <div class="modal__form-group"><span class="profile-settings__label">Укажите сумму вывода</span>
-                <!-- Полю с ошибкой добавлять класс .error-->
+              <div class="modal__form-group">
+                <!-- Для поля с ошибкой - лэблу добавлять класс .error-->
+                <label class="modal__label error">
+                  <!-- Заблокированному input добавлять атрибут disabled-->
+                  <input class="input" placeholder="Human">
+                </label><span class="modal__err">Place Error message here</span>
+              </div>
+              <div class="modal__form-group_buttons">
+                <button class="btn btn_primary" type="submit">Apply</button>
+                <button class="btn btn_empty" type="button" data-toggle="modal" data-direction="hide" data-target-id="howToAddressYou">Cancel</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="launchScanning">
+      <div class="modal__dialog">
+        <div class="modal__content">
+          <button class="modal__close" type="button" data-toggle="modal" data-direction="hide" data-target-id="launchScanning"></button>
+          <div class="modal__header">
+            <h4 class="modal__title">Launch scanning</h4>
+            <p class="modal__subtitle">Free scanning is only available for the first account. To start scanning for this and all additional accounts, you must pay the full fee.</p>
+          </div>
+          <div class="modal__body">
+            <form class="modal__form" action="#">
+              <div class="modal__form-group_buttons">
+                <button class="btn btn_primary" type="submit">Go to pricing</button>
+                <button class="btn btn_empty" type="button" data-toggle="modal" data-direction="hide" data-target-id="launchScanning">Cancel</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modalChangingEmail">
+      <div class="modal__dialog">
+        <div class="modal__content">
+          <button class="modal__close" type="button" data-toggle="modal" data-direction="hide" data-target-id="modalChangingEmail"></button>
+          <div class="modal__header">
+            <h4 class="modal__title">Changing Email</h4>
+            <p class="modal__subtitle">Enter the new email address, and click “Change email address.” You’ll receive a verefication email with a link you can click on to finalize the change</p>
+          </div>
+          <div class="modal__body">
+            <form class="modal__form" action="#">
+              <div class="modal__form-group">
+                <!-- Для поля с ошибкой - лэблу добавлять класс .error-->
+                <label class="modal__label error">
+                  <!-- Заблокированному input добавлять атрибут disabled-->
+                  <input class="input" placeholder="Enter the promo code">
+                </label><span class="modal__err">Place Error message here</span>
+              </div>
+              <div class="modal__form-group">
+                <button class="btn btn_primary w-100" type="submit">
+                  <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14.7071 5.79289C15.0976 6.18342 15.0976 6.81658 14.7071 7.20711L9.20711 12.7071C8.81658 13.0976 8.18342 13.0976 7.79289 12.7071L4.29289 9.20711C3.90237 8.81658 3.90237 8.18342 4.29289 7.79289C4.68342 7.40237 5.31658 7.40237 5.70711 7.79289L8.5 10.5858L13.2929 5.79289C13.6834 5.40237 14.3166 5.40237 14.7071 5.79289Z" fill="white"/>
+</svg>
+                  Change email address
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modalPromoCode">
+      <div class="modal__dialog">
+        <div class="modal__content">
+          <button class="modal__close" type="button" data-toggle="modal" data-direction="hide" data-target-id="modalPromoCode"></button>
+          <div class="modal__header">
+            <h4 class="modal__title">Promo code</h4>
+            <p class="modal__subtitle">Enter the promo code provided to you and click "Activate Promo Code".</p>
+          </div>
+          <div class="modal__body">
+            <form class="modal__form" action="#">
+              <div class="modal__form-group">
+                <!-- Для поля с ошибкой - лэблу добавлять класс .error-->
+                <label class="modal__label error">
+                  <!-- Заблокированному input добавлять атрибут disabled-->
+                  <input class="input" placeholder="Enter the promo code">
+                </label><span class="modal__err">Place Error message here</span>
+              </div>
+              <div class="modal__form-group">
+                <button class="btn btn_primary w-100" type="submit">
+                  <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14.7071 5.79289C15.0976 6.18342 15.0976 6.81658 14.7071 7.20711L9.20711 12.7071C8.81658 13.0976 8.18342 13.0976 7.79289 12.7071L4.29289 9.20711C3.90237 8.81658 3.90237 8.18342 4.29289 7.79289C4.68342 7.40237 5.31658 7.40237 5.70711 7.79289L8.5 10.5858L13.2929 5.79289C13.6834 5.40237 14.3166 5.40237 14.7071 5.79289Z" fill="white"/>
+</svg>
+                  Activate Promo Code
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modalAuthorizationOnInstagram">
+      <div class="modal__dialog">
+        <div class="modal__content">
+          <button class="modal__close" type="button" data-toggle="modal" data-direction="hide" data-target-id="modalAuthorizationOnInstagram"></button>
+          <div class="modal__header">
+            <h4 class="modal__title">Authorization on Instagram</h4>
+            <p class="modal__subtitle">If your account password or username has changed, you can change it here.</p>
+          </div>
+          <div class="modal__body">
+            <form class="modal__form" action="#">
+              <div class="modal__form-group">
+                <!-- Для поля с ошибкой - лэблу добавлять класс .error-->
+                <label class="modal__label">
+                  <!-- Заблокированному input добавлять атрибут disabled-->
+                  <input class="input" type="text" placeholder="Login">
+                </label><span class="modal__err">Place Error message here</span>
+              </div>
+              <div class="modal__form-group">
+                <!-- Для поля с ошибкой - лэблу добавлять класс .error-->
+                <label class="modal__label label_password error"><span class="modal__show-password"></span>
+                  <!-- Заблокированному input добавлять атрибут disabled-->
+                  <input class="input" type="password" placeholder="Password">
+                </label><span class="modal__err">Place Error message here</span>
+              </div>
+              <div class="modal__form-group">
+                <button class="btn btn_primary w-100" type="submit">
+                  <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14.7071 5.79289C15.0976 6.18342 15.0976 6.81658 14.7071 7.20711L9.20711 12.7071C8.81658 13.0976 8.18342 13.0976 7.79289 12.7071L4.29289 9.20711C3.90237 8.81658 3.90237 8.18342 4.29289 7.79289C4.68342 7.40237 5.31658 7.40237 5.70711 7.79289L8.5 10.5858L13.2929 5.79289C13.6834 5.40237 14.3166 5.40237 14.7071 5.79289Z" fill="white"/>
+</svg>
+                  Save data
+                </button>
+              </div><span class="modal__attention w-100">Do not  forget to turn off two-factor authentication!</span>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modalChangeMailPassword">
+      <div class="modal__dialog">
+        <div class="modal__content">
+          <button class="modal__close" type="button" data-toggle="modal" data-direction="hide" data-target-id="modalChangeMailPassword"></button>
+          <div class="modal__header">
+            <h4 class="modal__title">Enter your email and change your password to a new!</h4>
+            <p class="modal__subtitle">A technical email address was created for you when entering your personal account. We strongly recommend that you enter your email right now and come up with a new password for signup!</p>
+          </div>
+          <div class="modal__body">
+            <form class="modal__form" action="#">
+              <div class="modal__form-group">
+                <!-- Для поля с ошибкой - лэблу добавлять класс .error-->
+                <label class="modal__label">
+                  <!-- Заблокированному input добавлять атрибут disabled-->
+                  <input class="input" type="text" placeholder="New email addres">
+                </label><span class="modal__err">Place Error message here</span>
+              </div>
+              <div class="modal__form-group">
+                <!-- Для поля с ошибкой - лэблу добавлять класс .error-->
+                <label class="modal__label label_password"><span class="modal__show-password"></span>
+                  <!-- Заблокированному input добавлять атрибут disabled-->
+                  <input class="input" type="password" placeholder="Enter new password">
+                </label><span class="modal__err">Place Error message here</span>
+              </div>
+              <div class="modal__form-group">
+                <!-- Для поля с ошибкой - лэблу добавлять класс .error-->
+                <label class="modal__label label_password error"><span class="modal__show-password"></span>
+                  <!-- Заблокированному input добавлять атрибут disabled-->
+                  <input class="input" type="password" placeholder="Confirm new password">
+                </label><span class="modal__err">Place Error message here</span>
+              </div>
+              <div class="modal__form-group">
+                <button class="btn btn_primary w-100" type="submit">
+                  <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14.7071 5.79289C15.0976 6.18342 15.0976 6.81658 14.7071 7.20711L9.20711 12.7071C8.81658 13.0976 8.18342 13.0976 7.79289 12.7071L4.29289 9.20711C3.90237 8.81658 3.90237 8.18342 4.29289 7.79289C4.68342 7.40237 5.31658 7.40237 5.70711 7.79289L8.5 10.5858L13.2929 5.79289C13.6834 5.40237 14.3166 5.40237 14.7071 5.79289Z" fill="white"/>
+</svg>
+                  Save changes
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modalChangingPassword">
+      <!-- Для модальных окон с несколькими диалогми нужно в одном модальном окно-->
+      <!-- размещать все диалоги которые должны сменять друг-друга-->
+      <!-- Для смены диалога, нужно создать любой Html элемент с атриботами-->
+      <!-- role="dialog" data-toggle="modal" data-direction="toggle" data-target-id="ID_TARGET_DIALOG_WITHOUT_SYMBOL_#"-->
+      <div class="modal__dialog hidden hide" id="dialogChangingPassword">
+        <div class="modal__content">
+          <button class="modal__close" type="button" data-toggle="modal" data-direction="hide" data-target-id="modalChangingPassword"></button>
+          <div class="modal__header">
+            <h4 class="modal__title">Changing password</h4>
+            <p class="modal__subtitle">The password must be at least 8 characters long and must contain at least one digit and 1 uppercase letter.</p>
+          </div>
+          <div class="modal__body">
+            <form class="modal__form" action="#">
+              <div class="modal__form-group">
+                <!-- Для поля с ошибкой - лэблу добавлять класс .error-->
+                <label class="modal__label label_password"><span class="modal__show-password"></span>
+                  <!-- Заблокированному input добавлять атрибут disabled-->
+                  <input class="input" type="password" placeholder="Enter your current password">
+                </label><span class="modal__err">Place Error message here</span>
+              </div>
+              <div class="modal__form-group">
+                <!-- Для поля с ошибкой - лэблу добавлять класс .error-->
+                <label class="modal__label label_password"><span class="modal__show-password"></span>
+                  <!-- Заблокированному input добавлять атрибут disabled-->
+                  <input class="input" type="password" placeholder="New password ">
+                </label><span class="modal__err">Place Error message here</span>
+              </div>
+              <div class="modal__form-group">
+                <!-- Для поля с ошибкой - лэблу добавлять класс .error-->
+                <label class="modal__label label_password error"><span class="modal__show-password"></span>
+                  <!-- Заблокированному input добавлять атрибут disabled-->
+                  <input class="input" type="password" placeholder="Confirm new password">
+                </label><span class="modal__err">Your confirmation password does not match the new password</span>
+              </div>
+              <div class="modal__form-group">
+                <button class="btn btn_primary w-100" type="submit">
+                  <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14.7071 5.79289C15.0976 6.18342 15.0976 6.81658 14.7071 7.20711L9.20711 12.7071C8.81658 13.0976 8.18342 13.0976 7.79289 12.7071L4.29289 9.20711C3.90237 8.81658 3.90237 8.18342 4.29289 7.79289C4.68342 7.40237 5.31658 7.40237 5.70711 7.79289L8.5 10.5858L13.2929 5.79289C13.6834 5.40237 14.3166 5.40237 14.7071 5.79289Z" fill="white"/>
+</svg>
+                  Save new password
+                </button>
+              </div>
+              <div class="modal__switch-dialog">
+                <button role="dialog" data-toggle="modal" data-direction="toggle" data-target-id="dialogAskEmail">Forgot your password?</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="modal__dialog hidden hide" id="dialogAskEmail">
+        <div class="modal__content">
+          <button class="modal__close" type="button" data-toggle="modal" data-direction="hide" data-target-id="modalChangingPassword"></button>
+          <div class="modal__header">
+            <h4 class="modal__title">Enter your mail</h4>
+            <p class="modal__subtitle">Этого модального окна нет в макете. Добавлено на случай необходимости реализации смены модальных окон.</p>
+          </div>
+          <div class="modal__body">
+            <form class="modal__form" action="#">
+              <div class="modal__form-group">
+                <!-- Для поля с ошибкой - лэблу добавлять класс .error-->
+                <label class="modal__label">
+                  <!-- Заблокированному input добавлять атрибут disabled-->
+                  <input class="input" placeholder="Your mail">
+                </label><span class="modal__err">Place Error message here</span>
+              </div>
+              <div class="modal__form-group">
+                <button class="btn btn_primary w-100" type="submit">
+                  <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14.7071 5.79289C15.0976 6.18342 15.0976 6.81658 14.7071 7.20711L9.20711 12.7071C8.81658 13.0976 8.18342 13.0976 7.79289 12.7071L4.29289 9.20711C3.90237 8.81658 3.90237 8.18342 4.29289 7.79289C4.68342 7.40237 5.31658 7.40237 5.70711 7.79289L8.5 10.5858L13.2929 5.79289C13.6834 5.40237 14.3166 5.40237 14.7071 5.79289Z" fill="white"/>
+</svg>
+                  Send instructions to email
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="ScanningAccount">
+      <div class="modal__dialog">
+        <div class="modal__content">
+          <button class="modal__close" type="button" data-toggle="modal" data-direction="hide" data-target-id="ScanningAccount"></button>
+          <div class="modal__header">
+            <h4 class="modal__title">Scanning account for 1$</h4>
+            <p class="modal__subtitle">Get a full scan of your @username account for bots, foreigners, commercial accounts, etc. among your subscriptions and subscribers.</p>
+          </div>
+          <div class="modal__body">
+            <form class="modal__form" action="#">
+              <div class="modal__form-group">
+                <!-- Для поля с ошибкой - лэблу добавлять класс .error-->
+                <label class="modal__label">
+                  <!-- Заблокированному input добавлять атрибут disabled-->
+                  <input class="input" placeholder="Your mail">
+                </label><span class="modal__err">Place Error message here</span>
+              </div>
+              <div class="modal__form-group modal__form-group_checkbox">
                 <label>
-                  <!-- Для блокировки и разблокировки поля ввода использовать атрибут disabled-->
-                  <input class="input" type="text" placeholder="Укажите сумму вывода" disabled>
-                  <!-- После каждого input может стоять блок с ошибкой-->
-                </label><span class="modal__err">Текст ошибки почты</span>
+                  <input class="invisible" type="checkbox" name="" checked><span>I accept a<a href="" target="_blank">User Agreement</a></span>
+                </label>
               </div>
-              <div class="modal__form-group"><span class="profile-settings__label">Кошелек для вывода</span>
-                <!-- Показывать эту кнопку только для состояний Положительный баланс и есть кошельки-->
-                <!-- Для того чтобы скрыть поле ввода, можно использовать класс .hidden на лэйбле-->
-                <label class="select"><span class="wrapper"><span class="arr"></span>
-                    <input class="input" type="text" value="Выберите куда вывести ср-ва" readonly><span class="options"><span>YooMoney (94298148218482184)</span><span>PayPal (94292321328148218482184)</span><span>Visa (4555122345674321)</span><span class="link"><a href="profile.html">Перейти в Настройки вывода</a></span></span></span></label>
+              <div class="modal__form-group">
+                <button class="btn btn_primary w-100" type="submit">
+                  <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14.7071 5.79289C15.0976 6.18342 15.0976 6.81658 14.7071 7.20711L9.20711 12.7071C8.81658 13.0976 8.18342 13.0976 7.79289 12.7071L4.29289 9.20711C3.90237 8.81658 3.90237 8.18342 4.29289 7.79289C4.68342 7.40237 5.31658 7.40237 5.70711 7.79289L8.5 10.5858L13.2929 5.79289C13.6834 5.40237 14.3166 5.40237 14.7071 5.79289Z" fill="white"/>
+</svg>
+                  Save data
+                </button>
               </div>
-              <div class="modal__form-group modal__form-group_btn-vertical">
-                <!-- Показывать эту кнопку только для состояний Нет балланса и Нет кошелька-->
-                <!-- Для того чтобы скрыть кнопку, можно использовать класс .hidden--><a class="btn btn_primary w-100" href="profile.html">Настройки вывода</a>
-                <!-- Для переключения диалоговых окон, можно использовать-->
-                <!-- функцию switchDialog(dialogId, modalId = undefined);-->
-                <!-- Для блокировки кнопки Вывода средств использовать атрибут disabled-->
-                <button class="btn btn_lite" role="dialog" data-toggle="modal" data-direction="toggle" data-target-id="requestSent">Заказать вывод средств</button>
-              </div>
+              <div class="modal__message">After payment, you can scan your account 1 time within three days. After the end of this period, the cost of a subscription to the service will be 14.9$ for each 4 weeks of use. The debiting will be made with your card. You can cancel subscription any time.</div>
             </form>
-          </div>
-          <div class="modal__footer">
-            <div class="modal__contacts">По всем вопросам обращайтесь&nbsp;<a class="link" href="mailto:partners@zen-cpa.ru">partners@zen-cpa.ru</a></div>
           </div>
         </div>
       </div>
-      <div class="modal__dialog hidden hide" id="requestSent">
+    </div>
+    <div class="modal" id="modalErrorOrderingAudit">
+      <div class="modal__dialog">
         <div class="modal__content">
-          <button class="modal__close" type="button" data-toggle="modal" data-direction="hide" data-target-id="requestSentOrder"></button>
+          <button class="modal__close" type="button" data-toggle="modal" data-direction="hide" data-target-id="modalErrorOrderingAudit"></button>
           <div class="modal__header">
-            <h4 class="modal__title">Заявка на вывод</h4>
+            <h4 class="modal__title">Заказать аудит</h4>
+            <p class="modal__subtitle">Консультация от SMM-специалиста по очистке на основании результатов сканирования</p>
+          </div>
+          <div class="modal__body">
+            <form class="modal__form" action="#"><span class="modal__attention w-100">Аудит доступен для аккаунтов с&nbsp;завершенным сканированием</span></form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modalOrderingAudit">
+      <div class="modal__dialog">
+        <div class="modal__content">
+          <button class="modal__close" type="button" data-toggle="modal" data-direction="hide" data-target-id="modalOrderingAudit"></button>
+          <div class="modal__header">
+            <h4 class="modal__title">Заказать аудит</h4>
+            <p class="modal__subtitle">Консультация от SMM-специалиста по очистке на основании результатов сканирования</p>
           </div>
           <div class="modal__body">
             <form class="modal__form" action="#">
-              <div class="modal__results-txt"><img src="img/i-res-check.svg" alt>
-                <h4>Ваша заявка успешно создана</h4>
-                <p>Отслеживать статус заявки вы можете на странице<span> «История выплат»</span></p>
+              <div class="modal__price">
+                <p>Стоимость аудита:</p><span>1 500 ₽</span>
               </div>
-              <div class="modal__form-group modal__form-group_btn-vertical">
-                <button class="btn btn_primary" id="showHistoryBtn" data-toggle="modal" data-direction="hide" data-target-id="requestSentOrder">История выплат</button>
-                <button class="btn btn_lite" type="button" data-toggle="modal" data-direction="hide" data-target-id="requestSentOrder">Закрыть</button>
+              <div class="modal__form-group">
+                <button class="btn btn_primary w-100" type="submit">Перейти к оплате</button>
               </div>
             </form>
           </div>
-          <div class="modal__footer">
-            <div class="modal__contacts">По всем вопросам обращайтесь&nbsp;<a class="link" href="mailto:partners@zen-cpa.ru">partners@zen-cpa.ru</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modalConfirmAccountDelete">
+      <div class="modal__dialog">
+        <div class="modal__content">
+          <button class="modal__close" type="button" data-toggle="modal" data-direction="hide" data-target-id="modalConfirmAccountDelete"></button>
+          <div class="modal__header">
+            <h4 class="modal__title">Вы уверены, что хотите удалить аккаунт?</h4>
+          </div>
+          <div class="modal__body">
+            <form class="modal__form" action="#">
+              <div class="modal__form-group_buttons-in-line">
+                <button class="btn btn_primary" type="button" data-toggle="modal" data-direction="hide" data-target-id="modalConfirmAccountDelete">Нет</button>
+                <button class="btn btn_empty" type="submit">Да</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
