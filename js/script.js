@@ -278,11 +278,13 @@ function showModal(modalId, dialogId = undefined) {
     const bodyClasses = document.body.classList;
     const modalClasses = modal.classList;
     const scrollbarWidth = getScrollbarWidth();
+    const aside = document.getElementById('aside');
 
     bodyClasses.add('modal-open');
     document.body.style.paddingRight = scrollbarWidth + 'px';
     modalClasses.add('show');
     modal.style.paddingRight = scrollbarWidth + 'px';
+    aside.style.marginLeft = '-' + scrollbarWidth/2 + 'px';
 
     if (dialogId) {
         const dialog = document.getElementById(dialogId);
@@ -298,6 +300,7 @@ function hideModal(modalId) {
     const modal = document.getElementById(modalId);
     const bodyClasses = document.body.classList;
     const modalClasses = modal.classList;
+    const aside = document.getElementById('aside');
 
     const dialogs = nodeListToArray(document.getElementById(modalId)
         .getElementsByClassName('modal__dialog'));
@@ -314,6 +317,7 @@ function hideModal(modalId) {
     document.body.style.removeProperty('padding-right');
     modalClasses.remove('show');
     modal.style.removeProperty('padding-right');
+    aside.style.removeProperty('margin-left');
 }
 
 function switchDialog(dialogId, modalId = undefined) {
@@ -474,6 +478,150 @@ function(event) {
     // });
 });
 
+/*
+ * Создает круговую диаграмму с секторами
+ * @param container {DOMElement}
+ * @param chartData {Array.<{value: Number, color: String}>}
+ * @param config {{strokeWidth: Number, radius: Number, start: String}}
+ */
+function createPie(container, chartData, config = {}) {
+    const svgns = "http://www.w3.org/2000/svg";
+    const offsetRatio = {
+        top: 0.25,
+        right: 0,
+        left: 0.5,
+        bottom: -0.25,
+    }
+
+    const strokeWidth = config.strokeWidth || 5;
+    const radiusValue = config.radius || 100;
+    const radius = radiusValue - strokeWidth / 2;
+    const fullSize = 2 * radiusValue;
+
+    // длина окружности
+    const length = 2 * Math.PI * radius;
+
+    // смещение начальной точки
+    let startPoint = config.start in offsetRatio ? config.start : 'top';
+    const chartOffset = length * offsetRatio[startPoint];
+
+    // расчетные данные для построения секторов
+    const sectors = [];
+    chartData.forEach((sectorData, sectorIndex) => {
+        // Длина сектора
+        const width = length * sectorData.value / 100;
+        // Смещение сектора от начальной точки
+        let offset = chartOffset;
+
+        if (sectorIndex > 0) {
+            let prevSector = sectors[sectorIndex - 1];
+            offset = prevSector.offset - prevSector.width;
+        }
+
+        sectors.push({
+            ...sectorData,
+            width,
+            offset,
+        })
+    });
+
+    const svg = createSvgElement('svg', {
+        'viewBox': `0 0 ${fullSize} ${fullSize}`,
+        'fill': 'none',
+        'width': fullSize,
+        'height': fullSize,
+    });
+
+    sectors.forEach(sector => {
+        const circle = createSvgElement('circle', {
+            cx: radius + strokeWidth / 2,
+            cy: radius + strokeWidth / 2,
+            r: radius,
+            'stroke-dasharray': `${sector.width} ${length - sector.width}`,
+            'stroke-dashoffset': sector.offset,
+            'stroke': sector.color,
+            'stroke-width': strokeWidth
+        })
+
+        svg.appendChild(circle);
+    })
+
+    container.appendChild(svg);
+
+    function createSvgElement(elementName, attrs = {}) {
+        const el = document.createElementNS(svgns, elementName);
+        Object.entries(attrs).forEach(([attrName, attrValue]) => {
+            el.setAttributeNS(null, attrName, attrValue)
+        });
+        return el;
+    }
+}
+
+const STROKE_WIDTH = 100;
+const RADIUS = 200;
+const START = 'top'; // top|left|right|bottom
+const PIE_CHART_CONFIG = {
+    strokeWidth: STROKE_WIDTH,
+    radius: RADIUS,
+    start: START,
+};
+
+function initialPieCharts(el) {
+    let pieArr;
+    let pieData = [];
+
+    try {
+        pieArr = JSON.parse(el.dataset.pieChart);
+
+        for (let i = 0; i < pieArr.length; i++) {
+            pieData.push({
+                value: pieArr[i][0],
+                color: pieArr[i][1]
+            });
+        }
+    } catch (e) {
+        console.error('Не корректный форма JSON данных для построения груговой диаграммы.');
+    }
+
+    if (pieData.length > 0) {
+        // Заменяем значения на проценты
+        pieData = updateValueToPercent(pieData, getSum(pieData));
+
+        // Строим круговую диаграмму
+        createPie(el, pieData, PIE_CHART_CONFIG);
+    }
+
+    function getSum(arr) {
+        let store = 0;
+
+        for (let i = 0; i < arr.length; i++) {
+            store += parseInt(arr[i].value);
+        }
+        return store;
+    }
+
+    function updateValueToPercent(arr, total) {
+        let newArr = [];
+
+        for (let i = 0; i < arr.length ; i++) {
+            const value = parseInt(arr[i].value) / total * 100;
+            const color = arr[i].color;
+            newArr.push({ value, color });
+        }
+
+        return newArr;
+    }
+}
+
+window.addEventListener("load",
+    function(event) {
+
+    // Инициализируем все круговые диаграммы
+    const pieCharts = nodeListToArray(document
+        .getElementsByClassName('pie-chart'));
+
+    pieCharts.forEach(initialPieCharts);
+})
 function handlerMenuTogglesClick(e) {
     const parent = e.target.closest('.dashboard__card-menu');
     const list = parent.querySelector('ul');
