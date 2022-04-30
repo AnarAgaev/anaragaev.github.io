@@ -21,6 +21,17 @@ window.hideEffects = function (e) {
     // Card recommendations
     const isCardRecom = _this.closest('.dashboard__card-recommendation');
     if (!isCardRecom) resetAllCardRecom();
+
+    // Filter information container
+    const isFilterInfo = _this.closest('.filter-info-wrapper');
+    if (!isFilterInfo) resetAllFilterInfo();
+
+    // Selector lists showSelectorList
+    const isSelectorList = _this.closest('.selector-list-toggle');
+
+    if (!isSelectorList) {
+        resetAllSelectorList();
+    }
 }
 
 // Переклаывает html коллекцию в массив
@@ -77,15 +88,15 @@ function handleTabClick (e) {
 
 function hideSiblingTabs (node) {
     const siblings = nodeListToArray(
-        node.closest('.tabs__list')
-            .querySelectorAll('.tabs__item .tabs__toggle'));
+        node.closest('.tabs-list')
+            .querySelectorAll('.tabs-item .tabs-toggle'));
 
     removeActiveClassFromNodeList(siblings);
 }
 
 function hideSiblingsTabPanes (node) {
     let siblings = nodeListToArray(node
-        .closest('.tabs__content').children);
+        .closest('.tabs-content').children);
 
     removeActiveClassFromNodeList(siblings);
 }
@@ -184,6 +195,27 @@ function resetAllCardRecom() {
     });
 }
 
+function resetAllSelectorList() {
+    const nodes = nodeListToArray(document
+        .querySelectorAll('.selector-list-toggle .selectors'));
+
+    nodes.forEach(function (el) {
+        el.classList.remove(
+            'show'
+        );
+    });
+}
+
+function resetAllFilterInfo() {
+    const nodes = nodeListToArray(document
+        .querySelectorAll('.filter-info-wrapper .container.show'));
+
+    nodes.forEach(function (el) {
+        el.classList.remove(
+            'show'
+        );
+    });
+}
 
 // Возвращает объект расстояний от элемента до краёв окна
 const getDistances = (el) => {
@@ -208,7 +240,7 @@ function showTabPane(tabPaneId) {
 
     if (tabPane) {
         const tab = document.querySelector(
-            '[data-target-id="'+tabPaneId+'"]');
+            '[data-target-id="' + tabPaneId + '"]');
 
         hideSiblingTabs(tab);
         hideSiblingsTabPanes(tabPane);
@@ -222,13 +254,12 @@ window.addEventListener("load",
 function(event) {
     document.addEventListener('click', hideEffects);
 
-//     const tabs = nodeListToArray(document
-//         .getElementsByClassName('tabs__toggle'));
-//
-//     tabs.forEach(function (el) {
-//         el.addEventListener('click', handleTabClick);
-//     });
-//
+    const tabs = nodeListToArray(document
+        .getElementsByClassName('tabs-toggle'));
+
+    tabs.forEach(function (el) {
+        el.addEventListener('click', handleTabClick);
+    });
 
     // Показываем информ тултип
     const informers = nodeListToArray(document
@@ -478,6 +509,145 @@ function(event) {
     // });
 });
 
+function handleClicOnViewButton(e) {
+    const btn = e.target
+        .closest('.protection__view');
+
+    clearSiblingsViewBtn(btn);
+    btn.classList.add('active');
+
+    const isToList = btn.id === 'showAsList';
+    const accountsWrapperClases = btn.closest('.tabs-pane')
+        .querySelector('.accounts__wrap')
+        .classList;
+
+    isToList
+        ? accountsWrapperClases.add('list')
+        : accountsWrapperClases.remove('list');
+}
+
+function clearSiblingsViewBtn(el) {
+    const siblings = nodeListToArray(el
+        .closest('.protection__view-btns')
+        .children);
+
+    siblings.forEach(function (el) {
+        el.classList.remove('active');
+    });
+}
+
+function toggleFilterInfo(e) {
+    const container = e.target
+        .closest('.filter-info-wrapper')
+        .querySelector('.filter-info');
+
+    container.classList.toggle('show');
+}
+
+function showSelectorList(e) {
+    let el = e.target;
+
+    if (!el.classList.contains('selector-list-toggle')) {
+        el = el.closest('.selector-list-toggle');
+    }
+
+    nodeListToArray(document
+        .querySelectorAll('.selector-list-toggle .selectors'))
+        .forEach(function (el) {
+        el.classList.remove('show');
+    });
+
+    el.querySelector('.selectors')
+        .classList.add('show');
+}
+
+// Удалем аакунт из списка аккаунтов
+// Принималет либо htmlElement
+// либо id удаляемого аккаунта строкой,
+// без #, только значение идентификатора
+function deleteAccountFromList(account) {
+    if (typeof account === 'string') {
+        account = document.getElementById(account);
+    }
+    account.parentNode.removeChild(account);
+}
+
+function countSelectedFilterParams(e) {
+    const container = e.target.closest('.modal');
+    const checks = nodeListToArray(container
+        .querySelectorAll('input[type="checkbox"]'));
+    const id = container.id;
+    const counter = document
+        .querySelector('[data-target-id='+id+']')
+        .querySelector('.filter-counter');
+    let selectedCount;
+
+    selectedCount = checks.filter(function (el) {
+        return el.checked;
+    });
+
+    if (selectedCount.length > 0) {
+        counter.classList.add('show');
+        counter.innerText = selectedCount.length;
+    } else {
+        counter.classList.remove('show');
+    }
+}
+
+window.addEventListener("load",
+function(event) {
+    const proViewBtns = nodeListToArray(document
+        .getElementsByClassName('protection__view'));
+
+    proViewBtns.forEach(function (el) {
+        el.addEventListener('click', handleClicOnViewButton);
+    });
+
+    const filterToggles = nodeListToArray(document
+        .getElementsByClassName('toggle-filter-info'));
+
+    filterToggles.forEach(function (el) {
+        el.addEventListener('click', toggleFilterInfo);
+    });
+
+    const selectorListToggle = nodeListToArray(document
+        .getElementsByClassName('selector-list-toggle'));
+
+    selectorListToggle.forEach(function (el) {
+        el.addEventListener('click', showSelectorList);
+    });
+
+    const selectorListCloseBtn = nodeListToArray(document
+        .getElementsByClassName('close-sorting'));
+
+    selectorListCloseBtn.forEach(function (el) {
+        el.addEventListener('click', function (e) {
+            e.stopPropagation();
+            resetAllSelectorList();
+        });
+    });
+
+    const deleteAccountFromListBtn = nodeListToArray(document
+        .querySelectorAll('.accounts__item .delete'));
+
+    deleteAccountFromListBtn.forEach(function (el) {
+        el.addEventListener('click', function (e) {
+            e.stopPropagation();
+
+            const item = e.target
+                .closest('.accounts__item');
+
+            deleteAccountFromList(item);
+        })
+    });
+
+    const modalCheckboxes = nodeListToArray(document
+        .querySelectorAll(".modal__checks input[type='checkbox']"));
+
+    modalCheckboxes.forEach(function (el) {
+        el.addEventListener('input', countSelectedFilterParams);
+    });
+});
 /*
  * Создает круговую диаграмму с секторами
  * @param container {DOMElement}
@@ -622,6 +792,7 @@ window.addEventListener("load",
 
     pieCharts.forEach(initialPieCharts);
 })
+
 function handlerMenuTogglesClick(e) {
     const parent = e.target.closest('.dashboard__card-menu');
     const list = parent.querySelector('ul');
@@ -687,3 +858,4 @@ window.addEventListener("load",
 
 
 })
+
