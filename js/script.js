@@ -250,6 +250,18 @@ function showTabPane(tabPaneId) {
     }
 }
 
+function checkSwitcher (el) {
+    const containerClasses = el.target
+        .closest('.switcher')
+        .classList;
+
+    const isChecked = el.target.checked;
+
+    isChecked
+        ? containerClasses.remove('not-checked')
+        : containerClasses.add('not-checked');
+}
+
 window.addEventListener("load",
 function(event) {
     document.addEventListener('click', hideEffects);
@@ -267,6 +279,14 @@ function(event) {
 
     informers.forEach(function (el) {
         el.addEventListener('click', toggleInfo);
+    });
+
+    // Переключаем калссы на контейнера свитчера
+    const switchers = nodeListToArray(document
+        .querySelectorAll('.switcher input'));
+
+    switchers.forEach(function (el) {
+        el.addEventListener('input', checkSwitcher);
     });
 })
 window.collapseAllSelects = function() {
@@ -572,6 +592,17 @@ function deleteAccountFromList(account) {
     account.parentNode.removeChild(account);
 }
 
+// Удалем слова исключения из списка иключений
+function deleteExceptionFromList(el) {
+    let node = el.target;
+
+    if (node.classList.contains('close')) {
+        node = node.closest('li')
+    }
+
+    node.parentNode.removeChild(node);
+}
+
 function countSelectedFilterParams(e) {
     const container = e.target.closest('.modal');
     const checks = nodeListToArray(container
@@ -592,6 +623,67 @@ function countSelectedFilterParams(e) {
     } else {
         counter.classList.remove('show');
     }
+}
+
+// Открываем/закрываем ячейки табилцы
+function handleClickTableControllers(e) {
+    const isMobile = window.innerWidth < 768;
+
+    if (isMobile) {
+        const container = e.target.closest('td');
+        container.classList.toggle('show');
+    }
+}
+
+function initialChartProtection (dataArr, labelsArr) {
+    const ctx = document.getElementById('chartProtection');
+
+    const chartProtection = new Chart(ctx,
+        {
+            type: 'line',
+            data: {
+                labels: labelsArr,
+                datasets: dataArr
+            },
+            options: {
+                maintainAspectRatio: false,
+                layout: {
+                    padding: 20
+                },
+                plugins: {
+                    legend: {
+                        display: false,
+                    }
+                },
+                scales: {
+                    x: { grid: { display: false } },
+                    y: { grid: { display: false } }
+                }
+            }
+        }
+    );
+}
+
+function expandChartProtectionArr(arr) {
+    let expandedArr = [];
+
+    for (let i = 0; i < arr.length; i++) {
+        expandedArr.push({
+            data: arr[i].data,
+            backgroundColor: [arr[i].color],
+            borderColor: [arr[i].color],
+            borderWidth: 2
+        });
+    }
+
+    return expandedArr;
+
+    // const chartFollowers = {
+    //     data: [0, 0, 5, 0, 0, 0, 10],
+    //     backgroundColor: ['#EB4545'],
+    //     borderColor: ['#EB4545'],
+    //     borderWidth: 2
+    // };
 }
 
 window.addEventListener("load",
@@ -647,6 +739,50 @@ function(event) {
     modalCheckboxes.forEach(function (el) {
         el.addEventListener('input', countSelectedFilterParams);
     });
+
+    const exceptionList = nodeListToArray(document
+        .querySelectorAll(".rt-protection__tags-words .tags-list li"));
+
+    exceptionList.forEach(function (el) {
+        el.addEventListener('click', deleteExceptionFromList);
+    });
+
+    // Открываем/закрываем ячейки табилцы
+    const tblCtrs = nodeListToArray(document
+        .querySelectorAll(".rt-protection__table .controller"));
+
+    tblCtrs.forEach(function (el) {
+        el.addEventListener('click', handleClickTableControllers);
+    });
+
+    // const arr = [
+    //     { data: [0, 0, 5, 0, 0, 0, 10], color: '#EB4545' },
+    //     { data: [0, 0, 17, 6, 0, 0, 0], color: '#FEAB5A' },
+    //     { data: [0, 3, 0, 8, 0, 5, 0], color: '#41C79E' },
+    //     { data: [0, 0, 0, 0, 3, 0, 0], color: '#45A3EF' },
+    // ];
+
+    //['11.02', '12.02', '13.02', '14.02', '15.02', '16.02', '17.02']
+
+    const chartEl = document
+        .querySelector('[data-chart-params]');
+
+    if (chartEl) {
+        try {
+            const chartData = chartEl.dataset.chartParams;
+            const arrData = JSON.parse(chartData);
+            const chartLabels = chartEl.dataset.chartLabels;
+            const arrLabels = JSON.parse(chartLabels);
+
+            initialChartProtection (
+                expandChartProtectionArr(arrData),
+                arrLabels
+            );
+        }
+        catch (e) {
+            console.warn("График не построен. Не корректный формат JSON строки.")
+        }
+    }
 });
 /*
  * Создает круговую диаграмму с секторами

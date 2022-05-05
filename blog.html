@@ -17,6 +17,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/manifest.json">
+    <script src="js/vendor.js"></script>
   </head>
   <body class="page-blog">
     <section class="section" id="section">
@@ -68,7 +69,669 @@
         </div>
       </aside>
       <main class="main" id="main">
-        <p>blog</p>
+        <div class="protection__header">
+          <h1 class="protection__title protection__title_rt-protection">Real time protection</h1>
+          <button class="protection__switcher" type="button" data-toggle="modal" data-direction="show" data-target-id="modalSelectAccount">Switch account</button>
+        </div>
+        <div class="rt-protection">
+          <div class="ac__header">
+            <div class="dashboard__card-header">
+              <div class="dashboard__card-avatar">
+                <!-- Аватарку для карточки вставлять как инлайновый стиль--><span style="background-image: url('img/temp/card-avatar.jpg');"></span>
+                <div class="dashboard__card-recommendation">
+                  <button class="green" type="button">64<img src="img/i-avatar-arr.svg" alt></button>
+                  <ul>
+                    <li>To increase the quality of the account to 100% you should:</li>
+                    <li><span>1.</span>Scan your account</li>
+                    <li><span>2.</span>Set up the cleaning using the recommended parameters</li>
+                    <li><span>3.</span>Clear account</li>
+                    <li><span>4.</span>Setting up protection</li>
+                    <li><span>5.</span>Enable account protection</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="dashboard__card-name">Константинов Константин</div>
+              <div class="dashboard__card-nic">@konstkonst86</div>
+            </div>
+          </div>
+          <div class="ac__change-account">
+            <button type="button" data-toggle="modal" data-direction="show" data-target-id="modalSelectAccount">Change account</button>
+          </div>
+          <div class="rt-protection__header">
+            <h3>Activate account protection</h3>
+            <p>When you turn on the protection you get:</p>
+          </div>
+          <div class="rt-protection__body">
+            <ul class="rt-protection__icon-slit">
+              <li><img src="img/dec5.png" alt><span>GhostHunter works accurately to prevent your account from being blocked.</span></li>
+              <li><img src="img/dec6.png" alt><span>Protects you from spam attacks and mailings, and allows you to customize your protection.</span></li>
+              <li><img src="img/dec7.png" alt><span>Complies with Instagram's official policies and guidelines to avoid possible blockages.</span></li>
+              <li><img src="img/dec8.png" alt><span>Your account will be permanently protected by GhostHunter and will no longer need to be cleaned.</span></li>
+            </ul>
+          </div>
+          <div class="rt-protection__footer">
+            <div class="rt-protection__button">
+              <button class="btn btn_primary" type="button">Activate protection</button>
+            </div>
+          </div>
+        </div>
+        <div class="protection__header"><a class="protection__header-back" href="#"><img src="img/i-back-arr.svg" alt></a>
+          <h1 class="protection__title">Setting up account cleanup</h1>
+          <button class="protection__switcher" type="button" data-toggle="modal" data-direction="show" data-target-id="modalSelectAccount">Switch account</button>
+        </div>
+        <div class="rt-protection rt-protection_thin"><a class="rt-protection__arr-back" href="#"><img src="img/i-back-arr.svg" alt></a>
+          <div class="ac__header">
+            <div class="dashboard__card-header">
+              <div class="dashboard__card-avatar">
+                <!-- Аватарку для карточки вставлять как инлайновый стиль--><span style="background-image: url('img/temp/card-avatar.jpg');"></span>
+                <div class="dashboard__card-recommendation">
+                  <button class="green" type="button">64<img src="img/i-avatar-arr.svg" alt></button>
+                  <ul>
+                    <li>To increase the quality of the account to 100% you should:</li>
+                    <li><span>1.</span>Scan your account</li>
+                    <li><span>2.</span>Set up the cleaning using the recommended parameters</li>
+                    <li><span>3.</span>Clear account</li>
+                    <li><span>4.</span>Setting up protection</li>
+                    <li><span>5.</span>Enable account protection</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="dashboard__card-name">Константинов Константин</div>
+              <div class="dashboard__card-nic">@konstkonst86</div>
+            </div>
+          </div>
+          <div class="ac__change-account">
+            <button type="button" data-toggle="modal" data-direction="show" data-target-id="modalSelectAccount">Change account</button>
+          </div>
+          <div class="rt-protection__header">
+            <h3>Setting up account protection</h3>
+            <p>Click on any category to view and change settings. If the toggle switch next to a category is enabled, then all types of threats that fit this category will be deleted after Protection Settings is launched.</p>
+          </div>
+          <div class="rt-protection__body rt-protection__body_filters">
+            <div class="rt-protection__container">
+              <!-- Если input внутри свитчера НЕ ВЫБРАН, добавлять лэйблу класс .not-checked-->
+              <!-- Не корректно если .switcher.not-checked и первый вложенный интуп checked-->
+              <!-- Класс .not-checked на свитчере и checked на первом вложенном инпуте взаимо-искоючаемы-->
+              <label class="switcher">
+                <!-- Если input ВЫБРАН, добавлять ему атрибут checked-->
+                <input class="invisible" type="checkbox" name="" value="" checked><span class="switch"></span><span class="caption">Filter unwanted followers</span>
+              </label>
+              <ul class="checkbox-list">
+                <li>
+                  <label class="checkbox">
+                    <input class="invisible" type="checkbox" name="" value="" checked><span class="checker"></span><span class="text">Ghosts and mass followers</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input class="invisible" type="checkbox" name="" value=""><span class="checker"></span><span class="text">Commercial accounts</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input class="invisible" type="checkbox" name="" value="" checked><span class="checker"></span><span class="text">Ghosts and mass followers</span>
+                  </label>
+                  <ul class="checkbox-list checkbox-list_innner">
+                    <li class="caption">Selected groups of foreigners will be blocked:</li>
+                    <li>
+                      <label class="checkbox">
+                        <input class="invisible" type="checkbox" name="" value="" checked><span class="checker"></span><span class="text">Arabic (Egypt, Sudan, Libya, etc.)</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox">
+                        <input class="invisible" type="checkbox" name="" value="" checked><span class="checker"></span><span class="text">Asian (China, Japan, Korea, etc.)</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox">
+                        <input class="invisible" type="checkbox" name="" value=""><span class="checker"></span><span class="text">Cyrillic (Russia, Ukraine, Belarus, etc.)</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox">
+                        <input class="invisible" type="checkbox" name="" value=""><span class="checker"></span><span class="text">English (USA, England, Canada, etc.)</span>
+                      </label>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="rt-protection__container">
+              <!-- Если input внутри свитчера НЕ ВЫБРАН, добавлять лэйблу класс .not-checked-->
+              <!-- Не корректно если .switcher.not-checked и первый вложенный интуп checked-->
+              <!-- Класс .not-checked на свитчере и checked на первом вложенном инпуте взаимо-искоючаемы-->
+              <label class="switcher">
+                <!-- Если input ВЫБРАН, добавлять ему атрибут checked-->
+                <input class="invisible" type="checkbox" name="" value="" checked><span class="switch"></span><span class="caption">Filter unwanted comments</span>
+              </label>
+              <div class="rt-protection__tags">
+                <div class="rt-protection__tags-desc">Default stop words for English and Russian. Attention, the list contains strong expressions and dirty words:</div>
+                <div class="rt-protection__tags-controlls">
+                  <div class="rt-protection__tags-toggle selector-list-toggle" id="controllTagsSort">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="3.11133" y="6.22217" width="5.44444" height="1.55556" rx="0.777778" fill="#5851DB"/>
+<rect x="3.11133" y="3.88867" width="7.77778" height="1.55556" rx="0.777778" fill="#5851DB"/>
+<rect x="3.11133" y="8.55566" width="3.11111" height="1.55556" rx="0.777778" fill="#5851DB"/>
+</svg>
+                    Sorting<span class="d-none d-xl-block">:</span>
+                    <!-- .show-->
+                    <div class="selectors">
+                      <div class="selectors__title close-sorting">
+                        Sorting<svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4.11648 8.82786C4.42022 9.1316 4.91268 9.1316 5.21642 8.82786L7.38867 6.65561L9.56092 8.82786C9.86466 9.1316 10.3571 9.1316 10.6609 8.82786C10.9646 8.52412 10.9646 8.03165 10.6609 7.72791L7.93864 5.00569C7.6349 4.70195 7.14244 4.70195 6.8387 5.00569L4.11648 7.72791C3.81274 8.03165 3.81274 8.52412 4.11648 8.82786Z" fill="#FFDC80"/>
+</svg>
+
+                      </div>
+                      <label class="selectors__checkbox">
+                        <input class="invisible" type="radio" name="tags-sort" value=""><span class="checker"></span><span class="text">From A to Z</span>
+                      </label>
+                      <label class="selectors__checkbox">
+                        <input class="invisible" type="radio" name="tags-sort" value="" checked><span class="checker"></span><span class="text">From Z to A</span>
+                      </label>
+                      <label class="selectors__checkbox">
+                        <input class="invisible" type="radio" name="tags-sort" value=""><span class="checker"></span><span class="text">By popularity</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="rt-protection__tags-toggle selector-list-toggle" id="controllTagsSetup"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.0069 9.36377L12.8322 8.46932C12.8471 8.33139 12.8599 8.17014 12.8599 7.99954C12.8599 7.82894 12.8476 7.6677 12.8322 7.52977L14.0079 6.63481C14.2262 6.46681 14.2859 6.16865 14.1469 5.9203L12.9254 3.86228C12.7949 3.62999 12.509 3.51072 12.2188 3.61494L10.8328 4.15679C10.5671 3.97012 10.2886 3.8125 10.0005 3.6865L9.78964 2.25488C9.75503 1.98317 9.51222 1.77783 9.22523 1.77783H6.77585C6.48884 1.77783 6.24658 1.98317 6.21248 2.25072L6.0011 3.68754C5.72207 3.80992 5.44786 3.96548 5.17044 4.15783L3.78067 3.61443C3.52027 3.51643 3.20877 3.62634 3.07938 3.85761L1.8563 5.91821C1.71201 6.1557 1.77164 6.46421 1.99475 6.63637L3.16938 7.53081C3.15074 7.70554 3.1417 7.85748 3.1417 8.00008C3.1417 8.14268 3.15076 8.29459 3.16938 8.46986L1.99368 9.36481C1.77535 9.53332 1.71625 9.83148 1.85523 10.0793L3.07673 12.1373C3.2072 12.3691 3.49047 12.4894 3.78332 12.3847L5.16936 11.8428C5.43453 12.029 5.71301 12.1866 6.0011 12.3131L6.21196 13.7442C6.24655 14.0169 6.48884 14.2223 6.77637 14.2223H9.22575C9.51277 14.2223 9.75557 14.0169 9.78964 13.7494L10.001 12.3131C10.2801 12.1902 10.5537 12.0352 10.8317 11.8423L12.2215 12.3857C12.2885 12.4111 12.3583 12.4241 12.4302 12.4241C12.6368 12.4241 12.8269 12.3141 12.9227 12.143L14.1495 10.0741C14.2859 9.83145 14.2262 9.53332 14.0069 9.36377ZM8.00053 10.0741C6.82589 10.0741 5.87063 9.1439 5.87063 8.00005C5.87063 6.85621 6.82589 5.92599 8.00053 5.92599C9.17516 5.92599 10.1304 6.85621 10.1304 8.00005C10.1304 9.1439 9.17516 10.0741 8.00053 10.0741Z" fill="#CFCFDA"/>
+</svg>
+<span class="d-xl-none">Settings</span>
+                    <!-- .show-->
+                    <div class="selectors">
+                      <div class="selectors__title close-sorting">
+                        Settings<svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4.11648 8.82786C4.42022 9.1316 4.91268 9.1316 5.21642 8.82786L7.38867 6.65561L9.56092 8.82786C9.86466 9.1316 10.3571 9.1316 10.6609 8.82786C10.9646 8.52412 10.9646 8.03165 10.6609 7.72791L7.93864 5.00569C7.6349 4.70195 7.14244 4.70195 6.8387 5.00569L4.11648 7.72791C3.81274 8.03165 3.81274 8.52412 4.11648 8.82786Z" fill="#FFDC80"/>
+</svg>
+
+                      </div>
+                      <label class="selectors__checkbox">
+                        <input class="invisible" type="checkbox" name="tags-setup" value=""><span class="checker"></span><span class="text">Remove added</span>
+                      </label>
+                      <label class="selectors__checkbox">
+                        <input class="invisible" type="checkbox" name="tags-setup" value="" checked><span class="checker"></span><span class="text">Clear the list</span>
+                      </label>
+                      <label class="selectors__checkbox">
+                        <input class="invisible" type="checkbox" name="tags-setup" value=""><span class="checker"></span><span class="text">Restore list</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="rt-protection__tags-search">
+                  <input class="input" placeholder="Enter a stop word">
+                </div>
+                <div class="rt-protection__tags-words custom-scroll">
+                  <ul class="tags-list">
+                    <li>6ля<span class="close"></span></li>
+                    <li>6лядь<span class="close"></span></li>
+                    <li>6лять<span class="close"></span></li>
+                    <li>cunt<span class="close"></span></li>
+                    <li>e6aль<span class="close"></span></li>
+                    <li>ebal<span class="close"></span></li>
+                    <li>eblan<span class="close"></span></li>
+                    <li>eбaл<span class="close"></span></li>
+                    <li>eбaть<span class="close"></span></li>
+                    <li>eбyч<span class="close"></span></li>
+                    <li>eбать<span class="close"></span></li>
+                    <li>eбёт<span class="close"></span></li>
+                    <li>eблантий<span class="close"></span></li>
+                    <li>fuck<span class="close"></span></li>
+                    <li>fucker<span class="close"></span></li>
+                    <li>fucking<span class="close"></span></li>
+                    <li>xyёвxyй<span class="close"></span></li>
+                    <li>xyяxуе<span class="close"></span></li>
+                    <li>6ля<span class="close"></span></li>
+                    <li>6ля<span class="close"></span></li>
+                    <li>6лядь<span class="close"></span></li>
+                    <li>6лять<span class="close"></span></li>
+                    <li>e6aль<span class="close"></span></li>
+                    <li>ebal<span class="close"></span></li>
+                    <li>eblan<span class="close"></span></li>
+                    <li>eбaл<span class="close"></span></li>
+                    <li>eбaть<span class="close"></span></li>
+                    <li>eбyч<span class="close"></span></li>
+                    <li>eбать<span class="close"></span></li>
+                    <li>eбёт<span class="close"></span></li>
+                    <li>eблантий<span class="close"></span></li>
+                    <li>fuck<span class="close"></span></li>
+                    <li>fucker<span class="close"></span></li>
+                    <li>fucking<span class="close"></span></li>
+                    <li>xyёвxyй<span class="close"></span></li>
+                    <li>xyяxуе<span class="close"></span></li>
+                    <li>6ля<span class="close"></span></li>
+                    <li>6лядь<span class="close"></span></li>
+                    <li>6лять<span class="close"></span></li>
+                    <li>e6aль<span class="close"></span></li>
+                    <li>ebal<span class="close"></span></li>
+                    <li>eblan<span class="close"></span></li>
+                    <li>eбaл<span class="close"></span></li>
+                    <li>eбaть<span class="close"></span></li>
+                    <li>eбyч<span class="close"></span></li>
+                    <li>eбать<span class="close"></span></li>
+                    <li>eбёт<span class="close"></span></li>
+                    <li>eблантий<span class="close"></span></li>
+                    <li>fuck<span class="close"></span></li>
+                    <li>fucker<span class="close"></span></li>
+                    <li>fucking<span class="close"></span></li>
+                    <li>xyёвxyй<span class="close"></span></li>
+                    <li>xyяxуе<span class="close"></span></li>
+                    <li>6ля<span class="close"></span></li>
+                    <li>6ля<span class="close"></span></li>
+                    <li>6лядь<span class="close"></span></li>
+                    <li>6лять<span class="close"></span></li>
+                    <li>cunt<span class="close"></span></li>
+                    <li>e6aль<span class="close"></span></li>
+                    <li>ebal<span class="close"></span></li>
+                    <li>eblan<span class="close"></span></li>
+                    <li>eбaл<span class="close"></span></li>
+                    <li>eбaть<span class="close"></span></li>
+                    <li>eбyч<span class="close"></span></li>
+                    <li>eбать<span class="close"></span></li>
+                    <li>eбёт<span class="close"></span></li>
+                    <li>eблантий<span class="close"></span></li>
+                    <li>fuck<span class="close"></span></li>
+                    <li>fucker<span class="close"></span></li>
+                    <li>fucking<span class="close"></span></li>
+                    <li>xyёвxyй<span class="close"></span></li>
+                    <li>xyяxуе<span class="close"></span></li>
+                    <li>6ля<span class="close"></span></li>
+                    <li>6ля<span class="close"></span></li>
+                    <li>6лядь<span class="close"></span></li>
+                    <li>6лять<span class="close"></span></li>
+                    <li>e6aль<span class="close"></span></li>
+                    <li>ebal<span class="close"></span></li>
+                    <li>eblan<span class="close"></span></li>
+                    <li>eбaл<span class="close"></span></li>
+                    <li>eбaть<span class="close"></span></li>
+                    <li>eбyч<span class="close"></span></li>
+                    <li>eбать<span class="close"></span></li>
+                    <li>eбёт<span class="close"></span></li>
+                    <li>eблантий<span class="close"></span></li>
+                    <li>fuck<span class="close"></span></li>
+                    <li>fucker<span class="close"></span></li>
+                    <li>fucking<span class="close"></span></li>
+                    <li>xyёвxyй<span class="close"></span></li>
+                    <li>xyяxуе<span class="close"></span></li>
+                    <li>6ля<span class="close"></span></li>
+                    <li>6лядь<span class="close"></span></li>
+                    <li>6лять<span class="close"></span></li>
+                    <li>e6aль<span class="close"></span></li>
+                    <li>ebal<span class="close"></span></li>
+                    <li>eblan<span class="close"></span></li>
+                    <li>eбaл<span class="close"></span></li>
+                    <li>eбaть<span class="close"></span></li>
+                    <li>eбyч<span class="close"></span></li>
+                    <li>eбать<span class="close"></span></li>
+                    <li>eбёт<span class="close"></span></li>
+                    <li>eблантий<span class="close"></span></li>
+                    <li>fuck<span class="close"></span></li>
+                    <li>fucker<span class="close"></span></li>
+                    <li>fucking<span class="close"></span></li>
+                    <li>xyёвxyй<span class="close"></span></li>
+                    <li>xyяxуе<span class="close"></span></li>
+                    <li>6ля<span class="close"></span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="rt-protection__container">
+              <!-- Если input внутри свитчера НЕ ВЫБРАН, добавлять лэйблу класс .not-checked-->
+              <!-- Не корректно если .switcher.not-checked и первый вложенный интуп checked-->
+              <!-- Класс .not-checked на свитчере и checked на первом вложенном инпуте взаимо-искоючаемы-->
+              <label class="switcher">
+                <!-- Если input ВЫБРАН, добавлять ему атрибут checked-->
+                <input class="invisible" type="checkbox" name="" value="" checked><span class="switch"></span><span class="caption">Filter spam post tags</span>
+              </label>
+              <ul class="checkbox-list">
+                <li>
+                  <label class="checkbox">
+                    <input class="invisible" type="checkbox" name="" value="" checked><span class="checker"></span><span class="text">Ghosts and mass followers</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input class="invisible" type="checkbox" name="" value="" checked><span class="checker"></span><span class="text">Commercial accounts</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input class="invisible" type="checkbox" name="" value="" checked><span class="checker"></span><span class="text">Foreigners accounts</span>
+                  </label>
+                  <ul class="checkbox-list checkbox-list_innner">
+                    <li class="caption">Selected groups of foreigners will be blocked:</li>
+                    <li>
+                      <label class="checkbox">
+                        <input class="invisible" type="checkbox" name="" value="" checked><span class="checker"></span><span class="text">Arabic (Egypt, Sudan, Libya, etc.)</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox">
+                        <input class="invisible" type="checkbox" name="" value="" checked><span class="checker"></span><span class="text">Asian (China, Japan, Korea, etc.)</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox">
+                        <input class="invisible" type="checkbox" name="" value=""><span class="checker"></span><span class="text">Cyrillic (Russia, Ukraine, Belarus, etc.)</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox">
+                        <input class="invisible" type="checkbox" name="" value="" checked><span class="checker"></span><span class="text">English (USA, England, Canada, etc.)</span>
+                      </label>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="rt-protection__container">
+              <!-- Если input внутри свитчера НЕ ВЫБРАН, добавлять лэйблу класс .not-checked-->
+              <!-- Не корректно если .switcher.not-checked и первый вложенный интуп checked-->
+              <!-- Класс .not-checked на свитчере и checked на первом вложенном инпуте взаимо-искоючаемы-->
+              <label class="switcher not-checked">
+                <!-- Если input ВЫБРАН, добавлять ему атрибут checked-->
+                <input class="invisible" type="checkbox" name="" value=""><span class="switch"></span><span class="caption">Filter unwanted requests in Direct</span>
+              </label>
+              <ul class="checkbox-list">
+                <li>
+                  <label class="checkbox">
+                    <input class="invisible" type="checkbox" name="" value=""><span class="checker"></span><span class="text">Ghosts and mass followers</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input class="invisible" type="checkbox" name="" value="" checked><span class="checker"></span><span class="text">Commercial accounts</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input class="invisible" type="checkbox" name="" value="" checked><span class="checker"></span><span class="text">Foreigners accounts</span>
+                  </label>
+                  <ul class="checkbox-list checkbox-list_innner">
+                    <li class="caption">Selected groups of foreigners will be blocked:</li>
+                    <li>
+                      <label class="checkbox">
+                        <input class="invisible" type="checkbox" name="" value=""><span class="checker"></span><span class="text">Arabic (Egypt, Sudan, Libya, etc.)</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox">
+                        <input class="invisible" type="checkbox" name="" value="" checked><span class="checker"></span><span class="text">Asian (China, Japan, Korea, etc.)</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox">
+                        <input class="invisible" type="checkbox" name="" value=""><span class="checker"></span><span class="text">Cyrillic (Russia, Ukraine, Belarus, etc.)</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox">
+                        <input class="invisible" type="checkbox" name="" value="" checked><span class="checker"></span><span class="text">English (USA, England, Canada, etc.)</span>
+                      </label>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="rt-protection__container">
+              <!-- Если input внутри свитчера НЕ ВЫБРАН, добавлять лэйблу класс .not-checked-->
+              <!-- Не корректно если .switcher.not-checked и первый вложенный интуп checked-->
+              <!-- Класс .not-checked на свитчере и checked на первом вложенном инпуте взаимо-искоючаемы-->
+              <label class="switcher">
+                <!-- Если input ВЫБРАН, добавлять ему атрибут checked-->
+                <input class="invisible" type="checkbox" name="" value="" checked><span class="switch"></span><span class="caption">Create a backup copy of all data</span>
+              </label>
+              <ul class="checkbox-list checkbox-list_inline">
+                <li>
+                  <label class="checkbox">
+                    <input class="invisible" type="checkbox" name="" value="" checked><span class="checker"></span><span class="text">Backup copy of followings and followers</span>
+                  </label><a class="btn btn_muted" href="" download>
+                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.5 11.5L6.5 8.5L7 8L9 10V4.5H10V10L12 8L12.5 8.5L9.5 11.5ZM5.5 11.5V14.5H13.5V11.5H12.5V13.5H6.5V11.5H5.5Z" fill="white"/>
+</svg>
+                    Download archive (CSV)</a><span class="creating-archive"><span class="loading"></span>Creating an archive …</span>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input class="invisible" type="checkbox" name="" value=""><span class="checker"></span><span class="text">Backup copy of publications</span>
+                  </label><a class="btn btn_muted" href="" download>
+                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.5 11.5L6.5 8.5L7 8L9 10V4.5H10V10L12 8L12.5 8.5L9.5 11.5ZM5.5 11.5V14.5H13.5V11.5H12.5V13.5H6.5V11.5H5.5Z" fill="white"/>
+</svg>
+                    Download archive (CSV)</a><span class="creating-archive"><span class="loading"></span>Creating an archive …</span>
+                </li>
+              </ul>
+            </div>
+            <div class="rt-protection__attention-msg">Attention! Backups are updated once a month...</div>
+          </div>
+          <div class="rt-protection__footer">
+            <div class="rt-protection__button">
+              <button class="btn btn_primary" type="button">Activate protection</button>
+            </div>
+          </div>
+        </div>
+        <div class="protection__header">
+          <h1 class="protection__title protection__title_rt-protection">Real time protection</h1>
+          <button class="protection__switcher" type="button" data-toggle="modal" data-direction="show" data-target-id="modalSelectAccount">Switch account</button>
+        </div>
+        <div class="rt-protection">
+          <div class="ac__header">
+            <div class="dashboard__card-header">
+              <div class="dashboard__card-avatar">
+                <!-- Аватарку для карточки вставлять как инлайновый стиль--><span style="background-image: url('img/temp/card-avatar.jpg');"></span>
+                <div class="dashboard__card-recommendation">
+                  <button class="green" type="button">64<img src="img/i-avatar-arr.svg" alt></button>
+                  <ul>
+                    <li>To increase the quality of the account to 100% you should:</li>
+                    <li><span>1.</span>Scan your account</li>
+                    <li><span>2.</span>Set up the cleaning using the recommended parameters</li>
+                    <li><span>3.</span>Clear account</li>
+                    <li><span>4.</span>Setting up protection</li>
+                    <li><span>5.</span>Enable account protection</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="dashboard__card-name">Константинов Константин</div>
+              <div class="dashboard__card-nic">@konstkonst86</div>
+            </div>
+          </div>
+          <div class="ac__change-account">
+            <button type="button" data-toggle="modal" data-direction="show" data-target-id="modalSelectAccount">Change account</button>
+          </div>
+          <div class="rt-protection__header">
+            <h3>Account protection report</h3>
+            <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами.</p>
+          </div>
+          <div class="rt-protection__body">
+            <div class="rt-protection__removed">
+              <div class="rt-protection__removed-card">
+                <p>Total removed</p><span>2 225</span>
+              </div>
+              <div class="rt-protection__removed-data">
+                <h3>Threats filtered in the last 30 days</h3>
+                <ul>
+                  <li><span class="point point_followers"></span><span class="txt">Unwanted followers</span><span class="value">100</span></li>
+                  <li><span class="point point_comments"></span><span class="txt">Unwanted comments</span><span class="value">70</span></li>
+                  <li><span class="point point_tags"></span><span class="txt">Unwanted post tags</span><span class="value">40</span></li>
+                  <li><span class="point point_requests"></span><span class="txt">Unwanted DM requests</span><span class="value">15</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="rt-protection__removed-chart">
+              <ul class="params">
+                <li><span class="point point_followers"></span><span>Unwanted followers</span></li>
+                <li><span class="point point_comments"></span><span>Unwanted comments</span></li>
+                <li><span class="point point_tags"></span><span>Unwanted post tags</span></li>
+                <li><span class="point point_requests"></span><span>Unwanted DM requests</span></li>
+              </ul>
+              <!-- В дата атрибут data-chart-params передавать json строку с параметрками линий графика-->
+              <!-- [{data:[занчение, значение, ...], color: 'hex color'}, ...]-->
+              <!-- В дата атрибут data-chart-labels передавать json строку с точками (даты) графика.-->
+              <div class="rt-protection__removed-chart-container" data-chart-params="[{&quot;data&quot;:[0,0,5,0,0,0,10],&quot;color&quot;:&quot;#EB4545&quot;},{&quot;data&quot;:[0,0,17,6,0,0,0],&quot;color&quot;:&quot;#FEAB5A&quot;},{&quot;data&quot;:[0,3,0,8,0,5,0],&quot;color&quot;:&quot;#41C79E&quot;},{&quot;data&quot;:[0,0,0,0,3,0,0],&quot;color&quot;:&quot;#45A3EF&quot;}]" data-chart-labels="[&quot;11.02&quot;,&quot;12.02&quot;,&quot;13.02&quot;,&quot;14.02&quot;,&quot;15.02&quot;,&quot;16.02&quot;,&quot;17.02&quot;]">
+                <canvas id="chartProtection"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="rt-protection__table">
+            <h3>Details of removed threats:</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Date<span class="pint"></span>Time</th>
+                  <th>Removed threat.</th>
+                  <th>Reason for removal</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2263</td>
+                  <td>18.02.2022<span class="point"></span>10:38</td>
+                  <td><span class="controller">Removed threat.</span>
+                    <!-- Текст для столбцов Removed threat добавлять в span.text--><span class="text">Удаленная угроза</span><span class="datetime">
+                      <!-- Данные дублируют данные столбца id--><span class="id">2263</span><span class="point"></span>
+                      <!-- Данные дублируют данные столбца Date-Time--><span class="date">18.02.2022</span><span class="point"></span>
+                      <!-- Данные дублируют данные столбца Date-Time--><span class="time">10:38</span></span>
+                  </td>
+                  <td>Причина удаления</td>
+                </tr>
+                <tr>
+                  <td>2263</td>
+                  <td>18.02.2022<span class="point"></span>10:38</td>
+                  <td>
+                    <div class="controller">Removed threat.</div>
+                    <!-- Текст для столбцов Removed threat добавлять в span.text--><span class="text">Удаленная угроза</span><span class="datetime">
+                      <!-- Данные дублируют данные столбца id--><span class="id">2263</span><span class="point"></span>
+                      <!-- Данные дублируют данные столбца Date-Time--><span class="date">18.02.2022</span><span class="point"></span>
+                      <!-- Данные дублируют данные столбца Date-Time--><span class="time">10:38</span></span>
+                  </td>
+                  <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci beatae consequuntur cupiditate dolorem earum eligendi eos fugit incidunt ipsum labore natus non porro reprehenderit sunt, unde ut, veniam! Facere.</td>
+                </tr>
+                <tr>
+                  <td>2263</td>
+                  <td>18.02.2022<span class="point"></span>10:38</td>
+                  <td><span class="controller">Removed threat.</span>
+                    <!-- Текст для столбцов Removed threat добавлять в span.text--><span class="text">Удаленная угроза</span><span class="datetime">
+                      <!-- Данные дублируют данные столбца id--><span class="id">2263</span><span class="point"></span>
+                      <!-- Данные дублируют данные столбца Date-Time--><span class="date">18.02.2022</span><span class="point"></span>
+                      <!-- Данные дублируют данные столбца Date-Time--><span class="time">10:38</span></span>
+                  </td>
+                  <td>Причина удаления</td>
+                </tr>
+                <tr>
+                  <td>2263</td>
+                  <td>18.02.2022<span class="point"></span>10:38</td>
+                  <td><span class="controller">Removed threat.</span>
+                    <!-- Текст для столбцов Removed threat добавлять в span.text--><span class="text">Удаленная угроза</span><span class="datetime">
+                      <!-- Данные дублируют данные столбца id--><span class="id">2263</span><span class="point"></span>
+                      <!-- Данные дублируют данные столбца Date-Time--><span class="date">18.02.2022</span><span class="point"></span>
+                      <!-- Данные дублируют данные столбца Date-Time--><span class="time">10:38</span></span>
+                  </td>
+                  <td>Причина удаления</td>
+                </tr>
+                <tr>
+                  <td>2263</td>
+                  <td>18.02.2022<span class="point"></span>10:38</td>
+                  <td><span class="controller">Removed threat.</span>
+                    <!-- Текст для столбцов Removed threat добавлять в span.text--><span class="text">Удаленная угроза</span><span class="datetime">
+                      <!-- Данные дублируют данные столбца id--><span class="id">2263</span><span class="point"></span>
+                      <!-- Данные дублируют данные столбца Date-Time--><span class="date">18.02.2022</span><span class="point"></span>
+                      <!-- Данные дублируют данные столбца Date-Time--><span class="time">10:38</span></span>
+                  </td>
+                  <td>Причина удаления</td>
+                </tr>
+                <tr>
+                  <td>2263</td>
+                  <td>18.02.2022<span class="point"></span>10:38</td>
+                  <td><span class="controller">Removed threat.</span>
+                    <!-- Текст для столбцов Removed threat добавлять в span.text--><span class="text">Удаленная угроза</span><span class="datetime">
+                      <!-- Данные дублируют данные столбца id--><span class="id">2263</span><span class="point"></span>
+                      <!-- Данные дублируют данные столбца Date-Time--><span class="date">18.02.2022</span><span class="point"></span>
+                      <!-- Данные дублируют данные столбца Date-Time--><span class="time">10:38</span></span>
+                  </td>
+                  <td>Причина удаления</td>
+                </tr>
+                <tr>
+                  <td>2263</td>
+                  <td>18.02.2022<span class="point"></span>10:38</td>
+                  <td><span class="controller">Removed threat.</span>
+                    <!-- Текст для столбцов Removed threat добавлять в span.text--><span class="text">Удаленная угроза</span><span class="datetime">
+                      <!-- Данные дублируют данные столбца id--><span class="id">2263</span><span class="point"></span>
+                      <!-- Данные дублируют данные столбца Date-Time--><span class="date">18.02.2022</span><span class="point"></span>
+                      <!-- Данные дублируют данные столбца Date-Time--><span class="time">10:38</span></span>
+                  </td>
+                  <td>Причина удаления</td>
+                </tr>
+                <tr>
+                  <td>2263</td>
+                  <td>18.02.2022<span class="point"></span>10:38</td>
+                  <td><span class="controller">Removed threat.</span>
+                    <!-- Текст для столбцов Removed threat добавлять в span.text--><span class="text">Удаленная угроза</span><span class="datetime">
+                      <!-- Данные дублируют данные столбца id--><span class="id">2263</span><span class="point"></span>
+                      <!-- Данные дублируют данные столбца Date-Time--><span class="date">18.02.2022</span><span class="point"></span>
+                      <!-- Данные дублируют данные столбца Date-Time--><span class="time">10:38</span></span>
+                  </td>
+                  <td>Причина удаления</td>
+                </tr>
+                <tr>
+                  <td>2263</td>
+                  <td>18.02.2022<span class="point"></span>10:38</td>
+                  <td><span class="controller">Removed threat.</span>
+                    <!-- Текст для столбцов Removed threat добавлять в span.text--><span class="text">Удаленная угроза</span><span class="datetime">
+                      <!-- Данные дублируют данные столбца id--><span class="id">2263</span><span class="point"></span>
+                      <!-- Данные дублируют данные столбца Date-Time--><span class="date">18.02.2022</span><span class="point"></span>
+                      <!-- Данные дублируют данные столбца Date-Time--><span class="time">10:38</span></span>
+                  </td>
+                  <td>Причина удаления</td>
+                </tr>
+                <tr>
+                  <td>2263</td>
+                  <td>18.02.2022<span class="point"></span>10:38</td>
+                  <td><span class="controller">Removed threat.</span>
+                    <!-- Текст для столбцов Removed threat добавлять в span.text--><span class="text">Удаленная угроза</span><span class="datetime">
+                      <!-- Данные дублируют данные столбца id--><span class="id">2263</span><span class="point"></span>
+                      <!-- Данные дублируют данные столбца Date-Time--><span class="date">18.02.2022</span><span class="point"></span>
+                      <!-- Данные дублируют данные столбца Date-Time--><span class="time">10:38</span></span>
+                  </td>
+                  <td>Причина удаления</td>
+                </tr>
+                <tr>
+                  <td>2263</td>
+                  <td>18.02.2022<span class="point"></span>10:38</td>
+                  <td><span class="controller">Removed threat.</span>
+                    <!-- Текст для столбцов Removed threat добавлять в span.text--><span class="text">Удаленная угроза</span><span class="datetime">
+                      <!-- Данные дублируют данные столбца id--><span class="id">2263</span><span class="point"></span>
+                      <!-- Данные дублируют данные столбца Date-Time--><span class="date">18.02.2022</span><span class="point"></span>
+                      <!-- Данные дублируют данные столбца Date-Time--><span class="time">10:38</span></span>
+                  </td>
+                  <td>Причина удаления</td>
+                </tr>
+                <tr>
+                  <td>2263</td>
+                  <td>18.02.2022<span class="point"></span>10:38</td>
+                  <td><span class="controller">Removed threat.</span>
+                    <!-- Текст для столбцов Removed threat добавлять в span.text--><span class="text">Удаленная угроза</span><span class="datetime">
+                      <!-- Данные дублируют данные столбца id--><span class="id">2263</span><span class="point"></span>
+                      <!-- Данные дублируют данные столбца Date-Time--><span class="date">18.02.2022</span><span class="point"></span>
+                      <!-- Данные дублируют данные столбца Date-Time--><span class="time">10:38</span></span>
+                  </td>
+                  <td>Причина удаления</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="rt-protection__table-show-more">
+              <button class="show-more" type="button">Show more (20)</button>
+            </div>
+          </div>
+          <div class="rt-protection__footer">
+            <h3>Setting up account protection</h3>
+            <p>Click on any category to view and change settings. If the toggle switch next to a category is enabled, then all types of threats that fit this category will be deleted after Protection Settings is launched.</p>
+            <div class="rt-protection__footer-buttons">
+              <button class="btn btn_primary" type="button">Set up protection</button>
+              <button class="btn btn_empty" type="button">Stop process</button>
+            </div>
+          </div>
+        </div>
       </main>
     </section>
     <div class="modal" id="modalSelectAccount">
