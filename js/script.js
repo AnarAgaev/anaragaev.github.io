@@ -1,3 +1,15 @@
+// Получаем координаты элемента в контексте документа
+window.getCoords = function (elem) {
+    const box = elem.getBoundingClientRect();
+
+    return {
+        top: box.top + window.pageYOffset,
+        right: box.right + window.pageXOffset,
+        bottom: box.bottom + window.pageYOffset,
+        left: box.left + window.pageXOffset
+    };
+}
+
 // Очищаем все элементы по клику вне его (селекты, модалки, ...)
 window.hideEffects = function (e) {
     const _this = e.target;
@@ -994,4 +1006,38 @@ window.addEventListener("load",
 
 
 })
+function scrollToManageArticle (e) {
+    e.preventDefault();
+    const w = window.pageYOffset;
+    const hash = this.href.replace(/[^#]*(.*)/, '$1');
+    const top = document.querySelector(hash).getBoundingClientRect().top;
+    const speed = 0.3;
+    let start = null;
 
+    requestAnimationFrame(step);
+
+    function step(time) {
+        if (start === null) start = time;
+
+        const progress = time - start;
+        const r = (top < 0
+            ? Math.max(w - progress/speed, w + top)
+            : Math.min(w + progress/speed, w + top));
+
+        window.scrollTo(0,r);
+
+        if (r != w + top) {
+            requestAnimationFrame(step)
+        }
+    }
+}
+
+window.addEventListener("load",
+    function(event) {
+        const manageLinks = nodeListToArray(document
+            .querySelectorAll('[href^="#"]'));
+
+        manageLinks.forEach(function (el) {
+            el.addEventListener('click', scrollToManageArticle);
+        });
+    })
