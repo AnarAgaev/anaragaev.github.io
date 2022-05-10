@@ -2015,10 +2015,10 @@ label {
     background: -webkit-gradient(linear, left top, right top, from(#FCB045), color-stop(51.82%, #FD1D1D), to(#833AB4));
     background: linear-gradient(90deg, #FCB045 0%, #FD1D1D 51.82%, #833AB4 100%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
     background-clip: text;
     color: #fd1d1d;
-    text-fill-color: transparent;
+    text-fill-color: rgba(255, 255, 255, 0);
 }
 
 .modal .btn {
@@ -7106,9 +7106,9 @@ label {
     background: -webkit-gradient(linear, left top, right top, from(#FCB045), color-stop(51.82%, #FD1D1D), to(#833AB4));
     background: linear-gradient(90deg, #FCB045 0%, #FD1D1D 51.82%, #833AB4 100%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
     background-clip: text;
-    text-fill-color: transparent;
+    text-fill-color: rgba(255, 255, 255, 0);
 }
 
 .rt-protection__removed-data {
@@ -9000,9 +9000,9 @@ label {
     background: -webkit-gradient(linear, left top, right top, from(#FCB045), color-stop(51.82%, #FD1D1D), to(#833AB4));
     background: linear-gradient(90deg, #FCB045 0%, #FD1D1D 51.82%, #833AB4 100%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
     background-clip: text;
-    text-fill-color: transparent;
+    text-fill-color: rgba(255, 255, 255, 0);
     margin-right: 10px;
 }
 
