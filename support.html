@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="author" content="Developer: Anar.N.Agaev">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="robots" content="noindex, follow">
-    <meta name="description" content="Write description for this page here">
-    <meta name="keywords" content="Write keywords for this page here">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta name="author" content="Developer: Anar.N.Agaev"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="robots" content="noindex, follow"/>
+    <meta name="description" content="Write description for this page here"/>
+    <meta name="keywords" content="Write keywords for this page here"/>
     <title>Write title for this page here</title>
-    <link rel="preload" href="css/vendor.css" as="style">
-    <link rel="stylesheet" href="css/vendor.css" type="text/css">
-    <link rel="preload" href="css/style.css" as="style">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/manifest.json">
+    <link rel="preload" href="css/vendor.css" as="style"/>
+    <link rel="stylesheet" href="css/vendor.css" type="text/css"/>
+    <link rel="preload" href="css/style.css" as="style"/>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png"/>
+    <link rel="manifest" href="favicon/manifest.json"/>
     <script src="js/vendor.js"></script>
   </head>
   <body class="page-support">
-    <section class="section" id="section">
+    <main class="main" id="main">
       <aside class="aside" id="aside">
         <div class="sidebar"><a class="sidebar__logo" href="#"><img src="img/logo.svg" alt="alt"/></a>
           <nav class="nav">
@@ -68,10 +68,19 @@
           </nav>
         </div>
       </aside>
-      <main class="main" id="main">
-        <h1>Support page</h1>
-      </main>
-    </section>
+      <section class="section" id="section">
+        <div class="support__affiliate">
+          <h1 class="support__affiliate-header"><a href="#"><img src="img/i-back-arr.svg" alt="alt"/></a>Партнерская программа</h1>
+          <!-- Инлайновый стиль (height: 500px;) добавлен для демонстрации,-->
+          <!-- не переносить в сборку. Высота блока формируется по конетнту-->
+          <div class="support__affiliate-body" style="height: 500px;"></div>
+        </div>
+        <div class="support__terms">
+          <h1 class="support__terms-header"><a href="#"><img src="img/i-back-arr.svg" alt="alt"/></a>Пользовательское соглашение</h1>
+          <div class="support__terms-button"><a class="btn btn_primary" href="#" target="_blank" download="download"><img src="../img/i-pdf.svg" alt="alt"/> Посмотреть файл</a></div>
+        </div>
+      </section>
+    </main>
     <div class="modal" id="modalSelectAccount">
       <div class="modal__dialog">
         <div class="modal__content">
@@ -82,17 +91,13 @@
           <div class="modal__body"><a class="dashboard__card-header" href="#">
               <div class="dashboard__card-avatar">
                 <!-- Аватарку для карточки вставлять как инлайновый стиль--><span style="background-image: url('img/temp/card-avatar.jpg');"></span>
-                <div class="dashboard__card-recommendation">
-                  <button class="green" type="button">64</button>
-                </div>
+                <div class="dashboard__card-recommendation"><span class="button green">64</span></div>
               </div>
               <div class="dashboard__card-name">Константинов Константин</div>
               <div class="dashboard__card-nic">@konstkonst86</div></a><a class="dashboard__card-header" href="#">
               <div class="dashboard__card-avatar">
                 <!-- Аватарку для карточки вставлять как инлайновый стиль--><span style="background-image: url('img/temp/card-avatar-girl.jpg');"></span>
-                <div class="dashboard__card-recommendation">
-                  <button class="yellow" type="button">27</button>
-                </div>
+                <div class="dashboard__card-recommendation"><span class="button yellow">27</span></div>
               </div>
               <div class="dashboard__card-name">Ооооолеся</div>
               <div class="dashboard__card-nic">@ooooooolesya_fckd</div></a></div>
@@ -110,34 +115,34 @@
             <div class="modal__checks">
               <h3 class="modal__checks-title">Тип аккаунта:</h3>
               <label class="checkbox">
-                <input class="invisible" type="checkbox" name="" value="Ghosts" checked><span class="checker"></span><span class="text">Ghosts (30)</span>
+                <input class="invisible" type="checkbox" name="account-type-ghosts" checked="checked"/><span class="checker"></span><span class="text">Ghosts (30)</span>
               </label>
               <label class="checkbox">
-                <input class="invisible" type="checkbox" name="" value="Commercial" checked><span class="checker"></span><span class="text">Commercial (48)</span>
+                <input class="invisible" type="checkbox" name="account-type-commercial" checked="checked"/><span class="checker"></span><span class="text">Commercial (48)</span>
               </label>
               <label class="checkbox">
-                <input class="invisible" type="checkbox" name="" value="Inactive"><span class="checker"></span><span class="text">Inactive (329)</span>
+                <input class="invisible" type="checkbox" name="account-type-inactive"/><span class="checker"></span><span class="text">Inactive (329)</span>
               </label>
               <label class="checkbox">
-                <input class="invisible" type="checkbox" name="" value="Foreigners" checked><span class="checker"></span><span class="text">Foreigners (1)</span>
+                <input class="invisible" type="checkbox" name="account-type-foreigners" checked="checked"/><span class="checker"></span><span class="text">Foreigners (1)</span>
               </label>
               <label class="checkbox">
-                <input class="invisible" type="checkbox" name="" value="Unreachable"><span class="checker"></span><span class="text">Unreachable (53)</span>
+                <input class="invisible" type="checkbox" name="unreachable"/><span class="checker"></span><span class="text">Unreachable (53)</span>
               </label>
             </div>
             <div class="modal__checks">
               <h3 class="modal__checks-title">Gender:</h3>
               <label class="checkbox">
-                <input class="invisible" type="checkbox" name="" value=""><span class="checker"></span><span class="text">Male</span>
+                <input class="invisible" type="checkbox" name="gender-male"/><span class="checker"></span><span class="text">Male</span>
               </label>
               <label class="checkbox">
-                <input class="invisible" type="checkbox" name="" value="" checked><span class="checker"></span><span class="text">Female</span>
+                <input class="invisible" type="checkbox" name="gender-female" checked="checked"/><span class="checker"></span><span class="text">Female</span>
               </label>
               <label class="checkbox">
-                <input class="invisible" type="checkbox" name="" value=""><span class="checker"></span><span class="text">Other</span>
+                <input class="invisible" type="checkbox" name="gender-other"/><span class="checker"></span><span class="text">Other</span>
               </label>
               <label class="checkbox">
-                <input class="invisible" type="checkbox" name="" value="" checked><span class="checker"></span><span class="text">Not specified</span>
+                <input class="invisible" type="checkbox" name="gender-not-specified" checked="checked"/><span class="checker"></span><span class="text">Not specified</span>
               </label>
             </div>
             <div class="modal__checks-button">
@@ -147,6 +152,6 @@
         </div>
       </div>
     </div>
-    <script src="js/script.js" async></script>
+    <script src="js/script.js" async="async"></script>
   </body>
 </html>

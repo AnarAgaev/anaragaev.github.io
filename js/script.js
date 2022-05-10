@@ -524,21 +524,6 @@ function(event) {
         formPasswordCreate.addEventListener('submit',
             handlerFormPasswordCreate);
     }
-
-    // // Кастомные селекты
-    // const selectInputs = nodeListToArray(document
-    //     .querySelectorAll('.select input'));
-    //
-    // selectInputs.forEach(function (el) {
-    //     el.addEventListener('click', toggleSelect);
-    // });
-    //
-    // const selects = nodeListToArray(document
-    //     .querySelectorAll('.select .options span'));
-    //
-    // selects.forEach(function (el) {
-    //     el.addEventListener('click', handleSelectClick);
-    // });
 });
 
 function handleClicOnViewButton(e) {
@@ -548,7 +533,7 @@ function handleClicOnViewButton(e) {
     clearSiblingsViewBtn(btn);
     btn.classList.add('active');
 
-    const isToList = btn.id === 'showAsList';
+    const isToList = btn.classList.contains('showAsList');
     const accountsWrapperClases = btn.closest('.tabs-pane')
         .querySelector('.accounts__wrap')
         .classList;
@@ -1033,11 +1018,27 @@ function scrollToManageArticle (e) {
 }
 
 window.addEventListener("load",
-    function(event) {
-        const manageLinks = nodeListToArray(document
-            .querySelectorAll('[href^="#"]'));
+function(event) {
+    const manageLinks = nodeListToArray(document
+        .querySelectorAll('[href^="#"]'));
 
-        manageLinks.forEach(function (el) {
-            el.addEventListener('click', scrollToManageArticle);
-        });
-    })
+    manageLinks.forEach(function (el) {
+        el.addEventListener('click', scrollToManageArticle);
+    });
+
+    // Fix aside position for fancybox open
+    Fancybox.bind("[data-fancybox]", {
+        on: {
+            init: function () {
+                const scrollbarWidth = getScrollbarWidth();
+                const aside = document.getElementById('aside');
+
+                aside.style.marginLeft = '-' + scrollbarWidth/2 + 'px';
+            },
+            destroy: () => {
+                const aside = document.getElementById('aside');
+                aside.style.removeProperty('margin-left');
+            },
+        },
+    });
+});
