@@ -69,6 +69,7 @@
         </div>
       </aside>
       <section class="section" id="section">
+        <h1>Modals</h1><br/>
         <div class="container">
           <button class="btn btn_primary" type="button" data-toggle="modal" data-direction="show" data-target-id="modalAddingAnAccount">Adding an account</button>
           <button class="btn btn_primary" type="button" data-toggle="modal" data-direction="show" data-target-id="modal2ScanLeft">2 scan left!</button>
@@ -85,6 +86,8 @@
           <button class="btn btn_primary" type="button" data-toggle="modal" data-direction="show" data-target-id="modalConfirmAccountDelete">Подтвердить удалние аккаунта</button>
           <!-- Кнопка для показа модалки с несколькими диалогами-->
           <button class="btn btn_primary" type="button" data-toggle="modal" data-direction="show" data-target-id="modalChangingPassword" data-dialog-show-id="dialogChangingPassword">Changing password</button>
+          <!-- Кнопка для показа модалки с несколькими диалогами-->
+          <button class="btn btn_primary" type="button" data-toggle="modal" data-direction="show" data-target-id="modalOnboarding" data-dialog-show-id="dialogOnboardingStart">Onboarding</button>
         </div>
       </section>
     </main>
@@ -388,7 +391,7 @@
                 </button>
               </div>
               <div class="modal__switch-dialog">
-                <button role="dialog" data-toggle="modal" data-direction="toggle" data-target-id="dialogAskEmail">Forgot your password?</button>
+                <button type="button" data-toggle="modal" data-direction="toggle" data-target-id="dialogAskEmail">Forgot your password?</button>
               </div>
             </form>
           </div>
@@ -508,6 +511,104 @@
                 <button class="btn btn_empty" type="submit">Да</button>
               </div>
             </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal_onboarding" id="modalOnboarding">
+      <!-- Для модальных окон с несколькими диалогми нужно в одном модальном окно-->
+      <!-- размещать все диалоги которые должны сменять друг-друга-->
+      <!-- Для смены диалога, нужно создать любой Html элемент с атриботами-->
+      <!-- role="dialog" data-toggle="modal" data-direction="toggle" data-target-id="ID_TARGET_DIALOG_WITHOUT_SYMBOL_#"-->
+      <div class="modal__dialog hidden hide" id="dialogOnboardingStart">
+        <div class="modal__content">
+          <button class="modal__close" type="button" data-toggle="modal" data-direction="hide" data-target-id="modalOnboarding"></button>
+          <div class="modal__header">
+            <h4 class="modal__title">Добро пожаловать!</h4>
+          </div>
+          <div class="modal__body"><img src="../img/logo.svg" alt="alt"/>
+            <p>SpamGuard - первый интеллектуальный сервис очистки для Instagram. Сервис  избавляется от ботов, нежелательных и коммерческих аккаунтов, а также защищает вас от спама.<br/>В конце очистки вы получаете увеличенный охват и вовлеченность ваших подписчиков, доля активной аудитории повышается, а это значит что ваш контент увидит больше людей. Посты будут чаще попадать в рекомендации, а доходы вырастут в разы.</p>
+          </div>
+          <div class="modal__selects">
+            <button class="btn btn_primary" type="button" data-toggle="modal" data-direction="toggle" data-target-id="dialogOnboardingStep1">Далее</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal__dialog hidden hide" id="dialogOnboardingStep1">
+        <div class="modal__content">
+          <button class="modal__close" type="button" data-toggle="modal" data-direction="hide" data-target-id="modalOnboarding"></button>
+          <div class="modal__header">
+            <h4 class="modal__title">Шаг 1. Добавление аккаунта и анализ</h4>
+          </div>
+          <div class="modal__body">
+            <p>Для бесплатного анализа добавьте аккаунт, который хотите сканировать. Введите логин аккаунта, как указано в Инстаграме.</p><img class="d-md-none" src="../img/onboarding/step1-1-mob.jpg" alt="alt"/><img class="d-none d-md-block" src="../img/onboarding/step1-1-desc.jpg" alt="alt"/>
+            <p>Чтобы начать анализ нажмите кнопку сканировать и перейдите к следующему этапу.</p><img class="d-md-none" src="../img/onboarding/step1-2-mob.jpg" alt="alt"/><img class="d-none d-md-block" src="../img/onboarding/step1-2-desc.jpg" alt="alt"/>
+          </div>
+          <div class="modal__selects modal__selects_double">
+            <button class="btn btn_empty" type="button" data-toggle="modal" data-direction="toggle" data-target-id="dialogOnboardingStart">Назад</button>
+            <button class="btn btn_primary" type="button" data-toggle="modal" data-direction="toggle" data-target-id="dialogOnboardingStep2">Далее</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal__dialog hidden hide" id="dialogOnboardingStep2">
+        <div class="modal__content">
+          <button class="modal__close" type="button" data-toggle="modal" data-direction="hide" data-target-id="modalOnboarding"></button>
+          <div class="modal__header">
+            <h4 class="modal__title">Шаг 2. Оформление пробной подписки</h4>
+          </div>
+          <div class="modal__body">
+            <p>Для оформиления пробной подписки необходимо заплатить 1₽. Также для очистки необходима авторизация. Не забудьте отключить двухфакторную аутентификацию. Это безопасно!</p><img class="d-md-none" src="../img/onboarding/step2-1-mob.jpg" alt="alt"/><img class="d-none d-md-block" src="../img/onboarding/step2-1-desc.jpg" alt="alt"/>
+            <p>Затем</p><img class="d-md-none" src="../img/onboarding/step2-2-mob.jpg" alt="alt"/><img class="d-none d-md-block" src="../img/onboarding/step2-2-desc.jpg" alt="alt"/>
+          </div>
+          <div class="modal__selects modal__selects_double">
+            <button class="btn btn_empty" type="button" data-toggle="modal" data-direction="toggle" data-target-id="dialogOnboardingStep1">Назад</button>
+            <button class="btn btn_primary" type="button" data-toggle="modal" data-direction="toggle" data-target-id="dialogOnboardingStep3">Далее</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal__dialog hidden hide" id="dialogOnboardingStep3">
+        <div class="modal__content">
+          <button class="modal__close" type="button" data-toggle="modal" data-direction="hide" data-target-id="modalOnboarding"></button>
+          <div class="modal__header">
+            <h4 class="modal__title">Шаг 3. Сканирование</h4>
+          </div>
+          <div class="modal__body">
+            <p>Теперь самое важное - Сканирование. Запустить анализ можно по кнопке “Сканировать”. Это может занять некоторое время, поэтому вы спокойно можете заниматься своими делами и не беспокоиться, что сканирование остановится. Об окончании мы сообщим вам на почту.</p><img class="d-md-none" src="../img/onboarding/step3-1-mob.jpg" alt="alt"/><img class="d-none d-md-block" src="../img/onboarding/step3-1-desc.jpg" alt="alt"/>
+          </div>
+          <div class="modal__selects modal__selects_double">
+            <button class="btn btn_empty" type="button" data-toggle="modal" data-direction="toggle" data-target-id="dialogOnboardingStep2">Назад</button>
+            <button class="btn btn_primary" type="button" data-toggle="modal" data-direction="toggle" data-target-id="dialogOnboardingStep4">Далее</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal__dialog hidden hide" id="dialogOnboardingStep4">
+        <div class="modal__content">
+          <button class="modal__close" type="button" data-toggle="modal" data-direction="hide" data-target-id="modalOnboarding"></button>
+          <div class="modal__header">
+            <h4 class="modal__title">Шаг 4. Очистка</h4>
+          </div>
+          <div class="modal__body">
+            <p>После того,  как завершится сканирование, приступайте  к следующему этапу, вы можете выбрать автоматическую очистку или настроить вручную. Если у вас возникнут вопросы - вы всегда можете обратиться к нашему менеджеру</p><img class="d-md-none" src="../img/onboarding/step4-1-mob.jpg" alt="alt"/><img class="d-none d-md-block" src="../img/onboarding/step4-1-desc.jpg" alt="alt"/>
+            <p>Затем</p><img class="d-md-none" src="../img/onboarding/step4-2-mob.jpg" alt="alt"/><img class="d-none d-md-block" src="../img/onboarding/step4-2-desc.jpg" alt="alt"/>
+          </div>
+          <div class="modal__selects modal__selects_double">
+            <button class="btn btn_empty" type="button" data-toggle="modal" data-direction="toggle" data-target-id="dialogOnboardingStep3">Назад</button>
+            <button class="btn btn_primary" type="button" data-toggle="modal" data-direction="toggle" data-target-id="dialogOnboardingStep5">Далее</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal__dialog hidden hide" id="dialogOnboardingStep5">
+        <div class="modal__content">
+          <button class="modal__close" type="button" data-toggle="modal" data-direction="hide" data-target-id="modalOnboarding"></button>
+          <div class="modal__header">
+            <h4 class="modal__title">Шаг 5. Защита</h4>
+          </div>
+          <div class="modal__body">
+            <p>Если вы устали от спама, упоминаний вас в комментариях, различных гивах а также от нежелательных комментариев, тогда мы разработали для вас уникальное решение - Защита, которая не пропустит больше недоброжелателей. Включите защиту и настройте все необходимы параметры</p><img class="d-md-none" src="../img/onboarding/step5-1-mob.jpg" alt="alt"/><img class="d-none d-md-block" src="../img/onboarding/step5-1-desc.jpg" alt="alt"/>
+          </div>
+          <div class="modal__selects modal__selects_double">
+            <button class="btn btn_empty" type="button" data-toggle="modal" data-direction="toggle" data-target-id="dialogOnboardingStep4">Назад</button>
+            <button class="btn btn_primary" type="button" data-toggle="modal" data-direction="hide" data-target-id="modalOnboarding">Добавить аккаунт</button>
           </div>
         </div>
       </div>
