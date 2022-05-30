@@ -1,2 +1,2 @@
 # anaragaev.github.io
-This is a test of github pages servise
+Пример курсовой работы для слушателей курса Основы веб разработки
