@@ -105,7 +105,7 @@
         </table>
       </section>
       <section class="conf__result">
-        <p class="conf__result-data">Итоговая сумма<span>21654 Р</span></p>
+        <p class="conf__result-data">Итоговая сумма<span>21654 ₽</span></p>
         <button class="conf__result-btn">Отправить заказ</button>
       </section>
     </div>
@@ -115,5 +115,34 @@
       <botton class="footer__bnt">Выбор комплектации</botton>
     </div>
   </footer>
+  <div class="modal" id="modalNotification">
+    <div class="modal__dialog">
+      <div class="modal__content">
+        <button class="modal__close" data-toggle="modal" data-direction="hide" data-target-id="modalNotification"></button>
+        <div class="modal__header">
+          <h4 class="modal__title">Уведомление от сайта localhost</h4>
+        </div>
+        <div class="modal__body">
+          <p class="modal__subtitle">Не выбрана сторона</p>
+        </div>
+        <div class="modal__footer">
+          <button class="modal__btn" data-toggle="modal" data-direction="hide" data-target-id="modalNotification">Закрыть</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modalNotAvailable">
+    <div class="modal__dialog">
+      <div class="modal__content">
+        <button class="modal__close" data-toggle="modal" data-direction="hide" data-target-id="modalNotAvailable"></button>
+        <div class="modal__header">
+          <h4 class="modal__title">Конфигуратор доступен на десктопных устройствах</h4>
+        </div>
+        <div class="modal__body">
+          <p class="modal__subtitle">Ваше устройстов не поддерживается, минимальное разрешение экрана для корректной работы конфигуратора 1200 пикселей</p>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="js/script.js"></script>
 </html>
