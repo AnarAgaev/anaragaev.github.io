@@ -1,6 +1,7 @@
 
 
 
+
 window.addEventListener('load', () => {
     Array.from(document.querySelectorAll('.conf__data-toggle'))
         .forEach(el => {
@@ -11,7 +12,6 @@ window.addEventListener('load', () => {
             });
         });
 });
-
 
 
 
