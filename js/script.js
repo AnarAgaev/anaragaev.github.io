@@ -2,9 +2,11 @@
 function toggleModal(e) {
     e.preventDefault();
     e.stopPropagation();
+    
+    const el = e.target.closest("[data-toggle='modal']");
 
-    const targetId = e.target.dataset.targetId;
-    const direction = e.target.dataset.direction;
+    const targetId = el.dataset.targetId;
+    const direction = el.dataset.direction;
 
     switch (direction) {
         case 'show':
@@ -66,15 +68,107 @@ window.isScrollBarVisible = function () {
 
 window.addEventListener("load",
 function(event) {
-
     // Открыть/Закрыть модальное окно
-    const modalToggles = Array.from(document
-        .querySelectorAll("[data-toggle='modal']"));
-
-    modalToggles.forEach(function (el) {
-        el.addEventListener('click', toggleModal);
+    document.addEventListener('click', evt => {
+        const modalToggle = (evt.target)
+            .closest("[data-toggle='modal']");
+    
+        if (modalToggle) toggleModal(evt);
     });
 });
+
+
+
+// Показываем/скрываем тултип для хелпера
+const helpers = Array.from(document.querySelectorAll(
+    '.conf__selects-controller .helper'));
+
+const helpersCloseButtons = Array.from(document.querySelectorAll(
+    '.conf__selects-controller .close'));
+
+const helpersCloseContents = Array.from(document.querySelectorAll(
+    '.conf__selects-controller .content'));
+
+helpers.forEach(el => {
+    el.addEventListener('click', function (e) {
+        const isVisible = this.classList.contains('visible');
+        e.stopPropagation();
+        resetAllHelpers();
+        if (!isVisible) this.classList.add('visible');
+    })
+});
+
+helpersCloseButtons.forEach(el => {
+    el.addEventListener('click', function (e) {
+        e.stopPropagation();
+        resetAllHelpers();
+    })
+});
+
+helpersCloseContents.forEach(el => {
+    el.addEventListener('click', function (e) {
+        e.stopPropagation();
+    })
+});
+
+function resetAllHelpers() {
+    helpers.forEach(el => {
+        el.classList.remove('visible');
+    });
+}
+
+// Выбираем терк
+const tracks = Array.from(document.querySelectorAll(
+    '.conf__selects-img'));
+
+tracks.forEach(el => {
+    el.addEventListener('click', e => {
+        const _this = e.target.closest('.conf__selects-img');
+        
+        const container = e.target
+            .closest('.conf__selects-list');
+        
+        const siblings = Array.from(container
+            .querySelectorAll('.conf__selects-img'));
+        
+        siblings.forEach(item => item.classList.add('inactive'));
+    
+        _this.classList.remove('inactive');
+    });
+});
+
+
+
+
+const elementsBtns = Array.from(document
+    .querySelectorAll('.conf__elements-btn.selected'));
+
+elementsBtns.forEach(el => {
+    el.addEventListener('click', function () {
+        resetAllElementsBtns();
+        this.classList.add('active');
+        
+        const side = this.querySelector('.conf__elements-letter').innerText;
+        const block = document.querySelector(`.conf__elements-block-${side}`);
+    
+        resetAllElementsBlock();
+        block.classList.add('active');
+    });
+});
+
+function resetAllElementsBtns() {
+    elementsBtns.forEach(el =>
+        el.classList.remove('active'));
+}
+
+function resetAllElementsBlock() {
+    Array.from(document
+        .querySelectorAll('.conf__elements-block'))
+        .forEach(el => el.classList.remove('active'));
+}
+
+
+
 
 
 window.addEventListener('load', () => {
@@ -87,14 +181,3 @@ window.addEventListener('load', () => {
             });
         });
 });
-
-
-
-
-
-
-
-
-
-
-

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Developer: Anar.N.Agaev">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="robots" content="noindex, follow">
+    <meta name="description" content="Write description for this page here">
+    <meta name="keywords" content="Write keywords for this page here">
+    <title>Конфигуратор - шаг 3</title>
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+  </head>
+  <body class="conf">
+    <header class="header">
+      <!--block variables-->
+      <div class="conf__wrapper">
+        <h1 class="header__logo">конфигуратор</h1>
+        <nan class="header__nav">
+          <ul class="header__nav-list">
+            <li>
+              <!-- Актвиной кнопке добавлять класс .active (.header__nav-item.active)--><a class="header__nav-item" href="step1.html">шаг 1</a>
+            </li>
+            <li><a class="header__nav-item" href="step2.html">шаг 2</a>
+            </li>
+            <li><a class="header__nav-item active" href="step3.html">шаг 3</a>
+            </li>
+            <li><a class="header__nav-item" href="step4.html">шаг 4</a>
+            </li>
+          </ul>
+        </nan>
+      </div>
+    </header>
+    <main class="main">
+      <div class="conf__wrapper">
+        <!-- В этот блок можно вставлять картинку, canvas или любой визуализатор-->
+        <section class="conf__presentation">
+          <!-- Добавлять класс .conf__presentation-view для изображения или canvas(a) с изображением-->
+          <div class="conf__viewport"><img style="margin-top: -1px; margin-left: -1px;" src="data:image/svg+xml,%3Csvg width='680' height='678' viewBox='0 0 680 678' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='76.5' y='418.5' width='29' height='29' transform='rotate(-90 76.5 418.5)' stroke='%23C1BBB7' stroke-dasharray='3 3'/%3E%3Cpath d='M89.9814 400.493L89.9814 403.478L84.4573 400.338C84.3212 400.261 84.1542 400.261 84.0186 400.34C83.8831 400.419 83.7998 400.563 83.7998 400.72L83.7998 405.124C83.7998 405.313 83.9209 405.481 84.1002 405.54L92.0396 408.177C92.1735 408.222 92.3212 408.199 92.4357 408.117C92.5504 408.034 92.6181 407.902 92.6181 407.76L92.6181 404.902L98.1874 407.276C98.3853 407.361 98.6157 407.29 98.7311 407.108C98.8455 406.929 98.8154 406.688 98.6523 406.544L90.7128 400.165C90.5836 400.05 90.3986 400.021 90.2411 400.092C90.0832 400.163 89.9814 400.32 89.9814 400.493Z' fill='%23C1BBB7'/%3E%3Crect x='76' y='419' width='30' height='30' transform='rotate(-90 76 419)' fill='black'/%3E%3Cpath d='M89.9814 400.493L89.9814 403.478L84.4573 400.338C84.3212 400.261 84.1542 400.261 84.0186 400.34C83.8831 400.419 83.7998 400.563 83.7998 400.72L83.7998 405.124C83.7998 405.313 83.9209 405.481 84.1002 405.54L92.0396 408.177C92.1735 408.222 92.3212 408.199 92.4357 408.117C92.5504 408.034 92.6181 407.902 92.6181 407.76L92.6181 404.902L98.1874 407.276C98.3853 407.361 98.6157 407.29 98.7311 407.108C98.8455 406.929 98.8154 406.688 98.6523 406.544L90.7128 400.165C90.5836 400.05 90.3986 400.021 90.2411 400.092C90.0832 400.163 89.9814 400.32 89.9814 400.493Z' fill='white'/%3E%3Crect x='76' y='419' width='30' height='30' transform='rotate(-90 76 419)' fill='%23635E5B'/%3E%3Crect x='76' y='419' width='30' height='30' transform='rotate(-90 76 419)' stroke='%23635E5B'/%3E%3Cpath d='M89.9814 400.493L89.9814 403.478L84.4573 400.338C84.3212 400.261 84.1542 400.261 84.0186 400.34C83.8831 400.419 83.7998 400.563 83.7998 400.72L83.7998 405.124C83.7998 405.313 83.9209 405.481 84.1002 405.54L92.0396 408.177C92.1735 408.222 92.3212 408.199 92.4357 408.117C92.5504 408.034 92.6181 407.902 92.6181 407.76L92.6181 404.902L98.1874 407.276C98.3853 407.361 98.6157 407.29 98.7311 407.108C98.8455 406.929 98.8154 406.688 98.6523 406.544L90.7128 400.165C90.5836 400.05 90.3986 400.021 90.2411 400.092C90.0832 400.163 89.9814 400.32 89.9814 400.493Z' fill='%23C1BBB7'/%3E%3Cg clip-path='url(%23clip0_1418_65579)'%3E%3Cpath d='M113.223 409.192L118.777 409.192C119.233 409.192 119.603 409.562 119.603 410.018C119.603 410.474 119.233 410.844 118.777 410.844L118.533 410.844C118.544 410.917 118.552 410.992 118.552 411.068L118.552 413.636C118.552 414.465 117.88 415.137 117.051 415.137L116.706 415.137L116.706 415.781C116.706 416.073 116.549 416.19 116.315 416.237L116.315 419L115.42 419L115.42 416.218C115.228 416.162 115.104 416.04 115.104 415.781L115.104 415.137L114.949 415.137C114.12 415.137 113.448 414.465 113.448 413.636L113.448 411.069C113.448 410.992 113.456 410.917 113.467 410.844L113.223 410.844C112.767 410.844 112.397 410.474 112.397 410.018C112.397 409.562 112.767 409.192 113.223 409.192ZM114.459 406C114.135 406 113.873 406.262 113.873 406.585L113.873 408.937L115.044 408.937L115.044 406.585C115.044 406.262 114.782 406 114.459 406ZM116.916 406.585L116.916 408.937L118.087 408.937L118.087 406.585C118.087 406.262 117.824 406 117.501 406C117.178 406 116.916 406.262 116.916 406.585Z' fill='black'/%3E%3C/g%3E%3Cg clip-path='url(%23clip1_1418_65579)'%3E%3Cpath d='M118.777 398.808L113.223 398.808C112.767 398.808 112.397 398.438 112.397 397.982C112.397 397.526 112.767 397.156 113.223 397.156L113.467 397.156C113.456 397.083 113.448 397.008 113.448 396.931L113.448 394.364C113.448 393.535 114.12 392.863 114.949 392.863L115.294 392.863L115.294 392.219C115.294 391.927 115.451 391.81 115.685 391.763L115.685 389L116.58 389L116.58 391.782C116.772 391.838 116.896 391.96 116.896 392.219L116.896 392.863L117.051 392.863C117.88 392.863 118.552 393.535 118.552 394.364L118.552 396.931C118.552 397.008 118.544 397.083 118.533 397.156L118.777 397.156C119.233 397.156 119.603 397.526 119.603 397.982C119.603 398.438 119.233 398.808 118.777 398.808ZM117.541 402C117.865 402 118.127 401.738 118.127 401.415L118.127 399.063L116.956 399.063L116.956 401.415C116.956 401.738 117.218 402 117.541 402ZM115.084 401.415L115.084 399.063L113.913 399.063L113.913 401.415C113.913 401.738 114.176 402 114.499 402C114.822 402 115.084 401.738 115.084 401.415Z' fill='black'/%3E%3C/g%3E%3Crect x='126' y='419' width='30' height='162' transform='rotate(-90 126 419)' fill='%23635E5B'/%3E%3Crect opacity='0.6' x='272' y='413' width='18' height='16' transform='rotate(-90 272 413)' fill='%23C1BBB7'/%3E%3Crect opacity='0.6' x='126' y='413' width='18' height='16' transform='rotate(-90 126 413)' fill='%23C1BBB7'/%3E%3Crect x='288' y='419' width='30' height='162' transform='rotate(-90 288 419)' fill='%23EB001F'/%3E%3Crect opacity='0.6' x='434' y='413' width='18' height='16' transform='rotate(-90 434 413)' fill='%23C1BBB7'/%3E%3Crect opacity='0.6' x='288' y='413' width='18' height='16' transform='rotate(-90 288 413)' fill='%23C1BBB7'/%3E%3Crect x='450' y='419' width='30' height='124' transform='rotate(-90 450 419)' fill='%23635E5B'/%3E%3Crect opacity='0.6' x='450' y='413' width='18' height='16' transform='rotate(-90 450 413)' fill='%23C1BBB7'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M434 259L434 289L441 289L441 284L446 284L446 264L441 264L441 259L434 259Z' fill='%23C4C4C4'/%3E%3Crect x='450' y='289' width='30' height='124' transform='rotate(-90 450 289)' fill='%23635E5B'/%3E%3Crect x='574' y='419' width='30' height='30' transform='rotate(-90 574 419)' fill='%23C1BBB7'/%3E%3Crect x='574' y='289' width='30' height='100' fill='%23EB001F'/%3E%3Crect x='574' y='289' width='30' height='100' fill='%23635E5B'/%3E%3Crect x='574' y='289' width='30' height='30' transform='rotate(-90 574 289)' fill='%23C1BBB7'/%3E%3Cdefs%3E%3CclipPath id='clip0_1418_65579'%3E%3Crect width='13' height='8' fill='white' transform='translate(112 419) rotate(-90)'/%3E%3C/clipPath%3E%3CclipPath id='clip1_1418_65579'%3E%3Crect width='13' height='8' fill='white' transform='translate(120 389) rotate(90)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A" alt=""></div>
+        </section>
+        <section class="conf__data">
+          <div class="conf__data-caption"><span>блок питания</span><span>название блока питания</span></div>
+          <div class="conf__data-wrap custom-scroll-vertical">
+            <!-- Для того чтобы открыть или закрыть блок стороны,-->
+            <!-- нужно тоглить класс .show на блоке .conf__data-side-->
+            <div class="conf__data-side show">
+              <div class="conf__data-header">
+                <p class="conf__data-description">сторона<span>A</span></p>
+                <p class="conf__data-percents">
+                  <!-- Для динамического измения заполнности менять инлейновый стиль width в процентах--><span class="conf__data-loader" style="width: 29%;"></span><span class="conf__data-text">заполнение</span>
+                  <!-- Динамичеки менять процент заполнности--><span class="conf__data-value">29%</span>
+                </p>
+                <button class="conf__data-toggle">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.6944 7.80432C20.1019 8.20988 20.1019 8.86741 19.6944 9.27295L12.7378 16.1959C12.3303 16.6014 11.6697 16.6014 11.2622 16.1958L4.30564 9.2728C3.89813 8.86725 3.89812 8.20972 4.30562 7.80417C4.71312 7.39861 5.37381 7.39861 5.78132 7.80416L12 13.9929L18.2187 7.80429C18.6262 7.39875 19.2869 7.39876 19.6944 7.80432Z" fill="black"></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="conf__data-body custom-scroll-horizontal">
+                <ul class="conf__data-list">
+                  <li class="conf__data-item">
+                    <button class="conf__data-btn">
+                      <!-- Картинку добавлять как инлайновый стиль--><span class="conf__data-pic" style="background-image: url('');"></span><span class="conf__data-label">Модуль Strex 1.0 dot</span><span class="conf__data-size">301 MM</span><span class="conf__data-price">6800 ₽</span><span class="conf__data-badge">+99</span>
+                    </button>
+                  </li>
+                  <li class="conf__data-item">
+                    <button class="conf__data-btn">
+                      <!-- Картинку добавлять как инлайновый стиль--><span class="conf__data-pic" style="background-image: url('');"></span><span class="conf__data-label">Модуль Strex 1.0 dot</span><span class="conf__data-size">301 MM</span><span class="conf__data-price">6800 ₽</span><span class="conf__data-badge">+99</span>
+                    </button>
+                  </li>
+                  <li class="conf__data-item">
+                    <button class="conf__data-btn">
+                      <!-- Картинку добавлять как инлайновый стиль--><span class="conf__data-pic" style="background-image: url('');"></span><span class="conf__data-label">Модуль Strex 1.0 dot</span><span class="conf__data-size">301 MM</span><span class="conf__data-price">6800 ₽</span><span class="conf__data-badge">+99</span>
+                    </button>
+                  </li>
+                  <li class="conf__data-item">
+                    <button class="conf__data-btn">
+                      <!-- Картинку добавлять как инлайновый стиль--><span class="conf__data-pic" style="background-image: url('');"></span><span class="conf__data-label">Модуль Strex 1.0 dot</span><span class="conf__data-size">301 MM</span><span class="conf__data-price">6800 ₽</span><span class="conf__data-badge">+99</span>
+                    </button>
+                  </li>
+                  <li class="conf__data-item">
+                    <button class="conf__data-btn">
+                      <!-- Картинку добавлять как инлайновый стиль--><span class="conf__data-pic" style="background-image: url('');"></span><span class="conf__data-label">Модуль Strex 1.0 dot</span><span class="conf__data-size">301 MM</span><span class="conf__data-price">6800 ₽</span><span class="conf__data-badge">+99</span>
+                    </button>
+                  </li>
+                  <li class="conf__data-item">
+                    <button class="conf__data-btn">
+                      <!-- Картинку добавлять как инлайновый стиль--><span class="conf__data-pic" style="background-image: url('');"></span><span class="conf__data-label">Модуль Strex 1.0 dot</span><span class="conf__data-size">301 MM</span><span class="conf__data-price">6800 ₽</span><span class="conf__data-badge">+99</span>
+                    </button>
+                  </li>
+                  <li class="conf__data-item">
+                    <button class="conf__data-btn">
+                      <!-- Картинку добавлять как инлайновый стиль--><span class="conf__data-pic" style="background-image: url('');"></span><span class="conf__data-label">Модуль Strex 1.0 dot</span><span class="conf__data-size">301 MM</span><span class="conf__data-price">6800 ₽</span><span class="conf__data-badge">+99</span>
+                    </button>
+                  </li>
+                  <li class="conf__data-item">
+                    <button class="conf__data-btn">
+                      <!-- Картинку добавлять как инлайновый стиль--><span class="conf__data-pic" style="background-image: url('');"></span><span class="conf__data-label">Модуль Strex 1.0 dot</span><span class="conf__data-size">301 MM</span><span class="conf__data-price">6800 ₽</span><span class="conf__data-badge">+99</span>
+                    </button>
+                  </li>
+                  <li class="conf__data-item">
+                    <button class="conf__data-btn">
+                      <!-- Картинку добавлять как инлайновый стиль--><span class="conf__data-pic" style="background-image: url('');"></span><span class="conf__data-label">Модуль Strex 1.0 dot</span><span class="conf__data-size">301 MM</span><span class="conf__data-price">6800 ₽</span><span class="conf__data-badge">+99</span>
+                    </button>
+                  </li>
+                  <li class="conf__data-item">
+                    <button class="conf__data-btn">
+                      <!-- Картинку добавлять как инлайновый стиль--><span class="conf__data-pic" style="background-image: url('');"></span><span class="conf__data-label">Модуль Strex 1.0 dot</span><span class="conf__data-size">301 MM</span><span class="conf__data-price">6800 ₽</span><span class="conf__data-badge">+99</span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="conf__data-side">
+              <div class="conf__data-header">
+                <p class="conf__data-description">сторона<span>B</span></p>
+                <p class="conf__data-percents">
+                  <!-- Для динамического измения заполнности менять инлейновый стиль width в процентах--><span class="conf__data-loader" style="width: 72%;"></span><span class="conf__data-text">заполнение</span>
+                  <!-- Динамичеки менять процент заполнности--><span class="conf__data-value">72%</span>
+                </p>
+                <button class="conf__data-toggle">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.6944 7.80432C20.1019 8.20988 20.1019 8.86741 19.6944 9.27295L12.7378 16.1959C12.3303 16.6014 11.6697 16.6014 11.2622 16.1958L4.30564 9.2728C3.89813 8.86725 3.89812 8.20972 4.30562 7.80417C4.71312 7.39861 5.37381 7.39861 5.78132 7.80416L12 13.9929L18.2187 7.80429C18.6262 7.39875 19.2869 7.39876 19.6944 7.80432Z" fill="black"></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="conf__data-body custom-scroll-horizontal">
+                <ul class="conf__data-list">
+                  <li class="conf__data-item">
+                    <button class="conf__data-btn">
+                      <!-- Картинку добавлять как инлайновый стиль--><span class="conf__data-pic" style="background-image: url('');"></span><span class="conf__data-label">Модуль Strex 1.0 dot</span><span class="conf__data-size">301 MM</span><span class="conf__data-price">6800 ₽</span><span class="conf__data-badge">+99</span>
+                    </button>
+                  </li>
+                  <li class="conf__data-item">
+                    <button class="conf__data-btn">
+                      <!-- Картинку добавлять как инлайновый стиль--><span class="conf__data-pic" style="background-image: url('');"></span><span class="conf__data-label">Модуль Strex 1.0 dot</span><span class="conf__data-size">301 MM</span><span class="conf__data-price">6800 ₽</span><span class="conf__data-badge">+99</span>
+                    </button>
+                  </li>
+                  <li class="conf__data-item">
+                    <button class="conf__data-btn">
+                      <!-- Картинку добавлять как инлайновый стиль--><span class="conf__data-pic" style="background-image: url('');"></span><span class="conf__data-label">Модуль Strex 1.0 dot</span><span class="conf__data-size">301 MM</span><span class="conf__data-price">6800 ₽</span><span class="conf__data-badge">+99</span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="conf__data-side">
+              <div class="conf__data-header">
+                <p class="conf__data-description">сторона<span>C</span></p>
+                <p class="conf__data-percents">
+                  <!-- Для динамического измения заполнности менять инлейновый стиль width в процентах--><span class="conf__data-loader" style="width: 12%;"></span><span class="conf__data-text">заполнение</span>
+                  <!-- Динамичеки менять процент заполнности--><span class="conf__data-value">12%</span>
+                </p>
+                <button class="conf__data-toggle">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.6944 7.80432C20.1019 8.20988 20.1019 8.86741 19.6944 9.27295L12.7378 16.1959C12.3303 16.6014 11.6697 16.6014 11.2622 16.1958L4.30564 9.2728C3.89813 8.86725 3.89812 8.20972 4.30562 7.80417C4.71312 7.39861 5.37381 7.39861 5.78132 7.80416L12 13.9929L18.2187 7.80429C18.6262 7.39875 19.2869 7.39876 19.6944 7.80432Z" fill="black"></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="conf__data-body custom-scroll-horizontal">
+                <ul class="conf__data-list">
+                  <li class="conf__data-item">
+                    <button class="conf__data-btn">
+                      <!-- Картинку добавлять как инлайновый стиль--><span class="conf__data-pic" style="background-image: url('');"></span><span class="conf__data-label">Модуль Strex 1.0 dot</span><span class="conf__data-size">301 MM</span><span class="conf__data-price">6800 ₽</span><span class="conf__data-badge">+99</span>
+                    </button>
+                  </li>
+                  <li class="conf__data-item">
+                    <button class="conf__data-btn">
+                      <!-- Картинку добавлять как инлайновый стиль--><span class="conf__data-pic" style="background-image: url('');"></span><span class="conf__data-label">Модуль Strex 1.0 dot</span><span class="conf__data-size">301 MM</span><span class="conf__data-price">6800 ₽</span><span class="conf__data-badge">+99</span>
+                    </button>
+                  </li>
+                  <li class="conf__data-item">
+                    <button class="conf__data-btn">
+                      <!-- Картинку добавлять как инлайновый стиль--><span class="conf__data-pic" style="background-image: url('');"></span><span class="conf__data-label">Модуль Strex 1.0 dot</span><span class="conf__data-size">301 MM</span><span class="conf__data-price">6800 ₽</span><span class="conf__data-badge">+99</span>
+                    </button>
+                  </li>
+                  <li class="conf__data-item">
+                    <button class="conf__data-btn">
+                      <!-- Картинку добавлять как инлайновый стиль--><span class="conf__data-pic" style="background-image: url('');"></span><span class="conf__data-label">Модуль Strex 1.0 dot</span><span class="conf__data-size">301 MM</span><span class="conf__data-price">6800 ₽</span><span class="conf__data-badge">+99</span>
+                    </button>
+                  </li>
+                  <li class="conf__data-item">
+                    <button class="conf__data-btn">
+                      <!-- Картинку добавлять как инлайновый стиль--><span class="conf__data-pic" style="background-image: url('');"></span><span class="conf__data-label">Модуль Strex 1.0 dot</span><span class="conf__data-size">301 MM</span><span class="conf__data-price">6800 ₽</span><span class="conf__data-badge">+99</span>
+                    </button>
+                  </li>
+                  <li class="conf__data-item">
+                    <button class="conf__data-btn">
+                      <!-- Картинку добавлять как инлайновый стиль--><span class="conf__data-pic" style="background-image: url('');"></span><span class="conf__data-label">Модуль Strex 1.0 dot</span><span class="conf__data-size">301 MM</span><span class="conf__data-price">6800 ₽</span><span class="conf__data-badge">+99</span>
+                    </button>
+                  </li>
+                  <li class="conf__data-item">
+                    <button class="conf__data-btn">
+                      <!-- Картинку добавлять как инлайновый стиль--><span class="conf__data-pic" style="background-image: url('');"></span><span class="conf__data-label">Модуль Strex 1.0 dot</span><span class="conf__data-size">301 MM</span><span class="conf__data-price">6800 ₽</span><span class="conf__data-badge">+99</span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="conf__data-side">
+              <div class="conf__data-header">
+                <p class="conf__data-description">сторона<span>D</span></p>
+                <p class="conf__data-percents">
+                  <!-- Для динамического измения заполнности менять инлейновый стиль width в процентах--><span class="conf__data-loader" style="width: 54%;"></span><span class="conf__data-text">заполнение</span>
+                  <!-- Динамичеки менять процент заполнности--><span class="conf__data-value">54%</span>
+                </p>
+                <button class="conf__data-toggle">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.6944 7.80432C20.1019 8.20988 20.1019 8.86741 19.6944 9.27295L12.7378 16.1959C12.3303 16.6014 11.6697 16.6014 11.2622 16.1958L4.30564 9.2728C3.89813 8.86725 3.89812 8.20972 4.30562 7.80417C4.71312 7.39861 5.37381 7.39861 5.78132 7.80416L12 13.9929L18.2187 7.80429C18.6262 7.39875 19.2869 7.39876 19.6944 7.80432Z" fill="black"></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="conf__data-body custom-scroll-horizontal">
+                <ul class="conf__data-list">
+                  <li class="conf__data-item">
+                    <button class="conf__data-btn">
+                      <!-- Картинку добавлять как инлайновый стиль--><span class="conf__data-pic" style="background-image: url('');"></span><span class="conf__data-label">Модуль Strex 1.0 dot</span><span class="conf__data-size">301 MM</span><span class="conf__data-price">6800 ₽</span><span class="conf__data-badge">+99</span>
+                    </button>
+                  </li>
+                  <li class="conf__data-item">
+                    <button class="conf__data-btn">
+                      <!-- Картинку добавлять как инлайновый стиль--><span class="conf__data-pic" style="background-image: url('');"></span><span class="conf__data-label">Модуль Strex 1.0 dot</span><span class="conf__data-size">301 MM</span><span class="conf__data-price">6800 ₽</span><span class="conf__data-badge">+99</span>
+                    </button>
+                  </li>
+                  <li class="conf__data-item">
+                    <button class="conf__data-btn">
+                      <!-- Картинку добавлять как инлайновый стиль--><span class="conf__data-pic" style="background-image: url('');"></span><span class="conf__data-label">Модуль Strex 1.0 dot</span><span class="conf__data-size">301 MM</span><span class="conf__data-price">6800 ₽</span><span class="conf__data-badge">+99</span>
+                    </button>
+                  </li>
+                  <li class="conf__data-item">
+                    <button class="conf__data-btn">
+                      <!-- Картинку добавлять как инлайновый стиль--><span class="conf__data-pic" style="background-image: url('');"></span><span class="conf__data-label">Модуль Strex 1.0 dot</span><span class="conf__data-size">301 MM</span><span class="conf__data-price">6800 ₽</span><span class="conf__data-badge">+99</span>
+                    </button>
+                  </li>
+                  <li class="conf__data-item">
+                    <button class="conf__data-btn">
+                      <!-- Картинку добавлять как инлайновый стиль--><span class="conf__data-pic" style="background-image: url('');"></span><span class="conf__data-label">Модуль Strex 1.0 dot</span><span class="conf__data-size">301 MM</span><span class="conf__data-price">6800 ₽</span><span class="conf__data-badge">+99</span>
+                    </button>
+                  </li>
+                  <li class="conf__data-item">
+                    <button class="conf__data-btn">
+                      <!-- Картинку добавлять как инлайновый стиль--><span class="conf__data-pic" style="background-image: url('');"></span><span class="conf__data-label">Модуль Strex 1.0 dot</span><span class="conf__data-size">301 MM</span><span class="conf__data-price">6800 ₽</span><span class="conf__data-badge">+99</span>
+                    </button>
+                  </li>
+                  <li class="conf__data-item">
+                    <button class="conf__data-btn">
+                      <!-- Картинку добавлять как инлайновый стиль--><span class="conf__data-pic" style="background-image: url('');"></span><span class="conf__data-label">Модуль Strex 1.0 dot</span><span class="conf__data-size">301 MM</span><span class="conf__data-price">6800 ₽</span><span class="conf__data-badge">+99</span>
+                    </button>
+                  </li>
+                  <li class="conf__data-item">
+                    <button class="conf__data-btn">
+                      <!-- Картинку добавлять как инлайновый стиль--><span class="conf__data-pic" style="background-image: url('');"></span><span class="conf__data-label">Модуль Strex 1.0 dot</span><span class="conf__data-size">301 MM</span><span class="conf__data-price">6800 ₽</span><span class="conf__data-badge">+99</span>
+                    </button>
+                  </li>
+                  <li class="conf__data-item">
+                    <button class="conf__data-btn">
+                      <!-- Картинку добавлять как инлайновый стиль--><span class="conf__data-pic" style="background-image: url('');"></span><span class="conf__data-label">Модуль Strex 1.0 dot</span><span class="conf__data-size">301 MM</span><span class="conf__data-price">6800 ₽</span><span class="conf__data-badge">+99</span>
+                    </button>
+                  </li>
+                  <li class="conf__data-item">
+                    <button class="conf__data-btn">
+                      <!-- Картинку добавлять как инлайновый стиль--><span class="conf__data-pic" style="background-image: url('');"></span><span class="conf__data-label">Модуль Strex 1.0 dot</span><span class="conf__data-size">301 MM</span><span class="conf__data-price">6800 ₽</span><span class="conf__data-badge">+99</span>
+                    </button>
+                  </li>
+                  <li class="conf__data-item">
+                    <button class="conf__data-btn">
+                      <!-- Картинку добавлять как инлайновый стиль--><span class="conf__data-pic" style="background-image: url('');"></span><span class="conf__data-label">Модуль Strex 1.0 dot</span><span class="conf__data-size">301 MM</span><span class="conf__data-price">6800 ₽</span><span class="conf__data-badge">+99</span>
+                    </button>
+                  </li>
+                  <li class="conf__data-item">
+                    <button class="conf__data-btn">
+                      <!-- Картинку добавлять как инлайновый стиль--><span class="conf__data-pic" style="background-image: url('');"></span><span class="conf__data-label">Модуль Strex 1.0 dot</span><span class="conf__data-size">301 MM</span><span class="conf__data-price">6800 ₽</span><span class="conf__data-badge">+99</span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="conf__content">
+          <ul class="conf__sides-list">
+            <li class="conf__sides-item">
+              <!-- Активной стороне добавлять класс .active-->
+              <button class="active">сторона<strong>A</strong></button>
+            </li>
+            <li class="conf__sides-item">
+              <!-- Стороне для которой есть выбранные элемнеты, добавлять класс .selected-->
+              <button class="active selected">сторона<strong>B</strong></button>
+            </li>
+            <li class="conf__sides-item">
+              <button class="selected">сторона<strong>C</strong></button>
+            </li>
+            <li class="conf__sides-item">
+              <button>сторона<strong>D</strong></button>
+            </li>
+          </ul>
+          <label class="conf__search">
+            <input type="text" placeholder="найти">
+            <button>поиск</button>
+          </label>
+          <ul class="conf__module-list">
+            <li class="conf__module-item">
+              <button class="conf__data-btn">
+                <!-- Картинку добавлять как инлайновый стиль--><span class="conf__data-pic" style="background-image: url('');"></span><span class="conf__data-label">Модуль Strex 1.0 dot 171142B3</span><span class="conf__data-size">301 MM</span><span class="conf__data-price">6800 ₽</span>
+              </button>
+            </li>
+            <li class="conf__module-item">
+              <button class="conf__data-btn">
+                <!-- Картинку добавлять как инлайновый стиль--><span class="conf__data-pic" style="background-image: url('');"></span><span class="conf__data-label">Модуль Strex 1.0 dot 171142B3</span><span class="conf__data-size">301 MM</span><span class="conf__data-price">6800 ₽</span>
+              </button>
+            </li>
+            <li class="conf__module-item">
+              <button class="conf__data-btn">
+                <!-- Картинку добавлять как инлайновый стиль--><span class="conf__data-pic" style="background-image: url('');"></span><span class="conf__data-label">Модуль Strex 1.0 dot 171142B3</span><span class="conf__data-size">301 MM</span><span class="conf__data-price">6800 ₽</span>
+              </button>
+            </li>
+            <li class="conf__module-item">
+              <button class="conf__data-btn">
+                <!-- Картинку добавлять как инлайновый стиль--><span class="conf__data-pic" style="background-image: url('');"></span><span class="conf__data-label">Модуль Strex 1.0 dot 171142B3</span><span class="conf__data-size">301 MM</span><span class="conf__data-price">6800 ₽</span>
+              </button>
+            </li>
+            <li class="conf__module-item">
+              <button class="conf__data-btn">
+                <!-- Картинку добавлять как инлайновый стиль--><span class="conf__data-pic" style="background-image: url('');"></span><span class="conf__data-label">Модуль Strex 1.0 dot 171142B3</span><span class="conf__data-size">301 MM</span><span class="conf__data-price">6800 ₽</span>
+              </button>
+            </li>
+            <li class="conf__module-item">
+              <button class="conf__data-btn">
+                <!-- Картинку добавлять как инлайновый стиль--><span class="conf__data-pic" style="background-image: url('');"></span><span class="conf__data-label">Модуль Strex 1.0 dot 171142B3</span><span class="conf__data-size">301 MM</span><span class="conf__data-price">6800 ₽</span>
+              </button>
+            </li>
+            <li class="conf__module-item">
+              <button class="conf__data-btn">
+                <!-- Картинку добавлять как инлайновый стиль--><span class="conf__data-pic" style="background-image: url('');"></span><span class="conf__data-label">Модуль Strex 1.0 dot 171142B3</span><span class="conf__data-size">301 MM</span><span class="conf__data-price">6800 ₽</span>
+              </button>
+            </li>
+            <li class="conf__module-item">
+              <button class="conf__data-btn">
+                <!-- Картинку добавлять как инлайновый стиль--><span class="conf__data-pic" style="background-image: url('');"></span><span class="conf__data-label">Модуль Strex 1.0 dot 171142B3</span><span class="conf__data-size">301 MM</span><span class="conf__data-price">6800 ₽</span>
+              </button>
+            </li>
+            <li class="conf__module-item">
+              <button class="conf__data-btn">
+                <!-- Картинку добавлять как инлайновый стиль--><span class="conf__data-pic" style="background-image: url('');"></span><span class="conf__data-label">Модуль Strex 1.0 dot 171142B3</span><span class="conf__data-size">301 MM</span><span class="conf__data-price">6800 ₽</span>
+              </button>
+            </li>
+            <li class="conf__module-item">
+              <button class="conf__data-btn">
+                <!-- Картинку добавлять как инлайновый стиль--><span class="conf__data-pic" style="background-image: url('');"></span><span class="conf__data-label">Модуль Strex 1.0 dot 171142B3</span><span class="conf__data-size">301 MM</span><span class="conf__data-price">6800 ₽</span>
+              </button>
+            </li>
+            <li class="conf__module-item">
+              <button class="conf__data-btn">
+                <!-- Картинку добавлять как инлайновый стиль--><span class="conf__data-pic" style="background-image: url('');"></span><span class="conf__data-label">Модуль Strex 1.0 dot 171142B3</span><span class="conf__data-size">301 MM</span><span class="conf__data-price">6800 ₽</span>
+              </button>
+            </li>
+            <li class="conf__module-item">
+              <button class="conf__data-btn">
+                <!-- Картинку добавлять как инлайновый стиль--><span class="conf__data-pic" style="background-image: url('');"></span><span class="conf__data-label">Модуль Strex 1.0 dot 171142B3</span><span class="conf__data-size">301 MM</span><span class="conf__data-price">6800 ₽</span>
+              </button>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="conf__wrapper">
+        <!-- Контейнер для незаполненной конфигурации (.footer__description), оставлять пустым-->
+        <div class="footer__description">ваша конфигурация:</div>
+        <!-- Злаблокированной кнопке добавлять класс inactive-->
+        <botton class="footer__bnt disabled">Слудующий шаг</botton>
+      </div>
+    </footer>
+    <div class="modal" id="modalNotification">
+      <div class="modal__dialog">
+        <div class="modal__content">
+          <button class="modal__close" data-toggle="modal" data-direction="hide" data-target-id="modalNotification"></button>
+          <div class="modal__header">
+            <h4 class="modal__title">Уведомление от сайта localhost</h4>
+          </div>
+          <div class="modal__body">
+            <p class="modal__subtitle">Не выбрана сторона</p>
+          </div>
+          <div class="modal__footer">
+            <button class="modal__btn" data-toggle="modal" data-direction="hide" data-target-id="modalNotification">Закрыть</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modalNotAvailable">
+      <div class="modal__dialog">
+        <div class="modal__content">
+          <button class="modal__close" data-toggle="modal" data-direction="hide" data-target-id="modalNotAvailable"></button>
+          <div class="modal__header">
+            <h4 class="modal__title">Конфигуратор доступен на десктопных устройствах</h4>
+          </div>
+          <div class="modal__body">
+            <p class="modal__subtitle">Ваше устройстов не поддерживается, минимальное разрешение экрана для корректной работы конфигуратора 1200 пикселей</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modalUserSize">
+      <div class="modal__dialog">
+        <div class="modal__content">
+          <button class="modal__close" data-toggle="modal" data-direction="hide" data-target-id="modalUserSize"></button>
+          <div class="modal__header">
+            <h4 class="modal__title">Добавить заказной размер</h4>
+          </div>
+          <div class="modal__body">
+            <form class="modal__form">
+              <h2 class="modal__form-title">Введите произвольный размер в мм*</h2>
+              <input class="modal__form-controller" type="number" name="" value="" placeholder="200 - 2000" min="500" max="2000" step="10">
+            </form>
+          </div>
+          <div class="modal__footer">
+            <button class="modal__form-btn" data-toggle="modal" data-direction="hide" data-target-id="modalUserSize">Закрыть</button>
+            <button class="modal__form-btn">Добавить трек</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Developer: Anar.N.Agaev">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="robots" content="noindex, follow">
+    <meta name="description" content="Write description for this page here">
+    <meta name="keywords" content="Write keywords for this page here">
+    <title>Конфигуратор</title>
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+  </head>
+  <body class="conf">
+    <header class="header">
+      <!--block variables-->
+      <div class="conf__wrapper">
+        <h1 class="header__logo">конфигуратор</h1>
+        <nan class="header__nav">
+          <ul class="header__nav-list">
+            <li>
+              <!-- Актвиной кнопке добавлять класс .active (.header__nav-item.active)--><a class="header__nav-item" href="step1.html">шаг 1</a>
+            </li>
+            <li><a class="header__nav-item" href="step2.html">шаг 2</a>
+            </li>
+            <li><a class="header__nav-item" href="step3.html">шаг 3</a>
+            </li>
+            <li><a class="header__nav-item" href="step4.html">шаг 4</a>
+            </li>
+          </ul>
+        </nan>
+      </div>
+    </header>
+    <main class="main">
+      <div class="conf__wrapper" style="display: flex; flex-direction: column; gap: 30px; margin-top: 30px;">
+        <button style="padding: 5px 10px;" data-toggle="modal" data-direction="show" data-target-id="modalNotification">Показать уведомление</button>
+        <button style="padding: 5px 10px;" data-toggle="modal" data-direction="show" data-target-id="modalNotAvailable">Конфигуратор не доступен</button>
+        <button style="padding: 5px 10px;" data-toggle="modal" data-direction="show" data-target-id="modalUserSize">Пользовательский размер трека</button><a href="step1.html">Шаг 1</a><a href="step2.html">Шаг 2</a><a href="step3.html">Шаг 3</a><a href="step4.html">Шаг 4</a>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="conf__wrapper">
+        <!-- Контейнер для незаполненной конфигурации (.footer__description), оставлять пустым-->
+        <div class="footer__description">ваша конфигурация:</div>
+        <!-- Злаблокированной кнопке добавлять класс inactive-->
+        <botton class="footer__bnt disabled">Слудующий шаг</botton>
+      </div>
+    </footer>
+    <div class="modal" id="modalNotification">
+      <div class="modal__dialog">
+        <div class="modal__content">
+          <button class="modal__close" data-toggle="modal" data-direction="hide" data-target-id="modalNotification"></button>
+          <div class="modal__header">
+            <h4 class="modal__title">Уведомление от сайта localhost</h4>
+          </div>
+          <div class="modal__body">
+            <p class="modal__subtitle">Не выбрана сторона</p>
+          </div>
+          <div class="modal__footer">
+            <button class="modal__btn" data-toggle="modal" data-direction="hide" data-target-id="modalNotification">Закрыть</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modalNotAvailable">
+      <div class="modal__dialog">
+        <div class="modal__content">
+          <button class="modal__close" data-toggle="modal" data-direction="hide" data-target-id="modalNotAvailable"></button>
+          <div class="modal__header">
+            <h4 class="modal__title">Конфигуратор доступен на десктопных устройствах</h4>
+          </div>
+          <div class="modal__body">
+            <p class="modal__subtitle">Ваше устройстов не поддерживается, минимальное разрешение экрана для корректной работы конфигуратора 1200 пикселей</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modalUserSize">
+      <div class="modal__dialog">
+        <div class="modal__content">
+          <button class="modal__close" data-toggle="modal" data-direction="hide" data-target-id="modalUserSize"></button>
+          <div class="modal__header">
+            <h4 class="modal__title">Добавить заказной размер</h4>
+          </div>
+          <div class="modal__body">
+            <form class="modal__form">
+              <h2 class="modal__form-title">Введите произвольный размер в мм*</h2>
+              <input class="modal__form-controller" type="number" name="" value="" placeholder="200 - 2000" min="500" max="2000" step="10">
+            </form>
+          </div>
+          <div class="modal__footer">
+            <button class="modal__form-btn" data-toggle="modal" data-direction="hide" data-target-id="modalUserSize">Закрыть</button>
+            <button class="modal__form-btn">Добавить трек</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
