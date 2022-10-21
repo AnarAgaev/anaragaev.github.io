@@ -170,7 +170,6 @@ function resetAllElementsBlock() {
 
 
 
-
 window.addEventListener('load', () => {
     Array.from(document.querySelectorAll('.conf__data-toggle'))
         .forEach(el => {
@@ -180,4 +179,22 @@ window.addEventListener('load', () => {
                     .toggle('show');
             });
         });
+    
+    Array.from(document.querySelectorAll(
+        '.conf__data-side_custom .conf__data-btn'))
+        .forEach(el => {
+            el.addEventListener('click', function () {
+                resetDataButtons();
+                this.classList.add('active');
+            });
+        });
+    
+    function resetDataButtons() {
+        Array.from(document.querySelectorAll(
+            '.conf__data-side_custom .conf__data-btn'))
+            .forEach(el => {
+                el.classList.remove('active');
+            });
+    }
 });
+

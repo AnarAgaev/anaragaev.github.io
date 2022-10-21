@@ -28,6 +28,8 @@
             </li>
             <li><a class="header__nav-item" href="step4.html">шаг 4</a>
             </li>
+            <li><a class="header__nav-item disabled" href="step4.html">шаг 5(test)</a>
+            </li>
           </ul>
         </nan>
       </div>
@@ -42,9 +44,51 @@
         <section class="conf__data">
           <div class="conf__data-caption"><span>блок питания</span><span>название блока питания</span></div>
           <div class="conf__data-wrap custom-scroll-vertical">
+            <!-- Для блоков питания, добавлять класс-модификатор .conf__data-side_custom-->
+            <div class="conf__data-side conf__data-side_custom show">
+              <div class="conf__data-header">
+                <p class="conf__data-description">Блок питания</p>
+                <p class="conf__data-percents"></p>
+                <button class="conf__data-toggle">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.6944 7.80432C20.1019 8.20988 20.1019 8.86741 19.6944 9.27295L12.7378 16.1959C12.3303 16.6014 11.6697 16.6014 11.2622 16.1958L4.30564 9.2728C3.89813 8.86725 3.89812 8.20972 4.30562 7.80417C4.71312 7.39861 5.37381 7.39861 5.78132 7.80416L12 13.9929L18.2187 7.80429C18.6262 7.39875 19.2869 7.39876 19.6944 7.80432Z" fill="black"></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="conf__data-body custom-scroll-horizontal">
+                <ul class="conf__data-list">
+                  <li class="conf__data-item">
+                    <!-- Выбранному блоку питания, добалять класс active-->
+                    <button class="conf__data-btn active">
+                      <!-- Картинку добавлять как инлайновый стиль--><span class="conf__data-pic" style="background-image: url('');"></span><span class="conf__data-label">Модуль Strex 1.0 dot</span><span class="conf__data-size">301 MM</span><span class="conf__data-price">6800 ₽</span><span class="conf__data-badge">+99</span>
+                    </button>
+                  </li>
+                  <li class="conf__data-item">
+                    <button class="conf__data-btn">
+                      <!-- Картинку добавлять как инлайновый стиль--><span class="conf__data-pic" style="background-image: url('');"></span><span class="conf__data-label">Модуль Strex 1.0 dot</span><span class="conf__data-size">301 MM</span><span class="conf__data-price">6800 ₽</span><span class="conf__data-badge">+99</span>
+                    </button>
+                  </li>
+                  <li class="conf__data-item">
+                    <button class="conf__data-btn">
+                      <!-- Картинку добавлять как инлайновый стиль--><span class="conf__data-pic" style="background-image: url('');"></span><span class="conf__data-label">Модуль Strex 1.0 dot</span><span class="conf__data-size">301 MM</span><span class="conf__data-price">6800 ₽</span><span class="conf__data-badge">+99</span>
+                    </button>
+                  </li>
+                  <li class="conf__data-item">
+                    <button class="conf__data-btn">
+                      <!-- Картинку добавлять как инлайновый стиль--><span class="conf__data-pic" style="background-image: url('');"></span><span class="conf__data-label">Модуль Strex 1.0 dot</span><span class="conf__data-size">301 MM</span><span class="conf__data-price">6800 ₽</span><span class="conf__data-badge">+99</span>
+                    </button>
+                  </li>
+                  <li class="conf__data-item">
+                    <button class="conf__data-btn">
+                      <!-- Картинку добавлять как инлайновый стиль--><span class="conf__data-pic" style="background-image: url('');"></span><span class="conf__data-label">Модуль Strex 1.0 dot</span><span class="conf__data-size">301 MM</span><span class="conf__data-price">6800 ₽</span><span class="conf__data-badge">+99</span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
             <!-- Для того чтобы открыть или закрыть блок стороны,-->
             <!-- нужно тоглить класс .show на блоке .conf__data-side-->
-            <div class="conf__data-side show">
+            <div class="conf__data-side">
               <div class="conf__data-header">
                 <p class="conf__data-description">сторона<span>A</span></p>
                 <p class="conf__data-percents">
