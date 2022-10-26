@@ -28,8 +28,6 @@
             </li>
             <li><a class="header__nav-item" href="step4.html">шаг 4</a>
             </li>
-            <li><a class="header__nav-item disabled" href="step4.html">шаг 5(test)</a>
-            </li>
           </ul>
         </nan>
       </div>
@@ -39,6 +37,11 @@
         <button style="padding: 5px 10px;" data-toggle="modal" data-direction="show" data-target-id="modalNotification">Показать уведомление</button>
         <button style="padding: 5px 10px;" data-toggle="modal" data-direction="show" data-target-id="modalNotAvailable">Конфигуратор не доступен</button>
         <button style="padding: 5px 10px;" data-toggle="modal" data-direction="show" data-target-id="modalUserSize">Пользовательский размер трека</button><a href="step1.html">Шаг 1</a><a href="step2.html">Шаг 2</a><a href="step3.html">Шаг 3</a><a href="step4.html">Шаг 4</a>
+        <button id="tooltipButton" aria-describedby="tooltip" style="padding: 5px 10px;">Show tooltip button</button>
+        <!-- Для того чтобы показать тултип, тогглить дата тарибут data-show (!без параметров)-->
+        <div class="tooltip" id="tooltipMessage" role="tooltip">Здесь пишем текст тултипа любой длинны.
+          <div class="tooltip__arrow" data-popper-arrow></div>
+        </div>
       </div>
     </main>
     <footer class="footer">
@@ -98,6 +101,7 @@
         </div>
       </div>
     </div>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

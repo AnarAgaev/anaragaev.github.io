@@ -78,7 +78,75 @@ function(event) {
 });
 
 
+const button = document.querySelector('#tooltipButton');
+const tooltip = document.querySelector('#tooltipMessage');
 
+if (button) {
+
+// Каждый тултип нужно проинициализировать,
+// с помощью метода Popper.createPopper
+// передав в него два параметра
+// 1. элемент на котором должен срабатывать тултип
+// 2. сам тултип
+// В момент инициализации в свойство placement
+// передаем стартовую позицию тултипа
+// Типы позиций можно посмотреть на главной странице в разделе PLACEMENT
+    const popperInstance = Popper.createPopper(button, tooltip, {
+        placement: 'bottom-start',
+        modifiers: [
+            {
+                name: 'offset',
+                options: {
+                    offset: [0, 12],
+                },
+            },
+        ],
+    });
+
+// Функции show и hide можно переиспользовать
+    function show() {
+        // Make the tooltip visible
+        tooltip.setAttribute('data-show', '');
+        
+        // Enable the event listeners
+        popperInstance.setOptions((options) => ({
+            ...options,
+            modifiers: [
+                ...options.modifiers,
+                {name: 'eventListeners', enabled: true},
+            ],
+        }));
+        
+        // Update its position
+        popperInstance.update();
+    }
+    
+    function hide() {
+        // Hide the tooltip
+        tooltip.removeAttribute('data-show');
+        
+        // Disable the event listeners
+        popperInstance.setOptions((options) => ({
+            ...options,
+            modifiers: [
+                ...options.modifiers,
+                {name: 'eventListeners', enabled: false},
+            ],
+        }));
+    }
+
+// Обработчики событий нужны свои
+    const showEvents = ['mouseenter', 'focus'];
+    const hideEvents = ['mouseleave', 'blur'];
+    
+    showEvents.forEach((event) => {
+        button.addEventListener(event, show);
+    });
+    
+    hideEvents.forEach((event) => {
+        button.addEventListener(event, hide);
+    });
+}
 // Показываем/скрываем тултип для хелпера
 const helpers = Array.from(document.querySelectorAll(
     '.conf__selects-controller .helper'));
@@ -170,6 +238,7 @@ function resetAllElementsBlock() {
 
 
 
+
 window.addEventListener('load', () => {
     Array.from(document.querySelectorAll('.conf__data-toggle'))
         .forEach(el => {
@@ -197,4 +266,3 @@ window.addEventListener('load', () => {
             });
     }
 });
-
