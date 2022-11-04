@@ -30,6 +30,36 @@
             </li>
           </ul>
         </nan>
+        <div class="header__buttons">
+          <button id="btnResetConf" data-toggle="modal" data-direction="show" data-target-id="modalResetConf">Сбросить</button>
+          <button id="btnSaveConf" data-toggle="modal" data-direction="show" data-target-id="modalSaveConf">Сохранить</button>
+        </div>
+        <div class="modal modal_header" id="modalResetConf">
+          <div class="modal__dialog">
+            <div class="modal__content">
+              <button class="modal__close" data-toggle="modal" data-direction="hide" data-target-id="modalResetConf"></button>
+              <div class="modal__header">
+                <h4 class="modal__title">Название конфигурации</h4>
+              </div>
+              <div class="modal__footer">
+                <button class="modal__btn" data-toggle="modal" data-direction="hide" data-target-id="modalResetConf">Сбросить</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal modal_header" id="modalSaveConf">
+          <div class="modal__dialog">
+            <div class="modal__content">
+              <button class="modal__close" data-toggle="modal" data-direction="hide" data-target-id="modalSaveConf"></button>
+              <div class="modal__header">
+                <h4 class="modal__title">Для сохранения конфигурации,<br>нужно авторизироваться на сайте technolight.ru</h4>
+              </div>
+              <div class="modal__footer">
+                <button class="modal__btn" data-toggle="modal" data-direction="hide" data-target-id="modalSaveConf">Сохранить</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <main class="main">

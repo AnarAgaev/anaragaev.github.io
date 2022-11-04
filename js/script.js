@@ -23,11 +23,25 @@ function showModal(modalId) {
     const modalClasses = modal.classList;
     const bodyClasses = document.body.classList;
     const scrollbarWidth = getScrollbarWidth();
+    
+    const isModalsVisible = document
+        .querySelectorAll(".modal.show")
+        .length > 0;
 
-    document.body.style.paddingRight = scrollbarWidth + 'px';
-    bodyClasses.add('modal-open');
-    modal.style.paddingRight = scrollbarWidth + 'px';
-    modalClasses.add('show');
+    if (isModalsVisible) {
+        resetAllModals();
+    }
+    
+    setTimeout(() => {
+        if (!isModalsVisible) {
+            document.body.style
+                .paddingRight = scrollbarWidth + 'px';
+        }
+
+        bodyClasses.add('modal-open');
+        modal.style.paddingRight = scrollbarWidth + 'px';
+        modalClasses.add('show');
+    }, 100);
 }
 
 function hideModal(modalId) {
@@ -39,6 +53,19 @@ function hideModal(modalId) {
     document.body.style.removeProperty('padding-right');
     modalClasses.remove('show');
     modal.style.removeProperty('padding-right');
+}
+
+function resetAllModals() {
+    const modals = document
+        .querySelectorAll('.modal');
+    
+    modals.forEach(modal => {
+        modal.classList.remove('show');
+        modal.style.paddingRight = '0px';
+    });
+
+    // document.body.style.paddingRight = '0';
+    // document.body.classList.remove('modal-open');
 }
 
 // Получаем ширину скроллбара
@@ -208,6 +235,7 @@ tracks.forEach(el => {
 
 
 
+
 const elementsBtns = Array.from(document
     .querySelectorAll('.conf__elements-btn.selected'));
 
@@ -234,8 +262,6 @@ function resetAllElementsBlock() {
         .querySelectorAll('.conf__elements-block'))
         .forEach(el => el.classList.remove('active'));
 }
-
-
 
 
 
@@ -266,3 +292,4 @@ window.addEventListener('load', () => {
             });
     }
 });
+
