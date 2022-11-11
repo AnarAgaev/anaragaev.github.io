@@ -235,7 +235,6 @@ tracks.forEach(el => {
 
 
 
-
 const elementsBtns = Array.from(document
     .querySelectorAll('.conf__elements-btn.selected'));
 
@@ -262,6 +261,8 @@ function resetAllElementsBlock() {
         .querySelectorAll('.conf__elements-block'))
         .forEach(el => el.classList.remove('active'));
 }
+
+
 
 
 
@@ -292,4 +293,3 @@ window.addEventListener('load', () => {
             });
     }
 });
-
