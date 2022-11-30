@@ -8,7 +8,7 @@
     <meta name="robots" content="noindex, follow">
     <meta name="description" content="Write description for this page here">
     <meta name="keywords" content="Write keywords for this page here">
-    <title>Конфигуратор</title>
+    <title>Конфигуратор - шаг 4</title>
     <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css" type="text/css">
   </head>
@@ -37,7 +37,7 @@
             </li>
             <li><a class="header__nav-item" href="step3.html">шаг 3</a>
             </li>
-            <li><a class="header__nav-item" href="step4.html">шаг 4</a>
+            <li><a class="header__nav-item active" href="step4.html">шаг 4</a>
             </li>
           </ul>
         </nav>
@@ -74,15 +74,95 @@
       </div>
     </header>
     <main class="main">
-      <div class="conf__wrapper" style="display: flex; flex-direction: column; gap: 30px; margin-top: 30px;">
-        <button style="padding: 5px 10px;" data-toggle="modal" data-direction="show" data-target-id="modalNotification">Показать уведомление</button>
-        <button style="padding: 5px 10px;" data-toggle="modal" data-direction="show" data-target-id="modalNotAvailable">Конфигуратор не доступен</button>
-        <button style="padding: 5px 10px;" data-toggle="modal" data-direction="show" data-target-id="modalUserSize">Пользовательский размер трека</button><a href="step1.html">Шаг 1</a><a href="step2.html">Шаг 2</a><a href="step3.html">Шаг 3</a><a href="step4.html">Шаг 4</a>
-        <button id="tooltipButton" aria-describedby="tooltip" style="padding: 5px 10px;">Show tooltip button</button>
-        <!-- Для того чтобы показать тултип, тогглить дата тарибут data-show (!без параметров)-->
-        <div class="tooltip" id="tooltipMessage" role="tooltip">Здесь пишем текст тултипа любой длинны.
-          <div class="tooltip__arrow" data-popper-arrow></div>
-        </div>
+      <div class="conf__wrapper">
+        <section class="conf__basket">
+          <table class="conf__table">
+            <tbody>
+              <tr class="conf__table-caption">
+                <th>Трек</th>
+                <th>артикул</th>
+                <th>количество</th>
+                <th>стоимость (за 1 шт.)</th>
+                <th>итого</th>
+              </tr>
+              <tr class="conf__table-row">
+                <td><img class="conf__table-pic" src="https://9d2c73b6-1b6d-45e9-9faa-7fb794647734.selcdn.net/i/341/f5e207958d.jpg" alt></td>
+                <td><a href=""> 86108-3K-01-BK</a></td>
+                <td>1</td>
+                <td>6800 ₽</td>
+                <td>6800 ₽</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="conf__table">
+            <tbody>
+              <tr class="conf__table-caption">
+                <th>Блок питания</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+              </tr>
+              <tr class="conf__table-row">
+                <td><img class="conf__table-pic" src="https://9d2c73b6-1b6d-45e9-9faa-7fb794647734.selcdn.net/i/341/f5e207958d.jpg" alt></td>
+                <td><a href="">86108-3K-01afdasfdasfa-BK</a></td>
+                <td>100</td>
+                <td>5464600 ₽</td>
+                <td>5464600 ₽</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="conf__table">
+            <tbody>
+              <tr class="conf__table-caption">
+                <th>Аксессуары</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+              </tr>
+              <tr class="conf__table-row">
+                <td><img class="conf__table-pic" src="https://9d2c73b6-1b6d-45e9-9faa-7fb794647734.selcdn.net/i/341/f5e207958d.jpg" alt></td>
+                <td><a href="">86108-3K-01afdasfdasfa-BK</a></td>
+                <td>100</td>
+                <td>5464600 ₽</td>
+                <td>5464600 ₽</td>
+              </tr>
+              <tr class="conf__table-row">
+                <td><img class="conf__table-pic" src="https://9d2c73b6-1b6d-45e9-9faa-7fb794647734.selcdn.net/i/341/f5e207958d.jpg" alt></td>
+                <td><a href="">86108-3K-01-BK</a></td>
+                <td>1</td>
+                <td>6800 ₽</td>
+                <td>6800 ₽</td>
+              </tr>
+              <tr class="conf__table-row">
+                <td><img class="conf__table-pic" src="https://9d2c73b6-1b6d-45e9-9faa-7fb794647734.selcdn.net/i/341/f5e207958d.jpg" alt></td>
+                <td><a href="">86108-3K-01afdasfdasfa-BK</a></td>
+                <td>100</td>
+                <td>5464600 ₽</td>
+                <td>5464600 ₽</td>
+              </tr>
+              <tr class="conf__table-row">
+                <td><img class="conf__table-pic" src="https://9d2c73b6-1b6d-45e9-9faa-7fb794647734.selcdn.net/i/341/f5e207958d.jpg" alt></td>
+                <td><a href="">86108-3K-01-BK</a></td>
+                <td>1</td>
+                <td>6800 ₽</td>
+                <td>6800 ₽</td>
+              </tr>
+              <tr class="conf__table-row">
+                <td><img class="conf__table-pic" src="https://9d2c73b6-1b6d-45e9-9faa-7fb794647734.selcdn.net/i/341/f5e207958d.jpg" alt></td>
+                <td><a href="">86108-3K-01afdasfdasfa-BK</a></td>
+                <td>100</td>
+                <td>5464600 ₽</td>
+                <td>5464600 ₽</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section class="conf__result">
+          <p class="conf__result-data">Итоговая сумма<span>21654 ₽</span></p>
+          <button class="conf__result-btn">Отправить заказ</button>
+        </section>
       </div>
     </main>
     <footer class="footer">
