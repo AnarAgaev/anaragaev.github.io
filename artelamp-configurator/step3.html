@@ -380,6 +380,75 @@
           </div>
         </section>
         <section class="conf__content">
+          <!-- Если нужно разместить в одном блоке несколько фильтров, оборачиваем их в .conf__container-->
+          <section class="conf__container">
+            <!-- Период .conf__period-->
+            <div class="conf__period conf__filter-price">
+              <mark>период</mark>
+              <div> 
+                <label>
+                  <input type="text"><span>₽</span>
+                </label><i></i>
+                <label>
+                  <input type="text"><span>₽</span>
+                </label>
+              </div>
+            </div>
+            <!-- Текстовое поле с кнопкой .conf__input-->
+            <div class="conf__input conf__search">
+              <input type="text" placeholder="найти">
+              <button>поиск</button>
+            </div>
+          </section>
+          <section class="conf__container">
+            <!-- Чекбокс .conf__check-->
+            <label class="conf__check">
+              <input class="invisible" type="checkbox">
+              <mark></mark><span>диммируемый</span>
+            </label>
+            <!-- Список для выбора .conf__select-->
+            <!-- Открываем/закрываем селект классом .dropped-->
+            <div class="conf__select"><span class="conf__select-label">световая температура</span>
+              <div class="conf__select-wrap">
+                <div class="conf__select-value"><span></span></div>
+                <div class="conf__select-drop">
+                  <div class="conf__select-options">
+                    <label>
+                      <input class="invisible" type="radio" name="temp" value="значение 1">
+                      <!-- Выделяем span с помощью класса active--><span class="value">Значение 1</span>
+                    </label>
+                    <label>
+                      <input class="invisible" type="radio" name="temp" value="значение 2"><span class="value">Значение 2</span>
+                    </label>
+                    <label>
+                      <input class="invisible" type="radio" name="temp" value="значение 3"><span class="value">Значение 3</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Список для выбора .conf__select-->
+            <!-- Открываем/закрываем селект классом .dropped-->
+            <div class="conf__select"><span class="conf__select-label">Мощность W</span>
+              <div class="conf__select-wrap">
+                <div class="conf__select-value"><span></span></div>
+                <div class="conf__select-drop">
+                  <div class="conf__select-options">
+                    <label>
+                      <input class="invisible" type="radio" name="power" value="значение 1">
+                      <!-- Выделяем span с помощью класса active--><span class="value">Значение 1</span>
+                    </label>
+                    <label>
+                      <input class="invisible" type="radio" name="power" value="значение 2"><span class="value">Значение 2</span>
+                    </label>
+                    <label>
+                      <input class="invisible" type="radio" name="power" value="значение 3"><span class="value">Значение 3</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
           <ul class="conf__sides-list">
             <li class="conf__sides-item">
               <!-- Активной стороне добавлять класс .active-->
@@ -387,7 +456,7 @@
             </li>
             <li class="conf__sides-item">
               <!-- Стороне для которой есть выбранные элемнеты, добавлять класс .selected-->
-              <button class="active selected">сторона<strong>B</strong></button>
+              <button class="selected">сторона<strong>B</strong></button>
             </li>
             <li class="conf__sides-item">
               <button class="selected">сторона<strong>C</strong></button>
@@ -396,10 +465,7 @@
               <button>сторона<strong>D</strong></button>
             </li>
           </ul>
-          <label class="conf__search">
-            <input type="text" placeholder="найти">
-            <button>поиск</button>
-          </label>
+          <div class="conf__percents"><span class="conf__percents-loader" style="width: 57%"></span><span class="conf__percents-text">заполнение</span><span class="conf__percents-value">57%</span><span class="conf__percents-text">4552/8000 <small>мм</small></span></div>
           <ul class="conf__module-list">
             <li class="conf__module-item">
               <button class="conf__data-btn">
