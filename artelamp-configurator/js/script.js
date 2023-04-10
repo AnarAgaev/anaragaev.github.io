@@ -316,6 +316,33 @@ function resetAllElementsBlock() {
 
 
 
+window.addEventListener('load', () => {
+    Array.from(document.querySelectorAll('.conf__data-toggle'))
+        .forEach(el => {
+            el.addEventListener('click', e => {
+                e.target.closest('.conf__data-side')
+                    .classList
+                    .toggle('show');
+            });
+        });
+    
+    Array.from(document.querySelectorAll(
+        '.conf__data-side_custom .conf__data-btn'))
+        .forEach(el => {
+            el.addEventListener('click', function () {
+                resetDataButtons();
+                this.classList.add('active');
+            });
+        });
+    
+    function resetDataButtons() {
+        Array.from(document.querySelectorAll(
+            '.conf__data-side_custom .conf__data-btn'))
+            .forEach(el => {
+                el.classList.remove('active');
+            });
+    }
+});
 const confTabs = Array.from(document
         .querySelectorAll('.conf__tab-list li'));
 
@@ -359,7 +386,7 @@ const resetConfSelectsValue = (el) => {
     const values = Array.from(options.querySelectorAll('.value'));
 
     values.forEach(el => {
-        el.classList.remove('acitve')
+        el.classList.remove('active')
     });    
 }
 
@@ -381,7 +408,7 @@ confFilterSelects.forEach(el => {
 
                 resetConfSelectsValue(e.target);
                 input.innerText = value;
-                e.target.classList.add('acitve');                
+                e.target.classList.add('active');                
             }
 
         } else {
@@ -418,30 +445,3 @@ sideBtns.forEach((el, i) => {
 });
 
 
-window.addEventListener('load', () => {
-    Array.from(document.querySelectorAll('.conf__data-toggle'))
-        .forEach(el => {
-            el.addEventListener('click', e => {
-                e.target.closest('.conf__data-side')
-                    .classList
-                    .toggle('show');
-            });
-        });
-    
-    Array.from(document.querySelectorAll(
-        '.conf__data-side_custom .conf__data-btn'))
-        .forEach(el => {
-            el.addEventListener('click', function () {
-                resetDataButtons();
-                this.classList.add('active');
-            });
-        });
-    
-    function resetDataButtons() {
-        Array.from(document.querySelectorAll(
-            '.conf__data-side_custom .conf__data-btn'))
-            .forEach(el => {
-                el.classList.remove('active');
-            });
-    }
-});
