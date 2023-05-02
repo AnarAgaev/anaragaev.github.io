@@ -154,6 +154,13 @@ function(event) {
         if (modalToggle) toggleModal(evt);
     });
 });
+const navToggle = document.querySelector('.header__controllers .header__burger');
+const headerNav = document.querySelector('.header__navigation');
+
+navToggle.addEventListener('click', function () {
+  this.classList.toggle('open');
+  headerNav.classList.toggle('show');
+});
 
 
 const button = document.querySelector('#tooltipButton');
@@ -283,6 +290,25 @@ tracks.forEach(el => {
     });
 });
 
+// Тоглим блок с выбором параметров
+const confSelects = Array.from(document.querySelectorAll('.conf__selects-title'));
+
+confSelects.forEach(el => {
+    el.addEventListener('click', function(e) {
+        e.stopPropagation();
+        const wrap = el.parentNode;
+        wrap.classList.toggle('open');
+    });
+});
+
+// Блокируем всплытие с кнопки .helper и всего вложенного
+const helperBtns = Array.from(document.querySelectorAll('.helper'));
+const helperBtnsInner = Array.from(document.querySelectorAll('.helper *'));
+const helperCombain = [...helperBtns, ...helperBtnsInner];
+
+helperCombain.forEach(el => {
+    el.addEventListener('click', e => e.preventDefault());
+});
 
 
 
@@ -316,6 +342,7 @@ function resetAllElementsBlock() {
 
 
 
+
 window.addEventListener('load', () => {
     Array.from(document.querySelectorAll('.conf__data-toggle'))
         .forEach(el => {
@@ -343,6 +370,7 @@ window.addEventListener('load', () => {
             });
     }
 });
+
 const confTabs = Array.from(document
         .querySelectorAll('.conf__tab-list li'));
 
@@ -386,7 +414,7 @@ const resetConfSelectsValue = (el) => {
     const values = Array.from(options.querySelectorAll('.value'));
 
     values.forEach(el => {
-        el.classList.remove('active')
+        el.classList.remove('acitve')
     });    
 }
 
@@ -408,7 +436,7 @@ confFilterSelects.forEach(el => {
 
                 resetConfSelectsValue(e.target);
                 input.innerText = value;
-                e.target.classList.add('active');                
+                e.target.classList.add('acitve');                
             }
 
         } else {
@@ -443,5 +471,4 @@ const handleSideBtnsClick = (e, i) => {
 sideBtns.forEach((el, i) => {
     el.addEventListener('click', (e) => handleSideBtnsClick(e, i));
 });
-
 

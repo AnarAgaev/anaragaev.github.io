@@ -14,16 +14,19 @@
   </head>
   <body class="conf">
     <header class="header">
-      <div class="header__caption"><a class="header__logotype" href="#"><img src="https://9d2c73b6-1b6d-45e9-9faa-7fb794647734.selcdn.net/i/625/a9512fb4ee.svg" alt=""></a>
+      <div class="header__caption"><a class="header__logotype" href="#"><img src="https://artelamp.ru/inc/images/logo.svg" alt=""></a>
         <nav class="header__navigation">
           <ul class="header__navigation-list">
-            <li class="header__navigation-item"><a href="">каталог</a></li>
-            <li class="header__navigation-item"><a href="">о компании</a></li>
-            <li class="header__navigation-item"><a href="">доставка</a></li>
-            <li class="header__navigation-item"><a href="">новости</a></li>
-            <li class="header__navigation-item"><a href="">о товаре</a></li>
+            <li class="header__navigation-item"><span><img src="https://artelamp.ru/inc/images/ic_products.svg" alt="каталог"></span><a href="">каталог</a></li>
+            <li class="header__navigation-item"><span><img src="https://artelamp.ru/inc/images/ic_about.svg" alt="о компании"></span><a href="">о компании</a></li>
+            <li class="header__navigation-item"><span><img src="https://artelamp.ru/inc/images/ic_delivery.svg" alt="доставка"></span><a href="">доставка</a></li>
+            <li class="header__navigation-item"><span><img src="https://artelamp.ru/inc/images/ic_catalog.svg" alt="новости"></span><a href="">новости</a></li>
+            <li class="header__navigation-item"><span><img src="https://artelamp.ru/inc/images/ic_des.svg" alt="о товаре"></span><a href="">о товаре</a></li>
           </ul>
-        </nav><a class="header__phone" href="tel:+74957551122">+7 (495) 755-1122</a>
+        </nav>
+        <div class="header__controllers"><a class="header__phone" href="tel:+74957551122">+7 (495) 755-1122</a>
+          <button class="header__burger" type="button"><span> </span><span></span><span></span></button>
+        </div>
         <div class="header__point"><span id="navPoint"></span></div>
       </div>
       <div class="conf__wrapper">
@@ -89,128 +92,134 @@
         </div>
       </div>
       <div class="conf__wrapper">
-        <section class="conf__selects">
-          <h2 class="conf__selects-title">Выберите тип трека</h2>
-          <div class="conf__selects-controller">
-            <label>
-              <input class="invisible" type="radio" name="manage" value=""><span class="checker"></span><span class="label">магнитный</span>
-            </label>
-            <!-- Для того, что бы показать тултип, тогглить класс .visible на хелпере-->
-            <div class="helper">
-              <div class="content">Выберите этот вариант, если вы не планируете затемнять установку системы STREX.<span class="close"></span></div>
+        <div class="aside__container">
+          <aside class="aside">
+            <div class="conf__sticky">
+              <section class="conf__selects open">
+                <h2 class="conf__selects-title">Выберите тип трека</h2>
+                <div class="conf__selects-drop">
+                  <div class="conf__selects-controller">
+                    <label>
+                      <input class="invisible" type="radio" name="device-type" value="">
+                      <div class="label">Магнитный
+                        <div class="helper">
+                          <div class="content">низковольтные системы 48V<span class="close"></span></div>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="conf__selects-controller">
+                    <label>
+                      <input class="invisible" type="radio" name="device-type" value="">
+                      <div class="label">Однофазный
+                        <div class="helper">
+                          <div class="content">системы на 220 V<span class="close"></span></div>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="conf__selects-controller">
+                    <label>
+                      <input class="invisible" type="radio" name="device-type" value="">
+                      <div class="label">Expert
+                        <div class="helper">
+                          <div class="content">низковольтные узкая системы 48V<span class="close"></span></div>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </section>
+              <section class="conf__selects open">
+                <h2 class="conf__selects-title">Выберите тип крепления</h2>
+                <div class="conf__selects-drop">
+                  <div class="conf__selects-controller">
+                    <label>
+                      <input class="invisible" type="radio" name="track-type" value="">
+                      <div class="label">Накладной</div>
+                    </label>
+                  </div>
+                  <div class="conf__selects-controller">
+                    <label>
+                      <input class="invisible" type="radio" name="track-type" value="">
+                      <div class="label">Встраиваемый под гипсокартон</div>
+                    </label>
+                  </div>
+                  <div class="conf__selects-controller">
+                    <label>
+                      <input class="invisible" type="radio" name="track-type" value="">
+                      <div class="label">Подвесной</div>
+                    </label>
+                  </div>
+                  <div class="conf__selects-controller">
+                    <label>
+                      <input class="invisible" type="radio" name="track-type" value="">
+                      <div class="label">Подвесной</div>
+                    </label>
+                  </div>
+                </div>
+              </section>
+              <section class="conf__selects open">
+                <h2 class="conf__selects-title">Выберите цвет</h2>
+                <div class="conf__selects-drop">
+                  <div class="conf__selects-controller">
+                    <label>
+                      <input class="invisible" type="radio" name="color" value="">
+                      <div class="label">Черный</div>
+                    </label>
+                  </div>
+                  <div class="conf__selects-controller">
+                    <label>
+                      <input class="invisible" type="radio" name="color" value="">
+                      <div class="label">Белый</div>
+                    </label>
+                  </div>
+                </div>
+              </section>
             </div>
-          </div>
-          <div class="conf__selects-controller">
-            <label>
-              <input class="invisible" type="radio" name="manage" value=""><span class="checker"></span><span class="label">однофазный</span>
-            </label>
-            <!-- Для того, что бы показать тултип, тогглить класс .visible на хелпере-->
-            <div class="helper">
-              <div class="content">Выберите этот вариант, если вы не планируете затемнять установку системы STREX.<span class="close"></span></div>
-            </div>
-          </div>
-          <div class="conf__selects-controller">
-            <label>
-              <input class="invisible" type="radio" name="manage" value=""><span class="checker"></span><span class="label">Expert</span>
-            </label>
-            <!-- Для того, что бы показать тултип, тогглить класс .visible на хелпере-->
-            <div class="helper">
-              <div class="content">Выберите этот вариант, если вы не планируете затемнять установку системы STREX.<span class="close"></span></div>
-            </div>
-          </div>
-        </section>
-        <section class="conf__selects">
-          <h2 class="conf__selects-title">Выберите тип крепления</h2>
-          <div class="conf__selects-controller">
-            <label>
-              <input class="invisible" type="radio" name="fastening" value=""><span class="checker"></span><span class="label">Накладной</span>
-            </label>
-          </div>
-          <div class="conf__selects-controller">
-            <label>
-              <input class="invisible" type="radio" name="fastening" value=""><span class="checker"></span><span class="label">Встраиваемый под гипсокартон</span>
-            </label>
-          </div>
-          <div class="conf__selects-controller">
-            <label>
-              <input class="invisible" type="radio" name="fastening" value=""><span class="checker"></span><span class="label">Подвесной</span>
-            </label>
-          </div>
-          <div class="conf__selects-controller">
-            <label>
-              <input class="invisible" type="radio" name="fastening" value=""><span class="checker"></span><span class="label">Под натяжной потолок</span>
-            </label>
-          </div>
-        </section>
-        <section class="conf__selects">
-          <h2 class="conf__selects-title">Выберите цвет</h2>
-          <div class="conf__selects-controller">
-            <label>
-              <input class="invisible" type="radio" name="color" value="" data-disabled="true"><span class="checker"></span><span class="label">Белый</span>
-            </label>
-          </div>
-          <div class="conf__selects-controller">
-            <label>
-              <input class="invisible" type="radio" name="color" value=""><span class="checker"></span><span class="label">Черный</span>
-            </label>
-          </div>
-        </section>
-        <section class="conf__selects">
-          <h2 class="conf__selects-title">Выберите трек</h2>
-          <div class="conf__selects-list">
-            <!-- Всем, кроме выбранного элемента, добавлять класс .inactive-->
-            <div class="conf__selects-img inactive"><img src="https://ftp-technolight.ru/all_about_product/%D0%A4%D0%9E%D0%A2%D0%9E%D0%91%D0%90%D0%9D%D0%9A/TECHNOLIGHT/80001-2M-BK.jpg" alt=""></div>
-            <div class="conf__selects-img"><img src="https://ftp-technolight.ru/all_about_product/%D0%A4%D0%9E%D0%A2%D0%9E%D0%91%D0%90%D0%9D%D0%9A/TECHNOLIGHT/80002-2M-BK.jpg" alt=""></div>
-            <div class="conf__selects-img inactive"><img src="https://ftp-technolight.ru/all_about_product/%D0%A4%D0%9E%D0%A2%D0%9E%D0%91%D0%90%D0%9D%D0%9A/TECHNOLIGHT/80003-2M-BK.jpg" alt=""></div>
-            <div class="conf__selects-img inactive"><img src="https://ftp-technolight.ru/all_about_product/%D0%A4%D0%9E%D0%A2%D0%9E%D0%91%D0%90%D0%9D%D0%9A/TECHNOLIGHT/80004-2M-BK.jpg" alt=""></div>
-          </div>
-        </section>
-        <section class="conf__selects">
-          <h2 class="conf__selects-title">Выберите источник питания</h2>
-          <div class="conf__selects-controller">
-            <label>
-              <input class="invisible" type="radio" name="manage" value=""><span class="checker"></span><span class="label">Удаленный источник питания</span>
-            </label>
-            <!-- Для того, что бы показать тултип, тогглить класс .visible на хелпере-->
-            <div class="helper">
-              <div class="content">Выберите этот вариант, если вы не планируете затемнять установку системы STREX.<span class="close"></span></div>
-            </div>
-          </div>
-          <div class="conf__selects-controller">
-            <label>
-              <input class="invisible" type="radio" name="manage" value=""><span class="checker"></span><span class="label">На треке</span>
-            </label>
-            <!-- Для того, что бы показать тултип, тогглить класс .visible на хелпере-->
-            <div class="helper">
-              <div class="content">Выберите этот вариант, если вы не планируете затемнять установку системы STREX.<span class="close"></span></div>
-            </div>
-          </div>
-        </section>
-        <section class="conf__selects">
-          <h2 class="conf__selects-title">Выберите монтаж</h2>
-          <div class="conf__selects-controller">
-            <label>
-              <input class="invisible" type="radio" name="mounting" value=""><span class="checker"></span><span class="label">Комплект подвески 1,5 м</span>
-            </label>
-          </div>
-          <div class="conf__selects-controller">
-            <label>
-              <input class="invisible" type="radio" name="mounting" value=""><span class="checker"></span><span class="label">Комплект подвески 3,0 м</span>
-            </label>
-            <!-- Для того, что бы показать тултип, тогглить класс .visible на хелпере-->
-            <div class="helper">
-              <div class="content">Выберите этот вариант, если вы не планируете затемнять установку системы STREX.<span class="close"></span></div>
-            </div>
-          </div>
-        </section>
+          </aside>
+          <aside class="aside">
+            <section class="conf__selects open">
+              <h2 class="conf__selects-title">Выберите трек</h2>
+              <div class="conf__selects-drop">
+                <div class="conf__selects-list">
+                  <!-- Всем, кроме выбранного элемента, добавлять класс .inactive-->
+                  <div class="conf__selects-img"><img src="https://yarusvsm.ru/all_about_product/ФОТОБАНК/ARTE%20LAMP/A470106.jpg" alt="Магнитный шинопровод встраиваемый (черный)"></div>
+                  <div class="conf__selects-img inactive"><img src="https://yarusvsm.ru/all_about_product/ФОТОБАНК/ARTE%20LAMP/A460106.jpg" alt="Магнитный шинопровод накладной (черный)"></div>
+                  <div class="conf__selects-img inactive"><img src="https://yarusvsm.ru/all_about_product/ФОТОБАНК/ARTE%20LAMP/A460106.jpg" alt="Магнитный шинопровод под натяжной потолок (черный)"></div>
+                  <div class="conf__selects-img inactive"><img src="https://yarusvsm.ru/all_about_product/ФОТОБАНК/ARTE%20LAMP/A460106.jpg" alt="Магнитный шинопровод подвесной (черный)"></div>
+                  <div class="conf__selects-img inactive"><img src="https://yarusvsm.ru/all_about_product/ФОТОБАНК/ARTE%20LAMP/A550106.jpg" alt="Однофазный встраиваемый шинопровод (черный)"></div>
+                  <div class="conf__selects-img inactive"><img src="https://yarusvsm.ru/all_about_product/ФОТОБАНК/ARTE%20LAMP/A540106.jpg" alt="Однофазный накладной шинопровод (черный)"></div>
+                  <div class="conf__selects-img inactive"><img src="https://yarusvsm.ru/all_about_product/ФОТОБАНК/ARTE%20LAMP/A540106.jpg" alt="Однофазный шинопровод под натяжной потолок (черный)"></div>
+                  <div class="conf__selects-img inactive"><img src="https://yarusvsm.ru/all_about_product/ФОТОБАНК/ARTE%20LAMP/A540106.jpg" alt="Однофазный подвесной шинопровод (черный)"></div>
+                  <div class="conf__selects-img inactive"><img src="https://yarusvsm.ru/all_about_product/ФОТОБАНК/ARTE%20LAMP/A470133.jpg" alt="Магнитный шинопровод встраиваемый (белый)"></div>
+                  <div class="conf__selects-img inactive"><img src="https://yarusvsm.ru/all_about_product/ФОТОБАНК/ARTE%20LAMP/A460133.jpg" alt="Магнитный шинопровод накладной (белый)"></div>
+                  <div class="conf__selects-img inactive"><img src="https://yarusvsm.ru/all_about_product/ФОТОБАНК/ARTE%20LAMP/A460133.jpg" alt="Магнитный шинопроводМагнитный шинопровод под натяжной потолок (белый)"></div>
+                  <div class="conf__selects-img inactive"><img src="https://yarusvsm.ru/all_about_product/ФОТОБАНК/ARTE%20LAMP/A460133.jpg" alt="Магнитный шинопровод подвесной (белый)"></div>
+                  <div class="conf__selects-img inactive"><img src="https://yarusvsm.ru/all_about_product/ФОТОБАНК/ARTE%20LAMP/A550133.jpg" alt="Однофазный встраиваемый шинопровод (белый)"></div>
+                  <div class="conf__selects-img inactive"><img src="https://yarusvsm.ru/all_about_product/ФОТОБАНК/ARTE%20LAMP/A540133.jpg" alt="Однофазный накладной шинопровод (белый)"></div>
+                  <div class="conf__selects-img inactive"><img src="https://yarusvsm.ru/all_about_product/ФОТОБАНК/ARTE%20LAMP/A540133.jpg" alt="Однофазный шинопровод под натяжной потолок (белый)"></div>
+                  <div class="conf__selects-img inactive"><img src="https://yarusvsm.ru/all_about_product/ФОТОБАНК/ARTE%20LAMP/A550133.jpg" alt="Однофазный подвесной шинопровод (белый)"></div>
+                  <div class="conf__selects-img inactive"><img src="https://yarusvsm.ru/all_about_product/ФОТОБАНК/ARTE%20LAMP/A580106.jpg" alt="Магнитный expert шинопровод встраиваемый (черный)"></div>
+                  <div class="conf__selects-img inactive"><img src="https://yarusvsm.ru/all_about_product/ФОТОБАНК/ARTE%20LAMP/A570106.jpg" alt="Магнитный expert шинопровод накладной (черный)"></div>
+                  <div class="conf__selects-img inactive"><img src="https://yarusvsm.ru/all_about_product/ФОТОБАНК/ARTE%20LAMP/A570106.jpg" alt="Магнитный expert шинопровод подвесной (черный)"></div>
+                </div>
+              </div>
+            </section>
+          </aside>
+        </div>
       </div>
     </main>
     <footer class="footer">
       <div class="conf__wrapper">
+        <div class="footer__controllers">
+          <button class="footer__bnt" type="button">Cбросить</button>
+          <button class="footer__bnt" type="button">Cохранить</button>
+        </div>
         <!-- Контейнер для незаполненной конфигурации (.footer__description), оставлять пустым-->
-        <div class="footer__description">© 2017–2022 artelamp.ru Все права защищены |&nbsp;<a href="#">Условия использования</a>&nbsp;|&nbsp;<a href="">Договор-оферта</a></div>
-        <!-- Злаблокированной кнопке добавлять класс inactive-->
-        <botton class="footer__bnt disabled">Слудующий шаг</botton>
+        <div class="footer__description"><span>© 2017–2023 artelamp.ru&nbsp;&nbsp;&nbsp;Все права защищены<span>|</span></span><span> <a href="#">Условия использования</a><span>|</span></span><span> <a href="">Договор-оферта</a></span></div>
+        <!-- Злаблокированной кнопке добавлять класс disabled-->
+        <botton class="footer__bnt">Следующий шаг</botton>
       </div>
     </footer>
     <div class="modal" id="modalNotification">
