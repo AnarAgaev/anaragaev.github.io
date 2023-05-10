@@ -313,36 +313,6 @@ helperCombain.forEach(el => {
 
 
 
-const elementsBtns = Array.from(document
-    .querySelectorAll('.conf__elements-btn.selected'));
-
-elementsBtns.forEach(el => {
-    el.addEventListener('click', function () {
-        resetAllElementsBtns();
-        this.classList.add('active');
-        
-        const side = this.querySelector('.conf__elements-letter').innerText;
-        const block = document.querySelector(`.conf__elements-block-${side}`);
-    
-        resetAllElementsBlock();
-        block.classList.add('active');
-    });
-});
-
-function resetAllElementsBtns() {
-    elementsBtns.forEach(el =>
-        el.classList.remove('active'));
-}
-
-function resetAllElementsBlock() {
-    Array.from(document
-        .querySelectorAll('.conf__elements-block'))
-        .forEach(el => el.classList.remove('active'));
-}
-
-
-
-
 
 window.addEventListener('load', () => {
     Array.from(document.querySelectorAll('.conf__data-toggle'))
@@ -472,6 +442,36 @@ const handleSideBtnsClick = (e, i) => {
 sideBtns.forEach((el, i) => {
     el.addEventListener('click', (e) => handleSideBtnsClick(e, i));
 });
+
+
+const elementsBtns = Array.from(document
+    .querySelectorAll('.conf__elements-btn.selected'));
+
+elementsBtns.forEach(el => {
+    el.addEventListener('click', function () {
+        resetAllElementsBtns();
+        this.classList.add('active');
+        
+        const side = this.querySelector('.conf__elements-letter').innerText;
+        const block = document.querySelector(`.conf__elements-block-${side}`);
+    
+        resetAllElementsBlock();
+        block.classList.add('active');
+    });
+});
+
+function resetAllElementsBtns() {
+    elementsBtns.forEach(el =>
+        el.classList.remove('active'));
+}
+
+function resetAllElementsBlock() {
+    Array.from(document
+        .querySelectorAll('.conf__elements-block'))
+        .forEach(el => el.classList.remove('active'));
+}
+
+
 
 
 // const confTabs = Array.from(document
