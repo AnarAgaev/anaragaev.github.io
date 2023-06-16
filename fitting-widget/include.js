@@ -14,6 +14,6 @@ element.href = value
 }
 document.body.appendChild(element)
 }
-add('script','https://fandeco.ru/fitting/dist'); add('script','https://fandeco.ru/fitting/dist/@vite/client'); add('script','https://fandeco.ru/fitting/dist/src/main.tsx'); 
-
+add('script','assets/index-76a5f6fd.js');
+add('style','assets/index-499706be.css');
 })()
