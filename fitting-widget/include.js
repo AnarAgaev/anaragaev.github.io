@@ -14,6 +14,6 @@ element.href = value
 }
 document.body.appendChild(element)
 }
-add('script','assets/index-92d3ee6e.js');
+add('script','assets/index-e5f8f12c.js');
 add('style','assets/index-8a71ac4d.css');
 })()
