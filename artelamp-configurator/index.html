@@ -8,22 +8,26 @@
     <meta name="robots" content="noindex, follow">
     <meta name="description" content="Write description for this page here">
     <meta name="keywords" content="Write keywords for this page here">
+    <link type="image/x-icon" rel="shortcut icon" href="https://artelamp.ru/favicon.ico">
     <title>Конфигуратор</title>
     <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css" type="text/css">
   </head>
   <body class="conf">
     <header class="header">
-      <div class="header__caption"><a class="header__logotype" href="#"><img src="https://9d2c73b6-1b6d-45e9-9faa-7fb794647734.selcdn.net/i/625/a9512fb4ee.svg" alt=""></a>
+      <div class="header__caption"><a class="header__logotype" href="#"><img src="https://artelamp.ru/inc/images/logo.svg" alt=""></a>
         <nav class="header__navigation">
           <ul class="header__navigation-list">
-            <li class="header__navigation-item"><a href="">каталог</a></li>
-            <li class="header__navigation-item"><a href="">о компании</a></li>
-            <li class="header__navigation-item"><a href="">доставка</a></li>
-            <li class="header__navigation-item"><a href="">новости</a></li>
-            <li class="header__navigation-item"><a href="">о товаре</a></li>
+            <li class="header__navigation-item"><span><img src="https://artelamp.ru/inc/images/ic_products.svg" alt="каталог"></span><a href="">каталог</a></li>
+            <li class="header__navigation-item"><span><img src="https://artelamp.ru/inc/images/ic_about.svg" alt="о компании"></span><a href="">о компании</a></li>
+            <li class="header__navigation-item"><span><img src="https://artelamp.ru/inc/images/ic_delivery.svg" alt="доставка"></span><a href="">доставка</a></li>
+            <li class="header__navigation-item"><span><img src="https://artelamp.ru/inc/images/ic_catalog.svg" alt="новости"></span><a href="">новости</a></li>
+            <li class="header__navigation-item"><span><img src="https://artelamp.ru/inc/images/ic_des.svg" alt="о товаре"></span><a href="">о товаре</a></li>
           </ul>
-        </nav><a class="header__phone" href="tel:+74957551122">+7 (495) 755-1122</a>
+        </nav>
+        <div class="header__controllers"><a class="header__phone" href="tel:+74957551122">+7 (495) 755-1122</a>
+          <button class="header__burger" type="button"><span> </span><span></span><span></span></button>
+        </div>
         <div class="header__point"><span id="navPoint"></span></div>
       </div>
       <div class="conf__wrapper">
@@ -91,7 +95,7 @@
       <div class="conf__wrapper" style="display: flex; flex-direction: column; gap: 30px; margin-top: 30px;">
         <button style="padding: 5px 10px;" data-toggle="modal" data-direction="show" data-target-id="modalNotification">Показать уведомление</button>
         <button style="padding: 5px 10px;" data-toggle="modal" data-direction="show" data-target-id="modalNotAvailable">Конфигуратор не доступен</button>
-        <button style="padding: 5px 10px;" data-toggle="modal" data-direction="show" data-target-id="modalUserSize">Пользовательский размер трека</button><a href="step1.html">Шаг 1</a><a href="step2.html">Шаг 2</a><a href="step3.html">Шаг 3</a><a href="step4.html">Шаг 4</a>
+        <button style="padding: 5px 10px;" data-toggle="modal" data-direction="show" data-target-id="modalUserSize">Пользовательский размер трека</button><a href="step1.html">Шаг 1</a><a href="step2.html">Шаг 2</a><a href="step3.html">Шаг 3</a><a href="step3-desctop.html">Шаг 3 - десктопная версия</a><a href="step3-mobile-and-tablet.html">Шаг 3 - мобильная и планшетная версии</a><a href="step4.html">Шаг 4</a>
         <button id="tooltipButton" aria-describedby="tooltip" style="padding: 5px 10px;">Show tooltip button</button>
         <!-- Для того чтобы показать тултип, тогглить дата тарибут data-show (!без параметров)-->
         <div class="tooltip" id="tooltipMessage" role="tooltip">Здесь пишем текст тултипа любой длинны.
@@ -101,10 +105,14 @@
     </main>
     <footer class="footer">
       <div class="conf__wrapper">
+        <div class="footer__controllers">
+          <button class="footer__bnt" type="button">Cбросить</button>
+          <button class="footer__bnt" type="button">Cохранить</button>
+        </div>
         <!-- Контейнер для незаполненной конфигурации (.footer__description), оставлять пустым-->
-        <div class="footer__description">© 2017–2022 artelamp.ru Все права защищены |&nbsp;<a href="#">Условия использования</a>&nbsp;|&nbsp;<a href="">Договор-оферта</a></div>
-        <!-- Злаблокированной кнопке добавлять класс inactive-->
-        <botton class="footer__bnt disabled">Слудующий шаг</botton>
+        <div class="footer__description"><span>© 2017–2023 artelamp.ru&nbsp;&nbsp;&nbsp;Все права защищены<span>|</span></span><span> <a href="#">Условия использования</a><span>|</span></span><span> <a href="">Договор-оферта</a></span></div>
+        <!-- Злаблокированной кнопке добавлять класс disabled-->
+        <botton class="footer__bnt">Следующий шаг</botton>
       </div>
     </footer>
     <div class="modal" id="modalNotification">

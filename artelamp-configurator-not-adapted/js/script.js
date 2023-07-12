@@ -154,13 +154,6 @@ function(event) {
         if (modalToggle) toggleModal(evt);
     });
 });
-const navToggle = document.querySelector('.header__controllers .header__burger');
-const headerNav = document.querySelector('.header__navigation');
-
-navToggle.addEventListener('click', function () {
-  this.classList.toggle('open');
-  headerNav.classList.toggle('show');
-});
 
 
 const button = document.querySelector('#tooltipButton');
@@ -290,57 +283,38 @@ tracks.forEach(el => {
     });
 });
 
-// Тоглим блок с выбором параметров
-const confSelects = Array.from(document.querySelectorAll('.conf__selects-title'));
 
-confSelects.forEach(el => {
-    el.addEventListener('click', function(e) {
-        e.stopPropagation();
-        const wrap = el.parentNode;
-        wrap.classList.toggle('open');
+
+
+const elementsBtns = Array.from(document
+    .querySelectorAll('.conf__elements-btn.selected'));
+
+elementsBtns.forEach(el => {
+    el.addEventListener('click', function () {
+        resetAllElementsBtns();
+        this.classList.add('active');
+        
+        const side = this.querySelector('.conf__elements-letter').innerText;
+        const block = document.querySelector(`.conf__elements-block-${side}`);
+    
+        resetAllElementsBlock();
+        block.classList.add('active');
     });
 });
 
-// Блокируем всплытие с кнопки .helper и всего вложенного
-const helperBtns = Array.from(document.querySelectorAll('.helper'));
-const helperBtnsInner = Array.from(document.querySelectorAll('.helper *'));
-const helperCombain = [...helperBtns, ...helperBtnsInner];
+function resetAllElementsBtns() {
+    elementsBtns.forEach(el =>
+        el.classList.remove('active'));
+}
 
-helperCombain.forEach(el => {
-    el.addEventListener('click', e => e.preventDefault());
-});
+function resetAllElementsBlock() {
+    Array.from(document
+        .querySelectorAll('.conf__elements-block'))
+        .forEach(el => el.classList.remove('active'));
+}
 
 
 
-
-
-window.addEventListener('load', () => {
-    Array.from(document.querySelectorAll('.conf__data-toggle'))
-        .forEach(el => {
-            el.addEventListener('click', e => {
-                e.target.closest('.conf__data-side')
-                    .classList
-                    .toggle('show');
-            });
-        });
-    
-    Array.from(document.querySelectorAll(
-        '.conf__data-side_custom .conf__data-btn'))
-        .forEach(el => {
-            el.addEventListener('click', function () {
-                resetDataButtons();
-                this.classList.add('active');
-            });
-        });
-    
-    function resetDataButtons() {
-        Array.from(document.querySelectorAll(
-            '.conf__data-side_custom .conf__data-btn'))
-            .forEach(el => {
-                el.classList.remove('active');
-            });
-    }
-});
 
 const confTabs = Array.from(document
         .querySelectorAll('.conf__tab-list li'));
@@ -385,7 +359,7 @@ const resetConfSelectsValue = (el) => {
     const values = Array.from(options.querySelectorAll('.value'));
 
     values.forEach(el => {
-        el.classList.remove('acitve')
+        el.classList.remove('active')
     });    
 }
 
@@ -407,7 +381,7 @@ confFilterSelects.forEach(el => {
 
                 resetConfSelectsValue(e.target);
                 input.innerText = value;
-                e.target.classList.add('acitve');                
+                e.target.classList.add('active');                
             }
 
         } else {
@@ -444,161 +418,30 @@ sideBtns.forEach((el, i) => {
 });
 
 
-const elementsBtns = Array.from(document
-    .querySelectorAll('.conf__elements-btn.selected'));
-
-elementsBtns.forEach(el => {
-    el.addEventListener('click', function () {
-        resetAllElementsBtns();
-        this.classList.add('active');
-        
-        const side = this.querySelector('.conf__elements-letter').innerText;
-        const block = document.querySelector(`.conf__elements-block-${side}`);
+window.addEventListener('load', () => {
+    Array.from(document.querySelectorAll('.conf__data-toggle'))
+        .forEach(el => {
+            el.addEventListener('click', e => {
+                e.target.closest('.conf__data-side')
+                    .classList
+                    .toggle('show');
+            });
+        });
     
-        resetAllElementsBlock();
-        block.classList.add('active');
-    });
+    Array.from(document.querySelectorAll(
+        '.conf__data-side_custom .conf__data-btn'))
+        .forEach(el => {
+            el.addEventListener('click', function () {
+                resetDataButtons();
+                this.classList.add('active');
+            });
+        });
+    
+    function resetDataButtons() {
+        Array.from(document.querySelectorAll(
+            '.conf__data-side_custom .conf__data-btn'))
+            .forEach(el => {
+                el.classList.remove('active');
+            });
+    }
 });
-
-function resetAllElementsBtns() {
-    elementsBtns.forEach(el =>
-        el.classList.remove('active'));
-}
-
-function resetAllElementsBlock() {
-    Array.from(document
-        .querySelectorAll('.conf__elements-block'))
-        .forEach(el => el.classList.remove('active'));
-}
-
-
-
-
-// const confTabs = Array.from(document
-//         .querySelectorAll('.conf__tab-list li'));
-
-// const confTabsItems = Array.from(document
-//     .querySelectorAll('.conf__tab-item'));
-
-// const resetConfTabs = () => {   
-//     confTabs.forEach( 
-//         el => el.classList.remove('active')
-//     );
-// }
-
-//     confTabsItems.forEach( 
-//         el => el.classList.remove('active')
-//     );
-// }
-
-// confTabs.forEach((el, num) => {
-//     const handler = (num) => {
-//         resetConfTabs();
-//         resetConfTabsItems();
-//         el.classList.add('active');
-//         confTabsItems[num].classList.add('active');      
-//     }
-
-//     el.addEventListener('click', e => handler(num));
-// });
-
-
-// // Табы
-// const confFilterSelectsContainers = Array.from(document.querySelectorAll('.conf__select'));
-// const confFilterSelects = Array.from(document.querySelectorAll('.conf__select-wrap'));
-
-// const resetConfSelects = () => {
-//     confFilterSelectsContainers.forEach(el => el.classList.remove('dropped'));
-// }
-
-// const resetConfSelectsValue = (el) => {
-//     const options = el.closest('.conf__select-options');
-//     const values = Array.from(options.querySelectorAll('.value'));
-
-//     values.forEach(el => {
-//         el.classList.remove('active')
-//     });    
-// }
-
-// confFilterSelects.forEach(el => {
-//     el.addEventListener('click', function(e) {
-//         e.stopPropagation();
-//         e.preventDefault();
-
-//         const select = this.closest('.conf__select');
-//         isDropped = select.classList.contains('dropped');
-
-//         if (isDropped) {
-//             resetConfSelects();
-            
-//             if (e.target.classList.contains('value')) {
-//                 const value = e.target.textContent;
-//                 const wrap = this.closest('.conf__select-wrap');
-//                 const input = wrap.querySelector('.conf__select-value span');
-
-//                 resetConfSelectsValue(e.target);
-//                 input.innerText = value;
-//                 e.target.classList.add('active');                
-//             }
-
-//         } else {
-//             resetConfSelects();
-//             select.classList.add('dropped');
-//         }
-//     });
-// });
-
-// const sideBtns = Array.from(document.querySelectorAll('.conf__sides-item button'));
-// const modulSides = Array.from(document.querySelectorAll('.conf__modules-side'));
-
-// const resetSideBtns = () => {
-//     sideBtns.forEach(el => el.classList.remove('active'));
-// }
-
-// const resetModulSides = () => {
-//     modulSides.forEach(el => el.classList.remove('active'))
-// }
-
-// const handleSideBtnsClick = (e, i) => {
-//     const _this = e.target;
-//     const btn = _this.closest('button');
-
-
-//     resetSideBtns();
-//     resetModulSides();
-//     btn.classList.add('active');
-//     modulSides[i].classList.add('active');
-// }
-
-// sideBtns.forEach((el, i) => {
-//     el.addEventListener('click', (e) => handleSideBtnsClick(e, i));
-// });
-
-
-// window.addEventListener('load', () => {
-//     Array.from(document.querySelectorAll('.conf__data-toggle'))
-//         .forEach(el => {
-//             el.addEventListener('click', e => {
-//                 e.target.closest('.conf__data-side')
-//                     .classList
-//                     .toggle('show');
-//             });
-//         });
-    
-//     Array.from(document.querySelectorAll(
-//         '.conf__data-side_custom .conf__data-btn'))
-//         .forEach(el => {
-//             el.addEventListener('click', function () {
-//                 resetDataButtons();
-//                 this.classList.add('active');
-//             });
-//         });
-    
-//     function resetDataButtons() {
-//         Array.from(document.querySelectorAll(
-//             '.conf__data-side_custom .conf__data-btn'))
-//             .forEach(el => {
-//                 el.classList.remove('active');
-//             });
-//     }
-// });
