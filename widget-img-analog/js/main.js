@@ -1,4 +1,5 @@
-const widgetElement = document.querySelector('.widget')
+const widgetClassName = 'ASWidget'
+const widgetRoot = window.analogueService.root
 
 const fetchWidgetData = async (url) => {
     try {
@@ -16,7 +17,7 @@ const fetchWidgetData = async (url) => {
 const setWidgetStyles = (props) => {
     const styleElement = document.createElement('style')
     const stylesStr = `
-        .widget__options {
+        .${widgetClassName}__wrapper {
             --font-family: ${props['font-family']};
             --display-title: ${props['display-title']};
             --color-title: ${props['color-title']};
@@ -37,7 +38,7 @@ const setWidgetStyles = (props) => {
         }
     `
     styleElement.innerHTML = stylesStr.replace(/\s/g, "")
-    widgetElement.parentNode.insertBefore(styleElement, widgetElement)
+    widgetRoot.appendChild(styleElement)
 }
 
 const setWidgetProducts = (parentNode, props) => {
@@ -46,27 +47,27 @@ const setWidgetProducts = (parentNode, props) => {
         if (!item.active) continue
 
         const itemStr = `
-            <div class="widget__card">
-                <div class="widget__card-img">
+            <div class="${widgetClassName}__card">
+                <div class="${widgetClassName}__card-img">
                     <img src="${item.image}" alt="${item.name}">
                 </div>
-                <span class="widget__card-code">
+                <span class="${widgetClassName}__card-code">
                     Артикул товара ${item.code}
                 </span>
-                <p class="widget__card-name">
+                <p class="${widgetClassName}__card-name">
                     ${item.name}
                 </p>
-                <span class="widget__card-price">
+                <span class="${widgetClassName}__card-price">
                     ${item.price}
                 </span>
-                <a href="${item.link}" class="widget__card-link" target="_blank">
+                <a href="${item.link}" class="${widgetClassName}__card-link" target="_blank">
                     Смотреть товар
                 </a>
             </div>
         `
 
         const itemNode = document.createElement('li')
-        itemNode.className = "widget__card-item"
+        itemNode.className = `${widgetClassName}__card-item`
         itemNode.innerHTML = itemStr
         parentNode.appendChild(itemNode)
     }
@@ -76,7 +77,7 @@ const setWidgetTitle = (parentNode, title) => {
     if(!title) return
 
     const node = document.createElement('h2')
-    node.className = 'widget__header-title'
+    node.className = `${widgetClassName}__header-title`
     node.innerText = title
     parentNode.appendChild(node)
 }
@@ -85,39 +86,41 @@ const setWidtetLinkAll = (parentNode,link) => {
     if(!link) return
 
     const node = document.createElement('a')
-    node.className = 'widget__header-link'
+    node.className = `${widgetClassName}__header-link`
     node.href = link
     node.textContent = 'Смотреть все'
-    node.target = '_blank';
+    node.target = '_blank'
     parentNode.appendChild(node)
 }
 
 const buildWidget = (data) => {
-    const widgetOptions = document.createElement('div')
+    const widgetWrapper = document.createElement('div')
     const widgetHeader = document.createElement('div')
     const widgetCardList = document.createElement('ul')
 
-    widgetOptions.className = 'widget__options'
-    widgetHeader.className = 'widget__header'
-    widgetCardList.className = 'widget__card-list'
+    widgetWrapper.className = `${widgetClassName}__wrapper`
+    widgetHeader.className = `${widgetClassName}__header`
+    widgetCardList.className = `${widgetClassName}__card-list`
 
     if (data.title || data.all) {
-        widgetOptions.appendChild(widgetHeader)
+        widgetWrapper.appendChild(widgetHeader)
         setWidgetTitle(widgetHeader, data.title)
         setWidtetLinkAll(widgetHeader, data.all)
     }
 
     if (data.products.length > 0) {
-        widgetOptions.appendChild(widgetCardList)
+        widgetWrapper.appendChild(widgetCardList)
         setWidgetProducts(widgetCardList, data.products)
     }
 
-    widgetElement.appendChild(widgetOptions)
+    widgetRoot.appendChild(widgetWrapper)
 }
 
-if (widgetElement) {
-    fetchWidgetData('../data.json')
+// Здесь можно проверять токен и сайт
+if (widgetRoot) {
+    fetchWidgetData('data.json')
         .then(data => {
+            widgetRoot.classList.add(widgetClassName);
             setWidgetStyles(data.settings)
             buildWidget(data)
         })
