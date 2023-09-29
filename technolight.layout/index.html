@@ -12,22 +12,22 @@
     <link rel="icon" type="image/png" sizes="16x16" href="https://aws.massive.ru/technolight/favicon/favicon-16x16.png"/>
     <link rel="icon" href="https://aws.massive.ru/technolight/favicon/favicon.ico"/>
     <link rel="manifest" href="https://aws.massive.ru/technolight/favicon/site.webmanifest"/>
-    <link rel="stylesheet" href="css/vendor.min.css">
-    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body class="page-index" id="body">
     <header class="header" id="header">
       <div class="container">
         <div class="header__content"><a class="header__logo" href="#"></a>
-          <nav class="header__nav d-none d-lg-block">
+          <nav class="header__nav">
             <ul>
               <li>
-                <!-- Активному пункту меню добавляем класс .active--><a class="active" href="#"><span>Продукция</span></a>
+                <!-- Активному пункту меню добавляем класс .active--><a class="header__nav-link header__nav-link_product" href="#"><i class="d-lg-none"></i><span>Продукция</span></a>
               </li>
-              <li><a href="#"><span>Где купить</span></a></li>
-              <li><a href="#"><span>Конфигуратор</span></a></li>
-              <li><a href="#"><span>Поддержка</span></a></li>
-              <li><a href="#"><span>Компания</span></a></li>
+              <li><a class="header__nav-link header__nav-link_delivery active" href="#"><i class="d-lg-none"></i><span>Доставка и оплата</span></a></li>
+              <li><a class="header__nav-link header__nav-link_buy" href="#"><i class="d-lg-none"></i><span>Где купить</span></a></li>
+              <li><a class="header__nav-link header__nav-link_configurator" href="#"><i class="d-lg-none"></i><span>Конфигуратор</span></a></li>
+              <li><a class="header__nav-link header__nav-link_company" href="#"><i class="d-lg-none"></i><span>Компания</span></a></li>
             </ul>
           </nav>
           <ul class="header__buttons">
@@ -42,8 +42,21 @@
     </header>
     <main class="main" id="main">
     </main>
-    <footer class="footer" id="footer"></footer>
-    <link rel="stylesheet" href="js/vendor.min.js">
-    <link rel="stylesheet" href="js/main.min.js">
+    <footer class="footer" id="footer">
+      <div class="footer__nav d-lg-none">
+        <ul>
+          <li><a class="footer__nav-link footer__nav-link_home" href="#"><i></i><span>Главная</span></a></li>
+          <li><a class="footer__nav-link footer__nav-link_call" href="#"><i></i><span>Позвонить</span></a></li>
+          <li>
+            <!-- Активной ссылке, добавляем класс .active--><a class="footer__nav-link footer__nav-link_cart active" href="#"><i></i><span>Корзина</span></a>
+          </li>
+          <li><a class="footer__nav-link footer__nav-link_account" href="#"><i></i><span>Аккаунт</span></a></li>
+          <li><a class="footer__nav-link footer__nav-link_menu" href="#"><i></i><span>Меню</span></a></li>
+        </ul>
+      </div>
+    </footer>
+    <div class="modal-back d-none"></div>
+    <link rel="stylesheet" href="js/vendor.js">
+    <link rel="stylesheet" href="js/main.js">
   </body>
 </html>
