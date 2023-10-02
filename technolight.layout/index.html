@@ -12,22 +12,80 @@
     <link rel="icon" type="image/png" sizes="16x16" href="https://aws.massive.ru/technolight/favicon/favicon-16x16.png"/>
     <link rel="icon" href="https://aws.massive.ru/technolight/favicon/favicon.ico"/>
     <link rel="manifest" href="https://aws.massive.ru/technolight/favicon/site.webmanifest"/>
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
   </head>
   <body class="page-index" id="body">
     <header class="header" id="header">
       <div class="container">
-        <div class="header__content"><a class="header__logo" href="#"></a>
+        <div class="header__content"><a class="header__logo logo-dark" href="#"></a>
           <nav class="header__nav">
-            <ul>
-              <li>
+            <div class="header__nav-caption d-lg-none"><span class="header__nav-logo logo-dark"></span>
+              <button class="header__nav-close"></button>
+            </div>
+            <ul class="header__nav-list">
+              <!-- Элементку списка у которого есть подменю, нужно добавлять класс-модификатов .header__nav-item_with-inner-->
+              <!-- Для раскрытого пункта меню, добавлять класс .dropped-->
+              <li class="header__nav-item header__nav-item_prod header__nav-item_with-inner">
                 <!-- Активному пункту меню добавляем класс .active--><a class="header__nav-link header__nav-link_product" href="#"><i class="d-lg-none"></i><span>Продукция</span></a>
+                <!-- Для открытого подменю, добавляем класс .open-->
+                <div class="header__nav-collapse header__nav-collapse_product collapse">
+                  <div class="collapse__inner">
+                    <button class="header__nav-close d-none d-lg-block"></button>
+                    <ul class="header__nav-sublist">
+                      <!-- У списка подменю с заголовком у первого li класс .header__nav-subtitle-->
+                      <li class="header__nav-subtitle">Трековые системы</li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Треки</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Светильники</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Аксессуары</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Комплектующие</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Блоки питания</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Блоки питания шины</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Управление</a></li>
+                    </ul>
+                    <ul class="header__nav-sublist">
+                      <!-- У списка подменю с заголовком у первого li класс .header__nav-subtitle-->
+                      <li class="header__nav-subtitle">Модульные светильники</li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Светильники без видимой рамки</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Светильники с видимой рамкой</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Монтажные комплекты</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Декоративные рамки</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Комплектующие</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Аксессуары</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Светодиодные модули</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Драйверы</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Блоки питания шины</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Управление</a></li>
+                    </ul>
+                    <ul class="header__nav-sublist">
+                      <!-- У списка подменю с заголовком у первого li класс .header__nav-subtitle-->
+                      <li class="header__nav-subtitle">Вспомогательная продукция</li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Профильные решения</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Блоки питания шины</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Управление</a></li>
+                    </ul>
+                  </div>
+                </div>
               </li>
-              <li><a class="header__nav-link header__nav-link_delivery active" href="#"><i class="d-lg-none"></i><span>Доставка и оплата</span></a></li>
-              <li><a class="header__nav-link header__nav-link_buy" href="#"><i class="d-lg-none"></i><span>Где купить</span></a></li>
-              <li><a class="header__nav-link header__nav-link_configurator" href="#"><i class="d-lg-none"></i><span>Конфигуратор</span></a></li>
-              <li><a class="header__nav-link header__nav-link_company" href="#"><i class="d-lg-none"></i><span>Компания</span></a></li>
+              <li class="header__nav-item"><a class="header__nav-link header__nav-link_delivery" href="#"><i class="d-lg-none"></i><span>Доставка и оплата</span></a></li>
+              <li class="header__nav-item"><a class="header__nav-link header__nav-link_buy" href="#"><i class="d-lg-none"></i><span>Где купить</span></a></li>
+              <li class="header__nav-item"><a class="header__nav-link header__nav-link_configurator" href="#"><i class="d-lg-none"></i><span>Конфигуратор</span></a></li>
+              <li class="header__nav-item header__nav-item_company header__nav-item_with-inner"><a class="header__nav-link header__nav-link_company" href="#"><i class="d-lg-none"></i><span>Компания</span></a>
+                <div class="header__nav-collapse header__nav-collapse_company collapse">
+                  <div class="collapse__inner">
+                    <button class="header__nav-close d-none d-lg-block"></button>
+                    <ul class="header__nav-sublist">
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Обмен и возврат</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Гарантия качества</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Наши проекты</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Жизнь компании</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Торговая марка</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Дизайн и качество</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Контакты</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
             </ul>
           </nav>
           <ul class="header__buttons">
@@ -47,16 +105,16 @@
         <ul>
           <li><a class="footer__nav-link footer__nav-link_home" href="#"><i></i><span>Главная</span></a></li>
           <li><a class="footer__nav-link footer__nav-link_call" href="#"><i></i><span>Позвонить</span></a></li>
-          <li>
-            <!-- Активной ссылке, добавляем класс .active--><a class="footer__nav-link footer__nav-link_cart active" href="#"><i></i><span>Корзина</span></a>
-          </li>
+          <li><a class="footer__nav-link footer__nav-link_cart" href="#"><i></i><span>Корзина</span></a></li>
           <li><a class="footer__nav-link footer__nav-link_account" href="#"><i></i><span>Аккаунт</span></a></li>
-          <li><a class="footer__nav-link footer__nav-link_menu" href="#"><i></i><span>Меню</span></a></li>
+          <li>
+            <!-- Активной ссылке, добавляем класс .active--><a class="footer__nav-link footer__nav-link_menu" href="#"><i></i><span>Меню</span></a>
+          </li>
         </ul>
       </div>
     </footer>
-    <div class="modal-back d-none"></div>
-    <link rel="stylesheet" href="js/vendor.js">
-    <link rel="stylesheet" href="js/main.js">
+    <div class="modal-back"></div>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
   </body>
 </html>
