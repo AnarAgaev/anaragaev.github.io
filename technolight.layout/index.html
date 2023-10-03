@@ -28,7 +28,7 @@
             <ul class="header__nav-list">
               <!-- Элементку списка у которого есть подменю, нужно добавлять класс-модификатов .header__nav-item_with-inner-->
               <!-- Для раскрытого пункта меню, добавлять класс .dropped-->
-              <li class="header__nav-item header__nav-item_prod header__nav-item_with-inner"><span class="header__nav-item-close"></span>
+              <li class="header__nav-item header__nav-item_prod header__nav-item_with-inner"><i></i>
                 <!-- Активному пункту меню добавляем класс .active--><a class="header__nav-link header__nav-link_product" href="#"><i class="d-lg-none"></i><span>Продукция</span></a>
                 <!-- Для открытого подменю, добавляем класс .open-->
                 <div class="header__nav-collapse header__nav-collapse_product collapse">
@@ -72,7 +72,7 @@
               <li class="header__nav-item"><a class="header__nav-link header__nav-link_delivery" href="#"><i class="d-lg-none"></i><span>Доставка и оплата</span></a></li>
               <li class="header__nav-item"><a class="header__nav-link header__nav-link_buy" href="#"><i class="d-lg-none"></i><span>Где купить</span></a></li>
               <li class="header__nav-item"><a class="header__nav-link header__nav-link_configurator" href="#"><i class="d-lg-none"></i><span>Конфигуратор</span></a></li>
-              <li class="header__nav-item header__nav-item_company header__nav-item_with-inner"><span class="header__nav-item-close"></span><a class="header__nav-link header__nav-link_company" href="#"><i class="d-lg-none"></i><span>Компания</span></a>
+              <li class="header__nav-item header__nav-item_company header__nav-item_with-inner"><i></i><a class="header__nav-link header__nav-link_company" href="#"><i class="d-lg-none"></i><span>Компания</span></a>
                 <div class="header__nav-collapse header__nav-collapse_company collapse">
                   <div class="collapse__inner">
                     <button class="header__nav-close d-none d-lg-block"></button>
@@ -97,6 +97,23 @@
             <li class="d-none d-lg-block"><a class="header__buttons-link header__buttons-link_cart" href="#"><i><span class="header__buttons-count">7</span></i></a></li>
             <li class="d-none d-lg-block"><a class="header__buttons-link header__buttons-link_account" href="#"><i></i></a></li>
           </ul>
+        </div>
+        <!-- По умолчанию добавляем класс .disable, т.к поиск по умолчанию скрыт-->
+        <div class="header__search disable">
+          <form class="header__search-form">
+            <label><i></i>
+              <input class="header__search-input" type="text" placeholder="Поиск">
+              <button class="header__search-reset" type="reset"></button>
+            </label>
+            <button class="header__search-close" type="button">Отмена</button>
+          </form>
+          <div class="header__search-hints">
+            <div class="header__search-helps"><span>без рамки</span><span>спот</span><span>с рамкой</span><span>софт</span><span>софт</span><span>софт</span></div>
+            <div class="header__search-links"><a href="#">Title</a><a href="#">Title</a><a href="#">Title</a><a href="#">Title</a><a href="#">Title</a><a href="#">Title</a></div>
+            <div class="header__search-categories"><a href="#">
+                <p>Светильники с рамкой</p><span>Категория</span></a><a href="#">
+                <p>Светильники с рамкой</p><span>Категория</span></a></div>
+          </div>
         </div>
       </div>
     </header>
