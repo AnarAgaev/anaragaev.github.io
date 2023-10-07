@@ -12,11 +12,11 @@
     <link rel="icon" type="image/png" sizes="16x16" href="https://aws.massive.ru/technolight/favicon/favicon-16x16.png"/>
     <link rel="icon" href="https://aws.massive.ru/technolight/favicon/favicon.ico"/>
     <link rel="manifest" href="https://aws.massive.ru/technolight/favicon/site.webmanifest"/>
-    <link rel="preload" href="css/vendor.css" as="style">
-    <link rel="preload" href="css/main.css" as="style">
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/pages/home.css">
+    <link rel="preload" href="css/vendor.min.css" as="style">
+    <link rel="preload" href="css/main.min.css" as="style">
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/pages/home.min.css">
   </head>
   <body class="transition-blocker page-home" id="body">
     <header class="header" id="header">
@@ -31,7 +31,9 @@
               <!-- Элементку списка у которого есть подменю, нужно добавлять класс-модификатов .header__nav-item_with-inner-->
               <!-- Для раскрытого пункта меню, добавлять класс .dropped-->
               <li class="header__nav-item header__nav-item_prod header__nav-item_with-inner"><i></i>
-                <!-- Активному пункту меню добавляем класс .active--><a class="header__nav-link header__nav-link_product" href="#"><i class="d-lg-none"></i><span>Продукция</span></a>
+                <!-- Активному пункту меню добавляем класс .active-->
+                <!-- Пункты с подменю должны быть КНОПКАМИ А НЕ ССЫЛКАМИ-->
+                <button class="header__nav-link header__nav-link_product"><i class="d-lg-none"></i><span>Продукция</span></button>
                 <!-- Для открытого подменю, добавляем класс .open-->
                 <div class="header__nav-collapse header__nav-collapse_product collapse">
                   <div class="collapse__inner">
@@ -74,7 +76,9 @@
               <li class="header__nav-item"><a class="header__nav-link header__nav-link_delivery" href="#"><i class="d-lg-none"></i><span>Доставка и оплата</span></a></li>
               <li class="header__nav-item"><a class="header__nav-link header__nav-link_buy" href="#"><i class="d-lg-none"></i><span>Где купить</span></a></li>
               <li class="header__nav-item"><a class="header__nav-link header__nav-link_configurator" href="#"><i class="d-lg-none"></i><span>Конфигуратор</span></a></li>
-              <li class="header__nav-item header__nav-item_company header__nav-item_with-inner"><i></i><a class="header__nav-link header__nav-link_company" href="#"><i class="d-lg-none"></i><span>Компания</span></a>
+              <li class="header__nav-item header__nav-item_company header__nav-item_with-inner"><i></i>
+                <!-- Пункты с подменю должны быть КНОПКАМИ А НЕ ССЫЛКАМИ-->
+                <button class="header__nav-link header__nav-link_company"><i class="d-lg-none"></i><span>Компания</span></button>
                 <div class="header__nav-collapse header__nav-collapse_company collapse">
                   <div class="collapse__inner">
                     <button class="header__nav-close d-none d-lg-block"></button>
@@ -94,7 +98,9 @@
           </nav>
           <ul class="header__buttons">
             <li class="d-none d-lg-block"><a class="header__buttons-link header__buttons-link_call" href="tel:+9200000000"><i></i></a></li>
-            <li><a class="header__buttons-link header__buttons-link_search" href="#"><i></i></a></li>
+            <li>
+              <button class="header__buttons-link header__buttons-link_search" href="#"><i></i></button>
+            </li>
             <li><a class="header__buttons-link header__buttons-link_favorites" href="#"><i><span class="header__buttons-count">23</span></i></a></li>
             <li class="d-none d-lg-block"><a class="header__buttons-link header__buttons-link_cart" href="#"><i><span class="header__buttons-count">7</span></i></a></li>
             <li class="d-none d-lg-block"><a class="header__buttons-link header__buttons-link_account" href="#"><i></i></a></li>
@@ -121,6 +127,70 @@
     </header>
     <main class="main" id="main">
       <section class="section">
+        <div class="projects">
+          <div class="projects__caption">
+            <div class="container container_caption">
+              <div class="row">
+                <div class="col col-md-6 col-xxl-4">
+                  <h2 class="container_caption-text">Наши проекты</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="projects__list">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-sm-6 col-lg-4"><a class="projects__card" href="#">
+                    <div class="projects__desc">Освещение TECHNOLIGHT в новом офисе OnProekt, в котором всё Освещение TECHNOLIGHT в новом офисе OnProekt, в котором всё</div>
+                    <div class="projects__pic"><img src="https://aws.massive.ru/technolight/images/home/project-1.jpg" alt="" loading="lazy"></div>
+                    <div class="projects__action">
+                      <p>Смотреть полностью проект</p>
+                      <mark></mark>
+                    </div></a></div>
+                <div class="col-12 col-sm-6 col-lg-4"><a class="projects__card" href="#">
+                    <div class="projects__desc">Калуга. ЖК «Комфорт Парк»</div>
+                    <div class="projects__pic"><img src="https://aws.massive.ru/technolight/images/home/project-2.jpg" alt="" loading="lazy"></div>
+                    <div class="projects__action">
+                      <p>Смотреть полностью проект</p>
+                      <mark></mark>
+                    </div></a></div>
+                <div class="col-12 col-sm-6 col-lg-4"><a class="projects__card" href="#">
+                    <div class="projects__desc">ЖК «Небо» с основным освещением от TECHNOLIGHT</div>
+                    <div class="projects__pic"><img src="https://aws.massive.ru/technolight/images/home/project-3.jpg" alt="" loading="lazy"></div>
+                    <div class="projects__action">
+                      <p>Смотреть полностью проект</p>
+                      <mark></mark>
+                    </div></a></div>
+                <div class="col-12 col-sm-6 col-lg-4"><a class="projects__card" href="#">
+                    <div class="projects__desc">Москва. Современный интерьер от дизайнера Павла Алексеева</div>
+                    <div class="projects__pic"><img src="https://aws.massive.ru/technolight/images/home/project-4.jpg" alt="" loading="lazy"></div>
+                    <div class="projects__action">
+                      <p>Смотреть полностью проект</p>
+                      <mark></mark>
+                    </div></a></div>
+                <div class="col-12 col-sm-6 col-lg-4"><a class="projects__card" href="#">
+                    <div class="projects__desc">Сочи. Уютная студия</div>
+                    <div class="projects__pic"><img src="https://aws.massive.ru/technolight/images/home/project-5.jpg" alt="" loading="lazy"></div>
+                    <div class="projects__action">
+                      <p>Смотреть полностью проект</p>
+                      <mark></mark>
+                    </div></a></div>
+                <div class="col-12 col-sm-6 col-lg-4"><a class="projects__card" href="#">
+                    <div class="projects__desc">Пермь. Квартира с элементами лофта для семейной пары с ребенком.</div>
+                    <div class="projects__pic"><img src="https://aws.massive.ru/technolight/images/home/project-6.jpg" alt="" loading="lazy"></div>
+                    <div class="projects__action">
+                      <p>Смотреть полностью проект</p>
+                      <mark></mark>
+                    </div></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="projects__button">
+            <div class="container"><a class="btn btn_dark btn_block" href="#"><span>Смотреть все проекты</span></a></div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
         <div class="home-about">
           <div class="container container_caption">
             <div class="row">
@@ -132,12 +202,12 @@
           <div class="container">
             <div class="row">
               <div class="col-12 col-lg-6">
-                <div class="home-about__cards home-about__cards_single"><a class="home-about__link home-about__link_brand" href="#"><img class="home-about__pic" src="https://aws.massive.ru/technolight/images/home/brand.jpg" alt="">
+                <div class="home-about__cards home-about__cards_single"><a class="home-about__link home-about__link_brand" href="#"><img class="home-about__pic" src="https://aws.massive.ru/technolight/images/home/brand.jpg" alt="" loading="lazy">
                     <p class="home-about__text home-about__text_light">Торговая марка</p></a></div>
               </div>
               <div class="col-12 col-lg-6">
-                <div class="home-about__cards"><a class="home-about__link home-about__link_garanty" href="#"><img class="home-about__pic" src="https://aws.massive.ru/technolight/images/home/garanty.jpg" alt="">
-                    <p class="home-about__text home-about__text_dark">Гарантия качества</p></a><a class="home-about__link home-about__link_locations" href="#"><img class="home-about__pic" src="https://aws.massive.ru/technolight/images/home/locations.jpg" alt="">
+                <div class="home-about__cards"><a class="home-about__link home-about__link_garanty" href="#"><img class="home-about__pic" src="https://aws.massive.ru/technolight/images/home/garanty.jpg" alt="" loading="lazy">
+                    <p class="home-about__text home-about__text_dark">Гарантия качества</p></a><a class="home-about__link home-about__link_locations" href="#"><img class="home-about__pic" src="https://aws.massive.ru/technolight/images/home/locations.jpg" alt="" loading="lazy">
                     <p class="home-about__text home-about__text_light">Где купить?</p></a></div>
               </div>
             </div>
@@ -172,22 +242,26 @@
               <ul class="footer__cards-list">
                 <li class="footer__cards-item">
                   <!-- Если карточка не ссылка, то вместо тега <a> используем обычный div-->
-                  <div class="footer__cards-link"><i class="footer__cards-icon footer__cards-icon_connect"></i>
-                    <div class="footer__cards-content"><a class="footer__cards-title disabled">Звоните или пишите</a>
+                  <div class="footer__cards-body"><i class="footer__cards-icon footer__cards-icon_connect"></i>
+                    <div class="footer__cards-content">
+                      <div class="footer__cards-title">Звоните или пишите</div>
                       <p class="footer__cards-description">
                         <!-- В телефонном номере недо должно быть пробелов и других символов кроме цифр и +--><a href="tel:+74957977251">+7 495-797-72-51</a><a href="https://wa.me/74957470564" target="_blank">+7 495-747-05-64 (WhatsApp)</a><a href="mailto:order@technolight.ru">order@technolight.ru</a>
                       </p>
                     </div>
                   </div>
                 </li>
-                <li class="footer__cards-item"><a class="footer__cards-link" href="#"><i class="footer__cards-icon footer__cards-icon_calc"></i>
+                <li class="footer__cards-item">
+                  <!-- Если карточка ссылка, то класс-модификатор .footer__cards-body_link--><a class="footer__cards-body footer__cards-body_link" href="#"><i class="footer__cards-icon footer__cards-icon_calc"></i>
                     <div class="footer__cards-content">
-                      <h3 class="footer__cards-title">Расчет освещенности</h3>
+                      <!-- Если карточка ссылка, то к заголовку добавляем класс-модификатор .footer__cards-title_link-->
+                      <div class="footer__cards-title footer__cards-title_link">Расчет освещенности</div>
                       <p class="footer__cards-description">Заказывайте проект по свету у специалистов нашей компании и получайте профессиональную консультацию.</p>
-                    </div></a></li>
-                <li class="footer__cards-item"><a class="footer__cards-link" href="#"><i class="footer__cards-icon footer__cards-icon_download"></i>
+                    </div></a>
+                </li>
+                <li class="footer__cards-item"><a class="footer__cards-body footer__cards-body_link" href="#"><i class="footer__cards-icon footer__cards-icon_download"></i>
                     <div class="footer__cards-content">
-                      <h3 class="footer__cards-title">Файлы для скачивания</h3>
+                      <div class="footer__cards-title footer__cards-title_link">Файлы для скачивания</div>
                       <p class="footer__cards-description">Последние версии каталогов, технические спецификации, IES-файлы и прочая документация.</p>
                     </div></a></li>
               </ul>
@@ -278,8 +352,8 @@
         </div>
       </div>
     </footer>
-    <script src="js/vendor.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/pages/home.js"></script>
+    <script src="js/vendor.min.js" async></script>
+    <script src="js/main.min.js" defer></script>
+    <script src="js/pages/home.min.js" defer></script>
   </body>
 </html>
