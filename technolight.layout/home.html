@@ -12,11 +12,11 @@
     <link rel="icon" type="image/png" sizes="16x16" href="https://aws.massive.ru/technolight/favicon/favicon-16x16.png"/>
     <link rel="icon" href="https://aws.massive.ru/technolight/favicon/favicon.ico"/>
     <link rel="manifest" href="https://aws.massive.ru/technolight/favicon/site.webmanifest"/>
-    <link rel="preload" href="css/vendor.min.css" as="style">
-    <link rel="preload" href="css/main.min.css" as="style">
-    <link rel="stylesheet" href="css/vendor.min.css">
-    <link rel="stylesheet" href="css/main.min.css">
-    <link rel="stylesheet" href="css/pages/home.min.css">
+    <link rel="preload" href="css/vendor.css" as="style">
+    <link rel="preload" href="css/main.css" as="style">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/pages/home.css">
   </head>
   <body class="transition-blocker page-home" id="body">
     <header class="header" id="header">
@@ -126,43 +126,80 @@
       </div>
     </header>
     <main class="main" id="main">
-      <section class="billboard">
+      <section class="billboard inactive">
         <div class="billboard__slider">
           <div class="swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="billboard__container">
-                  <video class="main_slider_video" src="https://technolight.ru/assets/images/main-page/technolight_ru_9x16.mp4" playsinline loop muted autoplay></video>
+                  <!-- Картинку с классом .size-fixer вставляем в каждый слайд для растягивания видео на десктопах--><img class="size-fixer" src="https://aws.massive.ru/technolight/images/size-fixer.png" alt="">
+                  <!-- Можно вставлять либо img либо video с классом .billboard__content-->
+                  <!-- Только для видео адрес пишем в data-src. Для картинок бразерная ленивая загрузка-->
+                  <video class="billboard__content" src="" data-src="https://technolight.ru/assets/images/main-page/technolight_ru_9x16.mp4" playsinline loop></video>
+                  <!-- Если для слайда используется картинка а не видео, то picture вместо класса .billboard__poster добавляем класс .billboard__content-->
+                  <picture class="billboard__poster">
+                    <source media="(max-width: 767px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-1-mob.jpg">
+                    <source media="(min-width: 768px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-1-tab.jpg">
+                    <source media="(min-width: 1200px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-1-desc.jpg"><img src="https://aws.massive.ru/technolight/images/billboard/poster-1-desc.jpg" loading="lazy" alt="">
+                  </picture>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="billboard__container">
-                  <video class="main_slider_video" src="https://technolight.ru/assets/images/main-page/technolight_ru_9x16.mp4" playsinline loop muted autoplay></video>
+                <div class="billboard__container"><img class="size-fixer" src="https://aws.massive.ru/technolight/images/size-fixer.png" alt="">
+                  <picture class="billboard__content">
+                    <source media="(max-width: 767px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-2-mob.jpg">
+                    <source media="(min-width: 768px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-2-tab.jpg">
+                    <source media="(min-width: 1200px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-2-desc.jpg"><img src="https://aws.massive.ru/technolight/images/billboard/poster-2-desc.jpg" loading="lazy" alt="">
+                  </picture>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="billboard__container">
-                  <video class="main_slider_video" src="https://technolight.ru/assets/images/main-page/technolight_ru_9x16.mp4" playsinline loop muted autoplay></video>
+                <div class="billboard__container"><img class="size-fixer" src="https://aws.massive.ru/technolight/images/size-fixer.png" alt="">
+                  <video class="billboard__content" src="" data-src="https://technolight.ru/assets/images/menu-pics/1_Badroom_white.mp4" playsinline loop></video>
+                  <picture class="billboard__poster">
+                    <source media="(max-width: 767px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-3-mob.jpg">
+                    <source media="(min-width: 768px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-3-tab.jpg">
+                    <source media="(min-width: 1200px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-3-desc.jpg"><img src="https://aws.massive.ru/technolight/images/billboard/poster-3-desc.jpg" loading="lazy" alt="">
+                  </picture>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="billboard__container">
-                  <video class="main_slider_video" src="https://technolight.ru/assets/images/main-page/technolight_ru_9x16.mp4" playsinline loop muted autoplay></video>
+                <div class="billboard__container"><img class="size-fixer" src="https://aws.massive.ru/technolight/images/size-fixer.png" alt="">
+                  <video class="billboard__content" src="" data-src="https://technolight.ru/assets/images/menu-pics/2_Bathroom_black.mp4" playsinline loop></video>
+                  <picture class="billboard__poster">
+                    <source media="(max-width: 767px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-4-mob.jpg">
+                    <source media="(min-width: 768px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-4-tab.jpg">
+                    <source media="(min-width: 1200px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-4-desc.jpg"><img src="https://aws.massive.ru/technolight/images/billboard/poster-4-desc.jpg" loading="lazy" alt="">
+                  </picture>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="billboard__container">
-                  <video class="main_slider_video" src="https://technolight.ru/assets/images/main-page/technolight_ru_9x16.mp4" playsinline loop muted autoplay></video>
+                <div class="billboard__container"><img class="size-fixer" src="https://aws.massive.ru/technolight/images/size-fixer.png" alt="">
+                  <video class="billboard__content" src="" data-src="https://technolight.ru/assets/images/menu-pics/5_Interior%20Badroom%20Black_.mp4" playsinline loop></video>
+                  <picture class="billboard__poster">
+                    <source media="(max-width: 767px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-5-mob.jpg">
+                    <source media="(min-width: 768px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-5-tab.jpg">
+                    <source media="(min-width: 1200px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-5-desc.jpg"><img src="https://aws.massive.ru/technolight/images/billboard/poster-5-desc.jpg" loading="lazy" alt="">
+                  </picture>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="billboard__container">
-                  <video class="main_slider_video" src="https://technolight.ru/assets/images/main-page/technolight_ru_9x16.mp4" playsinline loop muted autoplay></video>
+                <div class="billboard__container"><img class="size-fixer" src="https://aws.massive.ru/technolight/images/size-fixer.png" alt="">
+                  <video class="billboard__content" src="" data-src="https://technolight.ru/assets/images/main-page/dot-220v_lego.mp4" playsinline loop></video>
+                  <picture class="billboard__poster">
+                    <source media="(max-width: 767px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-6-mob.jpg">
+                    <source media="(min-width: 768px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-6-tab.jpg">
+                    <source media="(min-width: 1200px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-6-desc.jpg"><img src="https://aws.massive.ru/technolight/images/billboard/poster-6-desc.jpg" loading="lazy" alt="">
+                  </picture>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="billboard__container">
-                  <video class="main_slider_video" src="https://technolight.ru/assets/images/main-page/technolight_ru_9x16.mp4" playsinline loop muted autoplay></video>
+                <div class="billboard__container"><img class="size-fixer" src="https://aws.massive.ru/technolight/images/size-fixer.png" alt="">
+                  <picture class="billboard__content">
+                    <source media="(max-width: 767px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-7-mob.jpg">
+                    <source media="(min-width: 768px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-7-tab.jpg">
+                    <source media="(min-width: 1200px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-7-desc.jpg"><img src="https://aws.massive.ru/technolight/images/billboard/poster-7-desc.jpg" loading="lazy" alt="">
+                  </picture>
                 </div>
               </div>
             </div>
@@ -177,7 +214,7 @@
           <p>скроль вниз</p><a href="#projects"><span></span></a>
         </div>
       </section>
-      <section class="section">
+      <section class="section" id="projects">
         <div class="projects">
           <div class="container container_caption">
             <div class="row">
@@ -482,8 +519,8 @@
         </div>
       </div>
     </footer>
-    <script src="js/vendor.min.js"></script>
-    <script src="js/main.min.js" defer></script>
-    <script src="js/pages/home.min.js" defer></script>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/pages/home.js" defer></script>
   </body>
 </html>
