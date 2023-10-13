@@ -1,5 +1,0 @@
-'use strict';
-
-// index.js
-
-//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiIiwic291cmNlcyI6WyJpbmRleC9zY3JpcHQuanMiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gaW5kZXguanNcclxuIl0sImZpbGUiOiJpbmRleC5qcyJ9
