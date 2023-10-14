@@ -16,9 +16,9 @@
     <link rel="preload" href="css/main.min.css" as="style">
     <link rel="stylesheet" href="css/vendor.min.css">
     <link rel="stylesheet" href="css/main.min.css">
-    <link rel="stylesheet" href="css/pages/series-card.min.css">
+    <link rel="stylesheet" href="css/pages/series.min.css">
   </head>
-  <body class="transition-blocker page-series-card" id="body">
+  <body class="transition-blocker page-series" id="body">
     <header class="header" id="header">
       <div class="header__modal-back"></div>
       <div class="container">
@@ -126,6 +126,48 @@
       </div>
     </header>
     <main class="main" id="main">
+      <section class="section section_breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumbs animation-element">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Продукция</a></li>
+            <li><span>Трековая система PROFI 48V</span></li>
+          </ul>
+        </div>
+      </section>
+      <section class="section">
+        <div class="cards-series-desc">
+          <div class="cards-series-desc__caption">
+            <div class="container container_caption animation-element">
+              <div class="row">
+                <div class="col col-md-6 col-xxl-4">
+                  <h1 class="container_caption-text">Трековая система profi 48v</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards-series-desc__content animation-element">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
+                  <div class="cards-series-desc__pic"><img src="https://aws.massive.ru/technolight/images/cards/lights/4b.jpg" alt="" loading="lazy"></div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
+                  <div class="cards-series-desc__text">
+                    <p>Трековая система — это удобный и понятный инструмент для светодизайна. Вы можете использовать линейные светильники для общего освещения и споты — в качестве акцентного. Одна идея объединяет в себе безграничные возможности для творчества.</p>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 col-xxl-3 offset-xxl-3">
+                  <div class="cards-series-desc__banner">
+                    <p class="cards-series-desc__banner-text">для расчета индивидуальной комплектации перейти в конфигуратор треков</p>
+                    <div class="cards-series-desc__banner-button"><a class="btn btn_lite btn_block" href="#"><span>Перейти в конфигуратор</span></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="section">
         <div class="cards-series">
           <div class="container container_caption animation-element">
@@ -500,7 +542,7 @@
                           </div>
                           <p class="cards-series__signature">Угол на плоскости накладной или подвесной</p></a></div>
                       <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
-                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/components/4b.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="white" src="https://aws.massive.ru/technolight/images/cards/accessories/4w.jpg" alt="" loading="lazy">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/components/4b.jpg" alt="" loading="lazy">
                             <ul class="cards-series__controls">
                               <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
                               <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
@@ -915,6 +957,6 @@
     </footer>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js" defer></script>
-    <script src="js/pages/series-card.min.js" defer></script>
+    <script src="js/pages/series.min.js" defer></script>
   </body>
 </html>
