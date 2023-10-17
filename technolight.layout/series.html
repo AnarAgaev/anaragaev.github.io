@@ -155,28 +155,31 @@
                     <div class="filters__drop">
                       <div class="filters__options">
                         <label>
-                          <input class="invisible" type="radio" name="temp" value="значение"><span class="value">Треки</span>
+                          <!-- В name input добавляем имя параметра для фильтрации, а в value добавляем значение параметра-->
+                          <!-- span.value Должен идти ОБЯЗАТЕЛЬНО сразу после input-->
+                          <input class="invisible" type="radio" name="category" value="tracks"><span class="value">Треки</span>
                         </label>
                         <label>
-                          <input class="invisible" type="radio" name="temp" value="значение"><span class="value">Светильники</span>
-                        </label>
-                        <label class="active">
-                          <input class="invisible" type="radio" name="temp" value="значение"><span class="value">Аксессуары</span>
+                          <input class="invisible" type="radio" name="category" value="lamps"><span class="value">Светильники</span>
                         </label>
                         <label>
-                          <input class="invisible" type="radio" name="temp" value="значение"><span class="value">Комплектующие</span>
+                          <input class="invisible" type="radio" name="category" value="accessories"><span class="value">Аксессуары</span>
                         </label>
                         <label>
-                          <input class="invisible" type="radio" name="temp" value="значение"><span class="value">Блоки питания</span>
+                          <input class="invisible" type="radio" name="category" value="components"><span class="value">Комплектующие</span>
                         </label>
                         <label>
-                          <input class="invisible" type="radio" name="temp" value="значение"><span class="value">Блоки питания шины</span>
+                          <input class="invisible" type="radio" name="category" value="power-adapters"><span class="value">Блоки питания</span>
                         </label>
                         <label>
-                          <input class="invisible" type="radio" name="temp" value="значение"><span class="value">Управление</span>
+                          <input class="invisible" type="radio" name="category" value="bus-power-supplies"><span class="value">Блоки питания шины</span>
                         </label>
                         <label>
-                          <input class="invisible" type="radio" name="temp" value="reset"><span class="value value_reset">Сбросить</span><i class="reset"></i>
+                          <input class="invisible" type="radio" name="category" value="controls"><span class="value">Управление</span>
+                        </label>
+                        <label>
+                          <!-- У инпута отвечающего за сброс текущего фильра у value должно быть значение reset-->
+                          <input class="invisible" type="radio" name="category" value="reset"><span class="value value_reset">Сбросить</span><i class="reset"></i>
                         </label>
                       </div>
                     </div>
@@ -203,16 +206,16 @@
                     <div class="filters__drop">
                       <div class="filters__options">
                         <label>
-                          <input class="invisible" type="radio" name="temp" value="значение"><i class="color color_black"></i><span class="value">Черный</span>
+                          <input class="invisible" type="radio" name="color" value="black"><i class="color color_black"></i><span class="value">Черный</span>
                         </label>
                         <label>
-                          <input class="invisible" type="radio" name="temp" value="значение"><i class="color color_white"></i><span class="value">Белый</span>
+                          <input class="invisible" type="radio" name="color" value="white"><i class="color color_white"></i><span class="value">Белый</span>
                         </label>
                         <label>
-                          <input class="invisible" type="radio" name="temp" value="значение"><i class="color color_gold"></i><span class="value">Золотой</span>
+                          <input class="invisible" type="radio" name="color" value="gold"><i class="color color_gold"></i><span class="value">Золотой</span>
                         </label>
                         <label>
-                          <input class="invisible" type="radio" name="temp" value="значение"><i class="color color_bicolor"></i><span class="value">Черно-белый</span>
+                          <input class="invisible" type="radio" name="color" value="bicolor"><i class="color color_bicolor"></i><span class="value">Черно-белый</span>
                         </label>
                         <label>
                           <input class="invisible" type="radio" name="temp" value="reset"><span class="value value_reset">Сбросить</span><i class="reset"></i>
@@ -249,7 +252,7 @@
           </div>
         </div>
       </section>
-      <section class="section">
+      <section class="section section_filtered">
         <div class="cards-series">
           <div class="container container_caption animation-element">
             <div class="row">
@@ -261,56 +264,41 @@
           <div class="cards-series__list animation-element">
             <div class="container">
               <div class="row">
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"tracks","type":"","color":["black","white"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/tracks/track-1-black.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="white" src="https://aws.massive.ru/technolight/images/cards/tracks/track-1-white.jpg" alt="" loading="lazy">
                             <ul class="cards-series__controls">
                               <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
                               <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
-                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
                             </ul>
                             <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
                               <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
                             </div>
                           </div>
                           <p class="cards-series__signature">Трек встраиваемый в гипсокартон</p></a></div>
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"tracks","type":"","color":["black","white"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/tracks/track-2-black.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="white" src="https://aws.massive.ru/technolight/images/cards/tracks/track-2-white.jpg" alt="" loading="lazy">
                             <ul class="cards-series__controls">
                               <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
                               <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
-                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
                             </ul>
-                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
-                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
-                            </div>
                           </div>
                           <p class="cards-series__signature">Трек накладной или подвесной</p></a></div>
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"tracks","type":"","color":["black","white"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/tracks/track-3-black.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="white" src="https://aws.massive.ru/technolight/images/cards/tracks/track-3-white.jpg" alt="" loading="lazy">
                             <ul class="cards-series__controls">
                               <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
                               <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
-                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
                             </ul>
                             <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
-                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
                             </div>
                           </div>
                           <p class="cards-series__signature">Трек мини накладной или подвесной</p></a></div>
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"tracks","type":"","color":["black","white"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/tracks/track-4-black.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="white" src="https://aws.massive.ru/technolight/images/cards/tracks/track-4-white.jpg" alt="" loading="lazy">
                             <ul class="cards-series__controls">
                               <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
                               <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
-                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
                             </ul>
-                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
-                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
-                            </div>
                           </div>
                           <p class="cards-series__signature">Трек для натяжного потолка</p></a></div>
               </div>
@@ -318,7 +306,7 @@
           </div>
         </div>
       </section>
-      <section class="section">
+      <section class="section section_filtered">
         <div class="cards-series">
           <div class="container container_caption animation-element">
             <div class="row">
@@ -330,225 +318,118 @@
           <div class="cards-series__list animation-element">
             <div class="container">
               <div class="row">
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"lamps","type":"","color":["black","white","bicolor"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/lights/1b.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="white" src="https://aws.massive.ru/technolight/images/cards/lights/1w.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="bicolor" src="https://aws.massive.ru/technolight/images/cards/lights/1bc.jpg" alt="" loading="lazy">
                             <ul class="cards-series__controls">
                               <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
                               <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
                               <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
                             </ul>
-                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
+                            <div class="cards-series__badge-list">
                               <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
                             </div>
                           </div>
                           <p class="cards-series__signature">Спот 42</p></a></div>
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"lamps","type":"","color":["black","white","bicolor"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/lights/2b.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="white" src="https://aws.massive.ru/technolight/images/cards/lights/2w.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="bicolor" src="https://aws.massive.ru/technolight/images/cards/lights/2bc.jpg" alt="" loading="lazy">
                             <ul class="cards-series__controls">
                               <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
                               <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
                               <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
                             </ul>
-                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
-                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
-                            </div>
                           </div>
                           <p class="cards-series__signature">Спот 50</p></a></div>
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"lamps","type":"","color":["black","white"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/lights/3b.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="white" src="https://aws.massive.ru/technolight/images/cards/lights/3w.jpg" alt="" loading="lazy">
                             <ul class="cards-series__controls">
                               <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
                               <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
-                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
                             </ul>
-                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
-                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
-                            </div>
                           </div>
                           <p class="cards-series__signature">Спот Зум 50</p></a></div>
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"lamps","type":"","color":["black","white"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/lights/4b.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="white" src="https://aws.massive.ru/technolight/images/cards/lights/4w.jpg" alt="" loading="lazy">
                             <ul class="cards-series__controls">
                               <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
                               <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
-                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
                             </ul>
-                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
-                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
-                            </div>
                           </div>
                           <p class="cards-series__signature">Спот 60</p></a></div>
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"lamps","type":"","color":["black"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/lights/5b.jpg" alt="" loading="lazy">
-                            <ul class="cards-series__controls">
-                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
-                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
-                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
-                            </ul>
-                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
-                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
-                            </div>
                           </div>
                           <p class="cards-series__signature">Мун 100</p></a></div>
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"lamps","type":"","color":["black","white"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/lights/6b.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="white" src="https://aws.massive.ru/technolight/images/cards/lights/6w.jpg" alt="" loading="lazy">
                             <ul class="cards-series__controls">
                               <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
                               <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
-                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
                             </ul>
-                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
-                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
-                            </div>
                           </div>
                           <p class="cards-series__signature">Лайн 300</p></a></div>
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"lamps","type":"","color":["black","white"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/lights/7b.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="white" src="https://aws.massive.ru/technolight/images/cards/lights/7w.jpg" alt="" loading="lazy">
                             <ul class="cards-series__controls">
                               <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
                               <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
-                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
                             </ul>
                             <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
                               <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
                             </div>
                           </div>
                           <p class="cards-series__signature">Лайн 600</p></a></div>
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"lamps","type":"","color":["black","white"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/lights/8b.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="white" src="https://aws.massive.ru/technolight/images/cards/lights/8w.jpg" alt="" loading="lazy">
                             <ul class="cards-series__controls">
                               <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
                               <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
-                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
                             </ul>
-                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
-                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
-                            </div>
                           </div>
                           <p class="cards-series__signature">Лайн 900</p></a></div>
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"lamps","type":"","color":["black","white"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/lights/9b.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="white" src="https://aws.massive.ru/technolight/images/cards/lights/9w.jpg" alt="" loading="lazy">
                             <ul class="cards-series__controls">
                               <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
                               <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
-                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
                             </ul>
-                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
-                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
-                            </div>
                           </div>
                           <p class="cards-series__signature">Лайн 1200</p></a></div>
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"lamps","type":"","color":["black","white"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/lights/10b.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="white" src="https://aws.massive.ru/technolight/images/cards/lights/10w.jpg" alt="" loading="lazy">
                             <ul class="cards-series__controls">
                               <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
                               <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
-                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
                             </ul>
-                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
-                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
-                            </div>
                           </div>
                           <p class="cards-series__signature">Дарклайн 180</p></a></div>
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"lamps","type":"","color":["black"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/lights/11b.jpg" alt="" loading="lazy">
-                            <ul class="cards-series__controls">
-                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
-                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
-                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
-                            </ul>
-                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
-                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
-                            </div>
                           </div>
                           <p class="cards-series__signature">Дарклайн 350</p></a></div>
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"lamps","type":"","color":["black"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/lights/12b.jpg" alt="" loading="lazy">
-                            <ul class="cards-series__controls">
-                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
-                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
-                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
-                            </ul>
-                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
-                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
-                            </div>
                           </div>
                           <p class="cards-series__signature">Лайн Турн 180</p></a></div>
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"lamps","type":"","color":["black"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/lights/13b.jpg" alt="" loading="lazy">
-                            <ul class="cards-series__controls">
-                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
-                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
-                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
-                            </ul>
                             <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
-                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
                             </div>
                           </div>
                           <p class="cards-series__signature">Дарклайн Турн 180</p></a></div>
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"lamps","type":"","color":["black"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/lights/14b.jpg" alt="" loading="lazy">
-                            <ul class="cards-series__controls">
-                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
-                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
-                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
-                            </ul>
-                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
-                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
-                            </div>
                           </div>
                           <p class="cards-series__signature">Глобо 135</p></a></div>
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"lamps","type":"","color":["black"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/lights/15b.jpg" alt="" loading="lazy">
-                            <ul class="cards-series__controls">
-                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
-                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
-                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
-                            </ul>
-                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
-                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
-                            </div>
                           </div>
                           <p class="cards-series__signature">Глобо 135 подвесной</p></a></div>
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"lamps","type":"","color":["black"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/lights/16b.jpg" alt="" loading="lazy">
-                            <ul class="cards-series__controls">
-                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
-                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
-                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
-                            </ul>
-                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
-                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
-                            </div>
                           </div>
                           <p class="cards-series__signature">Тьюб 30</p></a></div>
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"lamps","type":"","color":["black"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/lights/17b.jpg" alt="" loading="lazy">
-                            <ul class="cards-series__controls">
-                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
-                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
-                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
-                            </ul>
-                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
-                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
-                            </div>
                           </div>
                           <p class="cards-series__signature">Музеон 45</p></a></div>
               </div>
@@ -556,7 +437,7 @@
           </div>
         </div>
       </section>
-      <section class="section">
+      <section class="section section_filtered">
         <div class="cards-series">
           <div class="container container_caption animation-element">
             <div class="row">
@@ -568,94 +449,39 @@
           <div class="cards-series__list animation-element">
             <div class="container">
               <div class="row">
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"accessories","type":"","color":["black"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/accessories/1.jpg" alt="" loading="lazy">
-                            <ul class="cards-series__controls">
-                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
-                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
-                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
-                            </ul>
-                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
-                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
-                            </div>
                           </div>
                           <p class="cards-series__signature">Светофильтр Кросс для Спот 42</p></a></div>
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"accessories","type":"","color":["black"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/accessories/2.jpg" alt="" loading="lazy">
-                            <ul class="cards-series__controls">
-                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
-                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
-                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
-                            </ul>
                             <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
                               <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
                             </div>
                           </div>
                           <p class="cards-series__signature">Светофильтр Ханикомб для Спот 50</p></a></div>
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"accessories","type":"","color":["black"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/accessories/3.jpg" alt="" loading="lazy">
-                            <ul class="cards-series__controls">
-                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
-                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
-                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
-                            </ul>
-                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
-                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
-                            </div>
                           </div>
                           <p class="cards-series__signature">Светофильтр Спред для Спот 50</p></a></div>
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"accessories","type":"","color":["black"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/accessories/4.jpg" alt="" loading="lazy">
-                            <ul class="cards-series__controls">
-                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
-                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
-                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
-                            </ul>
-                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
+                            <div class="cards-series__badge-list">
                               <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
                             </div>
                           </div>
                           <p class="cards-series__signature">Линза для Спот 42-50</p></a></div>
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"accessories","type":"","color":["black"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/accessories/5.jpg" alt="" loading="lazy">
-                            <ul class="cards-series__controls">
-                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
-                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
-                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
-                            </ul>
-                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
-                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
-                            </div>
                           </div>
                           <p class="cards-series__signature">Светофильтр Ханикомб для Спот 60</p></a></div>
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"accessories","type":"","color":["black"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/accessories/6.jpg" alt="" loading="lazy">
-                            <ul class="cards-series__controls">
-                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
-                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
-                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
-                            </ul>
-                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
-                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
-                            </div>
                           </div>
                           <p class="cards-series__signature">Светофильтр Спред для Спот 60</p></a></div>
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"accessories","type":"","color":["black"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/accessories/7.jpg" alt="" loading="lazy">
-                            <ul class="cards-series__controls">
-                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
-                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
-                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
-                            </ul>
                             <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
-                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
                             </div>
                           </div>
                           <p class="cards-series__signature">Линза для Спот 60</p></a></div>
@@ -664,7 +490,7 @@
           </div>
         </div>
       </section>
-      <section class="section">
+      <section class="section section_filtered">
         <div class="cards-series">
           <div class="container container_caption animation-element">
             <div class="row">
@@ -676,236 +502,125 @@
           <div class="cards-series__list animation-element">
             <div class="container">
               <div class="row">
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"components","type":"","color":["black","white"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/components/1b.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="white" src="https://aws.massive.ru/technolight/images/cards/components/1w.jpg" alt="" loading="lazy">
                             <ul class="cards-series__controls">
                               <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
                               <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
-                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
                             </ul>
-                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
-                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
-                            </div>
                           </div>
                           <p class="cards-series__signature">Угол на плоскости встраиваемый</p></a></div>
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"components","type":"","color":["black","white"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/components/2b.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="white" src="https://aws.massive.ru/technolight/images/cards/components/2w.jpg" alt="" loading="lazy">
                             <ul class="cards-series__controls">
                               <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
                               <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
-                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
                             </ul>
-                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
-                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
-                            </div>
                           </div>
                           <p class="cards-series__signature">Угол внутренний встраиваемый</p></a></div>
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"components","type":"","color":["black","white"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/components/3b.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="white" src="https://aws.massive.ru/technolight/images/cards/components/3w.jpg" alt="" loading="lazy">
                             <ul class="cards-series__controls">
                               <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
                               <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
-                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
                             </ul>
-                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
-                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
-                            </div>
                           </div>
                           <p class="cards-series__signature">Угол на плоскости накладной или подвесной</p></a></div>
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"components","type":"","color":["black"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/components/4b.jpg" alt="" loading="lazy">
-                            <ul class="cards-series__controls">
-                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
-                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
-                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
-                            </ul>
                             <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
                               <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
                             </div>
                           </div>
                           <p class="cards-series__signature">Угол внутренний накладной или подвесной</p></a></div>
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"components","type":"","color":["black"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/components/5b.jpg" alt="" loading="lazy">
-                            <ul class="cards-series__controls">
-                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
-                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
-                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
-                            </ul>
-                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
-                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
-                            </div>
                           </div>
                           <p class="cards-series__signature">Угол на плоскости мини накладной или подвесной</p></a></div>
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"components","type":"","color":["black"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/components/6b.jpg" alt="" loading="lazy">
-                            <ul class="cards-series__controls">
-                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
-                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
-                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
-                            </ul>
-                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
-                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
-                            </div>
                           </div>
                           <p class="cards-series__signature">Угол внутренний мини накладной или подвесной</p></a></div>
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"components","type":"","color":["black","white"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/components/7b.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="white" src="https://aws.massive.ru/technolight/images/cards/components/7w.jpg" alt="" loading="lazy">
                             <ul class="cards-series__controls">
                               <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
                               <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
-                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
                             </ul>
-                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
-                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
-                            </div>
                           </div>
                           <p class="cards-series__signature">Соединитель для трека механический</p></a></div>
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"components","type":"","color":["black","white"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/components/8b.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="white" src="https://aws.massive.ru/technolight/images/cards/components/8w.jpg" alt="" loading="lazy">
                             <ul class="cards-series__controls">
                               <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
                               <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
-                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
                             </ul>
                             <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
-                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
                             </div>
                           </div>
                           <p class="cards-series__signature">Торцевые заглушки</p></a></div>
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"components","type":"","color":["black","white"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/components/9b.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="white" src="https://aws.massive.ru/technolight/images/cards/components/9w.jpg" alt="" loading="lazy">
                             <ul class="cards-series__controls">
                               <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
                               <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
-                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
                             </ul>
-                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
-                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
-                            </div>
                           </div>
                           <p class="cards-series__signature">Торцевые заглушки мини</p></a></div>
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"components","type":"","color":["black","white"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/components/10b.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="white" src="https://aws.massive.ru/technolight/images/cards/components/10w.jpg" alt="" loading="lazy">
                             <ul class="cards-series__controls">
                               <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
                               <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
-                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
                             </ul>
-                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
-                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
-                            </div>
                           </div>
                           <p class="cards-series__signature">Торцевая заглушка под трек для натяжного потолка</p></a></div>
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"components","type":"","color":["black","white"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/components/11b.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="white" src="https://aws.massive.ru/technolight/images/cards/components/11w.jpg" alt="" loading="lazy">
                             <ul class="cards-series__controls">
                               <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
                               <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
-                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
                             </ul>
-                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
-                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
-                            </div>
                           </div>
                           <p class="cards-series__signature">Декоративная заглушка</p></a></div>
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"components","type":"","color":["black","white"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/components/12b.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="white" src="https://aws.massive.ru/technolight/images/cards/components/12w.jpg" alt="" loading="lazy">
                             <ul class="cards-series__controls">
                               <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
                               <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
-                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
                             </ul>
-                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
-                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
-                            </div>
                           </div>
                           <p class="cards-series__signature">Подвес</p></a></div>
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"components","type":"","color":["black","white"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/components/13b.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="white" src="https://aws.massive.ru/technolight/images/cards/components/13w.jpg" alt="" loading="lazy">
                             <ul class="cards-series__controls">
                               <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
                               <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
-                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
                             </ul>
-                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
-                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
-                            </div>
                           </div>
                           <p class="cards-series__signature">Потолочная база с подвесом</p></a></div>
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"components","type":"","color":["black"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/components/14b.jpg" alt="" loading="lazy">
-                            <ul class="cards-series__controls">
-                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
-                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
-                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
-                            </ul>
-                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
-                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
-                            </div>
                           </div>
                           <p class="cards-series__signature">Коннектор для ввода питания</p></a></div>
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"components","type":"","color":["black"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/components/15b.jpg" alt="" loading="lazy">
-                            <ul class="cards-series__controls">
-                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
-                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
-                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
-                            </ul>
                             <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
                               <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
                             </div>
                           </div>
                           <p class="cards-series__signature">Коннектор токопроводящий прямой</p></a></div>
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"components","type":"","color":["black"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/components/16b.jpg" alt="" loading="lazy">
-                            <ul class="cards-series__controls">
-                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
-                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
-                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
-                            </ul>
-                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
-                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
-                            </div>
                           </div>
                           <p class="cards-series__signature">Коннектор токопроводящий гибкий</p></a></div>
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"components","type":"","color":["black"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/components/17b.jpg" alt="" loading="lazy">
-                            <ul class="cards-series__controls">
-                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
-                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
-                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
-                            </ul>
-                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
-                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
-                            </div>
                           </div>
                           <p class="cards-series__signature">Соединители под трек для натяжного потолка прямые</p></a></div>
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"components","type":"","color":["black"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/components/18b.jpg" alt="" loading="lazy">
-                            <ul class="cards-series__controls">
-                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
-                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
-                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
-                            </ul>
-                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
+                            <div class="cards-series__badge-list">
                               <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
                             </div>
                           </div>
@@ -915,7 +630,7 @@
           </div>
         </div>
       </section>
-      <section class="section">
+      <section class="section section_filtered">
         <div class="cards-series">
           <div class="container container_caption animation-element">
             <div class="row">
@@ -927,56 +642,25 @@
           <div class="cards-series__list animation-element">
             <div class="container">
               <div class="row">
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"power-adapters","type":"","color":["black"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/power-supplies/1.jpg" alt="" loading="lazy">
-                            <ul class="cards-series__controls">
-                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
-                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
-                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
-                            </ul>
                             <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
                               <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
                             </div>
                           </div>
                           <p class="cards-series__signature">Блок питания линейный 48В</p></a></div>
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"power-adapters","type":"","color":["black"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/power-supplies/2.jpg" alt="" loading="lazy">
-                            <ul class="cards-series__controls">
-                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
-                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
-                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
-                            </ul>
-                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
-                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
-                            </div>
                           </div>
                           <p class="cards-series__signature">Блок питания в трек 48В 100Вт</p></a></div>
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"power-adapters","type":"","color":["black"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/power-supplies/3.jpg" alt="" loading="lazy">
-                            <ul class="cards-series__controls">
-                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
-                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
-                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
-                            </ul>
                             <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
-                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
                             </div>
                           </div>
                           <p class="cards-series__signature">Блок питания в трек 48В 120Вт</p></a></div>
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"power-adapters","type":"","color":["black"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/power-supplies/4.jpg" alt="" loading="lazy">
-                            <ul class="cards-series__controls">
-                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
-                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
-                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
-                            </ul>
-                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
-                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
-                            </div>
                           </div>
                           <p class="cards-series__signature">Блок питания в трек 48В 250Вт</p></a></div>
               </div>
@@ -984,7 +668,7 @@
           </div>
         </div>
       </section>
-      <section class="section">
+      <section class="section section_filtered">
         <div class="cards-series">
           <div class="container container_caption animation-element">
             <div class="row">
@@ -996,17 +680,8 @@
           <div class="cards-series__list animation-element">
             <div class="container">
               <div class="row">
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"bus-power-supplies","type":"","color":["black"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/bus-power-supplies/1.jpg" alt="" loading="lazy">
-                            <ul class="cards-series__controls">
-                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
-                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
-                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
-                            </ul>
-                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
-                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
-                            </div>
                           </div>
                           <p class="cards-series__signature">Блок питания шины DALI MW</p></a></div>
               </div>
@@ -1014,7 +689,7 @@
           </div>
         </div>
       </section>
-      <section class="section">
+      <section class="section section_filtered">
         <div class="cards-series">
           <div class="container container_caption animation-element">
             <div class="row">
@@ -1026,30 +701,21 @@
           <div class="cards-series__list animation-element">
             <div class="container">
               <div class="row">
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
+                      <div class="col-6 col-md-3" data-filter='{"category":"controls","type":"","color":["black","white"]}'><a class="cards-series__item" href="#">
                           <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/сontrol/1.jpg" alt="" loading="lazy">
-                            <ul class="cards-series__controls">
-                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
-                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
-                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
-                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
-                            </ul>
                             <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
                               <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
                             </div>
                           </div>
                           <p class="cards-series__signature">Модуль для беспроводного управления CBU-DCS</p></a></div>
-                      <div class="col-6 col-md-3"><a class="cards-series__item" href="#">
-                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/сontrol/1.jpg" alt="" loading="lazy">
+                      <div class="col-6 col-md-3" data-filter='{"category":"controls","type":"","color":["black","white","gold","bicolor"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/сontrol/1.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="white" src="https://aws.massive.ru/technolight/images/cards/сontrol/1.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="gold" src="https://aws.massive.ru/technolight/images/cards/сontrol/1.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="bicolor" src="https://aws.massive.ru/technolight/images/cards/сontrol/1.jpg" alt="" loading="lazy">
                             <ul class="cards-series__controls">
                               <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
                               <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
                               <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
                               <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
                             </ul>
-                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
-                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
-                            </div>
                           </div>
                           <p class="cards-series__signature">Модуль для беспроводного управления CBU-ASD</p></a></div>
               </div>
@@ -1195,6 +861,13 @@
         </div>
       </div>
     </footer>
+    <div class="spinner" id="spinner">
+      <div class="spinner__body">
+        <div class="spinner__item"></div>
+        <div class="spinner__item"></div>
+        <div class="spinner__item"></div>
+      </div>
+    </div>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js" defer></script>
     <script src="js/pages/series.min.js" defer></script>
