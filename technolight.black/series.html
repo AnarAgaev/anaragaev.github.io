@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Write description for this page here">
+    <meta name="keywords" content="Write keywords for this page here">
+    <title>Technolight</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="https://aws.massive.ru/technolight/favicon/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://aws.massive.ru/technolight/favicon/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="https://aws.massive.ru/technolight/favicon/favicon-16x16.png"/>
+    <link rel="icon" href="https://aws.massive.ru/technolight/favicon/favicon.ico"/>
+    <link rel="manifest" href="https://aws.massive.ru/technolight/favicon/site.webmanifest"/>
+    <link rel="preload" href="css/vendor.min.css" as="style">
+    <link rel="preload" href="css/main.min.css" as="style">
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/pages/series.min.css">
+  </head>
+  <body class="transition-blocker page-series" id="body">
+    <header class="header" id="header">
+      <div class="header__modal-back"></div>
+      <div class="container">
+        <div class="header__content"><a class="header__logo logo-light" href="#"></a>
+          <nav class="header__nav">
+            <div class="header__nav-caption d-lg-none"><span class="header__nav-logo logo-dark"></span>
+              <button class="header__nav-close"></button>
+            </div>
+            <ul class="header__nav-list">
+              <!-- Элементку списка у которого есть подменю, нужно добавлять класс-модификатов .header__nav-item_with-inner-->
+              <!-- Для раскрытого пункта меню, добавлять класс .dropped-->
+              <li class="header__nav-item header__nav-item_prod header__nav-item_with-inner"><i></i>
+                <!-- Активному пункту меню добавляем класс .active-->
+                <!-- Пункты с подменю должны быть КНОПКАМИ А НЕ ССЫЛКАМИ-->
+                <button class="header__nav-link header__nav-link_product"><i class="d-lg-none"></i><span>Продукция</span></button>
+                <!-- Для открытого подменю, добавляем класс .open-->
+                <div class="header__nav-collapse header__nav-collapse_product collapse">
+                  <div class="collapse__inner">
+                    <button class="header__nav-close d-none d-lg-block"></button>
+                    <ul class="header__nav-sublist">
+                      <!-- У списка подменю с заголовком у первого li класс .header__nav-subtitle-->
+                      <li class="header__nav-subtitle">Трековые системы</li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Треки</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Светильники</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Аксессуары</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Комплектующие</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Блоки питания</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Блоки питания шины</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Управление</a></li>
+                    </ul>
+                    <ul class="header__nav-sublist">
+                      <!-- У списка подменю с заголовком у первого li класс .header__nav-subtitle-->
+                      <li class="header__nav-subtitle">Модульные светильники</li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Светильники без видимой рамки</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Светильники с видимой рамкой</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Монтажные комплекты</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Декоративные рамки</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Комплектующие</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Аксессуары</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Светодиодные модули</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Драйверы</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Блоки питания шины</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Управление</a></li>
+                    </ul>
+                    <ul class="header__nav-sublist">
+                      <!-- У списка подменю с заголовком у первого li класс .header__nav-subtitle-->
+                      <li class="header__nav-subtitle">Вспомогательная продукция</li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Профильные решения</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Блоки питания шины</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Управление</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="header__nav-item"><a class="header__nav-link header__nav-link_delivery" href="#"><i class="d-lg-none"></i><span>Доставка и оплата</span></a></li>
+              <li class="header__nav-item"><a class="header__nav-link header__nav-link_buy" href="#"><i class="d-lg-none"></i><span>Где купить</span></a></li>
+              <li class="header__nav-item"><a class="header__nav-link header__nav-link_configurator" href="#"><i class="d-lg-none"></i><span>Конфигуратор</span></a></li>
+              <li class="header__nav-item header__nav-item_company header__nav-item_with-inner"><i></i>
+                <!-- Пункты с подменю должны быть КНОПКАМИ А НЕ ССЫЛКАМИ-->
+                <button class="header__nav-link header__nav-link_company"><i class="d-lg-none"></i><span>Компания</span></button>
+                <div class="header__nav-collapse header__nav-collapse_company collapse">
+                  <div class="collapse__inner">
+                    <button class="header__nav-close d-none d-lg-block"></button>
+                    <ul class="header__nav-sublist">
+                      <li class="header__nav-subtitle"><a class="header__nav-sublink" href="#">Обмен и возврат</a></li>
+                      <li class="header__nav-subtitle"><a class="header__nav-sublink" href="#">Гарантия качества</a></li>
+                      <li class="header__nav-subtitle"><a class="header__nav-sublink" href="#">Наши проекты</a></li>
+                      <li class="header__nav-subtitle"><a class="header__nav-sublink" href="#">Жизнь компании</a></li>
+                      <li class="header__nav-subtitle"><a class="header__nav-sublink" href="#">Торговая марка</a></li>
+                      <li class="header__nav-subtitle"><a class="header__nav-sublink" href="#">Дизайн и качество</a></li>
+                      <li class="header__nav-subtitle"><a class="header__nav-sublink" href="#">Контакты</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <ul class="header__buttons">
+            <li class="d-none d-lg-block"><a class="header__buttons-link header__buttons-link_call" href="tel:+9200000000"><i></i></a></li>
+            <li>
+              <button class="header__buttons-link header__buttons-link_search" href="#"><i></i></button>
+            </li>
+            <li><a class="header__buttons-link header__buttons-link_favorites" href="#"><i><span class="header__buttons-count">23</span></i></a></li>
+            <li class="d-none d-lg-block"><a class="header__buttons-link header__buttons-link_cart" href="#"><i><span class="header__buttons-count">7</span></i></a></li>
+            <li class="d-none d-lg-block"><a class="header__buttons-link header__buttons-link_account" href="#"><i></i></a></li>
+          </ul>
+        </div>
+        <!-- По умолчанию добавляем класс .disable, т.к поиск по умолчанию скрыт-->
+        <div class="header__search disable">
+          <form class="header__search-form">
+            <label><i></i>
+              <input class="header__search-input" type="text" placeholder="Поиск">
+              <button class="header__search-reset" type="reset"></button>
+            </label>
+            <button class="header__search-close" type="button">Отмена</button>
+          </form>
+          <div class="header__search-hints">
+            <div class="header__search-helps"><span>без рамки</span><span>спот</span><span>с рамкой</span><span>софт</span><span>софт</span><span>софт</span></div>
+            <div class="header__search-links"><a href="#">Title</a><a href="#">Title</a><a href="#">Title</a><a href="#">Title</a><a href="#">Title</a><a href="#">Title</a></div>
+            <div class="header__search-categories"><a href="#">
+                <p>Светильники с рамкой</p><span>Категория</span></a><a href="#">
+                <p>Светильники с рамкой</p><span>Категория</span></a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main" id="main">
+      <section class="section section_breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumbs animation-element">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Продукция</a></li>
+            <li><span>Трековая система PROFI 48V</span></li>
+          </ul>
+        </div>
+      </section>
+      <section class="section">
+        <div class="cards-series-desc">
+          <div class="cards-series-desc__caption">
+            <div class="container container_caption animation-element">
+              <div class="row">
+                <div class="col col-xl-8">
+                  <h1 class="container_caption-text">Трековая система profi 48v</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards-series-desc__filters animation-element">
+            <div class="container">
+              <div class="filters">
+                <div class="filters__list">
+                  <!-- .active.dropped-->
+                  <div class="filters__item"><span class="filters__caption"><span>Категория продукта</span></span>
+                    <div class="filters__drop">
+                      <div class="filters__options">
+                        <label>
+                          <!-- В name input добавляем имя параметра для фильтрации, а в value добавляем значение параметра-->
+                          <!-- span.value Должен идти ОБЯЗАТЕЛЬНО сразу после input-->
+                          <input class="invisible" type="radio" name="category" value="tracks"><span class="value">Треки</span>
+                        </label>
+                        <label>
+                          <input class="invisible" type="radio" name="category" value="lamps"><span class="value">Светильники</span>
+                        </label>
+                        <label>
+                          <input class="invisible" type="radio" name="category" value="accessories"><span class="value">Аксессуары</span>
+                        </label>
+                        <label>
+                          <input class="invisible" type="radio" name="category" value="components"><span class="value">Комплектующие</span>
+                        </label>
+                        <label>
+                          <input class="invisible" type="radio" name="category" value="power-adapters"><span class="value">Блоки питания</span>
+                        </label>
+                        <label>
+                          <input class="invisible" type="radio" name="category" value="bus-power-supplies"><span class="value">Блоки питания шины</span>
+                        </label>
+                        <label>
+                          <input class="invisible" type="radio" name="category" value="controls"><span class="value">Управление</span>
+                        </label>
+                        <label>
+                          <!-- У инпута отвечающего за сброс текущего фильра в value должно быть значение reset-->
+                          <!-- У span .value должен присутствовать класс-модификтор .value_reset-->
+                          <!-- Значение атрибута name у инпута должно быть такоеже как и у дригих в .filters__options (выше по коду)-->
+                          <input class="invisible" type="radio" name="category" value="reset"><span class="value value_reset">Сбросить</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filters__item"><span class="filters__caption"><span>Тип монтажа</span></span>
+                    <div class="filters__drop">
+                      <div class="filters__options">
+                        <label>
+                          <input class="invisible" type="radio" name="type" value="builtin"><span class="value">Встраиваемый</span>
+                        </label>
+                        <label>
+                          <input class="invisible" type="radio" name="type" value="overhead"><span class="value">Накладной или подвесной</span>
+                        </label>
+                        <label>
+                          <input class="invisible" type="radio" name="type" value="stretch"><span class="value">Для натяжного потолка</span>
+                        </label>
+                        <label>
+                          <input class="invisible" type="radio" name="type" value="reset"><span class="value value_reset">Сбросить</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filters__item"><span class="filters__caption"><span>Цвет элементов</span></span>
+                    <div class="filters__drop">
+                      <div class="filters__options">
+                        <label><i class="color color_black"></i>
+                          <input class="invisible" type="radio" name="color" value="black"><span class="value">Черный</span>
+                        </label>
+                        <label><i class="color color_white"></i>
+                          <input class="invisible" type="radio" name="color" value="white"><span class="value">Белый</span>
+                        </label>
+                        <label><i class="color color_gold"></i>
+                          <input class="invisible" type="radio" name="color" value="gold"><span class="value">Золотой</span>
+                        </label>
+                        <label><i class="color color_bicolor"></i>
+                          <input class="invisible" type="radio" name="color" value="bicolor"><span class="value">Черно-белый</span>
+                        </label>
+                        <label>
+                          <input class="invisible" type="radio" name="color" value="reset"><span class="value value_reset">Сбросить</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="filters__reset">
+                  <!-- В  data-deleted-types пишем json массив в котором перечисляем все типы из имеющихся фильтров-->
+                  <div class="filters__item" data-deleted-types='["category","type","color"]'><span class="filters__caption"><span>Сбросить все</span></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards-series-desc__content animation-element">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
+                  <div class="cards-series-desc__pic"><img src="https://aws.massive.ru/technolight/images/cards/lights/4b.jpg" alt="" loading="lazy"></div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
+                  <div class="cards-series-desc__text">
+                    <p>Трековая система — это удобный и понятный инструмент для светодизайна. Вы можете использовать линейные светильники для общего освещения и споты — в качестве акцентного. Одна идея объединяет в себе безграничные возможности для творчества.</p>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 col-xxl-3 offset-xxl-3">
+                  <div class="cards-series-desc__banner">
+                    <p class="cards-series-desc__banner-text">для расчета индивидуальной комплектации перейти в конфигуратор треков</p>
+                    <div class="cards-series-desc__banner-button"><a class="btn btn_lite btn_block" href="#"><span>Перейти в конфигуратор</span></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section_filtered">
+        <div class="cards-series">
+          <div class="container container_caption animation-element">
+            <div class="row">
+              <div class="col col-xl-8">
+                <h2 class="container_caption-text">Треки</h2>
+              </div>
+            </div>
+          </div>
+          <div class="cards-series__list animation-element">
+            <div class="container">
+              <div class="row">
+                      <div class="col-6 col-md-3" data-filter='{"category":"tracks","type":"builtin","color":["black","white"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/tracks/track-1-black.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="white" src="https://aws.massive.ru/technolight/images/cards/tracks/track-1-white.jpg" alt="" loading="lazy">
+                            <ul class="cards-series__controls">
+                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
+                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
+                            </ul>
+                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
+                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
+                            </div>
+                          </div>
+                          <p class="cards-series__signature">Трек встраиваемый в гипсокартон</p></a></div>
+                      <div class="col-6 col-md-3" data-filter='{"category":"tracks","type":"builtin","color":["black","white"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/tracks/track-2-black.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="white" src="https://aws.massive.ru/technolight/images/cards/tracks/track-2-white.jpg" alt="" loading="lazy">
+                            <ul class="cards-series__controls">
+                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
+                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
+                            </ul>
+                          </div>
+                          <p class="cards-series__signature">Трек накладной или подвесной</p></a></div>
+                      <div class="col-6 col-md-3" data-filter='{"category":"tracks","type":"overhead","color":["black","white"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/tracks/track-3-black.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="white" src="https://aws.massive.ru/technolight/images/cards/tracks/track-3-white.jpg" alt="" loading="lazy">
+                            <ul class="cards-series__controls">
+                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
+                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
+                            </ul>
+                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
+                            </div>
+                          </div>
+                          <p class="cards-series__signature">Трек мини накладной или подвесной</p></a></div>
+                      <div class="col-6 col-md-3" data-filter='{"category":"tracks","type":"stretch","color":["black","white"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/tracks/track-4-black.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="white" src="https://aws.massive.ru/technolight/images/cards/tracks/track-4-white.jpg" alt="" loading="lazy">
+                            <ul class="cards-series__controls">
+                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
+                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
+                            </ul>
+                          </div>
+                          <p class="cards-series__signature">Трек для натяжного потолка</p></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section_filtered">
+        <div class="cards-series">
+          <div class="container container_caption animation-element">
+            <div class="row">
+              <div class="col col-xl-8">
+                <h2 class="container_caption-text">Светильники</h2>
+              </div>
+            </div>
+          </div>
+          <div class="cards-series__list animation-element">
+            <div class="container">
+              <div class="row">
+                      <div class="col-6 col-md-3" data-filter='{"category":"lamps","type":"stretch","color":["black","white","bicolor"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/lights/1b.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="white" src="https://aws.massive.ru/technolight/images/cards/lights/1w.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="bicolor" src="https://aws.massive.ru/technolight/images/cards/lights/1bc.jpg" alt="" loading="lazy">
+                            <ul class="cards-series__controls">
+                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
+                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
+                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
+                            </ul>
+                            <div class="cards-series__badge-list">
+                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
+                            </div>
+                          </div>
+                          <p class="cards-series__signature">Спот 42</p></a></div>
+                      <div class="col-6 col-md-3" data-filter='{"category":"lamps","type":"stretch","color":["black","white","bicolor"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/lights/2b.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="white" src="https://aws.massive.ru/technolight/images/cards/lights/2w.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="bicolor" src="https://aws.massive.ru/technolight/images/cards/lights/2bc.jpg" alt="" loading="lazy">
+                            <ul class="cards-series__controls">
+                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
+                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
+                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
+                            </ul>
+                          </div>
+                          <p class="cards-series__signature">Спот 50</p></a></div>
+                      <div class="col-6 col-md-3" data-filter='{"category":"lamps","type":"overhead","color":["black","white"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/lights/3b.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="white" src="https://aws.massive.ru/technolight/images/cards/lights/3w.jpg" alt="" loading="lazy">
+                            <ul class="cards-series__controls">
+                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
+                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
+                            </ul>
+                          </div>
+                          <p class="cards-series__signature">Спот Зум 50</p></a></div>
+                      <div class="col-6 col-md-3" data-filter='{"category":"lamps","type":"overhead","color":["black","white"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/lights/4b.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="white" src="https://aws.massive.ru/technolight/images/cards/lights/4w.jpg" alt="" loading="lazy">
+                            <ul class="cards-series__controls">
+                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
+                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
+                            </ul>
+                          </div>
+                          <p class="cards-series__signature">Спот 60</p></a></div>
+                      <div class="col-6 col-md-3" data-filter='{"category":"lamps","type":"overhead","color":["black"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/lights/5b.jpg" alt="" loading="lazy">
+                          </div>
+                          <p class="cards-series__signature">Мун 100</p></a></div>
+                      <div class="col-6 col-md-3" data-filter='{"category":"lamps","type":"builtin","color":["black","white"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/lights/6b.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="white" src="https://aws.massive.ru/technolight/images/cards/lights/6w.jpg" alt="" loading="lazy">
+                            <ul class="cards-series__controls">
+                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
+                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
+                            </ul>
+                          </div>
+                          <p class="cards-series__signature">Лайн 300</p></a></div>
+                      <div class="col-6 col-md-3" data-filter='{"category":"lamps","type":"builtin","color":["black","white"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/lights/7b.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="white" src="https://aws.massive.ru/technolight/images/cards/lights/7w.jpg" alt="" loading="lazy">
+                            <ul class="cards-series__controls">
+                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
+                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
+                            </ul>
+                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
+                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
+                            </div>
+                          </div>
+                          <p class="cards-series__signature">Лайн 600</p></a></div>
+                      <div class="col-6 col-md-3" data-filter='{"category":"lamps","type":"overhead","color":["black","white"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/lights/8b.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="white" src="https://aws.massive.ru/technolight/images/cards/lights/8w.jpg" alt="" loading="lazy">
+                            <ul class="cards-series__controls">
+                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
+                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
+                            </ul>
+                          </div>
+                          <p class="cards-series__signature">Лайн 900</p></a></div>
+                      <div class="col-6 col-md-3" data-filter='{"category":"lamps","type":"builtin","color":["black","white"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/lights/9b.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="white" src="https://aws.massive.ru/technolight/images/cards/lights/9w.jpg" alt="" loading="lazy">
+                            <ul class="cards-series__controls">
+                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
+                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
+                            </ul>
+                          </div>
+                          <p class="cards-series__signature">Лайн 1200</p></a></div>
+                      <div class="col-6 col-md-3" data-filter='{"category":"lamps","type":"builtin","color":["black","white"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/lights/10b.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="white" src="https://aws.massive.ru/technolight/images/cards/lights/10w.jpg" alt="" loading="lazy">
+                            <ul class="cards-series__controls">
+                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
+                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
+                            </ul>
+                          </div>
+                          <p class="cards-series__signature">Дарклайн 180</p></a></div>
+                      <div class="col-6 col-md-3" data-filter='{"category":"lamps","type":"builtin","color":["black"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/lights/11b.jpg" alt="" loading="lazy">
+                          </div>
+                          <p class="cards-series__signature">Дарклайн 350</p></a></div>
+                      <div class="col-6 col-md-3" data-filter='{"category":"lamps","type":"stretch","color":["black"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/lights/12b.jpg" alt="" loading="lazy">
+                          </div>
+                          <p class="cards-series__signature">Лайн Турн 180</p></a></div>
+                      <div class="col-6 col-md-3" data-filter='{"category":"lamps","type":"stretch","color":["black"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/lights/13b.jpg" alt="" loading="lazy">
+                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
+                            </div>
+                          </div>
+                          <p class="cards-series__signature">Дарклайн Турн 180</p></a></div>
+                      <div class="col-6 col-md-3" data-filter='{"category":"lamps","type":"stretch","color":["black"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/lights/14b.jpg" alt="" loading="lazy">
+                          </div>
+                          <p class="cards-series__signature">Глобо 135</p></a></div>
+                      <div class="col-6 col-md-3" data-filter='{"category":"lamps","type":"overhead","color":["black"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/lights/15b.jpg" alt="" loading="lazy">
+                          </div>
+                          <p class="cards-series__signature">Глобо 135 подвесной</p></a></div>
+                      <div class="col-6 col-md-3" data-filter='{"category":"lamps","type":"overhead","color":["black"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/lights/16b.jpg" alt="" loading="lazy">
+                          </div>
+                          <p class="cards-series__signature">Тьюб 30</p></a></div>
+                      <div class="col-6 col-md-3" data-filter='{"category":"lamps","type":"builtin","color":["black"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/lights/17b.jpg" alt="" loading="lazy">
+                          </div>
+                          <p class="cards-series__signature">Музеон 45</p></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section_filtered">
+        <div class="cards-series">
+          <div class="container container_caption animation-element">
+            <div class="row">
+              <div class="col col-xl-8">
+                <h2 class="container_caption-text">Аксессуары</h2>
+              </div>
+            </div>
+          </div>
+          <div class="cards-series__list animation-element">
+            <div class="container">
+              <div class="row">
+                      <div class="col-6 col-md-3" data-filter='{"category":"accessories","type":"builtin","color":["black"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/accessories/1.jpg" alt="" loading="lazy">
+                          </div>
+                          <p class="cards-series__signature">Светофильтр Кросс для Спот 42</p></a></div>
+                      <div class="col-6 col-md-3" data-filter='{"category":"accessories","type":"builtin","color":["black"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/accessories/2.jpg" alt="" loading="lazy">
+                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
+                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
+                            </div>
+                          </div>
+                          <p class="cards-series__signature">Светофильтр Ханикомб для Спот 50</p></a></div>
+                      <div class="col-6 col-md-3" data-filter='{"category":"accessories","type":"builtin","color":["black"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/accessories/3.jpg" alt="" loading="lazy">
+                          </div>
+                          <p class="cards-series__signature">Светофильтр Спред для Спот 50</p></a></div>
+                      <div class="col-6 col-md-3" data-filter='{"category":"accessories","type":"overhead","color":["black"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/accessories/4.jpg" alt="" loading="lazy">
+                            <div class="cards-series__badge-list">
+                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
+                            </div>
+                          </div>
+                          <p class="cards-series__signature">Линза для Спот 42-50</p></a></div>
+                      <div class="col-6 col-md-3" data-filter='{"category":"accessories","type":"overhead","color":["black"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/accessories/5.jpg" alt="" loading="lazy">
+                          </div>
+                          <p class="cards-series__signature">Светофильтр Ханикомб для Спот 60</p></a></div>
+                      <div class="col-6 col-md-3" data-filter='{"category":"accessories","type":"stretch","color":["black"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/accessories/6.jpg" alt="" loading="lazy">
+                          </div>
+                          <p class="cards-series__signature">Светофильтр Спред для Спот 60</p></a></div>
+                      <div class="col-6 col-md-3" data-filter='{"category":"accessories","type":"stretch","color":["black"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/accessories/7.jpg" alt="" loading="lazy">
+                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
+                            </div>
+                          </div>
+                          <p class="cards-series__signature">Линза для Спот 60</p></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section_filtered">
+        <div class="cards-series">
+          <div class="container container_caption animation-element">
+            <div class="row">
+              <div class="col col-xl-8">
+                <h2 class="container_caption-text">Комплектующие</h2>
+              </div>
+            </div>
+          </div>
+          <div class="cards-series__list animation-element">
+            <div class="container">
+              <div class="row">
+                      <div class="col-6 col-md-3" data-filter='{"category":"components","type":"builtin","color":["black","white"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/components/1b.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="white" src="https://aws.massive.ru/technolight/images/cards/components/1w.jpg" alt="" loading="lazy">
+                            <ul class="cards-series__controls">
+                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
+                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
+                            </ul>
+                          </div>
+                          <p class="cards-series__signature">Угол на плоскости встраиваемый</p></a></div>
+                      <div class="col-6 col-md-3" data-filter='{"category":"components","type":"builtin","color":["black","white"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/components/2b.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="white" src="https://aws.massive.ru/technolight/images/cards/components/2w.jpg" alt="" loading="lazy">
+                            <ul class="cards-series__controls">
+                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
+                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
+                            </ul>
+                          </div>
+                          <p class="cards-series__signature">Угол внутренний встраиваемый</p></a></div>
+                      <div class="col-6 col-md-3" data-filter='{"category":"components","type":"builtin","color":["black","white"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/components/3b.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="white" src="https://aws.massive.ru/technolight/images/cards/components/3w.jpg" alt="" loading="lazy">
+                            <ul class="cards-series__controls">
+                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
+                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
+                            </ul>
+                          </div>
+                          <p class="cards-series__signature">Угол на плоскости накладной или подвесной</p></a></div>
+                      <div class="col-6 col-md-3" data-filter='{"category":"components","type":"builtin","color":["black"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/components/4b.jpg" alt="" loading="lazy">
+                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
+                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
+                            </div>
+                          </div>
+                          <p class="cards-series__signature">Угол внутренний накладной или подвесной</p></a></div>
+                      <div class="col-6 col-md-3" data-filter='{"category":"components","type":"overhead","color":["black"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/components/5b.jpg" alt="" loading="lazy">
+                          </div>
+                          <p class="cards-series__signature">Угол на плоскости мини накладной или подвесной</p></a></div>
+                      <div class="col-6 col-md-3" data-filter='{"category":"components","type":"overhead","color":["black"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/components/6b.jpg" alt="" loading="lazy">
+                          </div>
+                          <p class="cards-series__signature">Угол внутренний мини накладной или подвесной</p></a></div>
+                      <div class="col-6 col-md-3" data-filter='{"category":"components","type":"stretch","color":["black","white"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/components/7b.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="white" src="https://aws.massive.ru/technolight/images/cards/components/7w.jpg" alt="" loading="lazy">
+                            <ul class="cards-series__controls">
+                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
+                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
+                            </ul>
+                          </div>
+                          <p class="cards-series__signature">Соединитель для трека механический</p></a></div>
+                      <div class="col-6 col-md-3" data-filter='{"category":"components","type":"stretch","color":["black","white"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/components/8b.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="white" src="https://aws.massive.ru/technolight/images/cards/components/8w.jpg" alt="" loading="lazy">
+                            <ul class="cards-series__controls">
+                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
+                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
+                            </ul>
+                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
+                            </div>
+                          </div>
+                          <p class="cards-series__signature">Торцевые заглушки</p></a></div>
+                      <div class="col-6 col-md-3" data-filter='{"category":"components","type":"stretch","color":["black","white"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/components/9b.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="white" src="https://aws.massive.ru/technolight/images/cards/components/9w.jpg" alt="" loading="lazy">
+                            <ul class="cards-series__controls">
+                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
+                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
+                            </ul>
+                          </div>
+                          <p class="cards-series__signature">Торцевые заглушки мини</p></a></div>
+                      <div class="col-6 col-md-3" data-filter='{"category":"components","type":"stretch","color":["black","white"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/components/10b.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="white" src="https://aws.massive.ru/technolight/images/cards/components/10w.jpg" alt="" loading="lazy">
+                            <ul class="cards-series__controls">
+                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
+                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
+                            </ul>
+                          </div>
+                          <p class="cards-series__signature">Торцевая заглушка под трек для натяжного потолка</p></a></div>
+                      <div class="col-6 col-md-3" data-filter='{"category":"components","type":"overhead","color":["black","white"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/components/11b.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="white" src="https://aws.massive.ru/technolight/images/cards/components/11w.jpg" alt="" loading="lazy">
+                            <ul class="cards-series__controls">
+                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
+                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
+                            </ul>
+                          </div>
+                          <p class="cards-series__signature">Декоративная заглушка</p></a></div>
+                      <div class="col-6 col-md-3" data-filter='{"category":"components","type":"builtin","color":["black","white"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/components/12b.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="white" src="https://aws.massive.ru/technolight/images/cards/components/12w.jpg" alt="" loading="lazy">
+                            <ul class="cards-series__controls">
+                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
+                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
+                            </ul>
+                          </div>
+                          <p class="cards-series__signature">Подвес</p></a></div>
+                      <div class="col-6 col-md-3" data-filter='{"category":"components","type":"builtin","color":["black","white"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/components/13b.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="white" src="https://aws.massive.ru/technolight/images/cards/components/13w.jpg" alt="" loading="lazy">
+                            <ul class="cards-series__controls">
+                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
+                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
+                            </ul>
+                          </div>
+                          <p class="cards-series__signature">Потолочная база с подвесом</p></a></div>
+                      <div class="col-6 col-md-3" data-filter='{"category":"components","type":"builtin","color":["black"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/components/14b.jpg" alt="" loading="lazy">
+                          </div>
+                          <p class="cards-series__signature">Коннектор для ввода питания</p></a></div>
+                      <div class="col-6 col-md-3" data-filter='{"category":"components","type":"overhead","color":["black"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/components/15b.jpg" alt="" loading="lazy">
+                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
+                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
+                            </div>
+                          </div>
+                          <p class="cards-series__signature">Коннектор токопроводящий прямой</p></a></div>
+                      <div class="col-6 col-md-3" data-filter='{"category":"components","type":"stretch","color":["black"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/components/16b.jpg" alt="" loading="lazy">
+                          </div>
+                          <p class="cards-series__signature">Коннектор токопроводящий гибкий</p></a></div>
+                      <div class="col-6 col-md-3" data-filter='{"category":"components","type":"stretch","color":["black"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/components/17b.jpg" alt="" loading="lazy">
+                          </div>
+                          <p class="cards-series__signature">Соединители под трек для натяжного потолка прямые</p></a></div>
+                      <div class="col-6 col-md-3" data-filter='{"category":"components","type":"stretch","color":["black"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/components/18b.jpg" alt="" loading="lazy">
+                            <div class="cards-series__badge-list">
+                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
+                            </div>
+                          </div>
+                          <p class="cards-series__signature">Соединители под трек для натяжного потолка угловые</p></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section_filtered">
+        <div class="cards-series">
+          <div class="container container_caption animation-element">
+            <div class="row">
+              <div class="col col-xl-8">
+                <h2 class="container_caption-text">Блоки питания</h2>
+              </div>
+            </div>
+          </div>
+          <div class="cards-series__list animation-element">
+            <div class="container">
+              <div class="row">
+                      <div class="col-6 col-md-3" data-filter='{"category":"power-adapters","type":"overhead","color":["black"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/power-supplies/1.jpg" alt="" loading="lazy">
+                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
+                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
+                            </div>
+                          </div>
+                          <p class="cards-series__signature">Блок питания линейный 48В</p></a></div>
+                      <div class="col-6 col-md-3" data-filter='{"category":"power-adapters","type":"overhead","color":["black"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/power-supplies/2.jpg" alt="" loading="lazy">
+                          </div>
+                          <p class="cards-series__signature">Блок питания в трек 48В 100Вт</p></a></div>
+                      <div class="col-6 col-md-3" data-filter='{"category":"power-adapters","type":"builtin","color":["black"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/power-supplies/3.jpg" alt="" loading="lazy">
+                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
+                            </div>
+                          </div>
+                          <p class="cards-series__signature">Блок питания в трек 48В 120Вт</p></a></div>
+                      <div class="col-6 col-md-3" data-filter='{"category":"power-adapters","type":"stretch","color":["black"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/power-supplies/4.jpg" alt="" loading="lazy">
+                          </div>
+                          <p class="cards-series__signature">Блок питания в трек 48В 250Вт</p></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section_filtered">
+        <div class="cards-series">
+          <div class="container container_caption animation-element">
+            <div class="row">
+              <div class="col col-xl-8">
+                <h2 class="container_caption-text">Блоки питания шины</h2>
+              </div>
+            </div>
+          </div>
+          <div class="cards-series__list animation-element">
+            <div class="container">
+              <div class="row">
+                      <div class="col-6 col-md-3" data-filter='{"category":"bus-power-supplies","type":"builtin","color":["black"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/bus-power-supplies/1.jpg" alt="" loading="lazy">
+                          </div>
+                          <p class="cards-series__signature">Блок питания шины DALI MW</p></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section_filtered">
+        <div class="cards-series">
+          <div class="container container_caption animation-element">
+            <div class="row">
+              <div class="col col-xl-8">
+                <h2 class="container_caption-text">Управление</h2>
+              </div>
+            </div>
+          </div>
+          <div class="cards-series__list animation-element">
+            <div class="container">
+              <div class="row">
+                      <div class="col-6 col-md-3" data-filter='{"category":"controls","type":"overhead","color":["black","white"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/сontrol/1.jpg" alt="" loading="lazy">
+                            <div class="cards-series__badge-list"><span class="cards-series__badge-item">Новинка</span>
+                              <div class="cards-series__badge-item cards-series__badge-item_waterproof">IP 44<i></i></div>
+                            </div>
+                          </div>
+                          <p class="cards-series__signature">Модуль для беспроводного управления CBU-DCS</p></a></div>
+                      <div class="col-6 col-md-3" data-filter='{"category":"controls","type":"stretch","color":["black","white","gold","bicolor"]}'><a class="cards-series__item" href="#">
+                          <div class="cards-series__body"><img class="cards-series__pic active" data-type="black" src="https://aws.massive.ru/technolight/images/cards/сontrol/1.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="white" src="https://aws.massive.ru/technolight/images/cards/сontrol/1.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="gold" src="https://aws.massive.ru/technolight/images/cards/сontrol/1.jpg" alt="" loading="lazy"><img class="cards-series__pic" data-type="bicolor" src="https://aws.massive.ru/technolight/images/cards/сontrol/1.jpg" alt="" loading="lazy">
+                            <ul class="cards-series__controls">
+                              <li class="cards-series__tab cards-series__tab_black active" data-target-type="black"></li>
+                              <li class="cards-series__tab cards-series__tab_white" data-target-type="white"></li>
+                              <li class="cards-series__tab cards-series__tab_gold" data-target-type="gold"></li>
+                              <li class="cards-series__tab cards-series__tab_bicolor" data-target-type="bicolor"></li>
+                            </ul>
+                          </div>
+                          <p class="cards-series__signature">Модуль для беспроводного управления CBU-ASD</p></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" id="footer">
+      <div class="footer__nav d-lg-none">
+        <ul>
+          <li><a class="footer__nav-link footer__nav-link_home" href="#"><i></i><span>Главная</span></a></li>
+          <li><a class="footer__nav-link footer__nav-link_call" href="#"><i></i><span>Позвонить</span></a></li>
+          <li><a class="footer__nav-link footer__nav-link_cart" href="#"><i></i><span>Корзина</span></a></li>
+          <li><a class="footer__nav-link footer__nav-link_account" href="#"><i></i><span>Аккаунт</span></a></li>
+          <li>
+            <!-- Активной ссылке, добавляем класс .active-->
+            <button class="footer__nav-link footer__nav-link_menu"><i></i><span>Меню</span></button>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__cards">
+        <div class="container container_caption">
+          <div class="row">
+            <div class="col col-xl-8">
+              <h2 class="container_caption-text">Остались вопросы и нужна персональная консультация?</h2>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <ul class="footer__cards-list">
+                <li class="footer__cards-item">
+                  <!-- Если карточка не ссылка, то вместо тега <a> используем обычный div-->
+                  <div class="footer__cards-body"><i class="footer__cards-icon footer__cards-icon_connect"></i>
+                    <div class="footer__cards-content">
+                      <div class="footer__cards-title">Звоните или пишите</div>
+                      <p class="footer__cards-description">
+                        <!-- В телефонном номере недо должно быть пробелов и других символов кроме цифр и +--><a href="tel:+74957977251">+7 495-797-72-51</a><a href="https://wa.me/74957470564" target="_blank">+7 495-747-05-64 (WhatsApp)</a><a href="mailto:order@technolight.ru">order@technolight.ru</a>
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="footer__cards-item">
+                  <!-- Если карточка ссылка, то класс-модификатор .footer__cards-body_link--><a class="footer__cards-body footer__cards-body_link" href="#"><i class="footer__cards-icon footer__cards-icon_calc"></i>
+                    <div class="footer__cards-content">
+                      <!-- Если карточка ссылка, то к заголовку добавляем класс-модификатор .footer__cards-title_link-->
+                      <div class="footer__cards-title footer__cards-title_link">Расчет освещенности</div>
+                      <p class="footer__cards-description">Заказывайте проект по свету у специалистов нашей компании и получайте профессиональную консультацию.</p>
+                    </div></a>
+                </li>
+                <li class="footer__cards-item"><a class="footer__cards-body footer__cards-body_link" href="#"><i class="footer__cards-icon footer__cards-icon_download"></i>
+                    <div class="footer__cards-content">
+                      <div class="footer__cards-title footer__cards-title_link">Файлы для скачивания</div>
+                      <p class="footer__cards-description">Последние версии каталогов, технические спецификации, IES-файлы и прочая документация.</p>
+                    </div></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__body">
+        <div class="footer__caption">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="footer__logo"><a class="logo-light" href=""></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__menu">
+          <div class="container">
+            <div class="row">
+              <div class="col-6 col-md-3">
+                <h3 class="footer__list-title"><span>Продукция</span></h3>
+                <ul class="footer__list">
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Трековая система PROFI 48V</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Модульные светильники DOT 220V</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Вспомогательная продукция</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Вся продукция</a></li>
+                </ul>
+              </div>
+              <div class="col-6 col-md-3">
+                <h3 class="footer__list-title"><span>Где купить</span></h3>
+                <ul class="footer__list">
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Адреса магизинов</a></li>
+                </ul>
+              </div>
+              <div class="col-6 col-md-3">
+                <h3 class="footer__list-title"><span>Поддержка</span></h3>
+                <ul class="footer__list">
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Оплата и доставка</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Гарантия качества</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Обмен и возврат</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Подбор ассортимента</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Видео сборки светильников</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Расчет освещенности</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Скачать</a></li>
+                </ul>
+              </div>
+              <div class="col-6 col-md-3">
+                <h3 class="footer__list-title"><span>Компания</span></h3>
+                <ul class="footer__list">
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Наши проекты</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Жизнь компании</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Торговая марка</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Дизайн и качество</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Отдел разработки</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Сотрудничество</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Контакты</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__line">
+          <div class="container"></div>
+        </div>
+        <div class="footer__location">
+          <div class="container">
+            <h3 class="footer__location-title">Центральный офис в Москве</h3>
+            <p class="footer__location-place">ARTPLAY центр дизайна, 105120, Москва, Нижняя Сыромятническая, д* 10 стр* 2</p>
+            <ul class="footer__location-list">
+              <li class="footer__location-item"><a href="tel:+74957977251">+7 495-797-72-51</a></li>
+              <li class="footer__location-item"><a href="https://wa.me/74957470564" target="_blank">+7 495-747-05-64 (WhatsApp)</a></li>
+              <li class="footer__location-item"><a href="mailto:order@technolight.ru">order@technolight.ru</a></li>
+            </ul>
+            <div class="footer__location-socials"><a class="social social_telegram" href="https://t.me/technolight_official" target="_blank"></a><a class="social social_vk" href="https://vk.com/technolightru" target="_blank"></a><a class="social social_youtube" href="https://www.youtube.com/channel/UCt3wRyz1Z8b-WOlCHz43CuQ" target="_blank"></a></div>
+          </div>
+        </div>
+        <div class="footer__line">
+          <div class="container"></div>
+        </div>
+        <div class="footer__copy">
+          <div class="container">
+            <div class="footer__copy-content">
+              <p><a href="#">Договор оферта</a></p>
+              <p>© Technolight</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="spinner" id="spinner">
+      <div class="spinner__body">
+        <div class="spinner__item"></div>
+        <div class="spinner__item"></div>
+        <div class="spinner__item"></div>
+      </div>
+    </div>
+    <div class="scroll-to-top" id="scrollToTop"><span class="scroll-to-top__pic"></span></div>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js" defer></script>
+    <script src="js/pages/series.min.js" defer></script>
+  </body>
+</html>
