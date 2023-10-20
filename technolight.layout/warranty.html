@@ -16,9 +16,9 @@
     <link rel="preload" href="css/main.min.css" as="style">
     <link rel="stylesheet" href="css/vendor.min.css">
     <link rel="stylesheet" href="css/main.min.css">
-    <link rel="stylesheet" href="css/pages/home.min.css">
+    <link rel="stylesheet" href="css/pages/warranty.min.css">
   </head>
-  <body class="transition-blocker page-home" id="body">
+  <body class="transition-blocker page-warranty" id="body">
     <header class="header" id="header">
       <div class="header__modal-back"></div>
       <div class="container">
@@ -126,247 +126,38 @@
       </div>
     </header>
     <main class="main" id="main">
-      <section class="billboard inactive">
-        <div class="billboard__slider">
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="billboard__container">
-                  <!-- Можно вставлять либо img либо video с классом .billboard__content-->
-                  <!-- Только для видео адрес пишем в data-src Для картинок браузерная ленивая загрузка-->
-                  <video class="billboard__content" src="" data-src="https://technolight.ru/assets/images/main-page/technolight_ru_9x16.mp4" playsinline loop></video>
-                  <!-- Если для слайда используется картинка а не видео, то picture вместо класса .billboard__poster добавляем класс .billboard__content-->
-                  <picture class="billboard__poster">
-                    <source media="(max-width: 767px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-1-mob.jpg">
-                    <source media="(min-width: 768px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-1-tab.jpg">
-                    <source media="(min-width: 1200px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-1-desc.jpg"><img src="https://aws.massive.ru/technolight/images/billboard/poster-1-desc.jpg" loading="lazy" alt="">
-                  </picture>
-                  <!-- Если на странице нужна ссылка, добавляем блок с кнопкой-->
-                  <div class="billboard__link"><a class="btn btn_billboard" href=""><i></i><span>Ссылка на билборде</span></a></div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="billboard__container">
-                  <picture class="billboard__content">
-                    <source media="(max-width: 767px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-2-mob.jpg">
-                    <source media="(min-width: 768px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-2-tab.jpg">
-                    <source media="(min-width: 1200px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-2-desc.jpg"><img src="https://aws.massive.ru/technolight/images/billboard/poster-2-desc.jpg" loading="lazy" alt="">
-                  </picture>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="billboard__container">
-                  <video class="billboard__content" src="" data-src="https://technolight.ru/assets/images/menu-pics/1_Badroom_white.mp4" playsinline loop></video>
-                  <picture class="billboard__poster">
-                    <source media="(max-width: 767px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-3-mob.jpg">
-                    <source media="(min-width: 768px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-3-tab.jpg">
-                    <source media="(min-width: 1200px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-3-desc.jpg"><img src="https://aws.massive.ru/technolight/images/billboard/poster-3-desc.jpg" loading="lazy" alt="">
-                  </picture>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="billboard__container">
-                  <video class="billboard__content" src="" data-src="https://technolight.ru/assets/images/menu-pics/2_Bathroom_black.mp4" playsinline loop></video>
-                  <picture class="billboard__poster">
-                    <source media="(max-width: 767px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-4-mob.jpg">
-                    <source media="(min-width: 768px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-4-tab.jpg">
-                    <source media="(min-width: 1200px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-4-desc.jpg"><img src="https://aws.massive.ru/technolight/images/billboard/poster-4-desc.jpg" loading="lazy" alt="">
-                  </picture>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="billboard__container">
-                  <video class="billboard__content" src="" data-src="https://technolight.ru/assets/images/menu-pics/5_Interior%20Badroom%20Black_.mp4" playsinline loop></video>
-                  <picture class="billboard__poster">
-                    <source media="(max-width: 767px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-5-mob.jpg">
-                    <source media="(min-width: 768px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-5-tab.jpg">
-                    <source media="(min-width: 1200px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-5-desc.jpg"><img src="https://aws.massive.ru/technolight/images/billboard/poster-5-desc.jpg" loading="lazy" alt="">
-                  </picture>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="billboard__container">
-                  <video class="billboard__content" src="" data-src="https://technolight.ru/assets/images/main-page/dot-220v_lego.mp4" playsinline loop></video>
-                  <picture class="billboard__poster">
-                    <source media="(max-width: 767px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-6-mob.jpg">
-                    <source media="(min-width: 768px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-6-tab.jpg">
-                    <source media="(min-width: 1200px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-6-desc.jpg"><img src="https://aws.massive.ru/technolight/images/billboard/poster-6-desc.jpg" loading="lazy" alt="">
-                  </picture>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="billboard__container">
-                  <picture class="billboard__content">
-                    <source media="(max-width: 767px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-7-mob.jpg">
-                    <source media="(min-width: 768px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-7-tab.jpg">
-                    <source media="(min-width: 1200px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-7-desc.jpg"><img src="https://aws.massive.ru/technolight/images/billboard/poster-7-desc.jpg" loading="lazy" alt="">
-                  </picture>
-                  <div class="billboard__link"><a class="btn btn_billboard" href="https://technolight.ru/" target="_blank"><i></i><span>Посмотреть DOT 220V</span></a></div>
-                </div>
-              </div>
-            </div>
-            <div class="billboard__pagination">
-              <div class="billboard__page billboard__page_current"></div>
-              <div class="swiper-pagination"></div>
-              <div class="billboard__page billboard__page_all"></div>
-            </div>
-          </div>
-        </div>
-        <div class="billboard__message">
-          <p>скроль вниз</p><a href="#projects"><span></span></a>
-        </div>
-      </section>
-      <section class="section" id="projects">
-        <div class="projects">
-          <div class="container container_caption animation-element">
-            <div class="row">
-              <div class="col col-xl-8">
-                <h2 class="container_caption-text">Наши проекты</h2>
-              </div>
-            </div>
-          </div>
-          <div class="projects__list animation-element">
-            <div class="container">
-              <div class="row">
-                <div class="col-12 col-sm-6 col-lg-4"><a class="projects__card" href="#">
-                    <div class="projects__desc">Освещение TECHNOLIGHT в новом офисе OnProekt, в котором всё Освещение TECHNOLIGHT в новом офисе OnProekt, в котором всё</div>
-                    <div class="projects__pic"><img src="https://aws.massive.ru/technolight/images/home/project-1.jpg" alt="" loading="lazy"></div>
-                    <div class="projects__action">
-                      <p>Смотреть полностью проект</p>
-                      <mark></mark>
-                    </div></a></div>
-                <div class="col-12 col-sm-6 col-lg-4"><a class="projects__card" href="#">
-                    <div class="projects__desc">Калуга. ЖК «Комфорт Парк»</div>
-                    <div class="projects__pic"><img src="https://aws.massive.ru/technolight/images/home/project-2.jpg" alt="" loading="lazy"></div>
-                    <div class="projects__action">
-                      <p>Смотреть полностью проект</p>
-                      <mark></mark>
-                    </div></a></div>
-                <div class="col-12 col-sm-6 col-lg-4"><a class="projects__card" href="#">
-                    <div class="projects__desc">ЖК «Небо» с основным освещением от TECHNOLIGHT</div>
-                    <div class="projects__pic"><img src="https://aws.massive.ru/technolight/images/home/project-3.jpg" alt="" loading="lazy"></div>
-                    <div class="projects__action">
-                      <p>Смотреть полностью проект</p>
-                      <mark></mark>
-                    </div></a></div>
-                <div class="col-12 col-sm-6 col-lg-4"><a class="projects__card" href="#">
-                    <div class="projects__desc">Москва. Современный интерьер от дизайнера Павла Алексеева</div>
-                    <div class="projects__pic"><img src="https://aws.massive.ru/technolight/images/home/project-4.jpg" alt="" loading="lazy"></div>
-                    <div class="projects__action">
-                      <p>Смотреть полностью проект</p>
-                      <mark></mark>
-                    </div></a></div>
-                <div class="col-12 col-sm-6 col-lg-4"><a class="projects__card" href="#">
-                    <div class="projects__desc">Сочи. Уютная студия</div>
-                    <div class="projects__pic"><img src="https://aws.massive.ru/technolight/images/home/project-5.jpg" alt="" loading="lazy"></div>
-                    <div class="projects__action">
-                      <p>Смотреть полностью проект</p>
-                      <mark></mark>
-                    </div></a></div>
-                <div class="col-12 col-sm-6 col-lg-4"><a class="projects__card" href="#">
-                    <div class="projects__desc">Пермь. Квартира с элементами лофта для семейной пары с ребенком.</div>
-                    <div class="projects__pic"><img src="https://aws.massive.ru/technolight/images/home/project-6.jpg" alt="" loading="lazy"></div>
-                    <div class="projects__action">
-                      <p>Смотреть полностью проект</p>
-                      <mark></mark>
-                    </div></a></div>
-              </div>
-            </div>
-          </div>
-          <div class="projects__button">
-            <div class="container"><a class="btn btn_dark btn_block" href="#"><span>Смотреть все проекты</span></a></div>
-          </div>
+      <section class="section section_breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumbs animation-element">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Компания</a></li>
+            <li><span>Страница не найдена</span></li>
+          </ul>
         </div>
       </section>
       <section class="section">
-        <div class="life">
+        <div class="warranty">
           <div class="container container_caption animation-element">
             <div class="row">
               <div class="col col-xl-8">
-                <h2 class="container_caption-text">Жизнь компании</h2>
+                <h2 class="container_caption-text">Гарантия качества</h2>
               </div>
             </div>
           </div>
-          <div class="life__sliders animation-element">
+          <div class="warranty__body animation-element">
             <div class="container">
               <div class="row">
-                <div class="col-12 col-md-6 col-lg-4">
-                  <div class="life__content">
-                    <div class="swiper">
-                      <!-- Additional required wrapper-->
-                      <div class="swiper-wrapper">
-                        <!-- Slides-->
-                        <div class="swiper-slide">
-                          <div class="life__content-slide"><a class="life__caption" href="#">
-                              <h3 class="life__title" data-swiper-parallax-x="-200" data-swiper-parallax-duration="600">TECHNOLIGHT на выставке Interlight Russia 2023</h3>
-                              <p class="life__subtitle" data-swiper-parallax-x="-200" data-swiper-parallax-duration="700">Команда TECHNOLIGHT приняла участие в выставке Interlight Russia 2023</p></a>
-                            <div class="life__preview" data-swiper-parallax-opacity="0" data-swiper-parallax-x="-200" data-swiper-parallax-duration="800"><img src="https://aws.massive.ru/technolight/images/home/life-1-small.jpg" alt="" loading="lazy"></div>
-                          </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="life__content-slide"><a class="life__caption" href="#">
-                              <h3 class="life__title" data-swiper-parallax-x="-200" data-swiper-parallax-duration="600">RUSSIAN DESIGN DAYS и форум архитекторов и дизайнеров.</h3>
-                              <p class="life__subtitle" data-swiper-parallax-x="-200" data-swiper-parallax-duration="700">Концептуальная выставка новинок и трендов в дизайне и архитектуре, а также форум дизайнеров и архитекторов в Самаре представил наш партнер - компания “Аура дома”. Они показали все возможности и идеи для красивого интерьера с помощью натяжных потолков, последние новинки, профильные системы и освещение.</p></a>
-                            <div class="life__preview" data-swiper-parallax-opacity="0" data-swiper-parallax-x="-200" data-swiper-parallax-duration="800"><img src="https://aws.massive.ru/technolight/images/home/life-1-big.jpg" alt="" loading="lazy"></div>
-                          </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="life__content-slide"><a class="life__caption" href="#">
-                              <h3 class="life__title" data-swiper-parallax-x="-200" data-swiper-parallax-duration="600">ВОРКШОП ДЛЯ ДИЗАЙНЕРОВ И АРХИТЕКТОРОВ</h3>
-                              <p class="life__subtitle" data-swiper-parallax-x="-200" data-swiper-parallax-duration="700">Для любого дизайнера и архитектора очень важно своевременно получать информацию от производителей, и гораздо проще сделать это в формате личного общения в рамках воркшопа. Ведь именно так можно получить живую обратную связь и практические навыки на мастер-классах, а еще - разобрать сложные моменты в своих проектах вместе с экспертами для усиления собственных компетенций.</p></a>
-                            <div class="life__preview" data-swiper-parallax-opacity="0" data-swiper-parallax-x="-200" data-swiper-parallax-duration="800"><img src="https://aws.massive.ru/technolight/images/home/life-2-big.jpg" alt="" loading="lazy"></div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="life__pagination">
-                        <div class="life__page life__page_current"></div>
-                        <div class="swiper-pagination"></div>
-                        <div class="life__page life__page_all"></div>
-                      </div>
-                    </div>
+                <div class="col-12 col-lg-6 col-xl-4">
+                  <div class="warranty__content">
+                    <p class="warranty__description">Гарантия качества — это одна из наших основных задач, наряду с контролем запасов, в обеспечении контроля процесса производства, которое заключается в планировании, руководстве, организации и контроле производства с целью достижения необходимого уровня качества.</p>
+                    <p class="warranty__text">На всю продукцию торговой марки Technolight® распространяется официальная гарантия.</p>
                   </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-8">
-                  <div class="life__billboard">
-                    <div class="swiper">
-                      <!-- Additional required wrapper-->
-                      <div class="swiper-wrapper">
-                        <!-- Slides-->
-                        <div class="swiper-slide"><a class="life__billboard-slide" href="#"><img src="https://aws.massive.ru/technolight/images/home/life-1-big.jpg" alt="" loading="lazy"></a></div>
-                        <div class="swiper-slide"><a class="life__billboard-slide" href="#"><img src="https://aws.massive.ru/technolight/images/home/life-2-big.jpg" alt="" loading="lazy"></a></div>
-                        <div class="swiper-slide"><a class="life__billboard-slide" href="#"><img src="https://aws.massive.ru/technolight/images/home/life-3-big.jpg" alt="" loading="lazy"></a></div>
-                      </div>
-                    </div>
-                  </div>
+                <div class="col-12 col-lg-6 col-xl-8">
+                  <div class="warranty__pic"><img src="https://aws.massive.ru/technolight/images/warranty.jpg" alt="" loading="lazy"></div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="life__button">
-            <div class="container"><a class="btn btn_dark btn_block" href="#"><span>Подробнее о компании</span></a></div>
-          </div>
-        </div>
-      </section>
-      <section class="section">
-        <div class="home-about">
-          <div class="container container_caption animation-element">
-            <div class="row">
-              <div class="col col-xl-8">
-                <h2 class="container_caption-text">О компании</h2>
-              </div>
-            </div>
-          </div>
-          <div class="home-about__content animation-element">
-            <div class="container">
-              <div class="row">
-                <div class="col-12 col-lg-6">
-                  <div class="home-about__cards home-about__cards_single"><a class="home-about__link home-about__link_brand" href="#"><img class="home-about__pic" src="https://aws.massive.ru/technolight/images/home/brand.jpg" alt="" loading="lazy">
-                      <p class="home-about__text home-about__text_light">Торговая марка</p></a></div>
-                </div>
-                <div class="col-12 col-lg-6">
-                  <div class="home-about__cards"><a class="home-about__link home-about__link_garanty" href="#"><img class="home-about__pic" src="https://aws.massive.ru/technolight/images/home/garanty.jpg" alt="" loading="lazy">
-                      <p class="home-about__text home-about__text_dark">Гарантия качества</p></a><a class="home-about__link home-about__link_locations" href="#"><img class="home-about__pic" src="https://aws.massive.ru/technolight/images/home/locations.jpg" alt="" loading="lazy">
-                      <p class="home-about__text home-about__text_light">Где купить?</p></a></div>
+                <div class="col-12">
+                  <p class="warranty__signature">Минимальный срок гарантии — 3 года.</p>
                 </div>
               </div>
             </div>
@@ -521,6 +312,6 @@
     <div class="scroll-to-top" id="scrollToTop"><span class="scroll-to-top__pic"></span></div>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js" defer></script>
-    <script src="js/pages/home.min.js" defer></script>
+    <script src="js/pages/warranty.min.js" defer></script>
   </body>
 </html>
