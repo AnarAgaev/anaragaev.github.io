@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="description">
+    <meta name="keywords" content="keywords">
+    <title>Analog Searching Demo</title>
+    <link rel="icon" type="image/png" href="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=">
+    <link rel="preload" href="css/main.css" as="style">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preload" href="css/main.min.css" as="style">
+    <link rel="stylesheet" href="css/main.min.css">
+  </head>
+  <!-- style не переносим!-->
+  <style>
+    .container {
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    
+  </style>
+  <body>
+    <div class="container">
+      <div class="asd">
+        <div class="asd__wrap">
+          <h1 class="asd__title">Попробовать поиск товара по фотографии</h1>
+          <div class="asd__tubs-types">
+            <button class="active" type="button" data-type="code">Поиск по артикулу</button>
+            <button type="button" data-type="url">Поиск по url</button>
+            <button type="button" data-type="image">Поиск по фото</button>
+          </div>
+          <div class="asd__container">
+            <div class="asd__column">
+              <form class="asd__form" action="">
+                <div class="asd__form-group">
+                  <label class="asd__label asd__label_text visible" data-type-target="code">
+                    <mark>Укажите Артикул товара</mark>
+                    <input placeholder="vendor code из фида">
+                  </label>
+                  <label class="asd__label asd__label_text" data-type-target="url">
+                    <mark>Укажите URL товара</mark>
+                    <input placeholder="https://example.com">
+                  </label>
+                  <label class="asd__label asd__label_text" data-type-target="image">
+                    <mark>Выберите картинку</mark>
+                    <input placeholder="">
+                  </label>
+                  <!-- Отключить бэйджим можно с помощью класса .invisible-->
+                  <div class="asd__res-count">
+                    <mark>A5090LM-5WG</mark><span></span>
+                  </div>
+                </div>
+                <div class="asd__form-group">
+                  <label class="asd__label asd__label_select">
+                    <mark>Выберите категорию, в которой осуществлять поиск</mark>
+                    <div class="asd__select">
+                      <div class="select-value"><span data-default-value="Все категории">Все категории</span><i></i></div>
+                      <div class="select-options">
+                        <ul class="asd__select-list">
+                          <li class="asd__select-item">
+                            <label>
+                              <input class="invisible" type="radio" name="temp" value="">
+                              <!-- Выделяем span с помощью класса active--><span class="value">Настольные лампы и ночники</span>
+                            </label>
+                          </li>
+                          <li class="asd__select-item">
+                            <label>
+                              <input class="invisible" type="radio" name="temp" value=""><span class="value">Офисное освещение</span>
+                            </label>
+                          </li>
+                          <li class="asd__select-item">
+                            <label>
+                              <input class="invisible" type="radio" name="temp" value=""><span class="value">Уличное освещение</span>
+                            </label>
+                          </li>
+                          <li class="asd__select-item">
+                            <label>
+                              <input class="invisible" type="radio" name="temp" value=""><span class="value">Подсветки</span>
+                            </label>
+                          </li>
+                          <li class="asd__select-item">
+                            <label>
+                              <input class="invisible" type="radio" name="temp" value=""><span class="value">Споты</span>
+                            </label>
+                            <ul class="asd__select-list">
+                              <li class="asd__select-item">
+                                <label>
+                                  <input class="invisible" type="radio" name="temp" value=""><span class="value">Элемент вложееного списка</span>
+                                </label>
+                              </li>
+                              <li class="asd__select-item">
+                                <label>
+                                  <input class="invisible" type="radio" name="temp" value=""><span class="value">Элемент вложееного списка</span>
+                                </label>
+                              </li>
+                              <li class="asd__select-item">
+                                <label>
+                                  <input class="invisible" type="radio" name="temp" value=""><span class="value">Элемент вложееного списка</span>
+                                  <ul class="asd__select-list">
+                                    <li class="asd__select-item">
+                                      <label>
+                                        <input class="invisible" type="radio" name="temp" value=""><span class="value">Элемент вложееного списка</span>
+                                      </label>
+                                    </li>
+                                    <li class="asd__select-item">
+                                      <label>
+                                        <input class="invisible" type="radio" name="temp" value=""><span class="value">Элемент вложееного списка</span>
+                                      </label>
+                                    </li>
+                                    <li class="asd__select-item">
+                                      <label>
+                                        <input class="invisible" type="radio" name="temp" value=""><span class="value">Элемент вложееного списка</span>
+                                        <ul class="asd__select-list">
+                                          <li class="asd__select-item">
+                                            <label>
+                                              <input class="invisible" type="radio" name="temp" value=""><span class="value">Элемент вложееного списка</span>
+                                            </label>
+                                          </li>
+                                          <li class="asd__select-item">
+                                            <label>
+                                              <input class="invisible" type="radio" name="temp" value=""><span class="value">Элемент вложееного списка</span>
+                                            </label>
+                                          </li>
+                                          <li class="asd__select-item">
+                                            <label>
+                                              <input class="invisible" type="radio" name="temp" value=""><span class="value">Длинный текст в любом из пунктов будет обрезаться и будут добавляться три точки</span>
+                                            </label>
+                                          </li>
+                                        </ul>
+                                      </label>
+                                    </li>
+                                  </ul>
+                                </label>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="asd__select-item">
+                            <label>
+                              <input class="invisible" type="radio" name="temp" value=""><span class="value">Торшеры</span>
+                            </label>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                <div class="asd__buttons-wrap">
+                  <button class="btn btn_block btn_base" type="button">Искать</button>
+                  <button class="btn btn_block btn_reset" type="reset">Сбросить</button>
+                </div>
+              </form>
+            </div>
+            <div class="asd__column">
+              <form class="asd__form" action="">
+                <div class="asd__form-group">
+                  <label class="asd__label asd__label_select">
+                    <mark>Выберите один из тестовых фидов</mark>
+                    <!-- Тоглим список через класс .dropped-->
+                    <div class="asd__select">
+                      <div class="select-value"><span data-default-value="Все фиды">Все фиды</span><i></i></div>
+                      <div class="select-options">
+                        <ul class="asd__select-list">
+                          <li class="asd__select-item">
+                            <label>
+                              <input class="invisible" type="reset"><span class="value">Все фиды</span>
+                            </label>
+                          </li>
+                          <li class="asd__select-item">
+                            <label>
+                              <input class="invisible" type="radio" name="temp" value="">
+                              <!-- Выделяем span с помощью класса active--><span class="value">mk.allconsoles.ru</span>
+                            </label>
+                          </li>
+                          <li class="asd__select-item">
+                            <label>
+                              <input class="invisible" type="radio" name="temp" value=""><span class="value">dealer.denkirs.ru</span>
+                            </label>
+                          </li>
+                          <li class="asd__select-item">
+                            <label>
+                              <input class="invisible" type="radio" name="temp" value=""><span class="value">fandeco.ru</span>
+                            </label>
+                          </li>
+                          <li class="asd__select-item">
+                            <label>
+                              <input class="invisible" type="radio" name="temp" value=""><span class="value">satro-paladin.com</span>
+                            </label>
+                          </li>
+                          <li class="asd__select-item">
+                            <label>
+                              <input class="invisible" type="radio" name="temp" value=""><span class="value">vashdommebel.ru</span>
+                            </label>
+                          </li>
+                          <li class="asd__select-item">
+                            <label>
+                              <input class="invisible" type="radio" name="temp" value=""><span class="value">swgshop.ru</span>
+                            </label>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                <label class="asd__label asd__label_text">
+                  <mark>Добавить свою выгрузку</mark>
+                  <input placeholder="URL фида в формате YML">
+                </label>
+                <button class="btn btn_lite" type="button">Добавить</button>
+              </form>
+            </div>
+          </div>
+          <div class="res-msg">
+            <p>Найдено:<span> более 10 000 товаров</span></p>
+          </div>
+          <div class="asd__container">
+            <div class="asd__column">
+              <div class="card">
+                <p class="text">В демо кабинете Вы можете попробовать поиск товара по одной из предоставленных выгрузок или загрузить свою выгрузку и оценить, как такой поиск будет работать на вашем сайте.</p>
+              </div>
+              <div class="card">
+                <p class="text">В демо кабинете Вы можете попробовать поиск товара по одной из предоставленных выгрузок или загрузить свою выгрузку и оценить, как такой поиск будет работать на вашем сайте.</p><a class="btn btn_base btn_small" href="#">Зарегистрироваться</a>
+              </div>
+            </div>
+            <div class="asd__column">
+              <div class="card">
+                <h3 class="title">Важно!</h3>
+                <p class="text">Фид должен быть в формате <a class="link" href="#">Яндекс YML</a></p>
+                <p class="text">Ограничения для демонстрационных целей - 5000 товаров. Т.е. из вашего фида будут взяты первые 5000 товаров. Время обработки такого файла ориенировочно 6 минут. Статус будет показан в процессе.</p>
+                <p class="text">После окончания обработки, фид будет доступен в выпадающем окне слева и можно будет попробовать осуществить поиск.</p>
+              </div>
+              <ul class="uploading">
+                <li class="uploading__item"><span class="uploading__text">Анализ корректности формата файла</span><span class="uploading__check uploading__check_checked"></span></li>
+                <li class="uploading__item"><span class="uploading__text">Скачивание изображений</span><span class="uploading__check uploading__check_loading"></span></li>
+                <li class="uploading__item"><span class="uploading__text">Создание Кропов (индексов изображений)</span><span class="uploading__check uploading__check_loading"></span></li>
+                <li class="uploading__item"><span class="uploading__text">Добавляем в поисковую базу</span><span class="uploading__check uploading__check_loading"></span></li>
+                <li class="uploading__item"><span class="uploading__text">Ура! Можно попробовать поиск</span><span class="uploading__check uploading__check_loading"></span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="asd__container">
+            <div class="asd__column">
+              <ul class="examples">
+                <li class="examples__item">
+                  <div class="examples__pic"><img src="https://aws.massive.ru/widget-img-analog/wb.png" alt="" loading="lazy"></div>
+                  <p class="examples__text">Как подобное решение внедрено на Wildberries?</p>
+                  <button class="link examples__link" type="button">Посмотреть</button>
+                </li>
+                <li class="examples__item">
+                  <div class="examples__pic"><img src="https://aws.massive.ru/widget-img-analog/ozon.png" alt="" loading="lazy"></div>
+                  <p class="examples__text">Как внедрено на Ozon?</p>
+                  <button class="link examples__link" type="button">Посмотреть</button>
+                </li>
+              </ul><a class="examples__button btn btn_base btn_block" href="#">Хочу также на своем интернет-магазине</a>
+            </div>
+          </div>
+        </div>
+        <div class="asd__wrap">
+          <h1 class="asd__title">Результаты поиска</h1>
+          <div class="results">
+            <div class="results__list">
+              <div class="results__item"><a class="results__card selected" href="#">
+                  <div class="results__pic"><img src="https://aws.massive.ru/widget-img-analog/1.jpg" alt="" loading="lazy"></div>
+                  <h3 class="results__title">ОРИГИНАЛ</h3>
+                  <p class="results__text">Адидас Маратон Осенние</p></a></div>
+              <div class="results__item"><a class="results__card" href="#">
+                  <div class="results__pic"><img src="https://aws.massive.ru/widget-img-analog/2.jpg" alt="" loading="lazy"></div>
+                  <h3 class="results__title">A9518LM-5BA</h3>
+                  <p class="results__text">Текст карточки длинной в две строки Текст карточки длинной в две строки</p></a></div>
+              <div class="results__item"><a class="results__card" href="#">
+                  <div class="results__pic"><img src="https://aws.massive.ru/widget-img-analog/3.jpg" alt="" loading="lazy"></div>
+                  <h3 class="results__title">A9518LM-5BA</h3>
+                  <p class="results__text">Текст карточки</p></a></div>
+              <div class="results__item"><a class="results__card" href="#">
+                  <div class="results__pic"><img src="https://aws.massive.ru/widget-img-analog/4.jpg" alt="" loading="lazy"></div>
+                  <h3 class="results__title">A9518LM-5BA</h3>
+                  <p class="results__text">Текст карточки</p></a></div>
+              <div class="results__item"><a class="results__card" href="#">
+                  <div class="results__pic"><img src="https://aws.massive.ru/widget-img-analog/5.jpg" alt="" loading="lazy"></div>
+                  <h3 class="results__title">A9518LM-5BA</h3>
+                  <p class="results__text">Текст карточки</p></a></div>
+              <div class="results__item"><a class="results__card" href="#">
+                  <div class="results__pic"><img src="https://aws.massive.ru/widget-img-analog/6.jpg" alt="" loading="lazy"></div>
+                  <h3 class="results__title">A9518LM-5BA</h3>
+                  <p class="results__text">Текст карточки</p></a></div>
+              <div class="results__item"><a class="results__card" href="#">
+                  <div class="results__pic"><img src="https://aws.massive.ru/widget-img-analog/7.jpg" alt="" loading="lazy"></div>
+                  <h3 class="results__title">A9518LM-5BA</h3>
+                  <p class="results__text">Текст карточки</p></a></div>
+              <div class="results__item"><a class="results__card" href="#">
+                  <div class="results__pic"><img src="https://aws.massive.ru/widget-img-analog/8.jpg" alt="" loading="lazy"></div>
+                  <h3 class="results__title">A9518LM-5BA</h3>
+                  <p class="results__text">Текст карточки</p></a></div>
+              <div class="results__item"><a class="results__card" href="#">
+                  <div class="results__pic"><img src="https://aws.massive.ru/widget-img-analog/9.jpg" alt="" loading="lazy"></div>
+                  <h3 class="results__title">A9518LM-5BA</h3>
+                  <p class="results__text">Текст карточки</p></a></div>
+              <div class="results__item"><a class="results__card" href="#">
+                  <div class="results__pic"><img src="https://aws.massive.ru/widget-img-analog/10.jpg" alt="" loading="lazy"></div>
+                  <h3 class="results__title">A9518LM-5BA</h3>
+                  <p class="results__text">Текст карточки</p></a></div>
+              <div class="results__item"><a class="results__card" href="#">
+                  <div class="results__pic"><img src="https://aws.massive.ru/widget-img-analog/11.jpg" alt="" loading="lazy"></div>
+                  <h3 class="results__title">A9518LM-5BA</h3>
+                  <p class="results__text">Текст карточки</p></a></div>
+              <div class="results__item"><a class="results__card" href="#">
+                  <div class="results__pic"><img src="https://aws.massive.ru/widget-img-analog/12.jpg" alt="" loading="lazy"></div>
+                  <h3 class="results__title">A9518LM-5BA</h3>
+                  <p class="results__text">Текст карточки</p></a></div>
+              <div class="results__item"><a class="results__card" href="#">
+                  <div class="results__pic"><img src="https://aws.massive.ru/widget-img-analog/13.jpg" alt="" loading="lazy"></div>
+                  <h3 class="results__title">A9518LM-5BA</h3>
+                  <p class="results__text">Текст карточки</p></a></div>
+              <div class="results__item"><a class="results__card" href="#">
+                  <div class="results__pic"><img src="https://aws.massive.ru/widget-img-analog/14.jpg" alt="" loading="lazy"></div>
+                  <h3 class="results__title">A9518LM-5BA</h3>
+                  <p class="results__text">Текст карточки</p></a></div>
+              <div class="results__item"><a class="results__card" href="#">
+                  <div class="results__pic"><img src="https://aws.massive.ru/widget-img-analog/15.jpg" alt="" loading="lazy"></div>
+                  <h3 class="results__title">A9518LM-5BA</h3>
+                  <p class="results__text">Текст карточки</p></a></div>
+              <div class="results__item"><a class="results__card" href="#">
+                  <div class="results__pic"><img src="https://aws.massive.ru/widget-img-analog/16.jpg" alt="" loading="lazy"></div>
+                  <h3 class="results__title">A9518LM-5BA</h3>
+                  <p class="results__text">Текст карточки</p></a></div>
+              <div class="results__item"><a class="results__card" href="#">
+                  <div class="results__pic"><img src="https://aws.massive.ru/widget-img-analog/17.jpg" alt="" loading="lazy"></div>
+                  <h3 class="results__title">A9518LM-5BA</h3>
+                  <p class="results__text">Текст карточки</p></a></div>
+              <div class="results__item"><a class="results__card" href="#">
+                  <div class="results__pic"><img src="https://aws.massive.ru/widget-img-analog/18.jpg" alt="" loading="lazy"></div>
+                  <h3 class="results__title">A9518LM-5BA</h3>
+                  <p class="results__text">Текст карточки</p></a></div>
+              <div class="results__item"><a class="results__card" href="#">
+                  <div class="results__pic"><img src="https://aws.massive.ru/widget-img-analog/19.jpg" alt="" loading="lazy"></div>
+                  <h3 class="results__title">A9518LM-5BA</h3>
+                  <p class="results__text">Текст карточки</p></a></div>
+              <div class="results__item"><a class="results__card" href="#">
+                  <div class="results__pic"><img src="https://aws.massive.ru/widget-img-analog/20.jpg" alt="" loading="lazy"></div>
+                  <h3 class="results__title">A9518LM-5BA</h3>
+                  <p class="results__text">Текст карточки</p></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.min.js" defer></script>
+  </body>
+</html>
