@@ -21,40 +21,52 @@
         margin: 0 auto;
     }
     
+    html, body {
+        margin: 20px 0;
+        padding: 0;
+    }
+    
   </style>
   <body>
     <div class="container">
       <div class="asd">
         <div class="asd__wrap">
           <h1 class="asd__title">Попробовать поиск товара по фотографии</h1>
-          <div class="asd__tubs-types">
+          <div class="asd__tubs-columns">
+            <button class="active" type="button" data-target-selector="#searchForm">Указать параметы</button>
+            <button type="button" data-target-selector="#feedForm">Добавить свою выгрузку</button>
+          </div>
+          <div class="asd__tubs-types" id="tubsTypes">
             <button class="active" type="button" data-type="code">Поиск по артикулу</button>
             <button type="button" data-type="url">Поиск по url</button>
             <button type="button" data-type="image">Поиск по фото</button>
           </div>
           <div class="asd__container">
-            <div class="asd__column">
+            <div class="asd__column asd__column_toggle active" id="searchForm">
               <form class="asd__form" action="">
                 <div class="asd__form-group">
-                  <label class="asd__label asd__label_text visible" data-type-target="code">
+                  <label class="asd__label visible" data-type-target="code">
                     <mark>Укажите Артикул товара</mark>
-                    <input placeholder="vendor code из фида">
+                    <input placeholder="vendor code из фида" id="asdInputCode">
                   </label>
-                  <label class="asd__label asd__label_text" data-type-target="url">
+                  <label class="asd__label" data-type-target="url">
                     <mark>Укажите URL товара</mark>
-                    <input placeholder="https://example.com">
+                    <input placeholder="https://example.com" id="asdInputUrl">
                   </label>
-                  <label class="asd__label asd__label_text" data-type-target="image">
-                    <mark>Выберите картинку</mark>
-                    <input placeholder="">
-                  </label>
+                  <div class="asd__label" data-type-target="image">
+                    <mark>Загрузите фото товара</mark>
+                    <div class="asd__file-input">
+                      <input class="invisible" id="asdInputfile" type="file" name="image" accept=".jpg, .jpeg, .png, .webp">
+                      <label for="asdInputfile">Выберите файл</label><span data-default-value="Файл не выбран">Файл не выбран</span>
+                    </div>
+                  </div>
                   <!-- Отключить бэйджим можно с помощью класса .invisible-->
                   <div class="asd__res-count">
                     <mark>A5090LM-5WG</mark><span></span>
                   </div>
                 </div>
                 <div class="asd__form-group">
-                  <label class="asd__label asd__label_select">
+                  <label class="asd__label">
                     <mark>Выберите категорию, в которой осуществлять поиск</mark>
                     <div class="asd__select">
                       <div class="select-value"><span data-default-value="Все категории">Все категории</span><i></i></div>
@@ -148,12 +160,12 @@
                   </label>
                 </div>
                 <div class="asd__buttons-wrap">
-                  <button class="btn btn_block btn_base" type="button">Искать</button>
+                  <button class="btn btn_block btn_base" id="searchAnalogButton" type="button">Искать</button>
                   <button class="btn btn_block btn_reset" type="reset">Сбросить</button>
                 </div>
               </form>
             </div>
-            <div class="asd__column">
+            <div class="asd__column asd__column_toggle" id="feedForm">
               <form class="asd__form" action="">
                 <div class="asd__form-group">
                   <label class="asd__label asd__label_select">
@@ -204,61 +216,55 @@
                     </div>
                   </label>
                 </div>
-                <label class="asd__label asd__label_text">
-                  <mark>Добавить свою выгрузку</mark>
+                <label class="asd__label asd__feed-selector collapsed">
+                  <mark>Добавить свою выгрузку<span class="points" type="button"><span></span><span></span><span></span></span></mark>
                   <input placeholder="URL фида в формате YML">
                 </label>
-                <button class="btn btn_lite" type="button">Добавить</button>
+                <button class="btn btn_lite" id="addUserFeedButton" type="button" data-modal-title="Ошибка" data-modal-text="Вы не добавили Фид. Необходимо указать URL фида в формате YML">Добавить</button>
+                <div class="card info">
+                  <p class="text">В демо кабинете Вы можете попробовать поиск товара по одной из предоставленных выгрузок или загрузить свою выгрузку и оценить, как такой поиск будет работать на вашем сайте.</p>
+                </div>
               </form>
             </div>
           </div>
-          <div class="res-msg">
-            <p>Найдено:<span> более 10 000 товаров</span></p>
-          </div>
           <div class="asd__container">
-            <div class="asd__column">
-              <div class="card">
-                <p class="text">В демо кабинете Вы можете попробовать поиск товара по одной из предоставленных выгрузок или загрузить свою выгрузку и оценить, как такой поиск будет работать на вашем сайте.</p>
-              </div>
-              <div class="card">
-                <p class="text">В демо кабинете Вы можете попробовать поиск товара по одной из предоставленных выгрузок или загрузить свою выгрузку и оценить, как такой поиск будет работать на вашем сайте.</p><a class="btn btn_base btn_small" href="#">Зарегистрироваться</a>
-              </div>
+            <div class="asd__column" id="examples">
+              <ul class="examples">
+                <li class="examples__item">
+                  <div class="examples__pic"><img src="https://aws.massive.ru/widget-img-analog/wb.png" alt="" loading="lazy"></div>
+                  <p class="examples__text">Как подобное решение внедрено на Wildberries?</p>
+                  <button class="link examples__link" type="button" data-src="https://aws.massive.ru/widget-img-analog/example.wb.png">Посмотреть</button>
+                </li>
+                <li class="examples__item">
+                  <div class="examples__pic"><img src="https://aws.massive.ru/widget-img-analog/ozon.png" alt="" loading="lazy"></div>
+                  <p class="examples__text">Как внедрено на Ozon?</p>
+                  <button class="link examples__link" type="button" data-src="https://aws.massive.ru/widget-img-analog/example.ozon.png">Посмотреть</button>
+                </li>
+              </ul><a class="examples__button btn btn_base btn_block" href="#">Хочу также на своем интернет-магазине</a>
             </div>
-            <div class="asd__column">
-              <div class="card">
+            <div class="asd__column" id="warning">
+              <div class="card warning hidden">
                 <h3 class="title">Важно!</h3>
                 <p class="text">Фид должен быть в формате <a class="link" href="#">Яндекс YML</a></p>
                 <p class="text">Ограничения для демонстрационных целей - 5000 товаров. Т.е. из вашего фида будут взяты первые 5000 товаров. Время обработки такого файла ориенировочно 6 минут. Статус будет показан в процессе.</p>
                 <p class="text">После окончания обработки, фид будет доступен в выпадающем окне слева и можно будет попробовать осуществить поиск.</p>
               </div>
-              <ul class="uploading">
-                <li class="uploading__item"><span class="uploading__text">Анализ корректности формата файла</span><span class="uploading__check uploading__check_checked"></span></li>
-                <li class="uploading__item"><span class="uploading__text">Скачивание изображений</span><span class="uploading__check uploading__check_loading"></span></li>
-                <li class="uploading__item"><span class="uploading__text">Создание Кропов (индексов изображений)</span><span class="uploading__check uploading__check_loading"></span></li>
-                <li class="uploading__item"><span class="uploading__text">Добавляем в поисковую базу</span><span class="uploading__check uploading__check_loading"></span></li>
-                <li class="uploading__item"><span class="uploading__text">Ура! Можно попробовать поиск</span><span class="uploading__check uploading__check_loading"></span></li>
+              <ul class="uploading hidden">
+                <li class="uploading__item hidden">
+                  <!-- Для переключения классов используем .uploading__check_loading и .uploading__check_checked--><span class="uploading__text">Анализ корректности формата файла</span><span class="uploading__check uploading__check_loading"></span>
+                </li>
+                <li class="uploading__item hidden"><span class="uploading__text">Скачивание изображений</span><span class="uploading__check uploading__check_loading"></span></li>
+                <li class="uploading__item hidden"><span class="uploading__text">Создание Кропов (индексов изображений)</span><span class="uploading__check uploading__check_loading"></span></li>
+                <li class="uploading__item hidden"><span class="uploading__text">Добавляем в поисковую базу</span><span class="uploading__check uploading__check_loading"></span></li>
+                <li class="uploading__item hidden"><span class="uploading__text">Ура! Можно попробовать поиск</span><span class="uploading__check uploading__check_loading"></span></li>
               </ul>
             </div>
           </div>
-          <div class="asd__container">
-            <div class="asd__column">
-              <ul class="examples">
-                <li class="examples__item">
-                  <div class="examples__pic"><img src="https://aws.massive.ru/widget-img-analog/wb.png" alt="" loading="lazy"></div>
-                  <p class="examples__text">Как подобное решение внедрено на Wildberries?</p>
-                  <button class="link examples__link" type="button">Посмотреть</button>
-                </li>
-                <li class="examples__item">
-                  <div class="examples__pic"><img src="https://aws.massive.ru/widget-img-analog/ozon.png" alt="" loading="lazy"></div>
-                  <p class="examples__text">Как внедрено на Ozon?</p>
-                  <button class="link examples__link" type="button">Посмотреть</button>
-                </li>
-              </ul><a class="examples__button btn btn_base btn_block" href="#">Хочу также на своем интернет-магазине</a>
-            </div>
-          </div>
         </div>
-        <div class="asd__wrap">
-          <h1 class="asd__title">Результаты поиска</h1>
+        <div class="asd__wrap hidden" id="results">
+          <div class="res-msg">
+            <p>Найдено:<span> более 10 000 товаров</span></p>
+          </div>
           <div class="results">
             <div class="results__list">
               <div class="results__item"><a class="results__card selected" href="#">
@@ -342,6 +348,19 @@
                   <h3 class="results__title">A9518LM-5BA</h3>
                   <p class="results__text">Текст карточки</p></a></div>
             </div>
+            <div class="results__button"><a class="btn btn_base" href="#">Хочу также на своем интернет-магазине</a></div>
+          </div>
+        </div>
+        <div class="modal hidden" id="asdModal">
+          <div class="modal__body">
+            <h3 class="modal__title"></h3>
+            <p class="modal__text"></p><span class="modal__line"></span>
+            <button class="close" type="button">Закрыть</button>
+          </div>
+        </div>
+        <div class="modal modal_example hidden" id="asdModalExample">
+          <div class="modal__body"><img class="modal__pic" src="" alt="">
+            <button class="close" type="button"></button>
           </div>
         </div>
       </div>
