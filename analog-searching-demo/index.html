@@ -18,10 +18,12 @@
         max-width: 1400px;
         margin: 0 auto;
     }
+    
     html, body {
         margin: 20px 0;
         padding: 0;
     }
+    
   </style>
   <body>
     <div class="container">
@@ -41,7 +43,7 @@
             <div class="asd__column asd__column_toggle active" id="searchForm">
               <form class="asd__form" action="">
                 <div class="asd__form-group">
-                  <label class="asd__label visible" data-type-target="code">
+                  <label class="asd__label" data-type-target="code">
                     <mark>Укажите Артикул товара</mark>
                     <input placeholder="vendor code из фида" id="asdInputCode">
                   </label>
@@ -49,11 +51,12 @@
                     <mark>Укажите URL товара</mark>
                     <input placeholder="https://example.com" id="asdInputUrl">
                   </label>
-                  <div class="asd__label" data-type-target="image">
+                  <div class="asd__label visible" data-type-target="image">
                     <mark>Загрузите фото товара</mark>
                     <div class="asd__file-input">
                       <input class="invisible" id="asdInputfile" type="file" name="image" accept=".jpg, .jpeg, .png, .webp">
                       <label for="asdInputfile">Выберите файл</label><span data-default-value="Файл не выбран">Файл не выбран</span>
+                      <button class="hidden" type="button" title="Удалить картинку"></button>
                     </div>
                   </div>
                   <!-- Отключить бэйджим можно с помощью класса .invisible-->
@@ -213,7 +216,7 @@
                   </label>
                 </div>
                 <label class="asd__label asd__feed-selector collapsed">
-                  <mark>Добавить свою выгрузку<span class="points" type="button"><span></span><span></span><span></span></span></mark>
+                  <mark><span class="toggler">Добавить свою выгрузку</span></mark>
                   <input placeholder="URL фида в формате YML">
                 </label>
                 <button class="btn btn_lite" id="addUserFeedButton" type="button" data-modal-title="Ошибка" data-modal-text="Вы не добавили Фид. Необходимо указать URL фида в формате YML">Добавить</button>
