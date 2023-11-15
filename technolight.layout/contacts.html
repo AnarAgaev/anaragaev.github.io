@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Write description for this page here">
+    <meta name="keywords" content="Write keywords for this page here">
+    <title>Technolight</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="https://aws.massive.ru/technolight/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://aws.massive.ru/technolight/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://aws.massive.ru/technolight/favicon/favicon-16x16.png">
+    <link rel="icon" href="https://aws.massive.ru/technolight/favicon/favicon.ico">
+    <link rel="manifest" href="https://aws.massive.ru/technolight/favicon/site.webmanifest">
+    <link rel="preload" href="css/vendor.min.css" as="style">
+    <link rel="preload" href="css/main.min.css" as="style">
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/pages/contacts.min.css">
+  </head>
+  <body class="transition-blocker page-contacts" id="body">
+    <header class="header" id="header">
+      <div class="header__modal-back"></div>
+      <div class="container">
+        <div class="header__content"><a class="header__logo logo-light" href="#"></a>
+          <nav class="header__nav">
+            <div class="header__nav-caption d-lg-none"><span class="header__nav-logo logo-dark"></span>
+              <button class="header__nav-close"></button>
+            </div>
+            <ul class="header__nav-list">
+              <!-- Элементку списка у которого есть подменю, нужно добавлять класс-модификатов .header__nav-item_with-inner-->
+              <!-- Для раскрытого пункта меню, добавлять класс .dropped-->
+              <li class="header__nav-item header__nav-item_prod header__nav-item_with-inner"><i></i>
+                <!-- Активному пункту меню добавляем класс .active-->
+                <!-- Пункты с подменю должны быть КНОПКАМИ А НЕ ССЫЛКАМИ-->
+                <button class="header__nav-link header__nav-link_product"><i class="d-lg-none"></i><span>Продукция</span></button>
+                <!-- Для открытого подменю, добавляем класс .open-->
+                <div class="header__nav-collapse header__nav-collapse_product collapse">
+                  <div class="collapse__inner">
+                    <button class="header__nav-close d-none d-lg-block"></button>
+                    <ul class="header__nav-sublist">
+                      <!-- У списка подменю с заголовком у первого li класс .header__nav-subtitle-->
+                      <li class="header__nav-subtitle"><a class="header__nav-sublink" href="#">Трековые системы</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Треки</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Светильники</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Аксессуары</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Комплектующие</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Блоки питания</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Блоки питания шины</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Управление</a></li>
+                    </ul>
+                    <ul class="header__nav-sublist">
+                      <!-- У списка подменю с заголовком у первого li класс .header__nav-subtitle-->
+                      <li class="header__nav-subtitle"><a class="header__nav-sublink" href="#">Модульные светильники</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Светильники без видимой рамки</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Светильники с видимой рамкой</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Монтажные комплекты</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Декоративные рамки</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Комплектующие</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Аксессуары</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Светодиодные модули</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Драйверы</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Блоки питания шины</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Управление</a></li>
+                    </ul>
+                    <ul class="header__nav-sublist">
+                      <!-- У списка подменю с заголовком у первого li класс .header__nav-subtitle-->
+                      <li class="header__nav-subtitle"><a class="header__nav-sublink" href="#">Вспомогательная продукция</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Профильные решения</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Блоки питания шины</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Управление</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="header__nav-item"><a class="header__nav-link header__nav-link_delivery" href="#"><i class="d-lg-none"></i><span>Доставка и оплата</span></a></li>
+              <li class="header__nav-item"><a class="header__nav-link header__nav-link_buy" href="#"><i class="d-lg-none"></i><span>Где купить</span></a></li>
+              <li class="header__nav-item"><a class="header__nav-link header__nav-link_configurator" href="#"><i class="d-lg-none"></i><span>Конфигуратор</span></a></li>
+              <li class="header__nav-item header__nav-item_company header__nav-item_with-inner"><i></i>
+                <!-- Пункты с подменю должны быть КНОПКАМИ А НЕ ССЫЛКАМИ-->
+                <button class="header__nav-link header__nav-link_company"><i class="d-lg-none"></i><span>Компания</span></button>
+                <div class="header__nav-collapse header__nav-collapse_company collapse">
+                  <div class="collapse__inner">
+                    <button class="header__nav-close d-none d-lg-block"></button>
+                    <ul class="header__nav-sublist">
+                      <li class="header__nav-subtitle"><a class="header__nav-sublink" href="#">Обмен и возврат</a></li>
+                      <li class="header__nav-subtitle"><a class="header__nav-sublink" href="#">Гарантия качества</a></li>
+                      <li class="header__nav-subtitle"><a class="header__nav-sublink" href="#">Наши проекты</a></li>
+                      <li class="header__nav-subtitle"><a class="header__nav-sublink" href="#">Жизнь компании</a></li>
+                      <li class="header__nav-subtitle"><a class="header__nav-sublink" href="#">Торговая марка</a></li>
+                      <li class="header__nav-subtitle"><a class="header__nav-sublink" href="#">Дизайн и качество</a></li>
+                      <li class="header__nav-subtitle"><a class="header__nav-sublink" href="#">Контакты</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <ul class="header__buttons">
+            <li class="d-none d-lg-block"><a class="header__buttons-link header__buttons-link_call" href="tel:+9200000000"><i></i></a></li>
+            <li>
+              <button class="header__buttons-link header__buttons-link_search"><i></i></button>
+            </li>
+            <li><a class="header__buttons-link header__buttons-link_favorites" href="#"><i><span class="header__buttons-count">23</span></i></a></li>
+            <li class="d-none d-lg-block"><a class="header__buttons-link header__buttons-link_cart" href="#"><i><span class="header__buttons-count">7</span></i></a></li>
+            <li class="d-none d-lg-block"><a class="header__buttons-link header__buttons-link_account" href="#"><i></i></a></li>
+          </ul>
+        </div>
+        <!-- По умолчанию добавляем класс .disable, т.к поиск по умолчанию скрыт-->
+        <div class="header__search disable">
+          <form class="header__search-form">
+            <label><i></i>
+              <input class="header__search-input" type="text" placeholder="Поиск"><span class="header__search-reset" type="reset"></span>
+            </label>
+            <button class="header__search-close" type="button">Отмена</button>
+          </form>
+          <div class="header__search-hints">
+            <div class="header__search-helps"><span>Трек для натяжного потолка</span><span>Софт</span><span>Лайн 300</span><span>Блок питания линейный</span><span>Торцевая заглушка для трека</span><span>Трек встраиваемый в гипсокартон</span></div>
+            <div class="header__search-links"><a href="#">Торцевая заглушка для трека</a><a href="#">Лайн 300</a><a href="#">Блок питания линейный</a><a href="#">Трек встраиваемый в гипсокартон</a><a href="#">Трек под нятяжной потолоку купить</a><a href="#">Споты для трека в Москве</a></div>
+            <div class="header__search-categories"><a href="#">
+                <p>Светильники с рамкой</p><span>Категория</span></a><a href="#">
+                <p>Светильники с рамкой</p><span>Категория</span></a></div>
+          </div>
+        </div>
+        <div class="header__msg-container"></div>
+      </div>
+    </header>
+    <main class="main" id="main" data-product-article="86108-3K-01-BK">
+      <div class="section section_breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumbs animation-element">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Компания</a></li>
+            <li><span>Контакты</span></li>
+          </ul>
+        </div>
+      </div>
+      <section class="section">
+        <div class="contacts">
+          <div class="container container_caption animation-element">
+            <div class="row">
+              <div class="col col-xl-8">
+                <h2 class="container_caption-text">Контакты</h2>
+              </div>
+            </div>
+          </div>
+          <div class="container animation-element">
+            <div class="row">
+              <div class="col-12 col-lg-4">
+                <div class="contacts__card contacts__card_data">
+                  <h3 class="contacts__caption">Центральный офис в Москве:</h3>
+                  <div class="contacts__description">
+                    <div class="contacts__with-icon"><i class="contacts__icon contacts__icon_house"></i>
+                      <p class="contacts__text">ARTPLAY центр дизайна, 105120, Москва, Нижняя Сыромятническая, д. 10 стр. 2</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="contacts__card contacts__card_data">
+                  <h3 class="contacts__caption">Пишите/звоните:</h3>
+                  <div class="contacts__description">
+                    <div class="contacts__with-icon"><i class="contacts__icon contacts__icon_phone"></i>
+                      <ul class="contacts__list">
+                        <li><a href="tel:+74957977251">+7 495-797-72-51 (Офисный)</a></li>
+                        <li><a href="https://wa.me/74957470564">+7 495-747-05-64 (WhatsApp)</a></li>
+                      </ul>
+                    </div>
+                    <div class="contacts__with-icon"><i class="contacts__icon contacts__icon_post"></i>
+                      <p class="contacts__text"><a href="mailto:order@technolight.ru">order@technolight.ru</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="contacts__card contacts__card_video">
+                  <!-- Ссылку на видео помещаем в data-src-->
+                  <iframe data-src="https://www.youtube.com/embed/sOu5G9ocYzc?si=cpDS6nd8Tk7h4DEa" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  <div class="contacts__poster"><i></i><span>Как к нам пройти?</span>
+                    <button></button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="contacts__card contacts__card_map" id="mapWrapper">
+                  <!-- После внеднеия нормальной карты, обязательно поставить задачу на удаление блокирующего кода-->
+                  <!-- В реальной карте инлайновые стили блокикирующе клики не добавлять. Нужны для демонстрации-->
+                  <iframe style="pointer-events: none;" src="https://yandex.ru/map-widget/v1/?um=constructor%3A4e1f453110abd356e9b08a0d33f82e75155d6cea4c9a83a8161605ffd697b91c&amp;amp;source=constructor" frameborder="0"></iframe>
+                </div>
+              </div>
+              <div class="col-12 col-xxl-4">
+                <div class="contacts__card contacts__card_requisites">
+                  <h3 class="contacts__caption">Реквизиты:</h3>
+                  <div class="contacts__description">
+                    <!-- Список .contacts__list можно заменить на p.contacts__text на тот случай если в БД все реквизиты будут в одной ячейке-->
+                    <ul class="contacts__list">
+                      <li>Индивидуальный предприниматель Крылова Елизавета Казбековна</li>
+                      <li>ИНН 772480469855</li>
+                      <li>ОГРНИП 320774600419716</li>
+                      <li>115211, г. Москва, ул. Борисовские пруды, д. 12 к.1, кв.277</li>
+                      <li>Банк: АО «АЛЬФА-БАНК»</li>
+                      <li>Номер счёта: 40802810301820001074</li>
+                      <li>БИК: 044525593</li>
+                      <li>Кор. счёт: 30101810200000000593</li>
+                      <li>ОКПО 2003317260</li>
+                      <li>ОКАТО 45296557000</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-xxl-8">
+                <div class="contacts__card contacts__card_socials">
+                  <h2 class="contacts__socials-title">Мы в соцсетях:</h2>
+                  <ul class="contacts__socials-list">
+                    <li><a href="#"><i class="contacts__socials-icon contacts__socials-icon_vk"></i></a></li>
+                    <li><a href="#"><i class="contacts__socials-icon contacts__socials-icon_telegram"></i></a></li>
+                    <li><a href="#"><i class="contacts__socials-icon contacts__socials-icon_yt"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" id="footer">
+      <div class="footer__nav d-lg-none">
+        <ul>
+          <li><a class="footer__nav-link footer__nav-link_home" href="#"><i></i><span>Главная</span></a></li>
+          <li><a class="footer__nav-link footer__nav-link_call" href="#"><i></i><span>Позвонить</span></a></li>
+          <li><a class="footer__nav-link footer__nav-link_cart" href="#"><i></i><span>Корзина</span></a></li>
+          <li><a class="footer__nav-link footer__nav-link_account" href="#"><i></i><span>Аккаунт</span></a></li>
+          <li>
+            <!-- Активной ссылке, добавляем класс .active-->
+            <button class="footer__nav-link footer__nav-link_menu"><i></i><span>Меню</span></button>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__cards animation-element">
+        <div class="container container_caption">
+          <div class="row">
+            <div class="col col-xl-8">
+              <h2 class="container_caption-text">Остались вопросы и нужна персональная консультация?</h2>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <ul class="footer__cards-list">
+                <li class="footer__cards-item">
+                  <!-- Если карточка не ссылка, то вместо тега <a> используем обычный div-->
+                  <div class="footer__cards-body"><i class="footer__cards-icon footer__cards-icon_connect"></i>
+                    <div class="footer__cards-content">
+                      <div class="footer__cards-title">Звоните или пишите</div>
+                      <p class="footer__cards-description">
+                        <!-- В телефонном номере недо должно быть пробелов и других символов кроме цифр и +--><a href="tel:+74957977251">+7 495-797-72-51</a><a href="https://wa.me/74957470564" target="_blank">+7 495-747-05-64 (WhatsApp)</a><a href="mailto:order@technolight.ru">order@technolight.ru</a>
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="footer__cards-item">
+                  <!-- Если карточка ссылка, то класс-модификатор .footer__cards-body_link--><a class="footer__cards-body footer__cards-body_link" href="#"><i class="footer__cards-icon footer__cards-icon_calc"></i>
+                    <div class="footer__cards-content">
+                      <!-- Если карточка ссылка, то к заголовку добавляем класс-модификатор .footer__cards-title_link-->
+                      <div class="footer__cards-title footer__cards-title_link">Расчет освещенности</div>
+                      <p class="footer__cards-description">Заказывайте проект по свету у специалистов нашей компании и получайте профессиональную консультацию.</p>
+                    </div></a>
+                </li>
+                <li class="footer__cards-item"><a class="footer__cards-body footer__cards-body_link" href="#"><i class="footer__cards-icon footer__cards-icon_download"></i>
+                    <div class="footer__cards-content">
+                      <div class="footer__cards-title footer__cards-title_link">Файлы для скачивания</div>
+                      <p class="footer__cards-description">Последние версии каталогов, технические спецификации, IES-файлы и прочая документация.</p>
+                    </div></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__body">
+        <div class="footer__caption">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="footer__logo"><a class="logo-light" href=""></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__menu">
+          <div class="container">
+            <div class="row">
+              <div class="col-6 col-md-3">
+                <h3 class="footer__list-title"><span>Продукция</span></h3>
+                <ul class="footer__list">
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Трековая система PROFI 48V</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Модульные светильники DOT 220V</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Вспомогательная продукция</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Вся продукция</a></li>
+                </ul>
+              </div>
+              <div class="col-6 col-md-3">
+                <h3 class="footer__list-title"><span>Где купить</span></h3>
+                <ul class="footer__list">
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Адреса магизинов</a></li>
+                </ul>
+              </div>
+              <div class="col-6 col-md-3">
+                <h3 class="footer__list-title"><span>Поддержка</span></h3>
+                <ul class="footer__list">
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Оплата и доставка</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Гарантия качества</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Обмен и возврат</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Подбор ассортимента</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Видео сборки светильников</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Расчет освещенности</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Скачать</a></li>
+                </ul>
+              </div>
+              <div class="col-6 col-md-3">
+                <h3 class="footer__list-title"><span>Компания</span></h3>
+                <ul class="footer__list">
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Наши проекты</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Жизнь компании</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Торговая марка</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Дизайн и качество</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Отдел разработки</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Сотрудничество</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Контакты</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__line">
+          <div class="container"></div>
+        </div>
+        <div class="footer__location">
+          <div class="container">
+            <h3 class="footer__location-title">Центральный офис в Москве</h3>
+            <p class="footer__location-place">ARTPLAY центр дизайна, 105120, Москва, Нижняя Сыромятническая, д* 10 стр* 2</p>
+            <ul class="footer__location-list">
+              <li class="footer__location-item"><a href="tel:+74957977251">+7 495-797-72-51</a></li>
+              <li class="footer__location-item"><a href="https://wa.me/74957470564" target="_blank">+7 495-747-05-64 (WhatsApp)</a></li>
+              <li class="footer__location-item"><a href="mailto:order@technolight.ru">order@technolight.ru</a></li>
+            </ul>
+            <div class="footer__location-socials"><a class="social social_telegram" href="https://t.me/technolight_official" target="_blank"></a><a class="social social_vk" href="https://vk.com/technolightru" target="_blank"></a><a class="social social_youtube" href="https://www.youtube.com/channel/UCt3wRyz1Z8b-WOlCHz43CuQ" target="_blank"></a></div>
+          </div>
+        </div>
+        <div class="footer__line">
+          <div class="container"></div>
+        </div>
+        <div class="footer__copy">
+          <div class="container">
+            <div class="footer__copy-content">
+              <p><a href="#">Договор оферта</a></p>
+              <p>© Technolight</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="spinner" id="spinner">
+      <div class="spinner__body">
+        <div class="spinner__item"></div>
+        <div class="spinner__item"></div>
+        <div class="spinner__item"></div>
+      </div>
+    </div>
+    <div class="scroll-to-top" id="scrollToTop"><span class="scroll-to-top__pic"></span></div>
+    <script>
+      window.productDataLink = 'https://anaragaev.github.io/technolight.layout/mocks/spot-42-fixed.json'
+      
+    </script>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js" defer></script>
+    <script src="js/pages/contacts.min.js" defer></script>
+  </body>
+</html>
