@@ -14,6 +14,18 @@
             "color": "black-white",
             "image": "https://yarusvsm.ru/all_about_product/Technolight_series/profi-48v/spot-42/spot-42_3.jpg"
         }],
+        "videos": [
+            {
+            "url": "https://www.youtube.com/embed/YHwnmYkkYrM?si=7VpmellS4GuvokPM",
+            "name": "Светильники TECHNOLIGHT в жилом комплексе Небо.",
+            "poster": "https://aws.massive.ru/technolight/images/projects/video-poster.png"
+            },
+                        {
+            "url": "https://www.youtube.com/embed/17orKkflArA?si=Tq78lY3xfTo9THLQ",
+            "name": "Освещение TECHNOLIGHT в новом офисе OnProekt, в котором всё получилось идеально!",
+            "poster": "https://aws.massive.ru/technolight/images/projects/collage/13.jpg"
+            }
+        ],
         "position": 0,
         "available": true,
         "products_available": [{
