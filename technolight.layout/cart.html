@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Write description for this page here">
+    <meta name="keywords" content="Write keywords for this page here">
+    <title>Technolight</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="https://aws.massive.ru/technolight/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://aws.massive.ru/technolight/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://aws.massive.ru/technolight/favicon/favicon-16x16.png">
+    <link rel="icon" href="https://aws.massive.ru/technolight/favicon/favicon.ico">
+    <link rel="manifest" href="https://aws.massive.ru/technolight/favicon/site.webmanifest">
+    <link rel="preload" href="css/vendor.min.css" as="style">
+    <link rel="preload" href="css/main.min.css" as="style">
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/pages/cart.min.css">
+  </head>
+  <body class="transition-blocker page-cart" id="body">
+    <header class="header" id="header">
+      <div class="header__modal-back"></div>
+      <div class="container">
+        <div class="header__content"><a class="header__logo logo-light" href="#"></a>
+          <nav class="header__nav">
+            <div class="header__nav-caption d-lg-none"><span class="header__nav-logo logo-dark"></span>
+              <button class="header__nav-close"></button>
+            </div>
+            <ul class="header__nav-list">
+              <!-- Элементку списка у которого есть подменю, нужно добавлять класс-модификатов .header__nav-item_with-inner-->
+              <!-- Для раскрытого пункта меню, добавлять класс .dropped-->
+              <li class="header__nav-item header__nav-item_prod header__nav-item_with-inner"><i></i>
+                <!-- Активному пункту меню добавляем класс .active-->
+                <!-- Пункты с подменю должны быть КНОПКАМИ А НЕ ССЫЛКАМИ-->
+                <button class="header__nav-link header__nav-link_product"><i class="d-lg-none"></i><span>Продукция</span></button>
+                <!-- Для открытого подменю, добавляем класс .open-->
+                <div class="header__nav-collapse header__nav-collapse_product collapse">
+                  <div class="collapse__inner">
+                    <button class="header__nav-close d-none d-lg-block"></button>
+                    <ul class="header__nav-sublist">
+                      <!-- У списка подменю с заголовком у первого li класс .header__nav-subtitle-->
+                      <li class="header__nav-subtitle"><a class="header__nav-sublink" href="#">Трековые системы</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Треки</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Светильники</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Аксессуары</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Комплектующие</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Блоки питания</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Блоки питания шины</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Управление</a></li>
+                    </ul>
+                    <ul class="header__nav-sublist">
+                      <!-- У списка подменю с заголовком у первого li класс .header__nav-subtitle-->
+                      <li class="header__nav-subtitle"><a class="header__nav-sublink" href="#">Модульные светильники</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Светильники без видимой рамки</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Светильники с видимой рамкой</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Монтажные комплекты</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Декоративные рамки</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Комплектующие</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Аксессуары</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Светодиодные модули</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Драйверы</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Блоки питания шины</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Управление</a></li>
+                    </ul>
+                    <ul class="header__nav-sublist">
+                      <!-- У списка подменю с заголовком у первого li класс .header__nav-subtitle-->
+                      <li class="header__nav-subtitle"><a class="header__nav-sublink" href="#">Вспомогательная продукция</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Профильные решения</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Блоки питания шины</a></li>
+                      <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Управление</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="header__nav-item"><a class="header__nav-link header__nav-link_delivery" href="#"><i class="d-lg-none"></i><span>Доставка и оплата</span></a></li>
+              <li class="header__nav-item"><a class="header__nav-link header__nav-link_buy" href="#"><i class="d-lg-none"></i><span>Где купить</span></a></li>
+              <li class="header__nav-item"><a class="header__nav-link header__nav-link_configurator" href="#"><i class="d-lg-none"></i><span>Конфигуратор</span></a></li>
+              <li class="header__nav-item header__nav-item_company header__nav-item_with-inner"><i></i>
+                <!-- Пункты с подменю должны быть КНОПКАМИ А НЕ ССЫЛКАМИ-->
+                <button class="header__nav-link header__nav-link_company"><i class="d-lg-none"></i><span>Компания</span></button>
+                <div class="header__nav-collapse header__nav-collapse_company collapse">
+                  <div class="collapse__inner">
+                    <button class="header__nav-close d-none d-lg-block"></button>
+                    <ul class="header__nav-sublist">
+                      <li class="header__nav-subtitle"><a class="header__nav-sublink" href="#">Обмен и возврат</a></li>
+                      <li class="header__nav-subtitle"><a class="header__nav-sublink" href="#">Гарантия качества</a></li>
+                      <li class="header__nav-subtitle"><a class="header__nav-sublink" href="#">Наши проекты</a></li>
+                      <li class="header__nav-subtitle"><a class="header__nav-sublink" href="#">Жизнь компании</a></li>
+                      <li class="header__nav-subtitle"><a class="header__nav-sublink" href="#">Торговая марка</a></li>
+                      <li class="header__nav-subtitle"><a class="header__nav-sublink" href="#">Дизайн и качество</a></li>
+                      <li class="header__nav-subtitle"><a class="header__nav-sublink" href="#">Контакты</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <ul class="header__buttons">
+            <li class="d-none d-lg-block"><a class="header__buttons-link header__buttons-link_call" href="tel:+9200000000"><i></i></a></li>
+            <li>
+              <button class="header__buttons-link header__buttons-link_search"><i></i></button>
+            </li>
+            <li><a class="header__buttons-link header__buttons-link_favorites" href="#"><i><span class="header__buttons-count">23</span></i></a></li>
+            <li class="d-none d-lg-block"><a class="header__buttons-link header__buttons-link_cart" href="#"><i><span class="header__buttons-count">7</span></i></a></li>
+            <li class="d-none d-lg-block"><a class="header__buttons-link header__buttons-link_account" href="#"><i></i></a></li>
+          </ul>
+        </div>
+        <!-- По умолчанию добавляем класс .disable, т.к поиск по умолчанию скрыт-->
+        <div class="header__search disable">
+          <form class="header__search-form">
+            <label><i></i>
+              <input class="header__search-input" type="text" placeholder="Поиск"><span class="header__search-reset" type="reset"></span>
+            </label>
+            <button class="header__search-close" type="button">Отмена</button>
+          </form>
+          <div class="header__search-hints">
+            <div class="header__search-helps"><span>Трек для натяжного потолка</span><span>Софт</span><span>Лайн 300</span><span>Блок питания линейный</span><span>Торцевая заглушка для трека</span><span>Трек встраиваемый в гипсокартон</span></div>
+            <div class="header__search-links"><a href="#">Торцевая заглушка для трека</a><a href="#">Лайн 300</a><a href="#">Блок питания линейный</a><a href="#">Трек встраиваемый в гипсокартон</a><a href="#">Трек под нятяжной потолоку купить</a><a href="#">Споты для трека в Москве</a></div>
+            <div class="header__search-categories"><a href="#">
+                <p>Светильники с рамкой</p><span>Категория</span></a><a href="#">
+                <p>Светильники с рамкой</p><span>Категория</span></a></div>
+          </div>
+        </div>
+        <div class="header__msg-container"></div>
+      </div>
+    </header>
+    <main class="main" id="main" data-product-article="86108-3K-01-BK">
+      <div class="section section_breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumbs animation-element">
+            <li><a href="#">Главная</a></li>
+            <li><span>Корзина</span></li>
+          </ul>
+        </div>
+      </div>
+      <section class="section">
+        <div class="cart">
+          <div class="container container_caption animation-element">
+            <div class="row">
+              <div class="col col-xl-8">
+                <h2 class="container_caption-text">Корзина</h2>
+              </div>
+            </div>
+          </div>
+          <div class="cart__dot animation-element">
+            <div class="container">
+              <div class="row cart__product">
+                <div class="col-12 col-sm-6 col-xl-4 col-xxl-3 cart__dot-pic">
+                  <div class="cart__image"><img src="https://aws.massive.ru/technolight/images/cart/dot.png" alt="" loading="lazy"></div>
+                </div>
+                <div class="col-12 col-xl-4 col-xxl-6 cart__dot-description">
+                  <div class="cart__caption">
+                    <h2 class="cart__title">DOT в сборке</h2>
+                  </div>
+                  <ul class="cart__list">
+                    <li>
+                      <mark>{1}</mark><span><em>46001-F1  </em>— Светофильтр Ханикомб 42</span>
+                    </li>
+                    <li>
+                      <mark>{2}</mark><span><em>42001-BK  </em>— Фиксирующее кольцо</span>
+                    </li>
+                    <li>
+                      <mark>{3}</mark><span><em>43001-36  </em>— Линза Слим 36° для Атом 6</span>
+                    </li>
+                    <li>
+                      <mark>{4}</mark><span><em>40001-89  </em>— Монтажный комплект Зеро</span>
+                    </li>
+                    <li>
+                      <mark>{5}</mark><span><em>41021-BK  </em>— Рамка Симпл 68 круглая RAL 9005 черная</span>
+                    </li>
+                    <li>
+                      <mark>{6}</mark><span><em>46001-44  </em>— Защитная накладка IP44 для рамки Симпл 68 круглая</span>
+                    </li>
+                    <li>
+                      <mark>{7}</mark><span><em>44002-4K  </em>— Светодиодный модуль Атом 9 36В 210мА 9Вт 980лм 4000К 93+</span>
+                    </li>
+                    <li>
+                      <mark>{8}</mark><span><em>45002-02  </em>— Драйвер тока 9Вт 30-40В 210мА TRIAC для Атом 9 диммируемый</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-4 col-xxl-3 cart__dot-calc">
+                  <div class="cart__calc">
+                    <div class="cart__calc-body">
+                      <div class="cart__calc-price">
+                        <mark>Цена:</mark>
+                        <div><span class="value">888 000</span> р.</div>
+                      </div>
+                      <div class="cart__calc-counter">
+                        <button class="btn btn_lite" type="button"><i class="inc"></i></button>
+                        <input type="tel" value="1">
+                        <button class="btn btn_lite" type="button"><i class="dec"></i></button>
+                      </div>
+                      <div class="cart__calc-price">
+                        <mark>Итого:</mark>
+                        <div><span class="value">4 440 000</span> р.</div>
+                      </div>
+                    </div>
+                    <div class="cart__calc-del">
+                      <button class="btn btn_lite btn_del" type="button"><i></i><span> Удалить</span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cart__item animation-element">
+            <div class="container">
+              <div class="row cart__product">
+                <div class="col-12 col-sm-6 col-xl-4 col-xxl-3 cart__dot-pic">
+                  <div class="cart__image"><img src="https://aws.massive.ru/technolight/images/cart/line.png" alt="" loading="lazy"></div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4 col-xxl-6 cart__dot-description">
+                  <div class="cart__caption">
+                    <h2 class="cart__title">80001-2M-BK</h2>
+                    <p class="cart__subtitle">Угол внутренний встраиваемый</p>
+                  </div>
+                  <div class="cart__price d-none d-xl-flex">
+                    <mark>Цена:</mark>
+                    <div><span class="value">888 000</span> р.</div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-4 col-xxl-3 offset-md-6 offset-xl-0 cart__dot-calc">
+                  <div class="cart__calc">
+                    <div class="cart__calc-body">
+                      <div class="cart__calc-price d-xl-none">
+                        <mark>Цена:</mark>
+                        <div><span class="value">888 000</span> р.</div>
+                      </div>
+                      <div class="cart__calc-counter">
+                        <button class="btn btn_lite" type="button"><i class="inc"></i></button>
+                        <input type="tel" value="1">
+                        <button class="btn btn_lite" type="button"><i class="dec"></i></button>
+                      </div>
+                      <div class="cart__calc-price">
+                        <mark>Итого:</mark>
+                        <div><span class="value">4 440 000</span> р.</div>
+                      </div>
+                    </div>
+                    <div class="cart__calc-del">
+                      <button class="btn btn_lite btn_del" type="button"><i></i><span> Удалить</span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cart__actions animation-element">
+            <div class="container">
+              <div class="cart__actions-btns">
+                <div class="cart__total">
+                  <mark>ИТОГО сумма:</mark>
+                  <div><span id="total">38 888 000</span> ₽</div>
+                </div>
+                <button class="btn btn_block btn_dark" type="button"><span>Отправить заказ</span></button><a class="btn btn_block btn_lite" href="#"><span>Продолжить выбор</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" id="footer">
+      <div class="footer__nav d-lg-none">
+        <ul>
+          <li><a class="footer__nav-link footer__nav-link_home" href="#"><i></i><span>Главная</span></a></li>
+          <li><a class="footer__nav-link footer__nav-link_call" href="#"><i></i><span>Позвонить</span></a></li>
+          <li><a class="footer__nav-link footer__nav-link_cart" href="#"><i></i><span>Корзина</span></a></li>
+          <li><a class="footer__nav-link footer__nav-link_account" href="#"><i></i><span>Аккаунт</span></a></li>
+          <li>
+            <!-- Активной ссылке, добавляем класс .active-->
+            <button class="footer__nav-link footer__nav-link_menu"><i></i><span>Меню</span></button>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__cards animation-element">
+        <div class="container container_caption">
+          <div class="row">
+            <div class="col col-xl-8">
+              <h2 class="container_caption-text">Остались вопросы и нужна персональная консультация?</h2>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <ul class="footer__cards-list">
+                <li class="footer__cards-item">
+                  <!-- Если карточка не ссылка, то вместо тега <a> используем обычный div-->
+                  <div class="footer__cards-body"><i class="footer__cards-icon footer__cards-icon_connect"></i>
+                    <div class="footer__cards-content">
+                      <div class="footer__cards-title">Звоните или пишите</div>
+                      <p class="footer__cards-description">
+                        <!-- В телефонном номере недо должно быть пробелов и других символов кроме цифр и +--><a href="tel:+74957977251">+7 495-797-72-51</a><a href="https://wa.me/74957470564" target="_blank">+7 495-747-05-64 (WhatsApp)</a><a href="mailto:order@technolight.ru">order@technolight.ru</a>
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="footer__cards-item">
+                  <!-- Если карточка ссылка, то класс-модификатор .footer__cards-body_link--><a class="footer__cards-body footer__cards-body_link" href="#"><i class="footer__cards-icon footer__cards-icon_calc"></i>
+                    <div class="footer__cards-content">
+                      <!-- Если карточка ссылка, то к заголовку добавляем класс-модификатор .footer__cards-title_link-->
+                      <div class="footer__cards-title footer__cards-title_link">Расчет освещенности</div>
+                      <p class="footer__cards-description">Заказывайте проект по свету у специалистов нашей компании и получайте профессиональную консультацию.</p>
+                    </div></a>
+                </li>
+                <li class="footer__cards-item"><a class="footer__cards-body footer__cards-body_link" href="#"><i class="footer__cards-icon footer__cards-icon_download"></i>
+                    <div class="footer__cards-content">
+                      <div class="footer__cards-title footer__cards-title_link">Файлы для скачивания</div>
+                      <p class="footer__cards-description">Последние версии каталогов, технические спецификации, IES-файлы и прочая документация.</p>
+                    </div></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__body">
+        <div class="footer__caption">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="footer__logo"><a class="logo-light" href=""></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__menu">
+          <div class="container">
+            <div class="row">
+              <div class="col-6 col-md-3">
+                <h3 class="footer__list-title"><span>Продукция</span></h3>
+                <ul class="footer__list">
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Трековая система PROFI 48V</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Модульные светильники DOT 220V</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Вспомогательная продукция</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Вся продукция</a></li>
+                </ul>
+              </div>
+              <div class="col-6 col-md-3">
+                <h3 class="footer__list-title"><span>Где купить</span></h3>
+                <ul class="footer__list">
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Адреса магизинов</a></li>
+                </ul>
+              </div>
+              <div class="col-6 col-md-3">
+                <h3 class="footer__list-title"><span>Поддержка</span></h3>
+                <ul class="footer__list">
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Оплата и доставка</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Гарантия качества</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Обмен и возврат</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Подбор ассортимента</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Видео сборки светильников</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Расчет освещенности</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Скачать</a></li>
+                </ul>
+              </div>
+              <div class="col-6 col-md-3">
+                <h3 class="footer__list-title"><span>Компания</span></h3>
+                <ul class="footer__list">
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Наши проекты</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Жизнь компании</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Торговая марка</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Дизайн и качество</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Отдел разработки</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Сотрудничество</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="">Контакты</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__line">
+          <div class="container"></div>
+        </div>
+        <div class="footer__location">
+          <div class="container">
+            <h3 class="footer__location-title">Центральный офис в Москве</h3>
+            <p class="footer__location-place">ARTPLAY центр дизайна, 105120, Москва, Нижняя Сыромятническая, д* 10 стр* 2</p>
+            <ul class="footer__location-list">
+              <li class="footer__location-item"><a href="tel:+74957977251">+7 495-797-72-51</a></li>
+              <li class="footer__location-item"><a href="https://wa.me/74957470564" target="_blank">+7 495-747-05-64 (WhatsApp)</a></li>
+              <li class="footer__location-item"><a href="mailto:order@technolight.ru">order@technolight.ru</a></li>
+            </ul>
+            <div class="footer__location-socials"><a class="social social_telegram" href="https://t.me/technolight_official" target="_blank"></a><a class="social social_vk" href="https://vk.com/technolightru" target="_blank"></a><a class="social social_youtube" href="https://www.youtube.com/channel/UCt3wRyz1Z8b-WOlCHz43CuQ" target="_blank"></a></div>
+          </div>
+        </div>
+        <div class="footer__line">
+          <div class="container"></div>
+        </div>
+        <div class="footer__copy">
+          <div class="container">
+            <div class="footer__copy-content">
+              <p><a href="#">Договор оферта</a></p>
+              <p>© Technolight</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="spinner" id="spinner">
+      <div class="spinner__body">
+        <div class="spinner__item"></div>
+        <div class="spinner__item"></div>
+        <div class="spinner__item"></div>
+      </div>
+    </div>
+    <div class="scroll-to-top" id="scrollToTop"><span class="scroll-to-top__pic"></span></div>
+    <script>
+      window.productDataLink = 'https://anaragaev.github.io/technolight.layout/mocks/spot-42-fixed.json'
+      
+    </script>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js" defer></script>
+    <script src="js/pages/cart.min.js" defer></script>
+    <script>
+      if (navigator.userAgent.indexOf('MSIE') !== -1 || navigator.appVersion.indexOf('Trident/') > -1) {
+          var scripts = document.querySelectorAll('script');
+          for (var i = 0; i < scripts.length; i++) {
+              if (scripts[i].src !== '') {
+                  var node = scripts[i];
+                  node.parentNode.removeChild(node);
+              }
+          }
+      
+          var body = document.querySelector('body');
+          while (body.firstChild) {
+              body.removeChild(body.firstChild);
+          }
+      
+          var video = document.createElement('video');
+          video.src = 'https://aws.massive.ru/technolight/ie-not-supported.mp4';
+          video.autoplay = true;
+          video.loop = true;
+          video.muted = true;
+          video.playsInline = true;
+          video.setAttribute('style', 'max-width: 50%; height: auto;');
+      
+          var title = document.createElement('h1');
+          title.setAttribute('style', 'width: 100%; max-width: 700px; text-align: center; font-family: "Open Sans", sans-serif; line-height: 1.3; margin-bottom: 1em; margin-top: 0; font-size: 26px; padding-left: 20px; padding-right: 20px;');
+          title.innerText = "К сожалению, мы не поддерживаем браузер Internet Explorer 11 и более ранние версии!";
+      
+          var text = document.createElement('p');
+          text.setAttribute('style', 'width: 100%; max-width: 400px; text-align: center; font-family: "Open Sans", sans-serif; line-height: 1.3; margin-bottom: 3em; font-size: 18px; padding-left: 20px; padding-right: 20px;');
+          text.innerText = "Для просмотра сайта, воспользуйтесь более новой версией браузера.";
+      
+          body.setAttribute('style', 'display: flex; flex-direction: column; align-items: center; justify-content: center;');
+          body.appendChild(title);
+          body.appendChild(text);
+          body.appendChild(video);
+      }
+    </script>
+  </body>
+</html>
