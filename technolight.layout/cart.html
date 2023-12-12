@@ -143,7 +143,8 @@
               </div>
             </div>
           </div>
-          <div class="cart__dot animation-element">
+          <!-- Для всех продуктов, независимо от того Дот это или просто продук даобавляем атрибут data-product-->
+          <div class="cart__dot animation-element" data-product>
             <div class="container">
               <div class="row cart__product">
                 <div class="col-12 col-sm-6 col-xl-4 col-xxl-3 cart__dot-pic">
@@ -185,16 +186,20 @@
                     <div class="cart__calc-body">
                       <div class="cart__calc-price">
                         <mark>Цена:</mark>
-                        <div><span class="value">888 000</span> р.</div>
+                        <div>
+                          <!-- Для каждой цены добавляем атрибут data-price--><span class="value" data-price>17 000</span> р.
+                        </div>
                       </div>
                       <div class="cart__calc-counter">
-                        <button class="btn btn_lite" type="button"><i class="inc"></i></button>
-                        <input type="tel" value="1">
-                        <button class="btn btn_lite" type="button"><i class="dec"></i></button>
+                        <button class="btn btn_lite" type="button" data-type="dec" disabled><i class="inc"></i></button>
+                        <input type="tel" value="1" readonly>
+                        <button class="btn btn_lite" type="button" data-type="inc"><i class="dec"></i></button>
                       </div>
                       <div class="cart__calc-price">
                         <mark>Итого:</mark>
-                        <div><span class="value">4 440 000</span> р.</div>
+                        <div>
+                          <!-- Для итоговой цены добавляем атрибут data-total--><span class="value" data-total>17 000</span> р.
+                        </div>
                       </div>
                     </div>
                     <div class="cart__calc-del">
@@ -205,7 +210,7 @@
               </div>
             </div>
           </div>
-          <div class="cart__item animation-element">
+          <div class="cart__item animation-element" data-product>
             <div class="container">
               <div class="row cart__product">
                 <div class="col-12 col-sm-6 col-xl-4 col-xxl-3 cart__dot-pic">
@@ -218,7 +223,7 @@
                   </div>
                   <div class="cart__price d-none d-xl-flex">
                     <mark>Цена:</mark>
-                    <div><span class="value">888 000</span> р.</div>
+                    <div><span class="value" data-price>32 000</span> р.</div>
                   </div>
                 </div>
                 <div class="col-12 col-sm-6 col-xl-4 col-xxl-3 offset-md-6 offset-xl-0 cart__dot-calc">
@@ -226,16 +231,230 @@
                     <div class="cart__calc-body">
                       <div class="cart__calc-price d-xl-none">
                         <mark>Цена:</mark>
-                        <div><span class="value">888 000</span> р.</div>
+                        <div><span class="value" data-price>32 000</span> р.</div>
                       </div>
                       <div class="cart__calc-counter">
-                        <button class="btn btn_lite" type="button"><i class="inc"></i></button>
-                        <input type="tel" value="1">
-                        <button class="btn btn_lite" type="button"><i class="dec"></i></button>
+                        <button class="btn btn_lite" type="button" data-type="dec" disabled><i class="inc"></i></button>
+                        <input type="tel" value="1" readonly>
+                        <button class="btn btn_lite" type="button" data-type="inc"><i class="dec"></i></button>
                       </div>
                       <div class="cart__calc-price">
                         <mark>Итого:</mark>
-                        <div><span class="value">4 440 000</span> р.</div>
+                        <div><span class="value" data-total>32 000</span> р.</div>
+                      </div>
+                    </div>
+                    <div class="cart__calc-del">
+                      <button class="btn btn_lite btn_del" type="button"><i></i><span> Удалить</span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cart__dot animation-element" data-product>
+            <div class="container">
+              <div class="row cart__product">
+                <div class="col-12 col-sm-6 col-xl-4 col-xxl-3 cart__dot-pic">
+                  <div class="cart__image"><img src="https://aws.massive.ru/technolight/images/cart/dot.png" alt="" loading="lazy"></div>
+                </div>
+                <div class="col-12 col-xl-4 col-xxl-6 cart__dot-description">
+                  <div class="cart__caption">
+                    <h2 class="cart__title">DOT в сборке</h2>
+                  </div>
+                  <ul class="cart__list">
+                    <li>
+                      <mark>{1}</mark><span><em>46001-F1  </em>— Светофильтр Ханикомб 42</span>
+                    </li>
+                    <li>
+                      <mark>{2}</mark><span><em>42001-BK  </em>— Фиксирующее кольцо</span>
+                    </li>
+                    <li>
+                      <mark>{3}</mark><span><em>43001-36  </em>— Линза Слим 36° для Атом 6</span>
+                    </li>
+                    <li>
+                      <mark>{4}</mark><span><em>40001-89  </em>— Монтажный комплект Зеро</span>
+                    </li>
+                    <li>
+                      <mark>{5}</mark><span><em>41021-BK  </em>— Рамка Симпл 68 круглая RAL 9005 черная</span>
+                    </li>
+                    <li>
+                      <mark>{6}</mark><span><em>46001-44  </em>— Защитная накладка IP44 для рамки Симпл 68 круглая</span>
+                    </li>
+                    <li>
+                      <mark>{7}</mark><span><em>44002-4K  </em>— Светодиодный модуль Атом 9 36В 210мА 9Вт 980лм 4000К 93+</span>
+                    </li>
+                    <li>
+                      <mark>{8}</mark><span><em>45002-02  </em>— Драйвер тока 9Вт 30-40В 210мА TRIAC для Атом 9 диммируемый</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-4 col-xxl-3 cart__dot-calc">
+                  <div class="cart__calc">
+                    <div class="cart__calc-body">
+                      <div class="cart__calc-price">
+                        <mark>Цена:</mark>
+                        <div>
+                          <!-- Для каждой цены добавляем атрибут data-price--><span class="value" data-price>17 000</span> р.
+                        </div>
+                      </div>
+                      <div class="cart__calc-counter">
+                        <button class="btn btn_lite" type="button" data-type="dec" disabled><i class="inc"></i></button>
+                        <input type="tel" value="1" readonly>
+                        <button class="btn btn_lite" type="button" data-type="inc"><i class="dec"></i></button>
+                      </div>
+                      <div class="cart__calc-price">
+                        <mark>Итого:</mark>
+                        <div>
+                          <!-- Для итоговой цены добавляем атрибут data-total--><span class="value" data-total>17 000</span> р.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cart__calc-del">
+                      <button class="btn btn_lite btn_del" type="button"><i></i><span> Удалить</span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cart__item animation-element" data-product>
+            <div class="container">
+              <div class="row cart__product">
+                <div class="col-12 col-sm-6 col-xl-4 col-xxl-3 cart__dot-pic">
+                  <div class="cart__image"><img src="https://aws.massive.ru/technolight/images/cart/line.png" alt="" loading="lazy"></div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4 col-xxl-6 cart__dot-description">
+                  <div class="cart__caption">
+                    <h2 class="cart__title">80001-2M-BK</h2>
+                    <p class="cart__subtitle">Угол внутренний встраиваемый</p>
+                  </div>
+                  <div class="cart__price d-none d-xl-flex">
+                    <mark>Цена:</mark>
+                    <div><span class="value" data-price>32 000</span> р.</div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-4 col-xxl-3 offset-md-6 offset-xl-0 cart__dot-calc">
+                  <div class="cart__calc">
+                    <div class="cart__calc-body">
+                      <div class="cart__calc-price d-xl-none">
+                        <mark>Цена:</mark>
+                        <div><span class="value" data-price>32 000</span> р.</div>
+                      </div>
+                      <div class="cart__calc-counter">
+                        <button class="btn btn_lite" type="button" data-type="dec" disabled><i class="inc"></i></button>
+                        <input type="tel" value="1" readonly>
+                        <button class="btn btn_lite" type="button" data-type="inc"><i class="dec"></i></button>
+                      </div>
+                      <div class="cart__calc-price">
+                        <mark>Итого:</mark>
+                        <div><span class="value" data-total>32 000</span> р.</div>
+                      </div>
+                    </div>
+                    <div class="cart__calc-del">
+                      <button class="btn btn_lite btn_del" type="button"><i></i><span> Удалить</span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cart__dot animation-element" data-product>
+            <div class="container">
+              <div class="row cart__product">
+                <div class="col-12 col-sm-6 col-xl-4 col-xxl-3 cart__dot-pic">
+                  <div class="cart__image"><img src="https://aws.massive.ru/technolight/images/cart/dot.png" alt="" loading="lazy"></div>
+                </div>
+                <div class="col-12 col-xl-4 col-xxl-6 cart__dot-description">
+                  <div class="cart__caption">
+                    <h2 class="cart__title">DOT в сборке</h2>
+                  </div>
+                  <ul class="cart__list">
+                    <li>
+                      <mark>{1}</mark><span><em>46001-F1  </em>— Светофильтр Ханикомб 42</span>
+                    </li>
+                    <li>
+                      <mark>{2}</mark><span><em>42001-BK  </em>— Фиксирующее кольцо</span>
+                    </li>
+                    <li>
+                      <mark>{3}</mark><span><em>43001-36  </em>— Линза Слим 36° для Атом 6</span>
+                    </li>
+                    <li>
+                      <mark>{4}</mark><span><em>40001-89  </em>— Монтажный комплект Зеро</span>
+                    </li>
+                    <li>
+                      <mark>{5}</mark><span><em>41021-BK  </em>— Рамка Симпл 68 круглая RAL 9005 черная</span>
+                    </li>
+                    <li>
+                      <mark>{6}</mark><span><em>46001-44  </em>— Защитная накладка IP44 для рамки Симпл 68 круглая</span>
+                    </li>
+                    <li>
+                      <mark>{7}</mark><span><em>44002-4K  </em>— Светодиодный модуль Атом 9 36В 210мА 9Вт 980лм 4000К 93+</span>
+                    </li>
+                    <li>
+                      <mark>{8}</mark><span><em>45002-02  </em>— Драйвер тока 9Вт 30-40В 210мА TRIAC для Атом 9 диммируемый</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-4 col-xxl-3 cart__dot-calc">
+                  <div class="cart__calc">
+                    <div class="cart__calc-body">
+                      <div class="cart__calc-price">
+                        <mark>Цена:</mark>
+                        <div>
+                          <!-- Для каждой цены добавляем атрибут data-price--><span class="value" data-price>17 000</span> р.
+                        </div>
+                      </div>
+                      <div class="cart__calc-counter">
+                        <button class="btn btn_lite" type="button" data-type="dec" disabled><i class="inc"></i></button>
+                        <input type="tel" value="1" readonly>
+                        <button class="btn btn_lite" type="button" data-type="inc"><i class="dec"></i></button>
+                      </div>
+                      <div class="cart__calc-price">
+                        <mark>Итого:</mark>
+                        <div>
+                          <!-- Для итоговой цены добавляем атрибут data-total--><span class="value" data-total>17 000</span> р.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cart__calc-del">
+                      <button class="btn btn_lite btn_del" type="button"><i></i><span> Удалить</span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cart__item animation-element" data-product>
+            <div class="container">
+              <div class="row cart__product">
+                <div class="col-12 col-sm-6 col-xl-4 col-xxl-3 cart__dot-pic">
+                  <div class="cart__image"><img src="https://aws.massive.ru/technolight/images/cart/line.png" alt="" loading="lazy"></div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4 col-xxl-6 cart__dot-description">
+                  <div class="cart__caption">
+                    <h2 class="cart__title">80001-2M-BK</h2>
+                    <p class="cart__subtitle">Угол внутренний встраиваемый</p>
+                  </div>
+                  <div class="cart__price d-none d-xl-flex">
+                    <mark>Цена:</mark>
+                    <div><span class="value" data-price>32 000</span> р.</div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-4 col-xxl-3 offset-md-6 offset-xl-0 cart__dot-calc">
+                  <div class="cart__calc">
+                    <div class="cart__calc-body">
+                      <div class="cart__calc-price d-xl-none">
+                        <mark>Цена:</mark>
+                        <div><span class="value" data-price>32 000</span> р.</div>
+                      </div>
+                      <div class="cart__calc-counter">
+                        <button class="btn btn_lite" type="button" data-type="dec" disabled><i class="inc"></i></button>
+                        <input type="tel" value="1" readonly>
+                        <button class="btn btn_lite" type="button" data-type="inc"><i class="dec"></i></button>
+                      </div>
+                      <div class="cart__calc-price">
+                        <mark>Итого:</mark>
+                        <div><span class="value" data-total>32 000</span> р.</div>
                       </div>
                     </div>
                     <div class="cart__calc-del">
@@ -251,7 +470,7 @@
               <div class="cart__actions-btns">
                 <div class="cart__total">
                   <mark>ИТОГО сумма:</mark>
-                  <div><span id="total">38 888 000</span> ₽</div>
+                  <div><span id="total">147 000</span> ₽</div>
                 </div>
                 <button class="btn btn_block btn_dark" type="button"><span>Отправить заказ</span></button><a class="btn btn_block btn_lite" href="#"><span>Продолжить выбор</span></a>
               </div>
