@@ -310,6 +310,150 @@
       </div>
     </div>
     <div class="scroll-to-top" id="scrollToTop"><span class="scroll-to-top__pic"></span></div>
+    <div class="modal__back hide"></div>
+    <div class="modal hide" id="setOrder">
+      <div class="modal__dialog">
+        <div class="modal__close">
+          <button type="button" data-modal data-modal-action="close"></button>
+        </div>
+        <div class="modal__header">
+          <h3 class="modal__title">отправить заказ</h3>
+        </div>
+        <div class="modal__body">
+          <form class="modal__form" action="">
+            <fieldset>
+              <!-- Для того чтобы показать ошибку, добавляем к label класс .has-error-->
+              <label>
+                <input type="text" placeholder="ФИО"><span class="error-message">Текст ошибки</span>
+              </label>
+              <label>
+                <input type="text" placeholder="Телефон"><span class="error-message">Текст ошибки</span>
+              </label>
+              <label>
+                <input type="text" placeholder="Email"><span class="error-message">Текст ошибки</span>
+              </label>
+              <label>
+                <input type="text" placeholder="Город"><span class="error-message">Текст ошибки</span>
+              </label>
+            </fieldset>
+            <button class="btn btn_block btn_lite modal__button modal__button_offset" type="submit"><span>Отправить</span></button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal hide" id="passRecovery">
+      <div class="modal__dialog">
+        <div class="modal__close">
+          <button type="button" data-modal data-modal-action="close"></button>
+        </div>
+        <div class="modal__header">
+          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/modal-logo.svg" alt=""></div>
+          <h3 class="modal__title">Восстановление пароля</h3>
+          <p class="modal__subtitle">Введите электронную почту</p>
+        </div>
+        <div class="modal__body">
+          <form class="modal__form" action="">
+            <fieldset>
+              <!-- Для того чтобы показать ошибку, добавляем к label класс .has-error-->
+              <label>
+                <input type="text" placeholder="Email"><span class="error-message">Текст ошибки</span>
+              </label>
+            </fieldset>
+            <button class="btn btn_block btn_lite modal__button" type="submit" data-modal data-modal-target="#passRecoveryMessage" data-modal-action="toggle"><span>Сбросить пароль</span></button>
+          </form>
+        </div>
+        <div class="modal__footer">
+          <button class="modal__link" type="button" data-modal data-modal-target="#enterEmail" data-modal-action="toggle">Вернуться к входу</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal hide" id="passRecoveryMessage">
+      <div class="modal__dialog">
+        <div class="modal__close">
+          <button type="button" data-modal data-modal-action="close"></button>
+        </div>
+        <div class="modal__header">
+          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/modal-logo.svg" alt=""></div>
+          <h3 class="modal__title">Восстановление пароля</h3>
+          <p class="modal__subtitle">Новый пароль выслан на указанную почту</p><span class="modal__check"></span>
+        </div>
+        <div class="modal__footer">
+          <button class="modal__link" type="button" data-modal data-modal-target="#enterEmail" data-modal-action="toggle">Перейти к входу</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal hide" id="passChange">
+      <div class="modal__dialog">
+        <div class="modal__close">
+          <button type="button" data-modal data-modal-action="close"></button>
+        </div>
+        <div class="modal__header">
+          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/modal-logo.svg" alt=""></div>
+          <h3 class="modal__title">Изменить пароль</h3>
+          <p class="modal__subtitle">Введите тикущий пароль и новый</p>
+        </div>
+        <div class="modal__body">
+          <form class="modal__form" action="">
+            <fieldset>
+              <!-- Для того чтобы показать ошибку, добавляем к label класс .has-error-->
+              <label>
+                <input type="text" placeholder="Текущий пароль"><span class="error-message">Текст ошибки</span>
+              </label>
+              <label>
+                <input type="text" placeholder="Повторите текущий пароль"><span class="error-message">Текст ошибки</span>
+              </label>
+              <label>
+                <input type="text" placeholder="Новый пароль"><span class="error-message">Текст ошибки</span>
+              </label>
+            </fieldset>
+            <button class="btn btn_block btn_lite modal__button" type="submit" data-modal data-modal-target="#passChangeMessage" data-modal-action="toggle"><span>Изменить пароль</span></button>
+          </form>
+        </div>
+        <div class="modal__footer"><a class="modal__link" href="#">Перейти в личный кабинет</a></div>
+      </div>
+    </div>
+    <div class="modal hide" id="passChangeMessage">
+      <div class="modal__dialog">
+        <div class="modal__close">
+          <button type="button" data-modal data-modal-action="close"></button>
+        </div>
+        <div class="modal__header">
+          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/modal-logo.svg" alt=""></div>
+          <h3 class="modal__title">Изменить пароль</h3>
+          <p class="modal__subtitle">Пароль успешно изменен</p><span class="modal__check"></span>
+        </div>
+        <div class="modal__footer"><a class="modal__link" href="#">Перейти в личный кабинет</a></div>
+      </div>
+    </div>
+    <div class="modal hide" id="enterEmail">
+      <div class="modal__dialog">
+        <div class="modal__close">
+          <button type="button" data-modal data-modal-action="close"></button>
+        </div>
+        <div class="modal__header">
+          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/modal-logo.svg" alt=""></div>
+          <h3 class="modal__title">Войти по почте</h3>
+          <p class="modal__subtitle">Только для зарегистрированных пользователей</p>
+        </div>
+        <div class="modal__body">
+          <form class="modal__form" action="">
+            <fieldset>
+              <!-- Для того чтобы показать ошибку, добавляем к label класс .has-error-->
+              <label>
+                <input type="text" placeholder="Email"><span class="error-message">Текст ошибки</span>
+              </label>
+              <label>
+                <input type="password" placeholder="Пароль"><span class="error-message">Текст ошибки</span><span class="modal__toggle-visible-pass"></span>
+              </label>
+            </fieldset>
+            <button class="btn btn_block btn_lite modal__button" type="submit" data-modal data-modal-action="close"><span>Войти</span></button>
+          </form>
+        </div>
+        <div class="modal__footer"><a class="modal__link" href="#">Войти по номеру телефона</a>
+          <button class="modal__link" type="button" data-modal data-modal-target="#passRecovery" data-modal-action="toggle">Забыли пароль?</button>
+        </div>
+      </div>
+    </div>
     <script>
       window.productDataLink = 'https://anaragaev.github.io/technolight.layout/mocks/spot-42-fixed.json'
       
