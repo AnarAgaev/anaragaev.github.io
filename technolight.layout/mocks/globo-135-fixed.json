@@ -50,7 +50,7 @@
         "light_flow": 590,
         "power": 8,
         "light_angle": 270,
-        "dimmer": "Нет",
+        "dimmer": "Недиммируемый",
         "length": 0,
         "width": 0,
         "height": 0,
@@ -170,7 +170,7 @@
       ],
       "dimmer": [
         {
-            "value": "Нет",
+            "value": "Недиммируемый",
             "products": [541]
         }, {
             "value": "1-10В",
