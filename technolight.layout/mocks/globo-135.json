@@ -168,21 +168,36 @@
           ]
         }
       ],
-      "dimmer": []
+      "dimmer": [
+        {
+            "value": "Нет",
+            "products": [541]
+        }, {
+            "value": "1-10В",
+            "products": [590]
+        },
+        {
+            "value": "DALI",
+            "products": [565]
+        }
+      ]
     },
     "translate": {
       "color": "Цвет",
-      "colorful_temperature": "Цветовая температура",
+      "light_temperatures": "Цветовая температура",
       "light_flow": "Световой поток",
       "power": "Мощность",
-      "angle_of_light": "Угол света",
-      "brightness_adjustment": "Регулировка яркости"
+      "light_angle": "Угол света",
+      "brightness_adjustment": "Регулировка яркости",
+      "dimmer":"Диммирование"
     },
     "units": {
-      "colorful_temperature": "К",
+      "color": "",
+      "light_temperatures": "К",
       "light_flow": "Лм",
       "power": "Вт",
-      "angle_of_light": "°"
+      "light_angle": "°",
+      "dimmer":""
     }
   }
 }
