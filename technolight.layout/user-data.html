@@ -147,29 +147,30 @@
             <div class="container">
               <div class="row">
                 <div class="col-12 col-md-6">
-                  <div class="account__form-body">
+                  <form class="account__form-body" id="changeUserDataForm" action="">
                     <div class="account__form-data">
                       <div class="account__form-section">
+                        <!-- Для ошибки полю .account__form-controller добавляем класс .has-error-->
                         <div class="account__form-controller">
                           <label class="account__form-label"><i class="user"></i>
-                            <input type="text" placeholder="ФИО">
+                            <input type="text" placeholder="ФИО" name="name">
                           </label><span class="account__form-error">Сообщение об ошибке</span>
                         </div>
                         <div class="account__form-controller">
                           <label class="account__form-label"><i class="post"></i>
-                            <input type="text" placeholder="Email">
+                            <input type="text" placeholder="Email" name="email">
                           </label><span class="account__form-error">Сообщение об ошибке</span>
                         </div>
                       </div>
                       <div class="account__form-section">
-                        <div class="account__form-controller has-error">
+                        <div class="account__form-controller">
                           <label class="account__form-label"><i class="phone"></i>
-                            <input type="text" placeholder="Телефон" value="Lorem ipsum dolor sit amet consectetur adipisicing elit.">
+                            <input type="text" placeholder="Телефон" name="phone">
                           </label><span class="account__form-error">Сообщение об ошибке</span>
                         </div>
                         <div class="account__form-controller">
                           <label class="account__form-label"><i class="baloon"></i>
-                            <input type="text" placeholder="Город">
+                            <input type="text" placeholder="Город" name="city">
                           </label><span class="account__form-error">Сообщение об ошибке</span>
                         </div>
                       </div>
@@ -177,7 +178,7 @@
                     <div class="account__form-button">
                       <button class="btn btn_block btn_dark" type="submit"><span>Сохранить</span></button>
                     </div>
-                  </div>
+                  </form>
                 </div>
               </div>
             </div>
