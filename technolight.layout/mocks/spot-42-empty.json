@@ -7,7 +7,6 @@
         "category_id": 7,
         "uuid": "bff410fb-8390-11ee-8af9-005056953bcb",
         "type": "series",
-        "description": "Встраиваемый монтаж — это самый популярный и эстетичный вид использования трековой системы. Питающий шинопровод крепится на заранее собранный каркас из строительного профиля, закрывается листами гипсокартона или другого схожего материала. Затем выполняются финишные шпатлевочные и покрасочные работы.<br><br>Для правильной установки необходима достаточная квалификация монтажников, а также мастеров, способных вывести идеально гладкую потолочную плоскость.<br><br>В результате качественного выполнения всех отделочных работ получается тонкая черная линия. Ширина итоговой полосы — 23 мм.",
         "images": [{
             "color": "black",
             "image": "https://yarusvsm.ru/all_about_product/Technolight_series/profi-48v/spot-42/spot-42_1.jpg"
@@ -18,32 +17,10 @@
             "color": "black-white",
             "image": "https://yarusvsm.ru/all_about_product/Technolight_series/profi-48v/spot-42/spot-42_3.jpg"
         }],
-        "videos": [
-            {
-                "url": "https://www.youtube.com/embed/YHwnmYkkYrM?si=7VpmellS4GuvokPM",
-                "name": "Светильники TECHNOLIGHT в жилом комплексе Небо.",
-                "poster": "https://aws.massive.ru/technolight/images/projects/video-poster.png"
-            }, {
-                "url": "https://www.youtube.com/embed/17orKkflArA?si=Tq78lY3xfTo9THLQ",
-                "name": "Освещение TECHNOLIGHT в новом офисе OnProekt, в котором всё получилось идеально!",
-                "poster": "https://aws.massive.ru/technolight/images/projects/collage/13.jpg"
-            }
-        ],
-        "specifications":{
-            "Производитель":"Technolight®",
-            "Тип упаковки":"PAP (код 20)",
-            "Вес":"0,232 кг",
-            "Тип монтажа":"Встраиваемый в гипсокартон с выполнением отделочных работ. Светильники легко устанавливаются в трек. Напряжение питания — 48",
-            "Конструкция":"Экструдированный алюминий с порошковым покрытием черного цвета (RAL 9005), медные проводники в диэлектрике из ПВХ и металлическая пластина для магнитного крепления светильников.",
-            "Габаритные размеры":"Длина — 2 000 мм, ширина — 74 мм, высота — 53 мм."
-        },
-        "files": [{
-            "url": "https://technolight.ru/assets/images/menu-pics/1_Badroom_white.mp4",
-            "name": "Инструкция по монтажу PDF"
-        }, {
-            "url": "https://technolight.ru/assets/images/menu-pics/1_Badroom_white.mp4",
-            "name": "3D-модель ZIP"
-        }],
+        "description": null,
+        "videos": null,
+        "specifications": null,
+        "files": null,
         "position": 0,
         "available": true,
         "is_new": false,
