@@ -21522,25 +21522,25 @@ label[for="mse2_ms|sale_0"] {
 .ecommerce-selected .ncatlist .ncatfilterun .ncatfilterun-butsblock .btn-photo.mse2_selected_link,
 .ncatlist .ncatfilterun .ncatfilterun-butsblock .btn.btn-photo,
 .ncatlist .ncatfilterun .ncatfilterun-butsblock .ecommerce-selected .btn-photo.mse2_selected_link {
-  background: #de5617 url(assets/tpl/images/filter_blocks/btn-photo.svg) no-repeat 10px center
+  background: #de5617 url(/assets/tpl/images/filter_blocks/btn-photo.svg) no-repeat 10px center
 }
 
 .ecommerce-selected .ncatlist .ncatfilterun .ncatfilterun-butsblock .btn-photo.mse2_selected_link:hover,
 .ncatlist .ncatfilterun .ncatfilterun-butsblock .btn.btn-photo:hover,
 .ncatlist .ncatfilterun .ncatfilterun-butsblock .ecommerce-selected .btn-photo.mse2_selected_link:hover {
-  background: #cc2500 url(assets/tpl/images/filter_blocks/btn-photo.svg) no-repeat 10px center
+  background: #cc2500 url(/assets/tpl/images/filter_blocks/btn-photo.svg) no-repeat 10px center
 }
 
 .ecommerce-selected .ncatlist .ncatfilterun .ncatfilterun-butsblock .btn-calculator.mse2_selected_link,
 .ncatlist .ncatfilterun .ncatfilterun-butsblock .btn.btn-calculator,
 .ncatlist .ncatfilterun .ncatfilterun-butsblock .ecommerce-selected .btn-calculator.mse2_selected_link {
-  background: #de5617 url(assets/tpl/images/filter_blocks/btn-calculator.svg) no-repeat 10px center
+  background: #de5617 url(/assets/tpl/images/filter_blocks/btn-calculator.svg) no-repeat 10px center
 }
 
 .ecommerce-selected .ncatlist .ncatfilterun .ncatfilterun-butsblock .btn-calculator.mse2_selected_link:hover,
 .ncatlist .ncatfilterun .ncatfilterun-butsblock .btn.btn-calculator:hover,
 .ncatlist .ncatfilterun .ncatfilterun-butsblock .ecommerce-selected .btn-calculator.mse2_selected_link:hover {
-  background: #cc2500 url(assets/tpl/images/filter_blocks/btn-calculator.svg) no-repeat 10px center
+  background: #cc2500 url(/assets/tpl/images/filter_blocks/btn-calculator.svg) no-repeat 10px center
 }
 
 @media (max-width:992px) {
