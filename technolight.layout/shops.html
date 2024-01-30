@@ -148,9 +148,11 @@
               <div class="row">
                 <div class="col-12">
                   <div class="shops__map" id="mapWrapper">
-                    <!-- После внеднеия нормальной карты, обязательно поставить задачу на удаление блокирующего кода-->
-                    <!-- В реальной карте инлайновые стили блокикирующе клики не добавлять. Нужны для демонстрации-->
-                    <iframe style="pointer-events: none;" src="https://yandex.ru/map-widget/v1/?um=constructor%3A4e1f453110abd356e9b08a0d33f82e75155d6cea4c9a83a8161605ffd697b91c&amp;amp;source=constructor" frameborder="0"></iframe>
+                    <div id="map" style="pointer-events: none;">
+                      <!-- После внеднеия нормальной карты, обязательно поставить задачу на удаление блокирующего кода-->
+                      <!-- В реальной карте инлайновые стили блокикирующе клики не добавлять. Нужны для демонстрации-->
+                      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4e1f453110abd356e9b08a0d33f82e75155d6cea4c9a83a8161605ffd697b91c&amp;amp;source=constructor" frameborder="0"></iframe>
+                    </div>
                   </div>
                 </div>
               </div>
