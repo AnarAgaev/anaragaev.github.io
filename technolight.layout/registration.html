@@ -155,14 +155,14 @@
                       <p class="account-form__subtitle">Для регистрации укажите ваш Емейл и Пароль</p>
                     </div>
                     <div class="account-form__body">
-                      <form class="account-form__form" action="">
+                      <form class="account-form__form" action="" data-form-type="registration">
                         <fieldset>
                           <!-- Для того чтобы показать ошибку, добавляем к label класс .has-error-->
-                          <label class="has-error"><i class="mail"></i>
-                            <input type="text" placeholder="Емейл"><span class="error-message">Текст ошибки</span>
+                          <label><i class="mail"></i>
+                            <input type="text" name="email" placeholder="Емейл"><span class="error-message">Текст ошибки</span>
                           </label>
-                          <label class="has-error"><i class="pass"></i>
-                            <input type="password" placeholder="Пароль"><span class="error-message">Текст ошибки</span><span class="help">Должен содержать минимум 8 символов</span><span class="toggle-visible-pass"></span>
+                          <label><i class="pass"></i>
+                            <input type="password" name="pass" placeholder="Пароль"><span class="error-message">Текст ошибки</span><span class="help">Должен содержать минимум 8 символов</span><span class="toggle-visible-pass"></span>
                           </label>
                         </fieldset>
                         <button class="btn btn_block btn_dark" type="submit"><span>Зарегистрироваться</span></button>
