@@ -204,9 +204,11 @@
             <ul>
               <li><a href="home.html" target="_black"><i></i><span>Главная</span>
                   <input type="checkbox" checked></a></li>
-              <li><a href="product.html" target="_black"><i></i><span>Карточка товара</span>
+              <li><a href="product.html" target="_black"><i></i><span>Карточка<b> Товара</b></span>
                   <input type="checkbox" checked></a></li>
-              <li><a href="series.html" target="_black"><i></i><span>Страница Серии</span>
+              <li><a href="article.html" target="_black"><i></i><span>Карточка<b> Артикула</b></span>
+                  <input type="checkbox" checked></a></li>
+              <li><a href="series.html" target="_black"><i></i><span>Страница<b> Серии</b></span>
                   <input type="checkbox" checked></a></li>
               <li><a href="return.html" target="_black"><i></i><span>Правила возврата товара</span>
                   <input type="checkbox" checked></a></li>
@@ -271,6 +273,8 @@
               <li><a data-modal data-modal-target="#enterEmail" data-modal-action="show" href="#"><i class="mdl"></i><span>Вход по почте</span>
                   <input type="checkbox"></a></li>
               <li><a data-modal data-modal-target="#enterPhone" data-modal-action="show" href="#"><i class="mdl"></i><span>Вход по телефону</span>
+                  <input type="checkbox"></a></li>
+              <li><a data-modal data-modal-target="#modalMsg" data-modal-action="show" href="#"><i class="mdl"></i><span>Заказ успешно отправлен</span>
                   <input type="checkbox"></a></li>
             </ul>
           </div>
@@ -641,6 +645,18 @@
             <button class="modal__service-link modal__service-link_tinkoff" type="button"></button>
             <button class="modal__service-link modal__service-link_yandex" type="button"></button>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal hide" id="modalMsg">
+      <div class="modal__dialog">
+        <div class="modal__close">
+          <button type="button" data-modal data-modal-action="close"></button>
+        </div>
+        <div class="modal__header">
+          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/modal-logo.svg" alt=""></div>
+          <h3 class="modal__title">Заказ успешно отправлен</h3>
+          <p class="modal__subtitle">Наш менеджер перезвонит Вам в ближайшее время</p><span class="modal__check"></span>
         </div>
       </div>
     </div>
