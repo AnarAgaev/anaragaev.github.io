@@ -152,23 +152,33 @@
                   <div class="account-form__dialog">
                     <div class="account-form__header">
                       <h3 class="account-form__title">Регистрация</h3>
-                      <p class="account-form__subtitle">Для регистрации укажите ваш Емейл и Пароль</p>
+                      <p class="account-form__subtitle">Для регистрации укажите ваш Емейл, Номер телефона и Пароль</p>
                     </div>
                     <div class="account-form__body">
                       <form class="account-form__form" action="" data-form-type="registration">
                         <fieldset>
                           <!-- Для того чтобы показать ошибку, добавляем к label класс .has-error-->
+                          <label><i class="phone"></i>
+                            <input type="tel" name="phone" placeholder="Телефон"><span class="error-message">Текст ошибки</span>
+                          </label>
                           <label><i class="mail"></i>
                             <input type="text" name="email" placeholder="Емейл"><span class="error-message">Текст ошибки</span>
                           </label>
                           <label><i class="pass"></i>
                             <input type="password" name="pass" placeholder="Пароль"><span class="error-message">Текст ошибки</span><span class="help">Должен содержать минимум 8 символов</span><span class="toggle-visible-pass"></span>
                           </label>
+                          <label><i class="pass"></i>
+                            <input type="password" name="repeatpass" placeholder="Повторите пароль"><span class="error-message">Текст ошибки</span><span class="help">Пароли должны совпадать</span><span class="toggle-visible-pass"></span>
+                          </label>
                         </fieldset>
                         <button class="btn btn_block btn_dark" type="submit"><span>Зарегистрироваться</span></button>
                       </form>
                     </div>
-                    <div class="account-form__footer"><a class="account-form__link" href="#">Войти</a><a class="account-form__link" href="#">Перейти на главную</a></div>
+                    <div class="account-form__footer"><span class="account-form__footer-text">или</span><a class="btn btn_block btn_dark" href="#"><span>Войти по почте</span></a><span class="account-form__footer-text">или через сервис</span>
+                      <div class="account-form__footer-services">
+                        <button class="service service_tinkoff" type="button"></button><a class="service service_yandex" href="#"></a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

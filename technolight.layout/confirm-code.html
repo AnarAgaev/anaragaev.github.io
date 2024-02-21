@@ -16,9 +16,9 @@
     <link rel="preload" href="css/main.min.css" as="style">
     <link rel="stylesheet" href="css/vendor.min.css">
     <link rel="stylesheet" href="css/main.min.css">
-    <link rel="stylesheet" href="css/pages/login.min.css">
+    <link rel="stylesheet" href="css/pages/confirm-code.min.css">
   </head>
-  <body class="transition-blocker page-login" id="body">
+  <body class="transition-blocker page-confirm-code" id="body">
     <header class="header" id="header">
       <div class="header__modal-back"></div>
       <div class="container">
@@ -130,49 +130,45 @@
         <div class="container">
           <ul class="breadcrumbs animation-element">
             <li><a href="#">Главная</a></li>
-            <li><span>Вход</span></li>
+            <li><span>Регистрация</span></li>
           </ul>
         </div>
       </div>
       <section class="section">
-        <div class="login">
+        <div class="confirm-code">
           <div class="container container_caption animation-element">
             <div class="row">
               <div class="col col-xl-8">
-                <h2 class="container_caption-text">Вход</h2>
+                <h2 class="container_caption-text">Регистрация</h2>
               </div>
             </div>
           </div>
         </div>
-        <div class="login__body animation-element">
+        <div class="confirm-code__body animation-element">
           <div class="container">
             <div class="row">
               <div class="col col-lg-8 col-xl-6 offset-lg-2 offset-xl-3">
                 <div class="account-form">
                   <div class="account-form__dialog">
                     <div class="account-form__header">
-                      <h3 class="account-form__title">Вход</h3>
-                      <p class="account-form__subtitle">Только для зарегистрированных пользователей</p>
+                      <h3 class="account-form__title">Введите код</h3>
+                      <p class="account-form__subtitle">Мы отправили код подтверждения на номер +7 926 818 11 84</p><a class="account-form__link" href="#">Изменить</a>
                     </div>
                     <div class="account-form__body">
-                      <form class="account-form__form" action="" data-form-type="login">
+                      <form class="account-form__form" action="" data-form-type="registration">
                         <fieldset>
                           <!-- Для того чтобы показать ошибку, добавляем к label класс .has-error-->
-                          <label><i class="mail"></i>
-                            <input type="text" name="email" placeholder="Email или телефон"><span class="error-message">Текст ошибки</span>
-                          </label>
                           <label><i class="pass"></i>
-                            <input type="password" name="pass" placeholder="Пароль"><span class="error-message">Текст ошибки</span><span class="help">Должен содержать минимум 8 символов</span><span class="toggle-visible-pass"></span>
+                            <input type="text" name="code" placeholder="Введите код"><span class="error-message">Текст ошибки</span>
                           </label>
-                        </fieldset>
-                        <button class="btn btn_block btn_dark" type="submit"><span>Войти</span></button>
+                        </fieldset><span class="account-form__text">Получить новый код можно через  <span id="confirtCodeTimer">00:57</span></span>
+                        <!-- На время блокировки ссылки получить код, добавляем класс .disabled--><a class="account-form__link disabled" href="#">Получить новый код</a>
                       </form>
                     </div>
-                    <div class="account-form__footer"><span class="account-form__footer-text">или через сервис</span>
+                    <div class="account-form__footer"><span class="account-form__footer-text">или</span><a class="btn btn_block btn_dark" href="#"><span>Войти по почте</span></a><span class="account-form__footer-text">или через сервис</span>
                       <div class="account-form__footer-services">
                         <button class="service service_tinkoff" type="button"></button><a class="service service_yandex" href="#"></a>
                       </div>
-                      <div class="account-form__footer-links"><a class="account-form__link" href="#">Забыли пароль?</a><a class="account-form__link" href="#">Зарегистрироваться</a></div>
                     </div>
                   </div>
                 </div>
@@ -571,7 +567,7 @@
     </script>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js" defer></script>
-    <script src="js/pages/login.min.js" defer></script>
+    <script src="js/pages/confirm-code.min.js" defer></script>
     <script>
       if (navigator.userAgent.indexOf('MSIE') !== -1 || navigator.appVersion.indexOf('Trident/') > -1) {
           var scripts = document.querySelectorAll('script');
