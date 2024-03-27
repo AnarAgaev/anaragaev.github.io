@@ -1,39 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="description" content="Write description for this page here">
-    <meta name="keywords" content="Write keywords for this page here">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="Write description for this page here" />
+    <meta name="keywords" content="Write keywords for this page here" />
     <title>Technolight</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="https://aws.massive.ru/technolight/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://aws.massive.ru/technolight/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://aws.massive.ru/technolight/favicon/favicon-16x16.png">
-    <link rel="icon" href="https://aws.massive.ru/technolight/favicon/favicon.ico">
-    <link rel="manifest" href="https://aws.massive.ru/technolight/favicon/site.webmanifest">
-    <link rel="preload" href="css/vendor.min.css" as="style">
-    <link rel="preload" href="css/main.min.css" as="style">
-    <link rel="stylesheet" href="css/vendor.min.css">
-    <link rel="stylesheet" href="css/main.min.css">
-    <link rel="stylesheet" href="css/pages/account.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://aws.massive.ru/technolight/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="https://aws.massive.ru/technolight/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://aws.massive.ru/technolight/favicon/favicon-16x16.png" />
+    <link rel="icon" href="https://aws.massive.ru/technolight/favicon/favicon.ico" />
+    <link rel="manifest" href="https://aws.massive.ru/technolight/favicon/site.webmanifest" />
+    <link rel="preload" href="css/vendor.min.css" as="style" />
+    <link rel="preload" href="css/main.min.css" as="style" />
+    <link rel="stylesheet" href="css/vendor.min.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="stylesheet" href="css/pages/account.min.css" />
   </head>
   <body class="transition-blocker page-account" id="body">
     <header class="header" id="header">
       <div class="header__modal-back"></div>
       <div class="container">
-        <div class="header__content"><a class="header__logo logo-light" href="#"></a>
+        <div class="header__content">
+          <a class="header__logo logo-light" href="#"></a>
           <nav class="header__nav">
-            <div class="header__nav-caption d-lg-none"><span class="header__nav-logo logo-dark"></span>
+            <div class="header__nav-caption d-lg-none">
+              <span class="header__nav-logo logo-dark"></span>
               <button class="header__nav-close"></button>
             </div>
             <ul class="header__nav-list">
               <!-- Элементку списка у которого есть подменю, нужно добавлять класс-модификатов .header__nav-item_with-inner-->
               <!-- Для раскрытого пункта меню, добавлять класс .dropped-->
-              <li class="header__nav-item header__nav-item_prod header__nav-item_with-inner"><i></i>
+              <li class="header__nav-item header__nav-item_prod header__nav-item_with-inner">
+                <i></i>
                 <!-- Активному пункту меню добавляем класс .active-->
                 <!-- Пункты с подменю должны быть КНОПКАМИ А НЕ ССЫЛКАМИ-->
-                <button class="header__nav-link header__nav-link_product"><i class="d-lg-none"></i><span>Продукция</span></button>
+                <button class="header__nav-link header__nav-link_product">
+                  <i class="d-lg-none"></i>
+                  <span>Продукция</span>
+                </button>
                 <!-- Для открытого подменю, добавляем класс .open-->
                 <div class="header__nav-collapse header__nav-collapse_product collapse">
                   <div class="collapse__inner">
@@ -73,12 +79,31 @@
                   </div>
                 </div>
               </li>
-              <li class="header__nav-item"><a class="header__nav-link header__nav-link_delivery" href="#"><i class="d-lg-none"></i><span>Доставка и оплата</span></a></li>
-              <li class="header__nav-item"><a class="header__nav-link header__nav-link_buy" href="#"><i class="d-lg-none"></i><span>Где купить</span></a></li>
-              <li class="header__nav-item"><a class="header__nav-link header__nav-link_configurator" href="#"><i class="d-lg-none"></i><span>Конфигуратор</span></a></li>
-              <li class="header__nav-item header__nav-item_company header__nav-item_with-inner"><i></i>
+              <li class="header__nav-item">
+                <a class="header__nav-link header__nav-link_delivery" href="#">
+                  <i class="d-lg-none"></i>
+                  <span>Доставка и оплата</span>
+                </a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link header__nav-link_buy" href="#">
+                  <i class="d-lg-none"></i>
+                  <span>Где купить</span>
+                </a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link header__nav-link_configurator" href="#">
+                  <i class="d-lg-none"></i>
+                  <span>Конфигуратор</span>
+                </a>
+              </li>
+              <li class="header__nav-item header__nav-item_company header__nav-item_with-inner">
+                <i></i>
                 <!-- Пункты с подменю должны быть КНОПКАМИ А НЕ ССЫЛКАМИ-->
-                <button class="header__nav-link header__nav-link_company"><i class="d-lg-none"></i><span>Компания</span></button>
+                <button class="header__nav-link header__nav-link_company">
+                  <i class="d-lg-none"></i>
+                  <span>Компания</span>
+                </button>
                 <div class="header__nav-collapse header__nav-collapse_company collapse">
                   <div class="collapse__inner">
                     <button class="header__nav-close d-none d-lg-block"></button>
@@ -97,29 +122,64 @@
             </ul>
           </nav>
           <ul class="header__buttons">
-            <li class="d-none d-lg-block"><a class="header__buttons-link header__buttons-link_call" href="tel:+9200000000"><i></i></a></li>
+            <li class="d-none d-lg-block">
+              <a class="header__buttons-link header__buttons-link_call" href="tel:+9200000000"><i></i></a>
+            </li>
             <li>
               <button class="header__buttons-link header__buttons-link_search"><i></i></button>
             </li>
-            <li><a class="header__buttons-link header__buttons-link_favorites" href="#"><i><span class="header__buttons-count">23</span></i></a></li>
-            <li><a class="header__buttons-link header__buttons-link_cart" href="#"><i><span class="header__buttons-count" id="cartProductCount">7</span></i></a></li>
-            <li class="d-none d-lg-block"><a class="header__buttons-link header__buttons-link_account" href="#"><i></i></a></li>
+            <li>
+              <a class="header__buttons-link header__buttons-link_favorites" href="#">
+                <i><span class="header__buttons-count">23</span></i>
+              </a>
+            </li>
+            <li>
+              <a class="header__buttons-link header__buttons-link_cart" href="#">
+                <i><span class="header__buttons-count" id="cartProductCount">7</span></i>
+              </a>
+            </li>
+            <li class="d-none d-lg-block">
+              <a class="header__buttons-link header__buttons-link_account" href="#"><i></i></a>
+            </li>
           </ul>
         </div>
         <!-- По умолчанию добавляем класс .disable, т.к поиск по умолчанию скрыт-->
         <div class="header__search disable">
           <form class="header__search-form">
-            <label><i></i>
-              <input class="header__search-input" type="text" placeholder="Поиск"><span class="header__search-reset" type="reset"></span>
+            <label>
+              <i></i>
+              <input class="header__search-input" type="text" placeholder="Поиск" />
+              <span class="header__search-reset" type="reset"></span>
             </label>
             <button class="header__search-close" type="button">Отмена</button>
           </form>
           <div class="header__search-hints">
-            <div class="header__search-helps"><span>Трек для натяжного потолка</span><span>Софт</span><span>Лайн 300</span><span>Блок питания линейный</span><span>Торцевая заглушка для трека</span><span>Трек встраиваемый в гипсокартон</span></div>
-            <div class="header__search-links"><a href="#">Торцевая заглушка для трека</a><a href="#">Лайн 300</a><a href="#">Блок питания линейный</a><a href="#">Трек встраиваемый в гипсокартон</a><a href="#">Трек под натяжной потолок купить</a><a href="#">Споты для трека в Москве</a></div>
-            <div class="header__search-categories"><a href="#">
-                <p>Светильники с рамкой</p><span>Категория</span></a><a href="#">
-                <p>Светильники с рамкой</p><span>Категория</span></a></div>
+            <div class="header__search-helps">
+              <span>Трек для натяжного потолка</span>
+              <span>Софт</span>
+              <span>Лайн 300</span>
+              <span>Блок питания линейный</span>
+              <span>Торцевая заглушка для трека</span>
+              <span>Трек встраиваемый в гипсокартон</span>
+            </div>
+            <div class="header__search-links">
+              <a href="#">Торцевая заглушка для трека</a>
+              <a href="#">Лайн 300</a>
+              <a href="#">Блок питания линейный</a>
+              <a href="#">Трек встраиваемый в гипсокартон</a>
+              <a href="#">Трек под натяжной потолок купить</a>
+              <a href="#">Споты для трека в Москве</a>
+            </div>
+            <div class="header__search-categories">
+              <a href="#">
+                <p>Светильники с рамкой</p>
+                <span>Категория</span>
+              </a>
+              <a href="#">
+                <p>Светильники с рамкой</p>
+                <span>Категория</span>
+              </a>
+            </div>
           </div>
         </div>
         <div class="header__msg-container"></div>
@@ -147,7 +207,8 @@
           <div class="account__banner animation-element">
             <div class="container">
               <div class="account__msg">
-                <p>У вас нет конфигураций</p><a href="#">Создать конфигурацию</a>
+                <p>У вас нет конфигураций</p>
+                <a href="#">Создать конфигурацию</a>
               </div>
             </div>
           </div>
@@ -158,24 +219,50 @@
                   <div class="account__configuration">
                     <div class="account__configuration-order">
                       <div class="account__configuration-check"><i></i></div>
-                      <div class="account__configuration-info"><span class="account__configuration-number">№ 3712</span><span class="account__configuration-date">Создан 07.11.2021</span></div>
+                      <div class="account__configuration-info">
+                        <span class="account__configuration-number">№ 3712</span>
+                        <span class="account__configuration-date">Создан 07.11.2021</span>
+                      </div>
                     </div>
-                    <div class="account__configuration-buttons"><a class="account__configuration-btn account__configuration-btn_edit" href="#" title="Редактировать конфигурацию"><i></i>
-                        <mark> Редактировать</mark></a><a class="account__configuration-btn account__configuration-btn_download" href="#" title="Скачать конфигурацию"><i></i>
-                        <mark>Скачать</mark></a><a class="account__configuration-btn account__configuration-btn_delete" href="#" title="Удалить конфигурацию"><i></i>
-                        <mark>Удалить</mark></a></div>
+                    <div class="account__configuration-buttons">
+                      <a class="account__configuration-btn account__configuration-btn_edit" href="#" title="Редактировать конфигурацию">
+                        <i></i>
+                        <mark>Редактировать</mark>
+                      </a>
+                      <a class="account__configuration-btn account__configuration-btn_download" href="#" title="Скачать конфигурацию">
+                        <i></i>
+                        <mark>Скачать</mark>
+                      </a>
+                      <a class="account__configuration-btn account__configuration-btn_delete" href="#" title="Удалить конфигурацию">
+                        <i></i>
+                        <mark>Удалить</mark>
+                      </a>
+                    </div>
                   </div>
                 </div>
                 <div class="col-12">
                   <div class="account__configuration">
                     <div class="account__configuration-order">
                       <div class="account__configuration-check"><i></i></div>
-                      <div class="account__configuration-info"><span class="account__configuration-number">№ 7825</span><span class="account__configuration-date">Создан 15.08.2023</span></div>
+                      <div class="account__configuration-info">
+                        <span class="account__configuration-number">№ 7825</span>
+                        <span class="account__configuration-date">Создан 15.08.2023</span>
+                      </div>
                     </div>
-                    <div class="account__configuration-buttons"><a class="account__configuration-btn account__configuration-btn_edit" href="#" title="Редактировать конфигурацию"><i></i>
-                        <mark> Редактировать</mark></a><a class="account__configuration-btn account__configuration-btn_download" href="#" title="Скачать конфигурацию"><i></i>
-                        <mark>Скачать</mark></a><a class="account__configuration-btn account__configuration-btn_delete" href="#" title="Удалить конфигурацию"><i></i>
-                        <mark>Удалить</mark></a></div>
+                    <div class="account__configuration-buttons">
+                      <a class="account__configuration-btn account__configuration-btn_edit" href="#" title="Редактировать конфигурацию">
+                        <i></i>
+                        <mark>Редактировать</mark>
+                      </a>
+                      <a class="account__configuration-btn account__configuration-btn_download" href="#" title="Скачать конфигурацию">
+                        <i></i>
+                        <mark>Скачать</mark>
+                      </a>
+                      <a class="account__configuration-btn account__configuration-btn_delete" href="#" title="Удалить конфигурацию">
+                        <i></i>
+                        <mark>Удалить</mark>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -186,30 +273,38 @@
               <div class="row">
                 <div class="col-12 col-lg-4">
                   <div class="account__card">
-                    <div class="account__card-caption"><i class="account__card-icon account__card-icon_pencil"></i>
+                    <div class="account__card-caption">
+                      <i class="account__card-icon account__card-icon_pencil"></i>
                       <h3 class="account__card-title">Изменить пароль</h3>
-                    </div><a class="btn btn_lite btn_block" href="#"><span>Изменить пароль</span></a>
+                    </div>
+                    <a class="btn btn_lite btn_block" href="#"><span>Изменить пароль</span></a>
                   </div>
                 </div>
                 <div class="col-12 col-lg-4">
                   <div class="account__card">
-                    <div class="account__card-caption"><i class="account__card-icon account__card-icon_user"></i>
+                    <div class="account__card-caption">
+                      <i class="account__card-icon account__card-icon_user"></i>
                       <h3 class="account__card-title">Личные данные</h3>
-                    </div><a class="btn btn_lite btn_block" href="#"><span>Изменить личные данные</span></a>
+                    </div>
+                    <a class="btn btn_lite btn_block" href="#"><span>Изменить личные данные</span></a>
                   </div>
                 </div>
                 <div class="col-12 col-lg-4">
                   <div class="account__card">
-                    <div class="account__card-caption"><i class="account__card-icon account__card-icon_cart"></i>
+                    <div class="account__card-caption">
+                      <i class="account__card-icon account__card-icon_cart"></i>
                       <h3 class="account__card-title">История заказов</h3>
-                    </div><a class="btn btn_lite btn_block" href="#"><span>Смотреть историю</span></a>
+                    </div>
+                    <a class="btn btn_lite btn_block" href="#"><span>Смотреть историю</span></a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="account__back animation-element">
-            <div class="container"><a class="btn btn_block btn_dark" href="#"><span>Вернуться в каталог</span></a></div>
+            <div class="container">
+              <a class="btn btn_block btn_dark" href="#"><span>Вернуться в каталог</span></a>
+            </div>
           </div>
         </div>
       </section>
@@ -217,13 +312,36 @@
     <footer class="footer" id="footer">
       <div class="footer__nav d-lg-none">
         <ul>
-          <li><a class="footer__nav-link footer__nav-link_home" href="#"><i></i><span>Главная</span></a></li>
-          <li><a class="footer__nav-link footer__nav-link_call" href="#"><i></i><span>Позвонить</span></a></li>
-          <li><a class="footer__nav-link footer__nav-link_cart" href="#"><i></i><span>Корзина</span></a></li>
-          <li><a class="footer__nav-link footer__nav-link_account" href="#"><i></i><span>Аккаунт</span></a></li>
+          <li>
+            <a class="footer__nav-link footer__nav-link_home" href="#">
+              <i></i>
+              <span>Главная</span>
+            </a>
+          </li>
+          <li>
+            <a class="footer__nav-link footer__nav-link_call" href="#">
+              <i></i>
+              <span>Позвонить</span>
+            </a>
+          </li>
+          <li>
+            <a class="footer__nav-link footer__nav-link_cart" href="#">
+              <i></i>
+              <span>Корзина</span>
+            </a>
+          </li>
+          <li>
+            <a class="footer__nav-link footer__nav-link_account" href="#">
+              <i></i>
+              <span>Аккаунт</span>
+            </a>
+          </li>
           <li>
             <!-- Активной ссылке, добавляем класс .active-->
-            <button class="footer__nav-link footer__nav-link_menu"><i></i><span>Меню</span></button>
+            <button class="footer__nav-link footer__nav-link_menu">
+              <i></i>
+              <span>Меню</span>
+            </button>
           </li>
         </ul>
       </div>
@@ -241,28 +359,39 @@
               <ul class="footer__cards-list">
                 <li class="footer__cards-item">
                   <!-- Если карточка не ссылка, то вместо тега <a> используем обычный div-->
-                  <div class="footer__cards-body"><i class="footer__cards-icon footer__cards-icon_connect"></i>
+                  <div class="footer__cards-body">
+                    <i class="footer__cards-icon footer__cards-icon_connect"></i>
                     <div class="footer__cards-content">
                       <div class="footer__cards-title">Звоните или пишите</div>
                       <p class="footer__cards-description">
-                        <!-- В телефонном номере недо должно быть пробелов и других символов кроме цифр и +--><a href="tel:+74957977251">+7 495-797-72-51</a><a href="https://wa.me/74957470564" target="_blank">+7 495-747-05-64 (WhatsApp)</a><a href="mailto:order@technolight.ru">order@technolight.ru</a>
+                        <!-- В телефонном номере недо должно быть пробелов и других символов кроме цифр и +-->
+                        <a href="tel:+74957977251">+7 495-797-72-51</a>
+                        <a href="https://wa.me/74957470564" target="_blank">+7 495-747-05-64 (WhatsApp)</a>
+                        <a href="mailto:order@technolight.ru">order@technolight.ru</a>
                       </p>
                     </div>
                   </div>
                 </li>
                 <li class="footer__cards-item">
-                  <!-- Если карточка ссылка, то класс-модификатор .footer__cards-body_link--><a class="footer__cards-body footer__cards-body_link" href="#"><i class="footer__cards-icon footer__cards-icon_calc"></i>
+                  <!-- Если карточка ссылка, то класс-модификатор .footer__cards-body_link-->
+                  <a class="footer__cards-body footer__cards-body_link" href="#">
+                    <i class="footer__cards-icon footer__cards-icon_calc"></i>
                     <div class="footer__cards-content">
                       <!-- Если карточка ссылка, то к заголовку добавляем класс-модификатор .footer__cards-title_link-->
                       <div class="footer__cards-title footer__cards-title_link">Расчет освещенности</div>
                       <p class="footer__cards-description">Заказывайте проект по свету у специалистов нашей компании и получайте профессиональную консультацию.</p>
-                    </div></a>
+                    </div>
+                  </a>
                 </li>
-                <li class="footer__cards-item"><a class="footer__cards-body footer__cards-body_link" href="#"><i class="footer__cards-icon footer__cards-icon_download"></i>
+                <li class="footer__cards-item">
+                  <a class="footer__cards-body footer__cards-body_link" href="#">
+                    <i class="footer__cards-icon footer__cards-icon_download"></i>
                     <div class="footer__cards-content">
                       <div class="footer__cards-title footer__cards-title_link">Файлы для скачивания</div>
                       <p class="footer__cards-description">Последние версии каталогов, технические спецификации, IES-файлы и прочая документация.</p>
-                    </div></a></li>
+                    </div>
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -335,7 +464,11 @@
               <li class="footer__location-item"><a href="https://wa.me/74957470564" target="_blank">+7 495-747-05-64 (WhatsApp)</a></li>
               <li class="footer__location-item"><a href="mailto:order@technolight.ru">order@technolight.ru</a></li>
             </ul>
-            <div class="footer__location-socials"><a class="social social_telegram" href="https://t.me/technolight_official" target="_blank"></a><a class="social social_vk" href="https://vk.com/technolightru" target="_blank"></a><a class="social social_youtube" href="https://www.youtube.com/channel/UCt3wRyz1Z8b-WOlCHz43CuQ" target="_blank"></a></div>
+            <div class="footer__location-socials">
+              <a class="social social_telegram" href="https://t.me/technolight_official" target="_blank"></a>
+              <a class="social social_vk" href="https://vk.com/technolightru" target="_blank"></a>
+              <a class="social social_youtube" href="https://www.youtube.com/channel/UCt3wRyz1Z8b-WOlCHz43CuQ" target="_blank"></a>
+            </div>
           </div>
         </div>
         <div class="footer__line">
@@ -366,7 +499,7 @@
           <button type="button" data-modal data-modal-action="close"></button>
         </div>
         <div class="modal__header">
-          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/modal-logo.svg" alt=""></div>
+          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/modal-logo.svg" alt="" /></div>
           <h3 class="modal__title">отправить заказ</h3>
         </div>
         <div class="modal__body">
@@ -374,16 +507,20 @@
             <fieldset>
               <!-- Для того чтобы показать ошибку, добавляем к label класс .has-error-->
               <label>
-                <input type="text" placeholder="ФИО*" name="name"><span class="error-message">Текст ошибки</span>
+                <input type="text" placeholder="ФИО*" name="name" />
+                <span class="error-message">Текст ошибки</span>
               </label>
               <label>
-                <input type="text" placeholder="Телефон*" name="phone"><span class="error-message">Текст ошибки</span>
+                <input type="text" placeholder="Телефон*" name="phone" />
+                <span class="error-message">Текст ошибки</span>
               </label>
               <label>
-                <input type="text" placeholder="Email" name="email"><span class="error-message">Текст ошибки</span>
+                <input type="text" placeholder="Email" name="email" />
+                <span class="error-message">Текст ошибки</span>
               </label>
               <label>
-                <input type="text" placeholder="Город" name="city"><span class="error-message">Текст ошибки</span>
+                <input type="text" placeholder="Город" name="city" />
+                <span class="error-message">Текст ошибки</span>
               </label>
             </fieldset>
             <button class="btn btn_block btn_lite modal__button modal__button_offset" type="submit"><span>Отправить</span></button>
@@ -400,9 +537,10 @@
           <button type="button" data-modal data-modal-action="close"></button>
         </div>
         <div class="modal__header">
-          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/modal-logo.svg" alt=""></div>
+          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/modal-logo.svg" alt="" /></div>
           <h3 class="modal__title">Заказ отправлен</h3>
-          <p class="modal__subtitle">Вы можете продолжить выбор товаров</p><span class="modal__check"></span>
+          <p class="modal__subtitle">Вы можете продолжить выбор товаров</p>
+          <span class="modal__check"></span>
         </div>
       </div>
     </div>
@@ -412,7 +550,7 @@
           <button type="button" data-modal data-modal-action="close"></button>
         </div>
         <div class="modal__header">
-          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/modal-logo.svg" alt=""></div>
+          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/modal-logo.svg" alt="" /></div>
           <h3 class="modal__title">Восстановление пароля</h3>
           <p class="modal__subtitle">Введите электронную почту</p>
         </div>
@@ -421,7 +559,8 @@
             <fieldset>
               <!-- Для того чтобы показать ошибку, добавляем к label класс .has-error-->
               <label>
-                <input type="text" placeholder="Email"><span class="error-message">Текст ошибки</span>
+                <input type="text" placeholder="Email" />
+                <span class="error-message">Текст ошибки</span>
               </label>
             </fieldset>
             <button class="btn btn_block btn_lite modal__button" type="submit" data-modal data-modal-target="#passRecoveryMessage" data-modal-action="toggle"><span>Сбросить пароль</span></button>
@@ -438,9 +577,10 @@
           <button type="button" data-modal data-modal-action="close"></button>
         </div>
         <div class="modal__header">
-          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/modal-logo.svg" alt=""></div>
+          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/modal-logo.svg" alt="" /></div>
           <h3 class="modal__title">Восстановление пароля</h3>
-          <p class="modal__subtitle">Новый пароль выслан на указанную почту</p><span class="modal__check"></span>
+          <p class="modal__subtitle">Новый пароль выслан на указанную почту</p>
+          <span class="modal__check"></span>
         </div>
         <div class="modal__footer">
           <button class="modal__link" type="button" data-modal data-modal-target="#enterEmail" data-modal-action="toggle">Перейти к входу</button>
@@ -453,7 +593,7 @@
           <button type="button" data-modal data-modal-action="close"></button>
         </div>
         <div class="modal__header">
-          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/modal-logo.svg" alt=""></div>
+          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/modal-logo.svg" alt="" /></div>
           <h3 class="modal__title">Изменить пароль</h3>
           <p class="modal__subtitle">Введите текущий пароль и новый</p>
         </div>
@@ -462,13 +602,16 @@
             <fieldset>
               <!-- Для того чтобы показать ошибку, добавляем к label класс .has-error-->
               <label>
-                <input type="text" placeholder="Текущий пароль"><span class="error-message">Текст ошибки</span>
+                <input type="text" placeholder="Текущий пароль" />
+                <span class="error-message">Текст ошибки</span>
               </label>
               <label>
-                <input type="text" placeholder="Повторите текущий пароль"><span class="error-message">Текст ошибки</span>
+                <input type="text" placeholder="Повторите текущий пароль" />
+                <span class="error-message">Текст ошибки</span>
               </label>
               <label>
-                <input type="text" placeholder="Новый пароль"><span class="error-message">Текст ошибки</span>
+                <input type="text" placeholder="Новый пароль" />
+                <span class="error-message">Текст ошибки</span>
               </label>
             </fieldset>
             <button class="btn btn_block btn_lite modal__button" type="submit" data-modal data-modal-target="#passChangeMessage" data-modal-action="toggle"><span>Изменить пароль</span></button>
@@ -483,9 +626,10 @@
           <button type="button" data-modal data-modal-action="close"></button>
         </div>
         <div class="modal__header">
-          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/modal-logo.svg" alt=""></div>
+          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/modal-logo.svg" alt="" /></div>
           <h3 class="modal__title">Изменить пароль</h3>
-          <p class="modal__subtitle">Пароль успешно изменен</p><span class="modal__check"></span>
+          <p class="modal__subtitle">Пароль успешно изменен</p>
+          <span class="modal__check"></span>
         </div>
         <div class="modal__footer"><a class="modal__link" href="#">Перейти в личный кабинет</a></div>
       </div>
@@ -496,7 +640,7 @@
           <button type="button" data-modal data-modal-action="close"></button>
         </div>
         <div class="modal__header">
-          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/modal-logo.svg" alt=""></div>
+          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/modal-logo.svg" alt="" /></div>
           <h3 class="modal__title">Войти по почте</h3>
           <p class="modal__subtitle">Только для зарегистрированных пользователей</p>
         </div>
@@ -505,10 +649,13 @@
             <fieldset>
               <!-- Для того чтобы показать ошибку, добавляем к label класс .has-error-->
               <label>
-                <input type="text" placeholder="Email"><span class="error-message">Текст ошибки</span>
+                <input type="text" placeholder="Email" />
+                <span class="error-message">Текст ошибки</span>
               </label>
               <label>
-                <input type="password" placeholder="Пароль"><span class="error-message">Текст ошибки</span><span class="modal__toggle-visible-pass"></span>
+                <input type="password" placeholder="Пароль" />
+                <span class="error-message">Текст ошибки</span>
+                <span class="modal__toggle-visible-pass"></span>
               </label>
             </fieldset>
             <button class="btn btn_block btn_lite modal__button" type="submit" data-modal data-modal-action="close"><span>Войти</span></button>
@@ -526,7 +673,7 @@
           <button type="button" data-modal data-modal-action="close"></button>
         </div>
         <div class="modal__header">
-          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/modal-logo.svg" alt=""></div>
+          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/modal-logo.svg" alt="" /></div>
           <h3 class="modal__title">Введите номер телефона</h3>
           <p class="modal__subtitle">Мы отправим код или позвоним. Отвечать на звонок не нужно</p>
         </div>
@@ -535,14 +682,17 @@
             <fieldset>
               <!-- Для того чтобы показать ошибку, добавляем к label класс .has-error-->
               <label>
-                <input type="text" placeholder="Номер телефона"><span class="error-message">Текст ошибки</span>
+                <input type="text" placeholder="Номер телефона" />
+                <span class="error-message">Текст ошибки</span>
               </label>
             </fieldset>
-            <button class="btn btn_block btn_lite modal__button" type="button" data-modal data-modal-target="#enterCode" data-modal-action="toggle"><span>Получить код</span></button><span class="modal__text">или</span>
+            <button class="btn btn_block btn_lite modal__button" type="button" data-modal data-modal-target="#enterCode" data-modal-action="toggle"><span>Получить код</span></button>
+            <span class="modal__text">или</span>
             <button class="btn btn_block btn_lite modal__button" type="button" data-modal data-modal-target="#enterEmail" data-modal-action="toggle"><span>Войти по почте</span></button>
           </form>
         </div>
-        <div class="modal__footer"><span class="modal__text">через сервис</span>
+        <div class="modal__footer">
+          <span class="modal__text">через сервис</span>
           <div class="modal__service">
             <button class="modal__service-link modal__service-link_tinkoff" type="button"></button>
             <button class="modal__service-link modal__service-link_yandex" type="button"></button>
@@ -556,9 +706,12 @@
           <button type="button" data-modal data-modal-action="close"></button>
         </div>
         <div class="modal__header">
-          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/modal-logo.svg" alt=""></div>
+          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/modal-logo.svg" alt="" /></div>
           <h3 class="modal__title">Введите код</h3>
-          <p class="modal__subtitle">Мы отправили код подтверждения на номер  <span>+7 926 818 11 84</span></p>
+          <p class="modal__subtitle">
+            Мы отправили код подтверждения на номер
+            <span>+7 926 818 11 84</span>
+          </p>
           <button class="modal__link" type="button" data-modal data-modal-target="#enterPhone" data-modal-action="toggle">Изменить</button>
         </div>
         <div class="modal__body">
@@ -566,14 +719,21 @@
             <fieldset>
               <!-- Для того чтобы показать ошибку, добавляем к label класс .has-error-->
               <label>
-                <input type="text" placeholder="Введите код"><span class="error-message">Текст ошибки</span>
+                <input type="text" placeholder="Введите код" />
+                <span class="error-message">Текст ошибки</span>
               </label>
-            </fieldset><span class="modal__timer">Получить новый код можно через  <span class="modal__timer-value">00:60</span></span>
-            <button class="modal__link d-none" type="button">Получить новый код</button><span class="modal__text">или</span>
+            </fieldset>
+            <span class="modal__timer">
+              Получить новый код можно через
+              <span class="modal__timer-value">00:60</span>
+            </span>
+            <button class="modal__link d-none" type="button">Получить новый код</button>
+            <span class="modal__text">или</span>
             <button class="btn btn_block btn_lite modal__button" type="button" data-modal data-modal-target="#enterEmail" data-modal-action="toggle"><span>Войти по почте</span></button>
           </form>
         </div>
-        <div class="modal__footer"><span class="modal__text">через сервис</span>
+        <div class="modal__footer">
+          <span class="modal__text">через сервис</span>
           <div class="modal__service">
             <button class="modal__service-link modal__service-link_tinkoff" type="button"></button>
             <button class="modal__service-link modal__service-link_yandex" type="button"></button>
@@ -587,58 +747,58 @@
           <button type="button" data-modal data-modal-action="close"></button>
         </div>
         <div class="modal__header">
-          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/modal-logo.svg" alt=""></div>
+          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/modal-logo.svg" alt="" /></div>
           <h3 class="modal__title">Заказ успешно отправлен</h3>
-          <p class="modal__subtitle">Наш менеджер перезвонит Вам в ближайшее время</p><span class="modal__check"></span>
+          <p class="modal__subtitle">Наш менеджер перезвонит Вам в ближайшее время</p>
+          <span class="modal__check"></span>
         </div>
       </div>
     </div>
     <script>
       //- spot-42 - https://anaragaev.github.io/technolight.layout/mocks/spot-42-fixed.json
       //- globo-135 - https://anaragaev.github.io/technolight.layout/mocks/globo-135-fixed.json
-      
-      window.productDataLink = 'https://anaragaev.github.io/technolight.layout/mocks/spot-42-fixed.json'
-      window.cartLink = 'https://anaragaev.github.io/technolight.layout/cart.html'
-      
+
+      window.productDataLink = "https://anaragaev.github.io/technolight.layout/mocks/spot-42-fixed.json";
+      window.cartLink = "https://anaragaev.github.io/technolight.layout/cart.html";
     </script>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js" defer></script>
     <script src="js/pages/account.min.js" defer></script>
     <script>
-      if (navigator.userAgent.indexOf('MSIE') !== -1 || navigator.appVersion.indexOf('Trident/') > -1) {
-          var scripts = document.querySelectorAll('script');
-          for (var i = 0; i < scripts.length; i++) {
-              if (scripts[i].src !== '') {
-                  var node = scripts[i];
-                  node.parentNode.removeChild(node);
-              }
+      if (navigator.userAgent.indexOf("MSIE") !== -1 || navigator.appVersion.indexOf("Trident/") > -1) {
+        var scripts = document.querySelectorAll("script");
+        for (var i = 0; i < scripts.length; i++) {
+          if (scripts[i].src !== "") {
+            var node = scripts[i];
+            node.parentNode.removeChild(node);
           }
-      
-          var body = document.querySelector('body');
-          while (body.firstChild) {
-              body.removeChild(body.firstChild);
-          }
-      
-          var video = document.createElement('video');
-          video.src = 'https://aws.massive.ru/technolight/ie-not-supported.mp4';
-          video.autoplay = true;
-          video.loop = true;
-          video.muted = true;
-          video.playsInline = true;
-          video.setAttribute('style', 'max-width: 50%; height: auto;');
-      
-          var title = document.createElement('h1');
-          title.setAttribute('style', 'width: 100%; max-width: 700px; text-align: center; font-family: "Open Sans", sans-serif; line-height: 1.3; margin-bottom: 1em; margin-top: 0; font-size: 26px; padding-left: 20px; padding-right: 20px;');
-          title.innerText = "К сожалению, мы не поддерживаем браузер Internet Explorer 11 и более ранние версии!";
-      
-          var text = document.createElement('p');
-          text.setAttribute('style', 'width: 100%; max-width: 400px; text-align: center; font-family: "Open Sans", sans-serif; line-height: 1.3; margin-bottom: 3em; font-size: 18px; padding-left: 20px; padding-right: 20px;');
-          text.innerText = "Для просмотра сайта, воспользуйтесь более новой версией браузера.";
-      
-          body.setAttribute('style', 'display: flex; flex-direction: column; align-items: center; justify-content: center;');
-          body.appendChild(title);
-          body.appendChild(text);
-          body.appendChild(video);
+        }
+
+        var body = document.querySelector("body");
+        while (body.firstChild) {
+          body.removeChild(body.firstChild);
+        }
+
+        var video = document.createElement("video");
+        video.src = "https://aws.massive.ru/technolight/ie-not-supported.mp4";
+        video.autoplay = true;
+        video.loop = true;
+        video.muted = true;
+        video.playsInline = true;
+        video.setAttribute("style", "max-width: 50%; height: auto;");
+
+        var title = document.createElement("h1");
+        title.setAttribute("style", 'width: 100%; max-width: 700px; text-align: center; font-family: "Open Sans", sans-serif; line-height: 1.3; margin-bottom: 1em; margin-top: 0; font-size: 26px; padding-left: 20px; padding-right: 20px;');
+        title.innerText = "К сожалению, мы не поддерживаем браузер Internet Explorer 11 и более ранние версии!";
+
+        var text = document.createElement("p");
+        text.setAttribute("style", 'width: 100%; max-width: 400px; text-align: center; font-family: "Open Sans", sans-serif; line-height: 1.3; margin-bottom: 3em; font-size: 18px; padding-left: 20px; padding-right: 20px;');
+        text.innerText = "Для просмотра сайта, воспользуйтесь более новой версией браузера.";
+
+        body.setAttribute("style", "display: flex; flex-direction: column; align-items: center; justify-content: center;");
+        body.appendChild(title);
+        body.appendChild(text);
+        body.appendChild(video);
       }
     </script>
   </body>
