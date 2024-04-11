@@ -57,7 +57,7 @@
             "ip_class": 20,
             "price": 6200,
             "old_price": null,
-            "sale": null,
+            "sale": 0,
             "available": true,
             "image": "https://ms.fandeco.ru/assets/images/products/175863/86108-3k-01-bk.jpg",
             "color": "Чёрный",
