@@ -1,6 +1,9 @@
-[
-    {
-        "article":"60121-3K-02-WH",
-        "count":1
-    }
-]
+{
+ "products": [
+   {
+     "article": "60121-3K-02-WH",
+     "price": 6800,
+     "count": 1
+   }
+ ]
+}
