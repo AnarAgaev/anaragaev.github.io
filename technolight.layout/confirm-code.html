@@ -28,17 +28,13 @@
       window.productDataLink = "https://anaragaev.github.io/technolight.layout/mocks/spot-42-fixed.json";
 
       // Дефолтный API URL дотов с рамкой и без рамки
-      window.dotsDataLink = "";
-
-      window.setDotUrl = function () {
+      window.dotsDataLink = "https://anaragaev.github.io/technolight.layout/mocks/";
+      (function () {
         const urlParams = new URLSearchParams(window.location.search);
-        if (urlParams.has("border")) {
-          window.dotsDataLink = "https://anaragaev.github.io/technolight.layout/mocks/dots-border.json";
-        } else {
-          window.dotsDataLink = "https://anaragaev.github.io/technolight.layout/mocks/dots.json";
-        }
-      };
-      window.setDotUrl();
+        if (urlParams.has("border")) window.dotsDataLink += "dots-border.json";
+        else if (urlParams.has("mini")) window.dotsDataLink += "dots-mini.json";
+        else window.dotsDataLink += "dots.json";
+      })();
     </script>
   </head>
   <body class="transition-blocker page-confirm-code" id="body">
