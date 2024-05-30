@@ -8,8 +8,8 @@
       "name": "Графит",
       "code": "1234567",
       "price": "100.00",
-      "image": "https://aws.massive.ru/sew/img/borders/4690389180675_werkel.png",
-      "preview": "https://aws.massive.ru/sew/img/borders/4690389180675_werkel.png",
+      "image": "img/borders/4690389180675_werkel.png",
+      "preview": "img/borders/4690389180675_werkel.png",
       "color": "gold",
       "brands": "Systeme Electric"
     },
@@ -21,8 +21,8 @@
       "name": "Aйвори",
       "code": "1234567",
       "price": "100.00",
-      "image": "https://aws.massive.ru/sew/img/borders/f-elite-ivory.png",
-      "preview": "https://aws.massive.ru/sew/img/borders/f-elite-ivory.png",
+      "image": "img/borders/f-elite-ivory.png",
+      "preview": "img/borders/f-elite-ivory.png",
       "color": "gray",
       "brands": "Systeme Electric"
     },
@@ -34,8 +34,8 @@
       "name": "Дымчатый",
       "code": "1234567",
       "price": "100.00",
-      "image": "https://aws.massive.ru/sew/img/borders/f-elite-smoke.png",
-      "preview": "https://aws.massive.ru/sew/img/borders/f-elite-smoke.png",
+      "image": "img/borders/f-elite-smoke.png",
+      "preview": "img/borders/f-elite-smoke.png",
       "color": "white",
       "brands": "Systeme Electric"
     },
@@ -47,8 +47,8 @@
       "name": "Молочный",
       "code": "1234567",
       "price": "100.00",
-      "image": "https://aws.massive.ru/sew/img/borders/f-favorit-molochnyy.png",
-      "preview": "https://aws.massive.ru/sew/img/borders/f-favorit-molochnyy.png",
+      "image": "img/borders/f-favorit-molochnyy.png",
+      "preview": "img/borders/f-favorit-molochnyy.png",
       "color": "copper",
       "brands": "Systeme Electric"
     },
@@ -60,8 +60,8 @@
       "name": "Латте",
       "code": "1234567",
       "price": "100.00",
-      "image": "https://aws.massive.ru/sew/img/borders/f-favorit-latte.png",
-      "preview": "https://aws.massive.ru/sew/img/borders/f-favorit-latte.png",
+      "image": "img/borders/f-favorit-latte.png",
+      "preview": "img/borders/f-favorit-latte.png",
       "color": "black",
       "brands": "Systeme Electric"
     },
@@ -73,8 +73,8 @@
       "name": "Белый",
       "code": "1234567",
       "price": "100.00",
-      "image": "https://aws.massive.ru/sew/img/borders/f-favorit-white.png",
-      "preview": "https://aws.massive.ru/sew/img/borders/f-favorit-white.png",
+      "image": "img/borders/f-favorit-white.png",
+      "preview": "img/borders/f-favorit-white.png",
       "color": "silver",
       "brands": "Systeme Electric"
     },
@@ -86,8 +86,8 @@
       "name": "Белый матовый",
       "code": "1234567",
       "price": "100.00",
-      "image": "https://aws.massive.ru/sew/img/borders/f-favorit-white-matt.png",
-      "preview": "https://aws.massive.ru/sew/img/borders/f-favorit-white-matt.png",
+      "image": "img/borders/f-favorit-white-matt.png",
+      "preview": "img/borders/f-favorit-white-matt.png",
       "color": "gold",
       "brands": "Systeme Electric"
     },
@@ -99,8 +99,8 @@
       "name": "Бронзовый",
       "code": "1234567",
       "price": "100.00",
-      "image": "https://aws.massive.ru/sew/img/borders/f-favorit-bronze.png",
-      "preview": "https://aws.massive.ru/sew/img/borders/f-favorit-bronze.png",
+      "image": "img/borders/f-favorit-bronze.png",
+      "preview": "img/borders/f-favorit-bronze.png",
       "color": "gray",
       "brands": "Systeme Electric"
     },
@@ -112,8 +112,8 @@
       "name": "Дымчатый",
       "code": "1234567",
       "price": "100.00",
-      "image": "https://aws.massive.ru/sew/img/borders/f-favorit-smoke.png",
-      "preview": "https://aws.massive.ru/sew/img/borders/f-favorit-smoke.png",
+      "image": "img/borders/f-favorit-smoke.png",
+      "preview": "img/borders/f-favorit-smoke.png",
       "color": "white",
       "brands": "Systeme Electric"
     },
@@ -125,8 +125,8 @@
       "name": "Шампань",
       "code": "1234567",
       "price": "100.00",
-      "image": "https://aws.massive.ru/sew/img/borders/f-favorit-champain.png",
-      "preview": "https://aws.massive.ru/sew/img/borders/f-favorit-champain.png",
+      "image": "img/borders/f-favorit-champain.png",
+      "preview": "img/borders/f-favorit-champain.png",
       "color": "copper",
       "brands": "Systeme Electric"
     },
@@ -138,8 +138,8 @@
       "name": "Мокко",
       "code": "1234567",
       "price": "100.00",
-      "image": "https://aws.massive.ru/sew/img/borders/f-favorit-mokko.png",
-      "preview": "https://aws.massive.ru/sew/img/borders/f-favorit-mokko.png",
+      "image": "img/borders/f-favorit-mokko.png",
+      "preview": "img/borders/f-favorit-mokko.png",
       "color": "black",
       "brands": "Systeme Electric"
     },
@@ -151,8 +151,8 @@
       "name": "Натуральное стекло",
       "code": "1234567",
       "price": "100.00",
-      "image": "https://aws.massive.ru/sew/img/borders/f-favorit-natural-glass.png",
-      "preview": "https://aws.massive.ru/sew/img/borders/f-favorit-natural-glass.png",
+      "image": "img/borders/f-favorit-natural-glass.png",
+      "preview": "img/borders/f-favorit-natural-glass.png",
       "color": "silver",
       "brands": "Systeme Electric"
     },
@@ -164,8 +164,8 @@
       "name": "Серый",
       "code": "1234567",
       "price": "100.00",
-      "image": "https://aws.massive.ru/sew/img/borders/f-favorit-gray.png",
-      "preview": "https://aws.massive.ru/sew/img/borders/f-favorit-gray.png",
+      "image": "img/borders/f-favorit-gray.png",
+      "preview": "img/borders/f-favorit-gray.png",
       "color": "gold",
       "brands": "Systeme Electric"
     },
@@ -177,8 +177,8 @@
       "name": "Черный",
       "code": "1234567",
       "price": "100.00",
-      "image": "https://aws.massive.ru/sew/img/borders/f-favorit-black.png",
-      "preview": "https://aws.massive.ru/sew/img/borders/f-favorit-black.png",
+      "image": "img/borders/f-favorit-black.png",
+      "preview": "img/borders/f-favorit-black.png",
       "color": "gray",
       "brands": "Systeme Electric"
     },
@@ -190,8 +190,8 @@
       "name": "Черный",
       "code": "1234567",
       "price": "100.00",
-      "image": "https://aws.massive.ru/sew/img/borders/f-diamant-black.png",
-      "preview": "https://aws.massive.ru/sew/img/borders/f-diamant-black.png",
+      "image": "img/borders/f-diamant-black.png",
+      "preview": "img/borders/f-diamant-black.png",
       "color": "white",
       "brands": "Systeme Electric"
     },
@@ -203,8 +203,8 @@
       "name": "Белый",
       "code": "1234567",
       "price": "100.00",
-      "image": "https://aws.massive.ru/sew/img/borders/f-acrylic-white.png",
-      "preview": "https://aws.massive.ru/sew/img/borders/f-acrylic-white.png",
+      "image": "img/borders/f-acrylic-white.png",
+      "preview": "img/borders/f-acrylic-white.png",
       "color": "copper",
       "brands": "Systeme Electric"
     },
@@ -216,8 +216,8 @@
       "name": "Черный",
       "code": "1234567",
       "price": "100.00",
-      "image": "https://aws.massive.ru/sew/img/borders/f-acrylic-black.png",
-      "preview": "https://aws.massive.ru/sew/img/borders/f-acrylic-black.png",
+      "image": "img/borders/f-acrylic-black.png",
+      "preview": "img/borders/f-acrylic-black.png",
       "color": "black",
       "brands": "Systeme Electric"
     },
@@ -229,8 +229,8 @@
       "name": "Графит",
       "code": "1234567",
       "price": "100.00",
-      "image": "https://aws.massive.ru/sew/img/borders/f-acrylic-graphite.png",
-      "preview": "https://aws.massive.ru/sew/img/borders/f-acrylic-graphite.png",
+      "image": "img/borders/f-acrylic-graphite.png",
+      "preview": "img/borders/f-acrylic-graphite.png",
       "color": "silver",
       "brands": "Systeme Electric"
     },
@@ -242,8 +242,8 @@
       "name": "Айвори",
       "code": "1234567",
       "price": "100.00",
-      "image": "https://aws.massive.ru/sew/img/borders/f-acrylic-ivory.png",
-      "preview": "https://aws.massive.ru/sew/img/borders/f-acrylic-ivory.png",
+      "image": "img/borders/f-acrylic-ivory.png",
+      "preview": "img/borders/f-acrylic-ivory.png",
       "color": "gold",
       "brands": "Systeme Electric"
     },
@@ -255,8 +255,8 @@
       "name": "Алюминий",
       "code": "1234567",
       "price": "100.00",
-      "image": "https://aws.massive.ru/sew/img/borders/f-platinum-alyuminiy.png",
-      "preview": "https://aws.massive.ru/sew/img/borders/f-platinum-alyuminiy.png",
+      "image": "img/borders/f-platinum-alyuminiy.png",
+      "preview": "img/borders/f-platinum-alyuminiy.png",
       "color": "gray",
       "brands": "Systeme Electric"
     },
@@ -268,8 +268,8 @@
       "name": "Шампань",
       "code": "1234567",
       "price": "100.00",
-      "image": "https://aws.massive.ru/sew/img/borders/f-platinum-shampan.png",
-      "preview": "https://aws.massive.ru/sew/img/borders/f-platinum-shampan.png",
+      "image": "img/borders/f-platinum-shampan.png",
+      "preview": "img/borders/f-platinum-shampan.png",
       "color": "white",
       "brands": "Systeme Electric"
     },
@@ -281,8 +281,8 @@
       "name": "Черный алюминий",
       "code": "1234567",
       "price": "100.00",
-      "image": "https://aws.massive.ru/sew/img/borders/f-platinum-chernyy-alyuminiy.png",
-      "preview": "https://aws.massive.ru/sew/img/borders/f-platinum-chernyy-alyuminiy.png",
+      "image": "img/borders/f-platinum-chernyy-alyuminiy.png",
+      "preview": "img/borders/f-platinum-chernyy-alyuminiy.png",
       "color": "copper",
       "brands": "Systeme Electric"
     },
@@ -294,8 +294,8 @@
       "name": "Алюминий",
       "code": "1234567",
       "price": "100.00",
-      "image": "https://aws.massive.ru/sew/img/borders/f-aluminium-silver.png",
-      "preview": "https://aws.massive.ru/sew/img/borders/f-aluminium-silver.png",
+      "image": "img/borders/f-aluminium-silver.png",
+      "preview": "img/borders/f-aluminium-silver.png",
       "color": "black",
       "brands": "Systeme Electric"
     },
@@ -307,8 +307,8 @@
       "name": "Шампань алюминий",
       "code": "1234567",
       "price": "100.00",
-      "image": "https://aws.massive.ru/sew/img/borders/f-aluminium-shampan.png",
-      "preview": "https://aws.massive.ru/sew/img/borders/f-aluminium-shampan.png",
+      "image": "img/borders/f-aluminium-shampan.png",
+      "preview": "img/borders/f-aluminium-shampan.png",
       "color": "silver",
       "brands": "Systeme Electric"
     },
@@ -320,8 +320,8 @@
       "name": "Коричневый алюминий",
       "code": "1234567",
       "price": "100.00",
-      "image": "https://aws.massive.ru/sew/img/borders/f-aluminium-brown.png",
-      "preview": "https://aws.massive.ru/sew/img/borders/f-aluminium-brown.png",
+      "image": "img/borders/f-aluminium-brown.png",
+      "preview": "img/borders/f-aluminium-brown.png",
       "color": "gold",
       "brands": "Systeme Electric"
     },
@@ -333,8 +333,8 @@
       "name": "Черный алюминий",
       "code": "1234567",
       "price": "100.00",
-      "image": "https://aws.massive.ru/sew/img/borders/f-aluminium-black.png",
-      "preview": "https://aws.massive.ru/sew/img/borders/f-aluminium-black.png",
+      "image": "img/borders/f-aluminium-black.png",
+      "preview": "img/borders/f-aluminium-black.png",
       "color": "gray",
       "brands": "Systeme Electric"
     }
@@ -348,8 +348,8 @@
       "name": "Белый одноклавишный",
       "code": "1234567",
       "price": "000.00",
-      "image": "https://aws.massive.ru/sew/img/devices/pictures/mechanism_white_switcher_sensor_1_sup.png",
-      "preview": "https://aws.massive.ru/sew/img/devices/previews/mechanism_white_switcher_sensor_1.png",
+      "image": "img/devices/pictures/mechanism_white_switcher_sensor_1_sup.png",
+      "preview": "img/devices/previews/mechanism_white_switcher_sensor_1.png",
       "color": "white",
       "brands": "Systeme Electric"
     },
@@ -361,8 +361,8 @@
       "name": "Белый двуклавишный",
       "code": "1234567",
       "price": "000.00",
-      "image": "https://aws.massive.ru/sew/img/devices/pictures/mechanism_white_switcher_sensor_2_sup.png",
-      "preview": "https://aws.massive.ru/sew/img/devices/previews/mechanism_white_switcher_sensor_2.png",
+      "image": "img/devices/pictures/mechanism_white_switcher_sensor_2_sup.png",
+      "preview": "img/devices/previews/mechanism_white_switcher_sensor_2.png",
       "color": "copper",
       "brands": "Systeme Electric"
     },
@@ -374,8 +374,8 @@
       "name": "Черный одноклавишный",
       "code": "1234567",
       "price": "000.00",
-      "image": "https://aws.massive.ru/sew/img/devices/pictures/mechanism_black_switcher_sensor_1_sup.png",
-      "preview": "https://aws.massive.ru/sew/img/devices/previews/mechanism_black_switcher_sensor_1.png",
+      "image": "img/devices/pictures/mechanism_black_switcher_sensor_1_sup.png",
+      "preview": "img/devices/previews/mechanism_black_switcher_sensor_1.png",
       "color": "black",
       "brands": "Systeme Electric"
     },
@@ -387,8 +387,8 @@
       "name": "Черный двуклавишный",
       "code": "1234567",
       "price": "000.00",
-      "image": "https://aws.massive.ru/sew/img/devices/pictures/mechanism_black_switcher_sensor_2_sup.png",
-      "preview": "https://aws.massive.ru/sew/img/devices/previews/mechanism_black_switcher_sensor_2.png",
+      "image": "img/devices/pictures/mechanism_black_switcher_sensor_2_sup.png",
+      "preview": "img/devices/previews/mechanism_black_switcher_sensor_2.png",
       "color": "silver",
       "brands": "Systeme Electric"
     },
@@ -400,8 +400,8 @@
       "name": "Серебряный одноклавишный",
       "code": "1234567",
       "price": "000.00",
-      "image": "https://aws.massive.ru/sew/img/devices/pictures/mechanism_silver_switcher_sensor_1_sup.png",
-      "preview": "https://aws.massive.ru/sew/img/devices/previews/mechanism_silver_switcher_sensor_1.png",
+      "image": "img/devices/pictures/mechanism_silver_switcher_sensor_1_sup.png",
+      "preview": "img/devices/previews/mechanism_silver_switcher_sensor_1.png",
       "color": "gold",
       "brands": "Systeme Electric"
     },
@@ -413,8 +413,8 @@
       "name": "Серебряный двуклавишный",
       "code": "1234567",
       "price": "000.00",
-      "image": "https://aws.massive.ru/sew/img/devices/pictures/mechanism_silver_switcher_sensor_2_sup.png",
-      "preview": "https://aws.massive.ru/sew/img/devices/previews/mechanism_silver_switcher_sensor_2.png",
+      "image": "img/devices/pictures/mechanism_silver_switcher_sensor_2_sup.png",
+      "preview": "img/devices/previews/mechanism_silver_switcher_sensor_2.png",
       "color": "gray",
       "brands": "Systeme Electric"
     },
@@ -426,8 +426,8 @@
       "name": "Шампань одноклавишный",
       "code": "1234567",
       "price": "000.00",
-      "image": "https://aws.massive.ru/sew/img/devices/pictures/mechanism_champain_switcher_sensor_1_sup.png",
-      "preview": "https://aws.massive.ru/sew/img/devices/previews/mechanism_champain_switcher_sensor_1.png",
+      "image": "img/devices/pictures/mechanism_champain_switcher_sensor_1_sup.png",
+      "preview": "img/devices/previews/mechanism_champain_switcher_sensor_1.png",
       "color": "white",
       "brands": "Systeme Electric"
     },
@@ -439,8 +439,8 @@
       "name": "Шампань двуклавишный",
       "code": "1234567",
       "price": "000.00",
-      "image": "https://aws.massive.ru/sew/img/devices/pictures/mechanism_champain_switcher_sensor_2_sup.png",
-      "preview": "https://aws.massive.ru/sew/img/devices/previews/mechanism_champain_switcher_sensor_2.png",
+      "image": "img/devices/pictures/mechanism_champain_switcher_sensor_2_sup.png",
+      "preview": "img/devices/previews/mechanism_champain_switcher_sensor_2.png",
       "color": "copper",
       "brands": "Systeme Electric"
     },
@@ -452,8 +452,8 @@
       "name": "Hammer белый",
       "code": "1234567",
       "price": "000.00",
-      "image": "https://aws.massive.ru/sew/img/devices/pictures/mechanism_hammer-white_switcher_1_sup.png",
-      "preview": "https://aws.massive.ru/sew/img/devices/previews/mechanism_hammer-white_switcher_1.png",
+      "image": "img/devices/pictures/mechanism_hammer-white_switcher_1_sup.png",
+      "preview": "img/devices/previews/mechanism_hammer-white_switcher_1.png",
       "color": "black",
       "brands": "Systeme Electric"
     },
@@ -465,8 +465,8 @@
       "name": "Hammer черный",
       "code": "1234567",
       "price": "000.00",
-      "image": "https://aws.massive.ru/sew/img/devices/pictures/mechanism_hammer-black_switcher_1_sup.png",
-      "preview": "https://aws.massive.ru/sew/img/devices/previews/mechanism_hammer-black_switcher_1.png",
+      "image": "img/devices/pictures/mechanism_hammer-black_switcher_1_sup.png",
+      "preview": "img/devices/previews/mechanism_hammer-black_switcher_1.png",
       "color": "silver",
       "brands": "Systeme Electric"
     },
@@ -478,8 +478,8 @@
       "name": "Hammer серебряный",
       "code": "1234567",
       "price": "000.00",
-      "image": "https://aws.massive.ru/sew/img/devices/pictures/mechanism_hammer-silver_switcher_1_sup.png",
-      "preview": "https://aws.massive.ru/sew/img/devices/previews/mechanism_hammer-silver_switcher_1.png",
+      "image": "img/devices/pictures/mechanism_hammer-silver_switcher_1_sup.png",
+      "preview": "img/devices/previews/mechanism_hammer-silver_switcher_1.png",
       "color": "copper",
       "brands": "Systeme Electric"
     },
@@ -491,8 +491,8 @@
       "name": "Белый",
       "code": "1234567",
       "price": "000.00",
-      "image": "https://aws.massive.ru/sew/img/devices/pictures/mechanism_white_switcher_1_sup.png",
-      "preview": "https://aws.massive.ru/sew/img/devices/previews/mechanism_white_switcher_1.png",
+      "image": "img/devices/pictures/mechanism_white_switcher_1_sup.png",
+      "preview": "img/devices/previews/mechanism_white_switcher_1.png",
       "color": "gold",
       "brands": "Systeme Electric"
     },
@@ -504,8 +504,8 @@
       "name": "Слоновая кость",
       "code": "1234567",
       "price": "000.00",
-      "image": "https://aws.massive.ru/sew/img/devices/pictures/mechanism_ivory_switcher_1_sup.png",
-      "preview": "https://aws.massive.ru/sew/img/devices/previews/mechanism_ivory_switcher_1.png",
+      "image": "img/devices/pictures/mechanism_ivory_switcher_1_sup.png",
+      "preview": "img/devices/previews/mechanism_ivory_switcher_1.png",
       "color": "gray",
       "brands": "Systeme Electric"
     },
@@ -517,8 +517,8 @@
       "name": "Серебряный",
       "code": "1234567",
       "price": "000.00",
-      "image": "https://aws.massive.ru/sew/img/devices/pictures/mechanism_silver_switcher_1_sup.png",
-      "preview": "https://aws.massive.ru/sew/img/devices/previews/mechanism_silver_switcher_1.png",
+      "image": "img/devices/pictures/mechanism_silver_switcher_1_sup.png",
+      "preview": "img/devices/previews/mechanism_silver_switcher_1.png",
       "color": "white",
       "brands": "Systeme Electric"
     },
@@ -530,8 +530,8 @@
       "name": "Глянцевый никель",
       "code": "1234567",
       "price": "000.00",
-      "image": "https://aws.massive.ru/sew/img/devices/pictures/mechanism_metallic_switcher_1_sup.png",
-      "preview": "https://aws.massive.ru/sew/img/devices/previews/mechanism_metallic_switcher_1.png",
+      "image": "img/devices/pictures/mechanism_metallic_switcher_1_sup.png",
+      "preview": "img/devices/previews/mechanism_metallic_switcher_1.png",
       "color": "copper",
       "brands": "Systeme Electric"
     },
@@ -543,8 +543,8 @@
       "name": "Бронза",
       "code": "1234567",
       "price": "000.00",
-      "image": "https://aws.massive.ru/sew/img/devices/pictures/mechanism_bronze_switcher_1_sup.png",
-      "preview": "https://aws.massive.ru/sew/img/devices/previews/mechanism_bronze_switcher_1.png",
+      "image": "img/devices/pictures/mechanism_bronze_switcher_1_sup.png",
+      "preview": "img/devices/previews/mechanism_bronze_switcher_1.png",
       "color": "black",
       "brands": "Systeme Electric"
     },
@@ -556,8 +556,8 @@
       "name": "Серебряный рифленый",
       "code": "1234567",
       "price": "000.00",
-      "image": "https://aws.massive.ru/sew/img/devices/pictures/Mechanism_Switcher_ribbed_silver_sup.png",
-      "preview": "https://aws.massive.ru/sew/img/devices/previews/Mechanism_Switcher_ribbed_silver.png",
+      "image": "img/devices/pictures/Mechanism_Switcher_ribbed_silver_sup.png",
+      "preview": "img/devices/previews/Mechanism_Switcher_ribbed_silver.png",
       "color": "silver",
       "brands": "Systeme Electric"
     },
@@ -569,8 +569,8 @@
       "name": "Шампань рифленый",
       "code": "1234567",
       "price": "000.00",
-      "image": "https://aws.massive.ru/sew/img/devices/pictures/champain-r-1-button_sup.png",
-      "preview": "https://aws.massive.ru/sew/img/devices/previews/champain-r-1-button.png",
+      "image": "img/devices/pictures/champain-r-1-button_sup.png",
+      "preview": "img/devices/previews/champain-r-1-button.png",
       "color": "gold",
       "brands": "Systeme Electric"
     },
@@ -582,8 +582,8 @@
       "name": "Серо-коричневый",
       "code": "1234567",
       "price": "000.00",
-      "image": "https://aws.massive.ru/sew/img/devices/pictures/mechanism_grey_brown_switcher_1_sup.png",
-      "preview": "https://aws.massive.ru/sew/img/devices/previews/mechanism_grey_brown_switcher_1.png",
+      "image": "img/devices/pictures/mechanism_grey_brown_switcher_1_sup.png",
+      "preview": "img/devices/previews/mechanism_grey_brown_switcher_1.png",
       "color": "gray",
       "brands": "Systeme Electric"
     },
@@ -595,8 +595,8 @@
       "name": "Черный",
       "code": "1234567",
       "price": "000.00",
-      "image": "https://aws.massive.ru/sew/img/devices/pictures/mechanism_black_switcher_1_sup.png",
-      "preview": "https://aws.massive.ru/sew/img/devices/previews/mechanism_champ_switcher_1.png",
+      "image": "img/devices/pictures/mechanism_black_switcher_1_sup.png",
+      "preview": "img/devices/previews/mechanism_champ_switcher_1.png",
       "color": "white",
       "brands": "Systeme Electric"
     },
@@ -608,8 +608,8 @@
       "name": "Перламутровый рифленый",
       "code": "1234567",
       "price": "000.00",
-      "image": "https://aws.massive.ru/sew/img/devices/pictures/mechanism_pearl_switcher_1_sup.png",
-      "preview": "https://aws.massive.ru/sew/img/devices/previews/mechanism_pearl_switcher_1.png",
+      "image": "img/devices/pictures/mechanism_pearl_switcher_1_sup.png",
+      "preview": "img/devices/previews/mechanism_pearl_switcher_1.png",
       "color": "copper",
       "brands": "Systeme Electric"
     },
@@ -621,8 +621,8 @@
       "name": "Графит рифленый",
       "code": "1234567",
       "price": "000.00",
-      "image": "https://aws.massive.ru/sew/img/devices/pictures/Mechanism_Switcher_ribbed_graphit_sup.png",
-      "preview": "https://aws.massive.ru/sew/img/devices/previews/Mechanism_Switcher_ribbed_graphit.png",
+      "image": "img/devices/pictures/Mechanism_Switcher_ribbed_graphit_sup.png",
+      "preview": "img/devices/previews/Mechanism_Switcher_ribbed_graphit.png",
       "color": "black",
       "brands": "Systeme Electric"
     },
@@ -634,8 +634,8 @@
       "name": "Hammer белый",
       "code": "1234567",
       "price": "000.00",
-      "image": "https://aws.massive.ru/sew/img/devices/pictures/mechanism_hammer-white_switcher_2_sup.png",
-      "preview": "https://aws.massive.ru/sew/img/devices/previews/mechanism_hammer-white_switcher_2.png",
+      "image": "img/devices/pictures/mechanism_hammer-white_switcher_2_sup.png",
+      "preview": "img/devices/previews/mechanism_hammer-white_switcher_2.png",
       "color": "silver",
       "brands": "Systeme Electric"
     },
@@ -647,8 +647,8 @@
       "name": "Hammer черный",
       "code": "1234567",
       "price": "000.00",
-      "image": "https://aws.massive.ru/sew/img/devices/pictures/mechanism_hammer-black_switcher_2_sup.png",
-      "preview": "https://aws.massive.ru/sew/img/devices/previews/mechanism_hammer-black_switcher_2.png",
+      "image": "img/devices/pictures/mechanism_hammer-black_switcher_2_sup.png",
+      "preview": "img/devices/previews/mechanism_hammer-black_switcher_2.png",
       "color": "gold",
       "brands": "Systeme Electric"
     },
@@ -660,8 +660,8 @@
       "name": "Hammer серебряный",
       "code": "1234567",
       "price": "000.00",
-      "image": "https://aws.massive.ru/sew/img/devices/pictures/mechanism_hammer-silver_switcher_2_sup.png",
-      "preview": "https://aws.massive.ru/sew/img/devices/previews/mechanism_hammer-silver_switcher_2.png",
+      "image": "img/devices/pictures/mechanism_hammer-silver_switcher_2_sup.png",
+      "preview": "img/devices/previews/mechanism_hammer-silver_switcher_2.png",
       "color": "gray",
       "brands": "Systeme Electric"
     },
@@ -673,8 +673,8 @@
       "name": "Белый",
       "code": "1234567",
       "price": "000.00",
-      "image": "https://aws.massive.ru/sew/img/devices/pictures/mechanism_white_switcher_2_sup.png",
-      "preview": "https://aws.massive.ru/sew/img/devices/previews/mechanism_white_switcher_2.png",
+      "image": "img/devices/pictures/mechanism_white_switcher_2_sup.png",
+      "preview": "img/devices/previews/mechanism_white_switcher_2.png",
       "color": "white",
       "brands": "Systeme Electric"
     },
@@ -686,8 +686,8 @@
       "name": "Слоновая кость",
       "code": "1234567",
       "price": "000.00",
-      "image": "https://aws.massive.ru/sew/img/devices/pictures/mechanism_ivory_switcher_2_sup.png",
-      "preview": "https://aws.massive.ru/sew/img/devices/previews/mechanism_ivory_switcher_2.png",
+      "image": "img/devices/pictures/mechanism_ivory_switcher_2_sup.png",
+      "preview": "img/devices/previews/mechanism_ivory_switcher_2.png",
       "color": "copper",
       "brands": "Systeme Electric"
     },
@@ -699,8 +699,8 @@
       "name": "Серебряный",
       "code": "1234567",
       "price": "000.00",
-      "image": "https://aws.massive.ru/sew/img/devices/pictures/mechanism_silver_switcher_2_sup.png",
-      "preview": "https://aws.massive.ru/sew/img/devices/previews/mechanism_silver_switcher_2.png",
+      "image": "img/devices/pictures/mechanism_silver_switcher_2_sup.png",
+      "preview": "img/devices/previews/mechanism_silver_switcher_2.png",
       "color": "black",
       "brands": "Systeme Electric"
     },
@@ -712,8 +712,8 @@
       "name": "Глянцевый никель",
       "code": "1234567",
       "price": "000.00",
-      "image": "https://aws.massive.ru/sew/img/devices/pictures/mechanism_metallic_switcher_2_sup.png",
-      "preview": "https://aws.massive.ru/sew/img/devices/previews/mechanism_metallic_switcher_2.png",
+      "image": "img/devices/pictures/mechanism_metallic_switcher_2_sup.png",
+      "preview": "img/devices/previews/mechanism_metallic_switcher_2.png",
       "color": "silver",
       "brands": "Systeme Electric"
     },
@@ -725,8 +725,8 @@
       "name": "Бронза",
       "code": "1234567",
       "price": "000.00",
-      "image": "https://aws.massive.ru/sew/img/devices/pictures/bronze-2-button_sup.png",
-      "preview": "https://aws.massive.ru/sew/img/devices/previews/bronze-2-button.png",
+      "image": "img/devices/pictures/bronze-2-button_sup.png",
+      "preview": "img/devices/previews/bronze-2-button.png",
       "color": "gold",
       "brands": "Systeme Electric"
     },
@@ -738,8 +738,8 @@
       "name": "Серебряный рифленый",
       "code": "1234567",
       "price": "000.00",
-      "image": "https://aws.massive.ru/sew/img/devices/pictures/Mechanism_Switcher_ribbed_silver_2_btn_sup.png",
-      "preview": "https://aws.massive.ru/sew/img/devices/previews/Mechanism_Switcher_ribbed_silver_2_btn.png",
+      "image": "img/devices/pictures/Mechanism_Switcher_ribbed_silver_2_btn_sup.png",
+      "preview": "img/devices/previews/Mechanism_Switcher_ribbed_silver_2_btn.png",
       "color": "gray",
       "brands": "Systeme Electric"
     },
@@ -751,8 +751,8 @@
       "name": "Шампань рифленый",
       "code": "1234567",
       "price": "000.00",
-      "image": "https://aws.massive.ru/sew/img/devices/pictures/Mechanism_Switcher_ribbed_champain_2_btn_sup.png",
-      "preview": "https://aws.massive.ru/sew/img/devices/previews/Mechanism_Switcher_ribbed_champain_2_btn.png",
+      "image": "img/devices/pictures/Mechanism_Switcher_ribbed_champain_2_btn_sup.png",
+      "preview": "img/devices/previews/Mechanism_Switcher_ribbed_champain_2_btn.png",
       "color": "white",
       "brands": "Systeme Electric"
     },
@@ -764,8 +764,8 @@
       "name": "Серо-коричневый",
       "code": "1234567",
       "price": "000.00",
-      "image": "https://aws.massive.ru/sew/img/devices/pictures/mechanism_grey_brown_switcher_2_sup.png",
-      "preview": "https://aws.massive.ru/sew/img/devices/previews/mechanism_grey_brown_switcher_2.png",
+      "image": "img/devices/pictures/mechanism_grey_brown_switcher_2_sup.png",
+      "preview": "img/devices/previews/mechanism_grey_brown_switcher_2.png",
       "color": "gray",
       "brands": "Systeme Electric"
     },
@@ -777,8 +777,8 @@
       "name": "Черный",
       "code": "1234567",
       "price": "000.00",
-      "image": "https://aws.massive.ru/sew/img/devices/pictures/mechanism_black_switcher_2_sup.png",
-      "preview": "https://aws.massive.ru/sew/img/devices/previews/mechanism_black_switcher_2.png",
+      "image": "img/devices/pictures/mechanism_black_switcher_2_sup.png",
+      "preview": "img/devices/previews/mechanism_black_switcher_2.png",
       "color": "copper",
       "brands": "Systeme Electric"
     },
@@ -790,8 +790,8 @@
       "name": "Шампань",
       "code": "1234567",
       "price": "000.00",
-      "image": "https://aws.massive.ru/sew/img/devices/pictures/mechanism_champ_switcher_2_sup.png",
-      "preview": "https://aws.massive.ru/sew/img/devices/previews/mechanism_champ_switcher_2.png",
+      "image": "img/devices/pictures/mechanism_champ_switcher_2_sup.png",
+      "preview": "img/devices/previews/mechanism_champ_switcher_2.png",
       "color": "black",
       "brands": "Systeme Electric"
     },
@@ -803,8 +803,8 @@
       "name": "Перламутровый рифленый",
       "code": "1234567",
       "price": "000.00",
-      "image": "https://aws.massive.ru/sew/img/devices/pictures/mechanism_pearl_switcher_2_sup.png",
-      "preview": "https://aws.massive.ru/sew/img/devices/previews/mechanism_pearl_switcher_2.png",
+      "image": "img/devices/pictures/mechanism_pearl_switcher_2_sup.png",
+      "preview": "img/devices/previews/mechanism_pearl_switcher_2.png",
       "color": "silver",
       "brands": "Systeme Electric"
     },
@@ -816,198 +816,204 @@
       "name": "Графит рифленый",
       "code": "1234567",
       "price": "000.00",
-      "image": "https://aws.massive.ru/sew/img/devices/pictures/Mechanism_Switcher_ribbed_graphit_2_btn_sup.png",
-      "preview": "https://aws.massive.ru/sew/img/devices/previews/Mechanism_Switcher_ribbed_graphit_2_btn.png",
+      "image": "img/devices/pictures/Mechanism_Switcher_ribbed_graphit_2_btn_sup.png",
+      "preview": "img/devices/previews/Mechanism_Switcher_ribbed_graphit_2_btn.png",
       "color": "gold",
       "brands": "Systeme Electric"
     }
   ],
   "backgrounds": [
     {
+      "id": "1234",
+      "active": false,
+      "image": "img/backgrounds/bg-11.jpg",
+      "preview": "img/backgrounds/bg-11.jpg"
+    },
+    {
       "id": "1",
       "active": false,
-      "image": "https://aws.massive.ru/sew/img/backgrounds/bg-12.jpg",
-      "preview": "https://aws.massive.ru/sew/img/backgrounds/bg-12.jpg"
+      "image": "img/backgrounds/bg-12.jpg",
+      "preview": "img/backgrounds/bg-12.jpg"
     },
     {
       "id": "2",
       "active": false,
-      "image": "https://aws.massive.ru/sew/img/backgrounds/bg-13.jpg",
-      "preview": "https://aws.massive.ru/sew/img/backgrounds/bg-13.jpg"
+      "image": "img/backgrounds/bg-13.jpg",
+      "preview": "img/backgrounds/bg-13.jpg"
     },
     {
       "id": "3",
       "active": false,
-      "image": "https://aws.massive.ru/sew/img/backgrounds/bg-14.jpg",
-      "preview": "https://aws.massive.ru/sew/img/backgrounds/bg-14.jpg"
+      "image": "img/backgrounds/bg-14.jpg",
+      "preview": "img/backgrounds/bg-14.jpg"
     },
     {
       "id": "4",
       "active": false,
-      "image": "https://aws.massive.ru/sew/img/backgrounds/bg-15.jpg",
-      "preview": "https://aws.massive.ru/sew/img/backgrounds/bg-15.jpg"
+      "image": "img/backgrounds/bg-15.jpg",
+      "preview": "img/backgrounds/bg-15.jpg"
     },
     {
       "id": "5",
       "active": false,
-      "image": "https://aws.massive.ru/sew/img/backgrounds/bg-16.jpg",
-      "preview": "https://aws.massive.ru/sew/img/backgrounds/bg-16.jpg"
+      "image": "img/backgrounds/bg-16.jpg",
+      "preview": "img/backgrounds/bg-16.jpg"
     },
     {
       "id": "6",
       "active": false,
-      "image": "https://aws.massive.ru/sew/img/backgrounds/bg-17.jpg",
-      "preview": "https://aws.massive.ru/sew/img/backgrounds/bg-17.jpg"
+      "image": "img/backgrounds/bg-17.jpg",
+      "preview": "img/backgrounds/bg-17.jpg"
     },
     {
       "id": "7",
       "active": false,
-      "image": "https://aws.massive.ru/sew/img/backgrounds/bg-19.jpg",
-      "preview": "https://aws.massive.ru/sew/img/backgrounds/bg-19.jpg"
+      "image": "img/backgrounds/bg-19.jpg",
+      "preview": "img/backgrounds/bg-19.jpg"
     },
     {
       "id": "8",
       "active": false,
-      "image": "https://aws.massive.ru/sew/img/backgrounds/bg-21.jpg",
-      "preview": "https://aws.massive.ru/sew/img/backgrounds/bg-21.jpg"
+      "image": "img/backgrounds/bg-21.jpg",
+      "preview": "img/backgrounds/bg-21.jpg"
     },
     {
       "id": "9",
       "active": false,
-      "image": "https://aws.massive.ru/sew/img/backgrounds/bg-23.jpg",
-      "preview": "https://aws.massive.ru/sew/img/backgrounds/bg-23.jpg"
+      "image": "img/backgrounds/bg-23.jpg",
+      "preview": "img/backgrounds/bg-23.jpg"
     },
     {
       "id": "10",
       "active": false,
-      "image": "https://aws.massive.ru/sew/img/backgrounds/bg-25.jpg",
-      "preview": "https://aws.massive.ru/sew/img/backgrounds/bg-25.jpg"
+      "image": "img/backgrounds/bg-25.jpg",
+      "preview": "img/backgrounds/bg-25.jpg"
     },
     {
       "id": "11",
       "active": false,
-      "image": "https://aws.massive.ru/sew/img/backgrounds/bg-27.jpg",
-      "preview": "https://aws.massive.ru/sew/img/backgrounds/bg-27.jpg"
+      "image": "img/backgrounds/bg-27.jpg",
+      "preview": "img/backgrounds/bg-27.jpg"
     },
     {
       "id": "13",
       "active": false,
-      "image": "https://aws.massive.ru/sew/img/backgrounds/bg-31.jpg",
-      "preview": "https://aws.massive.ru/sew/img/backgrounds/bg-31.jpg"
+      "image": "img/backgrounds/bg-31.jpg",
+      "preview": "img/backgrounds/bg-31.jpg"
     },
     {
       "id": "14",
       "active": false,
-      "image": "https://aws.massive.ru/sew/img/backgrounds/bg-32.jpg",
-      "preview": "https://aws.massive.ru/sew/img/backgrounds/bg-32.jpg"
+      "image": "img/backgrounds/bg-32.jpg",
+      "preview": "img/backgrounds/bg-32.jpg"
     },
     {
       "id": "15",
       "active": false,
-      "image": "https://aws.massive.ru/sew/img/backgrounds/bg-34.jpg",
-      "preview": "https://aws.massive.ru/sew/img/backgrounds/bg-34.jpg"
+      "image": "img/backgrounds/bg-34.jpg",
+      "preview": "img/backgrounds/bg-34.jpg"
     },
     {
       "id": "16",
       "active": false,
-      "image": "https://aws.massive.ru/sew/img/backgrounds/bg-35.jpg",
-      "preview": "https://aws.massive.ru/sew/img/backgrounds/bg-35.jpg"
+      "image": "img/backgrounds/bg-35.jpg",
+      "preview": "img/backgrounds/bg-35.jpg"
     },
     {
       "id": "17",
       "active": false,
-      "image": "https://aws.massive.ru/sew/img/backgrounds/bg-36.jpg",
-      "preview": "https://aws.massive.ru/sew/img/backgrounds/bg-36.jpg"
+      "image": "img/backgrounds/bg-36.jpg",
+      "preview": "img/backgrounds/bg-36.jpg"
     },
     {
       "id": "18",
       "active": false,
-      "image": "https://aws.massive.ru/sew/img/backgrounds/bg-37.jpg",
-      "preview": "https://aws.massive.ru/sew/img/backgrounds/bg-37.jpg"
+      "image": "img/backgrounds/bg-37.jpg",
+      "preview": "img/backgrounds/bg-37.jpg"
     },
     {
       "id": "19",
       "active": false,
-      "image": "https://aws.massive.ru/sew/img/backgrounds/bg-39.jpg",
-      "preview": "https://aws.massive.ru/sew/img/backgrounds/bg-39.jpg"
+      "image": "img/backgrounds/bg-39.jpg",
+      "preview": "img/backgrounds/bg-39.jpg"
     },
     {
       "id": "20",
       "active": false,
-      "image": "https://aws.massive.ru/sew/img/backgrounds/bg-40.jpg",
-      "preview": "https://aws.massive.ru/sew/img/backgrounds/bg-40.jpg"
+      "image": "img/backgrounds/bg-40.jpg",
+      "preview": "img/backgrounds/bg-40.jpg"
     },
     {
       "id": "21",
       "active": false,
-      "image": "https://aws.massive.ru/sew/img/backgrounds/bg-41.jpg",
-      "preview": "https://aws.massive.ru/sew/img/backgrounds/bg-41.jpg"
+      "image": "img/backgrounds/bg-41.jpg",
+      "preview": "img/backgrounds/bg-41.jpg"
     },
     {
       "id": "22",
       "active": false,
-      "image": "https://aws.massive.ru/sew/img/backgrounds/bg-42.jpg",
-      "preview": "https://aws.massive.ru/sew/img/backgrounds/bg-42.jpg"
+      "image": "img/backgrounds/bg-42.jpg",
+      "preview": "img/backgrounds/bg-42.jpg"
     },
     {
       "id": "23",
       "active": false,
-      "image": "https://aws.massive.ru/sew/img/backgrounds/bg-43.jpg",
-      "preview": "https://aws.massive.ru/sew/img/backgrounds/bg-43.jpg"
+      "image": "img/backgrounds/bg-43.jpg",
+      "preview": "img/backgrounds/bg-43.jpg"
     },
     {
       "id": "24",
       "active": false,
-      "image": "https://aws.massive.ru/sew/img/backgrounds/bg-44.jpg",
-      "preview": "https://aws.massive.ru/sew/img/backgrounds/bg-44.jpg"
+      "image": "img/backgrounds/bg-44.jpg",
+      "preview": "img/backgrounds/bg-44.jpg"
     },
     {
       "id": "25",
       "active": false,
-      "image": "https://aws.massive.ru/sew/img/backgrounds/bg-45.jpg",
-      "preview": "https://aws.massive.ru/sew/img/backgrounds/bg-45.jpg"
+      "image": "img/backgrounds/bg-45.jpg",
+      "preview": "img/backgrounds/bg-45.jpg"
     },
     {
       "id": "26",
       "active": false,
-      "image": "https://aws.massive.ru/sew/img/backgrounds/bg-46.jpg",
-      "preview": "https://aws.massive.ru/sew/img/backgrounds/bg-46.jpg"
+      "image": "img/backgrounds/bg-46.jpg",
+      "preview": "img/backgrounds/bg-46.jpg"
     },
     {
       "id": "27",
       "active": false,
-      "image": "https://aws.massive.ru/sew/img/backgrounds/bg-47.jpg",
-      "preview": "https://aws.massive.ru/sew/img/backgrounds/bg-47.jpg"
+      "image": "img/backgrounds/bg-47.jpg",
+      "preview": "img/backgrounds/bg-47.jpg"
     },
     {
       "id": "28",
       "active": false,
-      "image": "https://aws.massive.ru/sew/img/backgrounds/bg-48.jpg",
-      "preview": "https://aws.massive.ru/sew/img/backgrounds/bg-48.jpg"
+      "image": "img/backgrounds/bg-48.jpg",
+      "preview": "img/backgrounds/bg-48.jpg"
     },
     {
       "id": "29",
       "active": false,
-      "image": "https://aws.massive.ru/sew/img/backgrounds/bg-49.jpg",
-      "preview": "https://aws.massive.ru/sew/img/backgrounds/bg-49.jpg"
+      "image": "img/backgrounds/bg-49.jpg",
+      "preview": "img/backgrounds/bg-49.jpg"
     },
     {
       "id": "30",
       "active": false,
-      "image": "https://aws.massive.ru/sew/img/backgrounds/bg-50.jpg",
-      "preview": "https://aws.massive.ru/sew/img/backgrounds/bg-50.jpg"
+      "image": "img/backgrounds/bg-50.jpg",
+      "preview": "img/backgrounds/bg-50.jpg"
     },
     {
       "id": "31",
       "active": false,
-      "image": "https://aws.massive.ru/sew/img/backgrounds/bg-51.jpg",
-      "preview": "https://aws.massive.ru/sew/img/backgrounds/bg-51.jpg"
+      "image": "img/backgrounds/bg-51.jpg",
+      "preview": "img/backgrounds/bg-51.jpg"
     },
     {
       "id": "32",
       "active": false,
-      "image": "https://aws.massive.ru/sew/img/backgrounds/bg-52.jpg",
-      "preview": "https://aws.massive.ru/sew/img/backgrounds/bg-52.jpg"
+      "image": "img/backgrounds/bg-52.jpg",
+      "preview": "img/backgrounds/bg-52.jpg"
     }
   ],
   "colors": {
@@ -1022,6 +1028,6 @@
     "id": "1",
     "name": "Systeme Electric",
     "title": "Systeme Electric",
-    "image": "https://aws.massive.ru/sew/img/logos/systeme-electric.svg"
+    "image": "img/logos/systeme-electric.svg"
   }
 }
