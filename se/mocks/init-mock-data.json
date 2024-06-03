@@ -11,7 +11,7 @@
       "image": "img/borders/4690389180675_werkel.png",
       "preview": "img/borders/4690389180675_werkel.png",
       "color": "gold",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "2",
@@ -24,7 +24,7 @@
       "image": "img/borders/f-elite-ivory.png",
       "preview": "img/borders/f-elite-ivory.png",
       "color": "gray",
-      "brands": "Systeme Electric"
+      "vendor": "era"
     },
     {
       "id": "3",
@@ -37,7 +37,7 @@
       "image": "img/borders/f-elite-smoke.png",
       "preview": "img/borders/f-elite-smoke.png",
       "color": "white",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "4",
@@ -50,7 +50,7 @@
       "image": "img/borders/f-favorit-molochnyy.png",
       "preview": "img/borders/f-favorit-molochnyy.png",
       "color": "copper",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "5",
@@ -63,7 +63,7 @@
       "image": "img/borders/f-favorit-latte.png",
       "preview": "img/borders/f-favorit-latte.png",
       "color": "black",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "6",
@@ -76,7 +76,7 @@
       "image": "img/borders/f-favorit-white.png",
       "preview": "img/borders/f-favorit-white.png",
       "color": "silver",
-      "brands": "Systeme Electric"
+      "vendor": "Legrand"
     },
     {
       "id": "7",
@@ -89,7 +89,7 @@
       "image": "img/borders/f-favorit-white-matt.png",
       "preview": "img/borders/f-favorit-white-matt.png",
       "color": "gold",
-      "brands": "Systeme Electric"
+      "vendor": "Legrand"
     },
     {
       "id": "8",
@@ -102,7 +102,7 @@
       "image": "img/borders/f-favorit-bronze.png",
       "preview": "img/borders/f-favorit-bronze.png",
       "color": "gray",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "9",
@@ -115,7 +115,7 @@
       "image": "img/borders/f-favorit-smoke.png",
       "preview": "img/borders/f-favorit-smoke.png",
       "color": "white",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "10",
@@ -128,7 +128,7 @@
       "image": "img/borders/f-favorit-champain.png",
       "preview": "img/borders/f-favorit-champain.png",
       "color": "copper",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "11",
@@ -141,7 +141,7 @@
       "image": "img/borders/f-favorit-mokko.png",
       "preview": "img/borders/f-favorit-mokko.png",
       "color": "black",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "12",
@@ -154,7 +154,7 @@
       "image": "img/borders/f-favorit-natural-glass.png",
       "preview": "img/borders/f-favorit-natural-glass.png",
       "color": "silver",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "13",
@@ -167,7 +167,7 @@
       "image": "img/borders/f-favorit-gray.png",
       "preview": "img/borders/f-favorit-gray.png",
       "color": "gold",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "14",
@@ -180,7 +180,7 @@
       "image": "img/borders/f-favorit-black.png",
       "preview": "img/borders/f-favorit-black.png",
       "color": "gray",
-      "brands": "Systeme Electric"
+      "vendor": "era"
     },
     {
       "id": "15",
@@ -193,7 +193,7 @@
       "image": "img/borders/f-diamant-black.png",
       "preview": "img/borders/f-diamant-black.png",
       "color": "white",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "16",
@@ -206,7 +206,7 @@
       "image": "img/borders/f-acrylic-white.png",
       "preview": "img/borders/f-acrylic-white.png",
       "color": "copper",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "17",
@@ -219,7 +219,7 @@
       "image": "img/borders/f-acrylic-black.png",
       "preview": "img/borders/f-acrylic-black.png",
       "color": "black",
-      "brands": "Systeme Electric"
+      "vendor": "Legrand"
     },
     {
       "id": "18",
@@ -232,7 +232,7 @@
       "image": "img/borders/f-acrylic-graphite.png",
       "preview": "img/borders/f-acrylic-graphite.png",
       "color": "silver",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "19",
@@ -245,7 +245,7 @@
       "image": "img/borders/f-acrylic-ivory.png",
       "preview": "img/borders/f-acrylic-ivory.png",
       "color": "gold",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "20",
@@ -258,7 +258,7 @@
       "image": "img/borders/f-platinum-alyuminiy.png",
       "preview": "img/borders/f-platinum-alyuminiy.png",
       "color": "gray",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "21",
@@ -271,7 +271,7 @@
       "image": "img/borders/f-platinum-shampan.png",
       "preview": "img/borders/f-platinum-shampan.png",
       "color": "white",
-      "brands": "Systeme Electric"
+      "vendor": "Legrand"
     },
     {
       "id": "22",
@@ -284,7 +284,7 @@
       "image": "img/borders/f-platinum-chernyy-alyuminiy.png",
       "preview": "img/borders/f-platinum-chernyy-alyuminiy.png",
       "color": "copper",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "23",
@@ -297,7 +297,7 @@
       "image": "img/borders/f-aluminium-silver.png",
       "preview": "img/borders/f-aluminium-silver.png",
       "color": "black",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "24",
@@ -310,7 +310,7 @@
       "image": "img/borders/f-aluminium-shampan.png",
       "preview": "img/borders/f-aluminium-shampan.png",
       "color": "silver",
-      "brands": "Systeme Electric"
+      "vendor": "era"
     },
     {
       "id": "25",
@@ -323,7 +323,7 @@
       "image": "img/borders/f-aluminium-brown.png",
       "preview": "img/borders/f-aluminium-brown.png",
       "color": "gold",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "26",
@@ -336,7 +336,7 @@
       "image": "img/borders/f-aluminium-black.png",
       "preview": "img/borders/f-aluminium-black.png",
       "color": "gray",
-      "brands": "Systeme Electric"
+      "vendor": "Legrand"
     }
   ],
   "devices": [
@@ -351,7 +351,7 @@
       "image": "img/devices/pictures/mechanism_white_switcher_sensor_1_sup.png",
       "preview": "img/devices/previews/mechanism_white_switcher_sensor_1.png",
       "color": "white",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "2",
@@ -364,7 +364,7 @@
       "image": "img/devices/pictures/mechanism_white_switcher_sensor_2_sup.png",
       "preview": "img/devices/previews/mechanism_white_switcher_sensor_2.png",
       "color": "copper",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "3",
@@ -377,7 +377,7 @@
       "image": "img/devices/pictures/mechanism_black_switcher_sensor_1_sup.png",
       "preview": "img/devices/previews/mechanism_black_switcher_sensor_1.png",
       "color": "black",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "4",
@@ -390,7 +390,7 @@
       "image": "img/devices/pictures/mechanism_black_switcher_sensor_2_sup.png",
       "preview": "img/devices/previews/mechanism_black_switcher_sensor_2.png",
       "color": "silver",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "5",
@@ -403,7 +403,7 @@
       "image": "img/devices/pictures/mechanism_silver_switcher_sensor_1_sup.png",
       "preview": "img/devices/previews/mechanism_silver_switcher_sensor_1.png",
       "color": "gold",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "6",
@@ -416,7 +416,7 @@
       "image": "img/devices/pictures/mechanism_silver_switcher_sensor_2_sup.png",
       "preview": "img/devices/previews/mechanism_silver_switcher_sensor_2.png",
       "color": "gray",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "7",
@@ -429,7 +429,7 @@
       "image": "img/devices/pictures/mechanism_champain_switcher_sensor_1_sup.png",
       "preview": "img/devices/previews/mechanism_champain_switcher_sensor_1.png",
       "color": "white",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "8",
@@ -442,7 +442,7 @@
       "image": "img/devices/pictures/mechanism_champain_switcher_sensor_2_sup.png",
       "preview": "img/devices/previews/mechanism_champain_switcher_sensor_2.png",
       "color": "copper",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "9",
@@ -455,7 +455,7 @@
       "image": "img/devices/pictures/mechanism_hammer-white_switcher_1_sup.png",
       "preview": "img/devices/previews/mechanism_hammer-white_switcher_1.png",
       "color": "black",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "10",
@@ -468,7 +468,7 @@
       "image": "img/devices/pictures/mechanism_hammer-black_switcher_1_sup.png",
       "preview": "img/devices/previews/mechanism_hammer-black_switcher_1.png",
       "color": "silver",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "11",
@@ -481,7 +481,7 @@
       "image": "img/devices/pictures/mechanism_hammer-silver_switcher_1_sup.png",
       "preview": "img/devices/previews/mechanism_hammer-silver_switcher_1.png",
       "color": "copper",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "12",
@@ -494,7 +494,7 @@
       "image": "img/devices/pictures/mechanism_white_switcher_1_sup.png",
       "preview": "img/devices/previews/mechanism_white_switcher_1.png",
       "color": "gold",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "13",
@@ -507,7 +507,7 @@
       "image": "img/devices/pictures/mechanism_ivory_switcher_1_sup.png",
       "preview": "img/devices/previews/mechanism_ivory_switcher_1.png",
       "color": "gray",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "14",
@@ -520,7 +520,7 @@
       "image": "img/devices/pictures/mechanism_silver_switcher_1_sup.png",
       "preview": "img/devices/previews/mechanism_silver_switcher_1.png",
       "color": "white",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "15",
@@ -533,7 +533,7 @@
       "image": "img/devices/pictures/mechanism_metallic_switcher_1_sup.png",
       "preview": "img/devices/previews/mechanism_metallic_switcher_1.png",
       "color": "copper",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "16",
@@ -546,7 +546,7 @@
       "image": "img/devices/pictures/mechanism_bronze_switcher_1_sup.png",
       "preview": "img/devices/previews/mechanism_bronze_switcher_1.png",
       "color": "black",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "17",
@@ -559,7 +559,7 @@
       "image": "img/devices/pictures/Mechanism_Switcher_ribbed_silver_sup.png",
       "preview": "img/devices/previews/Mechanism_Switcher_ribbed_silver.png",
       "color": "silver",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "18",
@@ -572,7 +572,7 @@
       "image": "img/devices/pictures/champain-r-1-button_sup.png",
       "preview": "img/devices/previews/champain-r-1-button.png",
       "color": "gold",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "19",
@@ -585,7 +585,7 @@
       "image": "img/devices/pictures/mechanism_grey_brown_switcher_1_sup.png",
       "preview": "img/devices/previews/mechanism_grey_brown_switcher_1.png",
       "color": "gray",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "20",
@@ -598,7 +598,7 @@
       "image": "img/devices/pictures/mechanism_black_switcher_1_sup.png",
       "preview": "img/devices/previews/mechanism_champ_switcher_1.png",
       "color": "white",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "21",
@@ -611,7 +611,7 @@
       "image": "img/devices/pictures/mechanism_pearl_switcher_1_sup.png",
       "preview": "img/devices/previews/mechanism_pearl_switcher_1.png",
       "color": "copper",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "22",
@@ -624,7 +624,7 @@
       "image": "img/devices/pictures/Mechanism_Switcher_ribbed_graphit_sup.png",
       "preview": "img/devices/previews/Mechanism_Switcher_ribbed_graphit.png",
       "color": "black",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "23",
@@ -637,7 +637,7 @@
       "image": "img/devices/pictures/mechanism_hammer-white_switcher_2_sup.png",
       "preview": "img/devices/previews/mechanism_hammer-white_switcher_2.png",
       "color": "silver",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "24",
@@ -650,7 +650,7 @@
       "image": "img/devices/pictures/mechanism_hammer-black_switcher_2_sup.png",
       "preview": "img/devices/previews/mechanism_hammer-black_switcher_2.png",
       "color": "gold",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "25",
@@ -663,7 +663,7 @@
       "image": "img/devices/pictures/mechanism_hammer-silver_switcher_2_sup.png",
       "preview": "img/devices/previews/mechanism_hammer-silver_switcher_2.png",
       "color": "gray",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "26",
@@ -676,7 +676,7 @@
       "image": "img/devices/pictures/mechanism_white_switcher_2_sup.png",
       "preview": "img/devices/previews/mechanism_white_switcher_2.png",
       "color": "white",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "27",
@@ -689,7 +689,7 @@
       "image": "img/devices/pictures/mechanism_ivory_switcher_2_sup.png",
       "preview": "img/devices/previews/mechanism_ivory_switcher_2.png",
       "color": "copper",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "28",
@@ -702,7 +702,7 @@
       "image": "img/devices/pictures/mechanism_silver_switcher_2_sup.png",
       "preview": "img/devices/previews/mechanism_silver_switcher_2.png",
       "color": "black",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "29",
@@ -715,7 +715,7 @@
       "image": "img/devices/pictures/mechanism_metallic_switcher_2_sup.png",
       "preview": "img/devices/previews/mechanism_metallic_switcher_2.png",
       "color": "silver",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "30",
@@ -728,7 +728,7 @@
       "image": "img/devices/pictures/bronze-2-button_sup.png",
       "preview": "img/devices/previews/bronze-2-button.png",
       "color": "gold",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "31",
@@ -741,7 +741,7 @@
       "image": "img/devices/pictures/Mechanism_Switcher_ribbed_silver_2_btn_sup.png",
       "preview": "img/devices/previews/Mechanism_Switcher_ribbed_silver_2_btn.png",
       "color": "gray",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "32",
@@ -754,7 +754,7 @@
       "image": "img/devices/pictures/Mechanism_Switcher_ribbed_champain_2_btn_sup.png",
       "preview": "img/devices/previews/Mechanism_Switcher_ribbed_champain_2_btn.png",
       "color": "white",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "33",
@@ -767,7 +767,7 @@
       "image": "img/devices/pictures/mechanism_grey_brown_switcher_2_sup.png",
       "preview": "img/devices/previews/mechanism_grey_brown_switcher_2.png",
       "color": "gray",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "34",
@@ -780,7 +780,7 @@
       "image": "img/devices/pictures/mechanism_black_switcher_2_sup.png",
       "preview": "img/devices/previews/mechanism_black_switcher_2.png",
       "color": "copper",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "35",
@@ -793,7 +793,7 @@
       "image": "img/devices/pictures/mechanism_champ_switcher_2_sup.png",
       "preview": "img/devices/previews/mechanism_champ_switcher_2.png",
       "color": "black",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "36",
@@ -806,7 +806,7 @@
       "image": "img/devices/pictures/mechanism_pearl_switcher_2_sup.png",
       "preview": "img/devices/previews/mechanism_pearl_switcher_2.png",
       "color": "silver",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     },
     {
       "id": "37",
@@ -819,7 +819,7 @@
       "image": "img/devices/pictures/Mechanism_Switcher_ribbed_graphit_2_btn_sup.png",
       "preview": "img/devices/previews/Mechanism_Switcher_ribbed_graphit_2_btn.png",
       "color": "gold",
-      "brands": "Systeme Electric"
+      "vendor": "Systeme Electric"
     }
   ],
   "backgrounds": [
@@ -1024,10 +1024,21 @@
     "black": "Черный",
     "silver": "Серебряный"
   },
-  "brands": {
-    "id": "1",
-    "name": "Systeme Electric",
-    "title": "Systeme Electric",
-    "image": "img/logos/systeme-electric.svg"
+  "vendors": {
+    "Systeme Electric": {
+      "name": "Systeme Electric",
+      "title": "Systeme Electric",
+      "image": "img/logos/system-electric.svg"
+    },
+    "era": {
+      "name": "era",
+      "title": "ЭРА",
+      "image": "img/logos/logo_era.svg"
+    },
+    "Legrand": {
+      "name": "Legrand",
+      "title": "Legrand",
+      "image": "img/logos/legrand-logo.png"
+    }
   }
 }
