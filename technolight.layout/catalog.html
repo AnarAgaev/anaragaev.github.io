@@ -33,6 +33,7 @@
         const urlParams = new URLSearchParams(window.location.search);
         if (urlParams.has("border")) window.dotsDataLink += "dots-border.json";
         else if (urlParams.has("mini")) window.dotsDataLink += "dots-mini.json";
+        else if (urlParams.has("double")) window.dotsDataLink += "dots-double-border.json";
         else window.dotsDataLink += "dots.json";
       })();
     </script>
