@@ -1,83 +1,72 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="description" content="Write description for this page here" />
-    <meta name="keywords" content="Write keywords for this page here" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Write description for this page here">
+    <meta name="keywords" content="Write keywords for this page here">
     <title>Technolight</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="https://aws.massive.ru/technolight/favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="https://aws.massive.ru/technolight/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="https://aws.massive.ru/technolight/favicon/favicon-16x16.png" />
-    <link rel="icon" href="https://aws.massive.ru/technolight/favicon/favicon.ico" />
-    <link rel="manifest" href="https://aws.massive.ru/technolight/favicon/site.webmanifest" />
-    <link rel="preload" href="css/vendor.min.css" as="style" />
-    <link rel="preload" href="css/main.min.css" as="style" />
-    <link rel="stylesheet" href="css/vendor.min.css" />
-    <link rel="stylesheet" href="css/main.min.css" />
-    <link rel="stylesheet" href="css/pages/return.min.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="https://aws.massive.ru/technolight/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://aws.massive.ru/technolight/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://aws.massive.ru/technolight/favicon/favicon-16x16.png">
+    <link rel="icon" href="https://aws.massive.ru/technolight/favicon/favicon.ico">
+    <link rel="manifest" href="https://aws.massive.ru/technolight/favicon/site.webmanifest">
+    <link rel="preload" href="css/vendor.min.css" as="style">
+    <link rel="preload" href="css/main.min.css" as="style">
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/pages/return.min.css">
     <script>
       //- spot-42 - https://anaragaev.github.io/technolight.layout/mocks/spot-42-fixed.json
       //- globo-135 - https://anaragaev.github.io/technolight.layout/mocks/globo-135-fixed.json
-
+      
       // Дефолтный API URL для корзины
-      window.cartLink = "https://anaragaev.github.io/technolight.layout/cart.html";
-
+      window.cartLink = 'https://anaragaev.github.io/technolight.layout/cart.html';
+      
       // Дефолтный API URL для спота
       window.productDataLink = "https://anaragaev.github.io/technolight.layout/mocks/spot-with-stocks.json";
-
+      
       // Дефолтный API URL дотов с рамкой и без рамки
-      window.dotsDataLink = "https://anaragaev.github.io/technolight.layout/mocks/";
-      (function () {
-        const urlParams = new URLSearchParams(window.location.search);
-        if (urlParams.has("border")) window.dotsDataLink += "dots-border.json";
-        else if (urlParams.has("mini")) window.dotsDataLink += "dots-mini.json";
-        else if (urlParams.has("double")) window.dotsDataLink += "dots-double-border.json";
-        else window.dotsDataLink += "dots.json";
-      })();
-
+      window.dotsDataLink = 'https://anaragaev.github.io/technolight.layout/mocks/';
+      (function() {
+          const urlParams = new URLSearchParams(window.location.search);
+          if (urlParams.has('border')) window.dotsDataLink += 'dots-border.json';
+          else if (urlParams.has('mini')) window.dotsDataLink += 'dots-mini.json';
+          else if (urlParams.has('double')) window.dotsDataLink += 'dots-double-border.json';
+          else window.dotsDataLink += 'dots.json';
+      })()
+      
       // API URL файлы для скачивания
-      window.DownloadFilesDataLink = "https://s3files.technolight.ru/api/link?domain=technolight.ru";
+      window.DownloadFilesDataLink = 'https://s3files.technolight.ru/api/link?domain=technolight.ru'
+      
     </script>
   </head>
   <body class="transition-blocker page-return" id="body">
     <header class="header" id="header">
       <div class="header__modal-back"></div>
       <div class="container">
-        <div class="header__content">
-          <a class="header__logo logo-light" href="#"></a>
+        <div class="header__content"><a class="header__logo logo-light" href="#"></a>
           <nav class="header__nav">
-            <div class="header__nav-caption d-lg-none">
-              <span class="header__nav-logo logo-dark"></span>
+            <div class="header__nav-caption d-lg-none"><span class="header__nav-logo logo-dark"></span>
               <button class="header__nav-close"></button>
             </div>
             <ul class="header__nav-list">
               <!-- Элементку списка у которого есть подменю, нужно добавлять класс-модификатов .header__nav-item_with-inner-->
               <!-- Для раскрытого пункта меню, добавлять класс .dropped-->
-              <li class="header__nav-item header__nav-item_prod header__nav-item_with-inner">
-                <i></i>
+              <li class="header__nav-item header__nav-item_prod header__nav-item_with-inner"><i></i>
                 <!-- Активному пункту меню добавляем класс .active-->
                 <!-- Пункты с подменю должны быть КНОПКАМИ А НЕ ССЫЛКАМИ-->
-                <button class="header__nav-link header__nav-link_product">
-                  <i class="d-lg-none"></i>
-                  <span>Продукция</span>
-                </button>
+                <button class="header__nav-link header__nav-link_product"><i class="d-lg-none"></i><span>Продукция</span></button>
                 <!-- Для открытого подменю, добавляем класс .open-->
                 <div class="header__nav-collapse header__nav-collapse_product collapse">
                   <div class="collapse__inner">
                     <button class="header__nav-close d-none d-lg-block"></button>
-                    <div class="header__nav-superlink">
-                      <a href="#">
-                        <i></i>
-                        <span>Вся продукция</span>
-                      </a>
-                    </div>
+                    <div class="header__nav-superlink"><a href="#"><i></i><span>Вся продукция</span></a></div>
                     <ul class="header__nav-sublist">
                       <!-- У списка подменю с заголовком у первого li класс .header__nav-subtitle-->
                       <li class="header__nav-subtitle"><a class="header__nav-sublink" href="#">Интерьерный свет</a></li>
-                      <li class="header__nav-inner-caption">
-                        <span class="header__nav-inner-toggle">Модульные светильники</span>
+                      <li class="header__nav-inner-caption"><span class="header__nav-inner-toggle">Модульные светильники</span>
                         <div class="header__nav-sublist-collapse">
                           <div class="header__nav-sublist-collapse__inner">
                             <ul class="header__nav-inner-list">
@@ -93,8 +82,7 @@
                     </ul>
                     <ul class="header__nav-sublist">
                       <li class="header__nav-subtitle"><a class="header__nav-sublink" href="#">Экстерьерный свет</a></li>
-                      <li class="header__nav-inner-caption">
-                        <span class="header__nav-inner-toggle">Грунтовые</span>
+                      <li class="header__nav-inner-caption"><span class="header__nav-inner-toggle">Грунтовые</span>
                         <div class="header__nav-sublist-collapse">
                           <div class="header__nav-sublist-collapse__inner">
                             <ul class="header__nav-inner-list">
@@ -103,8 +91,7 @@
                           </div>
                         </div>
                       </li>
-                      <li class="header__nav-inner-caption">
-                        <span class="header__nav-inner-toggle">Прожекторы</span>
+                      <li class="header__nav-inner-caption"><span class="header__nav-inner-toggle">Прожекторы</span>
                         <div class="header__nav-sublist-collapse">
                           <div class="header__nav-sublist-collapse__inner">
                             <ul class="header__nav-inner-list">
@@ -117,8 +104,7 @@
                     </ul>
                     <ul class="header__nav-sublist">
                       <li class="header__nav-subtitle"><a class="header__nav-sublink" href="#">Системы освещения</a></li>
-                      <li class="header__nav-inner-caption">
-                        <span class="header__nav-inner-toggle">PROFI 48</span>
+                      <li class="header__nav-inner-caption"><span class="header__nav-inner-toggle">PROFI 48</span>
                         <div class="header__nav-sublist-collapse">
                           <div class="header__nav-sublist-collapse__inner">
                             <ul class="header__nav-inner-list">
@@ -134,8 +120,7 @@
                     </ul>
                     <ul class="header__nav-sublist">
                       <li class="header__nav-subtitle"><a class="header__nav-sublink" href="#">Компоненты</a></li>
-                      <li class="header__nav-inner-caption">
-                        <span class="header__nav-inner-toggle">Источники питания</span>
+                      <li class="header__nav-inner-caption"><span class="header__nav-inner-toggle">Источники питания</span>
                         <div class="header__nav-sublist-collapse">
                           <div class="header__nav-sublist-collapse__inner">
                             <ul class="header__nav-inner-list">
@@ -144,8 +129,7 @@
                           </div>
                         </div>
                       </li>
-                      <li class="header__nav-inner-caption">
-                        <span class="header__nav-inner-toggle">Управление</span>
+                      <li class="header__nav-inner-caption"><span class="header__nav-inner-toggle">Управление</span>
                         <div class="header__nav-sublist-collapse">
                           <div class="header__nav-sublist-collapse__inner">
                             <ul class="header__nav-inner-list">
@@ -165,31 +149,12 @@
                   </div>
                 </div>
               </li>
-              <li class="header__nav-item">
-                <a class="header__nav-link header__nav-link_delivery" href="#">
-                  <i class="d-lg-none"></i>
-                  <span>Доставка и оплата</span>
-                </a>
-              </li>
-              <li class="header__nav-item">
-                <a class="header__nav-link header__nav-link_buy" href="#">
-                  <i class="d-lg-none"></i>
-                  <span>Где купить</span>
-                </a>
-              </li>
-              <li class="header__nav-item">
-                <a class="header__nav-link header__nav-link_configurator" href="#">
-                  <i class="d-lg-none"></i>
-                  <span>Конфигуратор</span>
-                </a>
-              </li>
-              <li class="header__nav-item header__nav-item_company header__nav-item_with-inner">
-                <i></i>
+              <li class="header__nav-item"><a class="header__nav-link header__nav-link_delivery" href="#"><i class="d-lg-none"></i><span>Доставка и оплата</span></a></li>
+              <li class="header__nav-item"><a class="header__nav-link header__nav-link_buy" href="#"><i class="d-lg-none"></i><span>Где купить</span></a></li>
+              <li class="header__nav-item"><a class="header__nav-link header__nav-link_configurator" href="#"><i class="d-lg-none"></i><span>Конфигуратор</span></a></li>
+              <li class="header__nav-item header__nav-item_company header__nav-item_with-inner"><i></i>
                 <!-- Пункты с подменю должны быть КНОПКАМИ А НЕ ССЫЛКАМИ-->
-                <button class="header__nav-link header__nav-link_company">
-                  <i class="d-lg-none"></i>
-                  <span>Компания</span>
-                </button>
+                <button class="header__nav-link header__nav-link_company"><i class="d-lg-none"></i><span>Компания</span></button>
                 <div class="header__nav-collapse header__nav-collapse_company collapse">
                   <div class="collapse__inner">
                     <button class="header__nav-close d-none d-lg-block"></button>
@@ -205,82 +170,33 @@
                   </div>
                 </div>
               </li>
+              <li class="header__nav-item d-lg-none"><a class="header__nav-link header__nav-link_download" href="#"><i class="d-lg-none"></i><span>Скачать</span></a></li>
             </ul>
           </nav>
           <ul class="header__buttons">
-            <li class="d-none d-lg-block">
-              <a class="header__buttons-link header__buttons-link_call" href="tel:+9200000000"><i></i></a>
-            </li>
+            <li class="d-none d-lg-block"><a class="header__buttons-link header__buttons-link_call" href="tel:+9200000000"><i></i></a></li>
             <li>
               <button class="header__buttons-link header__buttons-link_search"><i></i></button>
             </li>
-            <li>
-              <a class="header__buttons-link header__buttons-link_favorites" href="#">
-                <i><span class="header__buttons-count">23</span></i>
-              </a>
-            </li>
-            <li>
-              <a class="header__buttons-link header__buttons-link_cart" href="#">
-                <i><span class="header__buttons-count" id="cartProductCount">7</span></i>
-              </a>
-            </li>
-            <li class="d-none d-lg-block">
-              <a class="header__buttons-link header__buttons-link_account" href="#"><i></i></a>
-            </li>
+            <li><a class="header__buttons-link header__buttons-link_favorites" href="#"><i><span class="header__buttons-count">23</span></i></a></li>
+            <li><a class="header__buttons-link header__buttons-link_cart" href="#"><i><span class="header__buttons-count" id="cartProductCount">7</span></i></a></li>
+            <li class="d-none d-lg-block"><a class="header__buttons-link header__buttons-link_account" href="#"><i></i></a></li>
           </ul>
         </div>
         <!-- По умолчанию добавляем класс .disable, т.к поиск по умолчанию скрыт-->
         <div class="header__search disable">
           <form class="header__search-form">
-            <label>
-              <i></i>
-              <input class="header__search-input" type="text" placeholder="Поиск" />
-              <span class="header__search-reset" type="reset"></span>
+            <label><i></i>
+              <input class="header__search-input" type="text" placeholder="Поиск"><span class="header__search-reset" type="reset"></span>
             </label>
             <button class="header__search-close" type="button">Отмена</button>
           </form>
           <div class="header__search-hints">
             <div class="header__search-links">
-              <!-- span.no-results По Вашему запросу ничего не найдено-->
-              <a href="#">
-                Рамка Лофт 68 круглая серии безрамочных светильников
-                <strong>41022-BK</strong>
-              </a>
+              <!-- span.no-results По Вашему запросу ничего не найдено--><a href="#">Рамка Лофт 68 круглая серии безрамочных светильников  <strong>41022-BK</strong></a>
             </div>
             <div class="header__search-similar">
-              <h5>смотрите похожие</h5>
-              <a href="#">
-                <span class="pic"><img src="https://aws.massive.ru/databus/products/technolight/165910/big/80108-mw.jpg" alt="" /></span>
-                <span class="text">
-                  Рамка Лофт 68 круглая поворотная
-                  <strong>41022-BK</strong>
-                  черная
-                </span>
-              </a>
-              <a href="#">
-                <span class="pic"><img src="https://aws.massive.ru/databus/products/technolight/165910/big/80108-mw.jpg" alt="" /></span>
-                <span class="text">
-                  Рамка Симпл 68 круглая поворотная
-                  <strong>41022-BK</strong>
-                  черная
-                </span>
-              </a>
-              <a href="#">
-                <span class="pic"><img src="https://aws.massive.ru/databus/products/technolight/165910/big/80108-mw.jpg" alt="" /></span>
-                <span class="text">
-                  Фиксирующее кольцо
-                  <strong>42001-BK</strong>
-                  черное
-                </span>
-              </a>
-              <a href="#">
-                <span class="pic"><img src="https://aws.massive.ru/databus/products/technolight/165910/big/80108-mw.jpg" alt="" /></span>
-                <span class="text">
-                  Рамка двойная под круглые 85 черная
-                  <strong>41007-BK</strong>
-                  для модульных светильников Софт 85 и Твист 85
-                </span>
-              </a>
+              <h5>смотрите похожие</h5><a href="#"><span class="pic"><img src="https://aws.massive.ru/databus/products/technolight/165910/big/80108-mw.jpg" alt=""></span><span class="text">Рамка Лофт 68 круглая поворотная  <strong>41022-BK  </strong>черная</span></a><a href="#"><span class="pic"><img src="https://aws.massive.ru/databus/products/technolight/165910/big/80108-mw.jpg" alt=""></span><span class="text">Рамка Симпл 68 круглая поворотная  <strong>41022-BK  </strong>черная</span></a><a href="#"><span class="pic"><img src="https://aws.massive.ru/databus/products/technolight/165910/big/80108-mw.jpg" alt=""></span><span class="text">Фиксирующее кольцо  <strong>42001-BK  </strong>черное</span></a><a href="#"><span class="pic"><img src="https://aws.massive.ru/databus/products/technolight/165910/big/80108-mw.jpg" alt=""></span><span class="text">Рамка двойная под круглые 85 черная  <strong>41007-BK  </strong>для модульных светильников Софт 85 и Твист 85</span></a>
             </div>
           </div>
         </div>
@@ -312,64 +228,45 @@
                 <div class="col-12 col-xl-8">
                   <div class="return__content">
                     <ul class="return__list">
-                      <li>
-                        <i>{1}</i>
+                      <li><i>{1}</i>
                         <p>При оплате картами возврат наличными денежными средствами не допускается. Порядок возврата регулируется правилами международных платежных систем.</p>
                       </li>
-                      <li>
-                        <i>{2}</i>
+                      <li><i>{2}</i>
                         <p>Процедура возврата товара регламентируется статьей 26.1 федерального закона «О защите прав потребителей».</p>
                       </li>
-                      <li>
-                        <i>{3}</i>
+                      <li><i>{3}</i>
                         <p>Потребитель вправе отказаться от товара в любое время до его передачи, а после передачи товара - в течение семи дней;</p>
                       </li>
-                      <li>
-                        <i>{5}</i>
+                      <li><i>{5}</i>
                         <p>Возврат товара надлежащего качества возможен в случае, если сохранены его товарный вид, потребительские свойства, а также документ, подтверждающий факт и условия покупки указанного товара;</p>
                       </li>
-                      <li>
-                        <i>{5}</i>
+                      <li><i>{5}</i>
                         <p>Потребитель не вправе отказаться от товара надлежащего качества, имеющего индивидуально-определенные свойства, если указанный товар может быть использован исключительно приобретающим его человеком;</p>
                       </li>
                     </ul>
-                    <div class="return__pic d-xl-none"><img src="https://aws.massive.ru/technolight/images/return.jpg" alt="" loading="lazy" /></div>
+                    <div class="return__pic d-xl-none"><img src="https://aws.massive.ru/technolight/images/return.jpg" alt="" loading="lazy"></div>
                     <div class="return__description">
-                      <p>
-                        Для возврата денежных средств на банковскую карту необходимо заполнить
-                        <b>«Заявление о возврате денежных средств»</b>
-                        , которое высылается по требованию компанией на электронный адрес и оправить его вместе с приложением копии паспорта по адресу
-                        <a href="mailto:vozvrat@technolight.ru"><b>vozvrat@technolight.ru</b></a>
-                      </p>
-                      <div class="return__button">
-                        <a class="btn btn_lite btn_block btn_download" href="#">
-                          <i></i>
-                          <span>Скачать заявление на возврат</span>
-                        </a>
-                      </div>
+                      <p>Для возврата денежных средств на банковскую карту необходимо заполнить<b> «Заявление о возврате денежных средств»</b>, которое высылается по требованию компанией на электронный адрес и оправить его вместе с приложением копии паспорта по адресу <a href="mailto:vozvrat@technolight.ru"><b>vozvrat@technolight.ru</b></a></p>
+                      <div class="return__button"><a class="btn btn_lite btn_block btn_download" href="#"><i></i><span>Скачать заявление на возврат</span></a></div>
                     </div>
                     <ul class="return__list">
-                      <li>
-                        <i>{6}</i>
+                      <li><i>{6}</i>
                         <p>При отказе потребителя от товара продавец должен возвратить ему денежную сумму, уплаченную потребителем по договору, за исключением расходов продавца на доставку от потребителя возвращенного товара, не позднее чем через десять дней со дня предъявления потребителем соответствующего требования;</p>
                       </li>
-                      <li>
-                        <i>{7}</i>
+                      <li><i>{7}</i>
                         <p>Возврат денежных средств будет осуществлен на банковскую карту в течение 21 (двадцати одного) рабочего дня со дня получения «Заявление о возврате денежных средств» Компанией.</p>
                       </li>
-                      <li>
-                        <i>{8}</i>
+                      <li><i>{8}</i>
                         <p>Для возврата денежных средств по операциям проведенными с ошибками необходимо обратиться с письменным заявлением и приложением копии паспорта и чеков/квитанций, подтверждающих ошибочное списание. Данное заявление необходимо направить по адресу vozvrat@technolight.ru</p>
                       </li>
-                      <li>
-                        <i>{9}</i>
+                      <li><i>{9}</i>
                         <p>Сумма возврата будет равняться сумме покупки. Срок рассмотрения Заявления и возврата денежных средств начинает исчисляться с момента получения Компанией Заявления и рассчитывается в рабочих днях без учета праздников/выходных дней.</p>
                       </li>
                     </ul>
                   </div>
                 </div>
                 <div class="col-xl-4 d-none d-xl-block">
-                  <div class="return__pic"><img src="https://aws.massive.ru/technolight/images/return.jpg" alt="" loading="lazy" /></div>
+                  <div class="return__pic"><img src="https://aws.massive.ru/technolight/images/return.jpg" alt="" loading="lazy"></div>
                 </div>
               </div>
             </div>
@@ -380,36 +277,13 @@
     <footer class="footer" id="footer">
       <div class="footer__nav d-lg-none">
         <ul>
-          <li>
-            <a class="footer__nav-link footer__nav-link_home" href="#">
-              <i></i>
-              <span>Главная</span>
-            </a>
-          </li>
-          <li>
-            <a class="footer__nav-link footer__nav-link_call" href="#">
-              <i></i>
-              <span>Позвонить</span>
-            </a>
-          </li>
-          <li>
-            <a class="footer__nav-link footer__nav-link_cart" href="#">
-              <i></i>
-              <span>Корзина</span>
-            </a>
-          </li>
-          <li>
-            <a class="footer__nav-link footer__nav-link_account" href="#">
-              <i></i>
-              <span>Аккаунт</span>
-            </a>
-          </li>
+          <li><a class="footer__nav-link footer__nav-link_home" href="#"><i></i><span>Главная</span></a></li>
+          <li><a class="footer__nav-link footer__nav-link_call" href="#"><i></i><span>Позвонить</span></a></li>
+          <li><a class="footer__nav-link footer__nav-link_cart" href="#"><i></i><span>Корзина</span></a></li>
+          <li><a class="footer__nav-link footer__nav-link_account" href="#"><i></i><span>Аккаунт</span></a></li>
           <li>
             <!-- Активной ссылке, добавляем класс .active-->
-            <button class="footer__nav-link footer__nav-link_menu">
-              <i></i>
-              <span>Меню</span>
-            </button>
+            <button class="footer__nav-link footer__nav-link_menu"><i></i><span>Меню</span></button>
           </li>
         </ul>
       </div>
@@ -427,39 +301,28 @@
               <ul class="footer__cards-list">
                 <li class="footer__cards-item">
                   <!-- Если карточка не ссылка, то вместо тега <a> используем обычный div-->
-                  <div class="footer__cards-body">
-                    <i class="footer__cards-icon footer__cards-icon_connect"></i>
+                  <div class="footer__cards-body"><i class="footer__cards-icon footer__cards-icon_connect"></i>
                     <div class="footer__cards-content">
                       <div class="footer__cards-title">Звоните или пишите</div>
                       <p class="footer__cards-description">
-                        <!-- В телефонном номере недо должно быть пробелов и других символов кроме цифр и +-->
-                        <a href="tel:+74957977251">+7 495-797-72-51</a>
-                        <a href="https://wa.me/74957470564" target="_blank">+7 495-747-05-64 (WhatsApp)</a>
-                        <a href="mailto:order@technolight.ru">order@technolight.ru</a>
+                        <!-- В телефонном номере недо должно быть пробелов и других символов кроме цифр и +--><a href="tel:+74957977251">+7 495-797-72-51</a><a href="https://wa.me/74957470564" target="_blank">+7 495-747-05-64 (WhatsApp)</a><a href="mailto:order@technolight.ru">order@technolight.ru</a>
                       </p>
                     </div>
                   </div>
                 </li>
                 <li class="footer__cards-item">
-                  <!-- Если карточка ссылка, то класс-модификатор .footer__cards-body_link-->
-                  <a class="footer__cards-body footer__cards-body_link" href="#">
-                    <i class="footer__cards-icon footer__cards-icon_calc"></i>
+                  <!-- Если карточка ссылка, то класс-модификатор .footer__cards-body_link--><a class="footer__cards-body footer__cards-body_link" href="#"><i class="footer__cards-icon footer__cards-icon_calc"></i>
                     <div class="footer__cards-content">
                       <!-- Если карточка ссылка, то к заголовку добавляем класс-модификатор .footer__cards-title_link-->
                       <div class="footer__cards-title footer__cards-title_link">Расчет освещенности</div>
                       <p class="footer__cards-description">Заказывайте проект по свету у специалистов нашей компании и получайте профессиональную консультацию.</p>
-                    </div>
-                  </a>
+                    </div></a>
                 </li>
-                <li class="footer__cards-item">
-                  <a class="footer__cards-body footer__cards-body_link" href="#">
-                    <i class="footer__cards-icon footer__cards-icon_download"></i>
+                <li class="footer__cards-item"><a class="footer__cards-body footer__cards-body_link" href="#"><i class="footer__cards-icon footer__cards-icon_download"></i>
                     <div class="footer__cards-content">
                       <div class="footer__cards-title footer__cards-title_link">Файлы для скачивания</div>
                       <p class="footer__cards-description">Последние версии каталогов, технические спецификации, IES-файлы и прочая документация.</p>
-                    </div>
-                  </a>
-                </li>
+                    </div></a></li>
               </ul>
             </div>
           </div>
@@ -532,11 +395,7 @@
               <li class="footer__location-item"><a href="https://wa.me/74957470564" target="_blank">+7 495-747-05-64 (WhatsApp)</a></li>
               <li class="footer__location-item"><a href="mailto:order@technolight.ru">order@technolight.ru</a></li>
             </ul>
-            <div class="footer__location-socials">
-              <a class="social social_telegram" href="https://t.me/technolight_official" target="_blank"></a>
-              <a class="social social_vk" href="https://vk.com/technolightru" target="_blank"></a>
-              <a class="social social_youtube" href="https://www.youtube.com/channel/UCt3wRyz1Z8b-WOlCHz43CuQ" target="_blank"></a>
-            </div>
+            <div class="footer__location-socials"><a class="social social_telegram" href="https://t.me/technolight_official" target="_blank"></a><a class="social social_vk" href="https://vk.com/technolightru" target="_blank"></a><a class="social social_youtube" href="https://www.youtube.com/channel/UCt3wRyz1Z8b-WOlCHz43CuQ" target="_blank"></a></div>
           </div>
         </div>
         <div class="footer__line">
@@ -567,7 +426,7 @@
           <button type="button" data-modal data-modal-action="close"></button>
         </div>
         <div class="modal__header">
-          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/public/images/page/modal-logo.svg" alt="" /></div>
+          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/public/images/page/modal-logo.svg" alt=""></div>
           <h3 class="modal__title">отправить заказ</h3>
         </div>
         <div class="modal__body">
@@ -575,20 +434,16 @@
             <fieldset>
               <!-- Для того чтобы показать ошибку, добавляем к label класс .has-error-->
               <label>
-                <input type="text" placeholder="ФИО*" name="name" />
-                <span class="error-message">Текст ошибки</span>
+                <input type="text" placeholder="ФИО*" name="name"><span class="error-message">Текст ошибки</span>
               </label>
               <label>
-                <input type="text" placeholder="Телефон*" name="phone" />
-                <span class="error-message">Текст ошибки</span>
+                <input type="text" placeholder="Телефон*" name="phone"><span class="error-message">Текст ошибки</span>
               </label>
               <label>
-                <input type="text" placeholder="Email" name="email" />
-                <span class="error-message">Текст ошибки</span>
+                <input type="text" placeholder="Email" name="email"><span class="error-message">Текст ошибки</span>
               </label>
               <label>
-                <input type="text" placeholder="Город" name="city" />
-                <span class="error-message">Текст ошибки</span>
+                <input type="text" placeholder="Город" name="city"><span class="error-message">Текст ошибки</span>
               </label>
             </fieldset>
             <button class="btn btn_block btn_lite modal__button modal__button_offset" type="submit"><span>Отправить</span></button>
@@ -605,10 +460,9 @@
           <button type="button" data-modal data-modal-action="close"></button>
         </div>
         <div class="modal__header">
-          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/public/images/page/modal-logo.svg" alt="" /></div>
+          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/public/images/page/modal-logo.svg" alt=""></div>
           <h3 class="modal__title">Заказ отправлен</h3>
-          <p class="modal__subtitle">Вы можете продолжить выбор товаров</p>
-          <span class="modal__check"></span>
+          <p class="modal__subtitle">Вы можете продолжить выбор товаров</p><span class="modal__check"></span>
         </div>
       </div>
     </div>
@@ -618,7 +472,7 @@
           <button type="button" data-modal data-modal-action="close"></button>
         </div>
         <div class="modal__header">
-          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/public/images/page/modal-logo.svg" alt="" /></div>
+          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/public/images/page/modal-logo.svg" alt=""></div>
           <h3 class="modal__title">Восстановление пароля</h3>
           <p class="modal__subtitle">Введите электронную почту</p>
         </div>
@@ -627,8 +481,7 @@
             <fieldset>
               <!-- Для того чтобы показать ошибку, добавляем к label класс .has-error-->
               <label>
-                <input type="text" placeholder="Email" />
-                <span class="error-message">Текст ошибки</span>
+                <input type="text" placeholder="Email"><span class="error-message">Текст ошибки</span>
               </label>
             </fieldset>
             <button class="btn btn_block btn_lite modal__button" type="submit" data-modal data-modal-target="#passRecoveryMessage" data-modal-action="toggle"><span>Сбросить пароль</span></button>
@@ -645,10 +498,9 @@
           <button type="button" data-modal data-modal-action="close"></button>
         </div>
         <div class="modal__header">
-          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/public/images/page/modal-logo.svg" alt="" /></div>
+          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/public/images/page/modal-logo.svg" alt=""></div>
           <h3 class="modal__title">Восстановление пароля</h3>
-          <p class="modal__subtitle">Новый пароль выслан на указанную почту</p>
-          <span class="modal__check"></span>
+          <p class="modal__subtitle">Новый пароль выслан на указанную почту</p><span class="modal__check"></span>
         </div>
         <div class="modal__footer">
           <button class="modal__link" type="button" data-modal data-modal-target="#enterEmail" data-modal-action="toggle">Перейти к входу</button>
@@ -661,7 +513,7 @@
           <button type="button" data-modal data-modal-action="close"></button>
         </div>
         <div class="modal__header">
-          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/public/images/page/modal-logo.svg" alt="" /></div>
+          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/public/images/page/modal-logo.svg" alt=""></div>
           <h3 class="modal__title">Изменить пароль</h3>
           <p class="modal__subtitle">Введите текущий пароль и новый</p>
         </div>
@@ -670,16 +522,13 @@
             <fieldset>
               <!-- Для того чтобы показать ошибку, добавляем к label класс .has-error-->
               <label>
-                <input type="text" placeholder="Текущий пароль" />
-                <span class="error-message">Текст ошибки</span>
+                <input type="text" placeholder="Текущий пароль"><span class="error-message">Текст ошибки</span>
               </label>
               <label>
-                <input type="text" placeholder="Повторите текущий пароль" />
-                <span class="error-message">Текст ошибки</span>
+                <input type="text" placeholder="Повторите текущий пароль"><span class="error-message">Текст ошибки</span>
               </label>
               <label>
-                <input type="text" placeholder="Новый пароль" />
-                <span class="error-message">Текст ошибки</span>
+                <input type="text" placeholder="Новый пароль"><span class="error-message">Текст ошибки</span>
               </label>
             </fieldset>
             <button class="btn btn_block btn_lite modal__button" type="submit" data-modal data-modal-target="#passChangeMessage" data-modal-action="toggle"><span>Изменить пароль</span></button>
@@ -694,10 +543,9 @@
           <button type="button" data-modal data-modal-action="close"></button>
         </div>
         <div class="modal__header">
-          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/public/images/page/modal-logo.svg" alt="" /></div>
+          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/public/images/page/modal-logo.svg" alt=""></div>
           <h3 class="modal__title">Изменить пароль</h3>
-          <p class="modal__subtitle">Пароль успешно изменен</p>
-          <span class="modal__check"></span>
+          <p class="modal__subtitle">Пароль успешно изменен</p><span class="modal__check"></span>
         </div>
         <div class="modal__footer"><a class="modal__link" href="#">Перейти в личный кабинет</a></div>
       </div>
@@ -708,7 +556,7 @@
           <button type="button" data-modal data-modal-action="close"></button>
         </div>
         <div class="modal__header">
-          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/public/images/page/modal-logo.svg" alt="" /></div>
+          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/public/images/page/modal-logo.svg" alt=""></div>
           <h3 class="modal__title">Войти по почте</h3>
           <p class="modal__subtitle">Только для зарегистрированных пользователей</p>
         </div>
@@ -717,13 +565,10 @@
             <fieldset>
               <!-- Для того чтобы показать ошибку, добавляем к label класс .has-error-->
               <label>
-                <input type="text" placeholder="Email" />
-                <span class="error-message">Текст ошибки</span>
+                <input type="text" placeholder="Email"><span class="error-message">Текст ошибки</span>
               </label>
               <label>
-                <input type="password" placeholder="Пароль" />
-                <span class="error-message">Текст ошибки</span>
-                <span class="modal__toggle-visible-pass"></span>
+                <input type="password" placeholder="Пароль"><span class="error-message">Текст ошибки</span><span class="modal__toggle-visible-pass"></span>
               </label>
             </fieldset>
             <button class="btn btn_block btn_lite modal__button" type="submit" data-modal data-modal-action="close"><span>Войти</span></button>
@@ -741,7 +586,7 @@
           <button type="button" data-modal data-modal-action="close"></button>
         </div>
         <div class="modal__header">
-          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/public/images/page/modal-logo.svg" alt="" /></div>
+          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/public/images/page/modal-logo.svg" alt=""></div>
           <h3 class="modal__title">Введите номер телефона</h3>
           <p class="modal__subtitle">Мы отправим код или позвоним. Отвечать на звонок не нужно</p>
         </div>
@@ -750,17 +595,14 @@
             <fieldset>
               <!-- Для того чтобы показать ошибку, добавляем к label класс .has-error-->
               <label>
-                <input type="text" placeholder="Номер телефона" />
-                <span class="error-message">Текст ошибки</span>
+                <input type="text" placeholder="Номер телефона"><span class="error-message">Текст ошибки</span>
               </label>
             </fieldset>
-            <button class="btn btn_block btn_lite modal__button" type="button" data-modal data-modal-target="#enterCode" data-modal-action="toggle"><span>Получить код</span></button>
-            <span class="modal__text">или</span>
+            <button class="btn btn_block btn_lite modal__button" type="button" data-modal data-modal-target="#enterCode" data-modal-action="toggle"><span>Получить код</span></button><span class="modal__text">или</span>
             <button class="btn btn_block btn_lite modal__button" type="button" data-modal data-modal-target="#enterEmail" data-modal-action="toggle"><span>Войти по почте</span></button>
           </form>
         </div>
-        <div class="modal__footer">
-          <span class="modal__text">через сервис</span>
+        <div class="modal__footer"><span class="modal__text">через сервис</span>
           <div class="modal__service">
             <button class="modal__service-link modal__service-link_tinkoff" type="button"></button>
             <button class="modal__service-link modal__service-link_yandex" type="button"></button>
@@ -774,12 +616,9 @@
           <button type="button" data-modal data-modal-action="close"></button>
         </div>
         <div class="modal__header">
-          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/public/images/page/modal-logo.svg" alt="" /></div>
+          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/public/images/page/modal-logo.svg" alt=""></div>
           <h3 class="modal__title">Введите код</h3>
-          <p class="modal__subtitle">
-            Мы отправили код подтверждения на номер
-            <span>+7 926 818 11 84</span>
-          </p>
+          <p class="modal__subtitle">Мы отправили код подтверждения на номер  <span>+7 926 818 11 84</span></p>
           <button class="modal__link" type="button" data-modal data-modal-target="#enterPhone" data-modal-action="toggle">Изменить</button>
         </div>
         <div class="modal__body">
@@ -787,21 +626,14 @@
             <fieldset>
               <!-- Для того чтобы показать ошибку, добавляем к label класс .has-error-->
               <label>
-                <input type="text" placeholder="Введите код" />
-                <span class="error-message">Текст ошибки</span>
+                <input type="text" placeholder="Введите код"><span class="error-message">Текст ошибки</span>
               </label>
-            </fieldset>
-            <span class="modal__timer">
-              Получить новый код можно через
-              <span class="modal__timer-value">00:60</span>
-            </span>
-            <button class="modal__link d-none" type="button">Получить новый код</button>
-            <span class="modal__text">или</span>
+            </fieldset><span class="modal__timer">Получить новый код можно через  <span class="modal__timer-value">00:60</span></span>
+            <button class="modal__link d-none" type="button">Получить новый код</button><span class="modal__text">или</span>
             <button class="btn btn_block btn_lite modal__button" type="button" data-modal data-modal-target="#enterEmail" data-modal-action="toggle"><span>Войти по почте</span></button>
           </form>
         </div>
-        <div class="modal__footer">
-          <span class="modal__text">через сервис</span>
+        <div class="modal__footer"><span class="modal__text">через сервис</span>
           <div class="modal__service">
             <button class="modal__service-link modal__service-link_tinkoff" type="button"></button>
             <button class="modal__service-link modal__service-link_yandex" type="button"></button>
@@ -815,10 +647,9 @@
           <button type="button" data-modal data-modal-action="close"></button>
         </div>
         <div class="modal__header">
-          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/public/images/page/modal-logo.svg" alt="" /></div>
+          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/public/images/page/modal-logo.svg" alt=""></div>
           <h3 class="modal__title">Заказ успешно отправлен</h3>
-          <p class="modal__subtitle">Наш менеджер перезвонит Вам в ближайшее время</p>
-          <span class="modal__check"></span>
+          <p class="modal__subtitle">Наш менеджер перезвонит Вам в ближайшее время</p><span class="modal__check"></span>
         </div>
       </div>
     </div>
@@ -826,40 +657,40 @@
     <script src="js/main.min.js" defer></script>
     <script src="js/pages/return.min.js" defer></script>
     <script>
-      if (navigator.userAgent.indexOf("MSIE") !== -1 || navigator.appVersion.indexOf("Trident/") > -1) {
-        var scripts = document.querySelectorAll("script");
-        for (var i = 0; i < scripts.length; i++) {
-          if (scripts[i].src !== "") {
-            var node = scripts[i];
-            node.parentNode.removeChild(node);
+      if (navigator.userAgent.indexOf('MSIE') !== -1 || navigator.appVersion.indexOf('Trident/') > -1) {
+          var scripts = document.querySelectorAll('script');
+          for (var i = 0; i < scripts.length; i++) {
+              if (scripts[i].src !== '') {
+                  var node = scripts[i];
+                  node.parentNode.removeChild(node);
+              }
           }
-        }
-
-        var body = document.querySelector("body");
-        while (body.firstChild) {
-          body.removeChild(body.firstChild);
-        }
-
-        var video = document.createElement("video");
-        video.src = "https://aws.massive.ru/technolight/ie-not-supported.mp4";
-        video.autoplay = true;
-        video.loop = true;
-        video.muted = true;
-        video.playsInline = true;
-        video.setAttribute("style", "max-width: 50%; height: auto;");
-
-        var title = document.createElement("h1");
-        title.setAttribute("style", 'width: 100%; max-width: 700px; text-align: center; font-family: "Open Sans", sans-serif; line-height: 1.3; margin-bottom: 1em; margin-top: 0; font-size: 26px; padding-left: 20px; padding-right: 20px;');
-        title.innerText = "К сожалению, мы не поддерживаем браузер Internet Explorer 11 и более ранние версии!";
-
-        var text = document.createElement("p");
-        text.setAttribute("style", 'width: 100%; max-width: 400px; text-align: center; font-family: "Open Sans", sans-serif; line-height: 1.3; margin-bottom: 3em; font-size: 18px; padding-left: 20px; padding-right: 20px;');
-        text.innerText = "Для просмотра сайта, воспользуйтесь более новой версией браузера.";
-
-        body.setAttribute("style", "display: flex; flex-direction: column; align-items: center; justify-content: center;");
-        body.appendChild(title);
-        body.appendChild(text);
-        body.appendChild(video);
+      
+          var body = document.querySelector('body');
+          while (body.firstChild) {
+              body.removeChild(body.firstChild);
+          }
+      
+          var video = document.createElement('video');
+          video.src = 'https://aws.massive.ru/technolight/ie-not-supported.mp4';
+          video.autoplay = true;
+          video.loop = true;
+          video.muted = true;
+          video.playsInline = true;
+          video.setAttribute('style', 'max-width: 50%; height: auto;');
+      
+          var title = document.createElement('h1');
+          title.setAttribute('style', 'width: 100%; max-width: 700px; text-align: center; font-family: "Open Sans", sans-serif; line-height: 1.3; margin-bottom: 1em; margin-top: 0; font-size: 26px; padding-left: 20px; padding-right: 20px;');
+          title.innerText = "К сожалению, мы не поддерживаем браузер Internet Explorer 11 и более ранние версии!";
+      
+          var text = document.createElement('p');
+          text.setAttribute('style', 'width: 100%; max-width: 400px; text-align: center; font-family: "Open Sans", sans-serif; line-height: 1.3; margin-bottom: 3em; font-size: 18px; padding-left: 20px; padding-right: 20px;');
+          text.innerText = "Для просмотра сайта, воспользуйтесь более новой версией браузера.";
+      
+          body.setAttribute('style', 'display: flex; flex-direction: column; align-items: center; justify-content: center;');
+          body.appendChild(title);
+          body.appendChild(text);
+          body.appendChild(video);
       }
     </script>
   </body>
