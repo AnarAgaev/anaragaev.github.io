@@ -1,72 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="description" content="Write description for this page here">
-    <meta name="keywords" content="Write keywords for this page here">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="Write description for this page here" />
+    <meta name="keywords" content="Write keywords for this page here" />
     <title>Technolight</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="https://aws.massive.ru/technolight/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://aws.massive.ru/technolight/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://aws.massive.ru/technolight/favicon/favicon-16x16.png">
-    <link rel="icon" href="https://aws.massive.ru/technolight/favicon/favicon.ico">
-    <link rel="manifest" href="https://aws.massive.ru/technolight/favicon/site.webmanifest">
-    <link rel="preload" href="css/vendor.min.css" as="style">
-    <link rel="preload" href="css/main.min.css" as="style">
-    <link rel="stylesheet" href="css/vendor.min.css">
-    <link rel="stylesheet" href="css/main.min.css">
-    <link rel="stylesheet" href="css/pages/index.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://aws.massive.ru/technolight/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="https://aws.massive.ru/technolight/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://aws.massive.ru/technolight/favicon/favicon-16x16.png" />
+    <link rel="icon" href="https://aws.massive.ru/technolight/favicon/favicon.ico" />
+    <link rel="manifest" href="https://aws.massive.ru/technolight/favicon/site.webmanifest" />
+    <link rel="preload" href="css/vendor.min.css" as="style" />
+    <link rel="preload" href="css/main.min.css" as="style" />
+    <link rel="stylesheet" href="css/vendor.min.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="stylesheet" href="css/pages/index.min.css" />
     <script>
       //- spot-42 - https://anaragaev.github.io/technolight.layout/mocks/spot-42-fixed.json
       //- globo-135 - https://anaragaev.github.io/technolight.layout/mocks/globo-135-fixed.json
-      
+
       // Дефолтный API URL для корзины
-      window.cartLink = 'https://anaragaev.github.io/technolight.layout/cart.html';
-      
+      window.cartLink = "https://anaragaev.github.io/technolight.layout/cart.html";
+
       // Дефолтный API URL для спота
       window.productDataLink = "https://anaragaev.github.io/technolight.layout/mocks/spot-with-stocks.json";
-      
+
       // Дефолтный API URL дотов с рамкой и без рамки
-      window.dotsDataLink = 'https://anaragaev.github.io/technolight.layout/mocks/';
-      (function() {
-          const urlParams = new URLSearchParams(window.location.search);
-          if (urlParams.has('border')) window.dotsDataLink += 'dots-border.json';
-          else if (urlParams.has('mini')) window.dotsDataLink += 'dots-mini.json';
-          else if (urlParams.has('double')) window.dotsDataLink += 'dots-double-border.json';
-          else window.dotsDataLink += 'dots.json';
-      })()
-      
+      window.dotsDataLink = "https://anaragaev.github.io/technolight.layout/mocks/";
+      (function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.has("border")) window.dotsDataLink += "dots-border.json";
+        else if (urlParams.has("mini")) window.dotsDataLink += "dots-mini.json";
+        else if (urlParams.has("double")) window.dotsDataLink += "dots-double-border.json";
+        else window.dotsDataLink += "dots.json";
+      })();
+
       // API URL файлы для скачивания
-      window.DownloadFilesDataLink = 'https://s3files.technolight.ru/api/link?domain=technolight.ru'
-      
+      window.DownloadFilesDataLink = "https://s3files.technolight.ru/api/link?domain=technolight.ru";
     </script>
   </head>
   <body class="transition-blocker page-index" id="body">
     <header class="header" id="header">
       <div class="header__modal-back"></div>
       <div class="container">
-        <div class="header__content"><a class="header__logo logo-light" href="#"></a>
+        <div class="header__content">
+          <a class="header__logo logo-light" href="#"></a>
           <nav class="header__nav">
-            <div class="header__nav-caption d-lg-none"><span class="header__nav-logo logo-dark"></span>
+            <div class="header__nav-caption d-lg-none">
+              <span class="header__nav-logo logo-dark"></span>
               <button class="header__nav-close"></button>
             </div>
             <ul class="header__nav-list">
               <!-- Элементку списка у которого есть подменю, нужно добавлять класс-модификатов .header__nav-item_with-inner-->
               <!-- Для раскрытого пункта меню, добавлять класс .dropped-->
-              <li class="header__nav-item header__nav-item_prod header__nav-item_with-inner"><i></i>
+              <li class="header__nav-item header__nav-item_prod header__nav-item_with-inner">
+                <i></i>
                 <!-- Активному пункту меню добавляем класс .active-->
                 <!-- Пункты с подменю должны быть КНОПКАМИ А НЕ ССЫЛКАМИ-->
-                <button class="header__nav-link header__nav-link_product"><i class="d-lg-none"></i><span>Продукция</span></button>
+                <button class="header__nav-link header__nav-link_product">
+                  <i class="d-lg-none"></i>
+                  <span>Продукция</span>
+                </button>
                 <!-- Для открытого подменю, добавляем класс .open-->
                 <div class="header__nav-collapse header__nav-collapse_product collapse">
                   <div class="collapse__inner">
                     <button class="header__nav-close d-none d-lg-block"></button>
-                    <div class="header__nav-superlink"><a href="#"><i></i><span>Вся продукция</span></a></div>
+                    <div class="header__nav-superlink">
+                      <a href="#">
+                        <i></i>
+                        <span>Вся продукция</span>
+                      </a>
+                    </div>
                     <ul class="header__nav-sublist">
                       <!-- У списка подменю с заголовком у первого li класс .header__nav-subtitle-->
                       <li class="header__nav-subtitle"><a class="header__nav-sublink" href="#">Интерьерный свет</a></li>
-                      <li class="header__nav-inner-caption"><span class="header__nav-inner-toggle">Модульные светильники</span>
+                      <li class="header__nav-inner-caption">
+                        <span class="header__nav-inner-toggle">Модульные светильники</span>
                         <div class="header__nav-sublist-collapse">
                           <div class="header__nav-sublist-collapse__inner">
                             <ul class="header__nav-inner-list">
@@ -82,7 +93,8 @@
                     </ul>
                     <ul class="header__nav-sublist">
                       <li class="header__nav-subtitle"><a class="header__nav-sublink" href="#">Экстерьерный свет</a></li>
-                      <li class="header__nav-inner-caption"><span class="header__nav-inner-toggle">Грунтовые</span>
+                      <li class="header__nav-inner-caption">
+                        <span class="header__nav-inner-toggle">Грунтовые</span>
                         <div class="header__nav-sublist-collapse">
                           <div class="header__nav-sublist-collapse__inner">
                             <ul class="header__nav-inner-list">
@@ -91,7 +103,8 @@
                           </div>
                         </div>
                       </li>
-                      <li class="header__nav-inner-caption"><span class="header__nav-inner-toggle">Прожекторы</span>
+                      <li class="header__nav-inner-caption">
+                        <span class="header__nav-inner-toggle">Прожекторы</span>
                         <div class="header__nav-sublist-collapse">
                           <div class="header__nav-sublist-collapse__inner">
                             <ul class="header__nav-inner-list">
@@ -104,7 +117,8 @@
                     </ul>
                     <ul class="header__nav-sublist">
                       <li class="header__nav-subtitle"><a class="header__nav-sublink" href="#">Системы освещения</a></li>
-                      <li class="header__nav-inner-caption"><span class="header__nav-inner-toggle">PROFI 48</span>
+                      <li class="header__nav-inner-caption">
+                        <span class="header__nav-inner-toggle">PROFI 48</span>
                         <div class="header__nav-sublist-collapse">
                           <div class="header__nav-sublist-collapse__inner">
                             <ul class="header__nav-inner-list">
@@ -120,7 +134,8 @@
                     </ul>
                     <ul class="header__nav-sublist">
                       <li class="header__nav-subtitle"><a class="header__nav-sublink" href="#">Компоненты</a></li>
-                      <li class="header__nav-inner-caption"><span class="header__nav-inner-toggle">Источники питания</span>
+                      <li class="header__nav-inner-caption">
+                        <span class="header__nav-inner-toggle">Источники питания</span>
                         <div class="header__nav-sublist-collapse">
                           <div class="header__nav-sublist-collapse__inner">
                             <ul class="header__nav-inner-list">
@@ -129,7 +144,8 @@
                           </div>
                         </div>
                       </li>
-                      <li class="header__nav-inner-caption"><span class="header__nav-inner-toggle">Управление</span>
+                      <li class="header__nav-inner-caption">
+                        <span class="header__nav-inner-toggle">Управление</span>
                         <div class="header__nav-sublist-collapse">
                           <div class="header__nav-sublist-collapse__inner">
                             <ul class="header__nav-inner-list">
@@ -149,12 +165,31 @@
                   </div>
                 </div>
               </li>
-              <li class="header__nav-item"><a class="header__nav-link header__nav-link_delivery" href="#"><i class="d-lg-none"></i><span>Доставка и оплата</span></a></li>
-              <li class="header__nav-item"><a class="header__nav-link header__nav-link_buy" href="#"><i class="d-lg-none"></i><span>Где купить</span></a></li>
-              <li class="header__nav-item"><a class="header__nav-link header__nav-link_configurator" href="#"><i class="d-lg-none"></i><span>Конфигуратор</span></a></li>
-              <li class="header__nav-item header__nav-item_company header__nav-item_with-inner"><i></i>
+              <li class="header__nav-item">
+                <a class="header__nav-link header__nav-link_delivery" href="#">
+                  <i class="d-lg-none"></i>
+                  <span>Доставка и оплата</span>
+                </a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link header__nav-link_buy" href="#">
+                  <i class="d-lg-none"></i>
+                  <span>Где купить</span>
+                </a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link header__nav-link_configurator" href="#">
+                  <i class="d-lg-none"></i>
+                  <span>Конфигуратор</span>
+                </a>
+              </li>
+              <li class="header__nav-item header__nav-item_company header__nav-item_with-inner">
+                <i></i>
                 <!-- Пункты с подменю должны быть КНОПКАМИ А НЕ ССЫЛКАМИ-->
-                <button class="header__nav-link header__nav-link_company"><i class="d-lg-none"></i><span>Компания</span></button>
+                <button class="header__nav-link header__nav-link_company">
+                  <i class="d-lg-none"></i>
+                  <span>Компания</span>
+                </button>
                 <div class="header__nav-collapse header__nav-collapse_company collapse">
                   <div class="collapse__inner">
                     <button class="header__nav-close d-none d-lg-block"></button>
@@ -170,33 +205,88 @@
                   </div>
                 </div>
               </li>
-              <li class="header__nav-item d-lg-none"><a class="header__nav-link header__nav-link_download" href="#"><i class="d-lg-none"></i><span>Скачать</span></a></li>
+              <li class="header__nav-item d-lg-none">
+                <a class="header__nav-link header__nav-link_download" href="#">
+                  <i class="d-lg-none"></i>
+                  <span>Скачать</span>
+                </a>
+              </li>
             </ul>
           </nav>
           <ul class="header__buttons">
-            <li class="d-none d-lg-block"><a class="header__buttons-link header__buttons-link_call" href="tel:+9200000000"><i></i></a></li>
+            <li class="d-none d-lg-block">
+              <a class="header__buttons-link header__buttons-link_call" href="tel:+9200000000"><i></i></a>
+            </li>
             <li>
               <button class="header__buttons-link header__buttons-link_search"><i></i></button>
             </li>
-            <li><a class="header__buttons-link header__buttons-link_favorites" href="#"><i><span class="header__buttons-count">23</span></i></a></li>
-            <li><a class="header__buttons-link header__buttons-link_cart" href="#"><i><span class="header__buttons-count" id="cartProductCount">7</span></i></a></li>
-            <li class="d-none d-lg-block"><a class="header__buttons-link header__buttons-link_account" href="#"><i></i></a></li>
+            <li>
+              <a class="header__buttons-link header__buttons-link_favorites" href="#">
+                <i><span class="header__buttons-count">23</span></i>
+              </a>
+            </li>
+            <li>
+              <a class="header__buttons-link header__buttons-link_cart" href="#">
+                <i><span class="header__buttons-count" id="cartProductCount">7</span></i>
+              </a>
+            </li>
+            <li class="d-none d-lg-block">
+              <a class="header__buttons-link header__buttons-link_account" href="#"><i></i></a>
+            </li>
           </ul>
         </div>
         <!-- По умолчанию добавляем класс .disable, т.к поиск по умолчанию скрыт-->
         <div class="header__search disable">
           <form class="header__search-form">
-            <label><i></i>
-              <input class="header__search-input" type="text" placeholder="Поиск"><span class="header__search-reset" type="reset"></span>
+            <label>
+              <i></i>
+              <input class="header__search-input" type="text" placeholder="Поиск" />
+              <span class="header__search-reset" type="reset"></span>
             </label>
             <button class="header__search-close" type="button">Отмена</button>
           </form>
           <div class="header__search-hints">
             <div class="header__search-links">
-              <!-- span.no-results По Вашему запросу ничего не найдено--><a href="#">Рамка Лофт 68 круглая серии безрамочных светильников  <strong>41022-BK</strong></a>
+              <!-- span.no-results По Вашему запросу ничего не найдено-->
+              <a href="#">
+                Рамка Лофт 68 круглая серии безрамочных светильников
+                <strong>41022-BK</strong>
+              </a>
             </div>
             <div class="header__search-similar">
-              <h5>смотрите похожие</h5><a href="#"><span class="pic"><img src="https://aws.massive.ru/databus/products/technolight/165910/big/80108-mw.jpg" alt=""></span><span class="text">Рамка Лофт 68 круглая поворотная  <strong>41022-BK  </strong>черная</span></a><a href="#"><span class="pic"><img src="https://aws.massive.ru/databus/products/technolight/165910/big/80108-mw.jpg" alt=""></span><span class="text">Рамка Симпл 68 круглая поворотная  <strong>41022-BK  </strong>черная</span></a><a href="#"><span class="pic"><img src="https://aws.massive.ru/databus/products/technolight/165910/big/80108-mw.jpg" alt=""></span><span class="text">Фиксирующее кольцо  <strong>42001-BK  </strong>черное</span></a><a href="#"><span class="pic"><img src="https://aws.massive.ru/databus/products/technolight/165910/big/80108-mw.jpg" alt=""></span><span class="text">Рамка двойная под круглые 85 черная  <strong>41007-BK  </strong>для модульных светильников Софт 85 и Твист 85</span></a>
+              <h5>смотрите похожие</h5>
+              <a href="#">
+                <span class="pic"><img src="https://aws.massive.ru/databus/products/technolight/165910/big/80108-mw.jpg" alt="" /></span>
+                <span class="text">
+                  Рамка Лофт 68 круглая поворотная
+                  <strong>41022-BK</strong>
+                  черная
+                </span>
+              </a>
+              <a href="#">
+                <span class="pic"><img src="https://aws.massive.ru/databus/products/technolight/165910/big/80108-mw.jpg" alt="" /></span>
+                <span class="text">
+                  Рамка Симпл 68 круглая поворотная
+                  <strong>41022-BK</strong>
+                  черная
+                </span>
+              </a>
+              <a href="#">
+                <span class="pic"><img src="https://aws.massive.ru/databus/products/technolight/165910/big/80108-mw.jpg" alt="" /></span>
+                <span class="text">
+                  Фиксирующее кольцо
+                  <strong>42001-BK</strong>
+                  черное
+                </span>
+              </a>
+              <a href="#">
+                <span class="pic"><img src="https://aws.massive.ru/databus/products/technolight/165910/big/80108-mw.jpg" alt="" /></span>
+                <span class="text">
+                  Рамка двойная под круглые 85 черная
+                  <strong>41007-BK</strong>
+                  для модульных светильников Софт 85 и Твист 85
+                </span>
+              </a>
             </div>
           </div>
         </div>
@@ -206,68 +296,67 @@
     <main class="main" id="main" data-product-article="86108-3K-01-BK">
       <style>
         .link-list {
-            margin-bottom: 60px;
+          margin-bottom: 60px;
         }
         .link-list h1 {
-            color: #363636;
-            font-weight: 300;
-            margin-top: 60px;
+          color: #363636;
+          font-weight: 300;
+          margin-top: 60px;
         }
         .link-list ul {
-            display: flex;
-            flex-direction: column;
-            column-gap: 20px;
-            list-style: none;
+          display: flex;
+          flex-direction: column;
+          column-gap: 20px;
+          list-style: none;
         }
-        .link-list ul li a  {
-            position: relative;
-            display: flex;
-            gap: 10px;
-            align-items: center;
-            color: black;
-            padding: 10px;
+        .link-list ul li a {
+          position: relative;
+          display: flex;
+          gap: 10px;
+          align-items: center;
+          color: black;
+          padding: 10px;
         }
         .link-list ul li a:hover {
-            background: #f5f5f5;
+          background: #f5f5f5;
         }
         .link-list ul li a:has([type="checkbox"])::after {
-            content: '';
-            display: inline-flex;
-            position: relative;
-            width: 20px;
-            height: 20px;
-            border: 1px solid rgba(0,0,0,.5);
-            margin-left: auto;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.1em;
-            color: rgba(0,0,0,.6);
+          content: "";
+          display: inline-flex;
+          position: relative;
+          width: 20px;
+          height: 20px;
+          border: 1px solid rgba(0, 0, 0, 0.5);
+          margin-left: auto;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.1em;
+          color: rgba(0, 0, 0, 0.6);
         }
         .link-list ul li a:has([type="checkbox"]:checked)::after {
-            content: '✔';
+          content: "✔";
         }
-        .link-list ul li a [type="checkbox"]  {
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: -1;
-            opacity: 0;
-            width: 0;
-            height: 0;
+        .link-list ul li a [type="checkbox"] {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          opacity: 0;
+          width: 0;
+          height: 0;
         }
         .link-list ul li a i {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 20px;
-            height: 20px;
-            background: transparent no-repeat center;
-            background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTUgMEM0LjMxMjUgMCAzLjc1IDAuNTYyNSAzLjc1IDEuMjVWMTguNzVDMy43NSAxOS40Mzc1IDQuMzEyNSAyMCA1IDIwSDE3LjVDMTguMTg3NSAyMCAxOC43NSAxOS40Mzc1IDE4Ljc1IDE4Ljc1VjVMMTMuNzUgMEg1WiIgZmlsbD0iI0UyRTVFNyIvPgo8cGF0aCBkPSJNMTUgNUgxOC43NUwxMy43NSAwVjMuNzVDMTMuNzUgNC40Mzc1IDE0LjMxMjUgNSAxNSA1WiIgZmlsbD0iI0IwQjdCRCIvPgo8cGF0aCBkPSJNMTguNzUgOC43NUwxNSA1SDE4Ljc1VjguNzVaIiBmaWxsPSIjQ0FEMUQ4Ii8+CjxwYXRoIGQ9Ik0xNi4yNSAxNi4yNUMxNi4yNSAxNi41OTM4IDE1Ljk2ODggMTYuODc1IDE1LjYyNSAxNi44NzVIMS44NzVDMS41MzEyNSAxNi44NzUgMS4yNSAxNi41OTM4IDEuMjUgMTYuMjVWMTBDMS4yNSA5LjY1NjI1IDEuNTMxMjUgOS4zNzUgMS44NzUgOS4zNzVIMTUuNjI1QzE1Ljk2ODggOS4zNzUgMTYuMjUgOS42NTYyNSAxNi4yNSAxMFYxNi4yNVoiIGZpbGw9IiMzNjM2MzYiLz4KPHBhdGggZD0iTTIuMTc1NzggMTQuNjkxNFYxMS44NTE2QzIuMTc1NzggMTEuNjcxOSAyLjMwNDY5IDExLjU0MyAyLjUzMTI1IDExLjU0M0MyLjcwNzAzIDExLjU0MyAyLjgzNTk0IDExLjY3MTkgMi44MzU5NCAxMS44NTE2VjEyLjk0MTRINC40NjQ4NFYxMS44NTE2QzQuNDY0ODQgMTEuNjcxOSA0LjYyNSAxMS41NDMgNC44MDQ2OSAxMS41NDNDNC45ODA0NyAxMS41NDMgNS4xMTMyOCAxMS42NzE5IDUuMTEzMjggMTEuODUxNlYxNC42OTE0QzUuMTEzMjggMTQuODY3MiA0Ljk3NjU2IDE1IDQuODA0NjkgMTVDNC42MjUgMTUgNC40NjQ4NCAxNC44NjMzIDQuNDY0ODQgMTQuNjkxNFYxMy41OTc3SDIuODM1OTRWMTQuNjkxNEMyLjgzNTk0IDE0Ljg2NzIgMi43MDcwMyAxNSAyLjUzMTI1IDE1QzIuMzA0NjkgMTUgMi4xNzU3OCAxNC44NjMzIDIuMTc1NzggMTQuNjkxNFoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik02Ljc1IDEyLjE2OEg1Ljg3NUM1LjQ0MTQxIDEyLjE2OCA1LjQ0MTQxIDExLjUyNzMgNS44NzUgMTEuNTI3M0g4LjIzODI4QzguNjgzNTkgMTEuNTI3MyA4LjY4MzU5IDEyLjE2OCA4LjIzODI4IDEyLjE2OEg3LjQxMDE2VjE0LjY5MTRDNy40MTAxNiAxNS4xMjUgNi43NSAxNS4xMzY3IDYuNzUgMTQuNjkxNFYxMi4xNjhaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNOS43MTQ4NCAxMi44MDQ3VjE0LjY1MjNDOS43MTQ4NCAxNC44NzExIDkuNTM1MTYgMTQuOTk2MSA5LjM1NTQ3IDE0Ljk5NjFDOS4xOTUzMSAxNC45OTYxIDkuMDU0NjkgMTQuODcxMSA5LjA1NDY5IDE0LjY1MjNWMTEuODM5OEM5LjA1NDY5IDExLjU3ODEgOS4yNzM0NCAxMS40OTYxIDkuMzU1NDcgMTEuNDk2MUM5LjUgMTEuNDk2MSA5LjU4NTk0IDExLjU4MiA5LjY2Nzk3IDExLjY3NThMMTAuNzY5NSAxMy4xNjAyTDExLjkxMDIgMTEuNjIxMUMxMi4wNzQyIDExLjQxOCAxMi40ODA1IDExLjQ5NjEgMTIuNDgwNSAxMS44Mzk4VjE0LjY1MjNDMTIuNDgwNSAxNC44NzExIDEyLjMzOTggMTQuOTk2MSAxMi4xNzk3IDE0Ljk5NjFDMTIgMTQuOTk2MSAxMS44NTk0IDE0Ljg3MTEgMTEuODU5NCAxNC42NTIzVjEyLjgwNDdMMTEuMDMxMiAxMy44NTU1QzEwLjg1MTYgMTQuMDc0MiAxMC42MjUgMTQuMDc0MiAxMC40NjA5IDEzLjg1NTVMOS43MTQ4NCAxMi44MDQ3WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTEzLjE3NTggMTEuODQzOEMxMy4xNzU4IDExLjY3OTcgMTMuMzE2NCAxMS41MzkxIDEzLjQ5MjIgMTEuNTM5MUMxMy42NTIzIDExLjUzOTEgMTMuNzg5MSAxMS42Nzk3IDEzLjc4OTEgMTEuODQzOFYxNC4zNDc3SDE1LjE0ODRDMTUuNjM2NyAxNC4zNDc3IDE1LjY0ODQgMTUuMDAzOSAxNS4xNDg0IDE1LjAwMzlIMTMuNDk2MUMxMy4zMjAzIDE1LjAwMzkgMTMuMTc5NyAxNC44Nzg5IDEzLjE3OTcgMTQuNjk5MkwxMy4xNzU4IDExLjg0MzhaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMTUuNjI1IDE2Ljg3NUgzLjc1VjE3LjVIMTUuNjI1QzE1Ljk2ODggMTcuNSAxNi4yNSAxNy4yMTg4IDE2LjI1IDE2Ljg3NVYxNi4yNUMxNi4yNSAxNi41OTM4IDE1Ljk2ODggMTYuODc1IDE1LjYyNSAxNi44NzVaIiBmaWxsPSIjQ0FEMUQ4Ii8+Cjwvc3ZnPgo=");
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 20px;
+          height: 20px;
+          background: transparent no-repeat center;
+          background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTUgMEM0LjMxMjUgMCAzLjc1IDAuNTYyNSAzLjc1IDEuMjVWMTguNzVDMy43NSAxOS40Mzc1IDQuMzEyNSAyMCA1IDIwSDE3LjVDMTguMTg3NSAyMCAxOC43NSAxOS40Mzc1IDE4Ljc1IDE4Ljc1VjVMMTMuNzUgMEg1WiIgZmlsbD0iI0UyRTVFNyIvPgo8cGF0aCBkPSJNMTUgNUgxOC43NUwxMy43NSAwVjMuNzVDMTMuNzUgNC40Mzc1IDE0LjMxMjUgNSAxNSA1WiIgZmlsbD0iI0IwQjdCRCIvPgo8cGF0aCBkPSJNMTguNzUgOC43NUwxNSA1SDE4Ljc1VjguNzVaIiBmaWxsPSIjQ0FEMUQ4Ii8+CjxwYXRoIGQ9Ik0xNi4yNSAxNi4yNUMxNi4yNSAxNi41OTM4IDE1Ljk2ODggMTYuODc1IDE1LjYyNSAxNi44NzVIMS44NzVDMS41MzEyNSAxNi44NzUgMS4yNSAxNi41OTM4IDEuMjUgMTYuMjVWMTBDMS4yNSA5LjY1NjI1IDEuNTMxMjUgOS4zNzUgMS44NzUgOS4zNzVIMTUuNjI1QzE1Ljk2ODggOS4zNzUgMTYuMjUgOS42NTYyNSAxNi4yNSAxMFYxNi4yNVoiIGZpbGw9IiMzNjM2MzYiLz4KPHBhdGggZD0iTTIuMTc1NzggMTQuNjkxNFYxMS44NTE2QzIuMTc1NzggMTEuNjcxOSAyLjMwNDY5IDExLjU0MyAyLjUzMTI1IDExLjU0M0MyLjcwNzAzIDExLjU0MyAyLjgzNTk0IDExLjY3MTkgMi44MzU5NCAxMS44NTE2VjEyLjk0MTRINC40NjQ4NFYxMS44NTE2QzQuNDY0ODQgMTEuNjcxOSA0LjYyNSAxMS41NDMgNC44MDQ2OSAxMS41NDNDNC45ODA0NyAxMS41NDMgNS4xMTMyOCAxMS42NzE5IDUuMTEzMjggMTEuODUxNlYxNC42OTE0QzUuMTEzMjggMTQuODY3MiA0Ljk3NjU2IDE1IDQuODA0NjkgMTVDNC42MjUgMTUgNC40NjQ4NCAxNC44NjMzIDQuNDY0ODQgMTQuNjkxNFYxMy41OTc3SDIuODM1OTRWMTQuNjkxNEMyLjgzNTk0IDE0Ljg2NzIgMi43MDcwMyAxNSAyLjUzMTI1IDE1QzIuMzA0NjkgMTUgMi4xNzU3OCAxNC44NjMzIDIuMTc1NzggMTQuNjkxNFoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik02Ljc1IDEyLjE2OEg1Ljg3NUM1LjQ0MTQxIDEyLjE2OCA1LjQ0MTQxIDExLjUyNzMgNS44NzUgMTEuNTI3M0g4LjIzODI4QzguNjgzNTkgMTEuNTI3MyA4LjY4MzU5IDEyLjE2OCA4LjIzODI4IDEyLjE2OEg3LjQxMDE2VjE0LjY5MTRDNy40MTAxNiAxNS4xMjUgNi43NSAxNS4xMzY3IDYuNzUgMTQuNjkxNFYxMi4xNjhaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNOS43MTQ4NCAxMi44MDQ3VjE0LjY1MjNDOS43MTQ4NCAxNC44NzExIDkuNTM1MTYgMTQuOTk2MSA5LjM1NTQ3IDE0Ljk5NjFDOS4xOTUzMSAxNC45OTYxIDkuMDU0NjkgMTQuODcxMSA5LjA1NDY5IDE0LjY1MjNWMTEuODM5OEM5LjA1NDY5IDExLjU3ODEgOS4yNzM0NCAxMS40OTYxIDkuMzU1NDcgMTEuNDk2MUM5LjUgMTEuNDk2MSA5LjU4NTk0IDExLjU4MiA5LjY2Nzk3IDExLjY3NThMMTAuNzY5NSAxMy4xNjAyTDExLjkxMDIgMTEuNjIxMUMxMi4wNzQyIDExLjQxOCAxMi40ODA1IDExLjQ5NjEgMTIuNDgwNSAxMS44Mzk4VjE0LjY1MjNDMTIuNDgwNSAxNC44NzExIDEyLjMzOTggMTQuOTk2MSAxMi4xNzk3IDE0Ljk5NjFDMTIgMTQuOTk2MSAxMS44NTk0IDE0Ljg3MTEgMTEuODU5NCAxNC42NTIzVjEyLjgwNDdMMTEuMDMxMiAxMy44NTU1QzEwLjg1MTYgMTQuMDc0MiAxMC42MjUgMTQuMDc0MiAxMC40NjA5IDEzLjg1NTVMOS43MTQ4NCAxMi44MDQ3WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTEzLjE3NTggMTEuODQzOEMxMy4xNzU4IDExLjY3OTcgMTMuMzE2NCAxMS41MzkxIDEzLjQ5MjIgMTEuNTM5MUMxMy42NTIzIDExLjUzOTEgMTMuNzg5MSAxMS42Nzk3IDEzLjc4OTEgMTEuODQzOFYxNC4zNDc3SDE1LjE0ODRDMTUuNjM2NyAxNC4zNDc3IDE1LjY0ODQgMTUuMDAzOSAxNS4xNDg0IDE1LjAwMzlIMTMuNDk2MUMxMy4zMjAzIDE1LjAwMzkgMTMuMTc5NyAxNC44Nzg5IDEzLjE3OTcgMTQuNjk5MkwxMy4xNzU4IDExLjg0MzhaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMTUuNjI1IDE2Ljg3NUgzLjc1VjE3LjVIMTUuNjI1QzE1Ljk2ODggMTcuNSAxNi4yNSAxNy4yMTg4IDE2LjI1IDE2Ljg3NVYxNi4yNUMxNi4yNSAxNi41OTM4IDE1Ljk2ODggMTYuODc1IDE1LjYyNSAxNi44NzVaIiBmaWxsPSIjQ0FEMUQ4Ii8+Cjwvc3ZnPgo=");
         }
         .link-list ul li a i.mdl {
-            background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTUgMEM0LjMxMjUgMCAzLjc1IDAuNTYyNSAzLjc1IDEuMjVWMTguNzVDMy43NSAxOS40Mzc1IDQuMzEyNSAyMCA1IDIwSDE3LjVDMTguMTg3NSAyMCAxOC43NSAxOS40Mzc1IDE4Ljc1IDE4Ljc1VjVMMTMuNzUgMEg1WiIgZmlsbD0iI0UyRTVFNyIvPgo8cGF0aCBkPSJNMTUgNUgxOC43NUwxMy43NSAwVjMuNzVDMTMuNzUgNC40Mzc1IDE0LjMxMjUgNSAxNSA1WiIgZmlsbD0iI0IwQjdCRCIvPgo8cGF0aCBkPSJNMTguNzUgOC43NUwxNSA1SDE4Ljc1VjguNzVaIiBmaWxsPSIjQ0FEMUQ4Ii8+CjxwYXRoIGQ9Ik0xNC43MDEzIDEzSDkuMDI2ODZWMTMuNjI1SDE0LjcwMTNDMTQuODY1NiAxMy42MjUgMTUgMTMuMzQzOCAxNSAxM1YxMi4zNzVDMTUgMTIuNzE4OCAxNC44NjU2IDEzIDE0LjcwMTMgMTNaIiBmaWxsPSIjQ0FEMUQ4Ii8+CjxwYXRoIGQ9Ik03LjM1MjMxIDEzSDE0LjAxODNWMTMuNjI1SDcuMzUyMzFDNy4xNTkzMiAxMy42MjUgNy4wMDE0NiAxMy4zNDM4IDcuMDAxNDYgMTNWMTIuMzc1QzcuMDAxNDYgMTIuNzE4OCA3LjE1OTMyIDEzIDcuMzUyMzEgMTNaIiBmaWxsPSIjQ0FEMUQ4Ii8+CjxwYXRoIGQ9Ik0xNSAxMi41MDE3QzE1IDEyLjc3NTggMTQuODUwMSAxMyAxNC42NjY3IDEzSDcuMzM0NzRDNy4xNTE0NCAxMyA3LjAwMTQ2IDEyLjc3NTggNy4wMDE0NiAxMi41MDE3VjcuNTE4OTFDNy4wMDE0NiA3LjI0NDg2IDcuMTUxNDQgNy4wMjA2MyA3LjMzNDc0IDcuMDIwNjNIMTQuNjY2N0MxNC44NTAxIDcuMDIwNjMgMTUgNy4yNDQ4NiAxNSA3LjUxODkxVjEyLjUwMTdaIiBmaWxsPSIjMzYzNjM2Ii8+Cjwvc3ZnPgo=);
+          background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTUgMEM0LjMxMjUgMCAzLjc1IDAuNTYyNSAzLjc1IDEuMjVWMTguNzVDMy43NSAxOS40Mzc1IDQuMzEyNSAyMCA1IDIwSDE3LjVDMTguMTg3NSAyMCAxOC43NSAxOS40Mzc1IDE4Ljc1IDE4Ljc1VjVMMTMuNzUgMEg1WiIgZmlsbD0iI0UyRTVFNyIvPgo8cGF0aCBkPSJNMTUgNUgxOC43NUwxMy43NSAwVjMuNzVDMTMuNzUgNC40Mzc1IDE0LjMxMjUgNSAxNSA1WiIgZmlsbD0iI0IwQjdCRCIvPgo8cGF0aCBkPSJNMTguNzUgOC43NUwxNSA1SDE4Ljc1VjguNzVaIiBmaWxsPSIjQ0FEMUQ4Ii8+CjxwYXRoIGQ9Ik0xNC43MDEzIDEzSDkuMDI2ODZWMTMuNjI1SDE0LjcwMTNDMTQuODY1NiAxMy42MjUgMTUgMTMuMzQzOCAxNSAxM1YxMi4zNzVDMTUgMTIuNzE4OCAxNC44NjU2IDEzIDE0LjcwMTMgMTNaIiBmaWxsPSIjQ0FEMUQ4Ii8+CjxwYXRoIGQ9Ik03LjM1MjMxIDEzSDE0LjAxODNWMTMuNjI1SDcuMzUyMzFDNy4xNTkzMiAxMy42MjUgNy4wMDE0NiAxMy4zNDM4IDcuMDAxNDYgMTNWMTIuMzc1QzcuMDAxNDYgMTIuNzE4OCA3LjE1OTMyIDEzIDcuMzUyMzEgMTNaIiBmaWxsPSIjQ0FEMUQ4Ii8+CjxwYXRoIGQ9Ik0xNSAxMi41MDE3QzE1IDEyLjc3NTggMTQuODUwMSAxMyAxNC42NjY3IDEzSDcuMzM0NzRDNy4xNTE0NCAxMyA3LjAwMTQ2IDEyLjc3NTggNy4wMDE0NiAxMi41MDE3VjcuNTE4OTFDNy4wMDE0NiA3LjI0NDg2IDcuMTUxNDQgNy4wMjA2MyA3LjMzNDc0IDcuMDIwNjNIMTQuNjY2N0MxNC44NTAxIDcuMDIwNjMgMTUgNy4yNDQ4NiAxNSA3LjUxODkxVjEyLjUwMTdaIiBmaWxsPSIjMzYzNjM2Ii8+Cjwvc3ZnPgo=);
         }
-        
       </style>
       <div class="container container_caption link-list">
         <div class="row">
@@ -280,86 +369,278 @@
         <div class="row">
           <div class="col-12 col-lg-4">
             <ul>
-              <li><a href="home.html" target="_black"><i></i><span>Главная</span>
-                  <input type="checkbox" checked></a></li>
-              <li><a href="product.html" target="_black"><i></i><span>Карточка<b> Товара</b></span>
-                  <input type="checkbox" checked></a></li>
-              <li><a href="dots.html" target="_black"><i></i><span>Контфигуратор<b> Дотов</b></span>
-                  <input type="checkbox" checked></a></li>
-              <li><a href="article.html" target="_black"><i></i><span>Карточка<b> Артикула</b></span>
-                  <input type="checkbox" checked></a></li>
-              <li><a href="series.html" target="_black"><i></i><span>Страница<b> Серии</b></span>
-                  <input type="checkbox" checked></a></li>
-              <li><a href="return.html" target="_black"><i></i><span>Правила возврата товара</span>
-                  <input type="checkbox" checked></a></li>
-              <li><a href="warranty.html" target="_black"><i></i><span>Гарантия качества</span>
-                  <input type="checkbox" checked></a></li>
-              <li><a href="design-and-quality.html" target="_black"><i></i><span>Дизайн и качество</span>
-                  <input type="checkbox" checked></a></li>
-              <li><a href="trademark.html" target="_black"><i></i><span>Торговая марка</span>
-                  <input type="checkbox" checked></a></li>
-              <li><a href="contacts.html" target="_black"><i></i><span>Контакты</span>
-                  <input type="checkbox" checked></a></li>
-              <li><a href="account.html" target="_black"><i></i><span>Личный кабинет</span>
-                  <input type="checkbox"></a></li>
-              <li><a href="order-history.html" target="_black"><i></i><span>История заказов</span>
-                  <input type="checkbox"></a></li>
-              <li><a href="configurations.html" target="_black"><i></i><span>Мои конфигурации</span>
-                  <input type="checkbox"></a></li>
-              <li><a href="user-data.html" target="_black"><i></i><span>Личные данные</span>
-                  <input type="checkbox"></a></li>
-              <li><a href="change-password.html" target="_black"><i></i><span>Изменить пароль</span>
-                  <input type="checkbox"></a></li>
-              <li><a href="contract-offer.html" target="_black"><i></i><span>Договор оферта</span>
-                  <input type="checkbox" checked></a></li>
+              <li>
+                <a href="home.html" target="_black">
+                  <i></i>
+                  <span>Главная</span>
+                  <input type="checkbox" checked />
+                </a>
+              </li>
+              <li>
+                <a href="product.html" target="_black">
+                  <i></i>
+                  <span>
+                    Карточка
+                    <b>Товара</b>
+                  </span>
+                  <input type="checkbox" checked />
+                </a>
+              </li>
+              <li>
+                <a href="dots.html" target="_black">
+                  <i></i>
+                  <span>
+                    Контфигуратор
+                    <b>Дотов</b>
+                  </span>
+                  <input type="checkbox" checked />
+                </a>
+              </li>
+              <li>
+                <a href="article.html" target="_black">
+                  <i></i>
+                  <span>
+                    Карточка
+                    <b>Артикула</b>
+                  </span>
+                  <input type="checkbox" checked />
+                </a>
+              </li>
+              <li>
+                <a href="series.html" target="_black">
+                  <i></i>
+                  <span>
+                    Страница
+                    <b>Серии</b>
+                  </span>
+                  <input type="checkbox" checked />
+                </a>
+              </li>
+              <li>
+                <a href="return.html" target="_black">
+                  <i></i>
+                  <span>Правила возврата товара</span>
+                  <input type="checkbox" checked />
+                </a>
+              </li>
+              <li>
+                <a href="warranty.html" target="_black">
+                  <i></i>
+                  <span>Гарантия качества</span>
+                  <input type="checkbox" checked />
+                </a>
+              </li>
+              <li>
+                <a href="design-and-quality.html" target="_black">
+                  <i></i>
+                  <span>Дизайн и качество</span>
+                  <input type="checkbox" checked />
+                </a>
+              </li>
+              <li>
+                <a href="trademark.html" target="_black">
+                  <i></i>
+                  <span>Торговая марка</span>
+                  <input type="checkbox" checked />
+                </a>
+              </li>
+              <li>
+                <a href="contacts.html" target="_black">
+                  <i></i>
+                  <span>Контакты</span>
+                  <input type="checkbox" checked />
+                </a>
+              </li>
+              <li>
+                <a href="account.html" target="_black">
+                  <i></i>
+                  <span>Личный кабинет</span>
+                  <input type="checkbox" />
+                </a>
+              </li>
+              <li>
+                <a href="order-history.html" target="_black">
+                  <i></i>
+                  <span>История заказов</span>
+                  <input type="checkbox" />
+                </a>
+              </li>
+              <li>
+                <a href="configurations.html" target="_black">
+                  <i></i>
+                  <span>Мои конфигурации</span>
+                  <input type="checkbox" />
+                </a>
+              </li>
+              <li>
+                <a href="user-data.html" target="_black">
+                  <i></i>
+                  <span>Личные данные</span>
+                  <input type="checkbox" />
+                </a>
+              </li>
+              <li>
+                <a href="change-password.html" target="_black">
+                  <i></i>
+                  <span>Изменить пароль</span>
+                  <input type="checkbox" />
+                </a>
+              </li>
+              <li>
+                <a href="contract-offer.html" target="_black">
+                  <i></i>
+                  <span>Договор оферта</span>
+                  <input type="checkbox" checked />
+                </a>
+              </li>
             </ul>
           </div>
           <div class="col-12 col-lg-4">
             <ul>
-              <li><a href="download.html" target="_black"><i></i><span>Скачать</span>
-                  <input type="checkbox" checked></a></li>
-              <li><a href="delivery-and-payment.html" target="_black"><i></i><span>Доставка и оплата</span>
-                  <input type="checkbox" checked></a></li>
-              <li><a href="products.html" target="_black"><i></i><span>Продукция</span>
-                  <input type="checkbox" checked></a></li>
-              <li><a href="our-projects.html" target="_black"><i></i><span>Наши проекты</span>
-                  <input type="checkbox" checked></a></li>
-              <li><a href="single-project.html" target="_black"><i></i><span>Проект детально</span>
-                  <input type="checkbox" checked></a></li>
-              <li><a href="404.html" target="_black"><i></i><span>404</span>
-                  <input type="checkbox" checked></a></li>
-              <li><a href="cart.html" target="_black"><i></i><span>Корзина</span>
-                  <input type="checkbox" checked></a></li>
-              <li><a href="video-instructions.html" target="_black"><i></i><span>Видеоинструкции</span>
-                  <input type="checkbox"></a></li>
-              <li><a href="shops.html" target="_black"><i></i><span>Где купить</span>
-                  <input type="checkbox" checkbox checked></a></li>
-              <li><a href="catalog.html" target="_black"><i></i><span>Каталог (Все товары)</span>
-                  <input type="checkbox"></a></li>
-              <li><a href="login.html" target="_black"><i></i><span>Вход</span>
-                  <input type="checkbox"></a></li>
-              <li><a href="registration.html" target="_black"><i></i><span>Регистрация</span>
-                  <input type="checkbox" checked></a></li>
-              <li><a href="password-recovery.html" target="_black"><i></i><span>Восстановление пароля</span>
-                  <input type="checkbox"></a></li>
-              <li><a href="confirm-code.html" target="_black"><i></i><span>Код подтверждения</span>
-                  <input type="checkbox"></a></li>
+              <li>
+                <a href="download.html" target="_black">
+                  <i></i>
+                  <span>Скачать</span>
+                  <input type="checkbox" checked />
+                </a>
+              </li>
+              <li>
+                <a href="delivery-and-payment.html" target="_black">
+                  <i></i>
+                  <span>Доставка и оплата</span>
+                  <input type="checkbox" checked />
+                </a>
+              </li>
+              <li>
+                <a href="products.html" target="_black">
+                  <i></i>
+                  <span>Продукция</span>
+                  <input type="checkbox" checked />
+                </a>
+              </li>
+              <li>
+                <a href="our-projects.html" target="_black">
+                  <i></i>
+                  <span>Наши проекты</span>
+                  <input type="checkbox" checked />
+                </a>
+              </li>
+              <li>
+                <a href="single-project.html" target="_black">
+                  <i></i>
+                  <span>Проект детально</span>
+                  <input type="checkbox" checked />
+                </a>
+              </li>
+              <li>
+                <a href="404.html" target="_black">
+                  <i></i>
+                  <span>404</span>
+                  <input type="checkbox" checked />
+                </a>
+              </li>
+              <li>
+                <a href="cart.html" target="_black">
+                  <i></i>
+                  <span>Корзина</span>
+                  <input type="checkbox" checked />
+                </a>
+              </li>
+              <li>
+                <a href="video-instructions.html" target="_black">
+                  <i></i>
+                  <span>Видеоинструкции</span>
+                  <input type="checkbox" />
+                </a>
+              </li>
+              <li>
+                <a href="shops.html" target="_black">
+                  <i></i>
+                  <span>Где купить</span>
+                  <input type="checkbox" checkbox checked />
+                </a>
+              </li>
+              <li>
+                <a href="catalog.html" target="_black">
+                  <i></i>
+                  <span>Каталог (Все товары)</span>
+                  <input type="checkbox" />
+                </a>
+              </li>
+              <li>
+                <a href="login.html" target="_black">
+                  <i></i>
+                  <span>Вход</span>
+                  <input type="checkbox" />
+                </a>
+              </li>
+              <li>
+                <a href="registration.html" target="_black">
+                  <i></i>
+                  <span>Регистрация</span>
+                  <input type="checkbox" checked />
+                </a>
+              </li>
+              <li>
+                <a href="password-recovery.html" target="_black">
+                  <i></i>
+                  <span>Восстановление пароля</span>
+                  <input type="checkbox" />
+                </a>
+              </li>
+              <li>
+                <a href="confirm-code.html" target="_black">
+                  <i></i>
+                  <span>Код подтверждения</span>
+                  <input type="checkbox" />
+                </a>
+              </li>
             </ul>
           </div>
           <div class="col-12 col-lg-4">
             <ul>
-              <li><a data-modal data-modal-target="#setOrder" data-modal-action="show" href="#"><i class="mdl"></i><span>Отправить заказ</span>
-                  <input type="checkbox" checked></a></li>
-              <li><a data-modal data-modal-target="#passRecovery" data-modal-action="show" href="#"><i class="mdl"></i><span>Восстановление пароля</span>
-                  <input type="checkbox"></a></li>
-              <li><a data-modal data-modal-target="#passChange" data-modal-action="show" href="#"><i class="mdl"></i><span>Изменение пароля</span>
-                  <input type="checkbox"></a></li>
-              <li><a data-modal data-modal-target="#enterEmail" data-modal-action="show" href="#"><i class="mdl"></i><span>Вход по почте</span>
-                  <input type="checkbox"></a></li>
-              <li><a data-modal data-modal-target="#enterPhone" data-modal-action="show" href="#"><i class="mdl"></i><span>Вход по телефону</span>
-                  <input type="checkbox"></a></li>
-              <li><a data-modal data-modal-target="#modalMsg" data-modal-action="show" href="#"><i class="mdl"></i><span>Заказ успешно отправлен</span>
-                  <input type="checkbox" checked></a></li>
+              <li>
+                <a data-modal data-modal-target="#setOrder" data-modal-action="show" href="#">
+                  <i class="mdl"></i>
+                  <span>Отправить заказ</span>
+                  <input type="checkbox" checked />
+                </a>
+              </li>
+              <li>
+                <a data-modal data-modal-target="#passRecovery" data-modal-action="show" href="#">
+                  <i class="mdl"></i>
+                  <span>Восстановление пароля</span>
+                  <input type="checkbox" />
+                </a>
+              </li>
+              <li>
+                <a data-modal data-modal-target="#passChange" data-modal-action="show" href="#">
+                  <i class="mdl"></i>
+                  <span>Изменение пароля</span>
+                  <input type="checkbox" />
+                </a>
+              </li>
+              <li>
+                <a data-modal data-modal-target="#enterEmail" data-modal-action="show" href="#">
+                  <i class="mdl"></i>
+                  <span>Вход по почте</span>
+                  <input type="checkbox" />
+                </a>
+              </li>
+              <li>
+                <a data-modal data-modal-target="#enterPhone" data-modal-action="show" href="#">
+                  <i class="mdl"></i>
+                  <span>Вход по телефону</span>
+                  <input type="checkbox" />
+                </a>
+              </li>
+              <li>
+                <a data-modal data-modal-target="#modalMsg" data-modal-action="show" href="#">
+                  <i class="mdl"></i>
+                  <span>Заказ успешно отправлен</span>
+                  <input type="checkbox" checked />
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -368,13 +649,36 @@
     <footer class="footer" id="footer">
       <div class="footer__nav d-lg-none">
         <ul>
-          <li><a class="footer__nav-link footer__nav-link_home" href="#"><i></i><span>Главная</span></a></li>
-          <li><a class="footer__nav-link footer__nav-link_call" href="#"><i></i><span>Позвонить</span></a></li>
-          <li><a class="footer__nav-link footer__nav-link_cart" href="#"><i></i><span>Корзина</span></a></li>
-          <li><a class="footer__nav-link footer__nav-link_account" href="#"><i></i><span>Аккаунт</span></a></li>
+          <li>
+            <a class="footer__nav-link footer__nav-link_home" href="#">
+              <i></i>
+              <span>Главная</span>
+            </a>
+          </li>
+          <li>
+            <a class="footer__nav-link footer__nav-link_call" href="#">
+              <i></i>
+              <span>Позвонить</span>
+            </a>
+          </li>
+          <li>
+            <a class="footer__nav-link footer__nav-link_cart" href="#">
+              <i></i>
+              <span>Корзина</span>
+            </a>
+          </li>
+          <li>
+            <a class="footer__nav-link footer__nav-link_account" href="#">
+              <i></i>
+              <span>Аккаунт</span>
+            </a>
+          </li>
           <li>
             <!-- Активной ссылке, добавляем класс .active-->
-            <button class="footer__nav-link footer__nav-link_menu"><i></i><span>Меню</span></button>
+            <button class="footer__nav-link footer__nav-link_menu">
+              <i></i>
+              <span>Меню</span>
+            </button>
           </li>
         </ul>
       </div>
@@ -392,28 +696,39 @@
               <ul class="footer__cards-list">
                 <li class="footer__cards-item">
                   <!-- Если карточка не ссылка, то вместо тега <a> используем обычный div-->
-                  <div class="footer__cards-body"><i class="footer__cards-icon footer__cards-icon_connect"></i>
+                  <div class="footer__cards-body">
+                    <i class="footer__cards-icon footer__cards-icon_connect"></i>
                     <div class="footer__cards-content">
                       <div class="footer__cards-title">Звоните или пишите</div>
                       <p class="footer__cards-description">
-                        <!-- В телефонном номере недо должно быть пробелов и других символов кроме цифр и +--><a href="tel:+74957977251">+7 495-797-72-51</a><a href="https://wa.me/74957470564" target="_blank">+7 495-747-05-64 (WhatsApp)</a><a href="mailto:order@technolight.ru">order@technolight.ru</a>
+                        <!-- В телефонном номере недо должно быть пробелов и других символов кроме цифр и +-->
+                        <a href="tel:+74957977251">+7 495-797-72-51</a>
+                        <a href="https://wa.me/74957470564" target="_blank">+7 495-747-05-64 (WhatsApp)</a>
+                        <a href="mailto:order@technolight.ru">order@technolight.ru</a>
                       </p>
                     </div>
                   </div>
                 </li>
                 <li class="footer__cards-item">
-                  <!-- Если карточка ссылка, то класс-модификатор .footer__cards-body_link--><a class="footer__cards-body footer__cards-body_link" href="#"><i class="footer__cards-icon footer__cards-icon_calc"></i>
+                  <!-- Если карточка ссылка, то класс-модификатор .footer__cards-body_link-->
+                  <a class="footer__cards-body footer__cards-body_link" href="#">
+                    <i class="footer__cards-icon footer__cards-icon_calc"></i>
                     <div class="footer__cards-content">
                       <!-- Если карточка ссылка, то к заголовку добавляем класс-модификатор .footer__cards-title_link-->
                       <div class="footer__cards-title footer__cards-title_link">Расчет освещенности</div>
                       <p class="footer__cards-description">Заказывайте проект по свету у специалистов нашей компании и получайте профессиональную консультацию.</p>
-                    </div></a>
+                    </div>
+                  </a>
                 </li>
-                <li class="footer__cards-item"><a class="footer__cards-body footer__cards-body_link" href="#"><i class="footer__cards-icon footer__cards-icon_download"></i>
+                <li class="footer__cards-item">
+                  <a class="footer__cards-body footer__cards-body_link" href="#">
+                    <i class="footer__cards-icon footer__cards-icon_download"></i>
                     <div class="footer__cards-content">
                       <div class="footer__cards-title footer__cards-title_link">Файлы для скачивания</div>
                       <p class="footer__cards-description">Последние версии каталогов, технические спецификации, IES-файлы и прочая документация.</p>
-                    </div></a></li>
+                    </div>
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -486,7 +801,11 @@
               <li class="footer__location-item"><a href="https://wa.me/74957470564" target="_blank">+7 495-747-05-64 (WhatsApp)</a></li>
               <li class="footer__location-item"><a href="mailto:order@technolight.ru">order@technolight.ru</a></li>
             </ul>
-            <div class="footer__location-socials"><a class="social social_telegram" href="https://t.me/technolight_official" target="_blank"></a><a class="social social_vk" href="https://vk.com/technolightru" target="_blank"></a><a class="social social_youtube" href="https://www.youtube.com/channel/UCt3wRyz1Z8b-WOlCHz43CuQ" target="_blank"></a></div>
+            <div class="footer__location-socials">
+              <a class="social social_telegram" href="https://t.me/technolight_official" target="_blank"></a>
+              <a class="social social_vk" href="https://vk.com/technolightru" target="_blank"></a>
+              <a class="social social_youtube" href="https://www.youtube.com/channel/UCt3wRyz1Z8b-WOlCHz43CuQ" target="_blank"></a>
+            </div>
           </div>
         </div>
         <div class="footer__line">
@@ -517,7 +836,7 @@
           <button type="button" data-modal data-modal-action="close"></button>
         </div>
         <div class="modal__header">
-          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/public/images/page/modal-logo.svg" alt=""></div>
+          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/public/images/page/modal-logo.svg" alt="" /></div>
           <h3 class="modal__title">отправить заказ</h3>
         </div>
         <div class="modal__body">
@@ -525,16 +844,20 @@
             <fieldset>
               <!-- Для того чтобы показать ошибку, добавляем к label класс .has-error-->
               <label>
-                <input type="text" placeholder="ФИО*" name="name"><span class="error-message">Текст ошибки</span>
+                <input type="text" placeholder="ФИО*" name="name" />
+                <span class="error-message">Текст ошибки</span>
               </label>
               <label>
-                <input type="text" placeholder="Телефон*" name="phone"><span class="error-message">Текст ошибки</span>
+                <input type="text" placeholder="Телефон*" name="phone" />
+                <span class="error-message">Текст ошибки</span>
               </label>
               <label>
-                <input type="text" placeholder="Email" name="email"><span class="error-message">Текст ошибки</span>
+                <input type="text" placeholder="Email" name="email" />
+                <span class="error-message">Текст ошибки</span>
               </label>
               <label>
-                <input type="text" placeholder="Город" name="city"><span class="error-message">Текст ошибки</span>
+                <input type="text" placeholder="Город" name="city" />
+                <span class="error-message">Текст ошибки</span>
               </label>
             </fieldset>
             <button class="btn btn_block btn_lite modal__button modal__button_offset" type="submit"><span>Отправить</span></button>
@@ -551,9 +874,10 @@
           <button type="button" data-modal data-modal-action="close"></button>
         </div>
         <div class="modal__header">
-          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/public/images/page/modal-logo.svg" alt=""></div>
+          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/public/images/page/modal-logo.svg" alt="" /></div>
           <h3 class="modal__title">Заказ отправлен</h3>
-          <p class="modal__subtitle">Вы можете продолжить выбор товаров</p><span class="modal__check"></span>
+          <p class="modal__subtitle">Вы можете продолжить выбор товаров</p>
+          <span class="modal__check"></span>
         </div>
       </div>
     </div>
@@ -563,7 +887,7 @@
           <button type="button" data-modal data-modal-action="close"></button>
         </div>
         <div class="modal__header">
-          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/public/images/page/modal-logo.svg" alt=""></div>
+          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/public/images/page/modal-logo.svg" alt="" /></div>
           <h3 class="modal__title">Восстановление пароля</h3>
           <p class="modal__subtitle">Введите электронную почту</p>
         </div>
@@ -572,7 +896,8 @@
             <fieldset>
               <!-- Для того чтобы показать ошибку, добавляем к label класс .has-error-->
               <label>
-                <input type="text" placeholder="Email"><span class="error-message">Текст ошибки</span>
+                <input type="text" placeholder="Email" />
+                <span class="error-message">Текст ошибки</span>
               </label>
             </fieldset>
             <button class="btn btn_block btn_lite modal__button" type="submit" data-modal data-modal-target="#passRecoveryMessage" data-modal-action="toggle"><span>Сбросить пароль</span></button>
@@ -589,9 +914,10 @@
           <button type="button" data-modal data-modal-action="close"></button>
         </div>
         <div class="modal__header">
-          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/public/images/page/modal-logo.svg" alt=""></div>
+          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/public/images/page/modal-logo.svg" alt="" /></div>
           <h3 class="modal__title">Восстановление пароля</h3>
-          <p class="modal__subtitle">Новый пароль выслан на указанную почту</p><span class="modal__check"></span>
+          <p class="modal__subtitle">Новый пароль выслан на указанную почту</p>
+          <span class="modal__check"></span>
         </div>
         <div class="modal__footer">
           <button class="modal__link" type="button" data-modal data-modal-target="#enterEmail" data-modal-action="toggle">Перейти к входу</button>
@@ -604,7 +930,7 @@
           <button type="button" data-modal data-modal-action="close"></button>
         </div>
         <div class="modal__header">
-          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/public/images/page/modal-logo.svg" alt=""></div>
+          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/public/images/page/modal-logo.svg" alt="" /></div>
           <h3 class="modal__title">Изменить пароль</h3>
           <p class="modal__subtitle">Введите текущий пароль и новый</p>
         </div>
@@ -613,13 +939,16 @@
             <fieldset>
               <!-- Для того чтобы показать ошибку, добавляем к label класс .has-error-->
               <label>
-                <input type="text" placeholder="Текущий пароль"><span class="error-message">Текст ошибки</span>
+                <input type="text" placeholder="Текущий пароль" />
+                <span class="error-message">Текст ошибки</span>
               </label>
               <label>
-                <input type="text" placeholder="Повторите текущий пароль"><span class="error-message">Текст ошибки</span>
+                <input type="text" placeholder="Повторите текущий пароль" />
+                <span class="error-message">Текст ошибки</span>
               </label>
               <label>
-                <input type="text" placeholder="Новый пароль"><span class="error-message">Текст ошибки</span>
+                <input type="text" placeholder="Новый пароль" />
+                <span class="error-message">Текст ошибки</span>
               </label>
             </fieldset>
             <button class="btn btn_block btn_lite modal__button" type="submit" data-modal data-modal-target="#passChangeMessage" data-modal-action="toggle"><span>Изменить пароль</span></button>
@@ -634,9 +963,10 @@
           <button type="button" data-modal data-modal-action="close"></button>
         </div>
         <div class="modal__header">
-          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/public/images/page/modal-logo.svg" alt=""></div>
+          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/public/images/page/modal-logo.svg" alt="" /></div>
           <h3 class="modal__title">Изменить пароль</h3>
-          <p class="modal__subtitle">Пароль успешно изменен</p><span class="modal__check"></span>
+          <p class="modal__subtitle">Пароль успешно изменен</p>
+          <span class="modal__check"></span>
         </div>
         <div class="modal__footer"><a class="modal__link" href="#">Перейти в личный кабинет</a></div>
       </div>
@@ -647,7 +977,7 @@
           <button type="button" data-modal data-modal-action="close"></button>
         </div>
         <div class="modal__header">
-          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/public/images/page/modal-logo.svg" alt=""></div>
+          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/public/images/page/modal-logo.svg" alt="" /></div>
           <h3 class="modal__title">Войти по почте</h3>
           <p class="modal__subtitle">Только для зарегистрированных пользователей</p>
         </div>
@@ -656,10 +986,13 @@
             <fieldset>
               <!-- Для того чтобы показать ошибку, добавляем к label класс .has-error-->
               <label>
-                <input type="text" placeholder="Email"><span class="error-message">Текст ошибки</span>
+                <input type="text" placeholder="Email" />
+                <span class="error-message">Текст ошибки</span>
               </label>
               <label>
-                <input type="password" placeholder="Пароль"><span class="error-message">Текст ошибки</span><span class="modal__toggle-visible-pass"></span>
+                <input type="password" placeholder="Пароль" />
+                <span class="error-message">Текст ошибки</span>
+                <span class="modal__toggle-visible-pass"></span>
               </label>
             </fieldset>
             <button class="btn btn_block btn_lite modal__button" type="submit" data-modal data-modal-action="close"><span>Войти</span></button>
@@ -677,7 +1010,7 @@
           <button type="button" data-modal data-modal-action="close"></button>
         </div>
         <div class="modal__header">
-          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/public/images/page/modal-logo.svg" alt=""></div>
+          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/public/images/page/modal-logo.svg" alt="" /></div>
           <h3 class="modal__title">Введите номер телефона</h3>
           <p class="modal__subtitle">Мы отправим код или позвоним. Отвечать на звонок не нужно</p>
         </div>
@@ -686,14 +1019,17 @@
             <fieldset>
               <!-- Для того чтобы показать ошибку, добавляем к label класс .has-error-->
               <label>
-                <input type="text" placeholder="Номер телефона"><span class="error-message">Текст ошибки</span>
+                <input type="text" placeholder="Номер телефона" />
+                <span class="error-message">Текст ошибки</span>
               </label>
             </fieldset>
-            <button class="btn btn_block btn_lite modal__button" type="button" data-modal data-modal-target="#enterCode" data-modal-action="toggle"><span>Получить код</span></button><span class="modal__text">или</span>
+            <button class="btn btn_block btn_lite modal__button" type="button" data-modal data-modal-target="#enterCode" data-modal-action="toggle"><span>Получить код</span></button>
+            <span class="modal__text">или</span>
             <button class="btn btn_block btn_lite modal__button" type="button" data-modal data-modal-target="#enterEmail" data-modal-action="toggle"><span>Войти по почте</span></button>
           </form>
         </div>
-        <div class="modal__footer"><span class="modal__text">через сервис</span>
+        <div class="modal__footer">
+          <span class="modal__text">через сервис</span>
           <div class="modal__service">
             <button class="modal__service-link modal__service-link_tinkoff" type="button"></button>
             <button class="modal__service-link modal__service-link_yandex" type="button"></button>
@@ -707,9 +1043,12 @@
           <button type="button" data-modal data-modal-action="close"></button>
         </div>
         <div class="modal__header">
-          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/public/images/page/modal-logo.svg" alt=""></div>
+          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/public/images/page/modal-logo.svg" alt="" /></div>
           <h3 class="modal__title">Введите код</h3>
-          <p class="modal__subtitle">Мы отправили код подтверждения на номер  <span>+7 926 818 11 84</span></p>
+          <p class="modal__subtitle">
+            Мы отправили код подтверждения на номер
+            <span>+7 926 818 11 84</span>
+          </p>
           <button class="modal__link" type="button" data-modal data-modal-target="#enterPhone" data-modal-action="toggle">Изменить</button>
         </div>
         <div class="modal__body">
@@ -717,14 +1056,21 @@
             <fieldset>
               <!-- Для того чтобы показать ошибку, добавляем к label класс .has-error-->
               <label>
-                <input type="text" placeholder="Введите код"><span class="error-message">Текст ошибки</span>
+                <input type="text" placeholder="Введите код" />
+                <span class="error-message">Текст ошибки</span>
               </label>
-            </fieldset><span class="modal__timer">Получить новый код можно через  <span class="modal__timer-value">00:60</span></span>
-            <button class="modal__link d-none" type="button">Получить новый код</button><span class="modal__text">или</span>
+            </fieldset>
+            <span class="modal__timer">
+              Получить новый код можно через
+              <span class="modal__timer-value">00:60</span>
+            </span>
+            <button class="modal__link d-none" type="button">Получить новый код</button>
+            <span class="modal__text">или</span>
             <button class="btn btn_block btn_lite modal__button" type="button" data-modal data-modal-target="#enterEmail" data-modal-action="toggle"><span>Войти по почте</span></button>
           </form>
         </div>
-        <div class="modal__footer"><span class="modal__text">через сервис</span>
+        <div class="modal__footer">
+          <span class="modal__text">через сервис</span>
           <div class="modal__service">
             <button class="modal__service-link modal__service-link_tinkoff" type="button"></button>
             <button class="modal__service-link modal__service-link_yandex" type="button"></button>
@@ -738,9 +1084,10 @@
           <button type="button" data-modal data-modal-action="close"></button>
         </div>
         <div class="modal__header">
-          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/public/images/page/modal-logo.svg" alt=""></div>
+          <div class="modal__logo"><img src="https://aws.massive.ru/technolight/public/images/page/modal-logo.svg" alt="" /></div>
           <h3 class="modal__title">Заказ успешно отправлен</h3>
-          <p class="modal__subtitle">Наш менеджер перезвонит Вам в ближайшее время</p><span class="modal__check"></span>
+          <p class="modal__subtitle">Наш менеджер перезвонит Вам в ближайшее время</p>
+          <span class="modal__check"></span>
         </div>
       </div>
     </div>
@@ -748,40 +1095,40 @@
     <script src="js/main.min.js" defer></script>
     <script src="js/pages/index.min.js" defer></script>
     <script>
-      if (navigator.userAgent.indexOf('MSIE') !== -1 || navigator.appVersion.indexOf('Trident/') > -1) {
-          var scripts = document.querySelectorAll('script');
-          for (var i = 0; i < scripts.length; i++) {
-              if (scripts[i].src !== '') {
-                  var node = scripts[i];
-                  node.parentNode.removeChild(node);
-              }
+      if (navigator.userAgent.indexOf("MSIE") !== -1 || navigator.appVersion.indexOf("Trident/") > -1) {
+        var scripts = document.querySelectorAll("script");
+        for (var i = 0; i < scripts.length; i++) {
+          if (scripts[i].src !== "") {
+            var node = scripts[i];
+            node.parentNode.removeChild(node);
           }
-      
-          var body = document.querySelector('body');
-          while (body.firstChild) {
-              body.removeChild(body.firstChild);
-          }
-      
-          var video = document.createElement('video');
-          video.src = 'https://aws.massive.ru/technolight/ie-not-supported.mp4';
-          video.autoplay = true;
-          video.loop = true;
-          video.muted = true;
-          video.playsInline = true;
-          video.setAttribute('style', 'max-width: 50%; height: auto;');
-      
-          var title = document.createElement('h1');
-          title.setAttribute('style', 'width: 100%; max-width: 700px; text-align: center; font-family: "Open Sans", sans-serif; line-height: 1.3; margin-bottom: 1em; margin-top: 0; font-size: 26px; padding-left: 20px; padding-right: 20px;');
-          title.innerText = "К сожалению, мы не поддерживаем браузер Internet Explorer 11 и более ранние версии!";
-      
-          var text = document.createElement('p');
-          text.setAttribute('style', 'width: 100%; max-width: 400px; text-align: center; font-family: "Open Sans", sans-serif; line-height: 1.3; margin-bottom: 3em; font-size: 18px; padding-left: 20px; padding-right: 20px;');
-          text.innerText = "Для просмотра сайта, воспользуйтесь более новой версией браузера.";
-      
-          body.setAttribute('style', 'display: flex; flex-direction: column; align-items: center; justify-content: center;');
-          body.appendChild(title);
-          body.appendChild(text);
-          body.appendChild(video);
+        }
+
+        var body = document.querySelector("body");
+        while (body.firstChild) {
+          body.removeChild(body.firstChild);
+        }
+
+        var video = document.createElement("video");
+        video.src = "https://aws.massive.ru/technolight/ie-not-supported.mp4";
+        video.autoplay = true;
+        video.loop = true;
+        video.muted = true;
+        video.playsInline = true;
+        video.setAttribute("style", "max-width: 50%; height: auto;");
+
+        var title = document.createElement("h1");
+        title.setAttribute("style", 'width: 100%; max-width: 700px; text-align: center; font-family: "Open Sans", sans-serif; line-height: 1.3; margin-bottom: 1em; margin-top: 0; font-size: 26px; padding-left: 20px; padding-right: 20px;');
+        title.innerText = "К сожалению, мы не поддерживаем браузер Internet Explorer 11 и более ранние версии!";
+
+        var text = document.createElement("p");
+        text.setAttribute("style", 'width: 100%; max-width: 400px; text-align: center; font-family: "Open Sans", sans-serif; line-height: 1.3; margin-bottom: 3em; font-size: 18px; padding-left: 20px; padding-right: 20px;');
+        text.innerText = "Для просмотра сайта, воспользуйтесь более новой версией браузера.";
+
+        body.setAttribute("style", "display: flex; flex-direction: column; align-items: center; justify-content: center;");
+        body.appendChild(title);
+        body.appendChild(text);
+        body.appendChild(video);
       }
     </script>
   </body>
