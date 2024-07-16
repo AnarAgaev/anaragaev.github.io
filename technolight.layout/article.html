@@ -394,8 +394,9 @@
                       <div class="article__content-cart">
                         <form class="article__content-counter">
                           <div class="article__content-calc">
-                            <button class="btn btn_lite" type="button"><i class="dec"></i></button>
-                            <input type="text" value="1" />
+                            <button class="btn btn_lite disabled" type="button"><i class="dec"></i></button>
+                            <!-- Если в корзине уже есть товар/артикул текущей страницы, то в input.value ставим количество данного артикула в корзине-->
+                            <input type="text" value="3" readonly />
                             <button class="btn btn_lite" type="button"><i class="inc"></i></button>
                           </div>
                           <div class="article__content-message">
@@ -403,7 +404,10 @@
                             <button class="tooltip__icon article__content-informer" type="button"><span class="article__content-tooltip" role="tooltip">Количество и сроки уточняйте у менеджера</span></button>
                           </div>
                         </form>
+                        <!-- Если в корзине нет товара/артикула текущей страницы, то по дефолту рендерим КНОПКУ Добавить в корзину-->
                         <button class="btn btn_block btn_dark article__add-to-cart" type="button" data-product-id="86108-3K-01-BK" data-title="Блок питания шины DALI MW" data-message="Добавлен в корзину"><span>Добавить в корзину</span></button>
+                        <!-- Если в корзине уже есть товар/артикул текущей страницы, то по дефолту рендерим ССЫЛКУ В корзине-->
+                        <a class="btn btn_block btn_dark" href="cart.html"><span>В корзине</span></a>
                       </div>
                     </div>
                   </div>
