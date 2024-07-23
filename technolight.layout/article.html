@@ -18,9 +18,9 @@
     <link rel="stylesheet" href="css/main.min.css" />
     <link rel="stylesheet" href="css/pages/article.min.css" />
     <script>
-      //- spot-42 - https://anaragaev.github.io/technolight.layout/mocks/spot-42-fixed.json
-      //- globo-135 - https://anaragaev.github.io/technolight.layout/mocks/globo-135-fixed.json
-
+      window.MODE = "build";
+    </script>
+    <script>
       // Дефолтный API URL для корзины
       window.cartLink = "https://anaragaev.github.io/technolight.layout/cart.html";
 
@@ -1481,6 +1481,84 @@
           <h3 class="modal__title">Заказ успешно отправлен</h3>
           <p class="modal__subtitle">Наш менеджер перезвонит Вам в ближайшее время</p>
           <span class="modal__check"></span>
+        </div>
+      </div>
+    </div>
+    <div class="informer" id="informer">
+      <div class="informer__back"></div>
+      <div class="informer__body">
+        <button class="informer__close"></button>
+        <div class="informer__content">
+          <h3 class="informer__title">Трековые системы</h3>
+          <p class="informer__subtitle">Подзаголовок какой-то, если нужен</p>
+          <div class="informer__picture">
+            <div class="informer__img"><img src="https://aws.massive.ru/technolight/images/informer-placeholder-photo.jpg" alt="" /></div>
+            <p class="informer__sign">
+              Трековая система — это удобный и понятный инструмент для
+              <a href="">светодизайна</a>
+              . Вы можете использовать линейные светильники для общего освещения и споты — в качестве акцентного. Одна идея объединяет в себе безграничные возможности для творчества.
+            </p>
+          </div>
+          <div class="informer__description">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel dolores
+              <a href="">necessitatibus</a>
+              sit illum. Excepturi sunt quae accusantium numquam. Asperiores possimus soluta perferendis veniam earum ex sequi vero nostrum porro cupiditate?
+            </p>
+            <br />
+            <h2>Заголовок второго уровня h2</h2>
+            <h3>Заголовок третьего уровня h3</h3>
+            <h4>Заголовок четвертого уровня h4</h4>
+            <ul>
+              <li>Элемент списка</li>
+              <li>Ещё элемент списка</li>
+              <li>Элемент списка с каким-то более длинным текстом</li>
+              <li>Ещё один элемент списка</li>
+              <li>Последний элемент списка для примера того как будет выглядеть список на странице проекта, статьи или поста.</li>
+              <li>
+                А вот элемент списка с вложенной
+                <a href="#">Ссылкой</a>
+              </li>
+            </ul>
+            <ol>
+              <li>Элемент нумерованного списка</li>
+              <li>Ещё элемент нумерованного списка</li>
+              <li>Элемент нумерованного списка с каким-то более длинным текстом</li>
+              <li>Ещё один элемент нумерованного списка</li>
+              <li>Последний элемент нумерованного списка для примера того как будет выглядеть список на странице проекта, статьи или поста.</li>
+              <li>
+                А вот элемент нумерованного списка с вложенной
+                <a href="#">Ссылкой</a>
+              </li>
+            </ol>
+            <p>
+              Просто ссылка внутри какого-либо текста будет
+              <a href="#">Как-то так</a>
+              выглядеть.
+            </p>
+            <p><strong>Жирный текст</strong></p>
+            <p><em>Акцентный текст</em></p>
+            <p><span style="text-decoration: underline">Подчеркнутый текст</span></p>
+            <p>
+              <del>Зачеркнутый текст</del>
+            </p>
+            <blockquote>
+              Какая-то цитат произвольной длинны
+              <br />
+              которая может содержать текст любого объема
+            </blockquote>
+            <pre>
+function sum(a, b) {
+    return a + b;
+}
+</pre
+            >
+            <figure>
+              <img src="https://aws.massive.ru/technolight/images/projects/content-picture.png" alt="" />
+              <figcaption>Рис 1. Подпись для картинкой будет выглядеть так</figcaption>
+            </figure>
+          </div>
+          <a class="informer__link" href="">Ссылка куда-нить</a>
         </div>
       </div>
     </div>
