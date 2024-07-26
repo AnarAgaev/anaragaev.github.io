@@ -1460,9 +1460,9 @@
         "final_image": "public\/combo\/images\/41006-wh.jpg"
     }],
     "units": {
-        "power": "Вт",
-        "light_flow": "Лм",
-        "light_temperatures": "К",
-        "light_angle": "°"
+        "power": " Вт",
+        "light_flow": " Лм",
+        "light_temperatures": " К",
+        "scattering_angle": "°"
     }
 }
