@@ -1114,8 +1114,7 @@
             "Линза": ["43001-15"],
             "Светодиодный модуль": ["44001-3K"]
         },
-        "light_flow": 504,
-        "final_image": "1.jpg"
+        "light_flow": 504
     }, {
         "combo": {
             "Линза": ["43001-36"],
@@ -1458,6 +1457,262 @@
             "Декоративная рамка": ["41006-WH"]
         },
         "final_image": "public\/combo\/images\/41006-wh.jpg"
+    }, {
+        "combo": {
+            "Линза": ["43002-18", "43002-38", "43002-50"],
+            "Декоративная рамка": ["41003-BK", "41003-WH", "41004-BK", "41004-WH"],
+            "Светодиодный модуль": ["44003-3K", "44003-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/frame-soft-85_dark-lens_atom-13_88mm.svg",
+        "final_image": "frame-soft-85_dark-lens_atom-13_88mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43002-18", "43002-38", "43002-50"],
+            "Декоративная рамка": ["41003-BK", "41003-WH", "41004-BK", "41004-WH"],
+            "Светодиодный модуль": ["44004-3K", "44004-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/frame-soft-85_dark-lens_atom-16_118mm.svg",
+        "final_image": "frame-soft-85_dark-lens_atom-16_118mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43002-18", "43002-38", "43002-50"],
+            "Декоративная рамка": ["41003-BK", "41003-WH", "41004-BK", "41004-WH"],
+            "Светодиодный модуль": ["44001-3K", "44001-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/frame-soft-85_dark-lens_atom-6_78mm.svg",
+        "final_image": "frame-soft-85_dark-lens_atom-6_78mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43002-18", "43002-38", "43002-50"],
+            "Декоративная рамка": ["41003-BK", "41003-WH", "41004-BK", "41004-WH"],
+            "Светодиодный модуль": ["44002-3K", "44002-4K", "44002-DTW", "44002-27K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/frame-soft-85_dark-lens_atom-9_83mm.svg",
+        "final_image": "frame-soft-85_dark-lens_atom-9_83mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43001-15", "43001-36", "43001-60"],
+            "Декоративная рамка": ["41003-BK", "41003-WH", "41004-BK", "41004-WH"],
+            "Светодиодный модуль": ["44003-3K", "44003-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/frame-soft-85_slim-lens_atom-13_73mm.svg",
+        "final_image": "frame-soft-85_slim-lens_atom-13_73mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43001-15", "43001-36", "43001-60"],
+            "Декоративная рамка": ["41003-BK", "41003-WH", "41004-BK", "41004-WH"],
+            "Светодиодный модуль": ["44004-3K", "44004-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/frame-soft-85_slim-lens_atom-16_103mm.svg",
+        "final_image": "frame-soft-85_slim-lens_atom-16_103mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43001-15", "43001-36", "43001-60"],
+            "Декоративная рамка": ["41003-BK", "41003-WH", "41004-BK", "41004-WH"],
+            "Светодиодный модуль": ["44001-3K", "44001-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/frame-soft-85_slim-lens_atom-6_63mm.svg",
+        "final_image": "frame-soft-85_slim-lens_atom-6_63mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43001-15", "43001-36", "43001-60"],
+            "Декоративная рамка": ["41003-BK", "41003-WH", "41004-BK", "41004-WH"],
+            "Светодиодный модуль": ["44002-3K", "44002-4K", "44002-DTW", "44002-27K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/frame-soft-85_slim-lens_atom-9_68mm.svg",
+        "final_image": "frame-soft-85_slim-lens_atom-9_68mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43002-18", "43002-38", "43002-50"],
+            "Декоративная рамка": ["41006-BK", "41006-WH"],
+            "Светодиодный модуль": ["44003-3K", "44003-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/frame-twist-85_dark-lens_atom-13_75mm.svg",
+        "final_image": "frame-twist-85_dark-lens_atom-13_75mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43002-18", "43002-38", "43002-50"],
+            "Декоративная рамка": ["41006-BK", "41006-WH"],
+            "Светодиодный модуль": ["44004-3K", "44004-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/frame-twist-85_dark-lens_atom-16_105mm.svg",
+        "final_image": "frame-twist-85_dark-lens_atom-16_105mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43002-18", "43002-38", "43002-50"],
+            "Декоративная рамка": ["41006-BK", "41006-WH"],
+            "Светодиодный модуль": ["44001-3K", "44001-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/frame-twist-85_dark-lens_atom-6_65mm.svg",
+        "final_image": "frame-twist-85_dark-lens_atom-6_65mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43002-18", "43002-38", "43002-50"],
+            "Декоративная рамка": ["41006-BK", "41006-WH"],
+            "Светодиодный модуль": ["44002-3K", "44002-4K", "44002-DTW", "44002-27K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/frame-twist-85_dark-lens_atom-9_70mm.svg",
+        "final_image": "frame-twist-85_dark-lens_atom-9_70mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43001-15", "43001-36", "43001-60"],
+            "Декоративная рамка": ["41006-BK", "41006-WH"],
+            "Светодиодный модуль": ["44003-3K", "44003-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/frame-twist-85_slim-lens_atom-13_60mm.svg",
+        "final_image": "frame-twist-85_slim-lens_atom-13_60mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43001-15", "43001-36", "43001-60"],
+            "Декоративная рамка": ["41006-BK", "41006-WH"],
+            "Светодиодный модуль": ["44004-3K", "44004-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/frame-twist-85_slim-lens_atom-16_90mm.svg",
+        "final_image": "frame-twist-85_slim-lens_atom-16_90mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43001-15", "43001-36", "43001-60"],
+            "Декоративная рамка": ["41006-BK", "41006-WH"],
+            "Светодиодный модуль": ["44001-3K", "44001-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/frame-twist-85_slim-lens_atom-6_50mm.svg",
+        "final_image": "frame-twist-85_slim-lens_atom-6_50mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43001-15", "43001-36", "43001-60"],
+            "Декоративная рамка": ["41006-BK", "41006-WH"],
+            "Светодиодный модуль": ["44002-3K", "44002-4K", "44002-DTW", "44002-27K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/frame-twist-85_slim-lens_atom-9_55mm.svg",
+        "final_image": "frame-twist-85_slim-lens_atom-9_55mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43002-18", "43002-38", "43002-50"],
+            "Декоративная рамка": ["41001-BK", "41001-WH", "41002-BK", "41002-WH"],
+            "Светодиодный модуль": ["44003-3K", "44003-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/soft-85_fix-ring_dark-lens_atom-13_90mm.svg",
+        "final_image": "soft-85_fix-ring_dark-lens_atom-13_90mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43002-18", "43002-38", "43002-50"],
+            "Декоративная рамка": ["41001-BK", "41001-WH", "41002-BK", "41002-WH"],
+            "Светодиодный модуль": ["44004-3K", "44004-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/soft-85_fix-ring_dark-lens_atom-16_120mm.svg",
+        "final_image": "soft-85_fix-ring_dark-lens_atom-16_120mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43002-18", "43002-38", "43002-50"],
+            "Декоративная рамка": ["41001-BK", "41001-WH", "41002-BK", "41002-WH"],
+            "Светодиодный модуль": ["44001-3K", "44001-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/soft-85_fix-ring_dark-lens_atom-6_80mm.svg",
+        "final_image": "soft-85_fix-ring_dark-lens_atom-6_80mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43002-18", "43002-38", "43002-50"],
+            "Декоративная рамка": ["41001-BK", "41001-WH", "41002-BK", "41002-WH"],
+            "Светодиодный модуль": ["44002-3K", "44002-4K", "44002-DTW", "44002-27K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/soft-85_fix-ring_dark-lens_atom-9_85mm.svg",
+        "final_image": "soft-85_fix-ring_dark-lens_atom-9_85mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43001-15", "43001-36", "43001-60"],
+            "Декоративная рамка": ["41001-BK", "41001-WH", "41002-BK", "41002-WH"],
+            "Светодиодный модуль": ["44003-3K", "44003-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/soft-85_fix-ring_slim-lens_atom-13_81mm.svg",
+        "final_image": "soft-85_fix-ring_slim-lens_atom-13_81mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43001-15", "43001-36", "43001-60"],
+            "Декоративная рамка": ["41001-BK", "41001-WH", "41002-BK", "41002-WH"],
+            "Светодиодный модуль": ["44004-3K", "44004-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/soft-85_fix-ring_slim-lens_atom-16_111mm.svg",
+        "final_image": "soft-85_fix-ring_slim-lens_atom-16_111mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43001-15", "43001-36", "43001-60"],
+            "Декоративная рамка": ["41001-BK", "41001-WH", "41002-BK", "41002-WH"],
+            "Светодиодный модуль": ["44001-3K", "44001-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/soft-85_fix-ring_slim-lens_atom-6_71mm.svg",
+        "final_image": "soft-85_fix-ring_slim-lens_atom-6_71mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43001-15", "43001-36", "43001-60"],
+            "Декоративная рамка": ["41001-BK", "41001-WH", "41002-BK", "41002-WH"],
+            "Светодиодный модуль": ["44002-3K", "44002-4K", "44002-DTW", "44002-27K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/soft-85_fix-ring_slim-lens_atom-9_76mm.svg",
+        "final_image": "soft-85_fix-ring_slim-lens_atom-9_76mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43002-18", "43002-38", "43002-50"],
+            "Декоративная рамка": ["41005-BK", "41005-WH"],
+            "Светодиодный модуль": ["44003-3K", "44003-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/twist-85_dark-lens_atom-13_75mm.svg",
+        "final_image": "twist-85_dark-lens_atom-13_75mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43002-18", "43002-38", "43002-50"],
+            "Декоративная рамка": ["41005-BK", "41005-WH"],
+            "Светодиодный модуль": ["44004-3K", "44004-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/twist-85_dark-lens_atom-16_105mm.svg",
+        "final_image": "twist-85_dark-lens_atom-16_105mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43002-18", "43002-38", "43002-50"],
+            "Декоративная рамка": ["41005-BK", "41005-WH"],
+            "Светодиодный модуль": ["44001-3K", "44001-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/twist-85_dark-lens_atom-6_65mm.svg",
+        "final_image": "twist-85_dark-lens_atom-6_65mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43002-18", "43002-38", "43002-50"],
+            "Декоративная рамка": ["41005-BK", "41005-WH"],
+            "Светодиодный модуль": ["44002-3K", "44002-4K", "44002-DTW", "44002-27K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/twist-85_dark-lens_atom-9_70mm.svg",
+        "final_image": "twist-85_dark-lens_atom-9_70mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43001-15", "43001-36", "43001-60"],
+            "Декоративная рамка": ["41005-BK", "41005-WH"],
+            "Светодиодный модуль": ["44003-3K", "44003-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/twist-85_slim-lens_atom-13_60mm.svg",
+        "final_image": "twist-85_slim-lens_atom-13_60mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43001-15", "43001-36", "43001-60"],
+            "Декоративная рамка": ["41005-BK", "41005-WH"],
+            "Светодиодный модуль": ["44004-3K", "44004-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/twist-85_slim-lens_atom-16_90mm.svg",
+        "final_image": "twist-85_slim-lens_atom-16_90mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43001-15", "43001-36", "43001-60"],
+            "Декоративная рамка": ["41005-BK", "41005-WH"],
+            "Светодиодный модуль": ["44001-3K", "44001-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/twist-85_slim-lens_atom-6_50mm.svg",
+        "final_image": "twist-85_slim-lens_atom-6_50mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43001-15", "43001-36", "43001-60"],
+            "Декоративная рамка": ["41005-BK", "41005-WH"],
+            "Светодиодный модуль": ["44002-3K", "44002-4K", "44002-DTW", "44002-27K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/twist-85_slim-lens_atom-9_55mm.svg",
+        "final_image": "twist-85_slim-lens_atom-9_55mm.svg"
     }],
     "units": {
         "power": " Вт",
