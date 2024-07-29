@@ -1114,7 +1114,15 @@
             "Линза": ["43001-15"],
             "Светодиодный модуль": ["44001-3K"]
         },
-        "light_flow": 504
+        "light_flow": 504,
+        "files": [{
+            "name": "Инструкция по монтажу",
+            "file": "https://yarusvsm.ru/all_about_product/Инструкции%20по%20монтажу/TECHNOLIGHT/spot-42_instruction.pdf"
+        },
+        {
+            "name": "3D-модель",
+            "file": "https://yarusvsm.ru/all_about_product/3D-модели/TECHNOLIGHT/spot-42_3d.zip"
+        }]
     }, {
         "combo": {
             "Линза": ["43001-36"],
@@ -1715,9 +1723,30 @@
         "final_image": "twist-85_slim-lens_atom-9_55mm.svg"
     }],
     "units": {
-        "power": " Вт",
+        "current_a": " А",
+        "ip_class": " IP",
+        "length": " см",
+        "light_angle": "°",
         "light_flow": " Лм",
-        "light_temperatures": " К",
-        "scattering_angle": "°"
-    }
+        "light_temperatures": " K",
+        "power": " Вт"
+    },
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, ultricies nunc. Nulla facilisi. Nullam ac nisi non eros gravida lacinia",
+    "videos": [{
+        "poster": "https:\/\/aws.massive.ru\/technolight\/public\/images\/video_posters\/01J1FNFX95CNAQCYYVN73V764P.jpg",
+        "video": "https:\/\/www.youtube.com\/embed\/WV_HGUpp0bA?si=YUGXr4-tq9leKy0e"
+    },{
+        "poster": "https:\/\/aws.massive.ru\/technolight\/2021\/09\/2021-09-30-16-00-00-1.jpg",
+        "video": "https:\/\/aws.massive.ru\/technolight\/2021\/09\/2021-09-30-16-00-00-1.mp4"
+    }],
+    "files": [{
+        "name": "Инструкция по сборке",
+        "file": "https:\/\/aws.massive.ru\/technolight\/2021\/09\/2021-09-30-16-00-00-1.pdf"
+    },{
+        "name": "Сертификаты",
+        "file": "https:\/\/yarusvsm.ruvall_about_product\/Сертификаты\/TECHNOLIGHT\/spot-42_cert.pdf"
+    },{
+        "name": "Фотометрические данные",
+        "file": "https:\/\/yarusvsm.ru\/all_about_product\/Фотометрические%20данные\/TECHNOLIGHT\/spot-42_ies_ldt.zip"
+    }]
 }
