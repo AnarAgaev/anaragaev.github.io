@@ -24,8 +24,7 @@
             ["44003-4K", "45003-02"],
             ["44004-3K", "45004-02"],
             ["44004-4K", "45004-02"],
-            ["44002-DTW", "45002-02"],
-            ["44002-27K", "45002-02"]
+            ["44002-DTW", "45002-02"]
         ],
         "Линза": [
             ["43001-15"],
@@ -87,7 +86,7 @@
         "44003-4K": "Модуль 13 ВТ 4000К",
         "44004-3K": "Модуль 16 ВТ 3000К",
         "44004-4K": "Модуль 16 ВТ 4000К",
-        "44002-DTW": "Модуль 10 ВТ 18000-3000K",
+        "44002-DTW": "Модуль 10 ВТ 1800-3000K",
         "43001-15": "Линза Слим 15°",
         "43001-36": "Линза Слим 36°",
         "43001-60": "Линза Слим 60°",
@@ -163,7 +162,6 @@
         }
     },
     "hardFilterSteps": ["Декоративная рамка"],
-    "arts": ["41001-BK", "44001-3K", "45001-02", "43001-15", "41001-WH", "44001-4K", "43001-36", "41002-BK", "44002-3K", "45002-02", "43001-60", "41002-WH", "44002-4K", "43002-18", "41003-BK", "44003-3K", "45003-02", "43002-38", "41003-WH", "44003-4K", "43002-50", "41004-BK", "44004-3K", "45004-02", "43003-30", "41004-WH", "44004-4K", "43001-08", "41005-BK", "44002-DTW", "41005-WH", "44002-27K", "41006-BK", "41006-WH", "41007-BK", "41007-WH", "41008-BK", "41008-WH"],
     "images": {
         "41001-BK": "https:\/\/aws.massive.ru\/technolight\/public\/images\/dots\/konfigurator_dotov_s_ramkoy\/41001-bk.jpg",
         "41001-WH": "https:\/\/aws.massive.ru\/technolight\/public\/images\/dots\/konfigurator_dotov_s_ramkoy\/41001-wh.jpg",
@@ -183,15 +181,17 @@
             "form": "Форма",
             "armature_color": "Цвет",
             "ip_class": "Степень пыле-влагозащищенности",
-            "frame_type": "Тип корпуса"
+            "frame_type": "Поворотность"
         },
         "Светодиодный модуль": {
+            "voltage": "Рабочее напряжение",
             "power": "Мощность",
-            "light_temperatures": "Цветовая температура"
+            "light_temperatures": "Цветовая температура",
+            "color_rendering_index": "Индекс цветопередачи"
         },
         "Линза": {
-            "ugr": "ugr",
-            "scattering_angle": "Угол рассеивания"
+            "ugr": "UGR",
+            "light_angle": "Угол рассеивания"
         }
     },
     "products": {
@@ -206,15 +206,13 @@
             "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/165485\/big\/41001-bk.jpg",
             "available": true,
             "height_in_assembly": 46,
-            "diameter": 8.5,
+            "color_rendering_index": "",
+            "voltage": 0,
             "frame_type": "Неповоротная",
-            "scattering_angle": 0,
             "form": "Круглый",
             "armature_color": "Чёрный",
-            "length": 0,
             "power": 0,
             "light_temperatures": null,
-            "width": 0,
             "light_angle": 0,
             "ugr": "",
             "link": "\/products\/interernyi-svet\/dot-220v\/ramka-soft-85-kruglaia\/41001-BK"
@@ -230,15 +228,13 @@
             "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/165486\/big\/41001-wh.jpg",
             "available": true,
             "height_in_assembly": 46,
-            "diameter": 8.5,
+            "color_rendering_index": "",
+            "voltage": 0,
             "frame_type": "Неповоротная",
-            "scattering_angle": 0,
             "form": "Круглый",
             "armature_color": "Белый",
-            "length": 0,
             "power": 0,
             "light_temperatures": null,
-            "width": 0,
             "light_angle": 0,
             "ugr": "",
             "link": "\/products\/interernyi-svet\/dot-220v\/ramka-soft-85-kruglaia\/41001-WH"
@@ -254,15 +250,13 @@
             "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/165487\/big\/41002-bk.jpg",
             "available": true,
             "height_in_assembly": 46,
-            "diameter": 8.5,
+            "color_rendering_index": "",
+            "voltage": 0,
             "frame_type": "Неповоротная",
-            "scattering_angle": 0,
             "form": "Круглый",
             "armature_color": "Чёрный",
-            "length": 0,
             "power": 0,
             "light_temperatures": null,
-            "width": 0,
             "light_angle": 0,
             "ugr": "",
             "link": "\/products\/interernyi-svet\/dot-220v\/ramka-soft-85-kruglaia-ip54\/41002-BK"
@@ -278,15 +272,13 @@
             "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/196584\/big\/41002-wh.jpg",
             "available": true,
             "height_in_assembly": 46,
-            "diameter": 8.5,
+            "color_rendering_index": "",
+            "voltage": 0,
             "frame_type": "Неповоротная",
-            "scattering_angle": 0,
             "form": "Круглый",
             "armature_color": "Белый",
-            "length": 0,
             "power": 0,
             "light_temperatures": null,
-            "width": 0,
             "light_angle": 0,
             "ugr": "",
             "link": "\/products\/interernyi-svet\/dot-220v\/ramka-soft-85-kruglaia-ip54\/41002-WH"
@@ -302,15 +294,13 @@
             "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/196585\/big\/41003-bk.jpg",
             "available": true,
             "height_in_assembly": 38,
-            "diameter": 0,
+            "color_rendering_index": "",
+            "voltage": 0,
             "frame_type": "Неповоротная",
-            "scattering_angle": 0,
             "form": "Квадратный",
             "armature_color": "Чёрный",
-            "length": 8.5,
             "power": 0,
             "light_temperatures": null,
-            "width": 8.5,
             "light_angle": 0,
             "ugr": "",
             "link": "\/products\/interernyi-svet\/dot-220v\/ramka-freim-soft-85-kvadratnaia\/41003-BK"
@@ -326,15 +316,13 @@
             "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/196586\/big\/41003-wh.jpg",
             "available": true,
             "height_in_assembly": 38,
-            "diameter": 0,
+            "color_rendering_index": "",
+            "voltage": 0,
             "frame_type": "Неповоротная",
-            "scattering_angle": 0,
             "form": "Квадратный",
             "armature_color": "Белый",
-            "length": 8.5,
             "power": 0,
             "light_temperatures": null,
-            "width": 8.5,
             "light_angle": 0,
             "ugr": "",
             "link": "\/products\/interernyi-svet\/dot-220v\/ramka-freim-soft-85-kvadratnaia\/41003-WH"
@@ -350,15 +338,13 @@
             "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/195697\/big\/41004-bk.jpg",
             "available": true,
             "height_in_assembly": 38,
-            "diameter": 0,
+            "color_rendering_index": "",
+            "voltage": 0,
             "frame_type": "Неповоротная",
-            "scattering_angle": 0,
             "form": "Квадратный",
             "armature_color": "Чёрный",
-            "length": 8.5,
             "power": 0,
             "light_temperatures": null,
-            "width": 8.5,
             "light_angle": 0,
             "ugr": "",
             "link": "\/products\/interernyi-svet\/dot-220v\/ramka-freim-soft-85-ip44-kvadratnaia\/41004-BK"
@@ -374,15 +360,13 @@
             "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/196587\/big\/41004-wh.jpg",
             "available": true,
             "height_in_assembly": 38,
-            "diameter": 0,
+            "color_rendering_index": "",
+            "voltage": 0,
             "frame_type": "Неповоротная",
-            "scattering_angle": 0,
             "form": "Квадратный",
             "armature_color": "Белый",
-            "length": 8.5,
             "power": 0,
             "light_temperatures": null,
-            "width": 8.5,
             "light_angle": 0,
             "ugr": "",
             "link": "\/products\/interernyi-svet\/dot-220v\/ramka-freim-soft-85-ip44-kvadratnaia\/41004-WH"
@@ -398,15 +382,13 @@
             "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/165488\/big\/41005-bk.jpg",
             "available": true,
             "height_in_assembly": 25,
-            "diameter": 8.5,
+            "color_rendering_index": "",
+            "voltage": 0,
             "frame_type": "Поворотная",
-            "scattering_angle": 0,
             "form": "Круглый",
             "armature_color": "Чёрный",
-            "length": 0,
             "power": 0,
             "light_temperatures": null,
-            "width": 0,
             "light_angle": 0,
             "ugr": "",
             "link": "\/products\/interernyi-svet\/dot-220v\/ramka-tvist-85-kruglaia-povorotnaia\/41005-BK"
@@ -422,15 +404,13 @@
             "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/165489\/big\/41005-wh.jpg",
             "available": true,
             "height_in_assembly": 25,
-            "diameter": 8.5,
+            "color_rendering_index": "",
+            "voltage": 0,
             "frame_type": "Поворотная",
-            "scattering_angle": 0,
             "form": "Круглый",
             "armature_color": "Белый",
-            "length": 0,
             "power": 0,
             "light_temperatures": null,
-            "width": 0,
             "light_angle": 0,
             "ugr": "",
             "link": "\/products\/interernyi-svet\/dot-220v\/ramka-tvist-85-kruglaia-povorotnaia\/41005-WH"
@@ -446,15 +426,13 @@
             "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/165490\/big\/41006-bk.jpg",
             "available": true,
             "height_in_assembly": 25,
-            "diameter": 8.5,
+            "color_rendering_index": "",
+            "voltage": 0,
             "frame_type": "Поворотная",
-            "scattering_angle": 0,
             "form": "Квадратный",
             "armature_color": "Чёрный",
-            "length": 0,
             "power": 0,
             "light_temperatures": null,
-            "width": 0,
             "light_angle": 0,
             "ugr": "",
             "link": "\/products\/interernyi-svet\/dot-220v\/ramka-freim-tvist-85-kvadratnaia-povorotnaia\/41006-BK"
@@ -470,15 +448,13 @@
             "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/165491\/big\/41006-wh.jpg",
             "available": true,
             "height_in_assembly": 25,
-            "diameter": 8.5,
+            "color_rendering_index": "",
+            "voltage": 0,
             "frame_type": "Поворотная",
-            "scattering_angle": 0,
             "form": "Квадратный",
             "armature_color": "Белый",
-            "length": 0,
             "power": 0,
             "light_temperatures": null,
-            "width": 0,
             "light_angle": 0,
             "ugr": "",
             "link": "\/products\/interernyi-svet\/dot-220v\/ramka-freim-tvist-85-kvadratnaia-povorotnaia\/41006-WH"
@@ -494,15 +470,13 @@
             "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/165503\/big\/41007-bk.jpg",
             "available": true,
             "height_in_assembly": 0,
-            "diameter": 0,
+            "color_rendering_index": "",
+            "voltage": 0,
             "frame_type": "",
-            "scattering_angle": 0,
             "form": "Круглый",
             "armature_color": "Чёрный",
-            "length": 18.6,
             "power": 0,
             "light_temperatures": null,
-            "width": 9.6,
             "light_angle": 0,
             "ugr": "",
             "link": "\/products\/interernyi-svet\/dot-220v\/ramka-dvoinaia-pod-kruglye-85\/41007-BK"
@@ -518,15 +492,13 @@
             "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/165504\/big\/41007-wh.jpg",
             "available": true,
             "height_in_assembly": 0,
-            "diameter": 0,
+            "color_rendering_index": "",
+            "voltage": 0,
             "frame_type": "",
-            "scattering_angle": 0,
             "form": "Круглый",
             "armature_color": "Белый",
-            "length": 18.6,
             "power": 0,
             "light_temperatures": null,
-            "width": 9.6,
             "light_angle": 0,
             "ugr": "",
             "link": "\/products\/interernyi-svet\/dot-220v\/ramka-dvoinaia-pod-kruglye-85\/41007-WH"
@@ -542,15 +514,13 @@
             "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/165505\/big\/41008-bk.jpg",
             "available": true,
             "height_in_assembly": 0,
-            "diameter": 0,
+            "color_rendering_index": "",
+            "voltage": 0,
             "frame_type": "",
-            "scattering_angle": 0,
             "form": "Квадратный",
             "armature_color": "Чёрный",
-            "length": 18.6,
             "power": 0,
             "light_temperatures": null,
-            "width": 9.6,
             "light_angle": 0,
             "ugr": "",
             "link": "\/products\/interernyi-svet\/dot-220v\/ramka-dvoinaia-pod-kvadratnye-85\/41008-BK"
@@ -566,15 +536,13 @@
             "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/165506\/big\/41008-wh.jpg",
             "available": true,
             "height_in_assembly": 0,
-            "diameter": 0,
+            "color_rendering_index": "",
+            "voltage": 0,
             "frame_type": "",
-            "scattering_angle": 0,
             "form": "Квадратный",
             "armature_color": "Белый",
-            "length": 18.6,
             "power": 0,
             "light_temperatures": null,
-            "width": 9.6,
             "light_angle": 0,
             "ugr": "",
             "link": "\/products\/interernyi-svet\/dot-220v\/ramka-dvoinaia-pod-kvadratnye-85\/41008-WH"
@@ -590,17 +558,15 @@
             "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/201631\/big\/43001-08.jpg",
             "available": true,
             "height_in_assembly": 0,
-            "diameter": 4.98,
+            "color_rendering_index": "",
+            "voltage": 0,
             "frame_type": "",
-            "scattering_angle": 8,
             "form": "",
             "armature_color": "Чёрный",
-            "length": 0,
             "power": 0,
             "light_temperatures": null,
-            "width": 0,
-            "light_angle": 0,
-            "ugr": "",
+            "light_angle": 8,
+            "ugr": "<19",
             "link": "\/products\/interernyi-svet\/dot-220v\/linza-slim-8-dlia-atom-6\/43001-08"
         },
         "43001-15": {
@@ -614,15 +580,13 @@
             "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/196588\/big\/43001-15.jpg",
             "available": true,
             "height_in_assembly": 5,
-            "diameter": 5,
+            "color_rendering_index": "",
+            "voltage": 0,
             "frame_type": "",
-            "scattering_angle": 0,
             "form": "",
             "armature_color": "Чёрный",
-            "length": 0,
             "power": 0,
             "light_temperatures": null,
-            "width": 0,
             "light_angle": 15,
             "ugr": "<19",
             "link": "\/products\/interernyi-svet\/dot-220v\/linzy-slim\/43001-15"
@@ -638,15 +602,13 @@
             "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/196589\/big\/43001-36.jpg",
             "available": true,
             "height_in_assembly": 5,
-            "diameter": 5,
+            "color_rendering_index": "",
+            "voltage": 0,
             "frame_type": "",
-            "scattering_angle": 0,
             "form": "",
             "armature_color": "Чёрный",
-            "length": 0,
             "power": 0,
             "light_temperatures": null,
-            "width": 0,
             "light_angle": 36,
             "ugr": "<19",
             "link": "\/products\/interernyi-svet\/dot-220v\/linzy-slim\/43001-36"
@@ -662,15 +624,13 @@
             "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/196590\/big\/43001-60.jpg",
             "available": true,
             "height_in_assembly": 5,
-            "diameter": 5,
+            "color_rendering_index": "",
+            "voltage": 0,
             "frame_type": "",
-            "scattering_angle": 0,
             "form": "",
             "armature_color": "Чёрный",
-            "length": 0,
             "power": 0,
             "light_temperatures": null,
-            "width": 0,
             "light_angle": 60,
             "ugr": "<19",
             "link": "\/products\/interernyi-svet\/dot-220v\/linzy-slim\/43001-60"
@@ -686,15 +646,13 @@
             "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/196591\/big\/43002-18.jpg",
             "available": true,
             "height_in_assembly": 20,
-            "diameter": 5,
+            "color_rendering_index": "",
+            "voltage": 0,
             "frame_type": "",
-            "scattering_angle": 0,
             "form": "",
             "armature_color": "Чёрный",
-            "length": 0,
             "power": 0,
             "light_temperatures": null,
-            "width": 0,
             "light_angle": 18,
             "ugr": "<10",
             "link": "\/products\/interernyi-svet\/dot-220v\/linzy-dark\/43002-18"
@@ -710,15 +668,13 @@
             "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/196592\/big\/43002-38.jpg",
             "available": true,
             "height_in_assembly": 20,
-            "diameter": 5,
+            "color_rendering_index": "",
+            "voltage": 0,
             "frame_type": "",
-            "scattering_angle": 0,
             "form": "",
             "armature_color": "Чёрный",
-            "length": 0,
             "power": 0,
             "light_temperatures": null,
-            "width": 0,
             "light_angle": 38,
             "ugr": "<10",
             "link": "\/products\/interernyi-svet\/dot-220v\/linzy-dark\/43002-38"
@@ -734,15 +690,13 @@
             "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/196593\/big\/43002-50.jpg",
             "available": true,
             "height_in_assembly": 20,
-            "diameter": 5,
+            "color_rendering_index": "",
+            "voltage": 0,
             "frame_type": "",
-            "scattering_angle": 0,
             "form": "",
             "armature_color": "Чёрный",
-            "length": 0,
             "power": 0,
             "light_temperatures": null,
-            "width": 0,
             "light_angle": 50,
             "ugr": "<10",
             "link": "\/products\/interernyi-svet\/dot-220v\/linzy-dark\/43002-50"
@@ -758,15 +712,13 @@
             "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/199171\/big\/43003-30.jpg",
             "available": true,
             "height_in_assembly": 0,
-            "diameter": 5,
+            "color_rendering_index": "",
+            "voltage": 0,
             "frame_type": "",
-            "scattering_angle": 30,
             "form": "",
             "armature_color": "Чёрный",
-            "length": 0,
             "power": 0,
             "light_temperatures": null,
-            "width": 0,
             "light_angle": 30,
             "ugr": "<10",
             "link": "\/products\/interernyi-svet\/dot-220v\/linza-dark-dlia-atom-10-dtw-i-atom-13-tw\/43003-30"
@@ -782,15 +734,13 @@
             "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/196583\/big\/44001-3k.jpg",
             "available": true,
             "height_in_assembly": 20,
-            "diameter": 4.8,
+            "color_rendering_index": 93,
+            "voltage": 34,
             "frame_type": "",
-            "scattering_angle": 0,
             "form": "",
             "armature_color": "Чёрный",
-            "length": 0,
             "power": 6,
             "light_temperatures": 3000,
-            "width": 0,
             "light_angle": 0,
             "ugr": "",
             "link": "\/products\/interernyi-svet\/dot-220v\/svetodiodnyi-modul-atom-6\/44001-3K"
@@ -806,42 +756,16 @@
             "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/196594\/big\/44001-4k.jpg",
             "available": true,
             "height_in_assembly": 20,
-            "diameter": 4.8,
+            "color_rendering_index": 93,
+            "voltage": 34,
             "frame_type": "",
-            "scattering_angle": 0,
             "form": "",
             "armature_color": "Чёрный",
-            "length": 0,
             "power": 6,
             "light_temperatures": 4000,
-            "width": 0,
             "light_angle": 0,
             "ugr": "",
             "link": "\/products\/interernyi-svet\/dot-220v\/svetodiodnyi-modul-atom-6\/44001-4K"
-        },
-        "44002-27K": {
-            "id": 696,
-            "article": "44002-27K",
-            "title": "Светодиодный модуль Атом 9 36В 210мА 9Вт лм 2700К 93+",
-            "ip_class": 20,
-            "price": null,
-            "old_price": null,
-            "sale": null,
-            "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/196611\/big\/44002-27k.jpg",
-            "available": false,
-            "height_in_assembly": 0,
-            "diameter": 0,
-            "frame_type": "",
-            "scattering_angle": 0,
-            "form": "",
-            "armature_color": "Чёрный",
-            "length": 0,
-            "power": 9,
-            "light_temperatures": 2700,
-            "width": 0,
-            "light_angle": 0,
-            "ugr": "",
-            "link": null
         },
         "44002-3K": {
             "id": 682,
@@ -854,15 +778,13 @@
             "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/196595\/big\/44002-3k.jpg",
             "available": true,
             "height_in_assembly": 25,
-            "diameter": 6,
+            "color_rendering_index": 93,
+            "voltage": 36,
             "frame_type": "",
-            "scattering_angle": 0,
             "form": "",
             "armature_color": "Чёрный",
-            "length": 0,
             "power": 9,
             "light_temperatures": 3000,
-            "width": 0,
             "light_angle": 0,
             "ugr": "",
             "link": "\/products\/interernyi-svet\/dot-220v\/svetodiodnyi-modul-atom-9\/44002-3K"
@@ -878,15 +800,13 @@
             "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/196596\/big\/44002-4k.jpg",
             "available": true,
             "height_in_assembly": 25,
-            "diameter": 6,
+            "color_rendering_index": 93,
+            "voltage": 36,
             "frame_type": "",
-            "scattering_angle": 0,
             "form": "",
             "armature_color": "Чёрный",
-            "length": 0,
             "power": 9,
             "light_temperatures": 4000,
-            "width": 0,
             "light_angle": 0,
             "ugr": "",
             "link": "\/products\/interernyi-svet\/dot-220v\/svetodiodnyi-modul-atom-9\/44002-4K"
@@ -902,15 +822,13 @@
             "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/199172\/big\/44002-dtw.jpg",
             "available": true,
             "height_in_assembly": 0,
-            "diameter": 6,
+            "color_rendering_index": 93,
+            "voltage": 36,
             "frame_type": "",
-            "scattering_angle": 0,
             "form": "",
             "armature_color": "Чёрный",
-            "length": 0,
             "power": 10,
             "light_temperatures": "1800-3000",
-            "width": 0,
             "light_angle": 0,
             "ugr": "",
             "link": "\/products\/interernyi-svet\/dot-220v\/svetodiodnyi-modul-atom-13\/44002-DTW"
@@ -926,15 +844,13 @@
             "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/196597\/big\/44003-3k.jpg",
             "available": true,
             "height_in_assembly": 30,
-            "diameter": 6.2,
+            "color_rendering_index": 93,
+            "voltage": 34,
             "frame_type": "",
-            "scattering_angle": 0,
             "form": "",
             "armature_color": "Чёрный",
-            "length": 0,
             "power": 13,
             "light_temperatures": 3000,
-            "width": 0,
             "light_angle": 0,
             "ugr": "",
             "link": "\/products\/interernyi-svet\/dot-220v\/svetodiodnyi-modul-atom-13\/44003-3K"
@@ -950,15 +866,13 @@
             "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/196598\/big\/44003-4k.jpg",
             "available": true,
             "height_in_assembly": 30,
-            "diameter": 6.2,
+            "color_rendering_index": 93,
+            "voltage": 34,
             "frame_type": "",
-            "scattering_angle": 0,
             "form": "",
             "armature_color": "Чёрный",
-            "length": 0,
             "power": 13,
             "light_temperatures": 4000,
-            "width": 0,
             "light_angle": 0,
             "ugr": "",
             "link": "\/products\/interernyi-svet\/dot-220v\/svetodiodnyi-modul-atom-13\/44003-4K"
@@ -974,15 +888,13 @@
             "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/165509\/big\/44004-3k.jpg",
             "available": true,
             "height_in_assembly": 60,
-            "diameter": 5.5,
+            "color_rendering_index": 93,
+            "voltage": 34,
             "frame_type": "",
-            "scattering_angle": 0,
             "form": "",
             "armature_color": "Чёрный",
-            "length": 0,
             "power": 16,
             "light_temperatures": 3000,
-            "width": 0,
             "light_angle": 0,
             "ugr": "",
             "link": "\/products\/interernyi-svet\/dot-220v\/svetodiodnyi-modul-atom-16\/44004-3K"
@@ -998,15 +910,13 @@
             "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/165510\/big\/44004-4k.jpg",
             "available": true,
             "height_in_assembly": 60,
-            "diameter": 5.5,
+            "color_rendering_index": 93,
+            "voltage": 34,
             "frame_type": "",
-            "scattering_angle": 0,
             "form": "",
             "armature_color": "Чёрный",
-            "length": 0,
             "power": 16,
             "light_temperatures": 4000,
-            "width": 0,
             "light_angle": 0,
             "ugr": "",
             "link": "\/products\/interernyi-svet\/dot-220v\/svetodiodnyi-modul-atom-16\/44004-4K"
@@ -1022,15 +932,13 @@
             "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/196599\/big\/45001-02.jpg",
             "available": true,
             "height_in_assembly": 0,
-            "diameter": 0,
+            "color_rendering_index": "",
+            "voltage": 40,
             "frame_type": "",
-            "scattering_angle": 0,
             "form": "",
             "armature_color": "Белый",
-            "length": 9.6,
             "power": 6,
             "light_temperatures": null,
-            "width": 3.9,
             "light_angle": 0,
             "ugr": "",
             "link": "\/products\/interernyi-svet\/dot-220v\/draiver-toka-6vt-triac\/45001-02"
@@ -1046,15 +954,13 @@
             "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/196600\/big\/45002-02.jpg",
             "available": true,
             "height_in_assembly": 0,
-            "diameter": 0,
+            "color_rendering_index": "",
+            "voltage": 40,
             "frame_type": "",
-            "scattering_angle": 0,
             "form": "",
             "armature_color": "Белый",
-            "length": 10.5,
             "power": 9,
             "light_temperatures": null,
-            "width": 3.8,
             "light_angle": 0,
             "ugr": "",
             "link": "\/products\/interernyi-svet\/dot-220v\/draiver-toka-9vt-triac\/45002-02"
@@ -1070,15 +976,13 @@
             "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/196601\/big\/45003-02.jpg",
             "available": true,
             "height_in_assembly": 0,
-            "diameter": 0,
+            "color_rendering_index": "",
+            "voltage": 40,
             "frame_type": "",
-            "scattering_angle": 0,
             "form": "",
             "armature_color": "Белый",
-            "length": 10.5,
             "power": 13,
             "light_temperatures": null,
-            "width": 4.2,
             "light_angle": 0,
             "ugr": "",
             "link": "\/products\/interernyi-svet\/dot-220v\/draiver-toka-13vt-triac\/45003-02"
@@ -1094,659 +998,812 @@
             "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/165511\/big\/45004-02.jpg",
             "available": true,
             "height_in_assembly": 0,
-            "diameter": 0,
+            "color_rendering_index": "",
+            "voltage": 40,
             "frame_type": "",
-            "scattering_angle": 0,
             "form": "",
             "armature_color": "Белый",
-            "length": 10.5,
             "power": 16,
             "light_temperatures": null,
-            "width": 4.2,
             "light_angle": 0,
             "ugr": "",
             "link": "\/products\/interernyi-svet\/dot-220v\/draiver-toka-16vt-triac\/45004-02"
         }
     },
-    "terms": ["Форма"],
+    "units": {
+        "color_rendering_index": "+",
+        "ip_class": " IP",
+        "light_angle": "°",
+        "light_flow": " Лм",
+        "light_temperatures": " K",
+        "power": " Вт",
+        "voltage": " В"
+    },
     "combos": [{
+        "combo": {
+            "Декоративная рамка": ["41001-BK", "41001-WH", "41002-BK", "41002-WH", "41005-BK", "41005-WH"]
+        },
+        "files": [{
+            "name": "Сборка и установка Софт 85 Твист 85 Фрейм Твист 86.pdf",
+            "file": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/files\/ramocnye\/311\/Сборка и установка Софт 85 Твист 85 Фрейм Твист 86.pdf"
+        }]
+    }, {
+        "combo": {
+            "Линза": ["43002-18"],
+            "Светодиодный модуль": ["44001-3K"]
+        },
+        "light_flow": 442,
+        "files": [{
+            "name": "Фотометрические данные 44001-3K+ 43002-18.rar",
+            "file": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/files\/photometric_data\/Фотометрические данные 44001-3K+ 43002-18.rar"
+        }]
+    },{
         "combo": {
             "Линза": ["43001-15"],
             "Светодиодный модуль": ["44001-3K"]
         },
         "light_flow": 504,
         "files": [{
-            "name": "Инструкция по монтажу",
-            "file": "https://yarusvsm.ru/all_about_product/Инструкции%20по%20монтажу/TECHNOLIGHT/spot-42_instruction.pdf"
-        },
-        {
-            "name": "3D-модель",
-            "file": "https://yarusvsm.ru/all_about_product/3D-модели/TECHNOLIGHT/spot-42_3d.zip"
+            "name": "Фотометрические данные 44001-3K+ 43001-15.rar",
+            "file": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/files\/photometric_data\/Фотометрические данные 44001-3K+ 43001-15.rar"
         }]
     }, {
         "combo": {
             "Линза": ["43001-36"],
             "Светодиодный модуль": ["44001-3K"]
         },
-        "light_flow": 517
+        "light_flow": 517,
+        "files": [{
+            "name": "Фотометрические данные 44001-3K+ 43001-36.rar",
+            "file": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/files\/photometric_data\/Фотометрические данные 44001-3K+ 43001-36.rar"
+        }]
     }, {
         "combo": {
             "Линза": ["43001-60"],
             "Светодиодный модуль": ["44001-3K"]
         },
-        "light_flow": 522
+        "light_flow": 522,
+        "files": [{
+            "name": "Фотометрические данные 44001-3K+ 43001-60.rar",
+            "file": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/files\/photometric_data\/Фотометрические данные 44001-3K+ 43001-60.rar"
+        }]
     }, {
         "combo": {
             "Линза": ["43001-15"],
             "Светодиодный модуль": ["44001-4K"]
         },
-        "light_flow": 548
+        "light_flow": 548,
+        "files": [{
+            "name": "Фотометрические данные 44001-4K+ 43001-15.rar",
+            "file": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/files\/photometric_data\/Фотометрические данные 44001-4K+ 43001-15.rar"
+        }]
     }, {
         "combo": {
             "Линза": ["43001-36"],
             "Светодиодный модуль": ["44001-4K"]
         },
-        "light_flow": 560
+        "light_flow": 560,
+        "files": [{
+            "name": "Фотометрические данные 44001-4K+ 43001-36.rar",
+            "file": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/files\/photometric_data\/Фотометрические данные 44001-4K+ 43001-36.rar"
+        }]
     }, {
         "combo": {
             "Линза": ["43001-60"],
             "Светодиодный модуль": ["44001-4K"]
         },
-        "light_flow": 559
+        "light_flow": 559,
+        "files": [{
+            "name": "Фотометрические данные 44001-4K+ 43001-60.rar",
+            "file": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/files\/photometric_data\/Фотометрические данные 44001-4K+ 43001-60.rar"
+        }]
     }, {
         "combo": {
-            "Линза": ["43002-18"],
+            "Линза": ["43002-38"],
             "Светодиодный модуль": ["44001-3K"]
         },
-        "light_flow": 442
+        "light_flow": 459,
+        "files": [{
+            "name": "Фотометрические данные 44001-3K+ 43002-38.rar",
+            "file": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/files\/photometric_data\/Фотометрические данные 44001-3K+ 43002-38.rar"
+        }]
     }, {
         "combo": {
-            "Линза": ["43002-38"],
+            "Линза": ["43002-50"],
             "Светодиодный модуль": ["44001-3K"]
         },
-        "light_flow": 459
-    }, {
-        "combo": {
-            "Линза": ["43002-50"],
-            "Светодиодный модуль": ["44001-3K"]
-        },
-        "light_flow": 448
+        "light_flow": 448,
+        "files": [{
+            "name": "Фотометрические данные 44001-3K+ 43002-50.rar",
+            "file": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/files\/photometric_data\/Фотометрические данные 44001-3K+ 43002-50.rar"
+        }]
     }, {
         "combo": {
             "Линза": ["43002-18"],
             "Светодиодный модуль": ["44001-4K"]
         },
-        "light_flow": 476
+        "light_flow": 476,
+        "files": [{
+            "name": "Фотометрические данные 44001-4K+ 43002-18.rar",
+            "file": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/files\/photometric_data\/Фотометрические данные 44001-4K+ 43002-18.rar"
+        }]
     }, {
         "combo": {
             "Линза": ["43002-38"],
             "Светодиодный модуль": ["44001-4K"]
         },
-        "light_flow": 488
+        "light_flow": 488,
+        "files": [{
+            "name": "Фотометрические данные 44001-4K+ 43002-38.rar",
+            "file": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/files\/photometric_data\/Фотометрические данные 44001-4K+ 43002-38.rar"
+        }]
     }, {
         "combo": {
             "Линза": ["43002-50"],
             "Светодиодный модуль": ["44001-4K"]
         },
-        "light_flow": 479
+        "light_flow": 479,
+        "files": [{
+            "name": "Фотометрические данные 44001-4K+ 43002-50.rar",
+            "file": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/files\/photometric_data\/Фотометрические данные 44001-4K+ 43002-50.rar"
+        }]
     }, {
         "combo": {
             "Линза": ["43001-15"],
             "Светодиодный модуль": ["44002-3K"]
         },
-        "light_flow": 886
+        "light_flow": 886,
+        "files": [{
+            "name": "Фотометрические данные 44002-3K+ 43001-15.rar",
+            "file": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/files\/photometric_data\/Фотометрические данные 44002-3K+ 43001-15.rar"
+        }]
     }, {
         "combo": {
             "Линза": ["43001-36"],
             "Светодиодный модуль": ["44002-3K"]
         },
-        "light_flow": 900
+        "light_flow": 900,
+        "files": [{
+            "name": "Фотометрические данные 44002-3K+ 43001-36.rar",
+            "file": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/files\/photometric_data\/Фотометрические данные 44002-3K+ 43001-36.rar"
+        }]
     }, {
         "combo": {
             "Линза": ["43001-60"],
             "Светодиодный модуль": ["44002-3K"]
         },
-        "light_flow": 912
+        "light_flow": 912,
+        "files": [{
+            "name": "Фотометрические данные 44002-3K+ 43001-60.rar",
+            "file": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/files\/photometric_data\/Фотометрические данные 44002-3K+ 43001-60.rar"
+        }]
     }, {
         "combo": {
             "Линза": ["43001-15"],
             "Светодиодный модуль": ["44002-4K"]
         },
-        "light_flow": 925
+        "light_flow": 925,
+        "files": [{
+            "name": "Фотометрические данные 44002-4K+ 43001-15.rar",
+            "file": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/files\/photometric_data\/Фотометрические данные 44002-4K+ 43001-15.rar"
+        }]
     }, {
         "combo": {
             "Линза": ["43001-36"],
             "Светодиодный модуль": ["44002-4K"]
         },
-        "light_flow": 951
+        "light_flow": 951,
+        "files": [{
+            "name": "Фотометрические данные 44002-4K+ 43001-36.rar",
+            "file": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/files\/photometric_data\/Фотометрические данные 44002-4K+ 43001-36.rar"
+        }]
     }, {
         "combo": {
             "Линза": ["43001-60"],
             "Светодиодный модуль": ["44002-4K"]
         },
-        "light_flow": 950
+        "light_flow": 950,
+        "files": [{
+            "name": "Фотометрические данные 44002-4K+ 43001-60.rar",
+            "file": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/files\/photometric_data\/Фотометрические данные 44002-4K+ 43001-60.rar"
+        }]
     }, {
         "combo": {
             "Линза": ["43002-18"],
             "Светодиодный модуль": ["44002-3K"]
         },
-        "light_flow": 778
+        "light_flow": 778,
+        "files": [{
+            "name": "Фотометрические данные 44002-3K+ 43002-18.rar",
+            "file": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/files\/photometric_data\/Фотометрические данные 44002-3K+ 43002-18.rar"
+        }]
     }, {
         "combo": {
             "Линза": ["43002-38"],
             "Светодиодный модуль": ["44002-3K"]
         },
-        "light_flow": 859
+        "light_flow": 859,
+        "files": [{
+            "name": "Фотометрические данные 44002-3K+ 43002-38.rar",
+            "file": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/files\/photometric_data\/Фотометрические данные 44002-3K+ 43002-38.rar"
+        }]
     }, {
         "combo": {
             "Линза": ["43002-50"],
             "Светодиодный модуль": ["44002-3K"]
         },
-        "light_flow": 756
+        "light_flow": 756,
+        "files": [{
+            "name": "Фотометрические данные 44002-3K+ 43002-50.rar",
+            "file": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/files\/photometric_data\/Фотометрические данные 44002-3K+ 43002-50.rar"
+        }]
     }, {
         "combo": {
             "Линза": ["43002-18"],
             "Светодиодный модуль": ["44002-4K"]
         },
-        "light_flow": 840
+        "light_flow": 840,
+        "files": [{
+            "name": "Фотометрические данные 44002-4K+ 43002-18.rar",
+            "file": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/files\/photometric_data\/Фотометрические данные 44002-4K+ 43002-18.rar"
+        }]
     }, {
         "combo": {
             "Линза": ["43002-38"],
             "Светодиодный модуль": ["44002-4K"]
         },
-        "light_flow": 920
+        "light_flow": 920,
+        "files": [{
+            "name": "Фотометрические данные 44002-4K+ 43002-38.rar",
+            "file": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/files\/photometric_data\/Фотометрические данные 44002-4K+ 43002-38.rar"
+        }]
     }, {
         "combo": {
             "Линза": ["43002-50"],
             "Светодиодный модуль": ["44002-4K"]
         },
-        "light_flow": 802
+        "light_flow": 802,
+        "files": [{
+            "name": "Фотометрические данные 44002-4K+ 43002-50.rar",
+            "file": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/files\/photometric_data\/Фотометрические данные 44002-4K+ 43002-50.rar"
+        }]
     }, {
         "combo": {
             "Линза": ["43001-15"],
             "Светодиодный модуль": ["44003-3K"]
         },
-        "light_flow": 1092
+        "light_flow": 1092,
+        "files": [{
+            "name": "Фотометрические данные 44003-3K+ 43001-15.rar",
+            "file": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/files\/photometric_data\/Фотометрические данные 44003-3K+ 43001-15.rar"
+        }]
     }, {
         "combo": {
             "Линза": ["43001-36"],
             "Светодиодный модуль": ["44003-3K"]
         },
-        "light_flow": 1155
+        "light_flow": 1155,
+        "files": [{
+            "name": "Фотометрические данные 44003-3K+ 43001-36.rar",
+            "file": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/files\/photometric_data\/Фотометрические данные 44003-3K+ 43001-36.rar"
+        }]
     }, {
         "combo": {
             "Линза": ["43001-60"],
             "Светодиодный модуль": ["44003-3K"]
         },
-        "light_flow": 1175
+        "light_flow": 1175,
+        "files": [{
+            "name": "Фотометрические данные 44003-3K+ 43001-60.rar",
+            "file": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/files\/photometric_data\/Фотометрические данные 44003-3K+ 43001-60.rar"
+        }]
     }, {
         "combo": {
             "Линза": ["43001-15"],
             "Светодиодный модуль": ["44003-4K"]
         },
-        "light_flow": 1169
+        "light_flow": 1169,
+        "files": [{
+            "name": "Фотометрические данные 44003-4K+ 43001-15.rar",
+            "file": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/files\/photometric_data\/Фотометрические данные 44003-4K+ 43001-15.rar"
+        }]
     }, {
         "combo": {
             "Линза": ["43001-36"],
             "Светодиодный модуль": ["44003-4K"]
         },
-        "light_flow": 1242
+        "light_flow": 1242,
+        "files": [{
+            "name": "Фотометрические данные 44003-4K+ 43001-36.rar",
+            "file": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/files\/photometric_data\/Фотометрические данные 44003-4K+ 43001-36.rar"
+        }]
     }, {
         "combo": {
             "Линза": ["43001-60"],
             "Светодиодный модуль": ["44003-4K"]
         },
-        "light_flow": 1245
+        "light_flow": 1245,
+        "files": [{
+            "name": "Фотометрические данные 44003-4K+ 43001-60.rar",
+            "file": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/files\/photometric_data\/Фотометрические данные 44003-4K+ 43001-60.rar"
+        }]
     }, {
         "combo": {
             "Линза": ["43002-18"],
             "Светодиодный модуль": ["44003-3K"]
         },
-        "light_flow": 981
+        "light_flow": 981,
+        "files": [{
+            "name": "Фотометрические данные 44003-3K+ 43002-18.rar",
+            "file": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/files\/photometric_data\/Фотометрические данные 44003-3K+ 43002-18.rar"
+        }]
     }, {
         "combo": {
             "Линза": ["43002-38"],
             "Светодиодный модуль": ["44003-3K"]
         },
-        "light_flow": 1035
+        "light_flow": 1035,
+        "files": [{
+            "name": "Фотометрические данные 44003-3K+ 43002-38.rar",
+            "file": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/files\/photometric_data\/Фотометрические данные 44003-3K+ 43002-38.rar"
+        }]
     }, {
         "combo": {
             "Линза": ["43002-50"],
             "Светодиодный модуль": ["44003-3K"]
         },
-        "light_flow": 1001
+        "light_flow": 1001,
+        "files": [{
+            "name": "Фотометрические данные 44003-3K+ 43002-50.rar",
+            "file": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/files\/photometric_data\/Фотометрические данные 44003-3K+ 43002-50.rar"
+        }]
     }, {
         "combo": {
             "Линза": ["43002-18"],
             "Светодиодный модуль": ["44003-4K"]
         },
-        "light_flow": 1090
+        "light_flow": 1090,
+        "files": [{
+            "name": "Фотометрические данные 44003-4K+ 43002-18.rar",
+            "file": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/files\/photometric_data\/Фотометрические данные 44003-4K+ 43002-18.rar"
+        }]
     }, {
         "combo": {
             "Линза": ["43002-38"],
             "Светодиодный модуль": ["44003-4K"]
         },
-        "light_flow": 1122
+        "light_flow": 1122,
+        "files": [{
+            "name": "Фотометрические данные 44003-4K+ 43002-38.rar",
+            "file": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/files\/photometric_data\/Фотометрические данные 44003-4K+ 43002-38.rar"
+        }]
     }, {
         "combo": {
             "Линза": ["43002-50"],
             "Светодиодный модуль": ["44003-4K"]
         },
-        "light_flow": 1082
+        "light_flow": 1082,
+        "files": [{
+            "name": "Фотометрические данные 44003-4K+ 43002-50.rar",
+            "file": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/files\/photometric_data\/Фотометрические данные 44003-4K+ 43002-50.rar"
+        }]
     }, {
         "combo": {
             "Линза": ["43001-15"],
             "Светодиодный модуль": ["44004-3K"]
         },
-        "light_flow": 1424
+        "light_flow": 1424,
+        "files": [{
+            "name": "Фотометрические данные 44004-3K+ 43001-15.rar",
+            "file": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/files\/photometric_data\/Фотометрические данные 44004-3K+ 43001-15.rar"
+        }]
     }, {
         "combo": {
             "Линза": ["43001-36"],
             "Светодиодный модуль": ["44004-3K"]
         },
-        "light_flow": 1445
+        "light_flow": 1445,
+        "files": [{
+            "name": "Фотометрические данные 44004-3K+ 43001-36.rar",
+            "file": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/files\/photometric_data\/Фотометрические данные 44004-3K+ 43001-36.rar"
+        }]
     }, {
         "combo": {
             "Линза": ["43001-60"],
             "Светодиодный модуль": ["44004-3K"]
         },
-        "light_flow": 1531
+        "light_flow": 1531,
+        "files": [{
+            "name": "Фотометрические данные 44004-3K+ 43001-60.rar",
+            "file": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/files\/photometric_data\/Фотометрические данные 44004-3K+ 43001-60.rar"
+        }]
     }, {
         "combo": {
             "Линза": ["43001-15"],
             "Светодиодный модуль": ["44004-4K"]
         },
-        "light_flow": 1581
+        "light_flow": 1581,
+        "files": [{
+            "name": "Фотометрические данные 44004-4K+ 43001-15.rar",
+            "file": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/files\/photometric_data\/Фотометрические данные 44004-4K+ 43001-15.rar"
+        }]
     }, {
         "combo": {
             "Линза": ["43001-36"],
             "Светодиодный модуль": ["44004-4K"]
         },
-        "light_flow": 1612
+        "light_flow": 1612,
+        "files": [{
+            "name": "Фотометрические данные 44004-4K+ 43001-36.rar",
+            "file": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/files\/photometric_data\/Фотометрические данные 44004-4K+ 43001-36.rar"
+        }]
     }, {
         "combo": {
             "Линза": ["43001-60"],
             "Светодиодный модуль": ["44004-4K"]
         },
-        "light_flow": 1688
+        "light_flow": 1688,
+        "files": [{
+            "name": "Фотометрические данные 44004-4K+ 43001-60.rar",
+            "file": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/files\/photometric_data\/Фотометрические данные 44004-4K+ 43001-60.rar"
+        }]
     }, {
         "combo": {
             "Линза": ["43002-18"],
             "Светодиодный модуль": ["44004-3K"]
         },
-        "light_flow": 1293
+        "light_flow": 1293,
+        "files": [{
+            "name": "Фотометрические данные 44004-3K+ 43002-18.rar",
+            "file": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/files\/photometric_data\/Фотометрические данные 44004-3K+ 43002-18.rar"
+        }]
     }, {
         "combo": {
             "Линза": ["43002-38"],
             "Светодиодный модуль": ["44004-3K"]
         },
-        "light_flow": 1292
+        "light_flow": 1292,
+        "files": [{
+            "name": "Фотометрические данные 44004-3K+ 43002-38.rar",
+            "file": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/files\/photometric_data\/Фотометрические данные 44004-3K+ 43002-38.rar"
+        }]
     }, {
         "combo": {
             "Линза": ["43002-50"],
             "Светодиодный модуль": ["44004-3K"]
         },
-        "light_flow": 1339
+        "light_flow": 1339,
+        "files": [{
+            "name": "Фотометрические данные 44004-3K+ 43002-50.rar",
+            "file": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/files\/photometric_data\/Фотометрические данные 44004-3K+ 43002-50.rar"
+        }]
     }, {
         "combo": {
             "Линза": ["43002-18"],
             "Светодиодный модуль": ["44004-4K"]
         },
-        "light_flow": 1442
+        "light_flow": 1442,
+        "files": [{
+            "name": "Фотометрические данные 44004-4K+ 43002-18.rar",
+            "file": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/files\/photometric_data\/Фотометрические данные 44004-4K+ 43002-18.rar"
+        }]
     }, {
         "combo": {
             "Линза": ["43002-38"],
             "Светодиодный модуль": ["44004-4K"]
         },
-        "light_flow": 1467
+        "light_flow": 1467,
+        "files": [{
+            "name": "Фотометрические данные 44004-4K+ 43002-38.rar",
+            "file": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/files\/photometric_data\/Фотометрические данные 44004-4K+ 43002-38.rar"
+        }]
     }, {
         "combo": {
             "Линза": ["43002-50"],
             "Светодиодный модуль": ["44004-4K"]
         },
-        "light_flow": 1480
+        "light_flow": 1480,
+        "files": [{
+            "name": "Фотометрические данные 44004-4K+ 43002-50.rar",
+            "file": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/files\/photometric_data\/Фотометрические данные 44004-4K+ 43002-50.rar"
+        }]
     }, {
         "combo": {
             "Декоративная рамка": ["41001-BK"]
         },
-        "final_image": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/images\/41001-bk.jpg"
+        "final_image": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/images\/41001-bk.webp"
     }, {
         "combo": {
             "Декоративная рамка": ["41001-WH"]
         },
-        "final_image": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/images\/41001-wh.jpg"
+        "final_image": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/images\/41001-wh.webp"
     }, {
         "combo": {
             "Декоративная рамка": ["41002-BK"]
         },
-        "final_image": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/images\/41002-bk.jpg"
+        "final_image": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/images\/41002-bk.webp"
     }, {
         "combo": {
             "Декоративная рамка": ["41002-WH"]
         },
-        "final_image": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/images\/41002-wh.jpg"
+        "final_image": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/images\/41002-wh.webp"
     }, {
         "combo": {
             "Декоративная рамка": ["41003-BK"]
         },
-        "final_image": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/images\/41003-bk.jpg"
+        "final_image": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/images\/41003-bk.webp"
     }, {
         "combo": {
             "Декоративная рамка": ["41003-WH"]
         },
-        "final_image": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/images\/41003-wh.jpg"
+        "final_image": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/images\/41003-wh.webp"
     }, {
         "combo": {
             "Декоративная рамка": ["41004-BK"]
         },
-        "final_image": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/images\/41004-bk.jpg"
+        "final_image": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/images\/41004-bk.webp"
     }, {
         "combo": {
             "Декоративная рамка": ["41004-WH"]
         },
-        "final_image": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/images\/41004-wh.jpg"
+        "final_image": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/images\/41004-wh.webp"
     }, {
         "combo": {
             "Декоративная рамка": ["41005-BK"]
         },
-        "final_image": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/images\/41005-bk.jpg"
+        "final_image": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/images\/41005-bk.webp"
     }, {
         "combo": {
             "Декоративная рамка": ["41005-WH"]
         },
-        "final_image": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/images\/41005-wh.jpg"
+        "final_image": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/images\/41005-wh.webp"
     }, {
         "combo": {
             "Декоративная рамка": ["41006-BK"]
         },
-        "final_image": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/images\/41006-bk.jpg"
+        "final_image": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/images\/41006-bk.webp"
     }, {
         "combo": {
             "Декоративная рамка": ["41006-WH"]
         },
-        "final_image": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/images\/41006-wh.jpg"
+        "final_image": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/images\/41006-wh.webp"
     }, {
         "combo": {
             "Линза": ["43002-18", "43002-38", "43002-50"],
             "Декоративная рамка": ["41003-BK", "41003-WH", "41004-BK", "41004-WH"],
             "Светодиодный модуль": ["44003-3K", "44003-4K"]
         },
-        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/frame-soft-85_dark-lens_atom-13_88mm.svg",
-        "final_image": "frame-soft-85_dark-lens_atom-13_88mm.svg"
+        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/frame-soft-85_dark-lens_atom-13_88mm.svg"
     }, {
         "combo": {
             "Линза": ["43002-18", "43002-38", "43002-50"],
             "Декоративная рамка": ["41003-BK", "41003-WH", "41004-BK", "41004-WH"],
             "Светодиодный модуль": ["44004-3K", "44004-4K"]
         },
-        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/frame-soft-85_dark-lens_atom-16_118mm.svg",
-        "final_image": "frame-soft-85_dark-lens_atom-16_118mm.svg"
+        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/frame-soft-85_dark-lens_atom-16_118mm.svg"
     }, {
         "combo": {
             "Линза": ["43002-18", "43002-38", "43002-50"],
             "Декоративная рамка": ["41003-BK", "41003-WH", "41004-BK", "41004-WH"],
             "Светодиодный модуль": ["44001-3K", "44001-4K"]
         },
-        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/frame-soft-85_dark-lens_atom-6_78mm.svg",
-        "final_image": "frame-soft-85_dark-lens_atom-6_78mm.svg"
+        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/frame-soft-85_dark-lens_atom-6_78mm.svg"
     }, {
         "combo": {
             "Линза": ["43002-18", "43002-38", "43002-50"],
             "Декоративная рамка": ["41003-BK", "41003-WH", "41004-BK", "41004-WH"],
             "Светодиодный модуль": ["44002-3K", "44002-4K", "44002-DTW", "44002-27K"]
         },
-        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/frame-soft-85_dark-lens_atom-9_83mm.svg",
-        "final_image": "frame-soft-85_dark-lens_atom-9_83mm.svg"
+        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/frame-soft-85_dark-lens_atom-9_83mm.svg"
     }, {
         "combo": {
             "Линза": ["43001-15", "43001-36", "43001-60"],
             "Декоративная рамка": ["41003-BK", "41003-WH", "41004-BK", "41004-WH"],
             "Светодиодный модуль": ["44003-3K", "44003-4K"]
         },
-        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/frame-soft-85_slim-lens_atom-13_73mm.svg",
-        "final_image": "frame-soft-85_slim-lens_atom-13_73mm.svg"
+        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/frame-soft-85_slim-lens_atom-13_73mm.svg"
     }, {
         "combo": {
             "Линза": ["43001-15", "43001-36", "43001-60"],
             "Декоративная рамка": ["41003-BK", "41003-WH", "41004-BK", "41004-WH"],
             "Светодиодный модуль": ["44004-3K", "44004-4K"]
         },
-        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/frame-soft-85_slim-lens_atom-16_103mm.svg",
-        "final_image": "frame-soft-85_slim-lens_atom-16_103mm.svg"
+        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/frame-soft-85_slim-lens_atom-16_103mm.svg"
     }, {
         "combo": {
             "Линза": ["43001-15", "43001-36", "43001-60"],
             "Декоративная рамка": ["41003-BK", "41003-WH", "41004-BK", "41004-WH"],
             "Светодиодный модуль": ["44001-3K", "44001-4K"]
         },
-        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/frame-soft-85_slim-lens_atom-6_63mm.svg",
-        "final_image": "frame-soft-85_slim-lens_atom-6_63mm.svg"
+        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/frame-soft-85_slim-lens_atom-6_63mm.svg"
     }, {
         "combo": {
             "Линза": ["43001-15", "43001-36", "43001-60"],
             "Декоративная рамка": ["41003-BK", "41003-WH", "41004-BK", "41004-WH"],
             "Светодиодный модуль": ["44002-3K", "44002-4K", "44002-DTW", "44002-27K"]
         },
-        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/frame-soft-85_slim-lens_atom-9_68mm.svg",
-        "final_image": "frame-soft-85_slim-lens_atom-9_68mm.svg"
+        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/frame-soft-85_slim-lens_atom-9_68mm.svg"
     }, {
         "combo": {
             "Линза": ["43002-18", "43002-38", "43002-50"],
             "Декоративная рамка": ["41006-BK", "41006-WH"],
             "Светодиодный модуль": ["44003-3K", "44003-4K"]
         },
-        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/frame-twist-85_dark-lens_atom-13_75mm.svg",
-        "final_image": "frame-twist-85_dark-lens_atom-13_75mm.svg"
+        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/frame-twist-85_dark-lens_atom-13_75mm.svg"
     }, {
         "combo": {
             "Линза": ["43002-18", "43002-38", "43002-50"],
             "Декоративная рамка": ["41006-BK", "41006-WH"],
             "Светодиодный модуль": ["44004-3K", "44004-4K"]
         },
-        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/frame-twist-85_dark-lens_atom-16_105mm.svg",
-        "final_image": "frame-twist-85_dark-lens_atom-16_105mm.svg"
+        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/frame-twist-85_dark-lens_atom-16_105mm.svg"
     }, {
         "combo": {
             "Линза": ["43002-18", "43002-38", "43002-50"],
             "Декоративная рамка": ["41006-BK", "41006-WH"],
             "Светодиодный модуль": ["44001-3K", "44001-4K"]
         },
-        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/frame-twist-85_dark-lens_atom-6_65mm.svg",
-        "final_image": "frame-twist-85_dark-lens_atom-6_65mm.svg"
+        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/frame-twist-85_dark-lens_atom-6_65mm.svg"
     }, {
         "combo": {
             "Линза": ["43002-18", "43002-38", "43002-50"],
             "Декоративная рамка": ["41006-BK", "41006-WH"],
             "Светодиодный модуль": ["44002-3K", "44002-4K", "44002-DTW", "44002-27K"]
         },
-        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/frame-twist-85_dark-lens_atom-9_70mm.svg",
-        "final_image": "frame-twist-85_dark-lens_atom-9_70mm.svg"
+        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/frame-twist-85_dark-lens_atom-9_70mm.svg"
     }, {
         "combo": {
             "Линза": ["43001-15", "43001-36", "43001-60"],
             "Декоративная рамка": ["41006-BK", "41006-WH"],
             "Светодиодный модуль": ["44003-3K", "44003-4K"]
         },
-        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/frame-twist-85_slim-lens_atom-13_60mm.svg",
-        "final_image": "frame-twist-85_slim-lens_atom-13_60mm.svg"
+        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/frame-twist-85_slim-lens_atom-13_60mm.svg"
     }, {
         "combo": {
             "Линза": ["43001-15", "43001-36", "43001-60"],
             "Декоративная рамка": ["41006-BK", "41006-WH"],
             "Светодиодный модуль": ["44004-3K", "44004-4K"]
         },
-        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/frame-twist-85_slim-lens_atom-16_90mm.svg",
-        "final_image": "frame-twist-85_slim-lens_atom-16_90mm.svg"
+        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/frame-twist-85_slim-lens_atom-16_90mm.svg"
     }, {
         "combo": {
             "Линза": ["43001-15", "43001-36", "43001-60"],
             "Декоративная рамка": ["41006-BK", "41006-WH"],
             "Светодиодный модуль": ["44001-3K", "44001-4K"]
         },
-        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/frame-twist-85_slim-lens_atom-6_50mm.svg",
-        "final_image": "frame-twist-85_slim-lens_atom-6_50mm.svg"
+        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/frame-twist-85_slim-lens_atom-6_50mm.svg"
     }, {
         "combo": {
             "Линза": ["43001-15", "43001-36", "43001-60"],
             "Декоративная рамка": ["41006-BK", "41006-WH"],
             "Светодиодный модуль": ["44002-3K", "44002-4K", "44002-DTW", "44002-27K"]
         },
-        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/frame-twist-85_slim-lens_atom-9_55mm.svg",
-        "final_image": "frame-twist-85_slim-lens_atom-9_55mm.svg"
+        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/frame-twist-85_slim-lens_atom-9_55mm.svg"
     }, {
         "combo": {
             "Линза": ["43002-18", "43002-38", "43002-50"],
             "Декоративная рамка": ["41001-BK", "41001-WH", "41002-BK", "41002-WH"],
             "Светодиодный модуль": ["44003-3K", "44003-4K"]
         },
-        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/soft-85_fix-ring_dark-lens_atom-13_90mm.svg",
-        "final_image": "soft-85_fix-ring_dark-lens_atom-13_90mm.svg"
+        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/soft-85_fix-ring_dark-lens_atom-13_90mm.svg"
     }, {
         "combo": {
             "Линза": ["43002-18", "43002-38", "43002-50"],
             "Декоративная рамка": ["41001-BK", "41001-WH", "41002-BK", "41002-WH"],
             "Светодиодный модуль": ["44004-3K", "44004-4K"]
         },
-        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/soft-85_fix-ring_dark-lens_atom-16_120mm.svg",
-        "final_image": "soft-85_fix-ring_dark-lens_atom-16_120mm.svg"
+        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/soft-85_fix-ring_dark-lens_atom-16_120mm.svg"
     }, {
         "combo": {
             "Линза": ["43002-18", "43002-38", "43002-50"],
             "Декоративная рамка": ["41001-BK", "41001-WH", "41002-BK", "41002-WH"],
             "Светодиодный модуль": ["44001-3K", "44001-4K"]
         },
-        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/soft-85_fix-ring_dark-lens_atom-6_80mm.svg",
-        "final_image": "soft-85_fix-ring_dark-lens_atom-6_80mm.svg"
+        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/soft-85_fix-ring_dark-lens_atom-6_80mm.svg"
     }, {
         "combo": {
             "Линза": ["43002-18", "43002-38", "43002-50"],
             "Декоративная рамка": ["41001-BK", "41001-WH", "41002-BK", "41002-WH"],
             "Светодиодный модуль": ["44002-3K", "44002-4K", "44002-DTW", "44002-27K"]
         },
-        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/soft-85_fix-ring_dark-lens_atom-9_85mm.svg",
-        "final_image": "soft-85_fix-ring_dark-lens_atom-9_85mm.svg"
+        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/soft-85_fix-ring_dark-lens_atom-9_85mm.svg"
     }, {
         "combo": {
             "Линза": ["43001-15", "43001-36", "43001-60"],
             "Декоративная рамка": ["41001-BK", "41001-WH", "41002-BK", "41002-WH"],
             "Светодиодный модуль": ["44003-3K", "44003-4K"]
         },
-        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/soft-85_fix-ring_slim-lens_atom-13_81mm.svg",
-        "final_image": "soft-85_fix-ring_slim-lens_atom-13_81mm.svg"
+        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/soft-85_fix-ring_slim-lens_atom-13_81mm.svg"
     }, {
         "combo": {
             "Линза": ["43001-15", "43001-36", "43001-60"],
             "Декоративная рамка": ["41001-BK", "41001-WH", "41002-BK", "41002-WH"],
             "Светодиодный модуль": ["44004-3K", "44004-4K"]
         },
-        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/soft-85_fix-ring_slim-lens_atom-16_111mm.svg",
-        "final_image": "soft-85_fix-ring_slim-lens_atom-16_111mm.svg"
+        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/soft-85_fix-ring_slim-lens_atom-16_111mm.svg"
     }, {
         "combo": {
             "Линза": ["43001-15", "43001-36", "43001-60"],
             "Декоративная рамка": ["41001-BK", "41001-WH", "41002-BK", "41002-WH"],
             "Светодиодный модуль": ["44001-3K", "44001-4K"]
         },
-        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/soft-85_fix-ring_slim-lens_atom-6_71mm.svg",
-        "final_image": "soft-85_fix-ring_slim-lens_atom-6_71mm.svg"
+        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/soft-85_fix-ring_slim-lens_atom-6_71mm.svg"
     }, {
         "combo": {
             "Линза": ["43001-15", "43001-36", "43001-60"],
             "Декоративная рамка": ["41001-BK", "41001-WH", "41002-BK", "41002-WH"],
             "Светодиодный модуль": ["44002-3K", "44002-4K", "44002-DTW", "44002-27K"]
         },
-        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/soft-85_fix-ring_slim-lens_atom-9_76mm.svg",
-        "final_image": "soft-85_fix-ring_slim-lens_atom-9_76mm.svg"
+        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/soft-85_fix-ring_slim-lens_atom-9_76mm.svg"
     }, {
         "combo": {
             "Линза": ["43002-18", "43002-38", "43002-50"],
             "Декоративная рамка": ["41005-BK", "41005-WH"],
             "Светодиодный модуль": ["44003-3K", "44003-4K"]
         },
-        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/twist-85_dark-lens_atom-13_75mm.svg",
-        "final_image": "twist-85_dark-lens_atom-13_75mm.svg"
+        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/twist-85_dark-lens_atom-13_75mm.svg"
     }, {
         "combo": {
             "Линза": ["43002-18", "43002-38", "43002-50"],
             "Декоративная рамка": ["41005-BK", "41005-WH"],
             "Светодиодный модуль": ["44004-3K", "44004-4K"]
         },
-        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/twist-85_dark-lens_atom-16_105mm.svg",
-        "final_image": "twist-85_dark-lens_atom-16_105mm.svg"
+        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/twist-85_dark-lens_atom-16_105mm.svg"
     }, {
         "combo": {
             "Линза": ["43002-18", "43002-38", "43002-50"],
             "Декоративная рамка": ["41005-BK", "41005-WH"],
             "Светодиодный модуль": ["44001-3K", "44001-4K"]
         },
-        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/twist-85_dark-lens_atom-6_65mm.svg",
-        "final_image": "twist-85_dark-lens_atom-6_65mm.svg"
+        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/twist-85_dark-lens_atom-6_65mm.svg"
     }, {
         "combo": {
             "Линза": ["43002-18", "43002-38", "43002-50"],
             "Декоративная рамка": ["41005-BK", "41005-WH"],
             "Светодиодный модуль": ["44002-3K", "44002-4K", "44002-DTW", "44002-27K"]
         },
-        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/twist-85_dark-lens_atom-9_70mm.svg",
-        "final_image": "twist-85_dark-lens_atom-9_70mm.svg"
+        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/twist-85_dark-lens_atom-9_70mm.svg"
     }, {
         "combo": {
             "Линза": ["43001-15", "43001-36", "43001-60"],
             "Декоративная рамка": ["41005-BK", "41005-WH"],
             "Светодиодный модуль": ["44003-3K", "44003-4K"]
         },
-        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/twist-85_slim-lens_atom-13_60mm.svg",
-        "final_image": "twist-85_slim-lens_atom-13_60mm.svg"
+        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/twist-85_slim-lens_atom-13_60mm.svg"
     }, {
         "combo": {
             "Линза": ["43001-15", "43001-36", "43001-60"],
             "Декоративная рамка": ["41005-BK", "41005-WH"],
             "Светодиодный модуль": ["44004-3K", "44004-4K"]
         },
-        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/twist-85_slim-lens_atom-16_90mm.svg",
-        "final_image": "twist-85_slim-lens_atom-16_90mm.svg"
+        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/twist-85_slim-lens_atom-16_90mm.svg"
     }, {
         "combo": {
             "Линза": ["43001-15", "43001-36", "43001-60"],
             "Декоративная рамка": ["41005-BK", "41005-WH"],
             "Светодиодный модуль": ["44001-3K", "44001-4K"]
         },
-        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/twist-85_slim-lens_atom-6_50mm.svg",
-        "final_image": "twist-85_slim-lens_atom-6_50mm.svg"
+        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/twist-85_slim-lens_atom-6_50mm.svg"
     }, {
         "combo": {
             "Линза": ["43001-15", "43001-36", "43001-60"],
             "Декоративная рамка": ["41005-BK", "41005-WH"],
             "Светодиодный модуль": ["44002-3K", "44002-4K", "44002-DTW", "44002-27K"]
         },
-        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/twist-85_slim-lens_atom-9_55mm.svg",
-        "final_image": "twist-85_slim-lens_atom-9_55mm.svg"
+        "final_drawing": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/drawings\/twist-85_slim-lens_atom-9_55mm.svg"
+    }, {
+        "combo": {
+            "Декоративная рамка": ["41003-BK", "41003-WH", "41004-BK", "41004-WH", "41006-BK", "41006-WH"]
+        },
+        "files": [{
+            "name": "Сборка и установка Фрейм Софт 85.pdf",
+            "file": "https:\/\/aws.massive.ru\/technolight\/public\/combo\/files\/ramocnye\/315\/Сборка и установка Фрейм Софт 85.pdf"
+        }]
     }],
-    "units": {
-        "current_a": " А",
-        "ip_class": " IP",
-        "length": " см",
-        "light_angle": "°",
-        "light_flow": " Лм",
-        "light_temperatures": " K",
-        "power": " Вт"
-    },
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, ultricies nunc. Nulla facilisi. Nullam ac nisi non eros gravida lacinia",
-    "videos": [{
-        "poster": "https:\/\/aws.massive.ru\/technolight\/public\/images\/video_posters\/01J1FNFX95CNAQCYYVN73V764P.jpg",
-        "video": "https:\/\/www.youtube.com\/embed\/WV_HGUpp0bA?si=YUGXr4-tq9leKy0e"
-    },{
-        "poster": "https:\/\/aws.massive.ru\/technolight\/images\/projects\/collage\/13.jpg",
-        "video": "https:\/\/www.youtube.com\/embed\/17orKkflArA?si=Tq78lY3xfTo9THLQ"
-    }],
+    "description": null,
+    "videos": [],
     "files": [{
-        "name": "Инструкция по сборке",
-        "file": "https:\/\/aws.massive.ru\/technolight\/2021\/09\/2021-09-30-16-00-00-1.pdf"
-    },{
-        "name": "Сертификаты",
-        "file": "https:\/\/yarusvsm.ruvall_about_product\/Сертификаты\/TECHNOLIGHT\/spot-42_cert.pdf"
-    },{
-        "name": "Фотометрические данные",
-        "file": "https:\/\/yarusvsm.ru\/all_about_product\/Фотометрические%20данные\/TECHNOLIGHT\/spot-42_ies_ldt.zip"
+        "name": "DOT 220V ALL",
+        "file": "https:\/\/aws.massive.ru\/widget-files\/uploads\/technolight_2024\/3D_Modules\/DOT220V_ALL.rar"
     }]
 }
