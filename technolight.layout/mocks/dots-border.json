@@ -181,7 +181,8 @@
             "form": "Форма",
             "armature_color": "Цвет",
             "ip_class": "Степень пыле-влагозащищенности",
-            "frame_type": "Поворотность"
+            "frame_type": "Поворотность",
+            "protection_class_ik": "Степень защиты IK"
         },
         "Светодиодный модуль": {
             "voltage": "Рабочее напряжение",
@@ -199,7 +200,6 @@
             "id": 1,
             "article": "41001-BK",
             "title": "Рамка Софт 85 круглая RAL 9005 черная",
-            "ip_class": 20,
             "price": 990,
             "old_price": 0,
             "sale": false,
@@ -215,13 +215,13 @@
             "light_temperatures": null,
             "light_angle": 0,
             "ugr": "",
-            "link": "\/products\/interernyi-svet\/dot-220v\/ramka-soft-85-kruglaia\/41001-BK"
+            "link": "\/products\/interernyi-svet\/dot-220v\/ramka-soft-85-kruglaia\/41001-BK",
+            "protection_class_ik": 7777777
         },
         "41001-WH": {
             "id": 2,
             "article": "41001-WH",
             "title": "Рамка Софт 85 круглая RAL 9016 белая",
-            "ip_class": 20,
             "price": 990,
             "old_price": 0,
             "sale": false,
@@ -237,13 +237,13 @@
             "light_temperatures": null,
             "light_angle": 0,
             "ugr": "",
-            "link": "\/products\/interernyi-svet\/dot-220v\/ramka-soft-85-kruglaia\/41001-WH"
+            "link": "\/products\/interernyi-svet\/dot-220v\/ramka-soft-85-kruglaia\/41001-WH",
+            "protection_class_ik": 7777777
         },
         "41002-BK": {
             "id": 3,
             "article": "41002-BK",
             "title": "Рамка Софт 85 IP54 круглая RAL 9005 черная",
-            "ip_class": 54,
             "price": 1680,
             "old_price": 0,
             "sale": false,
@@ -259,13 +259,13 @@
             "light_temperatures": null,
             "light_angle": 0,
             "ugr": "",
-            "link": "\/products\/interernyi-svet\/dot-220v\/ramka-soft-85-kruglaia-ip54\/41002-BK"
+            "link": "\/products\/interernyi-svet\/dot-220v\/ramka-soft-85-kruglaia-ip54\/41002-BK",
+            "protection_class_ik": 7777777
         },
         "41002-WH": {
             "id": 671,
             "article": "41002-WH",
             "title": "Рамка Софт 85 IP54 круглая RAL 9016 белая",
-            "ip_class": 54,
             "price": 1680,
             "old_price": 0,
             "sale": false,
@@ -281,13 +281,13 @@
             "light_temperatures": null,
             "light_angle": 0,
             "ugr": "",
-            "link": "\/products\/interernyi-svet\/dot-220v\/ramka-soft-85-kruglaia-ip54\/41002-WH"
+            "link": "\/products\/interernyi-svet\/dot-220v\/ramka-soft-85-kruglaia-ip54\/41002-WH",
+            "protection_class_ik": 7777777
         },
         "41003-BK": {
             "id": 672,
             "article": "41003-BK",
             "title": "Рамка Фрейм Софт 85 квадратная RAL 9005 черная",
-            "ip_class": 20,
             "price": 1220,
             "old_price": 0,
             "sale": false,
@@ -303,13 +303,13 @@
             "light_temperatures": null,
             "light_angle": 0,
             "ugr": "",
-            "link": "\/products\/interernyi-svet\/dot-220v\/ramka-freim-soft-85-kvadratnaia\/41003-BK"
+            "link": "\/products\/interernyi-svet\/dot-220v\/ramka-freim-soft-85-kvadratnaia\/41003-BK",
+            "protection_class_ik": 7777777
         },
         "41003-WH": {
             "id": 673,
             "article": "41003-WH",
             "title": "Рамка Фрейм Софт 85 квадратная RAL 9016 белая",
-            "ip_class": 20,
             "price": 1220,
             "old_price": 0,
             "sale": false,
@@ -325,13 +325,13 @@
             "light_temperatures": null,
             "light_angle": 0,
             "ugr": "",
-            "link": "\/products\/interernyi-svet\/dot-220v\/ramka-freim-soft-85-kvadratnaia\/41003-WH"
+            "link": "\/products\/interernyi-svet\/dot-220v\/ramka-freim-soft-85-kvadratnaia\/41003-WH",
+            "protection_class_ik": 7777777
         },
         "41004-BK": {
             "id": 668,
             "article": "41004-BK",
             "title": "Рамка Фрейм Софт 85 IP44 квадратная RAL 9005 черная",
-            "ip_class": 44,
             "price": 1780,
             "old_price": 0,
             "sale": false,
@@ -347,13 +347,13 @@
             "light_temperatures": null,
             "light_angle": 0,
             "ugr": "",
-            "link": "\/products\/interernyi-svet\/dot-220v\/ramka-freim-soft-85-ip44-kvadratnaia\/41004-BK"
+            "link": "\/products\/interernyi-svet\/dot-220v\/ramka-freim-soft-85-ip44-kvadratnaia\/41004-BK",
+            "protection_class_ik": 7777777
         },
         "41004-WH": {
             "id": 674,
             "article": "41004-WH",
             "title": "Рамка Фрейм Софт 85 IP44 квадратная RAL 9016 белая",
-            "ip_class": 44,
             "price": 1780,
             "old_price": 0,
             "sale": false,
@@ -369,13 +369,13 @@
             "light_temperatures": null,
             "light_angle": 0,
             "ugr": "",
-            "link": "\/products\/interernyi-svet\/dot-220v\/ramka-freim-soft-85-ip44-kvadratnaia\/41004-WH"
+            "link": "\/products\/interernyi-svet\/dot-220v\/ramka-freim-soft-85-ip44-kvadratnaia\/41004-WH",
+            "protection_class_ik": 7777777
         },
         "41005-BK": {
             "id": 4,
             "article": "41005-BK",
             "title": "Рамка Твист 85 круглая поворотная RAL 9005 черная",
-            "ip_class": 20,
             "price": 1220,
             "old_price": 0,
             "sale": false,
@@ -391,13 +391,13 @@
             "light_temperatures": null,
             "light_angle": 0,
             "ugr": "",
-            "link": "\/products\/interernyi-svet\/dot-220v\/ramka-tvist-85-kruglaia-povorotnaia\/41005-BK"
+            "link": "\/products\/interernyi-svet\/dot-220v\/ramka-tvist-85-kruglaia-povorotnaia\/41005-BK",
+            "protection_class_ik": 7777777
         },
         "41005-WH": {
             "id": 5,
             "article": "41005-WH",
             "title": "Рамка Твист 85 круглая поворотная RAL 9016 белая",
-            "ip_class": 20,
             "price": 1220,
             "old_price": 0,
             "sale": false,
@@ -413,13 +413,13 @@
             "light_temperatures": null,
             "light_angle": 0,
             "ugr": "",
-            "link": "\/products\/interernyi-svet\/dot-220v\/ramka-tvist-85-kruglaia-povorotnaia\/41005-WH"
+            "link": "\/products\/interernyi-svet\/dot-220v\/ramka-tvist-85-kruglaia-povorotnaia\/41005-WH",
+            "protection_class_ik": 7777777
         },
         "41006-BK": {
             "id": 6,
             "article": "41006-BK",
             "title": "Рамка Фрейм Твист 85 квадратная поворотная RAL 9005 черная",
-            "ip_class": 20,
             "price": 1220,
             "old_price": 0,
             "sale": false,
@@ -435,13 +435,13 @@
             "light_temperatures": null,
             "light_angle": 0,
             "ugr": "",
-            "link": "\/products\/interernyi-svet\/dot-220v\/ramka-freim-tvist-85-kvadratnaia-povorotnaia\/41006-BK"
+            "link": "\/products\/interernyi-svet\/dot-220v\/ramka-freim-tvist-85-kvadratnaia-povorotnaia\/41006-BK",
+            "protection_class_ik": 7777777
         },
         "41006-WH": {
             "id": 7,
             "article": "41006-WH",
             "title": "Рамка Фрейм Твист 85 квадратная поворотная RAL 9016 белая",
-            "ip_class": 20,
             "price": 1220,
             "old_price": 0,
             "sale": false,
@@ -457,13 +457,13 @@
             "light_temperatures": null,
             "light_angle": 0,
             "ugr": "",
-            "link": "\/products\/interernyi-svet\/dot-220v\/ramka-freim-tvist-85-kvadratnaia-povorotnaia\/41006-WH"
+            "link": "\/products\/interernyi-svet\/dot-220v\/ramka-freim-tvist-85-kvadratnaia-povorotnaia\/41006-WH",
+            "protection_class_ik": 7777777
         },
         "41007-BK": {
             "id": 19,
             "article": "41007-BK",
             "title": "Рамка двойная под круглые 85 RAL 9005 черная",
-            "ip_class": 20,
             "price": 990,
             "old_price": 0,
             "sale": false,
@@ -479,13 +479,13 @@
             "light_temperatures": null,
             "light_angle": 0,
             "ugr": "",
-            "link": "\/products\/interernyi-svet\/dot-220v\/ramka-dvoinaia-pod-kruglye-85\/41007-BK"
+            "link": "\/products\/interernyi-svet\/dot-220v\/ramka-dvoinaia-pod-kruglye-85\/41007-BK",
+            "protection_class_ik": 7777777
         },
         "41007-WH": {
             "id": 20,
             "article": "41007-WH",
             "title": "Рамка двойная под круглые 85 RAL 9016 белая",
-            "ip_class": 20,
             "price": 990,
             "old_price": 0,
             "sale": false,
@@ -501,13 +501,13 @@
             "light_temperatures": null,
             "light_angle": 0,
             "ugr": "",
-            "link": "\/products\/interernyi-svet\/dot-220v\/ramka-dvoinaia-pod-kruglye-85\/41007-WH"
+            "link": "\/products\/interernyi-svet\/dot-220v\/ramka-dvoinaia-pod-kruglye-85\/41007-WH",
+            "protection_class_ik": 7777777
         },
         "41008-BK": {
             "id": 21,
             "article": "41008-BK",
             "title": "Рамка двойная под квадратные 85 RAL 9005 черная",
-            "ip_class": 20,
             "price": 990,
             "old_price": 0,
             "sale": false,
@@ -523,13 +523,13 @@
             "light_temperatures": null,
             "light_angle": 0,
             "ugr": "",
-            "link": "\/products\/interernyi-svet\/dot-220v\/ramka-dvoinaia-pod-kvadratnye-85\/41008-BK"
+            "link": "\/products\/interernyi-svet\/dot-220v\/ramka-dvoinaia-pod-kvadratnye-85\/41008-BK",
+            "protection_class_ik": 7777777
         },
         "41008-WH": {
             "id": 22,
             "article": "41008-WH",
             "title": "Рамка двойная под квадратные 85 RAL 9016 белая",
-            "ip_class": 20,
             "price": 990,
             "old_price": 0,
             "sale": false,
@@ -545,13 +545,13 @@
             "light_temperatures": null,
             "light_angle": 0,
             "ugr": "",
-            "link": "\/products\/interernyi-svet\/dot-220v\/ramka-dvoinaia-pod-kvadratnye-85\/41008-WH"
+            "link": "\/products\/interernyi-svet\/dot-220v\/ramka-dvoinaia-pod-kvadratnye-85\/41008-WH",
+            "protection_class_ik": 7777777
         },
         "43001-08": {
             "id": 768,
             "article": "43001-08",
             "title": "Линза Слим  8° для Атом 6",
-            "ip_class": 0,
             "price": 940,
             "old_price": 0,
             "sale": false,
@@ -567,13 +567,13 @@
             "light_temperatures": null,
             "light_angle": 8,
             "ugr": "<19",
-            "link": "\/products\/interernyi-svet\/dot-220v\/linza-slim-8-dlia-atom-6\/43001-08"
+            "link": "\/products\/interernyi-svet\/dot-220v\/linza-slim-8-dlia-atom-6\/43001-08",
+            "protection_class_ik": 7777777
         },
         "43001-15": {
             "id": 675,
             "article": "43001-15",
             "title": "Линза Слим 15° для Атом 6",
-            "ip_class": 0,
             "price": 480,
             "old_price": 0,
             "sale": false,
@@ -589,13 +589,13 @@
             "light_temperatures": null,
             "light_angle": 15,
             "ugr": "<19",
-            "link": "\/products\/interernyi-svet\/dot-220v\/linzy-slim\/43001-15"
+            "link": "\/products\/interernyi-svet\/dot-220v\/linzy-slim\/43001-15",
+            "protection_class_ik": 7777777
         },
         "43001-36": {
             "id": 676,
             "article": "43001-36",
             "title": "Линза Слим 36° для Атом 6",
-            "ip_class": 0,
             "price": 480,
             "old_price": 0,
             "sale": false,
@@ -611,13 +611,13 @@
             "light_temperatures": null,
             "light_angle": 36,
             "ugr": "<19",
-            "link": "\/products\/interernyi-svet\/dot-220v\/linzy-slim\/43001-36"
+            "link": "\/products\/interernyi-svet\/dot-220v\/linzy-slim\/43001-36",
+            "protection_class_ik": 7777777
         },
         "43001-60": {
             "id": 677,
             "article": "43001-60",
             "title": "Линза Слим 60° для Атом 6",
-            "ip_class": 0,
             "price": 480,
             "old_price": 0,
             "sale": false,
@@ -633,13 +633,13 @@
             "light_temperatures": null,
             "light_angle": 60,
             "ugr": "<19",
-            "link": "\/products\/interernyi-svet\/dot-220v\/linzy-slim\/43001-60"
+            "link": "\/products\/interernyi-svet\/dot-220v\/linzy-slim\/43001-60",
+            "protection_class_ik": 7777777
         },
         "43002-18": {
             "id": 678,
             "article": "43002-18",
             "title": "Линза Дарк 18° для Атом 6-9-13",
-            "ip_class": 0,
             "price": 680,
             "old_price": 0,
             "sale": false,
@@ -655,13 +655,13 @@
             "light_temperatures": null,
             "light_angle": 18,
             "ugr": "<10",
-            "link": "\/products\/interernyi-svet\/dot-220v\/linzy-dark\/43002-18"
+            "link": "\/products\/interernyi-svet\/dot-220v\/linzy-dark\/43002-18",
+            "protection_class_ik": 7777777
         },
         "43002-38": {
             "id": 679,
             "article": "43002-38",
             "title": "Линза Дарк 38° для Атом 6-9-13",
-            "ip_class": 0,
             "price": 680,
             "old_price": 0,
             "sale": false,
@@ -677,13 +677,13 @@
             "light_temperatures": null,
             "light_angle": 38,
             "ugr": "<10",
-            "link": "\/products\/interernyi-svet\/dot-220v\/linzy-dark\/43002-38"
+            "link": "\/products\/interernyi-svet\/dot-220v\/linzy-dark\/43002-38",
+            "protection_class_ik": 7777777
         },
         "43002-50": {
             "id": 680,
             "article": "43002-50",
             "title": "Линза Дарк 50° для Атом 6-9-13",
-            "ip_class": 0,
             "price": 680,
             "old_price": 0,
             "sale": false,
@@ -699,13 +699,13 @@
             "light_temperatures": null,
             "light_angle": 50,
             "ugr": "<10",
-            "link": "\/products\/interernyi-svet\/dot-220v\/linzy-dark\/43002-50"
+            "link": "\/products\/interernyi-svet\/dot-220v\/linzy-dark\/43002-50",
+            "protection_class_ik": 7777777
         },
         "43003-30": {
             "id": 751,
             "article": "43003-30",
             "title": "Линза Дарк DTW 30° для Атом 10 DTW и Атом 13 TW",
-            "ip_class": 0,
             "price": 1010,
             "old_price": 0,
             "sale": false,
@@ -721,13 +721,13 @@
             "light_temperatures": null,
             "light_angle": 30,
             "ugr": "<10",
-            "link": "\/products\/interernyi-svet\/dot-220v\/linza-dark-dlia-atom-10-dtw-i-atom-13-tw\/43003-30"
+            "link": "\/products\/interernyi-svet\/dot-220v\/linza-dark-dlia-atom-10-dtw-i-atom-13-tw\/43003-30",
+            "protection_class_ik": 7777777
         },
         "44001-3K": {
             "id": 670,
             "article": "44001-3K",
             "title": "Светодиодный модуль Атом 6 34В 130мА 6Вт 540лм 3000К 93+",
-            "ip_class": 20,
             "price": 1880,
             "old_price": 0,
             "sale": false,
@@ -743,13 +743,13 @@
             "light_temperatures": 3000,
             "light_angle": 0,
             "ugr": "",
-            "link": "\/products\/interernyi-svet\/dot-220v\/svetodiodnyi-modul-atom-6\/44001-3K"
+            "link": "\/products\/interernyi-svet\/dot-220v\/svetodiodnyi-modul-atom-6\/44001-3K",
+            "protection_class_ik": 7777777
         },
         "44001-4K": {
             "id": 681,
             "article": "44001-4K",
             "title": "Светодиодный модуль Атом 6 34В 130мА 6Вт 560лм 4000К 93+",
-            "ip_class": 20,
             "price": 1880,
             "old_price": 0,
             "sale": false,
@@ -765,13 +765,13 @@
             "light_temperatures": 4000,
             "light_angle": 0,
             "ugr": "",
-            "link": "\/products\/interernyi-svet\/dot-220v\/svetodiodnyi-modul-atom-6\/44001-4K"
+            "link": "\/products\/interernyi-svet\/dot-220v\/svetodiodnyi-modul-atom-6\/44001-4K",
+            "protection_class_ik": 7777777
         },
         "44002-3K": {
             "id": 682,
             "article": "44002-3K",
             "title": "Светодиодный модуль Атом 9 36В 210мА 9Вт 950лм 3000К 93+",
-            "ip_class": 20,
             "price": 2000,
             "old_price": 0,
             "sale": false,
@@ -787,13 +787,13 @@
             "light_temperatures": 3000,
             "light_angle": 0,
             "ugr": "",
-            "link": "\/products\/interernyi-svet\/dot-220v\/svetodiodnyi-modul-atom-9\/44002-3K"
+            "link": "\/products\/interernyi-svet\/dot-220v\/svetodiodnyi-modul-atom-9\/44002-3K",
+            "protection_class_ik": 7777777
         },
         "44002-4K": {
             "id": 683,
             "article": "44002-4K",
             "title": "Светодиодный модуль Атом 9 36В 210мА 9Вт 980лм 4000К 93+",
-            "ip_class": 20,
             "price": 2000,
             "old_price": 0,
             "sale": false,
@@ -809,13 +809,13 @@
             "light_temperatures": 4000,
             "light_angle": 0,
             "ugr": "",
-            "link": "\/products\/interernyi-svet\/dot-220v\/svetodiodnyi-modul-atom-9\/44002-4K"
+            "link": "\/products\/interernyi-svet\/dot-220v\/svetodiodnyi-modul-atom-9\/44002-4K",
+            "protection_class_ik": 7777777
         },
         "44002-DTW": {
             "id": 752,
             "article": "44002-DTW",
             "title": "Светодиодный модуль Атом 10 36В 210мА 10Вт 1800-3000К 93+",
-            "ip_class": 20,
             "price": 2850,
             "old_price": 0,
             "sale": false,
@@ -831,13 +831,13 @@
             "light_temperatures": "1800-3000",
             "light_angle": 0,
             "ugr": "",
-            "link": "\/products\/interernyi-svet\/dot-220v\/svetodiodnyi-modul-atom-13\/44002-DTW"
+            "link": "\/products\/interernyi-svet\/dot-220v\/svetodiodnyi-modul-atom-13\/44002-DTW",
+            "protection_class_ik": 7777777
         },
         "44003-3K": {
             "id": 684,
             "article": "44003-3K",
             "title": "Светодиодный модуль Атом 13 34В 300мА 13Вт 1240лм 3000К 93+",
-            "ip_class": 20,
             "price": 2600,
             "old_price": 0,
             "sale": false,
@@ -853,13 +853,13 @@
             "light_temperatures": 3000,
             "light_angle": 0,
             "ugr": "",
-            "link": "\/products\/interernyi-svet\/dot-220v\/svetodiodnyi-modul-atom-13\/44003-3K"
+            "link": "\/products\/interernyi-svet\/dot-220v\/svetodiodnyi-modul-atom-13\/44003-3K",
+            "protection_class_ik": 7777777
         },
         "44003-4K": {
             "id": 685,
             "article": "44003-4K",
             "title": "Светодиодный модуль Атом 13 34В 300мА 13Вт 1280лм 4000К 93+",
-            "ip_class": 20,
             "price": 2600,
             "old_price": 0,
             "sale": false,
@@ -875,13 +875,13 @@
             "light_temperatures": 4000,
             "light_angle": 0,
             "ugr": "",
-            "link": "\/products\/interernyi-svet\/dot-220v\/svetodiodnyi-modul-atom-13\/44003-4K"
+            "link": "\/products\/interernyi-svet\/dot-220v\/svetodiodnyi-modul-atom-13\/44003-4K",
+            "protection_class_ik": 7777777
         },
         "44004-3K": {
             "id": 25,
             "article": "44004-3K",
             "title": "Светодиодный модуль Атом 16 34В 420мА 16Вт 1650 лм 3000К 93+",
-            "ip_class": 20,
             "price": 3600,
             "old_price": 0,
             "sale": false,
@@ -897,13 +897,13 @@
             "light_temperatures": 3000,
             "light_angle": 0,
             "ugr": "",
-            "link": "\/products\/interernyi-svet\/dot-220v\/svetodiodnyi-modul-atom-16\/44004-3K"
+            "link": "\/products\/interernyi-svet\/dot-220v\/svetodiodnyi-modul-atom-16\/44004-3K",
+            "protection_class_ik": 7777777
         },
         "44004-4K": {
             "id": 26,
             "article": "44004-4K",
             "title": "Светодиодный модуль Атом 16 34В 420мА 16Вт 1800 лм 4000К 93+",
-            "ip_class": 20,
             "price": 3600,
             "old_price": 0,
             "sale": false,
@@ -919,13 +919,13 @@
             "light_temperatures": 4000,
             "light_angle": 0,
             "ugr": "",
-            "link": "\/products\/interernyi-svet\/dot-220v\/svetodiodnyi-modul-atom-16\/44004-4K"
+            "link": "\/products\/interernyi-svet\/dot-220v\/svetodiodnyi-modul-atom-16\/44004-4K",
+            "protection_class_ik": 7777777
         },
         "45001-02": {
             "id": 686,
             "article": "45001-02",
             "title": "Драйвер тока 6Вт 30-40В 130мА TRIAC для Атом 6 диммируемый",
-            "ip_class": 20,
             "price": 1500,
             "old_price": 0,
             "sale": false,
@@ -941,13 +941,13 @@
             "light_temperatures": null,
             "light_angle": 0,
             "ugr": "",
-            "link": "\/products\/interernyi-svet\/dot-220v\/draiver-toka-6vt-triac\/45001-02"
+            "link": "\/products\/interernyi-svet\/dot-220v\/draiver-toka-6vt-triac\/45001-02",
+            "protection_class_ik": 7777777
         },
         "45002-02": {
             "id": 687,
             "article": "45002-02",
             "title": "Драйвер тока 9Вт 30-40В 210мА TRIAC для Атом 9 диммируемый",
-            "ip_class": 20,
             "price": 1500,
             "old_price": 0,
             "sale": false,
@@ -963,13 +963,13 @@
             "light_temperatures": null,
             "light_angle": 0,
             "ugr": "",
-            "link": "\/products\/interernyi-svet\/dot-220v\/draiver-toka-9vt-triac\/45002-02"
+            "link": "\/products\/interernyi-svet\/dot-220v\/draiver-toka-9vt-triac\/45002-02",
+            "protection_class_ik": 7777777
         },
         "45003-02": {
             "id": 688,
             "article": "45003-02",
             "title": "Драйвер тока 13Вт 30-40В 300мА TRIAC для Атом 13 диммируемый",
-            "ip_class": 20,
             "price": 1760,
             "old_price": 0,
             "sale": false,
@@ -985,13 +985,13 @@
             "light_temperatures": null,
             "light_angle": 0,
             "ugr": "",
-            "link": "\/products\/interernyi-svet\/dot-220v\/draiver-toka-13vt-triac\/45003-02"
+            "link": "\/products\/interernyi-svet\/dot-220v\/draiver-toka-13vt-triac\/45003-02",
+            "protection_class_ik": 7777777
         },
         "45004-02": {
             "id": 27,
             "article": "45004-02",
             "title": "Драйвер тока 16Вт 30-40В 420мА TRIAC для Атом 16 диммируемый",
-            "ip_class": 20,
             "price": 2070,
             "old_price": 0,
             "sale": false,
@@ -1007,17 +1007,19 @@
             "light_temperatures": null,
             "light_angle": 0,
             "ugr": "",
-            "link": "\/products\/interernyi-svet\/dot-220v\/draiver-toka-16vt-triac\/45004-02"
+            "link": "\/products\/interernyi-svet\/dot-220v\/draiver-toka-16vt-triac\/45004-02",
+            "protection_class_ik": 7777777
         }
     },
     "units": {
         "color_rendering_index": "+",
-        "ip_class": " IP",
+        "ip_class": "IP",
         "light_angle": "°",
         "light_flow": " Лм",
         "light_temperatures": " K",
         "power": " Вт",
-        "voltage": " В"
+        "voltage": " В",
+        "protection_class_ik": "IK"
     },
     "combos": [{
         "combo": {
