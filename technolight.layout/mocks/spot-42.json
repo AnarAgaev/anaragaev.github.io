@@ -766,5 +766,6 @@
             "accessories": [],
             "tags": []
         }]
-    }
+    },
+    "is_admin": true
 }
