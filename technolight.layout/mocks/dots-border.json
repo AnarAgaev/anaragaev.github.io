@@ -1,6 +1,6 @@
 {
     "id": 1,
-    "is_admin": true,
+    "is_admin": false,
     "steps": {
         "Декоративная рамка": [
             ["41001-BK"],
@@ -162,7 +162,6 @@
             "light_angle": "Угол рассеивания"
         }
     },
-    "hardFilterSteps": ["Декоративная рамка"],
     "images": {
         "41001-BK": "https:\/\/aws.massive.ru\/technolight\/public\/images\/dots\/konfigurator_dotov_s_ramkoy\/41001-bk.jpg",
         "41001-WH": "https:\/\/aws.massive.ru\/technolight\/public\/images\/dots\/konfigurator_dotov_s_ramkoy\/41001-wh.jpg",

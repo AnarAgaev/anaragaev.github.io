@@ -164,7 +164,6 @@
             "light_angle": "Угол рассеивания"
         }
     },
-    "hardFilterSteps": [],
     "images": {
         "41001-BK": "https:\/\/aws.massive.ru\/technolight\/public\/images\/dots\/konfigurator_dotov_s_dvonoy_ramkoy\/41001-bk.jpg",
         "41001-WH": "https:\/\/aws.massive.ru\/technolight\/public\/images\/dots\/konfigurator_dotov_s_dvonoy_ramkoy\/41001-wh.jpg",
