@@ -1,0 +1,122 @@
+{
+    "data": {
+        "id": 287,
+        "alias": "montaznyi-komplekt-soft-mini",
+        "title": "Монтажный комплект СОФТ мини",
+        "type": "series",
+        "is_new": true,
+        "images": [{
+            "name": "black",
+            "image": "public\/images\/category\/montaznyi-komplekt-soft-mini_black.webp"
+        }, {
+            "name": "white",
+            "image": "public\/images\/category\/montaznyi-komplekt-soft-mini_white.webp"
+        }, {
+            "name": "gold",
+            "image": "public\/images\/category\/montaznyi-komplekt-soft-mini_gold.webp"
+        }],
+        "ip_class": null,
+        "videos": null,
+        "files": [],
+        "description": "<p>Модульные светильники — это эффективное решение для точечного и общего освещения. Сочетают в себе преимущества стандартизации с преимуществами настройки. Создают возможность быстрого обновления, адаптивны к интерьеру и удобны в обслуживании. Расширяют границы производительности при создании хорошего светодизайна.<\/p>",
+        "badges": ["Новый"],
+        "gallery": [],
+        "fields": {
+            "armature_color": [{
+                "value": "Чёрный",
+                "products": [763]
+            }, {
+                "value": "Латунь",
+                "products": [764]
+            }, {
+                "value": "Белый",
+                "products": [765]
+            }]
+        },
+        "translate": {
+            "armature_color": "Цвет"
+        },
+        "specifications": {
+            "Тип упаковки": "PAP (код 20)",
+            "Производитель": "Технолайт"
+        },
+        "characteristics": [],
+        "units": {},
+        "products_available": [{
+            "id": 763,
+            "image": "https:\/\/aws.technolight.ru\/databus\/products\/technolight\/201626\/big\/50001-bk.jpg?v=1724400605",
+            "article_id": 201626,
+            "article": "50001-BK",
+            "title": "Монтажный компплект для накладного светильника Софт Мини IP44 RAL 9005 черный",
+            "price": 3520,
+            "old_price": 0,
+            "sale": false,
+            "description": "<p>Монтажный комплект СОФТ МИНИ<\/p>\n<p>Монтажный комплект СОФТ МИНИ — это профессиональное решение для сборки Накладного модульного светильника. Корпусы серии представлены в трех цветовых вариациях - белый (RAL9016) и черный (RAL9005) из алюминия и натуральная латунь.<\/p>\n<p>Латунный корпус отлично подходит в современные интерьеры и сочетается с элементами мебели и декора.<\/p>\n<p>Удобство и легкость использования данного комплекта  позволяет сделать незаметный переход между потолком и светильником и увеличить скорость монтажа.<\/p>",
+            "ignore_errors": 0,
+            "armature_color": "Чёрный",
+            "pivot": {
+                "product_category_id": 287,
+                "product_id": 763
+            },
+            "drawings": ["https:\/\/aws.technolight.ru\/technolight\/public\/images\/drawings\/50001-BR.svg?v=1724400605"],
+            "link": null,
+            "root": ["Интерьерный"],
+            "collection": ["DOT 220V"],
+            "category": ["Накладные монтажные комплекты"],
+            "series": ["Монтажный комплект СОФТ мини"],
+            "accessories": [],
+            "tags": [],
+            "ban_sale": true
+        }, {
+            "id": 764,
+            "image": "https:\/\/aws.technolight.ru\/databus\/products\/technolight\/201627\/big\/50001-br.jpg?v=1724400605",
+            "article_id": 201627,
+            "article": "50001-BR",
+            "title": "Монтажный компплект для накладного светильника Софт Мини IP44  Латунь",
+            "price": 7310,
+            "old_price": 0,
+            "sale": false,
+            "description": "<p>Монтажный комплект СОФТ МИНИ<\/p>\n<p>Монтажный комплект СОФТ МИНИ — это профессиональное решение для сборки Накладного модульного светильника. Корпусы серии представлены в трех цветовых вариациях - белый (RAL9016) и черный (RAL9005) из алюминия и натуральная латунь.<\/p>\n<p>Латунный корпус отлично подходит в современные интерьеры и сочетается с элементами мебели и декора.<\/p>\n<p>Удобство и легкость использования данного комплекта  позволяет сделать незаметный переход между потолком и светильником и увеличить скорость монтажа.<\/p>",
+            "ignore_errors": 0,
+            "armature_color": "Латунь",
+            "pivot": {
+                "product_category_id": 287,
+                "product_id": 764
+            },
+            "drawings": ["https:\/\/aws.technolight.ru\/technolight\/public\/images\/drawings\/50001-BR.svg?v=1724400605"],
+            "link": null,
+            "root": ["Интерьерный"],
+            "collection": ["DOT 220V"],
+            "category": ["Накладные монтажные комплекты"],
+            "series": ["Монтажный комплект СОФТ мини"],
+            "accessories": [],
+            "tags": [],
+            "ban_sale": false
+        }, {
+            "id": 765,
+            "image": "https:\/\/aws.technolight.ru\/databus\/products\/technolight\/201628\/big\/50001-wh.jpg?v=1724400605",
+            "article_id": 201628,
+            "article": "50001-WH",
+            "title": "Монтажный компплект для накладного светильника Софт Мини IP44 RAL 9016 белый",
+            "price": 3520,
+            "old_price": 0,
+            "sale": false,
+            "description": "<p>Монтажный комплект СОФТ МИНИ<\/p>\n<p>Монтажный комплект СОФТ МИНИ — это профессиональное решение для сборки Накладного модульного светильника. Корпусы серии представлены в трех цветовых вариациях - белый (RAL9016) и черный (RAL9005) из алюминия и натуральная латунь.<\/p>\n<p>Латунный корпус отлично подходит в современные интерьеры и сочетается с элементами мебели и декора.<\/p>\n<p>Удобство и легкость использования данного комплекта  позволяет сделать незаметный переход между потолком и светильником и увеличить скорость монтажа.<\/p>",
+            "ignore_errors": 0,
+            "armature_color": "Белый",
+            "pivot": {
+                "product_category_id": 287,
+                "product_id": 765
+            },
+            "drawings": ["https:\/\/aws.technolight.ru\/technolight\/public\/images\/drawings\/50001-BR.svg?v=1724400605"],
+            "link": null,
+            "root": ["Интерьерный"],
+            "collection": ["DOT 220V"],
+            "category": ["Накладные монтажные комплекты"],
+            "series": ["Монтажный комплект СОФТ мини"],
+            "accessories": [],
+            "tags": []
+        }]
+    },
+    "is_admin":true
+}
