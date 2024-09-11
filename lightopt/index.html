@@ -256,10 +256,10 @@
                   <div class="custom-select__top sort__quantity-top"><div class="custom-select__value">12</div></div>
                   <div class="custom-select__drop custom-select__drop--quantity">
                     <ul class="custom-select__list">
-                      <li class="custom-select__item"><div class="custom-select__option">12</div></li>
-                      <li class="custom-select__item"><div class="custom-select__option">24</div></li>
-                      <li class="custom-select__item"><div class="custom-select__option">48</div></li>
-                      <li class="custom-select__item"><div class="custom-select__option">96</div></li>
+                      <li class="custom-select__item"><div class="custom-select__option custom-select__option_center">12</div></li>
+                      <li class="custom-select__item"><div class="custom-select__option custom-select__option_center">24</div></li>
+                      <li class="custom-select__item"><div class="custom-select__option custom-select__option_center">48</div></li>
+                      <li class="custom-select__item"><div class="custom-select__option custom-select__option_center">96</div></li>
                     </ul>
                   </div>
                 </div>
@@ -293,77 +293,8 @@
             </div>
           </div>
           <div class="catalog-content">
-            <div class="catalog-filters">
-              <div class="catalog-filter">
-                <div class="catalog-filter__top">
-                  <h3 class="catalog-filter__title">тип светильников</h3>
-                  <div class="catalog-filter__toggle"></div>
-                </div>
-                <div class="catalog-filter__bottom">
-                  <div class="range">
-                    <div class="range-slider"><span class="range-selected"></span></div>
-                    <div class="range-input">
-                      <input class="min" type="range" min="0" max="1000" value="300" step="10" >
-                      <input class="max" type="range" min="0" max="1000" value="700" step="10" >
-                    </div>
-                    <div class="range-price">
-                      <input class="price-min" type="number" name="min" value="300" >
-                      <input class="price-max" type="number" name="max" value="700" >
-                    </div>
-                  </div>
-                  <ul class="catalog-filter__list">
-                    <li class="catalog-filter__item">
-                      <label class="custom-checkbox">
-                        <input class="custom-checkbox__input" type="checkbox" >
-                        <span class="custom-checkbox__text">Новый</span>
-                        <span class="custom-checkbox__quantity">22</span>
-                      </label>
-                    </li>
-                    <li class="catalog-filter__item">
-                      <label class="custom-checkbox">
-                        <input class="custom-checkbox__input" type="checkbox" >
-                        <span class="custom-checkbox__text">Распродажа</span>
-                        <span class="custom-checkbox__quantity">30</span>
-                      </label>
-                    </li>
-                    <li class="catalog-filter__item">
-                      <label class="custom-checkbox">
-                        <input class="custom-checkbox__input" type="checkbox" >
-                        <span class="custom-checkbox__text">Под заказ</span>
-                        <span class="custom-checkbox__quantity">0</span>
-                      </label>
-                    </li>
-                    <li class="catalog-filter__item">
-                      <label class="custom-checkbox">
-                        <input class="custom-checkbox__input" type="checkbox" >
-                        <span class="custom-checkbox__text">В наличии</span>
-                        <span class="custom-checkbox__quantity">31</span>
-                      </label>
-                    </li>
-                    <li class="catalog-filter__item">
-                      <label class="custom-checkbox">
-                        <input class="custom-checkbox__input" type="checkbox" >
-                        <span class="custom-checkbox__text">Участник TV передачи</span>
-                        <span class="custom-checkbox__quantity">1</span>
-                      </label>
-                    </li>
-                    <li class="catalog-filter__item">
-                      <label class="custom-checkbox">
-                        <input class="custom-checkbox__input" type="checkbox" >
-                        <span class="custom-checkbox__text">Есть 3D модель</span>
-                        <span class="custom-checkbox__quantity">2</span>
-                      </label>
-                    </li>
-                    <li class="catalog-filter__item">
-                      <label class="custom-checkbox">
-                        <input class="custom-checkbox__input" type="checkbox" >
-                        <span class="custom-checkbox__text">Регулировка по высоте</span>
-                        <span class="custom-checkbox__quantity">5</span>
-                      </label>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+            <!-- Видимость блока с фильтрами на мобильных переключаем классом .visible-->
+            <div class="catalog-filters visible">
               <div class="catalog-filter catalog-filter--open">
                 <div class="catalog-filter__top">
                   <h3 class="catalog-filter__title catalog-filter__title--active">цена</h3>
@@ -371,20 +302,26 @@
                 </div>
                 <div class="catalog-filter__bottom">
                   <div class="range">
-                    <div class="range-slider"><span class="range-selected"></span></div>
-                    <div class="range-input">
-                      <input class="min" type="range" min="0" max="1000" value="300" step="10" >
-                      <input class="max" type="range" min="0" max="1000" value="700" step="10" >
+                    <div class="range-slider">
+                      <!-- Если нужно выставить значение, то для .range-selected рассчитываем минимальное значение и ставим его в left в %, также рассчитываем большее значение и ставим его в right в %-->
+                      <span class="range-selected" style="left: 15.7447%; right: 57.4468%;"></span>
                     </div>
-                    <div class="range-price">
-                      <input class="price-min" type="number" name="min" value="300" >
-                      <input class="price-max" type="number" name="max" value="700" >
+                    <div class="range-input">
+                      <!-- Внутри .range-input не должно ничего быть кроме input(ов)!!!-->
+                      <!-- По дефолту в обо значения ставим min и max - минимальное и максимальное значения-->
+                      <!-- Если у свойства есть дефолтные значения, то устанавливаем их в соответствующие инпуты-->
+                      <input type="range" min="350" max="2700" value="720" step="10" name="min" >
+                      <input type="range" min="350" max="2700" value="1350" step="10" name="max" >
+                    </div>
+                    <div class="range-value">
+                      <input type="number" name="price_min" value="720" data-type="min" >
+                      <input type="number" name="price_max" value="1350" data-type="max" >
                     </div>
                   </div>
                   <ul class="catalog-filter__list">
                     <li class="catalog-filter__item">
                       <label class="custom-checkbox">
-                        <input class="custom-checkbox__input" type="checkbox" >
+                        <input class="custom-checkbox__input" type="checkbox" name="new" value="true" >
                         <div class="badge badge--black">new</div>
                         <span class="custom-checkbox__text">Новый</span>
                         <span class="custom-checkbox__quantity">22</span>
@@ -392,8 +329,109 @@
                     </li>
                     <li class="catalog-filter__item">
                       <label class="custom-checkbox">
-                        <input class="custom-checkbox__input" type="checkbox" >
+                        <input class="custom-checkbox__input" type="checkbox" name="sale" value="true" >
                         <div class="badge badge--red">sale</div>
+                        <span class="custom-checkbox__text">Распродажа</span>
+                        <span class="custom-checkbox__quantity">30</span>
+                      </label>
+                    </li>
+                    <li class="catalog-filter__item">
+                      <label class="custom-checkbox">
+                        <input class="custom-checkbox__input" type="checkbox" name="in_order" value="true" >
+                        <span class="custom-checkbox__text">Под заказ</span>
+                        <span class="custom-checkbox__quantity">0</span>
+                      </label>
+                    </li>
+                    <li class="catalog-filter__item">
+                      <label class="custom-checkbox">
+                        <input class="custom-checkbox__input" type="checkbox" name="in_stock" value="true" >
+                        <span class="custom-checkbox__text">В наличии</span>
+                        <span class="custom-checkbox__quantity">31</span>
+                      </label>
+                    </li>
+                    <li class="catalog-filter__item">
+                      <label class="custom-checkbox">
+                        <input class="custom-checkbox__input" type="checkbox" name="tv" value="true" >
+                        <span class="custom-checkbox__text">Участник TV передачи</span>
+                        <span class="custom-checkbox__quantity">1</span>
+                      </label>
+                    </li>
+                    <li class="catalog-filter__item">
+                      <label class="custom-checkbox">
+                        <input class="custom-checkbox__input" type="checkbox" name="3d" value="true" >
+                        <span class="custom-checkbox__text">Есть 3D модель</span>
+                        <span class="custom-checkbox__quantity">2</span>
+                      </label>
+                    </li>
+                    <li class="catalog-filter__item">
+                      <label class="custom-checkbox">
+                        <input class="custom-checkbox__input" type="checkbox" name="height_control" value="true" >
+                        <span class="custom-checkbox__text">Регулировка по высоте</span>
+                        <span class="custom-checkbox__quantity">5</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="catalog-filter">
+                <div class="catalog-filter__top">
+                  <h3 class="catalog-filter__title">IP</h3>
+                  <div class="catalog-filter__toggle"></div>
+                </div>
+                <div class="catalog-filter__bottom">
+                  <ul class="catalog-filter__list">
+                    <li class="catalog-filter__item">
+                      <label class="custom-checkbox">
+                        <input class="custom-checkbox__input" type="checkbox" name="IP" value="20" >
+                        <span class="custom-checkbox__text">20</span>
+                        <span class="custom-checkbox__quantity">1069</span>
+                      </label>
+                    </li>
+                    <li class="catalog-filter__item">
+                      <label class="custom-checkbox">
+                        <input class="custom-checkbox__input" type="checkbox" name="IP" value="21" >
+                        <span class="custom-checkbox__text">21</span>
+                        <span class="custom-checkbox__quantity">125</span>
+                      </label>
+                    </li>
+                    <li class="catalog-filter__item">
+                      <label class="custom-checkbox">
+                        <input class="custom-checkbox__input" type="checkbox" name="IP" value="44" >
+                        <span class="custom-checkbox__text">44</span>
+                        <span class="custom-checkbox__quantity">7</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="catalog-filter">
+                <div class="catalog-filter__top">
+                  <h3 class="catalog-filter__title">тип светильников</h3>
+                  <div class="catalog-filter__toggle"></div>
+                </div>
+                <div class="catalog-filter__bottom">
+                  <div class="range">
+                    <div class="range-slider"><span class="range-selected" style="left: 0%; right: 0%"></span></div>
+                    <div class="range-input">
+                      <input type="range" min="0" max="1000" value="0" step="10" name="min" >
+                      <input type="range" min="0" max="1000" value="1000" step="10" name="max" >
+                    </div>
+                    <div class="range-value">
+                      <input type="number" name="" value="0" data-type="min" >
+                      <input type="number" name="" value="1000" data-type="max" >
+                    </div>
+                  </div>
+                  <ul class="catalog-filter__list">
+                    <li class="catalog-filter__item">
+                      <label class="custom-checkbox">
+                        <input class="custom-checkbox__input" type="checkbox" >
+                        <span class="custom-checkbox__text">Новый</span>
+                        <span class="custom-checkbox__quantity">22</span>
+                      </label>
+                    </li>
+                    <li class="catalog-filter__item">
+                      <label class="custom-checkbox">
+                        <input class="custom-checkbox__input" type="checkbox" >
                         <span class="custom-checkbox__text">Распродажа</span>
                         <span class="custom-checkbox__quantity">30</span>
                       </label>
@@ -734,65 +772,6 @@
               <div class="catalog-filter">
                 <div class="catalog-filter__top">
                   <h3 class="catalog-filter__title">цветовая температура</h3>
-                  <div class="catalog-filter__toggle"></div>
-                </div>
-                <div class="catalog-filter__bottom">
-                  <ul class="catalog-filter__list">
-                    <li class="catalog-filter__item">
-                      <label class="custom-checkbox">
-                        <input class="custom-checkbox__input" type="checkbox" >
-                        <span class="custom-checkbox__text">Новый</span>
-                        <span class="custom-checkbox__quantity">22</span>
-                      </label>
-                    </li>
-                    <li class="catalog-filter__item">
-                      <label class="custom-checkbox">
-                        <input class="custom-checkbox__input" type="checkbox" >
-                        <span class="custom-checkbox__text">Распродажа</span>
-                        <span class="custom-checkbox__quantity">30</span>
-                      </label>
-                    </li>
-                    <li class="catalog-filter__item">
-                      <label class="custom-checkbox">
-                        <input class="custom-checkbox__input" type="checkbox" >
-                        <span class="custom-checkbox__text">Под заказ</span>
-                        <span class="custom-checkbox__quantity">0</span>
-                      </label>
-                    </li>
-                    <li class="catalog-filter__item">
-                      <label class="custom-checkbox">
-                        <input class="custom-checkbox__input" type="checkbox" >
-                        <span class="custom-checkbox__text">В наличии</span>
-                        <span class="custom-checkbox__quantity">31</span>
-                      </label>
-                    </li>
-                    <li class="catalog-filter__item">
-                      <label class="custom-checkbox">
-                        <input class="custom-checkbox__input" type="checkbox" >
-                        <span class="custom-checkbox__text">Участник TV передачи</span>
-                        <span class="custom-checkbox__quantity">1</span>
-                      </label>
-                    </li>
-                    <li class="catalog-filter__item">
-                      <label class="custom-checkbox">
-                        <input class="custom-checkbox__input" type="checkbox" >
-                        <span class="custom-checkbox__text">Есть 3D модель</span>
-                        <span class="custom-checkbox__quantity">2</span>
-                      </label>
-                    </li>
-                    <li class="catalog-filter__item">
-                      <label class="custom-checkbox">
-                        <input class="custom-checkbox__input" type="checkbox" >
-                        <span class="custom-checkbox__text">Регулировка по высоте</span>
-                        <span class="custom-checkbox__quantity">5</span>
-                      </label>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="catalog-filter">
-                <div class="catalog-filter__top">
-                  <h3 class="catalog-filter__title">IP</h3>
                   <div class="catalog-filter__toggle"></div>
                 </div>
                 <div class="catalog-filter__bottom">
