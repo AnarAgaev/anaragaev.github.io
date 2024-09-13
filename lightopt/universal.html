@@ -342,15 +342,23 @@
         </div>
       </section>
       <section class="pagination">
-        <div class="pagination__btns">
-          <button class="btn--white btn-reset pagination-btn pagination-btn--left"></button>
-          <button class="btn--white btn-reset pagination-btn">1</button>
-          <button class="btn--white btn-reset pagination-btn">2</button>
-          <button class="btn--white btn-reset pagination-btn">3</button>
-          <button class="btn--white btn-reset pagination-btn">4</button>
-          <button class="btn--white btn-reset pagination-btn">...</button>
-          <button class="btn--white btn-reset pagination-btn">25</button>
-          <button class="btn--white btn-reset pagination-btn pagination-btn--right"></button>
+        <!-- Правила формирования URL...
+- Первая страница показывается всегда - вместо кнопки В начало
+- Последняя страница показывается всегда - вместо кнопки В конец
+- Когда стоим на первой блокируем кнопку Предыдущая (2 стрелки влево) С помощью класса .disabled
+- Когда стоим на последней блокируем кнопку Следующая (2 стрелки вправо) С помощью класса .disabled
+- Всегда показываем текущую и 1 страницу до и 1 страницу после
+- Пропуски между страницами заменяем на span.btn--white.pagination-btn.ellipsis ...
+-->
+        <div class="pagination__btns" id="pagination">
+          <!-- Блокируем кнопки с помощью класса .disabled-->
+          <a class="btn--white pagination-btn start disabled" href="#!" title="Предыдущая"></a>
+          <a class="btn--white pagination-btn active" href="#!">1</a>
+          <a class="btn--white pagination-btn" href="#!">2</a>
+          <a class="btn--white pagination-btn" href="#!">3</a>
+          <span class="btn--white pagination-btn ellipsis">...</span>
+          <a class="btn--white pagination-btn" href="#!">25</a>
+          <a class="btn--white pagination-btn end" href="#!" title="Следующая"></a>
         </div>
       </section>
     </main>
@@ -438,6 +446,13 @@
         </a>
       </nav>
     </footer>
+    <div class="spinner" id="spinner">
+      <div class="spinner__body">
+        <div class="spinner__item"></div>
+        <div class="spinner__item"></div>
+        <div class="spinner__item"></div>
+      </div>
+    </div>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js" defer></script>
     <script src="js/pages/universal.min.js" defer></script>

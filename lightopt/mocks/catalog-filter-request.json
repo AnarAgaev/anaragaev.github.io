@@ -1,0 +1,181 @@
+{
+    "data": [{
+        "id": 8130,
+        "title": "Подвесной светильник Arte Lamp TRENTO A9291SP-1CC",
+        "new": true,
+        "sale": true,
+        "image": "https:\/\/ms.fandeco.ru\/assets\/images\/products\/1251\/big\/a9291sp-1cc.jpg",
+        "show_artikul": "A9291SP-1CC",
+        "in_stock": 0,
+        "price": 2080,
+        "url": "\/products\/8130"
+    }, {
+        "id": 8122,
+        "title": "Подвесной светильник Arte Lamp OGLIO A9273SP-1CC",
+        "new": false,
+        "image": "https:\/\/ms.fandeco.ru\/assets\/images\/products\/4007\/big\/a9273sp-1cc.jpg",
+        "show_artikul": "A9273SP-1CC",
+        "in_stock": 0,
+        "price": 5630,
+        "url": "\/products\/8122"
+    }, {
+        "id": 8126,
+        "title": "Подвесной светильник Arte Lamp FERRICO A9256SP-1BG",
+        "new": false,
+        "image": "https:\/\/ms.fandeco.ru\/assets\/images\/products\/3985\/big\/a9256sp-1bg.jpg",
+        "show_artikul": "A9256SP-1BG",
+        "in_stock": 0,
+        "price": 5430,
+        "url": "\/products\/8126"
+    }, {
+        "id": 8174,
+        "title": "Подвесной светильник Arte Lamp HALL A9247SP-1AB",
+        "new": false,
+        "image": "https:\/\/ms.fandeco.ru\/assets\/images\/products\/3980\/big\/a9247sp-1ab.jpg",
+        "show_artikul": "A9247SP-1AB",
+        "in_stock": 0,
+        "price": 2700,
+        "url": "\/products\/8174"
+    }, {
+        "id": 8175,
+        "title": "Светильник Arte Lamp CUBES A9247SP-1SS",
+        "new": false,
+        "image": "https:\/\/ms.fandeco.ru\/assets\/images\/products\/3981\/big\/a9247sp-1ss.jpg",
+        "show_artikul": "A9247SP-1SS",
+        "in_stock": 0,
+        "price": 1800,
+        "url": "\/products\/8175"
+    }, {
+        "id": 8125,
+        "title": "Подвесной светильник Arte Lamp PASSATO A9255SP-1BG",
+        "new": false,
+        "image": "https:\/\/ms.fandeco.ru\/assets\/images\/products\/3984\/big\/a9255sp-1bg-1.jpg",
+        "show_artikul": "A9255SP-1BG",
+        "in_stock": 0,
+        "price": 2700,
+        "url": "\/products\/8125"
+    }, {
+        "id": 8190,
+        "title": "Подвесной светильник Arte Lamp KIDS A9222SP-1WH",
+        "new": false,
+        "image": "https:\/\/ms.fandeco.ru\/assets\/images\/products\/3952\/big\/a9222sp-1wh.jpg",
+        "show_artikul": "A9222SP-1WH",
+        "in_stock": 0,
+        "price": 900,
+        "url": "\/products\/8190"
+    }, {
+        "id": 8132,
+        "title": "Подвесной светильник Arte Lamp RICARDO A9186SP-1CC",
+        "new": false,
+        "image": "https:\/\/ms.fandeco.ru\/assets\/images\/products\/1217\/big\/a9186sp-1cc.jpg",
+        "show_artikul": "A9186SP-1CC",
+        "in_stock": 0,
+        "price": 1020,
+        "url": "\/products\/8132"
+    }, {
+        "id": 8114,
+        "title": "Подвесной светильник Arte Lamp PANDORA A9183SP-1BK",
+        "new": false,
+        "image": "https:\/\/ms.fandeco.ru\/assets\/images\/products\/1209\/big\/a9183sp-1bk-1.jpg",
+        "show_artikul": "A9183SP-1BK",
+        "in_stock": 4,
+        "price": 7990,
+        "url": "\/products\/8114"
+    }, {
+        "id": 8104,
+        "title": "Подвесной светильник Arte Lamp CICLONE A9155SP-1WH",
+        "new": false,
+        "image": "https:\/\/ms.fandeco.ru\/assets\/images\/products\/1204\/big\/a9155sp-1wh.jpg",
+        "show_artikul": "A9155SP-1WH",
+        "in_stock": 0,
+        "price": 9930,
+        "url": "\/products\/8104"
+    }, {
+        "id": 8127,
+        "title": "Подвесной светильник Arte Lamp BENE A9179SP-1CK",
+        "new": false,
+        "image": "https:\/\/ms.fandeco.ru\/assets\/images\/products\/3917\/big\/a9179sp-1ck.jpg",
+        "show_artikul": "A9179SP-1CK",
+        "in_stock": 0,
+        "price": 2480,
+        "url": "\/products\/8127"
+    }, {
+        "id": 8115,
+        "title": "Подвесной светильник Arte Lamp PANDORA A9183SP-1BG",
+        "new": false,
+        "image": "https:\/\/ms.fandeco.ru\/assets\/images\/products\/3931\/big\/a9183sp-1bg-1.jpg",
+        "show_artikul": "A9183SP-1BG",
+        "in_stock": 0,
+        "price": 4800,
+        "url": "\/products\/8115"
+    }],
+    "pagination": {
+        "total": 441,
+        "perPage": 12,
+        "currentPage": 2,
+        "totalPages": 37,
+        "currentPageUrl": "\/categories\/podvesnye-svetilniki?&page=2",
+        "nextPageUrl": "\/categories\/podvesnye-svetilniki?&page=3",
+        "links": [{
+            "url": null,
+            "label": "&laquo; Previous",
+            "active": false
+        }, {
+            "url": "\/categories\/podvesnye-svetilniki?&page=1",
+            "label": "1",
+            "active": false
+        }, {
+            "url": "\/categories\/podvesnye-svetilniki?&page=2",
+            "label": "2",
+            "active": true
+        }, {
+            "url": "\/categories\/podvesnye-svetilniki?&page=3",
+            "label": "3",
+            "active": false
+        }, {
+            "url": "\/categories\/podvesnye-svetilniki?&page=4",
+            "label": "4",
+            "active": false
+        }, {
+            "url": "\/categories\/podvesnye-svetilniki?&page=5",
+            "label": "5",
+            "active": false
+        }, {
+            "url": "\/categories\/podvesnye-svetilniki?&page=6",
+            "label": "6",
+            "active": false
+        }, {
+            "url": "\/categories\/podvesnye-svetilniki?&page=7",
+            "label": "7",
+            "active": false
+        }, {
+            "url": "\/categories\/podvesnye-svetilniki?&page=8",
+            "label": "8",
+            "active": false
+        }, {
+            "url": "\/categories\/podvesnye-svetilniki?&page=9",
+            "label": "9",
+            "active": false
+        }, {
+            "url": "\/categories\/podvesnye-svetilniki?&page=10",
+            "label": "10",
+            "active": false
+        }, {
+            "url": null,
+            "label": "...",
+            "active": false
+        }, {
+            "url": "\/categories\/podvesnye-svetilniki?&page=36",
+            "label": "36",
+            "active": false
+        }, {
+            "url": "\/categories\/podvesnye-svetilniki?&page=37",
+            "label": "37",
+            "active": false
+        }, {
+            "url": "\/categories\/podvesnye-svetilniki?&page=2",
+            "label": "Next &raquo;",
+            "active": false
+        }]
+    }
+}

@@ -223,27 +223,27 @@
                 <div class="sort__select-wrap">
                   <div class="custom-select">
                     <div class="custom-select__top sort__select-top">
-                      <div class="sort__select-icon sort__select-icon--default"></div>
+                      <div class="sort__select-icon" data-icon="default"></div>
                       <div class="custom-select__value custom-select__value--sort">Дешевле</div>
                       <div class="sort__select-open"></div>
                     </div>
                     <div class="custom-select__drop">
                       <ul class="custom-select__list">
                         <li class="custom-select__item custom-select__item--sort">
-                          <div class="sort__select-icon sort__select-icon--default"></div>
-                          <div class="custom-select__option">По умолчанию</div>
+                          <div class="sort__select-icon" data-icon="default"></div>
+                          <div class="custom-select__option" data-type="sort" data-value="default">По умолчанию</div>
                         </li>
                         <li class="custom-select__item custom-select__item--sort">
-                          <div class="sort__select-icon sort__select-icon--default"></div>
-                          <div class="custom-select__option">Дешевле</div>
+                          <div class="sort__select-icon" data-icon="default"></div>
+                          <div class="custom-select__option" data-type="sort" data-value="price_low">Дешевле</div>
                         </li>
                         <li class="custom-select__item custom-select__item--sort">
-                          <div class="sort__select-icon sort__select-icon--expensive"></div>
-                          <div class="custom-select__option">Дороже</div>
+                          <div class="sort__select-icon" data-icon="expensive"></div>
+                          <div class="custom-select__option" data-type="sort" data-value="price_height">Дороже</div>
                         </li>
                         <li class="custom-select__item custom-select__item--sort">
-                          <div class="sort__select-icon sort__select-icon--name"></div>
-                          <div class="custom-select__option">По наименованию</div>
+                          <div class="sort__select-icon" data-icon="name"></div>
+                          <div class="custom-select__option" data-type="sort" data-value="name">По наименованию</div>
                         </li>
                       </ul>
                     </div>
@@ -256,41 +256,16 @@
                   <div class="custom-select__top sort__quantity-top"><div class="custom-select__value">12</div></div>
                   <div class="custom-select__drop custom-select__drop--quantity">
                     <ul class="custom-select__list">
-                      <li class="custom-select__item"><div class="custom-select__option custom-select__option_center">12</div></li>
-                      <li class="custom-select__item"><div class="custom-select__option custom-select__option_center">24</div></li>
-                      <li class="custom-select__item"><div class="custom-select__option custom-select__option_center">48</div></li>
-                      <li class="custom-select__item"><div class="custom-select__option custom-select__option_center">96</div></li>
+                      <li class="custom-select__item"><div class="custom-select__option custom-select__option_center" data-type="limit" data-value="12">12</div></li>
+                      <li class="custom-select__item"><div class="custom-select__option custom-select__option_center" data-type="limit" data-value="24">24</div></li>
+                      <li class="custom-select__item"><div class="custom-select__option custom-select__option_center" data-type="limit" data-value="48">48</div></li>
+                      <li class="custom-select__item"><div class="custom-select__option custom-select__option_center" data-type="limit" data-value="96">96</div></li>
                     </ul>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="sort-tags">
-              <button class="default-btn btn--white sort-tags__btn">
-                Бронза
-                <div class="sort-tags__btn--close"></div>
-              </button>
-              <button class="default-btn btn--white sort-tags__btn">
-                Новинки
-                <div class="sort-tags__btn--close"></div>
-              </button>
-              <button class="default-btn btn--white sort-tags__btn">
-                Акрил
-                <div class="sort-tags__btn--close"></div>
-              </button>
-              <button class="default-btn btn--white sort-tags__btn">
-                Стекло
-                <div class="sort-tags__btn--close"></div>
-              </button>
-              <button class="default-btn btn--white sort-tags__btn">
-                Американская классика
-                <div class="sort-tags__btn--close"></div>
-              </button>
-              <button class="default-btn btn--white sort-tags__btn">
-                Дизайнерский
-                <div class="sort-tags__btn--close"></div>
-              </button>
-            </div>
+            <div class="sort-tags"></div>
           </div>
           <div class="catalog-content">
             <!-- Видимость блока с фильтрами на мобильных переключаем классом .visible-->
@@ -1300,349 +1275,363 @@
                   </ul>
                 </div>
               </div>
+              <div class="catalog-filters__badge hide">
+                <i></i>
+                <span>Показать выбранные</span>
+              </div>
             </div>
             <ul class="catalog-grid__list">
-              <li class="catalog-grid__item">
-                <a href="#!">
-                  <article class="product">
-                    <div class="badge-wrap"><div class="badge badge--black product__badge">new</div></div>
-                    <div class="product__favorite"></div>
-                    <div class="product__image">
-                      <div class="product__img"><img src="img/luster-1.png" ></div>
-                      <div class="product__image_buttons">
-                        <ul class="product__image--list">
-                          <li class="product__image--item"><button class="btn-reset product__image--favorite"></button></li>
-                          <li class="product__image--item"><button class="btn-reset product__image--order"></button></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="product__info-wrap">
-                      <div class="product__info-titles">
-                        <h3 class="product__title">Люстра Аrte Lamp Rosaria</h3>
-                        <h4 class="product__subtitle">A8564PL-5RB</h4>
-                      </div>
-                      <div class="product__info-price">
-                        <div class="product__quantity">В наличии: 110 шт.</div>
-                        <div class="product__price">88 000 ₽</div>
-                      </div>
-                    </div>
-                  </article>
-                </a>
-              </li>
-              <li class="catalog-grid__item">
-                <a href="#!">
-                  <article class="product">
-                    <div class="badge-wrap">
-                      <div class="badge badge--black product__badge">new</div>
-                      <div class="badge badge--red product__badge">sale</div>
-                    </div>
-                    <div class="product__favorite"></div>
-                    <div class="product__image">
-                      <div class="product__img"><img src="img/luster-2.png" ></div>
-                      <div class="product__image_buttons">
-                        <ul class="product__image--list">
-                          <li class="product__image--item"><button class="btn-reset product__image--favorite"></button></li>
-                          <li class="product__image--item"><button class="btn-reset product__image--order"></button></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="product__info-wrap">
-                      <div class="product__info-titles">
-                        <h3 class="product__title">Люстра Аrte Lamp Rosaria</h3>
-                        <h4 class="product__subtitle">A8564PL-5RB</h4>
-                      </div>
-                      <div class="product__info-price">
-                        <div class="product__quantity">В наличии: 110 шт.</div>
-                        <div class="product__price">88 000 ₽</div>
-                      </div>
-                    </div>
-                  </article>
-                </a>
-              </li>
-              <li class="catalog-grid__item">
-                <a href="#!">
-                  <article class="product">
-                    <div class="badge-wrap"><div class="badge badge--black product__badge">new</div></div>
-                    <div class="product__favorite"></div>
-                    <div class="product__image">
-                      <div class="product__img"><img src="img/luster-3.png" ></div>
-                      <div class="product__image_buttons">
-                        <ul class="product__image--list">
-                          <li class="product__image--item"><button class="btn-reset product__image--favorite"></button></li>
-                          <li class="product__image--item"><button class="btn-reset product__image--order"></button></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="product__info-wrap">
-                      <div class="product__info-titles">
-                        <h3 class="product__title">Люстра Аrte Lamp Rosaria</h3>
-                        <h4 class="product__subtitle">A8564PL-5RB</h4>
-                      </div>
-                      <div class="product__info-price">
-                        <div class="product__quantity">В наличии: 110 шт.</div>
-                        <div class="product__price">88 000 ₽</div>
-                      </div>
-                    </div>
-                  </article>
-                </a>
-              </li>
-              <li class="catalog-grid__item">
-                <a href="#!">
-                  <article class="product">
-                    <div class="badge-wrap"><div class="badge badge--black product__badge">new</div></div>
-                    <div class="product__favorite"></div>
-                    <div class="product__image">
-                      <div class="product__img"><img src="img/luster-1.png" ></div>
-                      <div class="product__image_buttons">
-                        <ul class="product__image--list">
-                          <li class="product__image--item"><button class="btn-reset product__image--favorite"></button></li>
-                          <li class="product__image--item"><button class="btn-reset product__image--order"></button></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="product__info-wrap">
-                      <div class="product__info-titles">
-                        <h3 class="product__title">Люстра Аrte Lamp Rosaria</h3>
-                        <h4 class="product__subtitle">A8564PL-5RB</h4>
-                      </div>
-                      <div class="product__info-price">
-                        <div class="product__quantity">В наличии: 110 шт.</div>
-                        <div class="product__price">88 000 ₽</div>
-                      </div>
-                    </div>
-                  </article>
-                </a>
-              </li>
-              <li class="catalog-grid__item">
-                <a href="#!">
-                  <article class="product">
-                    <div class="badge-wrap"><div class="badge badge--black product__badge">new</div></div>
-                    <div class="product__favorite"></div>
-                    <div class="product__image">
-                      <div class="product__img"><img src="img/luster-2.png" ></div>
-                      <div class="product__image_buttons">
-                        <ul class="product__image--list">
-                          <li class="product__image--item"><button class="btn-reset product__image--favorite"></button></li>
-                          <li class="product__image--item"><button class="btn-reset product__image--order"></button></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="product__info-wrap">
-                      <div class="product__info-titles">
-                        <h3 class="product__title">Люстра Аrte Lamp Rosaria</h3>
-                        <h4 class="product__subtitle">A8564PL-5RB</h4>
-                      </div>
-                      <div class="product__info-price">
-                        <div class="product__quantity">В наличии: 110 шт.</div>
-                        <div class="product__price">88 000 ₽</div>
-                      </div>
-                    </div>
-                  </article>
-                </a>
-              </li>
-              <li class="catalog-grid__item">
-                <a href="#!">
-                  <article class="product">
-                    <div class="badge-wrap"><div class="badge badge--black product__badge">new</div></div>
-                    <div class="product__favorite"></div>
-                    <div class="product__image">
-                      <div class="product__img"><img src="img/luster-3.png" ></div>
-                      <div class="product__image_buttons">
-                        <ul class="product__image--list">
-                          <li class="product__image--item"><button class="btn-reset product__image--favorite"></button></li>
-                          <li class="product__image--item"><button class="btn-reset product__image--order"></button></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="product__info-wrap">
-                      <div class="product__info-titles">
-                        <h3 class="product__title">Люстра Аrte Lamp Rosaria</h3>
-                        <h4 class="product__subtitle">A8564PL-5RB</h4>
-                      </div>
-                      <div class="product__info-price">
-                        <div class="product__quantity">В наличии: 110 шт.</div>
-                        <div class="product__price">88 000 ₽</div>
-                      </div>
-                    </div>
-                  </article>
-                </a>
-              </li>
-              <li class="catalog-grid__item">
-                <a href="#!">
-                  <article class="product">
-                    <div class="badge-wrap"><div class="badge badge--black product__badge">new</div></div>
-                    <div class="product__favorite"></div>
-                    <div class="product__image">
-                      <div class="product__img"><img src="img/luster-1.png" ></div>
-                      <div class="product__image_buttons">
-                        <ul class="product__image--list">
-                          <li class="product__image--item"><button class="btn-reset product__image--favorite"></button></li>
-                          <li class="product__image--item"><button class="btn-reset product__image--order"></button></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="product__info-wrap">
-                      <div class="product__info-titles">
-                        <h3 class="product__title">Люстра Аrte Lamp Rosaria</h3>
-                        <h4 class="product__subtitle">A8564PL-5RB</h4>
-                      </div>
-                      <div class="product__info-price">
-                        <div class="product__quantity">В наличии: 110 шт.</div>
-                        <div class="product__price">88 000 ₽</div>
-                      </div>
-                    </div>
-                  </article>
-                </a>
-              </li>
-              <li class="catalog-grid__item">
-                <a href="#!">
-                  <article class="product">
-                    <div class="badge-wrap"><div class="badge badge--black product__badge">new</div></div>
-                    <div class="product__favorite"></div>
-                    <div class="product__image">
-                      <div class="product__img"><img src="img/luster-2.png" ></div>
-                      <div class="product__image_buttons">
-                        <ul class="product__image--list">
-                          <li class="product__image--item"><button class="btn-reset product__image--favorite"></button></li>
-                          <li class="product__image--item"><button class="btn-reset product__image--order"></button></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="product__info-wrap">
-                      <div class="product__info-titles">
-                        <h3 class="product__title">Люстра Аrte Lamp Rosaria</h3>
-                        <h4 class="product__subtitle">A8564PL-5RB</h4>
-                      </div>
-                      <div class="product__info-price">
-                        <div class="product__quantity">В наличии: 110 шт.</div>
-                        <div class="product__price">88 000 ₽</div>
-                      </div>
-                    </div>
-                  </article>
-                </a>
-              </li>
-              <li class="catalog-grid__item">
-                <a href="#!">
-                  <article class="product">
-                    <div class="badge-wrap"><div class="badge badge--black product__badge">new</div></div>
-                    <div class="product__favorite"></div>
-                    <div class="product__image">
-                      <div class="product__img"><img src="img/luster-3.png" ></div>
-                      <div class="product__image_buttons">
-                        <ul class="product__image--list">
-                          <li class="product__image--item"><button class="btn-reset product__image--favorite"></button></li>
-                          <li class="product__image--item"><button class="btn-reset product__image--order"></button></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="product__info-wrap">
-                      <div class="product__info-titles">
-                        <h3 class="product__title">Люстра Аrte Lamp Rosaria</h3>
-                        <h4 class="product__subtitle">A8564PL-5RB</h4>
-                      </div>
-                      <div class="product__info-price">
-                        <div class="product__quantity">В наличии: 110 шт.</div>
-                        <div class="product__price">88 000 ₽</div>
-                      </div>
-                    </div>
-                  </article>
-                </a>
-              </li>
-              <li class="catalog-grid__item">
-                <a href="#!">
-                  <article class="product">
-                    <div class="badge-wrap"><div class="badge badge--black product__badge">new</div></div>
-                    <div class="product__favorite"></div>
-                    <div class="product__image">
-                      <div class="product__img"><img src="img/luster-1.png" ></div>
-                      <div class="product__image_buttons">
-                        <ul class="product__image--list">
-                          <li class="product__image--item"><button class="btn-reset product__image--favorite"></button></li>
-                          <li class="product__image--item"><button class="btn-reset product__image--order"></button></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="product__info-wrap">
-                      <div class="product__info-titles">
-                        <h3 class="product__title">Люстра Аrte Lamp Rosaria</h3>
-                        <h4 class="product__subtitle">A8564PL-5RB</h4>
-                      </div>
-                      <div class="product__info-price">
-                        <div class="product__quantity">В наличии: 110 шт.</div>
-                        <div class="product__price">88 000 ₽</div>
-                      </div>
-                    </div>
-                  </article>
-                </a>
-              </li>
-              <li class="catalog-grid__item">
-                <a href="#!">
-                  <article class="product">
-                    <div class="badge-wrap"><div class="badge badge--black product__badge">new</div></div>
-                    <div class="product__favorite"></div>
-                    <div class="product__image">
-                      <div class="product__img"><img src="img/luster-2.png" ></div>
-                      <div class="product__image_buttons">
-                        <ul class="product__image--list">
-                          <li class="product__image--item"><button class="btn-reset product__image--favorite"></button></li>
-                          <li class="product__image--item"><button class="btn-reset product__image--order"></button></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="product__info-wrap">
-                      <div class="product__info-titles">
-                        <h3 class="product__title">Люстра Аrte Lamp Rosaria</h3>
-                        <h4 class="product__subtitle">A8564PL-5RB</h4>
-                      </div>
-                      <div class="product__info-price">
-                        <div class="product__quantity">
-                          В наличии:
-                          <span>110 шт.</span>
+              <div class="catalog-grid__wrap">
+                <li class="catalog-grid__item">
+                  <a href="#!">
+                    <article class="product">
+                      <div class="badge-wrap"><div class="badge badge--black product__badge">new</div></div>
+                      <div class="product__favorite"></div>
+                      <div class="product__image">
+                        <div class="product__img"><img src="img/luster-1.png" ></div>
+                        <div class="product__image_buttons">
+                          <ul class="product__image--list">
+                            <li class="product__image--item"><button class="btn-reset product__image--favorite"></button></li>
+                            <li class="product__image--item"><button class="btn-reset product__image--order"></button></li>
+                          </ul>
                         </div>
-                        <div class="product__price">88 000 ₽</div>
                       </div>
-                    </div>
-                  </article>
-                </a>
-              </li>
-              <li class="catalog-grid__item">
-                <a href="#!">
-                  <article class="product">
-                    <div class="badge-wrap"><div class="badge badge--black product__badge">new</div></div>
-                    <div class="product__favorite"></div>
-                    <div class="product__image">
-                      <div class="product__img"><img src="img/luster-3.png" ></div>
-                      <div class="product__image_buttons">
-                        <ul class="product__image--list">
-                          <li class="product__image--item"><button class="btn-reset product__image--favorite"></button></li>
-                          <li class="product__image--item"><button class="btn-reset product__image--order"></button></li>
-                        </ul>
+                      <div class="product__info-wrap">
+                        <div class="product__info-titles">
+                          <h3 class="product__title">Люстра Аrte Lamp Rosaria</h3>
+                          <h4 class="product__subtitle">A8564PL-5RB</h4>
+                        </div>
+                        <div class="product__info-price">
+                          <div class="product__quantity">В наличии: 110 шт.</div>
+                          <div class="product__price">88 000 ₽</div>
+                        </div>
                       </div>
-                    </div>
-                    <div class="product__info-wrap">
-                      <div class="product__info-titles">
-                        <h3 class="product__title">Люстра Аrte Lamp Rosaria</h3>
-                        <h4 class="product__subtitle">A8564PL-5RB</h4>
+                    </article>
+                  </a>
+                </li>
+                <li class="catalog-grid__item">
+                  <a href="#!">
+                    <article class="product">
+                      <div class="badge-wrap">
+                        <div class="badge badge--black product__badge">new</div>
+                        <div class="badge badge--red product__badge">sale</div>
                       </div>
-                      <div class="product__info-price">
-                        <div class="product__quantity">В наличии: 110 шт.</div>
-                        <div class="product__price">88 000 ₽</div>
+                      <div class="product__favorite"></div>
+                      <div class="product__image">
+                        <div class="product__img"><img src="img/luster-2.png" ></div>
+                        <div class="product__image_buttons">
+                          <ul class="product__image--list">
+                            <li class="product__image--item"><button class="btn-reset product__image--favorite"></button></li>
+                            <li class="product__image--item"><button class="btn-reset product__image--order"></button></li>
+                          </ul>
+                        </div>
                       </div>
-                    </div>
-                  </article>
-                </a>
-              </li>
+                      <div class="product__info-wrap">
+                        <div class="product__info-titles">
+                          <h3 class="product__title">Люстра Аrte Lamp Rosaria</h3>
+                          <h4 class="product__subtitle">A8564PL-5RB</h4>
+                        </div>
+                        <div class="product__info-price">
+                          <div class="product__quantity">В наличии: 110 шт.</div>
+                          <div class="product__price">88 000 ₽</div>
+                        </div>
+                      </div>
+                    </article>
+                  </a>
+                </li>
+                <li class="catalog-grid__item">
+                  <a href="#!">
+                    <article class="product">
+                      <div class="badge-wrap"><div class="badge badge--black product__badge">new</div></div>
+                      <div class="product__favorite"></div>
+                      <div class="product__image">
+                        <div class="product__img"><img src="img/luster-3.png" ></div>
+                        <div class="product__image_buttons">
+                          <ul class="product__image--list">
+                            <li class="product__image--item"><button class="btn-reset product__image--favorite"></button></li>
+                            <li class="product__image--item"><button class="btn-reset product__image--order"></button></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="product__info-wrap">
+                        <div class="product__info-titles">
+                          <h3 class="product__title">Люстра Аrte Lamp Rosaria</h3>
+                          <h4 class="product__subtitle">A8564PL-5RB</h4>
+                        </div>
+                        <div class="product__info-price">
+                          <div class="product__quantity">В наличии: 110 шт.</div>
+                          <div class="product__price">88 000 ₽</div>
+                        </div>
+                      </div>
+                    </article>
+                  </a>
+                </li>
+                <li class="catalog-grid__item">
+                  <a href="#!">
+                    <article class="product">
+                      <div class="badge-wrap"><div class="badge badge--black product__badge">new</div></div>
+                      <div class="product__favorite"></div>
+                      <div class="product__image">
+                        <div class="product__img"><img src="img/luster-1.png" ></div>
+                        <div class="product__image_buttons">
+                          <ul class="product__image--list">
+                            <li class="product__image--item"><button class="btn-reset product__image--favorite"></button></li>
+                            <li class="product__image--item"><button class="btn-reset product__image--order"></button></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="product__info-wrap">
+                        <div class="product__info-titles">
+                          <h3 class="product__title">Люстра Аrte Lamp Rosaria</h3>
+                          <h4 class="product__subtitle">A8564PL-5RB</h4>
+                        </div>
+                        <div class="product__info-price">
+                          <div class="product__quantity">В наличии: 110 шт.</div>
+                          <div class="product__price">88 000 ₽</div>
+                        </div>
+                      </div>
+                    </article>
+                  </a>
+                </li>
+                <li class="catalog-grid__item">
+                  <a href="#!">
+                    <article class="product">
+                      <div class="badge-wrap"><div class="badge badge--black product__badge">new</div></div>
+                      <div class="product__favorite"></div>
+                      <div class="product__image">
+                        <div class="product__img"><img src="img/luster-2.png" ></div>
+                        <div class="product__image_buttons">
+                          <ul class="product__image--list">
+                            <li class="product__image--item"><button class="btn-reset product__image--favorite"></button></li>
+                            <li class="product__image--item"><button class="btn-reset product__image--order"></button></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="product__info-wrap">
+                        <div class="product__info-titles">
+                          <h3 class="product__title">Люстра Аrte Lamp Rosaria</h3>
+                          <h4 class="product__subtitle">A8564PL-5RB</h4>
+                        </div>
+                        <div class="product__info-price">
+                          <div class="product__quantity">В наличии: 110 шт.</div>
+                          <div class="product__price">88 000 ₽</div>
+                        </div>
+                      </div>
+                    </article>
+                  </a>
+                </li>
+                <li class="catalog-grid__item">
+                  <a href="#!">
+                    <article class="product">
+                      <div class="badge-wrap"><div class="badge badge--black product__badge">new</div></div>
+                      <div class="product__favorite"></div>
+                      <div class="product__image">
+                        <div class="product__img"><img src="img/luster-3.png" ></div>
+                        <div class="product__image_buttons">
+                          <ul class="product__image--list">
+                            <li class="product__image--item"><button class="btn-reset product__image--favorite"></button></li>
+                            <li class="product__image--item"><button class="btn-reset product__image--order"></button></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="product__info-wrap">
+                        <div class="product__info-titles">
+                          <h3 class="product__title">Люстра Аrte Lamp Rosaria</h3>
+                          <h4 class="product__subtitle">A8564PL-5RB</h4>
+                        </div>
+                        <div class="product__info-price">
+                          <div class="product__quantity">В наличии: 110 шт.</div>
+                          <div class="product__price">88 000 ₽</div>
+                        </div>
+                      </div>
+                    </article>
+                  </a>
+                </li>
+                <li class="catalog-grid__item">
+                  <a href="#!">
+                    <article class="product">
+                      <div class="badge-wrap"><div class="badge badge--black product__badge">new</div></div>
+                      <div class="product__favorite"></div>
+                      <div class="product__image">
+                        <div class="product__img"><img src="img/luster-1.png" ></div>
+                        <div class="product__image_buttons">
+                          <ul class="product__image--list">
+                            <li class="product__image--item"><button class="btn-reset product__image--favorite"></button></li>
+                            <li class="product__image--item"><button class="btn-reset product__image--order"></button></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="product__info-wrap">
+                        <div class="product__info-titles">
+                          <h3 class="product__title">Люстра Аrte Lamp Rosaria</h3>
+                          <h4 class="product__subtitle">A8564PL-5RB</h4>
+                        </div>
+                        <div class="product__info-price">
+                          <div class="product__quantity">В наличии: 110 шт.</div>
+                          <div class="product__price">88 000 ₽</div>
+                        </div>
+                      </div>
+                    </article>
+                  </a>
+                </li>
+                <li class="catalog-grid__item">
+                  <a href="#!">
+                    <article class="product">
+                      <div class="badge-wrap"><div class="badge badge--black product__badge">new</div></div>
+                      <div class="product__favorite"></div>
+                      <div class="product__image">
+                        <div class="product__img"><img src="img/luster-2.png" ></div>
+                        <div class="product__image_buttons">
+                          <ul class="product__image--list">
+                            <li class="product__image--item"><button class="btn-reset product__image--favorite"></button></li>
+                            <li class="product__image--item"><button class="btn-reset product__image--order"></button></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="product__info-wrap">
+                        <div class="product__info-titles">
+                          <h3 class="product__title">Люстра Аrte Lamp Rosaria</h3>
+                          <h4 class="product__subtitle">A8564PL-5RB</h4>
+                        </div>
+                        <div class="product__info-price">
+                          <div class="product__quantity">В наличии: 110 шт.</div>
+                          <div class="product__price">88 000 ₽</div>
+                        </div>
+                      </div>
+                    </article>
+                  </a>
+                </li>
+                <li class="catalog-grid__item">
+                  <a href="#!">
+                    <article class="product">
+                      <div class="badge-wrap"><div class="badge badge--black product__badge">new</div></div>
+                      <div class="product__favorite"></div>
+                      <div class="product__image">
+                        <div class="product__img"><img src="img/luster-3.png" ></div>
+                        <div class="product__image_buttons">
+                          <ul class="product__image--list">
+                            <li class="product__image--item"><button class="btn-reset product__image--favorite"></button></li>
+                            <li class="product__image--item"><button class="btn-reset product__image--order"></button></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="product__info-wrap">
+                        <div class="product__info-titles">
+                          <h3 class="product__title">Люстра Аrte Lamp Rosaria</h3>
+                          <h4 class="product__subtitle">A8564PL-5RB</h4>
+                        </div>
+                        <div class="product__info-price">
+                          <div class="product__quantity">В наличии: 110 шт.</div>
+                          <div class="product__price">88 000 ₽</div>
+                        </div>
+                      </div>
+                    </article>
+                  </a>
+                </li>
+                <li class="catalog-grid__item">
+                  <a href="#!">
+                    <article class="product">
+                      <div class="badge-wrap"><div class="badge badge--black product__badge">new</div></div>
+                      <div class="product__favorite"></div>
+                      <div class="product__image">
+                        <div class="product__img"><img src="img/luster-1.png" ></div>
+                        <div class="product__image_buttons">
+                          <ul class="product__image--list">
+                            <li class="product__image--item"><button class="btn-reset product__image--favorite"></button></li>
+                            <li class="product__image--item"><button class="btn-reset product__image--order"></button></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="product__info-wrap">
+                        <div class="product__info-titles">
+                          <h3 class="product__title">Люстра Аrte Lamp Rosaria</h3>
+                          <h4 class="product__subtitle">A8564PL-5RB</h4>
+                        </div>
+                        <div class="product__info-price">
+                          <div class="product__quantity">В наличии: 110 шт.</div>
+                          <div class="product__price">88 000 ₽</div>
+                        </div>
+                      </div>
+                    </article>
+                  </a>
+                </li>
+                <li class="catalog-grid__item">
+                  <a href="#!">
+                    <article class="product">
+                      <div class="badge-wrap"><div class="badge badge--black product__badge">new</div></div>
+                      <div class="product__favorite"></div>
+                      <div class="product__image">
+                        <div class="product__img"><img src="img/luster-2.png" ></div>
+                        <div class="product__image_buttons">
+                          <ul class="product__image--list">
+                            <li class="product__image--item"><button class="btn-reset product__image--favorite"></button></li>
+                            <li class="product__image--item"><button class="btn-reset product__image--order"></button></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="product__info-wrap">
+                        <div class="product__info-titles">
+                          <h3 class="product__title">Люстра Аrte Lamp Rosaria</h3>
+                          <h4 class="product__subtitle">A8564PL-5RB</h4>
+                        </div>
+                        <div class="product__info-price">
+                          <div class="product__quantity">
+                            В наличии:
+                            <span>110 шт.</span>
+                          </div>
+                          <div class="product__price">88 000 ₽</div>
+                        </div>
+                      </div>
+                    </article>
+                  </a>
+                </li>
+                <li class="catalog-grid__item">
+                  <a href="#!">
+                    <article class="product">
+                      <div class="badge-wrap"><div class="badge badge--black product__badge">new</div></div>
+                      <div class="product__favorite"></div>
+                      <div class="product__image">
+                        <div class="product__img"><img src="img/luster-3.png" ></div>
+                        <div class="product__image_buttons">
+                          <ul class="product__image--list">
+                            <li class="product__image--item"><button class="btn-reset product__image--favorite"></button></li>
+                            <li class="product__image--item"><button class="btn-reset product__image--order"></button></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="product__info-wrap">
+                        <div class="product__info-titles">
+                          <h3 class="product__title">Люстра Аrte Lamp Rosaria</h3>
+                          <h4 class="product__subtitle">A8564PL-5RB</h4>
+                        </div>
+                        <div class="product__info-price">
+                          <div class="product__quantity">В наличии: 110 шт.</div>
+                          <div class="product__price">88 000 ₽</div>
+                        </div>
+                      </div>
+                    </article>
+                  </a>
+                </li>
+              </div>
               <section class="pagination">
-                <button class="default-btn pagination__main-btn btn-reset">показать больше</button>
-                <div class="pagination__btns">
-                  <button class="btn--white btn-reset pagination-btn pagination-btn--left"></button>
-                  <button class="btn--white btn-reset pagination-btn">1</button>
-                  <button class="btn--white btn-reset pagination-btn">2</button>
-                  <button class="btn--white btn-reset pagination-btn">3</button>
-                  <button class="btn--white btn-reset pagination-btn">4</button>
-                  <button class="btn--white btn-reset pagination-btn">...</button>
-                  <button class="btn--white btn-reset pagination-btn">25</button>
-                  <button class="btn--white btn-reset pagination-btn pagination-btn--right"></button>
+                <button class="default-btn pagination__main-btn" id="catalogShowMore">показать больше</button>
+                <!-- Правила формирования URL...
+- Первая страница показывается всегда - вместо кнопки В начало
+- Последняя страница показывается всегда - вместо кнопки В конец
+- Когда стоим на первой блокируем кнопку Предыдущая (2 стрелки влево) С помощью класса .disabled
+- Когда стоим на последней блокируем кнопку Следующая (2 стрелки вправо) С помощью класса .disabled
+- Всегда показываем текущую и 1 страницу до и 1 страницу после
+- Пропуски между страницами заменяем на span.btn--white.pagination-btn.ellipsis ...
+-->
+                <div class="pagination__btns" id="pagination">
+                  <!-- Блокируем кнопки с помощью класса .disabled-->
+                  <a class="btn--white pagination-btn start disabled" href="#!" title="Предыдущая"></a>
+                  <a class="btn--white pagination-btn active" href="#!">1</a>
+                  <a class="btn--white pagination-btn" href="#!">2</a>
+                  <a class="btn--white pagination-btn" href="#!">3</a>
+                  <span class="btn--white pagination-btn ellipsis">...</span>
+                  <a class="btn--white pagination-btn" href="#!">25</a>
+                  <a class="btn--white pagination-btn end" href="#!" title="Следующая"></a>
                 </div>
               </section>
             </ul>
@@ -1734,6 +1723,13 @@
         </a>
       </nav>
     </footer>
+    <div class="spinner" id="spinner">
+      <div class="spinner__body">
+        <div class="spinner__item"></div>
+        <div class="spinner__item"></div>
+        <div class="spinner__item"></div>
+      </div>
+    </div>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js" defer></script>
     <script src="js/pages/index.min.js" defer></script>
