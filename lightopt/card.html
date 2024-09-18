@@ -13,18 +13,74 @@
     <link rel="stylesheet" href="css/main.min.css" >
     <link rel="stylesheet" href="css/pages/card.min.css" >
     <script>
-      // Здесь можно добавить какие-либо скрипты или проинициализировать какие-либо глобальные переменные
-      window.globalVariable = "some global variable value";
+      window.filterApiLink = "mocks/catalog-filter-request.json";
+      window.addProductApiLink = "mocks/add-product-request.json";
     </script>
   </head>
   <body class="page-card" id="body">
     <header class="header" id="header">
       <div class="container">
         <div class="header-info">
-          <a class="header-info__logo" href="/index.html"><img src="img/LightOpt.png" alt="LightOpt" ></a>
-          <div class="header-info__search">
-            <input class="header-info__input-text" type="text" placeholder="Поиск по каталогу" >
-            <button class="header-info__btn header-info__menu-search btn-reset"></button>
+          <a class="header-info__logo" href="/index.html"><img src="img/LightOpt.png" alt="" ></a>
+          <div class="search" id="search">
+            <div class="container">
+              <div class="search__top">
+                <a class="search__logo" href="/index.html"><img src="img/LightOpt.png" alt="" ></a>
+                <button class="search__close"></button>
+              </div>
+              <div class="search__wrap">
+                <label class="search__controllers">
+                  <input class="search__input" type="text" placeholder="Поиск по каталогу" >
+                  <button class="search__reset"><i id="resetSearchText"></i></button>
+                  <button class="search__req"><i id="requestSearchText"></i></button>
+                </label>
+                <div class="search__results" id="searchResults">
+                  <ul>
+                    <li>
+                      <a class="search__item" href="#!">
+                        <i><img src="img/search-item.jpg" alt="" ></i>
+                        <span>
+                          <mark>
+                            Потолочная люстра Arte Lamp SANSA
+                            <b>A7585PL-3WH</b>
+                            подвесная
+                          </mark>
+                          <em>2380 р.</em>
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="search__item" href="#!">
+                        <i><img src="img/search-item.jpg" alt="" ></i>
+                        <span>
+                          <mark>
+                            Потолочная люстра Arte Lamp SANSA
+                            <b>A7585PL-3WH</b>
+                            подвесная
+                          </mark>
+                          <em>2380 р.</em>
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="search__item" href="#!">
+                        <i><img src="img/search-item.jpg" alt="" ></i>
+                        <span>
+                          <mark>
+                            Потолочная люстра Arte Lamp SANSA
+                            <b>A7585PL-3WH</b>
+                            подвесная
+                          </mark>
+                          <em>2380 р.</em>
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                  <a class="search__all desc" href="#!">показать все результаты</a>
+                </div>
+                <a class="search__all mob" href="#!">показать все результаты</a>
+              </div>
+            </div>
           </div>
           <ul class="header-info__menu">
             <!-- Блок .header-logged показываем только когда пользователь залогинен-->
@@ -210,988 +266,992 @@
         <h1 class="main-title__title">Заголовок страницы</h1>
         <span class="main-title__text-count">Подзаголовок страницы/доп. информация</span>
       </section>
-      <section class="card">
-        <div class="container">
-          <div class="card-content">
-            <div class="card-top">
-              <div class="card-top__left">
-                <div class="card-slider">
-                  <div class="card-slider__wrapper">
-                    <div class="card-slider__body">
-                      <div class="card-slider__images">
-                        <div class="card-slider__image card-slider__image_active"><img src="img/slider-1.jpg" ></div>
-                        <div class="card-slider__image"><img src="img/slider-2.jpg" ></div>
-                        <div class="card-slider__image"><img src="img/slider-1.jpg" ></div>
-                        <div class="card-slider__image"><img src="img/slider-2.jpg" ></div>
-                        <div class="card-slider__image"><img src="img/slider-1.jpg" ></div>
-                        <div class="card-slider__image"><img src="img/slider-2.jpg" ></div>
-                        <div class="card-slider__image"><img src="img/slider-1.jpg" ></div>
-                      </div>
+      <section class="card"></section>
+      <div class="container">
+        <div class="card-content">
+          <div class="card-top">
+            <div class="card-top__left">
+              <div class="card-slider">
+                <div class="card-slider__wrapper">
+                  <div class="card-slider__body">
+                    <div class="card-slider__images">
+                      <div class="card-slider__image card-slider__image_active"><img src="img/slider-1.jpg" ></div>
+                      <div class="card-slider__image"><img src="img/slider-2.jpg" ></div>
+                      <div class="card-slider__image"><img src="img/slider-1.jpg" ></div>
+                      <div class="card-slider__image"><img src="img/slider-2.jpg" ></div>
+                      <div class="card-slider__image"><img src="img/slider-1.jpg" ></div>
+                      <div class="card-slider__image"><img src="img/slider-2.jpg" ></div>
+                      <div class="card-slider__image"><img src="img/slider-1.jpg" ></div>
                     </div>
                   </div>
-                  <div class="card-slider__main"><img src="img/slider-1.jpg" ></div>
+                </div>
+                <div class="card-slider__main"><img src="img/slider-1.jpg" ></div>
+              </div>
+            </div>
+            <div class="card-top__right">
+              <div class="card-top__info">
+                <div class="card-top__btns">
+                  <ul class="card-top__btns_list">
+                    <li class="card-top__btns_item"><button class="btn-reset card-top__btn_share"></button></li>
+                    <li class="card-top__btns_item"><button class="btn-reset card-top__btn_favorite"></button></li>
+                  </ul>
+                </div>
+                <div class="card-top__price">
+                  <div class="card-top__price_new">
+                    <div class="card-top__price_title">Рекомендуемая розничная цена:</div>
+                    <div class="card-top__price_value">5 760 р.</div>
+                  </div>
+                  <div class="card-top__price_old">
+                    <div class="card-top__price_title">Ваша цена:</div>
+                    <div class="card-top__price_value">6 780 р.</div>
+                  </div>
                 </div>
               </div>
-              <div class="card-top__right">
-                <div class="card-top__info">
-                  <div class="card-top__btns">
-                    <ul class="card-top__btns_list">
-                      <li class="card-top__btns_item"><button class="btn-reset card-top__btn_share"></button></li>
-                      <li class="card-top__btns_item"><button class="btn-reset card-top__btn_favorite"></button></li>
+              <div class="card-top__quantity">
+                <div class="card-top__quantity_changer">
+                  <button class="btn-reset btn--white changer__btn changer__btn_minus">—</button>
+                  <input class="changer__input" type="text" min="1" maxlength="4" value="1" >
+                  <button class="btn-reset btn--white changer__btn changer__btn_plus">+</button>
+                </div>
+                <div class="card-top__quantity_value"><span>234 шт в наличии</span></div>
+              </div>
+              <div class="card-top__order">
+                <div class="custom-select">
+                  <div class="custom-select__top card-select__top">
+                    <!-- В data атрибут data-order-id добавляем ID заказа в который будет добавлять товар по умолчанию-->
+                    <!-- В data атрибут data-status пишем соответственно: Заказ в резерве - false, Заказ не оформлен - true-->
+                    <div class="custom-select__value" data-order-id="54325678" data-status="true">Заказ № 54325678</div>
+                    <div class="custom-select_open"></div>
+                  </div>
+                  <div class="custom-select__drop">
+                    <ul class="custom-select__list">
+                      <li class="custom-select__item custom-select__item--sort">
+                        <div class="custom-select__option" data-order-id="11125678" data-status="true" title="Заказ № 11125678">
+                          <span>Заказ № 11125678</span>
+                          <mark>В обработке</mark>
+                        </div>
+                      </li>
+                      <li class="custom-select__item custom-select__item--sort">
+                        <div class="custom-select__option" data-order-id="22225678" data-status="false" title="Заказ № 22225678">
+                          <span>Заказ № 22225678</span>
+                          <mark>В резерве</mark>
+                        </div>
+                      </li>
+                      <li class="custom-select__item custom-select__item--sort">
+                        <div class="custom-select__option" data-order-id="33325678" data-status="true" title="Заказ № 33325678">
+                          <span>Заказ № 33325678</span>
+                          <mark>В обработке</mark>
+                        </div>
+                      </li>
+                      <li class="custom-select__item custom-select__item--sort">
+                        <div class="custom-select__option" data-order-id="44425678" data-status="false" title="Заказ № 44425678">
+                          <span>Заказ № 44425678</span>
+                          <mark>В резерве</mark>
+                        </div>
+                      </li>
                     </ul>
                   </div>
-                  <div class="card-top__price">
-                    <div class="card-top__price_new">
-                      <div class="card-top__price_title">Рекомендуемая розничная цена:</div>
-                      <div class="card-top__price_value">5 760 ₽</div>
-                    </div>
-                    <div class="card-top__price_old">
-                      <div class="card-top__price_title">Ваша цена:</div>
-                      <div class="card-top__price_value">6 780 ₽</div>
-                    </div>
-                  </div>
                 </div>
-                <div class="card-top__quantity">
-                  <div class="card-top__quantity_changer">
-                    <button class="btn-reset btn--white changer__btn changer__btn_minus">—</button>
-                    <input class="changer__input" type="text" min="1" maxlength="4" value="200" >
-                    <button class="btn-reset btn--white changer__btn changer__btn_plus">+</button>
-                  </div>
-                  <div class="card-top__quantity_value"><span>234 шт в наличии</span></div>
+                <!-- Если пользователь залогинен, к кнопке Добавить в заказ добавляем аттрибут data-product-id со значением id текущего продукта-->
+                <button class="btn-reset default-btn card-top__btn_order" data-product-id="1234567">Добавить в заказ</button>
+              </div>
+              <!-- Если пользователь не залогинен, то Не добавляем селект с заказами-->
+              <div class="card-top__order"><button class="btn-reset default-btn card-top__btn_order">Добавить в заказ</button></div>
+              <div class="card-top__additional-info">
+                <div class="card-top__additional-info_wrap">
+                  <button class="btn-reset card-top__icon card-top__doc"></button>
+                  <div class="card-top__doc_title">Документация</div>
                 </div>
-                <div class="card-top__order">
-                  <div class="custom-select">
-                    <div class="custom-select__top card-select__top">
-                      <div class="custom-select__value">Заказ № 54325678</div>
-                      <div class="custom-select_open"></div>
-                    </div>
-                    <div class="custom-select__drop">
-                      <ul class="custom-select__list">
-                        <li class="custom-select__item custom-select__item--sort">
-                          <div class="custom-select__option" data-order-id="11125678" title="Заказ № 11125678">
-                            <span>Заказ № 11125678</span>
-                            <mark>В обработке</mark>
-                          </div>
-                        </li>
-                        <li class="custom-select__item custom-select__item--sort">
-                          <div class="custom-select__option" data-order-id="22225678" title="Заказ № 22225678">
-                            <span>Заказ № 22225678</span>
-                            <mark>Одобрен</mark>
-                          </div>
-                        </li>
-                        <li class="custom-select__item custom-select__item--sort">
-                          <div class="custom-select__option" data-order-id="33325678" title="Заказ № 33325678">
-                            <span>Заказ № 33325678</span>
-                            <mark>Отклонен</mark>
-                          </div>
-                        </li>
-                        <li class="custom-select__item custom-select__item--sort">
-                          <div class="custom-select__option" data-order-id="44425678" title="Заказ № 44425678">
-                            <span>Заказ № 44425678</span>
-                            <mark>Закрыт</mark>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <button class="btn-reset default-btn card-top__btn_order">Добавить в заказ</button>
-                </div>
-                <div class="card-top__additional-info">
-                  <div class="card-top__additional-info_wrap">
-                    <button class="btn-reset card-top__icon card-top__doc"></button>
-                    <div class="card-top__doc_title">Документация</div>
-                  </div>
-                  <div class="card-top__additional-info_wrap">
-                    <div class="card-top__icon"><button class="btn-reset card-top__icon card-top__rar"></button></div>
-                    <div class="card-top__cert_title">Упаковка товара</div>
-                  </div>
+                <div class="card-top__additional-info_wrap">
+                  <div class="card-top__icon"><button class="btn-reset card-top__icon card-top__rar"></button></div>
+                  <div class="card-top__cert_title">Упаковка товара</div>
                 </div>
               </div>
             </div>
-            <div class="card-content__bottom">
-              <div class="card-filters">
-                <div class="card-filter">
-                  <div class="card-filter__top">
-                    <div class="card-filter__toggle"></div>
-                    <h3 class="card-filter__title">характеристики</h3>
-                  </div>
-                  <div class="card-filter__bottom">
-                    <div class="card-filter__top_sub">
-                      <div class="card-filter__toggle_in"></div>
-                      <h3 class="card-filter__title">основные</h3>
-                    </div>
-                    <ul class="card-filter__list">
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Артикул</span></div>
-                        <span class="card-filter__text_value">A8889LM-8GY</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Интерьер</span></div>
-                        <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Бренд</span></div>
-                        <span class="card-filter__text_value">Arte Lamp</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap">
-                          <button class="btn-reset card-filter__btn-info"></button>
-                          <span class="card-filter__text">Мощность</span>
-                        </div>
-                        <span class="card-filter__text_value">40 W</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap">
-                          <button class="btn-reset card-filter__btn-info"></button>
-                          <span class="card-filter__text">Страна</span>
-                        </div>
-                        <span class="card-filter__text_value">Италия</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Патрон</span></div>
-                        <span class="card-filter__text_value">Е14</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Коллекция</span></div>
-                        <span class="card-filter__text_value">MORRIS</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Напряжение</span></div>
-                        <span class="card-filter__text_value">220 V</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Материал плафона</span></div>
-                        <span class="card-filter__text_value">Без плафона</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Количество патронов</span></div>
-                        <span class="card-filter__text_value">8 шт</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Материал арматуры</span></div>
-                        <span class="card-filter__text_value">Акрил</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Крепеж</span></div>
-                        <span class="card-filter__text_value">На крюк</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap">
-                          <button class="btn-reset card-filter__btn-info"></button>
-                          <span class="card-filter__text">Мощность</span>
-                        </div>
-                        <span class="card-filter__text_value">40 W</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Площадь освещения</span></div>
-                        <span class="card-filter__text_value">24 м2</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">IP</span></div>
-                        <span class="card-filter__text_value">20</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Тип лампы</span></div>
-                        <span class="card-filter__text_value">Накаливания</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Стиль лампы</span></div>
-                        <span class="card-filter__text_value">Классический</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Место применения</span></div>
-                        <span class="card-filter__text_value">В квартиру, В комнату</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Вид рассеивателя</span></div>
-                        <span class="card-filter__text_value">Нет</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Диммер</span></div>
-                        <span class="card-filter__text_value">Да</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="card-filter__bottom">
-                    <div class="card-filter__top_sub card-filter__top--open">
-                      <div class="card-filter__toggle_in"></div>
-                      <h3 class="card-filter__title">Материалы и цвета</h3>
-                    </div>
-                    <ul class="card-filter__list">
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Материал плафона</span></div>
-                        <span class="card-filter__text_value">Стекло</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Цвет плафона</span></div>
-                        <span class="card-filter__text_value">Белый</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Материал арматуры</span></div>
-                        <span class="card-filter__text_value">Металл</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Цвет светильника</span></div>
-                        <span class="card-filter__text_value">Бронза</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="card-filter__bottom">
-                    <div class="card-filter__top_sub card-filter__top--open card-filter__top-margin">
-                      <div class="card-filter__toggle_in"></div>
-                      <h3 class="card-filter__title">Источник света</h3>
-                    </div>
-                    <ul class="card-filter__list">
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Патрон</span></div>
-                        <span class="card-filter__text_value">G9</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Количество патронов</span></div>
-                        <span class="card-filter__text_value">12 шт</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap">
-                          <button class="btn-reset card-filter__btn-info"></button>
-                          <span class="card-filter__text">Мощность</span>
-                        </div>
-                        <span class="card-filter__text_value">25 W</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Напряжение</span></div>
-                        <span class="card-filter__text_value">220 V</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Тип лампы</span></div>
-                        <span class="card-filter__text_value">Галогеновая</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Площадь освещения</span></div>
-                        <span class="card-filter__text_value">14 м2</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="card-filter__bottom">
-                    <div class="card-filter__top_sub">
-                      <div class="card-filter__toggle_in"></div>
-                      <h3 class="card-filter__title">Габариты светильника</h3>
-                    </div>
-                    <ul class="card-filter__list">
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Артикул</span></div>
-                        <span class="card-filter__text_value">A8889LM-8GY</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Интерьер</span></div>
-                        <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Бренд</span></div>
-                        <span class="card-filter__text_value">Arte Lamp</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Мощность</span></div>
-                        <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="card-filter__bottom">
-                    <div class="card-filter__top_sub">
-                      <div class="card-filter__toggle_in"></div>
-                      <h3 class="card-filter__title">Дополнительно</h3>
-                    </div>
-                    <ul class="card-filter__list">
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Артикул</span></div>
-                        <span class="card-filter__text_value">A8889LM-8GY</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Интерьер</span></div>
-                        <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Бренд</span></div>
-                        <span class="card-filter__text_value">Arte Lamp</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Мощность</span></div>
-                        <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
-                      </li>
-                    </ul>
-                  </div>
+          </div>
+          <div class="card-content__bottom">
+            <div class="card-filters">
+              <div class="card-filter">
+                <div class="card-filter__top">
+                  <div class="card-filter__toggle"></div>
+                  <h3 class="card-filter__title">характеристики</h3>
                 </div>
-                <div class="card-filter">
-                  <div class="card-filter__top">
-                    <div class="card-filter__toggle"></div>
-                    <h3 class="card-filter__title">Описание коллекции</h3>
+                <div class="card-filter__bottom">
+                  <div class="card-filter__top_sub">
+                    <div class="card-filter__toggle_in"></div>
+                    <h3 class="card-filter__title">основные</h3>
                   </div>
-                  <div class="card-filter__bottom">
-                    <div class="card-filter__top_sub">
-                      <div class="card-filter__toggle_in"></div>
-                      <h3 class="card-filter__title">основные</h3>
-                    </div>
-                    <ul class="card-filter__list">
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Артикул</span></div>
-                        <span class="card-filter__text_value">A8889LM-8GY</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Интерьер</span></div>
-                        <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Бренд</span></div>
-                        <span class="card-filter__text_value">Arte Lamp</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap">
-                          <button class="btn-reset card-filter__btn-info"></button>
-                          <span class="card-filter__text">Мощность</span>
-                        </div>
-                        <span class="card-filter__text_value">40 W</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap">
-                          <button class="btn-reset card-filter__btn-info"></button>
-                          <span class="card-filter__text">Страна</span>
-                        </div>
-                        <span class="card-filter__text_value">Италия</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Патрон</span></div>
-                        <span class="card-filter__text_value">Е14</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Коллекция</span></div>
-                        <span class="card-filter__text_value">MORRIS</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Напряжение</span></div>
-                        <span class="card-filter__text_value">220 V</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Материал плафона</span></div>
-                        <span class="card-filter__text_value">Без плафона</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Количество патронов</span></div>
-                        <span class="card-filter__text_value">8 шт</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Материал арматуры</span></div>
-                        <span class="card-filter__text_value">Акрил</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Крепеж</span></div>
-                        <span class="card-filter__text_value">На крюк</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap">
-                          <button class="btn-reset card-filter__btn-info"></button>
-                          <span class="card-filter__text">Мощность</span>
-                        </div>
-                        <span class="card-filter__text_value">40 W</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Площадь освещения</span></div>
-                        <span class="card-filter__text_value">24 м2</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">IP</span></div>
-                        <span class="card-filter__text_value">20</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Тип лампы</span></div>
-                        <span class="card-filter__text_value">Накаливания</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Стиль лампы</span></div>
-                        <span class="card-filter__text_value">Классический</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Место применения</span></div>
-                        <span class="card-filter__text_value">В квартиру, В комнату</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Вид рассеивателя</span></div>
-                        <span class="card-filter__text_value">Нет</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Диммер</span></div>
-                        <span class="card-filter__text_value">Да</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="card-filter__bottom">
-                    <div class="card-filter__top_sub card-filter__top--open">
-                      <div class="card-filter__toggle_in"></div>
-                      <h3 class="card-filter__title">Материалы и цвета</h3>
-                    </div>
-                    <ul class="card-filter__list">
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Материал плафона</span></div>
-                        <span class="card-filter__text_value">Стекло</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Цвет плафона</span></div>
-                        <span class="card-filter__text_value">Белый</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Материал арматуры</span></div>
-                        <span class="card-filter__text_value">Металл</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Цвет светильника</span></div>
-                        <span class="card-filter__text_value">Бронза</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="card-filter__bottom">
-                    <div class="card-filter__top_sub card-filter__top--open card-filter__top-margin">
-                      <div class="card-filter__toggle_in"></div>
-                      <h3 class="card-filter__title">Источник света</h3>
-                    </div>
-                    <ul class="card-filter__list">
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Патрон</span></div>
-                        <span class="card-filter__text_value">G9</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Количество патронов</span></div>
-                        <span class="card-filter__text_value">12 шт</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap">
-                          <button class="btn-reset card-filter__btn-info"></button>
-                          <span class="card-filter__text">Мощность</span>
-                        </div>
-                        <span class="card-filter__text_value">25 W</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Напряжение</span></div>
-                        <span class="card-filter__text_value">220 V</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Тип лампы</span></div>
-                        <span class="card-filter__text_value">Галогеновая</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Площадь освещения</span></div>
-                        <span class="card-filter__text_value">14 м2</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="card-filter__bottom">
-                    <div class="card-filter__top_sub">
-                      <div class="card-filter__toggle_in"></div>
-                      <h3 class="card-filter__title">Габариты светильника</h3>
-                    </div>
-                    <ul class="card-filter__list">
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Артикул</span></div>
-                        <span class="card-filter__text_value">A8889LM-8GY</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Интерьер</span></div>
-                        <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Бренд</span></div>
-                        <span class="card-filter__text_value">Arte Lamp</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Мощность</span></div>
-                        <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="card-filter__bottom">
-                    <div class="card-filter__top_sub">
-                      <div class="card-filter__toggle_in"></div>
-                      <h3 class="card-filter__title">Дополнительно</h3>
-                    </div>
-                    <ul class="card-filter__list">
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Артикул</span></div>
-                        <span class="card-filter__text_value">A8889LM-8GY</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Интерьер</span></div>
-                        <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Бренд</span></div>
-                        <span class="card-filter__text_value">Arte Lamp</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Мощность</span></div>
-                        <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
-                      </li>
-                    </ul>
-                  </div>
+                  <ul class="card-filter__list">
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Артикул</span></div>
+                      <span class="card-filter__text_value">A8889LM-8GY</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Интерьер</span></div>
+                      <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Бренд</span></div>
+                      <span class="card-filter__text_value">Arte Lamp</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap">
+                        <button class="btn-reset card-filter__btn-info"></button>
+                        <span class="card-filter__text">Мощность</span>
+                      </div>
+                      <span class="card-filter__text_value">40 W</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap">
+                        <button class="btn-reset card-filter__btn-info"></button>
+                        <span class="card-filter__text">Страна</span>
+                      </div>
+                      <span class="card-filter__text_value">Италия</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Патрон</span></div>
+                      <span class="card-filter__text_value">Е14</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Коллекция</span></div>
+                      <span class="card-filter__text_value">MORRIS</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Напряжение</span></div>
+                      <span class="card-filter__text_value">220 V</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Материал плафона</span></div>
+                      <span class="card-filter__text_value">Без плафона</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Количество патронов</span></div>
+                      <span class="card-filter__text_value">8 шт</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Материал арматуры</span></div>
+                      <span class="card-filter__text_value">Акрил</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Крепеж</span></div>
+                      <span class="card-filter__text_value">На крюк</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap">
+                        <button class="btn-reset card-filter__btn-info"></button>
+                        <span class="card-filter__text">Мощность</span>
+                      </div>
+                      <span class="card-filter__text_value">40 W</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Площадь освещения</span></div>
+                      <span class="card-filter__text_value">24 м2</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">IP</span></div>
+                      <span class="card-filter__text_value">20</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Тип лампы</span></div>
+                      <span class="card-filter__text_value">Накаливания</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Стиль лампы</span></div>
+                      <span class="card-filter__text_value">Классический</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Место применения</span></div>
+                      <span class="card-filter__text_value">В квартиру, В комнату</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Вид рассеивателя</span></div>
+                      <span class="card-filter__text_value">Нет</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Диммер</span></div>
+                      <span class="card-filter__text_value">Да</span>
+                    </li>
+                  </ul>
                 </div>
-                <div class="card-filter">
-                  <div class="card-filter__top">
-                    <div class="card-filter__toggle"></div>
-                    <h3 class="card-filter__title">Еще из той же коллекции</h3>
+                <div class="card-filter__bottom">
+                  <div class="card-filter__top_sub card-filter__top--open">
+                    <div class="card-filter__toggle_in"></div>
+                    <h3 class="card-filter__title">Материалы и цвета</h3>
                   </div>
-                  <div class="card-filter__bottom">
-                    <div class="card-filter__top_sub">
-                      <div class="card-filter__toggle_in"></div>
-                      <h3 class="card-filter__title">основные</h3>
-                    </div>
-                    <ul class="card-filter__list">
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Артикул</span></div>
-                        <span class="card-filter__text_value">A8889LM-8GY</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Интерьер</span></div>
-                        <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Бренд</span></div>
-                        <span class="card-filter__text_value">Arte Lamp</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap">
-                          <button class="btn-reset card-filter__btn-info"></button>
-                          <span class="card-filter__text">Мощность</span>
-                        </div>
-                        <span class="card-filter__text_value">40 W</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap">
-                          <button class="btn-reset card-filter__btn-info"></button>
-                          <span class="card-filter__text">Страна</span>
-                        </div>
-                        <span class="card-filter__text_value">Италия</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Патрон</span></div>
-                        <span class="card-filter__text_value">Е14</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Коллекция</span></div>
-                        <span class="card-filter__text_value">MORRIS</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Напряжение</span></div>
-                        <span class="card-filter__text_value">220 V</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Материал плафона</span></div>
-                        <span class="card-filter__text_value">Без плафона</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Количество патронов</span></div>
-                        <span class="card-filter__text_value">8 шт</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Материал арматуры</span></div>
-                        <span class="card-filter__text_value">Акрил</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Крепеж</span></div>
-                        <span class="card-filter__text_value">На крюк</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap">
-                          <button class="btn-reset card-filter__btn-info"></button>
-                          <span class="card-filter__text">Мощность</span>
-                        </div>
-                        <span class="card-filter__text_value">40 W</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Площадь освещения</span></div>
-                        <span class="card-filter__text_value">24 м2</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">IP</span></div>
-                        <span class="card-filter__text_value">20</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Тип лампы</span></div>
-                        <span class="card-filter__text_value">Накаливания</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Стиль лампы</span></div>
-                        <span class="card-filter__text_value">Классический</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Место применения</span></div>
-                        <span class="card-filter__text_value">В квартиру, В комнату</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Вид рассеивателя</span></div>
-                        <span class="card-filter__text_value">Нет</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Диммер</span></div>
-                        <span class="card-filter__text_value">Да</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="card-filter__bottom">
-                    <div class="card-filter__top_sub card-filter__top--open">
-                      <div class="card-filter__toggle_in"></div>
-                      <h3 class="card-filter__title">Материалы и цвета</h3>
-                    </div>
-                    <ul class="card-filter__list">
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Материал плафона</span></div>
-                        <span class="card-filter__text_value">Стекло</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Цвет плафона</span></div>
-                        <span class="card-filter__text_value">Белый</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Материал арматуры</span></div>
-                        <span class="card-filter__text_value">Металл</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Цвет светильника</span></div>
-                        <span class="card-filter__text_value">Бронза</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="card-filter__bottom">
-                    <div class="card-filter__top_sub card-filter__top--open card-filter__top-margin">
-                      <div class="card-filter__toggle_in"></div>
-                      <h3 class="card-filter__title">Источник света</h3>
-                    </div>
-                    <ul class="card-filter__list">
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Патрон</span></div>
-                        <span class="card-filter__text_value">G9</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Количество патронов</span></div>
-                        <span class="card-filter__text_value">12 шт</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap">
-                          <button class="btn-reset card-filter__btn-info"></button>
-                          <span class="card-filter__text">Мощность</span>
-                        </div>
-                        <span class="card-filter__text_value">25 W</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Напряжение</span></div>
-                        <span class="card-filter__text_value">220 V</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Тип лампы</span></div>
-                        <span class="card-filter__text_value">Галогеновая</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Площадь освещения</span></div>
-                        <span class="card-filter__text_value">14 м2</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="card-filter__bottom">
-                    <div class="card-filter__top_sub">
-                      <div class="card-filter__toggle_in"></div>
-                      <h3 class="card-filter__title">Габариты светильника</h3>
-                    </div>
-                    <ul class="card-filter__list">
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Артикул</span></div>
-                        <span class="card-filter__text_value">A8889LM-8GY</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Интерьер</span></div>
-                        <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Бренд</span></div>
-                        <span class="card-filter__text_value">Arte Lamp</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Мощность</span></div>
-                        <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="card-filter__bottom">
-                    <div class="card-filter__top_sub">
-                      <div class="card-filter__toggle_in"></div>
-                      <h3 class="card-filter__title">Дополнительно</h3>
-                    </div>
-                    <ul class="card-filter__list">
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Артикул</span></div>
-                        <span class="card-filter__text_value">A8889LM-8GY</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Интерьер</span></div>
-                        <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Бренд</span></div>
-                        <span class="card-filter__text_value">Arte Lamp</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Мощность</span></div>
-                        <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
-                      </li>
-                    </ul>
-                  </div>
+                  <ul class="card-filter__list">
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Материал плафона</span></div>
+                      <span class="card-filter__text_value">Стекло</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Цвет плафона</span></div>
+                      <span class="card-filter__text_value">Белый</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Материал арматуры</span></div>
+                      <span class="card-filter__text_value">Металл</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Цвет светильника</span></div>
+                      <span class="card-filter__text_value">Бронза</span>
+                    </li>
+                  </ul>
                 </div>
-                <div class="card-filter">
-                  <div class="card-filter__top">
-                    <div class="card-filter__toggle"></div>
-                    <h3 class="card-filter__title">Лампочки</h3>
+                <div class="card-filter__bottom">
+                  <div class="card-filter__top_sub card-filter__top--open card-filter__top-margin">
+                    <div class="card-filter__toggle_in"></div>
+                    <h3 class="card-filter__title">Источник света</h3>
                   </div>
-                  <div class="card-filter__bottom">
-                    <div class="card-filter__top_sub">
-                      <div class="card-filter__toggle_in"></div>
-                      <h3 class="card-filter__title">основные</h3>
-                    </div>
-                    <ul class="card-filter__list">
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Артикул</span></div>
-                        <span class="card-filter__text_value">A8889LM-8GY</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Интерьер</span></div>
-                        <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Бренд</span></div>
-                        <span class="card-filter__text_value">Arte Lamp</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap">
-                          <button class="btn-reset card-filter__btn-info"></button>
-                          <span class="card-filter__text">Мощность</span>
-                        </div>
-                        <span class="card-filter__text_value">40 W</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap">
-                          <button class="btn-reset card-filter__btn-info"></button>
-                          <span class="card-filter__text">Страна</span>
-                        </div>
-                        <span class="card-filter__text_value">Италия</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Патрон</span></div>
-                        <span class="card-filter__text_value">Е14</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Коллекция</span></div>
-                        <span class="card-filter__text_value">MORRIS</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Напряжение</span></div>
-                        <span class="card-filter__text_value">220 V</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Материал плафона</span></div>
-                        <span class="card-filter__text_value">Без плафона</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Количество патронов</span></div>
-                        <span class="card-filter__text_value">8 шт</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Материал арматуры</span></div>
-                        <span class="card-filter__text_value">Акрил</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Крепеж</span></div>
-                        <span class="card-filter__text_value">На крюк</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap">
-                          <button class="btn-reset card-filter__btn-info"></button>
-                          <span class="card-filter__text">Мощность</span>
-                        </div>
-                        <span class="card-filter__text_value">40 W</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Площадь освещения</span></div>
-                        <span class="card-filter__text_value">24 м2</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">IP</span></div>
-                        <span class="card-filter__text_value">20</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Тип лампы</span></div>
-                        <span class="card-filter__text_value">Накаливания</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Стиль лампы</span></div>
-                        <span class="card-filter__text_value">Классический</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Место применения</span></div>
-                        <span class="card-filter__text_value">В квартиру, В комнату</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Вид рассеивателя</span></div>
-                        <span class="card-filter__text_value">Нет</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Диммер</span></div>
-                        <span class="card-filter__text_value">Да</span>
-                      </li>
-                    </ul>
+                  <ul class="card-filter__list">
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Патрон</span></div>
+                      <span class="card-filter__text_value">G9</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Количество патронов</span></div>
+                      <span class="card-filter__text_value">12 шт</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap">
+                        <button class="btn-reset card-filter__btn-info"></button>
+                        <span class="card-filter__text">Мощность</span>
+                      </div>
+                      <span class="card-filter__text_value">25 W</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Напряжение</span></div>
+                      <span class="card-filter__text_value">220 V</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Тип лампы</span></div>
+                      <span class="card-filter__text_value">Галогеновая</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Площадь освещения</span></div>
+                      <span class="card-filter__text_value">14 м2</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-filter__bottom">
+                  <div class="card-filter__top_sub">
+                    <div class="card-filter__toggle_in"></div>
+                    <h3 class="card-filter__title">Габариты светильника</h3>
                   </div>
-                  <div class="card-filter__bottom">
-                    <div class="card-filter__top_sub card-filter__top--open">
-                      <div class="card-filter__toggle_in"></div>
-                      <h3 class="card-filter__title">Материалы и цвета1</h3>
-                    </div>
-                    <ul class="card-filter__list">
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Материал плафона</span></div>
-                        <span class="card-filter__text_value">Стекло</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Цвет плафона</span></div>
-                        <span class="card-filter__text_value">Белый</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Материал арматуры</span></div>
-                        <span class="card-filter__text_value">Металл</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Цвет светильника</span></div>
-                        <span class="card-filter__text_value">Бронза</span>
-                      </li>
-                    </ul>
+                  <ul class="card-filter__list">
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Артикул</span></div>
+                      <span class="card-filter__text_value">A8889LM-8GY</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Интерьер</span></div>
+                      <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Бренд</span></div>
+                      <span class="card-filter__text_value">Arte Lamp</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Мощность</span></div>
+                      <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-filter__bottom">
+                  <div class="card-filter__top_sub">
+                    <div class="card-filter__toggle_in"></div>
+                    <h3 class="card-filter__title">Дополнительно</h3>
                   </div>
-                  <div class="card-filter__bottom">
-                    <div class="card-filter__top_sub card-filter__top--open card-filter__top-margin">
-                      <div class="card-filter__toggle_in"></div>
-                      <h3 class="card-filter__title">Источник света</h3>
-                    </div>
-                    <ul class="card-filter__list">
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Патрон</span></div>
-                        <span class="card-filter__text_value">G9</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Количество патронов</span></div>
-                        <span class="card-filter__text_value">12 шт</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap">
-                          <button class="btn-reset card-filter__btn-info"></button>
-                          <span class="card-filter__text">Мощность</span>
-                        </div>
-                        <span class="card-filter__text_value">25 W</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Напряжение</span></div>
-                        <span class="card-filter__text_value">220 V</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Тип лампы</span></div>
-                        <span class="card-filter__text_value">Галогеновая</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Площадь освещения</span></div>
-                        <span class="card-filter__text_value">14 м2</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="card-filter__bottom">
-                    <div class="card-filter__top_sub">
-                      <div class="card-filter__toggle_in"></div>
-                      <h3 class="card-filter__title">Габариты светильника</h3>
-                    </div>
-                    <ul class="card-filter__list">
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Артикул</span></div>
-                        <span class="card-filter__text_value">A8889LM-8GY</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Интерьер</span></div>
-                        <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Бренд</span></div>
-                        <span class="card-filter__text_value">Arte Lamp</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Мощность</span></div>
-                        <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="card-filter__bottom">
-                    <div class="card-filter__top_sub">
-                      <div class="card-filter__toggle_in"></div>
-                      <h3 class="card-filter__title">Дополнительно</h3>
-                    </div>
-                    <ul class="card-filter__list">
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Артикул</span></div>
-                        <span class="card-filter__text_value">A8889LM-8GY</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Интерьер</span></div>
-                        <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Бренд</span></div>
-                        <span class="card-filter__text_value">Arte Lamp</span>
-                      </li>
-                      <li class="card-filter__item">
-                        <div class="card-filter__text_wrap"><span class="card-filter__text">Мощность</span></div>
-                        <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
-                      </li>
-                    </ul>
-                  </div>
+                  <ul class="card-filter__list">
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Артикул</span></div>
+                      <span class="card-filter__text_value">A8889LM-8GY</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Интерьер</span></div>
+                      <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Бренд</span></div>
+                      <span class="card-filter__text_value">Arte Lamp</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Мощность</span></div>
+                      <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
+                    </li>
+                  </ul>
                 </div>
               </div>
-              <div class="card-filter__btn"><button class="default-btn btn-reset card-filter__main_btn">Все люстры на штанге</button></div>
-              <div class="download-docs">
-                <div class="download-docs__top">
-                  <div class="download-docs__toggle"></div>
-                  <h3 class="download-docs__title">Документы для скачивания</h3>
+              <div class="card-filter">
+                <div class="card-filter__top">
+                  <div class="card-filter__toggle"></div>
+                  <h3 class="card-filter__title">Описание коллекции</h3>
                 </div>
-                <div class="download-docs__wrap">
-                  <div class="card-top__additional-info_wrap">
-                    <button class="btn-reset card-top__icon card-top__rar"></button>
-                    <div class="card-top__additional-info_text">
-                      <div class="card-top__additional-info_text-wrap">
-                        <div class="card-top__additional-info_title">Инструкции по сборке</div>
-                        <a class="card-top__additional-info_subtitle" href="#!">A3988SP-12AB_ai</a>
+                <div class="card-filter__bottom">
+                  <div class="card-filter__top_sub">
+                    <div class="card-filter__toggle_in"></div>
+                    <h3 class="card-filter__title">основные</h3>
+                  </div>
+                  <ul class="card-filter__list">
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Артикул</span></div>
+                      <span class="card-filter__text_value">A8889LM-8GY</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Интерьер</span></div>
+                      <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Бренд</span></div>
+                      <span class="card-filter__text_value">Arte Lamp</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap">
+                        <button class="btn-reset card-filter__btn-info"></button>
+                        <span class="card-filter__text">Мощность</span>
                       </div>
+                      <span class="card-filter__text_value">40 W</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap">
+                        <button class="btn-reset card-filter__btn-info"></button>
+                        <span class="card-filter__text">Страна</span>
+                      </div>
+                      <span class="card-filter__text_value">Италия</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Патрон</span></div>
+                      <span class="card-filter__text_value">Е14</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Коллекция</span></div>
+                      <span class="card-filter__text_value">MORRIS</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Напряжение</span></div>
+                      <span class="card-filter__text_value">220 V</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Материал плафона</span></div>
+                      <span class="card-filter__text_value">Без плафона</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Количество патронов</span></div>
+                      <span class="card-filter__text_value">8 шт</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Материал арматуры</span></div>
+                      <span class="card-filter__text_value">Акрил</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Крепеж</span></div>
+                      <span class="card-filter__text_value">На крюк</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap">
+                        <button class="btn-reset card-filter__btn-info"></button>
+                        <span class="card-filter__text">Мощность</span>
+                      </div>
+                      <span class="card-filter__text_value">40 W</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Площадь освещения</span></div>
+                      <span class="card-filter__text_value">24 м2</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">IP</span></div>
+                      <span class="card-filter__text_value">20</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Тип лампы</span></div>
+                      <span class="card-filter__text_value">Накаливания</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Стиль лампы</span></div>
+                      <span class="card-filter__text_value">Классический</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Место применения</span></div>
+                      <span class="card-filter__text_value">В квартиру, В комнату</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Вид рассеивателя</span></div>
+                      <span class="card-filter__text_value">Нет</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Диммер</span></div>
+                      <span class="card-filter__text_value">Да</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-filter__bottom">
+                  <div class="card-filter__top_sub card-filter__top--open">
+                    <div class="card-filter__toggle_in"></div>
+                    <h3 class="card-filter__title">Материалы и цвета</h3>
+                  </div>
+                  <ul class="card-filter__list">
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Материал плафона</span></div>
+                      <span class="card-filter__text_value">Стекло</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Цвет плафона</span></div>
+                      <span class="card-filter__text_value">Белый</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Материал арматуры</span></div>
+                      <span class="card-filter__text_value">Металл</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Цвет светильника</span></div>
+                      <span class="card-filter__text_value">Бронза</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-filter__bottom">
+                  <div class="card-filter__top_sub card-filter__top--open card-filter__top-margin">
+                    <div class="card-filter__toggle_in"></div>
+                    <h3 class="card-filter__title">Источник света</h3>
+                  </div>
+                  <ul class="card-filter__list">
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Патрон</span></div>
+                      <span class="card-filter__text_value">G9</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Количество патронов</span></div>
+                      <span class="card-filter__text_value">12 шт</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap">
+                        <button class="btn-reset card-filter__btn-info"></button>
+                        <span class="card-filter__text">Мощность</span>
+                      </div>
+                      <span class="card-filter__text_value">25 W</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Напряжение</span></div>
+                      <span class="card-filter__text_value">220 V</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Тип лампы</span></div>
+                      <span class="card-filter__text_value">Галогеновая</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Площадь освещения</span></div>
+                      <span class="card-filter__text_value">14 м2</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-filter__bottom">
+                  <div class="card-filter__top_sub">
+                    <div class="card-filter__toggle_in"></div>
+                    <h3 class="card-filter__title">Габариты светильника</h3>
+                  </div>
+                  <ul class="card-filter__list">
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Артикул</span></div>
+                      <span class="card-filter__text_value">A8889LM-8GY</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Интерьер</span></div>
+                      <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Бренд</span></div>
+                      <span class="card-filter__text_value">Arte Lamp</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Мощность</span></div>
+                      <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-filter__bottom">
+                  <div class="card-filter__top_sub">
+                    <div class="card-filter__toggle_in"></div>
+                    <h3 class="card-filter__title">Дополнительно</h3>
+                  </div>
+                  <ul class="card-filter__list">
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Артикул</span></div>
+                      <span class="card-filter__text_value">A8889LM-8GY</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Интерьер</span></div>
+                      <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Бренд</span></div>
+                      <span class="card-filter__text_value">Arte Lamp</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Мощность</span></div>
+                      <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-filter">
+                <div class="card-filter__top">
+                  <div class="card-filter__toggle"></div>
+                  <h3 class="card-filter__title">Еще из той же коллекции</h3>
+                </div>
+                <div class="card-filter__bottom">
+                  <div class="card-filter__top_sub">
+                    <div class="card-filter__toggle_in"></div>
+                    <h3 class="card-filter__title">основные</h3>
+                  </div>
+                  <ul class="card-filter__list">
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Артикул</span></div>
+                      <span class="card-filter__text_value">A8889LM-8GY</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Интерьер</span></div>
+                      <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Бренд</span></div>
+                      <span class="card-filter__text_value">Arte Lamp</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap">
+                        <button class="btn-reset card-filter__btn-info"></button>
+                        <span class="card-filter__text">Мощность</span>
+                      </div>
+                      <span class="card-filter__text_value">40 W</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap">
+                        <button class="btn-reset card-filter__btn-info"></button>
+                        <span class="card-filter__text">Страна</span>
+                      </div>
+                      <span class="card-filter__text_value">Италия</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Патрон</span></div>
+                      <span class="card-filter__text_value">Е14</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Коллекция</span></div>
+                      <span class="card-filter__text_value">MORRIS</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Напряжение</span></div>
+                      <span class="card-filter__text_value">220 V</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Материал плафона</span></div>
+                      <span class="card-filter__text_value">Без плафона</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Количество патронов</span></div>
+                      <span class="card-filter__text_value">8 шт</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Материал арматуры</span></div>
+                      <span class="card-filter__text_value">Акрил</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Крепеж</span></div>
+                      <span class="card-filter__text_value">На крюк</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap">
+                        <button class="btn-reset card-filter__btn-info"></button>
+                        <span class="card-filter__text">Мощность</span>
+                      </div>
+                      <span class="card-filter__text_value">40 W</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Площадь освещения</span></div>
+                      <span class="card-filter__text_value">24 м2</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">IP</span></div>
+                      <span class="card-filter__text_value">20</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Тип лампы</span></div>
+                      <span class="card-filter__text_value">Накаливания</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Стиль лампы</span></div>
+                      <span class="card-filter__text_value">Классический</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Место применения</span></div>
+                      <span class="card-filter__text_value">В квартиру, В комнату</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Вид рассеивателя</span></div>
+                      <span class="card-filter__text_value">Нет</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Диммер</span></div>
+                      <span class="card-filter__text_value">Да</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-filter__bottom">
+                  <div class="card-filter__top_sub card-filter__top--open">
+                    <div class="card-filter__toggle_in"></div>
+                    <h3 class="card-filter__title">Материалы и цвета</h3>
+                  </div>
+                  <ul class="card-filter__list">
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Материал плафона</span></div>
+                      <span class="card-filter__text_value">Стекло</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Цвет плафона</span></div>
+                      <span class="card-filter__text_value">Белый</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Материал арматуры</span></div>
+                      <span class="card-filter__text_value">Металл</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Цвет светильника</span></div>
+                      <span class="card-filter__text_value">Бронза</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-filter__bottom">
+                  <div class="card-filter__top_sub card-filter__top--open card-filter__top-margin">
+                    <div class="card-filter__toggle_in"></div>
+                    <h3 class="card-filter__title">Источник света</h3>
+                  </div>
+                  <ul class="card-filter__list">
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Патрон</span></div>
+                      <span class="card-filter__text_value">G9</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Количество патронов</span></div>
+                      <span class="card-filter__text_value">12 шт</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap">
+                        <button class="btn-reset card-filter__btn-info"></button>
+                        <span class="card-filter__text">Мощность</span>
+                      </div>
+                      <span class="card-filter__text_value">25 W</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Напряжение</span></div>
+                      <span class="card-filter__text_value">220 V</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Тип лампы</span></div>
+                      <span class="card-filter__text_value">Галогеновая</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Площадь освещения</span></div>
+                      <span class="card-filter__text_value">14 м2</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-filter__bottom">
+                  <div class="card-filter__top_sub">
+                    <div class="card-filter__toggle_in"></div>
+                    <h3 class="card-filter__title">Габариты светильника</h3>
+                  </div>
+                  <ul class="card-filter__list">
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Артикул</span></div>
+                      <span class="card-filter__text_value">A8889LM-8GY</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Интерьер</span></div>
+                      <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Бренд</span></div>
+                      <span class="card-filter__text_value">Arte Lamp</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Мощность</span></div>
+                      <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-filter__bottom">
+                  <div class="card-filter__top_sub">
+                    <div class="card-filter__toggle_in"></div>
+                    <h3 class="card-filter__title">Дополнительно</h3>
+                  </div>
+                  <ul class="card-filter__list">
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Артикул</span></div>
+                      <span class="card-filter__text_value">A8889LM-8GY</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Интерьер</span></div>
+                      <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Бренд</span></div>
+                      <span class="card-filter__text_value">Arte Lamp</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Мощность</span></div>
+                      <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-filter">
+                <div class="card-filter__top">
+                  <div class="card-filter__toggle"></div>
+                  <h3 class="card-filter__title">Лампочки</h3>
+                </div>
+                <div class="card-filter__bottom">
+                  <div class="card-filter__top_sub">
+                    <div class="card-filter__toggle_in"></div>
+                    <h3 class="card-filter__title">основные</h3>
+                  </div>
+                  <ul class="card-filter__list">
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Артикул</span></div>
+                      <span class="card-filter__text_value">A8889LM-8GY</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Интерьер</span></div>
+                      <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Бренд</span></div>
+                      <span class="card-filter__text_value">Arte Lamp</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap">
+                        <button class="btn-reset card-filter__btn-info"></button>
+                        <span class="card-filter__text">Мощность</span>
+                      </div>
+                      <span class="card-filter__text_value">40 W</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap">
+                        <button class="btn-reset card-filter__btn-info"></button>
+                        <span class="card-filter__text">Страна</span>
+                      </div>
+                      <span class="card-filter__text_value">Италия</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Патрон</span></div>
+                      <span class="card-filter__text_value">Е14</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Коллекция</span></div>
+                      <span class="card-filter__text_value">MORRIS</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Напряжение</span></div>
+                      <span class="card-filter__text_value">220 V</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Материал плафона</span></div>
+                      <span class="card-filter__text_value">Без плафона</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Количество патронов</span></div>
+                      <span class="card-filter__text_value">8 шт</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Материал арматуры</span></div>
+                      <span class="card-filter__text_value">Акрил</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Крепеж</span></div>
+                      <span class="card-filter__text_value">На крюк</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap">
+                        <button class="btn-reset card-filter__btn-info"></button>
+                        <span class="card-filter__text">Мощность</span>
+                      </div>
+                      <span class="card-filter__text_value">40 W</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Площадь освещения</span></div>
+                      <span class="card-filter__text_value">24 м2</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">IP</span></div>
+                      <span class="card-filter__text_value">20</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Тип лампы</span></div>
+                      <span class="card-filter__text_value">Накаливания</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Стиль лампы</span></div>
+                      <span class="card-filter__text_value">Классический</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Место применения</span></div>
+                      <span class="card-filter__text_value">В квартиру, В комнату</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Вид рассеивателя</span></div>
+                      <span class="card-filter__text_value">Нет</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Диммер</span></div>
+                      <span class="card-filter__text_value">Да</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-filter__bottom">
+                  <div class="card-filter__top_sub card-filter__top--open">
+                    <div class="card-filter__toggle_in"></div>
+                    <h3 class="card-filter__title">Материалы и цвета1</h3>
+                  </div>
+                  <ul class="card-filter__list">
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Материал плафона</span></div>
+                      <span class="card-filter__text_value">Стекло</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Цвет плафона</span></div>
+                      <span class="card-filter__text_value">Белый</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Материал арматуры</span></div>
+                      <span class="card-filter__text_value">Металл</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Цвет светильника</span></div>
+                      <span class="card-filter__text_value">Бронза</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-filter__bottom">
+                  <div class="card-filter__top_sub card-filter__top--open card-filter__top-margin">
+                    <div class="card-filter__toggle_in"></div>
+                    <h3 class="card-filter__title">Источник света</h3>
+                  </div>
+                  <ul class="card-filter__list">
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Патрон</span></div>
+                      <span class="card-filter__text_value">G9</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Количество патронов</span></div>
+                      <span class="card-filter__text_value">12 шт</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap">
+                        <button class="btn-reset card-filter__btn-info"></button>
+                        <span class="card-filter__text">Мощность</span>
+                      </div>
+                      <span class="card-filter__text_value">25 W</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Напряжение</span></div>
+                      <span class="card-filter__text_value">220 V</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Тип лампы</span></div>
+                      <span class="card-filter__text_value">Галогеновая</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Площадь освещения</span></div>
+                      <span class="card-filter__text_value">14 м2</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-filter__bottom">
+                  <div class="card-filter__top_sub">
+                    <div class="card-filter__toggle_in"></div>
+                    <h3 class="card-filter__title">Габариты светильника</h3>
+                  </div>
+                  <ul class="card-filter__list">
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Артикул</span></div>
+                      <span class="card-filter__text_value">A8889LM-8GY</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Интерьер</span></div>
+                      <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Бренд</span></div>
+                      <span class="card-filter__text_value">Arte Lamp</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Мощность</span></div>
+                      <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-filter__bottom">
+                  <div class="card-filter__top_sub">
+                    <div class="card-filter__toggle_in"></div>
+                    <h3 class="card-filter__title">Дополнительно</h3>
+                  </div>
+                  <ul class="card-filter__list">
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Артикул</span></div>
+                      <span class="card-filter__text_value">A8889LM-8GY</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Интерьер</span></div>
+                      <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Бренд</span></div>
+                      <span class="card-filter__text_value">Arte Lamp</span>
+                    </li>
+                    <li class="card-filter__item">
+                      <div class="card-filter__text_wrap"><span class="card-filter__text">Мощность</span></div>
+                      <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card-filter__btn"><button class="default-btn btn-reset card-filter__main_btn">Все люстры на штанге</button></div>
+            <div class="download-docs">
+              <div class="download-docs__top">
+                <div class="download-docs__toggle"></div>
+                <h3 class="download-docs__title">Документы для скачивания</h3>
+              </div>
+              <div class="download-docs__wrap">
+                <div class="card-top__additional-info_wrap">
+                  <button class="btn-reset card-top__icon card-top__rar"></button>
+                  <div class="card-top__additional-info_text">
+                    <div class="card-top__additional-info_text-wrap">
+                      <div class="card-top__additional-info_title">Инструкции по сборке</div>
+                      <a class="card-top__additional-info_subtitle" href="#!">A3988SP-12AB_ai</a>
                     </div>
                   </div>
-                  <div class="card-top__additional-info_wrap">
-                    <button class="btn-reset card-top__icon card-top__zip"></button>
-                    <div class="card-top__additional-info_text">
-                      <div class="card-top__additional-info_text-wrap">
-                        <div class="card-top__additional-info_title">Руководства по эксплуатации</div>
-                        <a class="card-top__additional-info_subtitle" href="#!">ARTELAMP_manual</a>
-                      </div>
+                </div>
+                <div class="card-top__additional-info_wrap">
+                  <button class="btn-reset card-top__icon card-top__zip"></button>
+                  <div class="card-top__additional-info_text">
+                    <div class="card-top__additional-info_text-wrap">
+                      <div class="card-top__additional-info_title">Руководства по эксплуатации</div>
+                      <a class="card-top__additional-info_subtitle" href="#!">ARTELAMP_manual</a>
                     </div>
                   </div>
-                  <div class="card-top__additional-info_wrap">
-                    <button class="btn-reset card-top__icon card-top__pdf"></button>
-                    <div class="card-top__additional-info_text">
-                      <div class="card-top__additional-info_text-wrap">
-                        <div class="card-top__additional-info_title">Сертификаты</div>
-                        <a class="card-top__additional-info_subtitle" href="#!">АРТЕ Сертификат соответствия на светильники№2</a>
-                      </div>
+                </div>
+                <div class="card-top__additional-info_wrap">
+                  <button class="btn-reset card-top__icon card-top__pdf"></button>
+                  <div class="card-top__additional-info_text">
+                    <div class="card-top__additional-info_text-wrap">
+                      <div class="card-top__additional-info_title">Сертификаты</div>
+                      <a class="card-top__additional-info_subtitle" href="#!">АРТЕ Сертификат соответствия на светильники№2</a>
                     </div>
                   </div>
-                  <div class="card-top__additional-info_wrap">
-                    <button class="btn-reset card-top__icon card-top__pdf"></button>
-                    <div class="card-top__additional-info_text">
-                      <div class="card-top__additional-info_text-wrap">
-                        <div class="card-top__additional-info_title">Технические рисунки</div>
-                        <a class="card-top__additional-info_subtitle" href="#!">A3988SP-12AB_drawing</a>
-                      </div>
+                </div>
+                <div class="card-top__additional-info_wrap">
+                  <button class="btn-reset card-top__icon card-top__pdf"></button>
+                  <div class="card-top__additional-info_text">
+                    <div class="card-top__additional-info_text-wrap">
+                      <div class="card-top__additional-info_title">Технические рисунки</div>
+                      <a class="card-top__additional-info_subtitle" href="#!">A3988SP-12AB_drawing</a>
                     </div>
                   </div>
                 </div>
@@ -1199,7 +1259,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </main>
     <footer class="footer" id="footer">
       <div class="container">
@@ -1267,11 +1327,12 @@
         </div>
       </div>
       <nav class="footer__nav">
+        <!-- Активному пункту меню, добавляем класс .active-->
         <a class="footer__nav-item" href="#!">
           <span class="pic pic_home"></span>
           <span class="txt">Главная</span>
         </a>
-        <button class="footer__nav-item active">
+        <button class="footer__nav-item" id="mobileSearchToggler">
           <span class="pic pic_search"></span>
           <span class="txt">Поиск</span>
         </button>
@@ -1290,6 +1351,55 @@
         <div class="spinner__item"></div>
         <div class="spinner__item"></div>
         <div class="spinner__item"></div>
+      </div>
+    </div>
+    <!-- Показываем модалку с помощью класса .visible-->
+    <div class="order-war" id="orderLoggedWar">
+      <!-- Показываем контент с помощью класса .visible-->
+      <div class="order-war__body">
+        <span class="order-war__close close"></span>
+        <i></i>
+        <p>Что бы добавить товар в заказ, необходимо зарегистрироваться и создать аккаунт</p>
+        <!-- В ссылку ставим url на страницу вход/регистрация-->
+        <a class="dark-btn block-btn" href="">Зарегистрироваться</a>
+      </div>
+    </div>
+    <!-- Показываем модалку с помощью класса .visible-->
+    <div class="order-war" id="orderAddProductWar">
+      <!-- Показываем контент с помощью класса .visible-->
+      <div class="order-war__body">
+        <span class="order-war__close close"></span>
+        <i></i>
+        <p>Вы уверены, что хотите подтвердить изменения? В случае изменения товаров, заказ снова перейдет в статус «В обработке»</p>
+        <button class="dark-btn block-btn">Да, добавить товар</button>
+      </div>
+    </div>
+    <!-- Показываем модалку с помощью класса .visible-->
+    <div class="order-war" id="orderError">
+      <!-- Показываем контент с помощью класса .visible-->
+      <div class="order-war__body">
+        <span class="order-war__close close"></span>
+        <i></i>
+        <p>
+          <b>Ошибка</b>
+          <br >
+          К сожалению, не удалось выполнить запрос
+        </p>
+        <button class="dark-btn block-btn close">Закрыть</button>
+      </div>
+    </div>
+    <!-- Показываем модалку с помощью класса .visible-->
+    <div class="order-war" id="orderApproved">
+      <!-- Показываем контент с помощью класса .visible-->
+      <div class="order-war__body">
+        <span class="order-war__close close"></span>
+        <i></i>
+        <p>
+          <b>Запрос выполнен успешно</b>
+          <br >
+          Товар добавлен в заказ
+        </p>
+        <button class="dark-btn block-btn close">Закрыть</button>
       </div>
     </div>
     <script src="js/vendor.min.js"></script>

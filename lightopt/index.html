@@ -13,18 +13,74 @@
     <link rel="stylesheet" href="css/main.min.css" >
     <link rel="stylesheet" href="css/pages/index.min.css" >
     <script>
-      // Здесь можно добавить какие-либо скрипты или проинициализировать какие-либо глобальные переменные
-      window.globalVariable = "some global variable value";
+      window.filterApiLink = "mocks/catalog-filter-request.json";
+      window.addProductApiLink = "mocks/add-product-request.json";
     </script>
   </head>
   <body class="page-index" id="body">
     <header class="header" id="header">
       <div class="container">
         <div class="header-info">
-          <a class="header-info__logo" href="/index.html"><img src="img/LightOpt.png" alt="LightOpt" ></a>
-          <div class="header-info__search">
-            <input class="header-info__input-text" type="text" placeholder="Поиск по каталогу" >
-            <button class="header-info__btn header-info__menu-search btn-reset"></button>
+          <a class="header-info__logo" href="/index.html"><img src="img/LightOpt.png" alt="" ></a>
+          <div class="search" id="search">
+            <div class="container">
+              <div class="search__top">
+                <a class="search__logo" href="/index.html"><img src="img/LightOpt.png" alt="" ></a>
+                <button class="search__close"></button>
+              </div>
+              <div class="search__wrap">
+                <label class="search__controllers">
+                  <input class="search__input" type="text" placeholder="Поиск по каталогу" >
+                  <button class="search__reset"><i id="resetSearchText"></i></button>
+                  <button class="search__req"><i id="requestSearchText"></i></button>
+                </label>
+                <div class="search__results" id="searchResults">
+                  <ul>
+                    <li>
+                      <a class="search__item" href="#!">
+                        <i><img src="img/search-item.jpg" alt="" ></i>
+                        <span>
+                          <mark>
+                            Потолочная люстра Arte Lamp SANSA
+                            <b>A7585PL-3WH</b>
+                            подвесная
+                          </mark>
+                          <em>2380 р.</em>
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="search__item" href="#!">
+                        <i><img src="img/search-item.jpg" alt="" ></i>
+                        <span>
+                          <mark>
+                            Потолочная люстра Arte Lamp SANSA
+                            <b>A7585PL-3WH</b>
+                            подвесная
+                          </mark>
+                          <em>2380 р.</em>
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="search__item" href="#!">
+                        <i><img src="img/search-item.jpg" alt="" ></i>
+                        <span>
+                          <mark>
+                            Потолочная люстра Arte Lamp SANSA
+                            <b>A7585PL-3WH</b>
+                            подвесная
+                          </mark>
+                          <em>2380 р.</em>
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                  <a class="search__all desc" href="#!">показать все результаты</a>
+                </div>
+                <a class="search__all mob" href="#!">показать все результаты</a>
+              </div>
+            </div>
           </div>
           <ul class="header-info__menu">
             <!-- Блок .header-logged показываем только когда пользователь залогинен-->
@@ -1705,11 +1761,12 @@
         </div>
       </div>
       <nav class="footer__nav">
+        <!-- Активному пункту меню, добавляем класс .active-->
         <a class="footer__nav-item" href="#!">
           <span class="pic pic_home"></span>
           <span class="txt">Главная</span>
         </a>
-        <button class="footer__nav-item active">
+        <button class="footer__nav-item" id="mobileSearchToggler">
           <span class="pic pic_search"></span>
           <span class="txt">Поиск</span>
         </button>
@@ -1728,6 +1785,55 @@
         <div class="spinner__item"></div>
         <div class="spinner__item"></div>
         <div class="spinner__item"></div>
+      </div>
+    </div>
+    <!-- Показываем модалку с помощью класса .visible-->
+    <div class="order-war" id="orderLoggedWar">
+      <!-- Показываем контент с помощью класса .visible-->
+      <div class="order-war__body">
+        <span class="order-war__close close"></span>
+        <i></i>
+        <p>Что бы добавить товар в заказ, необходимо зарегистрироваться и создать аккаунт</p>
+        <!-- В ссылку ставим url на страницу вход/регистрация-->
+        <a class="dark-btn block-btn" href="">Зарегистрироваться</a>
+      </div>
+    </div>
+    <!-- Показываем модалку с помощью класса .visible-->
+    <div class="order-war" id="orderAddProductWar">
+      <!-- Показываем контент с помощью класса .visible-->
+      <div class="order-war__body">
+        <span class="order-war__close close"></span>
+        <i></i>
+        <p>Вы уверены, что хотите подтвердить изменения? В случае изменения товаров, заказ снова перейдет в статус «В обработке»</p>
+        <button class="dark-btn block-btn">Да, добавить товар</button>
+      </div>
+    </div>
+    <!-- Показываем модалку с помощью класса .visible-->
+    <div class="order-war" id="orderError">
+      <!-- Показываем контент с помощью класса .visible-->
+      <div class="order-war__body">
+        <span class="order-war__close close"></span>
+        <i></i>
+        <p>
+          <b>Ошибка</b>
+          <br >
+          К сожалению, не удалось выполнить запрос
+        </p>
+        <button class="dark-btn block-btn close">Закрыть</button>
+      </div>
+    </div>
+    <!-- Показываем модалку с помощью класса .visible-->
+    <div class="order-war" id="orderApproved">
+      <!-- Показываем контент с помощью класса .visible-->
+      <div class="order-war__body">
+        <span class="order-war__close close"></span>
+        <i></i>
+        <p>
+          <b>Запрос выполнен успешно</b>
+          <br >
+          Товар добавлен в заказ
+        </p>
+        <button class="dark-btn block-btn close">Закрыть</button>
       </div>
     </div>
     <script src="js/vendor.min.js"></script>
