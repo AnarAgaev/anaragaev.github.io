@@ -1,0 +1,54 @@
+{
+    "count": 1000,
+    "data": [
+        {
+            "id": 29001,
+            "title": "Люстра Arte Lamp FEDERICA A1298PL-3CC",
+            "url": "https://testprod-provider.massive.ru/products/29001",
+            "image": "https://ms.fandeco.ru/assets/images/products/1681/big/a1298pl-3cc.jpg",
+            "price": 3690
+        },
+        {
+            "id": 19699,
+            "title": "Потолочный светильник Arte Lamp MULTI-PIUMA A1398PL-1CL",
+            "url": "https://testprod-provider.massive.ru/products/19699",
+            "image": "https://ms.fandeco.ru/assets/images/products/1717/big/a1398pl-1cl.jpg",
+            "price": 7590
+        },
+        {
+            "id": 29025,
+            "title": "Потолочная люстра Arte Lamp DAISY A1098PL-5WH",
+            "url": "https://testprod-provider.massive.ru/products/29025",
+            "image": "https://ms.fandeco.ru/assets/images/products/56/big/a1098pl-5wh.jpg",
+            "price": 7490
+        },
+        {
+            "id": 94684,
+            "title": "Точечный встраиваемый светильник Arte Lamp ARENA A5298PL-1BA",
+            "url": "https://testprod-provider.massive.ru/products/94684",
+            "image": "https://ms.fandeco.ru/assets/images/products/2964/big/a5298pl-1ba-1.jpg",
+            "price": 100
+        },
+        {
+            "id": 94685,
+            "title": "Точечный встраиваемый светильник Arte Lamp ARENA A5298PL-1SG",
+            "url": "https://testprod-provider.massive.ru/products/94685",
+            "image": "https://ms.fandeco.ru/assets/images/products/2965/big/a5298pl-1sg.jpg",
+            "price": 590
+        },
+        {
+            "id": 94686,
+            "title": "Точечный встраиваемый светильник Arte Lamp ARENA A5298PL-1AB",
+            "url": "https://testprod-provider.massive.ru/products/94686",
+            "image": "https://ms.fandeco.ru/assets/images/products/2963/big/a5298pl-1ab.jpg",
+            "price": 590
+        },
+        {
+            "id": 94691,
+            "title": "Точечный встраиваемый светильник Arte Lamp ARENA A5298PL-1WG",
+            "url": "https://testprod-provider.massive.ru/products/94691",
+            "image": "https://ms.fandeco.ru/assets/images/products/2966/big/a5298pl-1wg.jpg",
+            "price": 200
+        }
+    ]
+}
