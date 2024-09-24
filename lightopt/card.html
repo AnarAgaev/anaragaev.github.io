@@ -354,33 +354,40 @@
                 <div class="custom-select">
                   <div class="custom-select__top card-select__top">
                     <!-- В data атрибут data-order-id добавляем ID заказа в который будет добавлять товар по умолчанию-->
-                    <!-- В data атрибут data-status пишем соответственно: Заказ в резерве - false, Заказ не оформлен - true-->
-                    <div class="custom-select__value" data-order-id="54325678" data-status="true">Заказ № 54325678</div>
+                    <!-- В data атрибут data-status пишем соответственно: Заказ в резерве - false, Заказ не оформлен - true, Новый заказ - new-->
+                    <!-- При первом рендере, всегда ставим в custom-select__value текст Новый заказ, значение data-order-id - пустое, data-status - new-->
+                    <div class="custom-select__value" data-order-id data-status="new">Новый заказ</div>
                     <div class="custom-select_open"></div>
                   </div>
                   <div class="custom-select__drop">
                     <ul class="custom-select__list">
                       <li class="custom-select__item custom-select__item--sort">
-                        <div class="custom-select__option" data-order-id="11125678" data-status="true" title="Заказ № 11125678">
-                          <span>Заказ № 11125678</span>
+                        <!-- Первым всегда идет опшен Новый заказ-->
+                        <!-- Для Нового заказа data-order-id оставляем без значения либо пустая строка-->
+                        <!-- Для Нового заказа data-status ставим в значение new-->
+                        <div class="custom-select__option" data-order-id data-status="new" title="Новый заказ"><span>Новый заказ</span></div>
+                      </li>
+                      <li class="custom-select__item custom-select__item--sort">
+                        <div class="custom-select__option" data-order-id="11125678-ord" data-status="true" title="Заказ № 11125678-ord">
+                          <span>Заказ № 11125678-ord</span>
                           <mark>Заказ не оформлен</mark>
                         </div>
                       </li>
                       <li class="custom-select__item custom-select__item--sort">
-                        <div class="custom-select__option" data-order-id="22225678" data-status="false" title="Заказ № 22225678">
-                          <span>Заказ № 22225678</span>
+                        <div class="custom-select__option" data-order-id="22225678-ord" data-status="false" title="Заказ № 22225678-ord">
+                          <span>Заказ № 22225678-ord</span>
                           <mark>В резерве</mark>
                         </div>
                       </li>
                       <li class="custom-select__item custom-select__item--sort">
-                        <div class="custom-select__option" data-order-id="33325678" data-status="true" title="Заказ № 33325678">
-                          <span>Заказ № 33325678</span>
+                        <div class="custom-select__option" data-order-id="33325678-ord" data-status="true" title="Заказ № 33325678-ord">
+                          <span>Заказ № 33325678-ord</span>
                           <mark>Заказ не оформлен</mark>
                         </div>
                       </li>
                       <li class="custom-select__item custom-select__item--sort">
-                        <div class="custom-select__option" data-order-id="44425678" data-status="false" title="Заказ № 44425678">
-                          <span>Заказ № 44425678</span>
+                        <div class="custom-select__option" data-order-id="44425678-ord" data-status="false" title="Заказ № 44425678-ord">
+                          <span>Заказ № 44425678-ord</span>
                           <mark>В резерве</mark>
                         </div>
                       </li>
@@ -388,9 +395,9 @@
                   </div>
                 </div>
                 <!-- Если пользователь залогинен, к кнопке Добавить в заказ добавляем аттрибут data-product-id со значением id текущего продукта-->
-                <button class="btn-reset default-btn card-top__btn_order" data-product-id="1234567">Добавить в заказ</button>
+                <button class="btn-reset default-btn card-top__btn_order" data-product-id="777-1234567-prod">Добавить в заказ</button>
               </div>
-              <!-- Если пользователь не залогинен, то Не добавляем селект с заказами-->
+              <!-- Если пользователь не залогинен, то Не добавляем селект с заказами а у кнопки Добавить в зака ВООБЩЕ НЕ ДОЛЖНО БЫТЬ data-product-id-->
               <div class="card-top__order"><button class="btn-reset default-btn card-top__btn_order">Добавить в заказ</button></div>
               <div class="card-top__additional-info">
                 <div class="card-top__additional-info_wrap">
@@ -1435,6 +1442,20 @@
           Товар добавлен в заказ
         </p>
         <button class="dark-btn block-btn close">Закрыть</button>
+      </div>
+    </div>
+    <!-- Показываем модалку с помощью класса .visible-->
+    <div class="order-war" id="orderAddProductNewOrder">
+      <!-- Показываем контент с помощью класса .visible-->
+      <div class="order-war__body">
+        <span class="order-war__close close"></span>
+        <i></i>
+        <p>
+          Заказ не выбран.
+          <br >
+          Для товара будет создан Новый заказ.
+        </p>
+        <button class="dark-btn block-btn">Да, добавить товар</button>
       </div>
     </div>
     <script src="js/vendor.min.js"></script>

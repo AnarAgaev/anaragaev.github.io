@@ -1378,8 +1378,8 @@
                 <span>Показать выбранные</span>
               </div>
             </div>
-            <ul class="catalog-grid__list">
-              <div class="catalog-grid__wrap">
+            <div class="catalog-grid__list">
+              <ul class="catalog-grid__wrap">
                 <li class="catalog-grid__item">
                   <a href="#!">
                     <article class="product">
@@ -1710,7 +1710,7 @@
                     </article>
                   </a>
                 </li>
-              </div>
+              </ul>
               <section class="pagination">
                 <button class="default-btn pagination__main-btn" id="catalogShowMore">показать больше</button>
                 <!-- Правила формирования URL...
@@ -1732,7 +1732,7 @@
                   <a class="btn--white pagination-btn end" href="#!" title="Следующая"></a>
                 </div>
               </section>
-            </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -1876,6 +1876,20 @@
           Товар добавлен в заказ
         </p>
         <button class="dark-btn block-btn close">Закрыть</button>
+      </div>
+    </div>
+    <!-- Показываем модалку с помощью класса .visible-->
+    <div class="order-war" id="orderAddProductNewOrder">
+      <!-- Показываем контент с помощью класса .visible-->
+      <div class="order-war__body">
+        <span class="order-war__close close"></span>
+        <i></i>
+        <p>
+          Заказ не выбран.
+          <br >
+          Для товара будет создан Новый заказ.
+        </p>
+        <button class="dark-btn block-btn">Да, добавить товар</button>
       </div>
     </div>
     <script src="js/vendor.min.js"></script>
