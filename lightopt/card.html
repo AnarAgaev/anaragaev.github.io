@@ -8,8 +8,8 @@
     <meta name="keywords" content="Write keywords for this page here" >
     <title>LightOPT</title>
     <link rel="preload" href="css/vendor.min.css" as="style" >
-    <link rel="preload" href="css/main.min.css" as="style" >
     <link rel="stylesheet" href="css/vendor.min.css" >
+    <link rel="preload" href="css/main.min.css" as="style" >
     <link rel="stylesheet" href="css/main.min.css" >
     <link rel="stylesheet" href="css/pages/card.min.css" >
     <script>
@@ -420,9 +420,10 @@
           </div>
           <div class="card-content__bottom">
             <div class="card-filters">
+              <!-- Тогглим содержание классом .card-filter--open-->
               <div class="card-filter">
                 <div class="card-filter__top">
-                  <div class="card-filter__toggle"></div>
+                  <button class="card-filter__toggle"></button>
                   <h3 class="card-filter__title">характеристики</h3>
                 </div>
                 <div class="card-filter__bottom">
@@ -632,632 +633,465 @@
               </div>
               <div class="card-filter">
                 <div class="card-filter__top">
-                  <div class="card-filter__toggle"></div>
+                  <button class="card-filter__toggle"></button>
                   <h3 class="card-filter__title">Описание коллекции</h3>
                 </div>
                 <div class="card-filter__bottom">
-                  <div class="card-filter__top_sub">
-                    <div class="card-filter__toggle_in"></div>
-                    <h3 class="card-filter__title">основные</h3>
-                  </div>
-                  <ul class="card-filter__list">
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Артикул</span></div>
-                      <span class="card-filter__text_value">A8889LM-8GY</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Интерьер</span></div>
-                      <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Бренд</span></div>
-                      <span class="card-filter__text_value">Arte Lamp</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap">
-                        <button class="btn-reset card-filter__btn-info"></button>
-                        <span class="card-filter__text">Мощность</span>
-                      </div>
-                      <span class="card-filter__text_value">40 W</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap">
-                        <button class="btn-reset card-filter__btn-info"></button>
-                        <span class="card-filter__text">Страна</span>
-                      </div>
-                      <span class="card-filter__text_value">Италия</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Патрон</span></div>
-                      <span class="card-filter__text_value">Е14</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Коллекция</span></div>
-                      <span class="card-filter__text_value">MORRIS</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Напряжение</span></div>
-                      <span class="card-filter__text_value">220 V</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Материал плафона</span></div>
-                      <span class="card-filter__text_value">Без плафона</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Количество патронов</span></div>
-                      <span class="card-filter__text_value">8 шт</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Материал арматуры</span></div>
-                      <span class="card-filter__text_value">Акрил</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Крепеж</span></div>
-                      <span class="card-filter__text_value">На крюк</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap">
-                        <button class="btn-reset card-filter__btn-info"></button>
-                        <span class="card-filter__text">Мощность</span>
-                      </div>
-                      <span class="card-filter__text_value">40 W</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Площадь освещения</span></div>
-                      <span class="card-filter__text_value">24 м2</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">IP</span></div>
-                      <span class="card-filter__text_value">20</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Тип лампы</span></div>
-                      <span class="card-filter__text_value">Накаливания</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Стиль лампы</span></div>
-                      <span class="card-filter__text_value">Классический</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Место применения</span></div>
-                      <span class="card-filter__text_value">В квартиру, В комнату</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Вид рассеивателя</span></div>
-                      <span class="card-filter__text_value">Нет</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Диммер</span></div>
-                      <span class="card-filter__text_value">Да</span>
-                    </li>
-                  </ul>
-                </div>
-                <div class="card-filter__bottom">
-                  <div class="card-filter__top_sub card-filter__top--open">
-                    <div class="card-filter__toggle_in"></div>
-                    <h3 class="card-filter__title">Материалы и цвета</h3>
-                  </div>
-                  <ul class="card-filter__list">
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Материал плафона</span></div>
-                      <span class="card-filter__text_value">Стекло</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Цвет плафона</span></div>
-                      <span class="card-filter__text_value">Белый</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Материал арматуры</span></div>
-                      <span class="card-filter__text_value">Металл</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Цвет светильника</span></div>
-                      <span class="card-filter__text_value">Бронза</span>
-                    </li>
-                  </ul>
-                </div>
-                <div class="card-filter__bottom">
-                  <div class="card-filter__top_sub card-filter__top--open card-filter__top-margin">
-                    <div class="card-filter__toggle_in"></div>
-                    <h3 class="card-filter__title">Источник света</h3>
-                  </div>
-                  <ul class="card-filter__list">
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Патрон</span></div>
-                      <span class="card-filter__text_value">G9</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Количество патронов</span></div>
-                      <span class="card-filter__text_value">12 шт</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap">
-                        <button class="btn-reset card-filter__btn-info"></button>
-                        <span class="card-filter__text">Мощность</span>
-                      </div>
-                      <span class="card-filter__text_value">25 W</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Напряжение</span></div>
-                      <span class="card-filter__text_value">220 V</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Тип лампы</span></div>
-                      <span class="card-filter__text_value">Галогеновая</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Площадь освещения</span></div>
-                      <span class="card-filter__text_value">14 м2</span>
-                    </li>
-                  </ul>
-                </div>
-                <div class="card-filter__bottom">
-                  <div class="card-filter__top_sub">
-                    <div class="card-filter__toggle_in"></div>
-                    <h3 class="card-filter__title">Габариты светильника</h3>
-                  </div>
-                  <ul class="card-filter__list">
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Артикул</span></div>
-                      <span class="card-filter__text_value">A8889LM-8GY</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Интерьер</span></div>
-                      <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Бренд</span></div>
-                      <span class="card-filter__text_value">Arte Lamp</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Мощность</span></div>
-                      <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
-                    </li>
-                  </ul>
-                </div>
-                <div class="card-filter__bottom">
-                  <div class="card-filter__top_sub">
-                    <div class="card-filter__toggle_in"></div>
-                    <h3 class="card-filter__title">Дополнительно</h3>
-                  </div>
-                  <ul class="card-filter__list">
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Артикул</span></div>
-                      <span class="card-filter__text_value">A8889LM-8GY</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Интерьер</span></div>
-                      <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Бренд</span></div>
-                      <span class="card-filter__text_value">Arte Lamp</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Мощность</span></div>
-                      <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
-                    </li>
-                  </ul>
+                  <div class="card-filter__wrap"><div class="card-filter__desc">Подвесной светильник A1059SP-1CC серии CARAVAGGIO. Подчеркнет стиль помещения. Высота 26 cm. Диаметр 17 cm Параметры пылевлагозащиты IP — 20. Форма цилиндрическая. Плафон стеклянный прозрачный, а материал/цвет арматуры металл/хром. Использует лампу с цоколем E27. Площадь освещения охватывает 2 m2. Идеально подходит для прихожей или кухни. Страна происхождения бренда — ИТАЛИЯ. Вес с упаковкой 2.8 kg</div></div>
                 </div>
               </div>
-              <div class="card-filter">
+              <div class="card-filter card-filter--open">
                 <div class="card-filter__top">
-                  <div class="card-filter__toggle"></div>
+                  <button class="card-filter__toggle"></button>
                   <h3 class="card-filter__title">Еще из той же коллекции</h3>
                 </div>
                 <div class="card-filter__bottom">
-                  <div class="card-filter__top_sub">
-                    <div class="card-filter__toggle_in"></div>
-                    <h3 class="card-filter__title">основные</h3>
-                  </div>
-                  <ul class="card-filter__list">
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Артикул</span></div>
-                      <span class="card-filter__text_value">A8889LM-8GY</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Интерьер</span></div>
-                      <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Бренд</span></div>
-                      <span class="card-filter__text_value">Arte Lamp</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap">
-                        <button class="btn-reset card-filter__btn-info"></button>
-                        <span class="card-filter__text">Мощность</span>
+                  <div class="card-filter__wrap">
+                    <div class="card-filter__slider card-filter__slider_products">
+                      <div class="swiper recommendationSlider">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <a class="card-product" href="#!">
+                              <div class="card-product__view">
+                                <div class="card-product__pic">
+                                  <img src="img/luster-3.png" alt="" loading="lazy" >
+                                  <div class="swiper-lazy-preloader"></div>
+                                </div>
+                                <div class="card-product__badges">
+                                  <span class="card-product__badges-item card-product__badges-item_new">new</span>
+                                  <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
+                                </div>
+                                <div class="card-product__actions">
+                                  <span class="card-product__actions-item card-product__actions-item_favorite"><i></i></span>
+                                  <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
+                                </div>
+                              </div>
+                              <div class="card-product__desc">
+                                <div class="card-product__text">
+                                  <p class="card-product__title">Люстра Аrte Lamp Rosaria</p>
+                                  <span class="card-product__code">A8564PL-5RB</span>
+                                </div>
+                                <div class="card-product__data">
+                                  <p class="card-product__count">В наличии: 110 шт.</p>
+                                  <span class="card-product__price">88 000 р.</span>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a class="card-product" href="#!">
+                              <div class="card-product__view">
+                                <div class="card-product__pic">
+                                  <img src="img/luster-1.png" alt="" loading="lazy" >
+                                  <div class="swiper-lazy-preloader"></div>
+                                </div>
+                                <div class="card-product__badges">
+                                  <span class="card-product__badges-item card-product__badges-item_new">new</span>
+                                  <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
+                                </div>
+                                <div class="card-product__actions">
+                                  <span class="card-product__actions-item card-product__actions-item_favorite"><i></i></span>
+                                  <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
+                                </div>
+                              </div>
+                              <div class="card-product__desc">
+                                <div class="card-product__text">
+                                  <p class="card-product__title">Люстра Аrte Lamp Rosaria</p>
+                                  <span class="card-product__code">A8564PL-5RB</span>
+                                </div>
+                                <div class="card-product__data">
+                                  <p class="card-product__count">В наличии: 110 шт.</p>
+                                  <span class="card-product__price">88 000 р.</span>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a class="card-product" href="#!">
+                              <div class="card-product__view">
+                                <div class="card-product__pic">
+                                  <img src="img/luster-2.png" alt="" loading="lazy" >
+                                  <div class="swiper-lazy-preloader"></div>
+                                </div>
+                                <div class="card-product__badges">
+                                  <span class="card-product__badges-item card-product__badges-item_new">new</span>
+                                  <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
+                                </div>
+                                <div class="card-product__actions">
+                                  <span class="card-product__actions-item card-product__actions-item_favorite"><i></i></span>
+                                  <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
+                                </div>
+                              </div>
+                              <div class="card-product__desc">
+                                <div class="card-product__text">
+                                  <p class="card-product__title">Люстра Аrte Lamp Rosaria</p>
+                                  <span class="card-product__code">A8564PL-5RB</span>
+                                </div>
+                                <div class="card-product__data">
+                                  <p class="card-product__count">В наличии: 110 шт.</p>
+                                  <span class="card-product__price">88 000 р.</span>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a class="card-product" href="#!">
+                              <div class="card-product__view">
+                                <div class="card-product__pic">
+                                  <img src="img/luster-3.png" alt="" loading="lazy" >
+                                  <div class="swiper-lazy-preloader"></div>
+                                </div>
+                                <div class="card-product__badges">
+                                  <span class="card-product__badges-item card-product__badges-item_new">new</span>
+                                  <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
+                                </div>
+                                <div class="card-product__actions">
+                                  <span class="card-product__actions-item card-product__actions-item_favorite"><i></i></span>
+                                  <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
+                                </div>
+                              </div>
+                              <div class="card-product__desc">
+                                <div class="card-product__text">
+                                  <p class="card-product__title">Люстра Аrte Lamp Rosaria</p>
+                                  <span class="card-product__code">A8564PL-5RB</span>
+                                </div>
+                                <div class="card-product__data">
+                                  <p class="card-product__count">В наличии: 110 шт.</p>
+                                  <span class="card-product__price">88 000 р.</span>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a class="card-product" href="#!">
+                              <div class="card-product__view">
+                                <div class="card-product__pic">
+                                  <img src="img/luster-1.png" alt="" loading="lazy" >
+                                  <div class="swiper-lazy-preloader"></div>
+                                </div>
+                                <div class="card-product__badges">
+                                  <span class="card-product__badges-item card-product__badges-item_new">new</span>
+                                  <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
+                                </div>
+                                <div class="card-product__actions">
+                                  <span class="card-product__actions-item card-product__actions-item_favorite"><i></i></span>
+                                  <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
+                                </div>
+                              </div>
+                              <div class="card-product__desc">
+                                <div class="card-product__text">
+                                  <p class="card-product__title">Люстра Аrte Lamp Rosaria</p>
+                                  <span class="card-product__code">A8564PL-5RB</span>
+                                </div>
+                                <div class="card-product__data">
+                                  <p class="card-product__count">В наличии: 110 шт.</p>
+                                  <span class="card-product__price">88 000 р.</span>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a class="card-product" href="#!">
+                              <div class="card-product__view">
+                                <div class="card-product__pic">
+                                  <img src="img/luster-2.png" alt="" loading="lazy" >
+                                  <div class="swiper-lazy-preloader"></div>
+                                </div>
+                                <div class="card-product__badges">
+                                  <span class="card-product__badges-item card-product__badges-item_new">new</span>
+                                  <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
+                                </div>
+                                <div class="card-product__actions">
+                                  <span class="card-product__actions-item card-product__actions-item_favorite"><i></i></span>
+                                  <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
+                                </div>
+                              </div>
+                              <div class="card-product__desc">
+                                <div class="card-product__text">
+                                  <p class="card-product__title">Люстра Аrte Lamp Rosaria</p>
+                                  <span class="card-product__code">A8564PL-5RB</span>
+                                </div>
+                                <div class="card-product__data">
+                                  <p class="card-product__count">В наличии: 110 шт.</p>
+                                  <span class="card-product__price">88 000 р.</span>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="swiper-scrollbar"></div>
                       </div>
-                      <span class="card-filter__text_value">40 W</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap">
-                        <button class="btn-reset card-filter__btn-info"></button>
-                        <span class="card-filter__text">Страна</span>
-                      </div>
-                      <span class="card-filter__text_value">Италия</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Патрон</span></div>
-                      <span class="card-filter__text_value">Е14</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Коллекция</span></div>
-                      <span class="card-filter__text_value">MORRIS</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Напряжение</span></div>
-                      <span class="card-filter__text_value">220 V</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Материал плафона</span></div>
-                      <span class="card-filter__text_value">Без плафона</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Количество патронов</span></div>
-                      <span class="card-filter__text_value">8 шт</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Материал арматуры</span></div>
-                      <span class="card-filter__text_value">Акрил</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Крепеж</span></div>
-                      <span class="card-filter__text_value">На крюк</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap">
-                        <button class="btn-reset card-filter__btn-info"></button>
-                        <span class="card-filter__text">Мощность</span>
-                      </div>
-                      <span class="card-filter__text_value">40 W</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Площадь освещения</span></div>
-                      <span class="card-filter__text_value">24 м2</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">IP</span></div>
-                      <span class="card-filter__text_value">20</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Тип лампы</span></div>
-                      <span class="card-filter__text_value">Накаливания</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Стиль лампы</span></div>
-                      <span class="card-filter__text_value">Классический</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Место применения</span></div>
-                      <span class="card-filter__text_value">В квартиру, В комнату</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Вид рассеивателя</span></div>
-                      <span class="card-filter__text_value">Нет</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Диммер</span></div>
-                      <span class="card-filter__text_value">Да</span>
-                    </li>
-                  </ul>
-                </div>
-                <div class="card-filter__bottom">
-                  <div class="card-filter__top_sub card-filter__top--open">
-                    <div class="card-filter__toggle_in"></div>
-                    <h3 class="card-filter__title">Материалы и цвета</h3>
+                    </div>
                   </div>
-                  <ul class="card-filter__list">
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Материал плафона</span></div>
-                      <span class="card-filter__text_value">Стекло</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Цвет плафона</span></div>
-                      <span class="card-filter__text_value">Белый</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Материал арматуры</span></div>
-                      <span class="card-filter__text_value">Металл</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Цвет светильника</span></div>
-                      <span class="card-filter__text_value">Бронза</span>
-                    </li>
-                  </ul>
-                </div>
-                <div class="card-filter__bottom">
-                  <div class="card-filter__top_sub card-filter__top--open card-filter__top-margin">
-                    <div class="card-filter__toggle_in"></div>
-                    <h3 class="card-filter__title">Источник света</h3>
-                  </div>
-                  <ul class="card-filter__list">
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Патрон</span></div>
-                      <span class="card-filter__text_value">G9</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Количество патронов</span></div>
-                      <span class="card-filter__text_value">12 шт</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap">
-                        <button class="btn-reset card-filter__btn-info"></button>
-                        <span class="card-filter__text">Мощность</span>
-                      </div>
-                      <span class="card-filter__text_value">25 W</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Напряжение</span></div>
-                      <span class="card-filter__text_value">220 V</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Тип лампы</span></div>
-                      <span class="card-filter__text_value">Галогеновая</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Площадь освещения</span></div>
-                      <span class="card-filter__text_value">14 м2</span>
-                    </li>
-                  </ul>
-                </div>
-                <div class="card-filter__bottom">
-                  <div class="card-filter__top_sub">
-                    <div class="card-filter__toggle_in"></div>
-                    <h3 class="card-filter__title">Габариты светильника</h3>
-                  </div>
-                  <ul class="card-filter__list">
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Артикул</span></div>
-                      <span class="card-filter__text_value">A8889LM-8GY</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Интерьер</span></div>
-                      <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Бренд</span></div>
-                      <span class="card-filter__text_value">Arte Lamp</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Мощность</span></div>
-                      <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
-                    </li>
-                  </ul>
-                </div>
-                <div class="card-filter__bottom">
-                  <div class="card-filter__top_sub">
-                    <div class="card-filter__toggle_in"></div>
-                    <h3 class="card-filter__title">Дополнительно</h3>
-                  </div>
-                  <ul class="card-filter__list">
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Артикул</span></div>
-                      <span class="card-filter__text_value">A8889LM-8GY</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Интерьер</span></div>
-                      <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Бренд</span></div>
-                      <span class="card-filter__text_value">Arte Lamp</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Мощность</span></div>
-                      <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
-                    </li>
-                  </ul>
                 </div>
               </div>
-              <div class="card-filter">
+              <div class="card-filter card-filter--open">
                 <div class="card-filter__top">
-                  <div class="card-filter__toggle"></div>
+                  <button class="card-filter__toggle"></button>
                   <h3 class="card-filter__title">Лампочки</h3>
                 </div>
                 <div class="card-filter__bottom">
-                  <div class="card-filter__top_sub">
-                    <div class="card-filter__toggle_in"></div>
-                    <h3 class="card-filter__title">основные</h3>
-                  </div>
-                  <ul class="card-filter__list">
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Артикул</span></div>
-                      <span class="card-filter__text_value">A8889LM-8GY</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Интерьер</span></div>
-                      <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Бренд</span></div>
-                      <span class="card-filter__text_value">Arte Lamp</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap">
-                        <button class="btn-reset card-filter__btn-info"></button>
-                        <span class="card-filter__text">Мощность</span>
+                  <div class="card-filter__wrap">
+                    <div class="card-filter__slider card-filter__slider_lamps">
+                      <div class="swiper recommendationSlider">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <a class="card-product" href="#!">
+                              <div class="card-product__view">
+                                <div class="card-product__pic">
+                                  <img src="img/lamp-1.jpg" alt="" loading="lazy" >
+                                  <div class="swiper-lazy-preloader"></div>
+                                </div>
+                                <div class="card-product__badges">
+                                  <span class="card-product__badges-item card-product__badges-item_new">new</span>
+                                  <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
+                                </div>
+                                <div class="card-product__actions">
+                                  <span class="card-product__actions-item card-product__actions-item_favorite"><i></i></span>
+                                  <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
+                                </div>
+                              </div>
+                              <div class="card-product__desc">
+                                <div class="card-product__text">
+                                  <p class="card-product__title">Люстра Аrte Lamp Rosaria</p>
+                                  <span class="card-product__code">A8564PL-5RB</span>
+                                </div>
+                                <div class="card-product__data">
+                                  <p class="card-product__count">В наличии: 110 шт.</p>
+                                  <span class="card-product__price">88 000 р.</span>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a class="card-product" href="#!">
+                              <div class="card-product__view">
+                                <div class="card-product__pic">
+                                  <img src="img/lamp-2.jpg" alt="" loading="lazy" >
+                                  <div class="swiper-lazy-preloader"></div>
+                                </div>
+                                <div class="card-product__badges">
+                                  <span class="card-product__badges-item card-product__badges-item_new">new</span>
+                                  <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
+                                </div>
+                                <div class="card-product__actions">
+                                  <span class="card-product__actions-item card-product__actions-item_favorite"><i></i></span>
+                                  <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
+                                </div>
+                              </div>
+                              <div class="card-product__desc">
+                                <div class="card-product__text">
+                                  <p class="card-product__title">Люстра Аrte Lamp Rosaria</p>
+                                  <span class="card-product__code">A8564PL-5RB</span>
+                                </div>
+                                <div class="card-product__data">
+                                  <p class="card-product__count">В наличии: 110 шт.</p>
+                                  <span class="card-product__price">88 000 р.</span>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a class="card-product" href="#!">
+                              <div class="card-product__view">
+                                <div class="card-product__pic">
+                                  <img src="img/lamp-3.jpg" alt="" loading="lazy" >
+                                  <div class="swiper-lazy-preloader"></div>
+                                </div>
+                                <div class="card-product__badges">
+                                  <span class="card-product__badges-item card-product__badges-item_new">new</span>
+                                  <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
+                                </div>
+                                <div class="card-product__actions">
+                                  <span class="card-product__actions-item card-product__actions-item_favorite"><i></i></span>
+                                  <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
+                                </div>
+                              </div>
+                              <div class="card-product__desc">
+                                <div class="card-product__text">
+                                  <p class="card-product__title">Люстра Аrte Lamp Rosaria</p>
+                                  <span class="card-product__code">A8564PL-5RB</span>
+                                </div>
+                                <div class="card-product__data">
+                                  <p class="card-product__count">В наличии: 110 шт.</p>
+                                  <span class="card-product__price">88 000 р.</span>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a class="card-product" href="#!">
+                              <div class="card-product__view">
+                                <div class="card-product__pic">
+                                  <img src="img/lamp-4.jpg" alt="" loading="lazy" >
+                                  <div class="swiper-lazy-preloader"></div>
+                                </div>
+                                <div class="card-product__badges">
+                                  <span class="card-product__badges-item card-product__badges-item_new">new</span>
+                                  <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
+                                </div>
+                                <div class="card-product__actions">
+                                  <span class="card-product__actions-item card-product__actions-item_favorite"><i></i></span>
+                                  <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
+                                </div>
+                              </div>
+                              <div class="card-product__desc">
+                                <div class="card-product__text">
+                                  <p class="card-product__title">Люстра Аrte Lamp Rosaria</p>
+                                  <span class="card-product__code">A8564PL-5RB</span>
+                                </div>
+                                <div class="card-product__data">
+                                  <p class="card-product__count">В наличии: 110 шт.</p>
+                                  <span class="card-product__price">88 000 р.</span>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a class="card-product" href="#!">
+                              <div class="card-product__view">
+                                <div class="card-product__pic">
+                                  <img src="img/lamp-5.jpg" alt="" loading="lazy" >
+                                  <div class="swiper-lazy-preloader"></div>
+                                </div>
+                                <div class="card-product__badges">
+                                  <span class="card-product__badges-item card-product__badges-item_new">new</span>
+                                  <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
+                                </div>
+                                <div class="card-product__actions">
+                                  <span class="card-product__actions-item card-product__actions-item_favorite"><i></i></span>
+                                  <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
+                                </div>
+                              </div>
+                              <div class="card-product__desc">
+                                <div class="card-product__text">
+                                  <p class="card-product__title">Люстра Аrte Lamp Rosaria</p>
+                                  <span class="card-product__code">A8564PL-5RB</span>
+                                </div>
+                                <div class="card-product__data">
+                                  <p class="card-product__count">В наличии: 110 шт.</p>
+                                  <span class="card-product__price">88 000 р.</span>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a class="card-product" href="#!">
+                              <div class="card-product__view">
+                                <div class="card-product__pic">
+                                  <img src="img/lamp-2.jpg" alt="" loading="lazy" >
+                                  <div class="swiper-lazy-preloader"></div>
+                                </div>
+                                <div class="card-product__badges">
+                                  <span class="card-product__badges-item card-product__badges-item_new">new</span>
+                                  <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
+                                </div>
+                                <div class="card-product__actions">
+                                  <span class="card-product__actions-item card-product__actions-item_favorite"><i></i></span>
+                                  <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
+                                </div>
+                              </div>
+                              <div class="card-product__desc">
+                                <div class="card-product__text">
+                                  <p class="card-product__title">Люстра Аrte Lamp Rosaria</p>
+                                  <span class="card-product__code">A8564PL-5RB</span>
+                                </div>
+                                <div class="card-product__data">
+                                  <p class="card-product__count">В наличии: 110 шт.</p>
+                                  <span class="card-product__price">88 000 р.</span>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a class="card-product" href="#!">
+                              <div class="card-product__view">
+                                <div class="card-product__pic">
+                                  <img src="img/lamp-3.jpg" alt="" loading="lazy" >
+                                  <div class="swiper-lazy-preloader"></div>
+                                </div>
+                                <div class="card-product__badges">
+                                  <span class="card-product__badges-item card-product__badges-item_new">new</span>
+                                  <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
+                                </div>
+                                <div class="card-product__actions">
+                                  <span class="card-product__actions-item card-product__actions-item_favorite"><i></i></span>
+                                  <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
+                                </div>
+                              </div>
+                              <div class="card-product__desc">
+                                <div class="card-product__text">
+                                  <p class="card-product__title">Люстра Аrte Lamp Rosaria</p>
+                                  <span class="card-product__code">A8564PL-5RB</span>
+                                </div>
+                                <div class="card-product__data">
+                                  <p class="card-product__count">В наличии: 110 шт.</p>
+                                  <span class="card-product__price">88 000 р.</span>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a class="card-product" href="#!">
+                              <div class="card-product__view">
+                                <div class="card-product__pic">
+                                  <img src="img/lamp-4.jpg" alt="" loading="lazy" >
+                                  <div class="swiper-lazy-preloader"></div>
+                                </div>
+                                <div class="card-product__badges">
+                                  <span class="card-product__badges-item card-product__badges-item_new">new</span>
+                                  <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
+                                </div>
+                                <div class="card-product__actions">
+                                  <span class="card-product__actions-item card-product__actions-item_favorite"><i></i></span>
+                                  <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
+                                </div>
+                              </div>
+                              <div class="card-product__desc">
+                                <div class="card-product__text">
+                                  <p class="card-product__title">Люстра Аrte Lamp Rosaria</p>
+                                  <span class="card-product__code">A8564PL-5RB</span>
+                                </div>
+                                <div class="card-product__data">
+                                  <p class="card-product__count">В наличии: 110 шт.</p>
+                                  <span class="card-product__price">88 000 р.</span>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a class="card-product" href="#!">
+                              <div class="card-product__view">
+                                <div class="card-product__pic">
+                                  <img src="img/lamp-5.jpg" alt="" loading="lazy" >
+                                  <div class="swiper-lazy-preloader"></div>
+                                </div>
+                                <div class="card-product__badges">
+                                  <span class="card-product__badges-item card-product__badges-item_new">new</span>
+                                  <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
+                                </div>
+                                <div class="card-product__actions">
+                                  <span class="card-product__actions-item card-product__actions-item_favorite"><i></i></span>
+                                  <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
+                                </div>
+                              </div>
+                              <div class="card-product__desc">
+                                <div class="card-product__text">
+                                  <p class="card-product__title">Люстра Аrte Lamp Rosaria</p>
+                                  <span class="card-product__code">A8564PL-5RB</span>
+                                </div>
+                                <div class="card-product__data">
+                                  <p class="card-product__count">В наличии: 110 шт.</p>
+                                  <span class="card-product__price">88 000 р.</span>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="swiper-scrollbar"></div>
                       </div>
-                      <span class="card-filter__text_value">40 W</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap">
-                        <button class="btn-reset card-filter__btn-info"></button>
-                        <span class="card-filter__text">Страна</span>
-                      </div>
-                      <span class="card-filter__text_value">Италия</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Патрон</span></div>
-                      <span class="card-filter__text_value">Е14</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Коллекция</span></div>
-                      <span class="card-filter__text_value">MORRIS</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Напряжение</span></div>
-                      <span class="card-filter__text_value">220 V</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Материал плафона</span></div>
-                      <span class="card-filter__text_value">Без плафона</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Количество патронов</span></div>
-                      <span class="card-filter__text_value">8 шт</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Материал арматуры</span></div>
-                      <span class="card-filter__text_value">Акрил</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Крепеж</span></div>
-                      <span class="card-filter__text_value">На крюк</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap">
-                        <button class="btn-reset card-filter__btn-info"></button>
-                        <span class="card-filter__text">Мощность</span>
-                      </div>
-                      <span class="card-filter__text_value">40 W</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Площадь освещения</span></div>
-                      <span class="card-filter__text_value">24 м2</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">IP</span></div>
-                      <span class="card-filter__text_value">20</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Тип лампы</span></div>
-                      <span class="card-filter__text_value">Накаливания</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Стиль лампы</span></div>
-                      <span class="card-filter__text_value">Классический</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Место применения</span></div>
-                      <span class="card-filter__text_value">В квартиру, В комнату</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Вид рассеивателя</span></div>
-                      <span class="card-filter__text_value">Нет</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Диммер</span></div>
-                      <span class="card-filter__text_value">Да</span>
-                    </li>
-                  </ul>
-                </div>
-                <div class="card-filter__bottom">
-                  <div class="card-filter__top_sub card-filter__top--open">
-                    <div class="card-filter__toggle_in"></div>
-                    <h3 class="card-filter__title">Материалы и цвета1</h3>
+                    </div>
                   </div>
-                  <ul class="card-filter__list">
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Материал плафона</span></div>
-                      <span class="card-filter__text_value">Стекло</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Цвет плафона</span></div>
-                      <span class="card-filter__text_value">Белый</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Материал арматуры</span></div>
-                      <span class="card-filter__text_value">Металл</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Цвет светильника</span></div>
-                      <span class="card-filter__text_value">Бронза</span>
-                    </li>
-                  </ul>
-                </div>
-                <div class="card-filter__bottom">
-                  <div class="card-filter__top_sub card-filter__top--open card-filter__top-margin">
-                    <div class="card-filter__toggle_in"></div>
-                    <h3 class="card-filter__title">Источник света</h3>
-                  </div>
-                  <ul class="card-filter__list">
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Патрон</span></div>
-                      <span class="card-filter__text_value">G9</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Количество патронов</span></div>
-                      <span class="card-filter__text_value">12 шт</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap">
-                        <button class="btn-reset card-filter__btn-info"></button>
-                        <span class="card-filter__text">Мощность</span>
-                      </div>
-                      <span class="card-filter__text_value">25 W</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Напряжение</span></div>
-                      <span class="card-filter__text_value">220 V</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Тип лампы</span></div>
-                      <span class="card-filter__text_value">Галогеновая</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Площадь освещения</span></div>
-                      <span class="card-filter__text_value">14 м2</span>
-                    </li>
-                  </ul>
-                </div>
-                <div class="card-filter__bottom">
-                  <div class="card-filter__top_sub">
-                    <div class="card-filter__toggle_in"></div>
-                    <h3 class="card-filter__title">Габариты светильника</h3>
-                  </div>
-                  <ul class="card-filter__list">
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Артикул</span></div>
-                      <span class="card-filter__text_value">A8889LM-8GY</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Интерьер</span></div>
-                      <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Бренд</span></div>
-                      <span class="card-filter__text_value">Arte Lamp</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Мощность</span></div>
-                      <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
-                    </li>
-                  </ul>
-                </div>
-                <div class="card-filter__bottom">
-                  <div class="card-filter__top_sub">
-                    <div class="card-filter__toggle_in"></div>
-                    <h3 class="card-filter__title">Дополнительно</h3>
-                  </div>
-                  <ul class="card-filter__list">
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Артикул</span></div>
-                      <span class="card-filter__text_value">A8889LM-8GY</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Интерьер</span></div>
-                      <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Бренд</span></div>
-                      <span class="card-filter__text_value">Arte Lamp</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Мощность</span></div>
-                      <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
-                    </li>
-                  </ul>
                 </div>
               </div>
             </div>
