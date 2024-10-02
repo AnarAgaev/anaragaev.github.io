@@ -19,6 +19,10 @@
 
       // !!! Обрати внимание, что в конце ссылки слэш !!!
       window.searchRequestLink = "https://testprod-provider.massive.ru/api/products/search/"; // Ссылка на API поиска - на каждой странице
+
+      window.addToFavoriteLink = "mocks/favorite-request-success.json"; // Ссылка на API добавить товар в избранное
+      window.removeFromFavoriteLink = "mocks/favorite-request-success.json"; // Ссылка на API удалить товар из избранного
+      //- window.removeFromFavoriteLink = 'mocks/favorite-request-error.json' // Не переносить! Нужен для теста ошибки запроса
     </script>
   </head>
   <body class="page-index" id="body">
@@ -1381,7 +1385,7 @@
             <div class="catalog-grid__list">
               <ul class="catalog-grid__wrap">
                 <li class="catalog-grid__item">
-                  <a class="card-product" href="#!">
+                  <a class="card-product" href="#!" data-id="A8564PL-5RB">
                     <div class="card-product__view">
                       <div class="card-product__pic"><img src="img/luster-3.png" alt="" loading="lazy" ></div>
                       <div class="card-product__badges">
@@ -1409,7 +1413,7 @@
                   </a>
                 </li>
                 <li class="catalog-grid__item">
-                  <a class="card-product" href="#!">
+                  <a class="card-product" href="#!" data-id="A8564PL-5RB">
                     <div class="card-product__view">
                       <div class="card-product__pic"><img src="img/luster-1.png" alt="" loading="lazy" ></div>
                       <div class="card-product__badges">
@@ -1437,7 +1441,7 @@
                   </a>
                 </li>
                 <li class="catalog-grid__item">
-                  <a class="card-product" href="#!">
+                  <a class="card-product" href="#!" data-id="A8564PL-5RB">
                     <div class="card-product__view">
                       <div class="card-product__pic"><img src="img/luster-2.png" alt="" loading="lazy" ></div>
                       <div class="card-product__badges">
@@ -1465,7 +1469,7 @@
                   </a>
                 </li>
                 <li class="catalog-grid__item">
-                  <a class="card-product" href="#!">
+                  <a class="card-product" href="#!" data-id="A8564PL-5RB">
                     <div class="card-product__view">
                       <div class="card-product__pic"><img src="img/luster-3.png" alt="" loading="lazy" ></div>
                       <div class="card-product__badges">
@@ -1493,7 +1497,7 @@
                   </a>
                 </li>
                 <li class="catalog-grid__item">
-                  <a class="card-product" href="#!">
+                  <a class="card-product" href="#!" data-id="A8564PL-5RB">
                     <div class="card-product__view">
                       <div class="card-product__pic"><img src="img/luster-1.png" alt="" loading="lazy" ></div>
                       <div class="card-product__badges">
@@ -1521,7 +1525,7 @@
                   </a>
                 </li>
                 <li class="catalog-grid__item">
-                  <a class="card-product" href="#!">
+                  <a class="card-product" href="#!" data-id="A8564PL-5RB">
                     <div class="card-product__view">
                       <div class="card-product__pic"><img src="img/luster-2.png" alt="" loading="lazy" ></div>
                       <div class="card-product__badges">
@@ -1549,7 +1553,7 @@
                   </a>
                 </li>
                 <li class="catalog-grid__item">
-                  <a class="card-product" href="#!">
+                  <a class="card-product" href="#!" data-id="A8564PL-5RB">
                     <div class="card-product__view">
                       <div class="card-product__pic"><img src="img/luster-3.png" alt="" loading="lazy" ></div>
                       <div class="card-product__badges">
@@ -1577,7 +1581,7 @@
                   </a>
                 </li>
                 <li class="catalog-grid__item">
-                  <a class="card-product" href="#!">
+                  <a class="card-product" href="#!" data-id="A8564PL-5RB">
                     <div class="card-product__view">
                       <div class="card-product__pic"><img src="img/luster-1.png" alt="" loading="lazy" ></div>
                       <div class="card-product__badges">
@@ -1605,7 +1609,7 @@
                   </a>
                 </li>
                 <li class="catalog-grid__item">
-                  <a class="card-product" href="#!">
+                  <a class="card-product" href="#!" data-id="A8564PL-5RB">
                     <div class="card-product__view">
                       <div class="card-product__pic"><img src="img/luster-2.png" alt="" loading="lazy" ></div>
                       <div class="card-product__badges">
@@ -1633,7 +1637,7 @@
                   </a>
                 </li>
                 <li class="catalog-grid__item">
-                  <a class="card-product" href="#!">
+                  <a class="card-product" href="#!" data-id="A8564PL-5RB">
                     <div class="card-product__view">
                       <div class="card-product__pic"><img src="img/luster-3.png" alt="" loading="lazy" ></div>
                       <div class="card-product__badges">
@@ -1661,7 +1665,7 @@
                   </a>
                 </li>
                 <li class="catalog-grid__item">
-                  <a class="card-product" href="#!">
+                  <a class="card-product" href="#!" data-id="A8564PL-5RB">
                     <div class="card-product__view">
                       <div class="card-product__pic"><img src="img/luster-1.png" alt="" loading="lazy" ></div>
                       <div class="card-product__badges">
@@ -1689,7 +1693,7 @@
                   </a>
                 </li>
                 <li class="catalog-grid__item">
-                  <a class="card-product" href="#!">
+                  <a class="card-product" href="#!" data-id="A8564PL-5RB">
                     <div class="card-product__view">
                       <div class="card-product__pic"><img src="img/luster-2.png" alt="" loading="lazy" ></div>
                       <div class="card-product__badges">
