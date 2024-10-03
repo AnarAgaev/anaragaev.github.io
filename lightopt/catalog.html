@@ -308,6 +308,7 @@
       <section class="catalog-page">
         <div class="container">
           <div class="catalog-page__content">
+            <!-- Соседствующие блоки должны суммарно составлять 100 - это 1 ряд-->
             <div class="catalog-page__card catalog-page__card_100">
               <div class="catalog-page__pic catalog-page__pic_func-light"></div>
               <div class="catalog-page__title">
@@ -317,32 +318,33 @@
               <div class="catalog-page__collapse">
                 <div class="catalog-page__inner">
                   <ul>
+                    <!-- Только для li, лежащих на первом уровне вложенности, добавляем класс .catalog-page__root-->
                     <li class="catalog-page__root">
                       <div class="catalog-page__item-title" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/street-light.png">
-                        <span>Системы освещения</span>
+                        <a href="#!">Ссылка-переключатель</a>
                         <i></i>
                       </div>
                       <div class="catalog-page__collapse">
                         <div class="catalog-page__inner">
                           <ul>
                             <li>
-                              <div class="catalog-page__item-title" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/light-manage.png">
+                              <div class="catalog-page__item-title">
                                 <span>Однофазная трековая система</span>
                                 <i></i>
                               </div>
                               <div class="catalog-page__collapse">
                                 <div class="catalog-page__inner">
                                   <ul>
-                                    <li><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/street-light.png">Магнитная трековая система OPTIMA</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/light-source.png">Шинопровод текстильный Decorato</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/light-manage.png">Блоки питания Decorato</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/decor-light.png">Аксессуары</a></li>
+                                    <li><a class="catalog-page__item-title" href="#!">Магнитная трековая система OPTIMA</a></li>
+                                    <li><a class="catalog-page__item-title" href="#!">Шинопровод текстильный Decorato</a></li>
+                                    <li><a class="catalog-page__item-title" href="#!">Блоки питания Decorato</a></li>
+                                    <li><a class="catalog-page__item-title" href="#!">Аксессуары</a></li>
                                   </ul>
                                 </div>
                               </div>
                             </li>
-                            <li><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/adapters.png">Трековая система на ремнях Decorato</a></li>
-                            <li><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/acc.png">Тросовая система SKYCROSS</a></li>
+                            <li><a class="catalog-page__item-title" href="#!">Трековая система на ремнях Decorato</a></li>
+                            <li><a class="catalog-page__item-title" href="#!">Тросовая система SKYCROSS</a></li>
                           </ul>
                         </div>
                       </div>
@@ -350,7 +352,52 @@
                     <li class="catalog-page__root"><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/street-light.png">Витринные светильники</a></li>
                     <li class="catalog-page__root"><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/light-source.png">Гибкий неон</a></li>
                     <li class="catalog-page__root"><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/light-manage.png">Настенные светильники</a></li>
-                    <li class="catalog-page__root"><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/adapters.png">Потолочные светильники</a></li>
+                    <li class="catalog-page__root">
+                      <div class="catalog-page__item-title" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/adapters.png">
+                        <span>Потолочные светильники</span>
+                        <i></i>
+                      </div>
+                      <div class="catalog-page__collapse">
+                        <div class="catalog-page__inner">
+                          <ul>
+                            <li>
+                              <div class="catalog-page__item-title">
+                                <span>Однофазная трековая система</span>
+                                <i></i>
+                              </div>
+                              <div class="catalog-page__collapse">
+                                <div class="catalog-page__inner">
+                                  <ul>
+                                    <li><a class="catalog-page__item-title" href="#!">Магнитная трековая система OPTIMA</a></li>
+                                    <li><a class="catalog-page__item-title" href="#!">Шинопровод текстильный Decorato</a></li>
+                                    <li><a class="catalog-page__item-title" href="#!">Блоки питания Decorato</a></li>
+                                    <li><a class="catalog-page__item-title" href="#!">Аксессуары</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                            <li><a class="catalog-page__item-title" href="#!">Трековая система на ремнях Decorato</a></li>
+                            <li>
+                              <div class="catalog-page__item-title">
+                                <span>Однофазная трековая система</span>
+                                <i></i>
+                              </div>
+                              <div class="catalog-page__collapse">
+                                <div class="catalog-page__inner">
+                                  <ul>
+                                    <li><a class="catalog-page__item-title" href="#!">Магнитная трековая система OPTIMA</a></li>
+                                    <li><a class="catalog-page__item-title" href="#!">Шинопровод текстильный Decorato</a></li>
+                                    <li><a class="catalog-page__item-title" href="#!">Блоки питания Decorato</a></li>
+                                    <li><a class="catalog-page__item-title" href="#!">Аксессуары</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                            <li><a class="catalog-page__item-title" href="#!">Тросовая система SKYCROSS</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
                     <li class="catalog-page__root"><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/acc.png">Алюминиевые профили</a></li>
                     <li class="catalog-page__root"><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/light-source.png">Светодиодные ленты</a></li>
                     <li class="catalog-page__root">
@@ -362,23 +409,23 @@
                         <div class="catalog-page__inner">
                           <ul>
                             <li>
-                              <div class="catalog-page__item-title" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/light-manage.png">
+                              <div class="catalog-page__item-title">
                                 <span>Однофазная трековая система</span>
                                 <i></i>
                               </div>
                               <div class="catalog-page__collapse">
                                 <div class="catalog-page__inner">
                                   <ul>
-                                    <li><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/street-light.png">Магнитная трековая система OPTIMA</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/light-source.png">Шинопровод текстильный Decorato</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/light-manage.png">Блоки питания Decorato</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/decor-light.png">Аксессуары</a></li>
+                                    <li><a class="catalog-page__item-title" href="#!">Магнитная трековая система OPTIMA</a></li>
+                                    <li><a class="catalog-page__item-title" href="#!">Шинопровод текстильный Decorato</a></li>
+                                    <li><a class="catalog-page__item-title" href="#!">Блоки питания Decorato</a></li>
+                                    <li><a class="catalog-page__item-title" href="#!">Аксессуары</a></li>
                                   </ul>
                                 </div>
                               </div>
                             </li>
-                            <li><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/adapters.png">Трековая система на ремнях Decorato</a></li>
-                            <li><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/acc.png">Тросовая система SKYCROSS</a></li>
+                            <li><a class="catalog-page__item-title" href="#!">Трековая система на ремнях Decorato</a></li>
+                            <li><a class="catalog-page__item-title" href="#!">Тросовая система SKYCROSS</a></li>
                           </ul>
                         </div>
                       </div>
@@ -396,6 +443,7 @@
               <div class="catalog-page__collapse">
                 <div class="catalog-page__inner">
                   <ul>
+                    <!-- Только для li, лежащих на первом уровне вложенности, добавляем класс .catalog-page__root-->
                     <li class="catalog-page__root">
                       <div class="catalog-page__item-title" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/street-light.png">
                         <span>Системы освещения</span>
@@ -405,23 +453,23 @@
                         <div class="catalog-page__inner">
                           <ul>
                             <li>
-                              <div class="catalog-page__item-title" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/light-manage.png">
+                              <div class="catalog-page__item-title">
                                 <span>Однофазная трековая система</span>
                                 <i></i>
                               </div>
                               <div class="catalog-page__collapse">
                                 <div class="catalog-page__inner">
                                   <ul>
-                                    <li><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/street-light.png">Магнитная трековая система OPTIMA</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/light-source.png">Шинопровод текстильный Decorato</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/light-manage.png">Блоки питания Decorato</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/decor-light.png">Аксессуары</a></li>
+                                    <li><a class="catalog-page__item-title" href="#!">Магнитная трековая система OPTIMA</a></li>
+                                    <li><a class="catalog-page__item-title" href="#!">Шинопровод текстильный Decorato</a></li>
+                                    <li><a class="catalog-page__item-title" href="#!">Блоки питания Decorato</a></li>
+                                    <li><a class="catalog-page__item-title" href="#!">Аксессуары</a></li>
                                   </ul>
                                 </div>
                               </div>
                             </li>
-                            <li><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/adapters.png">Трековая система на ремнях Decorato</a></li>
-                            <li><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/acc.png">Тросовая система SKYCROSS</a></li>
+                            <li><a class="catalog-page__item-title" href="#!">Трековая система на ремнях Decorato</a></li>
+                            <li><a class="catalog-page__item-title" href="#!">Тросовая система SKYCROSS</a></li>
                           </ul>
                         </div>
                       </div>
@@ -441,23 +489,23 @@
                         <div class="catalog-page__inner">
                           <ul>
                             <li>
-                              <div class="catalog-page__item-title" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/light-manage.png">
+                              <div class="catalog-page__item-title">
                                 <span>Однофазная трековая система</span>
                                 <i></i>
                               </div>
                               <div class="catalog-page__collapse">
                                 <div class="catalog-page__inner">
                                   <ul>
-                                    <li><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/street-light.png">Магнитная трековая система OPTIMA</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/light-source.png">Шинопровод текстильный Decorato</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/light-manage.png">Блоки питания Decorato</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/decor-light.png">Аксессуары</a></li>
+                                    <li><a class="catalog-page__item-title" href="#!">Магнитная трековая система OPTIMA</a></li>
+                                    <li><a class="catalog-page__item-title" href="#!">Шинопровод текстильный Decorato</a></li>
+                                    <li><a class="catalog-page__item-title" href="#!">Блоки питания Decorato</a></li>
+                                    <li><a class="catalog-page__item-title" href="#!">Аксессуары</a></li>
                                   </ul>
                                 </div>
                               </div>
                             </li>
-                            <li><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/adapters.png">Трековая система на ремнях Decorato</a></li>
-                            <li><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/acc.png">Тросовая система SKYCROSS</a></li>
+                            <li><a class="catalog-page__item-title" href="#!">Трековая система на ремнях Decorato</a></li>
+                            <li><a class="catalog-page__item-title" href="#!">Тросовая система SKYCROSS</a></li>
                           </ul>
                         </div>
                       </div>
