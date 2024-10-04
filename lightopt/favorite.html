@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/vendor.min.css" >
     <link rel="preload" href="css/main.min.css" as="style" >
     <link rel="stylesheet" href="css/main.min.css" >
-    <link rel="stylesheet" href="css/pages/catalog.min.css" >
+    <link rel="stylesheet" href="css/pages/favorite.min.css" >
     <script>
       window.filterApiLink = "mocks/catalog-filter-request.json"; // Ссылка на API фильтра (каталог) - только на странице с фильтрами
       window.addProductApiLink = "mocks/add-product-request.json"; // Ссылка на API добавить товар в заказ - только на странице товара
@@ -25,7 +25,7 @@
       //- window.removeFromFavoriteLink = 'mocks/favorite-request-error.json' // Не переносить! Нужен для теста ошибки запроса
     </script>
   </head>
-  <body class="page-catalog" id="body">
+  <body class="page-favorite" id="body">
     <header class="header" id="header">
       <div class="container">
         <div class="header-info">
@@ -297,7 +297,7 @@
         <div class="container">
           <ul class="breadcrumbs__list">
             <li class="breadcrumbs__item"><a href="#!">Главная</a></li>
-            <li class="breadcrumbs__item"><span>Продукция</span></li>
+            <li class="breadcrumbs__item"><span>Избранное</span></li>
           </ul>
         </div>
       </section>
@@ -305,283 +305,214 @@
         <h1 class="main-title__title">Заголовок страницы</h1>
         <span class="main-title__text-count">Подзаголовок страницы/доп. информация</span>
       </section>
-      <section class="catalog-page">
+      <section class="favorite">
+        <p class="favorite__empty">
+          <mark>
+            У вас нет товаров,
+            <br >
+            добавленных в избранное!
+          </mark>
+          <a class="dark-btn" href="#!">Перейти на главную</a>
+        </p>
         <div class="container">
-          <div class="catalog-page__content">
-            <!-- Соседствующие блоки должны суммарно составлять 100 - это 1 ряд-->
-            <div class="catalog-page__card catalog-page__card_100">
-              <div class="catalog-page__pic catalog-page__pic_func-light"></div>
-              <div class="catalog-page__title">
-                <span>Функциональное освещение</span>
-                <i></i>
-              </div>
-              <div class="catalog-page__collapse">
-                <div class="catalog-page__inner">
-                  <ul>
-                    <!-- Только для li, лежащих на первом уровне вложенности, добавляем класс .catalog-page__root-->
-                    <li class="catalog-page__root">
-                      <div class="catalog-page__item-title" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/street-light.png">
-                        <a href="#!">Ссылка-переключатель</a>
-                        <i></i>
-                      </div>
-                      <div class="catalog-page__collapse">
-                        <div class="catalog-page__inner">
-                          <ul>
-                            <li>
-                              <div class="catalog-page__item-title">
-                                <span>Однофазная трековая система</span>
-                                <i></i>
-                              </div>
-                              <div class="catalog-page__collapse">
-                                <div class="catalog-page__inner">
-                                  <ul>
-                                    <li><a class="catalog-page__item-title" href="#!">Магнитная трековая система OPTIMA</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!">Шинопровод текстильный Decorato</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!">Блоки питания Decorato</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!">Аксессуары</a></li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </li>
-                            <li><a class="catalog-page__item-title" href="#!">Трековая система на ремнях Decorato</a></li>
-                            <li><a class="catalog-page__item-title" href="#!">Тросовая система SKYCROSS</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="catalog-page__root"><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/street-light.png">Витринные светильники</a></li>
-                    <li class="catalog-page__root"><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/light-source.png">Гибкий неон</a></li>
-                    <li class="catalog-page__root"><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/light-manage.png">Настенные светильники</a></li>
-                    <li class="catalog-page__root">
-                      <div class="catalog-page__item-title" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/adapters.png">
-                        <span>Потолочные светильники</span>
-                        <i></i>
-                      </div>
-                      <div class="catalog-page__collapse">
-                        <div class="catalog-page__inner">
-                          <ul>
-                            <li>
-                              <div class="catalog-page__item-title">
-                                <span>Однофазная трековая система</span>
-                                <i></i>
-                              </div>
-                              <div class="catalog-page__collapse">
-                                <div class="catalog-page__inner">
-                                  <ul>
-                                    <li><a class="catalog-page__item-title" href="#!">Магнитная трековая система OPTIMA</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!">Шинопровод текстильный Decorato</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!">Блоки питания Decorato</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!">Аксессуары</a></li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </li>
-                            <li><a class="catalog-page__item-title" href="#!">Трековая система на ремнях Decorato</a></li>
-                            <li>
-                              <div class="catalog-page__item-title">
-                                <span>Однофазная трековая система</span>
-                                <i></i>
-                              </div>
-                              <div class="catalog-page__collapse">
-                                <div class="catalog-page__inner">
-                                  <ul>
-                                    <li><a class="catalog-page__item-title" href="#!">Магнитная трековая система OPTIMA</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!">Шинопровод текстильный Decorato</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!">Блоки питания Decorato</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!">Аксессуары</a></li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </li>
-                            <li><a class="catalog-page__item-title" href="#!">Тросовая система SKYCROSS</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="catalog-page__root"><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/acc.png">Алюминиевые профили</a></li>
-                    <li class="catalog-page__root"><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/light-source.png">Светодиодные ленты</a></li>
-                    <li class="catalog-page__root">
-                      <div class="catalog-page__item-title" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/street-light.png">
-                        <span>Системы освещения</span>
-                        <i></i>
-                      </div>
-                      <div class="catalog-page__collapse">
-                        <div class="catalog-page__inner">
-                          <ul>
-                            <li>
-                              <div class="catalog-page__item-title">
-                                <span>Однофазная трековая система</span>
-                                <i></i>
-                              </div>
-                              <div class="catalog-page__collapse">
-                                <div class="catalog-page__inner">
-                                  <ul>
-                                    <li><a class="catalog-page__item-title" href="#!">Магнитная трековая система OPTIMA</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!">Шинопровод текстильный Decorato</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!">Блоки питания Decorato</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!">Аксессуары</a></li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </li>
-                            <li><a class="catalog-page__item-title" href="#!">Трековая система на ремнях Decorato</a></li>
-                            <li><a class="catalog-page__item-title" href="#!">Тросовая система SKYCROSS</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
+          <ul class="favorite__list">
+            <li class="favorite__item">
+              <a class="card-product" href="#!">
+                <div class="card-product__view">
+                  <div class="card-product__pic"><img src="img/luster-3.png" alt="" loading="lazy" ></div>
+                  <div class="card-product__badges">
+                    <span class="card-product__badges-item card-product__badges-item_new">new</span>
+                    <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
+                  </div>
+                  <div class="card-product__actions">
+                    <span class="card-product__actions-item card-product__actions-item_favorite">
+                      <!-- Для товаров, добавленных в избранное, добавляем класс .checked и иконке i-->
+                      <i class="checked" data-id="A8564PL-5RB"></i>
+                    </span>
+                    <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="catalog-page__card catalog-page__card_75">
-              <div class="catalog-page__pic catalog-page__pic_street-light"></div>
-              <div class="catalog-page__title">
-                <span>Уличное освещение</span>
-                <i></i>
-              </div>
-              <div class="catalog-page__collapse">
-                <div class="catalog-page__inner">
-                  <ul>
-                    <!-- Только для li, лежащих на первом уровне вложенности, добавляем класс .catalog-page__root-->
-                    <li class="catalog-page__root">
-                      <div class="catalog-page__item-title" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/street-light.png">
-                        <span>Системы освещения</span>
-                        <i></i>
-                      </div>
-                      <div class="catalog-page__collapse">
-                        <div class="catalog-page__inner">
-                          <ul>
-                            <li>
-                              <div class="catalog-page__item-title">
-                                <span>Однофазная трековая система</span>
-                                <i></i>
-                              </div>
-                              <div class="catalog-page__collapse">
-                                <div class="catalog-page__inner">
-                                  <ul>
-                                    <li><a class="catalog-page__item-title" href="#!">Магнитная трековая система OPTIMA</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!">Шинопровод текстильный Decorato</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!">Блоки питания Decorato</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!">Аксессуары</a></li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </li>
-                            <li><a class="catalog-page__item-title" href="#!">Трековая система на ремнях Decorato</a></li>
-                            <li><a class="catalog-page__item-title" href="#!">Тросовая система SKYCROSS</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="catalog-page__root"><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/street-light.png">Витринные светильники</a></li>
-                    <li class="catalog-page__root"><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/light-source.png">Гибкий неон</a></li>
-                    <li class="catalog-page__root"><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/light-manage.png">Настенные светильники</a></li>
-                    <li class="catalog-page__root"><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/adapters.png">Потолочные светильники</a></li>
-                    <li class="catalog-page__root"><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/acc.png">Алюминиевые профили</a></li>
-                    <li class="catalog-page__root"><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/light-source.png">Светодиодные ленты</a></li>
-                    <li class="catalog-page__root">
-                      <div class="catalog-page__item-title" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/street-light.png">
-                        <span>Системы освещения</span>
-                        <i></i>
-                      </div>
-                      <div class="catalog-page__collapse">
-                        <div class="catalog-page__inner">
-                          <ul>
-                            <li>
-                              <div class="catalog-page__item-title">
-                                <span>Однофазная трековая система</span>
-                                <i></i>
-                              </div>
-                              <div class="catalog-page__collapse">
-                                <div class="catalog-page__inner">
-                                  <ul>
-                                    <li><a class="catalog-page__item-title" href="#!">Магнитная трековая система OPTIMA</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!">Шинопровод текстильный Decorato</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!">Блоки питания Decorato</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!">Аксессуары</a></li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </li>
-                            <li><a class="catalog-page__item-title" href="#!">Трековая система на ремнях Decorato</a></li>
-                            <li><a class="catalog-page__item-title" href="#!">Тросовая система SKYCROSS</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
+                <div class="card-product__desc">
+                  <div class="card-product__text">
+                    <p class="card-product__title">Люстра Аrte Lamp Rosaria</p>
+                    <span class="card-product__code">A8564PL-5RB</span>
+                  </div>
+                  <div class="card-product__data">
+                    <p class="card-product__count">В наличии: 110 шт.</p>
+                    <span class="card-product__price">88 000 р.</span>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="catalog-page__card catalog-page__card_25">
-              <div class="catalog-page__pic catalog-page__pic_light-source"></div>
-              <div class="catalog-page__title">
-                <span>Источники</span>
-                <i></i>
-              </div>
-              <div class="catalog-page__collapse">
-                <div class="catalog-page__inner">
-                  <ul>
-                    <li class="catalog-page__root"><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/street-light.png">Светодиодные модули</a></li>
-                  </ul>
+              </a>
+            </li>
+            <li class="favorite__item">
+              <a class="card-product" href="#!">
+                <div class="card-product__view">
+                  <div class="card-product__pic"><img src="img/luster-1.png" alt="" loading="lazy" ></div>
+                  <div class="card-product__badges">
+                    <span class="card-product__badges-item card-product__badges-item_new">new</span>
+                    <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
+                  </div>
+                  <div class="card-product__actions">
+                    <span class="card-product__actions-item card-product__actions-item_favorite">
+                      <!-- Для товаров, добавленных в избранное, добавляем класс .checked и иконке i-->
+                      <i class="checked" data-id="A8564PL-5RB"></i>
+                    </span>
+                    <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="catalog-page__card catalog-page__card_50">
-              <div class="catalog-page__pic catalog-page__pic_light-manage"></div>
-              <div class="catalog-page__title">
-                <span>Управление светом</span>
-                <i></i>
-              </div>
-              <div class="catalog-page__collapse">
-                <div class="catalog-page__inner">
-                  <ul>
-                    <li class="catalog-page__root"><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/adapters.png">Контроллеры</a></li>
-                    <li class="catalog-page__root"><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/street-light.png">Панель управления</a></li>
-                    <li class="catalog-page__root"><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/decor-light.png">Диммеры</a></li>
-                    <li class="catalog-page__root"><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/adapters.png">Релейные модули</a></li>
-                    <li class="catalog-page__root"><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/func-light.png">Светильники настенные</a></li>
-                  </ul>
+                <div class="card-product__desc">
+                  <div class="card-product__text">
+                    <p class="card-product__title">Люстра Аrte Lamp Rosaria</p>
+                    <span class="card-product__code">A8564PL-5RB</span>
+                  </div>
+                  <div class="card-product__data">
+                    <p class="card-product__count">В наличии: 110 шт.</p>
+                    <span class="card-product__price">88 000 р.</span>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="catalog-page__card catalog-page__card_50">
-              <div class="catalog-page__pic catalog-page__pic_decor-light"></div>
-              <div class="catalog-page__title">
-                <span>Декоративное освещение</span>
-                <i></i>
-              </div>
-              <div class="catalog-page__collapse">
-                <div class="catalog-page__inner">
-                  <ul>
-                    <li class="catalog-page__root"><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/adapters.png">Люстры</a></li>
-                    <li class="catalog-page__root"><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/street-light.png">Светильники</a></li>
-                    <li class="catalog-page__root"><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/func-light.png">Споты</a></li>
-                  </ul>
+              </a>
+            </li>
+            <li class="favorite__item">
+              <a class="card-product" href="#!">
+                <div class="card-product__view">
+                  <div class="card-product__pic"><img src="img/luster-2.png" alt="" loading="lazy" ></div>
+                  <div class="card-product__badges">
+                    <span class="card-product__badges-item card-product__badges-item_new">new</span>
+                    <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
+                  </div>
+                  <div class="card-product__actions">
+                    <span class="card-product__actions-item card-product__actions-item_favorite">
+                      <!-- Для товаров, добавленных в избранное, добавляем класс .checked и иконке i-->
+                      <i class="checked" data-id="A8564PL-5RB"></i>
+                    </span>
+                    <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="catalog-page__card catalog-page__card_75">
-              <div class="catalog-page__pic catalog-page__pic_adapters"></div>
-              <div class="catalog-page__title">
-                <span>Источники питания</span>
-                <i></i>
-              </div>
-              <div class="catalog-page__collapse">
-                <div class="catalog-page__inner">
-                  <ul>
-                    <li class="catalog-page__root"><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/decor-light.png">Блоки питания 24В</a></li>
-                    <li class="catalog-page__root"><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/street-light.png">Блоки питания 48В</a></li>
-                  </ul>
+                <div class="card-product__desc">
+                  <div class="card-product__text">
+                    <p class="card-product__title">Люстра Аrte Lamp Rosaria</p>
+                    <span class="card-product__code">A8564PL-5RB</span>
+                  </div>
+                  <div class="card-product__data">
+                    <p class="card-product__count">В наличии: 110 шт.</p>
+                    <span class="card-product__price">88 000 р.</span>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="catalog-page__card catalog-page__card_25">
-              <div class="catalog-page__pic catalog-page__pic_acc"></div>
-              <div class="catalog-page__title"><span>Аксессуары для светильников</span></div>
-            </div>
-          </div>
+              </a>
+            </li>
+            <li class="favorite__item">
+              <a class="card-product" href="#!">
+                <div class="card-product__view">
+                  <div class="card-product__pic"><img src="img/luster-3.png" alt="" loading="lazy" ></div>
+                  <div class="card-product__badges">
+                    <span class="card-product__badges-item card-product__badges-item_new">new</span>
+                    <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
+                  </div>
+                  <div class="card-product__actions">
+                    <span class="card-product__actions-item card-product__actions-item_favorite">
+                      <!-- Для товаров, добавленных в избранное, добавляем класс .checked и иконке i-->
+                      <i class="checked" data-id="A8564PL-5RB"></i>
+                    </span>
+                    <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
+                  </div>
+                </div>
+                <div class="card-product__desc">
+                  <div class="card-product__text">
+                    <p class="card-product__title">Люстра Аrte Lamp Rosaria</p>
+                    <span class="card-product__code">A8564PL-5RB</span>
+                  </div>
+                  <div class="card-product__data">
+                    <p class="card-product__count">В наличии: 110 шт.</p>
+                    <span class="card-product__price">88 000 р.</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="favorite__item">
+              <a class="card-product" href="#!">
+                <div class="card-product__view">
+                  <div class="card-product__pic"><img src="img/luster-1.png" alt="" loading="lazy" ></div>
+                  <div class="card-product__badges">
+                    <span class="card-product__badges-item card-product__badges-item_new">new</span>
+                    <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
+                  </div>
+                  <div class="card-product__actions">
+                    <span class="card-product__actions-item card-product__actions-item_favorite">
+                      <!-- Для товаров, добавленных в избранное, добавляем класс .checked и иконке i-->
+                      <i class="checked" data-id="A8564PL-5RB"></i>
+                    </span>
+                    <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
+                  </div>
+                </div>
+                <div class="card-product__desc">
+                  <div class="card-product__text">
+                    <p class="card-product__title">Люстра Аrte Lamp Rosaria</p>
+                    <span class="card-product__code">A8564PL-5RB</span>
+                  </div>
+                  <div class="card-product__data">
+                    <p class="card-product__count">В наличии: 110 шт.</p>
+                    <span class="card-product__price">88 000 р.</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="favorite__item">
+              <a class="card-product" href="#!">
+                <div class="card-product__view">
+                  <div class="card-product__pic"><img src="img/luster-2.png" alt="" loading="lazy" ></div>
+                  <div class="card-product__badges">
+                    <span class="card-product__badges-item card-product__badges-item_new">new</span>
+                    <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
+                  </div>
+                  <div class="card-product__actions">
+                    <span class="card-product__actions-item card-product__actions-item_favorite">
+                      <!-- Для товаров, добавленных в избранное, добавляем класс .checked и иконке i-->
+                      <i class="checked" data-id="A8564PL-5RB"></i>
+                    </span>
+                    <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
+                  </div>
+                </div>
+                <div class="card-product__desc">
+                  <div class="card-product__text">
+                    <p class="card-product__title">Люстра Аrte Lamp Rosaria</p>
+                    <span class="card-product__code">A8564PL-5RB</span>
+                  </div>
+                  <div class="card-product__data">
+                    <p class="card-product__count">В наличии: 110 шт.</p>
+                    <span class="card-product__price">88 000 р.</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="favorite__item">
+              <a class="card-product" href="#!">
+                <div class="card-product__view">
+                  <div class="card-product__pic"><img src="img/luster-3.png" alt="" loading="lazy" ></div>
+                  <div class="card-product__badges">
+                    <span class="card-product__badges-item card-product__badges-item_new">new</span>
+                    <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
+                  </div>
+                  <div class="card-product__actions">
+                    <span class="card-product__actions-item card-product__actions-item_favorite">
+                      <!-- Для товаров, добавленных в избранное, добавляем класс .checked и иконке i-->
+                      <i class="checked" data-id="A8564PL-5RB"></i>
+                    </span>
+                    <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
+                  </div>
+                </div>
+                <div class="card-product__desc">
+                  <div class="card-product__text">
+                    <p class="card-product__title">Люстра Аrte Lamp Rosaria</p>
+                    <span class="card-product__code">A8564PL-5RB</span>
+                  </div>
+                  <div class="card-product__data">
+                    <p class="card-product__count">В наличии: 110 шт.</p>
+                    <span class="card-product__price">88 000 р.</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
@@ -694,7 +625,7 @@
     </div>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js" defer></script>
-    <script src="js/pages/catalog.min.js" defer></script>
+    <script src="js/pages/favorite.min.js" defer></script>
     <!-- Если по ТЗ не поддерживаем IE11, то оставляем, если поддерживаем, то убираем и тестируем поддержку IE11-->
     <script>
       if (navigator.userAgent.indexOf("MSIE") !== -1 || navigator.appVersion.indexOf("Trident/") > -1) {
