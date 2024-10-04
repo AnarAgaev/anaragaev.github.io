@@ -410,15 +410,17 @@
               </div>
               <!-- Если пользователь не залогинен, то Не добавляем селект с заказами а у кнопки Добавить в зака ВООБЩЕ НЕ ДОЛЖНО БЫТЬ data-product-id-->
               <div class="card-top__order"><button class="btn-reset default-btn card-top__btn_order">Добавить в заказ</button></div>
-              <div class="card-top__additional-info">
-                <div class="card-top__additional-info_wrap">
-                  <button class="btn-reset card-top__icon card-top__doc"></button>
-                  <div class="card-top__doc_title">Документация</div>
-                </div>
-                <div class="card-top__additional-info_wrap">
-                  <div class="card-top__icon"><button class="btn-reset card-top__icon card-top__rar"></button></div>
-                  <div class="card-top__cert_title">Упаковка товара</div>
-                </div>
+              <div class="card-top__anchors">
+                <!-- Может быть как кнопкой так и ссылкой-->
+                <button class="card-top__anchors-item" data-target="doc">
+                  <i class="card-top__anchors-icon card-top__anchors-icon_box"></i>
+                  <span class="card-top__anchors-text">Документация</span>
+                </button>
+                <!-- Если нужно удалить полностью какую-то кнопку, то удаляем от .card-top__anchors-item и ниже-->
+                <a class="card-top__anchors-item" href="#!">
+                  <i class="card-top__anchors-icon card-top__anchors-icon_file"></i>
+                  <span class="card-top__anchors-text">Упаковка товара</span>
+                </a>
               </div>
             </div>
           </div>
