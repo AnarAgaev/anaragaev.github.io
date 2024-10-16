@@ -336,7 +336,12 @@
               <div class="card-top__info">
                 <div class="card-top__btns">
                   <ul class="card-top__btns_list">
-                    <li class="card-top__btns_item"><button class="btn-reset card-top__btn_share"></button></li>
+                    <li class="card-top__btns_item">
+                      <button class="btn-reset card-top__btn_share"></button>
+                      <!-- 1. Для того, чтобы построить tooltip с шаред ссылками нужно в любой элемент страницы добавить .share-tooltip-->
+                      <!-- 2. В data-links записываем JSON с ссылками на соц. сети. В каком порядке будут идти ссылки, в таком же они будут отрендерены-->
+                      <div class="share-tooltip" data-links='[{"name":"tg","link":"https://t.me/share/url?url=https://fandeco.ru/catalog/ljustry/A1150SP-5CC/"},{"name":"vk","link":"https://vk.com/share.php?url=https://fandeco.ru/catalog/ljustry/A1150SP-5CC"},{"name":"ok","link":"https://connect.ok.ru/offer?url=https://fandeco.ru/catalog/ljustry/A1150SP-5CC/"}]'></div>
+                    </li>
                     <li class="card-top__btns_item"><button class="btn-reset card-top__btn_favorite" data-id="777-1234567-favorite"></button></li>
                   </ul>
                 </div>
