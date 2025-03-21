@@ -7,18 +7,23 @@
     <meta name="description" content="Write description for this page here" >
     <meta name="keywords" content="Write keywords for this page here" >
     <title>LightOPT</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" >
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" >
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" >
+    <link rel="icon" href="img/favicon.ico" >
     <link rel="preload" href="css/vendor.min.css" as="style" >
     <link rel="stylesheet" href="css/vendor.min.css" >
     <link rel="preload" href="css/main.min.css" as="style" >
     <link rel="stylesheet" href="css/main.min.css" >
     <link rel="stylesheet" href="css/pages/card.min.css" >
     <script>
-      window.filterApiLink = "mocks/catalog-filter-request.json"; // Ссылка на API фильтра (каталог) - только на странице с фильтрами
+      window.filterApiLink = "https://master-provider.massive.ru/api/categories/330"; // Ссылка на API фильтра (каталог) - только на странице с фильтрами
       window.addProductApiLink = "mocks/add-product-request.json"; // Ссылка на API добавить товар в заказ - только на странице товара
       window.catalogLink = "index.html"; // Ссылка на страницу каталога - на каждой странице
+      window.listOrders = "https://technolight.pro/api/orders/getforcatalog"; // Ссылка на список заказов
 
       // !!! Обрати внимание, что в конце ссылки слэш !!!
-      window.searchRequestLink = "https://testprod-provider.massive.ru/api/products/search/"; // Ссылка на API поиска - на каждой странице
+      window.searchRequestLink = "https://technolight.pro/api/products/search/"; // Ссылка на API поиска - на каждой странице
 
       window.addToFavoriteLink = "mocks/favorite-request-success.json"; // Ссылка на API добавить товар в избранное
       window.removeFromFavoriteLink = "mocks/favorite-request-success.json"; // Ссылка на API удалить товар из избранного
@@ -138,8 +143,8 @@
                 каталог
               </a>
             </li>
-            <li class="nav__item"><a class="nav__link" href="#!">архитекторам и дизайнерам</a></li>
-            <li class="nav__item"><a class="nav__link" href="#!">где купить?</a></li>
+            <li class="nav__item"><a class="nav__link" href="#!">Распродажа</a></li>
+            <li class="nav__item"><a class="nav__link" href="#!">маркетинг</a></li>
             <li class="nav__item"><a class="nav__link" href="#!">контакты</a></li>
           </ul>
         </nav>
@@ -264,8 +269,16 @@
             <li class="nav-mobile__item">
               <div class="nav-mobile__title">
                 <div class="nav-mobile__title_wrap">
-                  <div class="nav-mobile__pic nav-mobile__pic-palette"></div>
-                  <a class="nav-mobile__link" href="#!">Архитекторам и дизайнерам</a>
+                  <div class="nav-mobile__pic nav-mobile__pic-marketing"></div>
+                  <a class="nav-mobile__link" href="#!">Маркетинг</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-mobile__item">
+              <div class="nav-mobile__title">
+                <div class="nav-mobile__title_wrap">
+                  <div class="nav-mobile__pic nav-mobile__pic-sale"></div>
+                  <a class="nav-mobile__link" href="#!">Распродажа</a>
                 </div>
               </div>
             </li>
@@ -274,14 +287,6 @@
                 <div class="nav-mobile__title_wrap">
                   <div class="nav-mobile__pic nav-mobile__pic-puzzles"></div>
                   <a class="nav-mobile__link" href="#!">О бренде</a>
-                </div>
-              </div>
-            </li>
-            <li class="nav-mobile__item">
-              <div class="nav-mobile__title">
-                <div class="nav-mobile__title_wrap">
-                  <div class="nav-mobile__pic nav-mobile__pic-marker"></div>
-                  <a class="nav-mobile__link" href="#!">Где купить ?</a>
                 </div>
               </div>
             </li>
@@ -302,901 +307,965 @@
         <div class="container">
           <ul class="breadcrumbs__list">
             <li class="breadcrumbs__item"><a href="#!">Главная</a></li>
-            <li class="breadcrumbs__item"><span>Продукция</span></li>
+            <li class="breadcrumbs__item"><a href="#!">Продукция</a></li>
           </ul>
         </div>
       </section>
       <section class="container main-title">
-        <h1 class="main-title__title">Заголовок страницы</h1>
+        <h1 class="main-title__title">
+          Заголовок страницы
+          <a href="#">Все</a>
+        </h1>
         <span class="main-title__text-count">Подзаголовок страницы/доп. информация</span>
       </section>
-      <section class="card"></section>
-      <div class="container">
-        <div class="card-content">
-          <div class="card-top">
-            <div class="card-top__left">
-              <div class="card-slider">
-                <div class="card-slider__wrapper">
-                  <div class="card-slider__body">
-                    <div class="card-slider__images">
-                      <div class="card-slider__image card-slider__image_active"><img src="img/slider-1.jpg" loading="lazy" ></div>
-                      <div class="card-slider__image"><img src="img/slider-2.jpg" loading="lazy" ></div>
-                      <div class="card-slider__image"><img src="img/slider-1.jpg" loading="lazy" ></div>
-                      <div class="card-slider__image"><img src="img/slider-2.jpg" loading="lazy" ></div>
-                      <div class="card-slider__image"><img src="img/slider-1.jpg" loading="lazy" ></div>
-                      <div class="card-slider__image"><img src="img/slider-2.jpg" loading="lazy" ></div>
-                      <div class="card-slider__image"><img src="img/slider-1.jpg" loading="lazy" ></div>
+      <section class="card">
+        <div class="container">
+          <div class="card-content">
+            <div class="card-top">
+              <div class="card-top__left">
+                <div class="card-slider">
+                  <div class="card-slider__wrapper">
+                    <div class="card-slider__body">
+                      <div class="card-slider__images">
+                        <div class="card-slider__image card-slider__image_active"><img src="img/slider-1.jpg" loading="lazy" ></div>
+                        <div class="card-slider__image"><img src="img/slider-2.jpg" loading="lazy" ></div>
+                        <div class="card-slider__image"><img src="img/slider-1.jpg" loading="lazy" ></div>
+                        <div class="card-slider__image"><img src="img/slider-2.jpg" loading="lazy" ></div>
+                        <div class="card-slider__image"><img src="img/slider-1.jpg" loading="lazy" ></div>
+                        <div class="card-slider__image"><img src="img/slider-2.jpg" loading="lazy" ></div>
+                        <div class="card-slider__image"><img src="img/slider-1.jpg" loading="lazy" ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-slider__main"><img src="img/slider-1.jpg" loading="lazy" ></div>
+                </div>
+              </div>
+              <div class="card-top__right">
+                <div class="card-top__info">
+                  <div class="card-top__btns">
+                    <ul class="card-top__btns_list">
+                      <li class="card-top__btns_item">
+                        <button class="btn-reset card-top__btn_share">
+                          <!-- 1. Для того, чтобы построить tooltip с шаред ссылками нужно в любой элемент страницы добавить .share-tooltip-->
+                          <!-- 2. В data-links записываем JSON с ссылками на соц. сети. В каком порядке будут идти ссылки, в таком же они будут отрендерены-->
+                          <div class="share-tooltip" data-links='[{"name":"tg","link":"https://t.me/share/url?url=https://fandeco.ru/catalog/ljustry/A1150SP-5CC/"},{"name":"vk","link":"https://vk.com/share.php?url=https://fandeco.ru/catalog/ljustry/A1150SP-5CC"},{"name":"ok","link":"https://connect.ok.ru/offer?url=https://fandeco.ru/catalog/ljustry/A1150SP-5CC/"}]'></div>
+                        </button>
+                      </li>
+                      <li class="card-top__btns_item"><button class="btn-reset card-top__btn_favorite" data-id="777-1234567-favorite"></button></li>
+                    </ul>
+                  </div>
+                  <div class="card-top__price">
+                    <div class="card-top__price_new">
+                      <div class="card-top__price_title">Рекомендуемая розничная цена:</div>
+                      <div class="card-top__price_value">5 760 р.</div>
+                    </div>
+                    <div class="card-top__price_old">
+                      <div class="card-top__price_title">Ваша цена:</div>
+                      <div class="card-top__price_value">6 780 р.</div>
                     </div>
                   </div>
                 </div>
-                <div class="card-slider__main"><img src="img/slider-1.jpg" loading="lazy" ></div>
+                <div class="card-top__quantity">
+                  <div class="card-top__quantity_changer">
+                    <button class="btn-reset btn--white changer__btn changer__btn_minus">—</button>
+                    <input class="changer__input" type="text" min="1" maxlength="4" value="1" >
+                    <button class="btn-reset btn--white changer__btn changer__btn_plus">+</button>
+                  </div>
+                  <div class="card-top__quantity_value"><span>234 шт в наличии</span></div>
+                </div>
+                <div class="card-top__order">
+                  <div class="custom-select">
+                    <div class="custom-select__top card-select__top">
+                      <!-- В data атрибут data-order-id добавляем ID заказа в который будет добавлять товар по умолчанию-->
+                      <!-- В data атрибут data-status пишем соответственно: Заказ в резерве - false, Заказ не оформлен - true, Новый заказ - new-->
+                      <!-- При первом рендере, всегда ставим в custom-select__value текст Новый заказ, значение data-order-id - пустое, data-status - new-->
+                      <div class="custom-select__value" data-order-id data-status="new">Новый заказ</div>
+                      <div class="custom-select_open"></div>
+                    </div>
+                    <div class="custom-select__drop">
+                      <ul class="custom-select__list">
+                        <li class="custom-select__item custom-select__item--sort">
+                          <!-- Первым всегда идет опшен Новый заказ-->
+                          <!-- Для Нового заказа data-order-id оставляем без значения либо пустая строка-->
+                          <!-- Для Нового заказа data-status ставим в значение new-->
+                          <label class="custom-select__option" data-order-id data-status="new" title="Новый заказ">
+                            <input class="invisible" type="radio" name="order" checked >
+                            <span>Новый заказ</span>
+                          </label>
+                        </li>
+                        <li class="custom-select__item custom-select__item--sort">
+                          <label class="custom-select__option" data-order-id="11125678-ord" data-status="true" title="Заказ № 11125678-ord">
+                            <input class="invisible" type="radio" name="order" >
+                            <span>Заказ № 11125678-ord</span>
+                            <mark>Заказ не оформлен</mark>
+                          </label>
+                        </li>
+                        <li class="custom-select__item custom-select__item--sort">
+                          <label class="custom-select__option" data-order-id="22225678-ord" data-status="false" title="Заказ № 22225678-ord">
+                            <input class="invisible" type="radio" name="order" >
+                            <span>Заказ № 22225678-ord</span>
+                            <mark>В резерве</mark>
+                          </label>
+                        </li>
+                        <li class="custom-select__item custom-select__item--sort">
+                          <label class="custom-select__option" data-order-id="33325678-ord" data-status="true" title="Заказ № 33325678-ord">
+                            <input class="invisible" type="radio" name="order" >
+                            <span>Заказ № 33325678-ord</span>
+                            <mark>Заказ не оформлен</mark>
+                          </label>
+                        </li>
+                        <li class="custom-select__item custom-select__item--sort">
+                          <label class="custom-select__option" data-order-id="44425678-ord" data-status="false" title="Заказ № 44425678-ord">
+                            <input class="invisible" type="radio" name="order" >
+                            <span>Заказ № 44425678-ord</span>
+                            <mark>В резерве</mark>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- Если пользователь залогинен, к кнопке Добавить в заказ добавляем аттрибут data-product-id со значением id текущего продукта-->
+                  <button class="btn-reset default-btn card-top__btn_order" data-product-id="777-1234567-prod">Добавить в заказ</button>
+                </div>
+                <!-- Если пользователь не залогинен, то Не добавляем селект с заказами а у кнопки Добавить в зака ВООБЩЕ НЕ ДОЛЖНО БЫТЬ data-product-id-->
+                <div class="card-top__order"><button class="btn-reset default-btn card-top__btn_order">Добавить в заказ</button></div>
+                <div class="card-top__anchors">
+                  <!-- Может быть как кнопкой так и ссылкой-->
+                  <button class="card-top__anchors-item" data-target="doc">
+                    <i class="card-top__anchors-icon card-top__anchors-icon_box"></i>
+                    <span class="card-top__anchors-text">Документация</span>
+                  </button>
+                  <!-- Если нужно удалить полностью какую-то кнопку, то удаляем от .card-top__anchors-item и ниже-->
+                  <a class="card-top__anchors-item" href="#!">
+                    <i class="card-top__anchors-icon card-top__anchors-icon_file"></i>
+                    <span class="card-top__anchors-text">Упаковка товара</span>
+                  </a>
+                </div>
               </div>
             </div>
-            <div class="card-top__right">
-              <div class="card-top__info">
-                <div class="card-top__btns">
-                  <ul class="card-top__btns_list">
-                    <li class="card-top__btns_item">
-                      <button class="btn-reset card-top__btn_share">
-                        <!-- 1. Для того, чтобы построить tooltip с шаред ссылками нужно в любой элемент страницы добавить .share-tooltip-->
-                        <!-- 2. В data-links записываем JSON с ссылками на соц. сети. В каком порядке будут идти ссылки, в таком же они будут отрендерены-->
-                        <div class="share-tooltip" data-links='[{"name":"tg","link":"https://t.me/share/url?url=https://fandeco.ru/catalog/ljustry/A1150SP-5CC/"},{"name":"vk","link":"https://vk.com/share.php?url=https://fandeco.ru/catalog/ljustry/A1150SP-5CC"},{"name":"ok","link":"https://connect.ok.ru/offer?url=https://fandeco.ru/catalog/ljustry/A1150SP-5CC/"}]'></div>
-                      </button>
-                    </li>
-                    <li class="card-top__btns_item"><button class="btn-reset card-top__btn_favorite" data-id="777-1234567-favorite"></button></li>
-                  </ul>
-                </div>
-                <div class="card-top__price">
-                  <div class="card-top__price_new">
-                    <div class="card-top__price_title">Рекомендуемая розничная цена:</div>
-                    <div class="card-top__price_value">5 760 р.</div>
+            <div class="card-content__bottom">
+              <div class="card-filters">
+                <!-- Тогглим содержание классом .card-filter--open-->
+                <div class="card-filter card-filter--open">
+                  <div class="card-filter__top">
+                    <button class="card-filter__toggle"></button>
+                    <h3 class="card-filter__title">характеристики</h3>
                   </div>
-                  <div class="card-top__price_old">
-                    <div class="card-top__price_title">Ваша цена:</div>
-                    <div class="card-top__price_value">6 780 р.</div>
+                  <div class="card-filter__bottom card-filter__bottom--open">
+                    <div class="card-filter__top_sub">
+                      <div class="card-filter__toggle_in"></div>
+                      <h3 class="card-filter__title">основные</h3>
+                    </div>
+                    <ul class="card-filter__list">
+                      <li class="card-filter__item">
+                        <div class="card-filter__text_wrap"><span class="card-filter__text">Артикул</span></div>
+                        <span class="card-filter__text_value">A8889LM-8GY</span>
+                      </li>
+                      <li class="card-filter__item">
+                        <div class="card-filter__text_wrap"><span class="card-filter__text">Интерьер</span></div>
+                        <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
+                      </li>
+                      <li class="card-filter__item">
+                        <div class="card-filter__text_wrap"><span class="card-filter__text">Бренд</span></div>
+                        <span class="card-filter__text_value">Arte Lamp</span>
+                      </li>
+                      <li class="card-filter__item">
+                        <div class="card-filter__text_wrap">
+                          <button class="btn-reset card-filter__btn-info"></button>
+                          <span class="card-filter__text">Мощность</span>
+                        </div>
+                        <span class="card-filter__text_value">40 W</span>
+                      </li>
+                      <li class="card-filter__item">
+                        <div class="card-filter__text_wrap">
+                          <button class="btn-reset card-filter__btn-info"></button>
+                          <span class="card-filter__text">Страна</span>
+                        </div>
+                        <span class="card-filter__text_value">Италия</span>
+                      </li>
+                      <li class="card-filter__item">
+                        <div class="card-filter__text_wrap"><span class="card-filter__text">Патрон</span></div>
+                        <span class="card-filter__text_value">Е14</span>
+                      </li>
+                      <li class="card-filter__item">
+                        <div class="card-filter__text_wrap"><span class="card-filter__text">Коллекция</span></div>
+                        <span class="card-filter__text_value">MORRIS</span>
+                      </li>
+                      <li class="card-filter__item">
+                        <div class="card-filter__text_wrap"><span class="card-filter__text">Напряжение</span></div>
+                        <span class="card-filter__text_value">220 V</span>
+                      </li>
+                      <li class="card-filter__item">
+                        <div class="card-filter__text_wrap"><span class="card-filter__text">Материал плафона</span></div>
+                        <span class="card-filter__text_value">Без плафона</span>
+                      </li>
+                      <li class="card-filter__item">
+                        <div class="card-filter__text_wrap"><span class="card-filter__text">Количество патронов</span></div>
+                        <span class="card-filter__text_value">8 шт</span>
+                      </li>
+                      <li class="card-filter__item">
+                        <div class="card-filter__text_wrap"><span class="card-filter__text">Материал арматуры</span></div>
+                        <span class="card-filter__text_value">Акрил</span>
+                      </li>
+                      <li class="card-filter__item">
+                        <div class="card-filter__text_wrap"><span class="card-filter__text">Крепеж</span></div>
+                        <span class="card-filter__text_value">На крюк</span>
+                      </li>
+                      <li class="card-filter__item">
+                        <div class="card-filter__text_wrap">
+                          <button class="btn-reset card-filter__btn-info"></button>
+                          <span class="card-filter__text">Мощность</span>
+                        </div>
+                        <span class="card-filter__text_value">40 W</span>
+                      </li>
+                      <li class="card-filter__item">
+                        <div class="card-filter__text_wrap"><span class="card-filter__text">Площадь освещения</span></div>
+                        <span class="card-filter__text_value">24 м2</span>
+                      </li>
+                      <li class="card-filter__item">
+                        <div class="card-filter__text_wrap"><span class="card-filter__text">IP</span></div>
+                        <span class="card-filter__text_value">20</span>
+                      </li>
+                      <li class="card-filter__item">
+                        <div class="card-filter__text_wrap"><span class="card-filter__text">Тип лампы</span></div>
+                        <span class="card-filter__text_value">Накаливания</span>
+                      </li>
+                      <li class="card-filter__item">
+                        <div class="card-filter__text_wrap"><span class="card-filter__text">Стиль лампы</span></div>
+                        <span class="card-filter__text_value">Классический</span>
+                      </li>
+                      <li class="card-filter__item">
+                        <div class="card-filter__text_wrap"><span class="card-filter__text">Место применения</span></div>
+                        <span class="card-filter__text_value">В квартиру, В комнату</span>
+                      </li>
+                      <li class="card-filter__item">
+                        <div class="card-filter__text_wrap"><span class="card-filter__text">Вид рассеивателя</span></div>
+                        <span class="card-filter__text_value">Нет</span>
+                      </li>
+                      <li class="card-filter__item">
+                        <div class="card-filter__text_wrap"><span class="card-filter__text">Диммер</span></div>
+                        <span class="card-filter__text_value">Да</span>
+                      </li>
+                    </ul>
                   </div>
-                </div>
-              </div>
-              <div class="card-top__quantity">
-                <div class="card-top__quantity_changer">
-                  <button class="btn-reset btn--white changer__btn changer__btn_minus">—</button>
-                  <input class="changer__input" type="text" min="1" maxlength="4" value="1" >
-                  <button class="btn-reset btn--white changer__btn changer__btn_plus">+</button>
-                </div>
-                <div class="card-top__quantity_value"><span>234 шт в наличии</span></div>
-              </div>
-              <div class="card-top__order">
-                <div class="custom-select">
-                  <div class="custom-select__top card-select__top">
-                    <!-- В data атрибут data-order-id добавляем ID заказа в который будет добавлять товар по умолчанию-->
-                    <!-- В data атрибут data-status пишем соответственно: Заказ в резерве - false, Заказ не оформлен - true, Новый заказ - new-->
-                    <!-- При первом рендере, всегда ставим в custom-select__value текст Новый заказ, значение data-order-id - пустое, data-status - new-->
-                    <div class="custom-select__value" data-order-id data-status="new">Новый заказ</div>
-                    <div class="custom-select_open"></div>
+                  <div class="card-filter__bottom card-filter__bottom--open">
+                    <div class="card-filter__top_sub card-filter__top--open">
+                      <div class="card-filter__toggle_in"></div>
+                      <h3 class="card-filter__title">Материалы и цвета</h3>
+                    </div>
+                    <ul class="card-filter__list">
+                      <li class="card-filter__item">
+                        <div class="card-filter__text_wrap"><span class="card-filter__text">Материал плафона</span></div>
+                        <span class="card-filter__text_value">Стекло</span>
+                      </li>
+                      <li class="card-filter__item">
+                        <div class="card-filter__text_wrap"><span class="card-filter__text">Цвет плафона</span></div>
+                        <span class="card-filter__text_value">Белый</span>
+                      </li>
+                      <li class="card-filter__item">
+                        <div class="card-filter__text_wrap"><span class="card-filter__text">Материал арматуры</span></div>
+                        <span class="card-filter__text_value">Металл</span>
+                      </li>
+                      <li class="card-filter__item">
+                        <div class="card-filter__text_wrap"><span class="card-filter__text">Цвет светильника</span></div>
+                        <span class="card-filter__text_value">Бронза</span>
+                      </li>
+                    </ul>
                   </div>
-                  <div class="custom-select__drop">
-                    <ul class="custom-select__list">
-                      <li class="custom-select__item custom-select__item--sort">
-                        <!-- Первым всегда идет опшен Новый заказ-->
-                        <!-- Для Нового заказа data-order-id оставляем без значения либо пустая строка-->
-                        <!-- Для Нового заказа data-status ставим в значение new-->
-                        <label class="custom-select__option" data-order-id data-status="new" title="Новый заказ">
-                          <input class="invisible" type="radio" name="order" checked >
-                          <span>Новый заказ</span>
-                        </label>
+                  <div class="card-filter__bottom card-filter__bottom--open">
+                    <div class="card-filter__top_sub card-filter__top--open card-filter__top-margin">
+                      <div class="card-filter__toggle_in"></div>
+                      <h3 class="card-filter__title">Источник света</h3>
+                    </div>
+                    <ul class="card-filter__list">
+                      <li class="card-filter__item">
+                        <div class="card-filter__text_wrap"><span class="card-filter__text">Патрон</span></div>
+                        <span class="card-filter__text_value">G9</span>
                       </li>
-                      <li class="custom-select__item custom-select__item--sort">
-                        <label class="custom-select__option" data-order-id="11125678-ord" data-status="true" title="Заказ № 11125678-ord">
-                          <input class="invisible" type="radio" name="order" >
-                          <span>Заказ № 11125678-ord</span>
-                          <mark>Заказ не оформлен</mark>
-                        </label>
+                      <li class="card-filter__item">
+                        <div class="card-filter__text_wrap"><span class="card-filter__text">Количество патронов</span></div>
+                        <span class="card-filter__text_value">12 шт</span>
                       </li>
-                      <li class="custom-select__item custom-select__item--sort">
-                        <label class="custom-select__option" data-order-id="22225678-ord" data-status="false" title="Заказ № 22225678-ord">
-                          <input class="invisible" type="radio" name="order" >
-                          <span>Заказ № 22225678-ord</span>
-                          <mark>В резерве</mark>
-                        </label>
+                      <li class="card-filter__item">
+                        <div class="card-filter__text_wrap">
+                          <button class="btn-reset card-filter__btn-info"></button>
+                          <span class="card-filter__text">Мощность</span>
+                        </div>
+                        <span class="card-filter__text_value">25 W</span>
                       </li>
-                      <li class="custom-select__item custom-select__item--sort">
-                        <label class="custom-select__option" data-order-id="33325678-ord" data-status="true" title="Заказ № 33325678-ord">
-                          <input class="invisible" type="radio" name="order" >
-                          <span>Заказ № 33325678-ord</span>
-                          <mark>Заказ не оформлен</mark>
-                        </label>
+                      <li class="card-filter__item">
+                        <div class="card-filter__text_wrap"><span class="card-filter__text">Напряжение</span></div>
+                        <span class="card-filter__text_value">220 V</span>
                       </li>
-                      <li class="custom-select__item custom-select__item--sort">
-                        <label class="custom-select__option" data-order-id="44425678-ord" data-status="false" title="Заказ № 44425678-ord">
-                          <input class="invisible" type="radio" name="order" >
-                          <span>Заказ № 44425678-ord</span>
-                          <mark>В резерве</mark>
-                        </label>
+                      <li class="card-filter__item">
+                        <div class="card-filter__text_wrap"><span class="card-filter__text">Тип лампы</span></div>
+                        <span class="card-filter__text_value">Галогеновая</span>
+                      </li>
+                      <li class="card-filter__item">
+                        <div class="card-filter__text_wrap"><span class="card-filter__text">Площадь освещения</span></div>
+                        <span class="card-filter__text_value">14 м2</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="card-filter__bottom card-filter__bottom--open">
+                    <div class="card-filter__top_sub">
+                      <div class="card-filter__toggle_in"></div>
+                      <h3 class="card-filter__title">Габариты светильника</h3>
+                    </div>
+                    <ul class="card-filter__list">
+                      <li class="card-filter__item">
+                        <div class="card-filter__text_wrap"><span class="card-filter__text">Артикул</span></div>
+                        <span class="card-filter__text_value">A8889LM-8GY</span>
+                      </li>
+                      <li class="card-filter__item">
+                        <div class="card-filter__text_wrap"><span class="card-filter__text">Интерьер</span></div>
+                        <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
+                      </li>
+                      <li class="card-filter__item">
+                        <div class="card-filter__text_wrap"><span class="card-filter__text">Бренд</span></div>
+                        <span class="card-filter__text_value">Arte Lamp</span>
+                      </li>
+                      <li class="card-filter__item">
+                        <div class="card-filter__text_wrap"><span class="card-filter__text">Мощность</span></div>
+                        <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="card-filter__bottom card-filter__bottom--open">
+                    <div class="card-filter__top_sub">
+                      <div class="card-filter__toggle_in"></div>
+                      <h3 class="card-filter__title">Дополнительно</h3>
+                    </div>
+                    <ul class="card-filter__list">
+                      <li class="card-filter__item">
+                        <div class="card-filter__text_wrap"><span class="card-filter__text">Артикул</span></div>
+                        <span class="card-filter__text_value">A8889LM-8GY</span>
+                      </li>
+                      <li class="card-filter__item">
+                        <div class="card-filter__text_wrap"><span class="card-filter__text">Интерьер</span></div>
+                        <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
+                      </li>
+                      <li class="card-filter__item">
+                        <div class="card-filter__text_wrap"><span class="card-filter__text">Бренд</span></div>
+                        <span class="card-filter__text_value">Arte Lamp</span>
+                      </li>
+                      <li class="card-filter__item">
+                        <div class="card-filter__text_wrap"><span class="card-filter__text">Мощность</span></div>
+                        <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
                       </li>
                     </ul>
                   </div>
                 </div>
-                <!-- Если пользователь залогинен, к кнопке Добавить в заказ добавляем аттрибут data-product-id со значением id текущего продукта-->
-                <button class="btn-reset default-btn card-top__btn_order" data-product-id="777-1234567-prod">Добавить в заказ</button>
-              </div>
-              <!-- Если пользователь не залогинен, то Не добавляем селект с заказами а у кнопки Добавить в зака ВООБЩЕ НЕ ДОЛЖНО БЫТЬ data-product-id-->
-              <div class="card-top__order"><button class="btn-reset default-btn card-top__btn_order">Добавить в заказ</button></div>
-              <div class="card-top__anchors">
-                <!-- Может быть как кнопкой так и ссылкой-->
-                <button class="card-top__anchors-item" data-target="doc">
-                  <i class="card-top__anchors-icon card-top__anchors-icon_box"></i>
-                  <span class="card-top__anchors-text">Документация</span>
-                </button>
-                <!-- Если нужно удалить полностью какую-то кнопку, то удаляем от .card-top__anchors-item и ниже-->
-                <a class="card-top__anchors-item" href="#!">
-                  <i class="card-top__anchors-icon card-top__anchors-icon_file"></i>
-                  <span class="card-top__anchors-text">Упаковка товара</span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="card-content__bottom">
-            <div class="card-filters">
-              <!-- Тогглим содержание классом .card-filter--open-->
-              <div class="card-filter">
-                <div class="card-filter__top">
-                  <button class="card-filter__toggle"></button>
-                  <h3 class="card-filter__title">характеристики</h3>
-                </div>
-                <div class="card-filter__bottom">
-                  <div class="card-filter__top_sub">
-                    <div class="card-filter__toggle_in"></div>
-                    <h3 class="card-filter__title">основные</h3>
+                <div class="card-filter">
+                  <div class="card-filter__top">
+                    <button class="card-filter__toggle"></button>
+                    <h3 class="card-filter__title">Описание коллекции</h3>
                   </div>
-                  <ul class="card-filter__list">
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Артикул</span></div>
-                      <span class="card-filter__text_value">A8889LM-8GY</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Интерьер</span></div>
-                      <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Бренд</span></div>
-                      <span class="card-filter__text_value">Arte Lamp</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap">
-                        <button class="btn-reset card-filter__btn-info"></button>
-                        <span class="card-filter__text">Мощность</span>
-                      </div>
-                      <span class="card-filter__text_value">40 W</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap">
-                        <button class="btn-reset card-filter__btn-info"></button>
-                        <span class="card-filter__text">Страна</span>
-                      </div>
-                      <span class="card-filter__text_value">Италия</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Патрон</span></div>
-                      <span class="card-filter__text_value">Е14</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Коллекция</span></div>
-                      <span class="card-filter__text_value">MORRIS</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Напряжение</span></div>
-                      <span class="card-filter__text_value">220 V</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Материал плафона</span></div>
-                      <span class="card-filter__text_value">Без плафона</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Количество патронов</span></div>
-                      <span class="card-filter__text_value">8 шт</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Материал арматуры</span></div>
-                      <span class="card-filter__text_value">Акрил</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Крепеж</span></div>
-                      <span class="card-filter__text_value">На крюк</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap">
-                        <button class="btn-reset card-filter__btn-info"></button>
-                        <span class="card-filter__text">Мощность</span>
-                      </div>
-                      <span class="card-filter__text_value">40 W</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Площадь освещения</span></div>
-                      <span class="card-filter__text_value">24 м2</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">IP</span></div>
-                      <span class="card-filter__text_value">20</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Тип лампы</span></div>
-                      <span class="card-filter__text_value">Накаливания</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Стиль лампы</span></div>
-                      <span class="card-filter__text_value">Классический</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Место применения</span></div>
-                      <span class="card-filter__text_value">В квартиру, В комнату</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Вид рассеивателя</span></div>
-                      <span class="card-filter__text_value">Нет</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Диммер</span></div>
-                      <span class="card-filter__text_value">Да</span>
-                    </li>
-                  </ul>
-                </div>
-                <div class="card-filter__bottom">
-                  <div class="card-filter__top_sub card-filter__top--open">
-                    <div class="card-filter__toggle_in"></div>
-                    <h3 class="card-filter__title">Материалы и цвета</h3>
+                  <div class="card-filter__bottom">
+                    <div class="card-filter__wrap"><div class="card-filter__desc">Подвесной светильник A1059SP-1CC серии CARAVAGGIO. Подчеркнет стиль помещения. Высота 26 cm. Диаметр 17 cm Параметры пылевлагозащиты IP — 20. Форма цилиндрическая. Плафон стеклянный прозрачный, а материал/цвет арматуры металл/хром. Использует лампу с цоколем E27. Площадь освещения охватывает 2 m2. Идеально подходит для прихожей или кухни. Страна происхождения бренда — ИТАЛИЯ. Вес с упаковкой 2.8 kg</div></div>
                   </div>
-                  <ul class="card-filter__list">
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Материал плафона</span></div>
-                      <span class="card-filter__text_value">Стекло</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Цвет плафона</span></div>
-                      <span class="card-filter__text_value">Белый</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Материал арматуры</span></div>
-                      <span class="card-filter__text_value">Металл</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Цвет светильника</span></div>
-                      <span class="card-filter__text_value">Бронза</span>
-                    </li>
-                  </ul>
                 </div>
-                <div class="card-filter__bottom">
-                  <div class="card-filter__top_sub card-filter__top--open card-filter__top-margin">
-                    <div class="card-filter__toggle_in"></div>
-                    <h3 class="card-filter__title">Источник света</h3>
+                <div class="card-filter">
+                  <div class="card-filter__top">
+                    <button class="card-filter__toggle"></button>
+                    <h3 class="card-filter__title">Еще из той же коллекции</h3>
                   </div>
-                  <ul class="card-filter__list">
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Патрон</span></div>
-                      <span class="card-filter__text_value">G9</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Количество патронов</span></div>
-                      <span class="card-filter__text_value">12 шт</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap">
-                        <button class="btn-reset card-filter__btn-info"></button>
-                        <span class="card-filter__text">Мощность</span>
-                      </div>
-                      <span class="card-filter__text_value">25 W</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Напряжение</span></div>
-                      <span class="card-filter__text_value">220 V</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Тип лампы</span></div>
-                      <span class="card-filter__text_value">Галогеновая</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Площадь освещения</span></div>
-                      <span class="card-filter__text_value">14 м2</span>
-                    </li>
-                  </ul>
-                </div>
-                <div class="card-filter__bottom">
-                  <div class="card-filter__top_sub">
-                    <div class="card-filter__toggle_in"></div>
-                    <h3 class="card-filter__title">Габариты светильника</h3>
-                  </div>
-                  <ul class="card-filter__list">
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Артикул</span></div>
-                      <span class="card-filter__text_value">A8889LM-8GY</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Интерьер</span></div>
-                      <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Бренд</span></div>
-                      <span class="card-filter__text_value">Arte Lamp</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Мощность</span></div>
-                      <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
-                    </li>
-                  </ul>
-                </div>
-                <div class="card-filter__bottom">
-                  <div class="card-filter__top_sub">
-                    <div class="card-filter__toggle_in"></div>
-                    <h3 class="card-filter__title">Дополнительно</h3>
-                  </div>
-                  <ul class="card-filter__list">
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Артикул</span></div>
-                      <span class="card-filter__text_value">A8889LM-8GY</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Интерьер</span></div>
-                      <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Бренд</span></div>
-                      <span class="card-filter__text_value">Arte Lamp</span>
-                    </li>
-                    <li class="card-filter__item">
-                      <div class="card-filter__text_wrap"><span class="card-filter__text">Мощность</span></div>
-                      <span class="card-filter__text_value">Для гостиной, Для кафе, ресторанов, Для офиса</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="card-filter">
-                <div class="card-filter__top">
-                  <button class="card-filter__toggle"></button>
-                  <h3 class="card-filter__title">Описание коллекции</h3>
-                </div>
-                <div class="card-filter__bottom">
-                  <div class="card-filter__wrap"><div class="card-filter__desc">Подвесной светильник A1059SP-1CC серии CARAVAGGIO. Подчеркнет стиль помещения. Высота 26 cm. Диаметр 17 cm Параметры пылевлагозащиты IP — 20. Форма цилиндрическая. Плафон стеклянный прозрачный, а материал/цвет арматуры металл/хром. Использует лампу с цоколем E27. Площадь освещения охватывает 2 m2. Идеально подходит для прихожей или кухни. Страна происхождения бренда — ИТАЛИЯ. Вес с упаковкой 2.8 kg</div></div>
-                </div>
-              </div>
-              <div class="card-filter">
-                <div class="card-filter__top">
-                  <button class="card-filter__toggle"></button>
-                  <h3 class="card-filter__title">Еще из той же коллекции</h3>
-                </div>
-                <div class="card-filter__bottom">
-                  <div class="card-filter__wrap">
-                    <div class="card-filter__slider card-filter__slider_products">
-                      <div class="swiper recommendationSlider">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <a class="card-product" href="#!">
-                              <div class="card-product__view">
-                                <div class="card-product__pic">
-                                  <img src="img/luster-3.png" alt="" loading="lazy" >
-                                  <div class="swiper-lazy-preloader"></div>
+                  <div class="card-filter__bottom">
+                    <div class="card-filter__wrap">
+                      <div class="card-filter__slider card-filter__slider_products">
+                        <div class="swiper recommendationSlider">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <div class="card-product _js-card-product" data-id="180560" data-title="Точечный встраиваемый светильник Arte Lamp PRAKTISCH A1203PL-1AB" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="https://ms.fandeco.ru/assets/images/products/95/big/a1203pl-1ab.jpg" data-stock="Больше 100 шт. в наличии" data-opt_price="43.2" data-price="90" data-sale="false" data-new="false" data-is-favorite="false">
+                                <div class="card-product__view">
+                                  <a class="card-product__pic" href="#!">
+                                    <img class="_js-card-image" src="img/luster-3.png" alt="" loading="lazy" >
+                                    <div class="swiper-lazy-preloader"></div>
+                                  </a>
+                                  <div class="card-product__badges">
+                                    <span class="card-product__badges-item card-product__badges-item_new">new</span>
+                                    <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
+                                  </div>
+                                  <div class="card-product__actions">
+                                    <span class="card-product__actions-item card-product__actions-item_favorite">
+                                      <!-- Для товаров, добавленных в избранное, добавляем класс .checked и иконке i-->
+                                      <i class="checked" data-id="A8564PL-5RB"></i>
+                                    </span>
+                                    <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
+                                  </div>
                                 </div>
-                                <div class="card-product__badges">
-                                  <span class="card-product__badges-item card-product__badges-item_new">new</span>
-                                  <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
-                                </div>
-                                <div class="card-product__actions">
-                                  <span class="card-product__actions-item card-product__actions-item_favorite">
-                                    <!-- Для товаров, добавленных в избранное, добавляем класс .checked и иконке i-->
-                                    <i class="checked" data-id="A8564PL-5RB"></i>
-                                  </span>
-                                  <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
+                                <div class="card-product__desc">
+                                  <div class="card-product__text">
+                                    <a class="card-product__titl _js-card-name" href="#!">Люстра Аrte Lamp Rosaria</a>
+                                    <span class="card-product__code _js-card-code">A8564PL-5RB</span>
+                                  </div>
+                                  <div class="card-product__bottom">
+                                    <div class="card-top__quantity_changer card-product__bottom-calc">
+                                      <button class="btn-reset btn--white changer__btn changer__btn_minus card-product__bottom-minus">—</button>
+                                      <input class="changer__input card-product__bottom-count _js-card-quantity" type="text" min="1" maxlength="4" value="1" >
+                                      <button class="btn-reset btn--white changer__btn changer__btn_plus card-product__bottom-plus">+</button>
+                                    </div>
+                                    <div class="card-product__bottom-buy _js-open-fast-view">Заказать</div>
+                                  </div>
                                 </div>
                               </div>
-                              <div class="card-product__desc">
-                                <div class="card-product__text">
-                                  <p class="card-product__title">Люстра Аrte Lamp Rosaria</p>
-                                  <span class="card-product__code">A8564PL-5RB</span>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="card-product _js-card-product" data-id="180560" data-title="Точечный встраиваемый светильник Arte Lamp PRAKTISCH A1203PL-1AB" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="https://ms.fandeco.ru/assets/images/products/95/big/a1203pl-1ab.jpg" data-stock="Больше 100 шт. в наличии" data-opt_price="43.2" data-price="90" data-sale="false" data-new="false" data-is-favorite="false">
+                                <div class="card-product__view">
+                                  <a class="card-product__pic" href="#!">
+                                    <img class="_js-card-image" src="img/luster-1.png" alt="" loading="lazy" >
+                                    <div class="swiper-lazy-preloader"></div>
+                                  </a>
+                                  <div class="card-product__badges">
+                                    <span class="card-product__badges-item card-product__badges-item_new">new</span>
+                                    <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
+                                  </div>
+                                  <div class="card-product__actions">
+                                    <span class="card-product__actions-item card-product__actions-item_favorite">
+                                      <!-- Для товаров, добавленных в избранное, добавляем класс .checked и иконке i-->
+                                      <i class="checked" data-id="A8564PL-5RB"></i>
+                                    </span>
+                                    <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
+                                  </div>
                                 </div>
-                                <div class="card-product__data">
-                                  <p class="card-product__count">В наличии: 110 шт.</p>
-                                  <span class="card-product__price">88 000 р.</span>
+                                <div class="card-product__desc">
+                                  <div class="card-product__text">
+                                    <a class="card-product__titl _js-card-name" href="#!">Люстра Аrte Lamp Rosaria</a>
+                                    <span class="card-product__code _js-card-code">A8564PL-5RB</span>
+                                  </div>
+                                  <div class="card-product__bottom">
+                                    <div class="card-top__quantity_changer card-product__bottom-calc">
+                                      <button class="btn-reset btn--white changer__btn changer__btn_minus card-product__bottom-minus">—</button>
+                                      <input class="changer__input card-product__bottom-count _js-card-quantity" type="text" min="1" maxlength="4" value="1" >
+                                      <button class="btn-reset btn--white changer__btn changer__btn_plus card-product__bottom-plus">+</button>
+                                    </div>
+                                    <div class="card-product__bottom-buy _js-open-fast-view">Заказать</div>
+                                  </div>
                                 </div>
                               </div>
-                            </a>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="card-product _js-card-product" data-id="180560" data-title="Точечный встраиваемый светильник Arte Lamp PRAKTISCH A1203PL-1AB" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="https://ms.fandeco.ru/assets/images/products/95/big/a1203pl-1ab.jpg" data-stock="Больше 100 шт. в наличии" data-opt_price="43.2" data-price="90" data-sale="false" data-new="false" data-is-favorite="false">
+                                <div class="card-product__view">
+                                  <a class="card-product__pic" href="#!">
+                                    <img class="_js-card-image" src="img/luster-2.png" alt="" loading="lazy" >
+                                    <div class="swiper-lazy-preloader"></div>
+                                  </a>
+                                  <div class="card-product__badges">
+                                    <span class="card-product__badges-item card-product__badges-item_new">new</span>
+                                    <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
+                                  </div>
+                                  <div class="card-product__actions">
+                                    <span class="card-product__actions-item card-product__actions-item_favorite">
+                                      <!-- Для товаров, добавленных в избранное, добавляем класс .checked и иконке i-->
+                                      <i class="checked" data-id="A8564PL-5RB"></i>
+                                    </span>
+                                    <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
+                                  </div>
+                                </div>
+                                <div class="card-product__desc">
+                                  <div class="card-product__text">
+                                    <a class="card-product__titl _js-card-name" href="#!">Люстра Аrte Lamp Rosaria</a>
+                                    <span class="card-product__code _js-card-code">A8564PL-5RB</span>
+                                  </div>
+                                  <div class="card-product__bottom">
+                                    <div class="card-top__quantity_changer card-product__bottom-calc">
+                                      <button class="btn-reset btn--white changer__btn changer__btn_minus card-product__bottom-minus">—</button>
+                                      <input class="changer__input card-product__bottom-count _js-card-quantity" type="text" min="1" maxlength="4" value="1" >
+                                      <button class="btn-reset btn--white changer__btn changer__btn_plus card-product__bottom-plus">+</button>
+                                    </div>
+                                    <div class="card-product__bottom-buy _js-open-fast-view">Заказать</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="card-product _js-card-product" data-id="180560" data-title="Точечный встраиваемый светильник Arte Lamp PRAKTISCH A1203PL-1AB" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="https://ms.fandeco.ru/assets/images/products/95/big/a1203pl-1ab.jpg" data-stock="Больше 100 шт. в наличии" data-opt_price="43.2" data-price="90" data-sale="false" data-new="false" data-is-favorite="false">
+                                <div class="card-product__view">
+                                  <a class="card-product__pic" href="#!">
+                                    <img class="_js-card-image" src="img/luster-3.png" alt="" loading="lazy" >
+                                    <div class="swiper-lazy-preloader"></div>
+                                  </a>
+                                  <div class="card-product__badges">
+                                    <span class="card-product__badges-item card-product__badges-item_new">new</span>
+                                    <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
+                                  </div>
+                                  <div class="card-product__actions">
+                                    <span class="card-product__actions-item card-product__actions-item_favorite">
+                                      <!-- Для товаров, добавленных в избранное, добавляем класс .checked и иконке i-->
+                                      <i class="checked" data-id="A8564PL-5RB"></i>
+                                    </span>
+                                    <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
+                                  </div>
+                                </div>
+                                <div class="card-product__desc">
+                                  <div class="card-product__text">
+                                    <a class="card-product__titl _js-card-name" href="#!">Люстра Аrte Lamp Rosaria</a>
+                                    <span class="card-product__code _js-card-code">A8564PL-5RB</span>
+                                  </div>
+                                  <div class="card-product__bottom">
+                                    <div class="card-top__quantity_changer card-product__bottom-calc">
+                                      <button class="btn-reset btn--white changer__btn changer__btn_minus card-product__bottom-minus">—</button>
+                                      <input class="changer__input card-product__bottom-count _js-card-quantity" type="text" min="1" maxlength="4" value="1" >
+                                      <button class="btn-reset btn--white changer__btn changer__btn_plus card-product__bottom-plus">+</button>
+                                    </div>
+                                    <div class="card-product__bottom-buy _js-open-fast-view">Заказать</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="card-product _js-card-product" data-id="180560" data-title="Точечный встраиваемый светильник Arte Lamp PRAKTISCH A1203PL-1AB" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="https://ms.fandeco.ru/assets/images/products/95/big/a1203pl-1ab.jpg" data-stock="Больше 100 шт. в наличии" data-opt_price="43.2" data-price="90" data-sale="false" data-new="false" data-is-favorite="false">
+                                <div class="card-product__view">
+                                  <a class="card-product__pic" href="#!">
+                                    <img class="_js-card-image" src="img/luster-1.png" alt="" loading="lazy" >
+                                    <div class="swiper-lazy-preloader"></div>
+                                  </a>
+                                  <div class="card-product__badges">
+                                    <span class="card-product__badges-item card-product__badges-item_new">new</span>
+                                    <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
+                                  </div>
+                                  <div class="card-product__actions">
+                                    <span class="card-product__actions-item card-product__actions-item_favorite">
+                                      <!-- Для товаров, добавленных в избранное, добавляем класс .checked и иконке i-->
+                                      <i class="checked" data-id="A8564PL-5RB"></i>
+                                    </span>
+                                    <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
+                                  </div>
+                                </div>
+                                <div class="card-product__desc">
+                                  <div class="card-product__text">
+                                    <a class="card-product__titl _js-card-name" href="#!">Люстра Аrte Lamp Rosaria</a>
+                                    <span class="card-product__code _js-card-code">A8564PL-5RB</span>
+                                  </div>
+                                  <div class="card-product__bottom">
+                                    <div class="card-top__quantity_changer card-product__bottom-calc">
+                                      <button class="btn-reset btn--white changer__btn changer__btn_minus card-product__bottom-minus">—</button>
+                                      <input class="changer__input card-product__bottom-count _js-card-quantity" type="text" min="1" maxlength="4" value="1" >
+                                      <button class="btn-reset btn--white changer__btn changer__btn_plus card-product__bottom-plus">+</button>
+                                    </div>
+                                    <div class="card-product__bottom-buy _js-open-fast-view">Заказать</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="card-product _js-card-product" data-id="180560" data-title="Точечный встраиваемый светильник Arte Lamp PRAKTISCH A1203PL-1AB" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="https://ms.fandeco.ru/assets/images/products/95/big/a1203pl-1ab.jpg" data-stock="Больше 100 шт. в наличии" data-opt_price="43.2" data-price="90" data-sale="false" data-new="false" data-is-favorite="false">
+                                <div class="card-product__view">
+                                  <a class="card-product__pic" href="#!">
+                                    <img class="_js-card-image" src="img/luster-2.png" alt="" loading="lazy" >
+                                    <div class="swiper-lazy-preloader"></div>
+                                  </a>
+                                  <div class="card-product__badges">
+                                    <span class="card-product__badges-item card-product__badges-item_new">new</span>
+                                    <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
+                                  </div>
+                                  <div class="card-product__actions">
+                                    <span class="card-product__actions-item card-product__actions-item_favorite">
+                                      <!-- Для товаров, добавленных в избранное, добавляем класс .checked и иконке i-->
+                                      <i class="checked" data-id="A8564PL-5RB"></i>
+                                    </span>
+                                    <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
+                                  </div>
+                                </div>
+                                <div class="card-product__desc">
+                                  <div class="card-product__text">
+                                    <a class="card-product__titl _js-card-name" href="#!">Люстра Аrte Lamp Rosaria</a>
+                                    <span class="card-product__code _js-card-code">A8564PL-5RB</span>
+                                  </div>
+                                  <div class="card-product__bottom">
+                                    <div class="card-top__quantity_changer card-product__bottom-calc">
+                                      <button class="btn-reset btn--white changer__btn changer__btn_minus card-product__bottom-minus">—</button>
+                                      <input class="changer__input card-product__bottom-count _js-card-quantity" type="text" min="1" maxlength="4" value="1" >
+                                      <button class="btn-reset btn--white changer__btn changer__btn_plus card-product__bottom-plus">+</button>
+                                    </div>
+                                    <div class="card-product__bottom-buy _js-open-fast-view">Заказать</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                           </div>
-                          <div class="swiper-slide">
-                            <a class="card-product" href="#!">
-                              <div class="card-product__view">
-                                <div class="card-product__pic">
-                                  <img src="img/luster-1.png" alt="" loading="lazy" >
-                                  <div class="swiper-lazy-preloader"></div>
-                                </div>
-                                <div class="card-product__badges">
-                                  <span class="card-product__badges-item card-product__badges-item_new">new</span>
-                                  <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
-                                </div>
-                                <div class="card-product__actions">
-                                  <span class="card-product__actions-item card-product__actions-item_favorite">
-                                    <!-- Для товаров, добавленных в избранное, добавляем класс .checked и иконке i-->
-                                    <i class="checked" data-id="A8564PL-5RB"></i>
-                                  </span>
-                                  <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
-                                </div>
-                              </div>
-                              <div class="card-product__desc">
-                                <div class="card-product__text">
-                                  <p class="card-product__title">Люстра Аrte Lamp Rosaria</p>
-                                  <span class="card-product__code">A8564PL-5RB</span>
-                                </div>
-                                <div class="card-product__data">
-                                  <p class="card-product__count">В наличии: 110 шт.</p>
-                                  <span class="card-product__price">88 000 р.</span>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-                          <div class="swiper-slide">
-                            <a class="card-product" href="#!">
-                              <div class="card-product__view">
-                                <div class="card-product__pic">
-                                  <img src="img/luster-2.png" alt="" loading="lazy" >
-                                  <div class="swiper-lazy-preloader"></div>
-                                </div>
-                                <div class="card-product__badges">
-                                  <span class="card-product__badges-item card-product__badges-item_new">new</span>
-                                  <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
-                                </div>
-                                <div class="card-product__actions">
-                                  <span class="card-product__actions-item card-product__actions-item_favorite">
-                                    <!-- Для товаров, добавленных в избранное, добавляем класс .checked и иконке i-->
-                                    <i class="checked" data-id="A8564PL-5RB"></i>
-                                  </span>
-                                  <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
-                                </div>
-                              </div>
-                              <div class="card-product__desc">
-                                <div class="card-product__text">
-                                  <p class="card-product__title">Люстра Аrte Lamp Rosaria</p>
-                                  <span class="card-product__code">A8564PL-5RB</span>
-                                </div>
-                                <div class="card-product__data">
-                                  <p class="card-product__count">В наличии: 110 шт.</p>
-                                  <span class="card-product__price">88 000 р.</span>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-                          <div class="swiper-slide">
-                            <a class="card-product" href="#!">
-                              <div class="card-product__view">
-                                <div class="card-product__pic">
-                                  <img src="img/luster-3.png" alt="" loading="lazy" >
-                                  <div class="swiper-lazy-preloader"></div>
-                                </div>
-                                <div class="card-product__badges">
-                                  <span class="card-product__badges-item card-product__badges-item_new">new</span>
-                                  <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
-                                </div>
-                                <div class="card-product__actions">
-                                  <span class="card-product__actions-item card-product__actions-item_favorite">
-                                    <!-- Для товаров, добавленных в избранное, добавляем класс .checked и иконке i-->
-                                    <i class="checked" data-id="A8564PL-5RB"></i>
-                                  </span>
-                                  <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
-                                </div>
-                              </div>
-                              <div class="card-product__desc">
-                                <div class="card-product__text">
-                                  <p class="card-product__title">Люстра Аrte Lamp Rosaria</p>
-                                  <span class="card-product__code">A8564PL-5RB</span>
-                                </div>
-                                <div class="card-product__data">
-                                  <p class="card-product__count">В наличии: 110 шт.</p>
-                                  <span class="card-product__price">88 000 р.</span>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-                          <div class="swiper-slide">
-                            <a class="card-product" href="#!">
-                              <div class="card-product__view">
-                                <div class="card-product__pic">
-                                  <img src="img/luster-1.png" alt="" loading="lazy" >
-                                  <div class="swiper-lazy-preloader"></div>
-                                </div>
-                                <div class="card-product__badges">
-                                  <span class="card-product__badges-item card-product__badges-item_new">new</span>
-                                  <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
-                                </div>
-                                <div class="card-product__actions">
-                                  <span class="card-product__actions-item card-product__actions-item_favorite">
-                                    <!-- Для товаров, добавленных в избранное, добавляем класс .checked и иконке i-->
-                                    <i class="checked" data-id="A8564PL-5RB"></i>
-                                  </span>
-                                  <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
-                                </div>
-                              </div>
-                              <div class="card-product__desc">
-                                <div class="card-product__text">
-                                  <p class="card-product__title">Люстра Аrte Lamp Rosaria</p>
-                                  <span class="card-product__code">A8564PL-5RB</span>
-                                </div>
-                                <div class="card-product__data">
-                                  <p class="card-product__count">В наличии: 110 шт.</p>
-                                  <span class="card-product__price">88 000 р.</span>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-                          <div class="swiper-slide">
-                            <a class="card-product" href="#!">
-                              <div class="card-product__view">
-                                <div class="card-product__pic">
-                                  <img src="img/luster-2.png" alt="" loading="lazy" >
-                                  <div class="swiper-lazy-preloader"></div>
-                                </div>
-                                <div class="card-product__badges">
-                                  <span class="card-product__badges-item card-product__badges-item_new">new</span>
-                                  <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
-                                </div>
-                                <div class="card-product__actions">
-                                  <span class="card-product__actions-item card-product__actions-item_favorite">
-                                    <!-- Для товаров, добавленных в избранное, добавляем класс .checked и иконке i-->
-                                    <i class="checked" data-id="A8564PL-5RB"></i>
-                                  </span>
-                                  <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
-                                </div>
-                              </div>
-                              <div class="card-product__desc">
-                                <div class="card-product__text">
-                                  <p class="card-product__title">Люстра Аrte Lamp Rosaria</p>
-                                  <span class="card-product__code">A8564PL-5RB</span>
-                                </div>
-                                <div class="card-product__data">
-                                  <p class="card-product__count">В наличии: 110 шт.</p>
-                                  <span class="card-product__price">88 000 р.</span>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
+                          <div class="swiper-scrollbar"></div>
                         </div>
-                        <div class="swiper-scrollbar"></div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="card-filter">
-                <div class="card-filter__top">
-                  <button class="card-filter__toggle"></button>
-                  <h3 class="card-filter__title">Лампочки</h3>
-                </div>
-                <div class="card-filter__bottom">
-                  <div class="card-filter__wrap">
-                    <div class="card-filter__slider card-filter__slider_lamps">
-                      <div class="swiper recommendationSlider">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <a class="card-product" href="#!">
-                              <div class="card-product__view">
-                                <div class="card-product__pic">
-                                  <img src="img/lamp-1.jpg" alt="" loading="lazy" >
-                                  <div class="swiper-lazy-preloader"></div>
+                <div class="card-filter">
+                  <div class="card-filter__top">
+                    <button class="card-filter__toggle"></button>
+                    <h3 class="card-filter__title">Лампочки</h3>
+                  </div>
+                  <div class="card-filter__bottom">
+                    <div class="card-filter__wrap">
+                      <div class="card-filter__slider card-filter__slider_lamps">
+                        <div class="swiper recommendationSlider">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <div class="card-product _js-card-product" data-id="180560" data-title="Точечный встраиваемый светильник Arte Lamp PRAKTISCH A1203PL-1AB" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="https://ms.fandeco.ru/assets/images/products/95/big/a1203pl-1ab.jpg" data-stock="Больше 100 шт. в наличии" data-opt_price="43.2" data-price="90" data-sale="false" data-new="false" data-is-favorite="false">
+                                <div class="card-product__view">
+                                  <a class="card-product__pic" href="#!">
+                                    <img class="_js-card-image" src="img/lamp-1.jpg" alt="" loading="lazy" >
+                                    <div class="swiper-lazy-preloader"></div>
+                                  </a>
+                                  <div class="card-product__badges">
+                                    <span class="card-product__badges-item card-product__badges-item_new">new</span>
+                                    <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
+                                  </div>
+                                  <div class="card-product__actions">
+                                    <span class="card-product__actions-item card-product__actions-item_favorite">
+                                      <!-- Для товаров, добавленных в избранное, добавляем класс .checked и иконке i-->
+                                      <i data-id="A8564PL-5RB"></i>
+                                    </span>
+                                    <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
+                                  </div>
                                 </div>
-                                <div class="card-product__badges">
-                                  <span class="card-product__badges-item card-product__badges-item_new">new</span>
-                                  <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
-                                </div>
-                                <div class="card-product__actions">
-                                  <span class="card-product__actions-item card-product__actions-item_favorite">
-                                    <!-- Для товаров, добавленных в избранное, добавляем класс .checked и иконке i-->
-                                    <i data-id="A8564PL-5RB"></i>
-                                  </span>
-                                  <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
+                                <div class="card-product__desc">
+                                  <div class="card-product__text">
+                                    <a class="card-product__titl _js-card-name" href="#!">Люстра Аrte Lamp Rosaria</a>
+                                    <span class="card-product__code _js-card-code">A8564PL-5RB</span>
+                                  </div>
+                                  <div class="card-product__bottom">
+                                    <div class="card-top__quantity_changer card-product__bottom-calc">
+                                      <button class="btn-reset btn--white changer__btn changer__btn_minus card-product__bottom-minus">—</button>
+                                      <input class="changer__input card-product__bottom-count _js-card-quantity" type="text" min="1" maxlength="4" value="1" >
+                                      <button class="btn-reset btn--white changer__btn changer__btn_plus card-product__bottom-plus">+</button>
+                                    </div>
+                                    <div class="card-product__bottom-buy _js-open-fast-view">Заказать</div>
+                                  </div>
                                 </div>
                               </div>
-                              <div class="card-product__desc">
-                                <div class="card-product__text">
-                                  <p class="card-product__title">Люстра Аrte Lamp Rosaria</p>
-                                  <span class="card-product__code">A8564PL-5RB</span>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="card-product _js-card-product" data-id="180560" data-title="Точечный встраиваемый светильник Arte Lamp PRAKTISCH A1203PL-1AB" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="https://ms.fandeco.ru/assets/images/products/95/big/a1203pl-1ab.jpg" data-stock="Больше 100 шт. в наличии" data-opt_price="43.2" data-price="90" data-sale="false" data-new="false" data-is-favorite="false">
+                                <div class="card-product__view">
+                                  <a class="card-product__pic" href="#!">
+                                    <img class="_js-card-image" src="img/lamp-2.jpg" alt="" loading="lazy" >
+                                    <div class="swiper-lazy-preloader"></div>
+                                  </a>
+                                  <div class="card-product__badges">
+                                    <span class="card-product__badges-item card-product__badges-item_new">new</span>
+                                    <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
+                                  </div>
+                                  <div class="card-product__actions">
+                                    <span class="card-product__actions-item card-product__actions-item_favorite">
+                                      <!-- Для товаров, добавленных в избранное, добавляем класс .checked и иконке i-->
+                                      <i data-id="A8564PL-5RB"></i>
+                                    </span>
+                                    <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
+                                  </div>
                                 </div>
-                                <div class="card-product__data">
-                                  <p class="card-product__count">В наличии: 110 шт.</p>
-                                  <span class="card-product__price">88 000 р.</span>
+                                <div class="card-product__desc">
+                                  <div class="card-product__text">
+                                    <a class="card-product__titl _js-card-name" href="#!">Люстра Аrte Lamp Rosaria</a>
+                                    <span class="card-product__code _js-card-code">A8564PL-5RB</span>
+                                  </div>
+                                  <div class="card-product__bottom">
+                                    <div class="card-top__quantity_changer card-product__bottom-calc">
+                                      <button class="btn-reset btn--white changer__btn changer__btn_minus card-product__bottom-minus">—</button>
+                                      <input class="changer__input card-product__bottom-count _js-card-quantity" type="text" min="1" maxlength="4" value="1" >
+                                      <button class="btn-reset btn--white changer__btn changer__btn_plus card-product__bottom-plus">+</button>
+                                    </div>
+                                    <div class="card-product__bottom-buy _js-open-fast-view">Заказать</div>
+                                  </div>
                                 </div>
                               </div>
-                            </a>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="card-product _js-card-product" data-id="180560" data-title="Точечный встраиваемый светильник Arte Lamp PRAKTISCH A1203PL-1AB" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="https://ms.fandeco.ru/assets/images/products/95/big/a1203pl-1ab.jpg" data-stock="Больше 100 шт. в наличии" data-opt_price="43.2" data-price="90" data-sale="false" data-new="false" data-is-favorite="false">
+                                <div class="card-product__view">
+                                  <a class="card-product__pic" href="#!">
+                                    <img class="_js-card-image" src="img/lamp-3.jpg" alt="" loading="lazy" >
+                                    <div class="swiper-lazy-preloader"></div>
+                                  </a>
+                                  <div class="card-product__badges">
+                                    <span class="card-product__badges-item card-product__badges-item_new">new</span>
+                                    <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
+                                  </div>
+                                  <div class="card-product__actions">
+                                    <span class="card-product__actions-item card-product__actions-item_favorite">
+                                      <!-- Для товаров, добавленных в избранное, добавляем класс .checked и иконке i-->
+                                      <i data-id="A8564PL-5RB"></i>
+                                    </span>
+                                    <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
+                                  </div>
+                                </div>
+                                <div class="card-product__desc">
+                                  <div class="card-product__text">
+                                    <a class="card-product__titl _js-card-name" href="#!">Люстра Аrte Lamp Rosaria</a>
+                                    <span class="card-product__code _js-card-code">A8564PL-5RB</span>
+                                  </div>
+                                  <div class="card-product__bottom">
+                                    <div class="card-top__quantity_changer card-product__bottom-calc">
+                                      <button class="btn-reset btn--white changer__btn changer__btn_minus card-product__bottom-minus">—</button>
+                                      <input class="changer__input card-product__bottom-count _js-card-quantity" type="text" min="1" maxlength="4" value="1" >
+                                      <button class="btn-reset btn--white changer__btn changer__btn_plus card-product__bottom-plus">+</button>
+                                    </div>
+                                    <div class="card-product__bottom-buy _js-open-fast-view">Заказать</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="card-product _js-card-product" data-id="180560" data-title="Точечный встраиваемый светильник Arte Lamp PRAKTISCH A1203PL-1AB" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="https://ms.fandeco.ru/assets/images/products/95/big/a1203pl-1ab.jpg" data-stock="Больше 100 шт. в наличии" data-opt_price="43.2" data-price="90" data-sale="false" data-new="false" data-is-favorite="false">
+                                <div class="card-product__view">
+                                  <a class="card-product__pic" href="#!">
+                                    <img class="_js-card-image" src="img/lamp-4.jpg" alt="" loading="lazy" >
+                                    <div class="swiper-lazy-preloader"></div>
+                                  </a>
+                                  <div class="card-product__badges">
+                                    <span class="card-product__badges-item card-product__badges-item_new">new</span>
+                                    <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
+                                  </div>
+                                  <div class="card-product__actions">
+                                    <span class="card-product__actions-item card-product__actions-item_favorite">
+                                      <!-- Для товаров, добавленных в избранное, добавляем класс .checked и иконке i-->
+                                      <i data-id="A8564PL-5RB"></i>
+                                    </span>
+                                    <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
+                                  </div>
+                                </div>
+                                <div class="card-product__desc">
+                                  <div class="card-product__text">
+                                    <a class="card-product__titl _js-card-name" href="#!">Люстра Аrte Lamp Rosaria</a>
+                                    <span class="card-product__code _js-card-code">A8564PL-5RB</span>
+                                  </div>
+                                  <div class="card-product__bottom">
+                                    <div class="card-top__quantity_changer card-product__bottom-calc">
+                                      <button class="btn-reset btn--white changer__btn changer__btn_minus card-product__bottom-minus">—</button>
+                                      <input class="changer__input card-product__bottom-count _js-card-quantity" type="text" min="1" maxlength="4" value="1" >
+                                      <button class="btn-reset btn--white changer__btn changer__btn_plus card-product__bottom-plus">+</button>
+                                    </div>
+                                    <div class="card-product__bottom-buy _js-open-fast-view">Заказать</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="card-product _js-card-product" data-id="180560" data-title="Точечный встраиваемый светильник Arte Lamp PRAKTISCH A1203PL-1AB" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="https://ms.fandeco.ru/assets/images/products/95/big/a1203pl-1ab.jpg" data-stock="Больше 100 шт. в наличии" data-opt_price="43.2" data-price="90" data-sale="false" data-new="false" data-is-favorite="false">
+                                <div class="card-product__view">
+                                  <a class="card-product__pic" href="#!">
+                                    <img class="_js-card-image" src="img/lamp-5.jpg" alt="" loading="lazy" >
+                                    <div class="swiper-lazy-preloader"></div>
+                                  </a>
+                                  <div class="card-product__badges">
+                                    <span class="card-product__badges-item card-product__badges-item_new">new</span>
+                                    <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
+                                  </div>
+                                  <div class="card-product__actions">
+                                    <span class="card-product__actions-item card-product__actions-item_favorite">
+                                      <!-- Для товаров, добавленных в избранное, добавляем класс .checked и иконке i-->
+                                      <i data-id="A8564PL-5RB"></i>
+                                    </span>
+                                    <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
+                                  </div>
+                                </div>
+                                <div class="card-product__desc">
+                                  <div class="card-product__text">
+                                    <a class="card-product__titl _js-card-name" href="#!">Люстра Аrte Lamp Rosaria</a>
+                                    <span class="card-product__code _js-card-code">A8564PL-5RB</span>
+                                  </div>
+                                  <div class="card-product__bottom">
+                                    <div class="card-top__quantity_changer card-product__bottom-calc">
+                                      <button class="btn-reset btn--white changer__btn changer__btn_minus card-product__bottom-minus">—</button>
+                                      <input class="changer__input card-product__bottom-count _js-card-quantity" type="text" min="1" maxlength="4" value="1" >
+                                      <button class="btn-reset btn--white changer__btn changer__btn_plus card-product__bottom-plus">+</button>
+                                    </div>
+                                    <div class="card-product__bottom-buy _js-open-fast-view">Заказать</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="card-product _js-card-product" data-id="180560" data-title="Точечный встраиваемый светильник Arte Lamp PRAKTISCH A1203PL-1AB" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="https://ms.fandeco.ru/assets/images/products/95/big/a1203pl-1ab.jpg" data-stock="Больше 100 шт. в наличии" data-opt_price="43.2" data-price="90" data-sale="false" data-new="false" data-is-favorite="false">
+                                <div class="card-product__view">
+                                  <a class="card-product__pic" href="#!">
+                                    <img class="_js-card-image" src="img/lamp-2.jpg" alt="" loading="lazy" >
+                                    <div class="swiper-lazy-preloader"></div>
+                                  </a>
+                                  <div class="card-product__badges">
+                                    <span class="card-product__badges-item card-product__badges-item_new">new</span>
+                                    <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
+                                  </div>
+                                  <div class="card-product__actions">
+                                    <span class="card-product__actions-item card-product__actions-item_favorite">
+                                      <!-- Для товаров, добавленных в избранное, добавляем класс .checked и иконке i-->
+                                      <i data-id="A8564PL-5RB"></i>
+                                    </span>
+                                    <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
+                                  </div>
+                                </div>
+                                <div class="card-product__desc">
+                                  <div class="card-product__text">
+                                    <a class="card-product__titl _js-card-name" href="#!">Люстра Аrte Lamp Rosaria</a>
+                                    <span class="card-product__code _js-card-code">A8564PL-5RB</span>
+                                  </div>
+                                  <div class="card-product__bottom">
+                                    <div class="card-top__quantity_changer card-product__bottom-calc">
+                                      <button class="btn-reset btn--white changer__btn changer__btn_minus card-product__bottom-minus">—</button>
+                                      <input class="changer__input card-product__bottom-count _js-card-quantity" type="text" min="1" maxlength="4" value="1" >
+                                      <button class="btn-reset btn--white changer__btn changer__btn_plus card-product__bottom-plus">+</button>
+                                    </div>
+                                    <div class="card-product__bottom-buy _js-open-fast-view">Заказать</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="card-product _js-card-product" data-id="180560" data-title="Точечный встраиваемый светильник Arte Lamp PRAKTISCH A1203PL-1AB" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="https://ms.fandeco.ru/assets/images/products/95/big/a1203pl-1ab.jpg" data-stock="Больше 100 шт. в наличии" data-opt_price="43.2" data-price="90" data-sale="false" data-new="false" data-is-favorite="false">
+                                <div class="card-product__view">
+                                  <a class="card-product__pic" href="#!">
+                                    <img class="_js-card-image" src="img/lamp-3.jpg" alt="" loading="lazy" >
+                                    <div class="swiper-lazy-preloader"></div>
+                                  </a>
+                                  <div class="card-product__badges">
+                                    <span class="card-product__badges-item card-product__badges-item_new">new</span>
+                                    <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
+                                  </div>
+                                  <div class="card-product__actions">
+                                    <span class="card-product__actions-item card-product__actions-item_favorite">
+                                      <!-- Для товаров, добавленных в избранное, добавляем класс .checked и иконке i-->
+                                      <i data-id="A8564PL-5RB"></i>
+                                    </span>
+                                    <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
+                                  </div>
+                                </div>
+                                <div class="card-product__desc">
+                                  <div class="card-product__text">
+                                    <a class="card-product__titl _js-card-name" href="#!">Люстра Аrte Lamp Rosaria</a>
+                                    <span class="card-product__code _js-card-code">A8564PL-5RB</span>
+                                  </div>
+                                  <div class="card-product__bottom">
+                                    <div class="card-top__quantity_changer card-product__bottom-calc">
+                                      <button class="btn-reset btn--white changer__btn changer__btn_minus card-product__bottom-minus">—</button>
+                                      <input class="changer__input card-product__bottom-count _js-card-quantity" type="text" min="1" maxlength="4" value="1" >
+                                      <button class="btn-reset btn--white changer__btn changer__btn_plus card-product__bottom-plus">+</button>
+                                    </div>
+                                    <div class="card-product__bottom-buy _js-open-fast-view">Заказать</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="card-product _js-card-product" data-id="180560" data-title="Точечный встраиваемый светильник Arte Lamp PRAKTISCH A1203PL-1AB" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="https://ms.fandeco.ru/assets/images/products/95/big/a1203pl-1ab.jpg" data-stock="Больше 100 шт. в наличии" data-opt_price="43.2" data-price="90" data-sale="false" data-new="false" data-is-favorite="false">
+                                <div class="card-product__view">
+                                  <a class="card-product__pic" href="#!">
+                                    <img class="_js-card-image" src="img/lamp-4.jpg" alt="" loading="lazy" >
+                                    <div class="swiper-lazy-preloader"></div>
+                                  </a>
+                                  <div class="card-product__badges">
+                                    <span class="card-product__badges-item card-product__badges-item_new">new</span>
+                                    <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
+                                  </div>
+                                  <div class="card-product__actions">
+                                    <span class="card-product__actions-item card-product__actions-item_favorite">
+                                      <!-- Для товаров, добавленных в избранное, добавляем класс .checked и иконке i-->
+                                      <i data-id="A8564PL-5RB"></i>
+                                    </span>
+                                    <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
+                                  </div>
+                                </div>
+                                <div class="card-product__desc">
+                                  <div class="card-product__text">
+                                    <a class="card-product__titl _js-card-name" href="#!">Люстра Аrte Lamp Rosaria</a>
+                                    <span class="card-product__code _js-card-code">A8564PL-5RB</span>
+                                  </div>
+                                  <div class="card-product__bottom">
+                                    <div class="card-top__quantity_changer card-product__bottom-calc">
+                                      <button class="btn-reset btn--white changer__btn changer__btn_minus card-product__bottom-minus">—</button>
+                                      <input class="changer__input card-product__bottom-count _js-card-quantity" type="text" min="1" maxlength="4" value="1" >
+                                      <button class="btn-reset btn--white changer__btn changer__btn_plus card-product__bottom-plus">+</button>
+                                    </div>
+                                    <div class="card-product__bottom-buy _js-open-fast-view">Заказать</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="card-product _js-card-product" data-id="180560" data-title="Точечный встраиваемый светильник Arte Lamp PRAKTISCH A1203PL-1AB" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="https://ms.fandeco.ru/assets/images/products/95/big/a1203pl-1ab.jpg" data-stock="Больше 100 шт. в наличии" data-opt_price="43.2" data-price="90" data-sale="false" data-new="false" data-is-favorite="false">
+                                <div class="card-product__view">
+                                  <a class="card-product__pic" href="#!">
+                                    <img class="_js-card-image" src="img/lamp-5.jpg" alt="" loading="lazy" >
+                                    <div class="swiper-lazy-preloader"></div>
+                                  </a>
+                                  <div class="card-product__badges">
+                                    <span class="card-product__badges-item card-product__badges-item_new">new</span>
+                                    <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
+                                  </div>
+                                  <div class="card-product__actions">
+                                    <span class="card-product__actions-item card-product__actions-item_favorite">
+                                      <!-- Для товаров, добавленных в избранное, добавляем класс .checked и иконке i-->
+                                      <i data-id="A8564PL-5RB"></i>
+                                    </span>
+                                    <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
+                                  </div>
+                                </div>
+                                <div class="card-product__desc">
+                                  <div class="card-product__text">
+                                    <a class="card-product__titl _js-card-name" href="#!">Люстра Аrte Lamp Rosaria</a>
+                                    <span class="card-product__code _js-card-code">A8564PL-5RB</span>
+                                  </div>
+                                  <div class="card-product__bottom">
+                                    <div class="card-top__quantity_changer card-product__bottom-calc">
+                                      <button class="btn-reset btn--white changer__btn changer__btn_minus card-product__bottom-minus">—</button>
+                                      <input class="changer__input card-product__bottom-count _js-card-quantity" type="text" min="1" maxlength="4" value="1" >
+                                      <button class="btn-reset btn--white changer__btn changer__btn_plus card-product__bottom-plus">+</button>
+                                    </div>
+                                    <div class="card-product__bottom-buy _js-open-fast-view">Заказать</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                           </div>
-                          <div class="swiper-slide">
-                            <a class="card-product" href="#!">
-                              <div class="card-product__view">
-                                <div class="card-product__pic">
-                                  <img src="img/lamp-2.jpg" alt="" loading="lazy" >
-                                  <div class="swiper-lazy-preloader"></div>
-                                </div>
-                                <div class="card-product__badges">
-                                  <span class="card-product__badges-item card-product__badges-item_new">new</span>
-                                  <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
-                                </div>
-                                <div class="card-product__actions">
-                                  <span class="card-product__actions-item card-product__actions-item_favorite">
-                                    <!-- Для товаров, добавленных в избранное, добавляем класс .checked и иконке i-->
-                                    <i data-id="A8564PL-5RB"></i>
-                                  </span>
-                                  <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
-                                </div>
-                              </div>
-                              <div class="card-product__desc">
-                                <div class="card-product__text">
-                                  <p class="card-product__title">Люстра Аrte Lamp Rosaria</p>
-                                  <span class="card-product__code">A8564PL-5RB</span>
-                                </div>
-                                <div class="card-product__data">
-                                  <p class="card-product__count">В наличии: 110 шт.</p>
-                                  <span class="card-product__price">88 000 р.</span>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-                          <div class="swiper-slide">
-                            <a class="card-product" href="#!">
-                              <div class="card-product__view">
-                                <div class="card-product__pic">
-                                  <img src="img/lamp-3.jpg" alt="" loading="lazy" >
-                                  <div class="swiper-lazy-preloader"></div>
-                                </div>
-                                <div class="card-product__badges">
-                                  <span class="card-product__badges-item card-product__badges-item_new">new</span>
-                                  <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
-                                </div>
-                                <div class="card-product__actions">
-                                  <span class="card-product__actions-item card-product__actions-item_favorite">
-                                    <!-- Для товаров, добавленных в избранное, добавляем класс .checked и иконке i-->
-                                    <i data-id="A8564PL-5RB"></i>
-                                  </span>
-                                  <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
-                                </div>
-                              </div>
-                              <div class="card-product__desc">
-                                <div class="card-product__text">
-                                  <p class="card-product__title">Люстра Аrte Lamp Rosaria</p>
-                                  <span class="card-product__code">A8564PL-5RB</span>
-                                </div>
-                                <div class="card-product__data">
-                                  <p class="card-product__count">В наличии: 110 шт.</p>
-                                  <span class="card-product__price">88 000 р.</span>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-                          <div class="swiper-slide">
-                            <a class="card-product" href="#!">
-                              <div class="card-product__view">
-                                <div class="card-product__pic">
-                                  <img src="img/lamp-4.jpg" alt="" loading="lazy" >
-                                  <div class="swiper-lazy-preloader"></div>
-                                </div>
-                                <div class="card-product__badges">
-                                  <span class="card-product__badges-item card-product__badges-item_new">new</span>
-                                  <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
-                                </div>
-                                <div class="card-product__actions">
-                                  <span class="card-product__actions-item card-product__actions-item_favorite">
-                                    <!-- Для товаров, добавленных в избранное, добавляем класс .checked и иконке i-->
-                                    <i data-id="A8564PL-5RB"></i>
-                                  </span>
-                                  <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
-                                </div>
-                              </div>
-                              <div class="card-product__desc">
-                                <div class="card-product__text">
-                                  <p class="card-product__title">Люстра Аrte Lamp Rosaria</p>
-                                  <span class="card-product__code">A8564PL-5RB</span>
-                                </div>
-                                <div class="card-product__data">
-                                  <p class="card-product__count">В наличии: 110 шт.</p>
-                                  <span class="card-product__price">88 000 р.</span>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-                          <div class="swiper-slide">
-                            <a class="card-product" href="#!">
-                              <div class="card-product__view">
-                                <div class="card-product__pic">
-                                  <img src="img/lamp-5.jpg" alt="" loading="lazy" >
-                                  <div class="swiper-lazy-preloader"></div>
-                                </div>
-                                <div class="card-product__badges">
-                                  <span class="card-product__badges-item card-product__badges-item_new">new</span>
-                                  <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
-                                </div>
-                                <div class="card-product__actions">
-                                  <span class="card-product__actions-item card-product__actions-item_favorite">
-                                    <!-- Для товаров, добавленных в избранное, добавляем класс .checked и иконке i-->
-                                    <i data-id="A8564PL-5RB"></i>
-                                  </span>
-                                  <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
-                                </div>
-                              </div>
-                              <div class="card-product__desc">
-                                <div class="card-product__text">
-                                  <p class="card-product__title">Люстра Аrte Lamp Rosaria</p>
-                                  <span class="card-product__code">A8564PL-5RB</span>
-                                </div>
-                                <div class="card-product__data">
-                                  <p class="card-product__count">В наличии: 110 шт.</p>
-                                  <span class="card-product__price">88 000 р.</span>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-                          <div class="swiper-slide">
-                            <a class="card-product" href="#!">
-                              <div class="card-product__view">
-                                <div class="card-product__pic">
-                                  <img src="img/lamp-2.jpg" alt="" loading="lazy" >
-                                  <div class="swiper-lazy-preloader"></div>
-                                </div>
-                                <div class="card-product__badges">
-                                  <span class="card-product__badges-item card-product__badges-item_new">new</span>
-                                  <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
-                                </div>
-                                <div class="card-product__actions">
-                                  <span class="card-product__actions-item card-product__actions-item_favorite">
-                                    <!-- Для товаров, добавленных в избранное, добавляем класс .checked и иконке i-->
-                                    <i data-id="A8564PL-5RB"></i>
-                                  </span>
-                                  <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
-                                </div>
-                              </div>
-                              <div class="card-product__desc">
-                                <div class="card-product__text">
-                                  <p class="card-product__title">Люстра Аrte Lamp Rosaria</p>
-                                  <span class="card-product__code">A8564PL-5RB</span>
-                                </div>
-                                <div class="card-product__data">
-                                  <p class="card-product__count">В наличии: 110 шт.</p>
-                                  <span class="card-product__price">88 000 р.</span>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-                          <div class="swiper-slide">
-                            <a class="card-product" href="#!">
-                              <div class="card-product__view">
-                                <div class="card-product__pic">
-                                  <img src="img/lamp-3.jpg" alt="" loading="lazy" >
-                                  <div class="swiper-lazy-preloader"></div>
-                                </div>
-                                <div class="card-product__badges">
-                                  <span class="card-product__badges-item card-product__badges-item_new">new</span>
-                                  <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
-                                </div>
-                                <div class="card-product__actions">
-                                  <span class="card-product__actions-item card-product__actions-item_favorite">
-                                    <!-- Для товаров, добавленных в избранное, добавляем класс .checked и иконке i-->
-                                    <i data-id="A8564PL-5RB"></i>
-                                  </span>
-                                  <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
-                                </div>
-                              </div>
-                              <div class="card-product__desc">
-                                <div class="card-product__text">
-                                  <p class="card-product__title">Люстра Аrte Lamp Rosaria</p>
-                                  <span class="card-product__code">A8564PL-5RB</span>
-                                </div>
-                                <div class="card-product__data">
-                                  <p class="card-product__count">В наличии: 110 шт.</p>
-                                  <span class="card-product__price">88 000 р.</span>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-                          <div class="swiper-slide">
-                            <a class="card-product" href="#!">
-                              <div class="card-product__view">
-                                <div class="card-product__pic">
-                                  <img src="img/lamp-4.jpg" alt="" loading="lazy" >
-                                  <div class="swiper-lazy-preloader"></div>
-                                </div>
-                                <div class="card-product__badges">
-                                  <span class="card-product__badges-item card-product__badges-item_new">new</span>
-                                  <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
-                                </div>
-                                <div class="card-product__actions">
-                                  <span class="card-product__actions-item card-product__actions-item_favorite">
-                                    <!-- Для товаров, добавленных в избранное, добавляем класс .checked и иконке i-->
-                                    <i data-id="A8564PL-5RB"></i>
-                                  </span>
-                                  <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
-                                </div>
-                              </div>
-                              <div class="card-product__desc">
-                                <div class="card-product__text">
-                                  <p class="card-product__title">Люстра Аrte Lamp Rosaria</p>
-                                  <span class="card-product__code">A8564PL-5RB</span>
-                                </div>
-                                <div class="card-product__data">
-                                  <p class="card-product__count">В наличии: 110 шт.</p>
-                                  <span class="card-product__price">88 000 р.</span>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-                          <div class="swiper-slide">
-                            <a class="card-product" href="#!">
-                              <div class="card-product__view">
-                                <div class="card-product__pic">
-                                  <img src="img/lamp-5.jpg" alt="" loading="lazy" >
-                                  <div class="swiper-lazy-preloader"></div>
-                                </div>
-                                <div class="card-product__badges">
-                                  <span class="card-product__badges-item card-product__badges-item_new">new</span>
-                                  <span class="card-product__badges-item card-product__badges-item_sale">sale</span>
-                                </div>
-                                <div class="card-product__actions">
-                                  <span class="card-product__actions-item card-product__actions-item_favorite">
-                                    <!-- Для товаров, добавленных в избранное, добавляем класс .checked и иконке i-->
-                                    <i data-id="A8564PL-5RB"></i>
-                                  </span>
-                                  <span class="card-product__actions-item card-product__actions-item_orders"><i></i></span>
-                                </div>
-                              </div>
-                              <div class="card-product__desc">
-                                <div class="card-product__text">
-                                  <p class="card-product__title">Люстра Аrte Lamp Rosaria</p>
-                                  <span class="card-product__code">A8564PL-5RB</span>
-                                </div>
-                                <div class="card-product__data">
-                                  <p class="card-product__count">В наличии: 110 шт.</p>
-                                  <span class="card-product__price">88 000 р.</span>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
+                          <div class="swiper-scrollbar"></div>
                         </div>
-                        <div class="swiper-scrollbar"></div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="card-filter__btn"><button class="default-btn btn-reset card-filter__main_btn">Все люстры на штанге</button></div>
-            <div class="download-docs">
-              <div class="download-docs__top">
-                <div class="download-docs__toggle"></div>
-                <h3 class="download-docs__title">Документы для скачивания</h3>
-              </div>
-              <div class="download-docs__wrap">
-                <div class="card-top__additional-info_wrap">
-                  <button class="btn-reset card-top__icon card-top__rar"></button>
-                  <div class="card-top__additional-info_text">
-                    <div class="card-top__additional-info_text-wrap">
-                      <div class="card-top__additional-info_title">Инструкции по сборке</div>
-                      <a class="card-top__additional-info_subtitle" href="#!">A3988SP-12AB_ai</a>
+              <div class="card-filter__btn"><button class="default-btn btn-reset card-filter__main_btn">Все люстры на штанге</button></div>
+              <div class="download-docs">
+                <div class="download-docs__top">
+                  <div class="download-docs__toggle"></div>
+                  <h3 class="download-docs__title">Документы для скачивания</h3>
+                </div>
+                <div class="download-docs__wrap">
+                  <div class="card-top__additional-info_wrap">
+                    <button class="btn-reset card-top__icon card-top__rar"></button>
+                    <div class="card-top__additional-info_text">
+                      <div class="card-top__additional-info_text-wrap">
+                        <div class="card-top__additional-info_title">Инструкции по сборке</div>
+                        <a class="card-top__additional-info_subtitle" href="#!">A3988SP-12AB_ai</a>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="card-top__additional-info_wrap">
-                  <button class="btn-reset card-top__icon card-top__zip"></button>
-                  <div class="card-top__additional-info_text">
-                    <div class="card-top__additional-info_text-wrap">
-                      <div class="card-top__additional-info_title">Руководства по эксплуатации</div>
-                      <a class="card-top__additional-info_subtitle" href="#!">ARTELAMP_manual</a>
+                  <div class="card-top__additional-info_wrap">
+                    <button class="btn-reset card-top__icon card-top__zip"></button>
+                    <div class="card-top__additional-info_text">
+                      <div class="card-top__additional-info_text-wrap">
+                        <div class="card-top__additional-info_title">Руководства по эксплуатации</div>
+                        <a class="card-top__additional-info_subtitle" href="#!">ARTELAMP_manual</a>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="card-top__additional-info_wrap">
-                  <button class="btn-reset card-top__icon card-top__pdf"></button>
-                  <div class="card-top__additional-info_text">
-                    <div class="card-top__additional-info_text-wrap">
-                      <div class="card-top__additional-info_title">Сертификаты</div>
-                      <a class="card-top__additional-info_subtitle" href="#!">АРТЕ Сертификат соответствия на светильники№2</a>
+                  <div class="card-top__additional-info_wrap">
+                    <button class="btn-reset card-top__icon card-top__pdf"></button>
+                    <div class="card-top__additional-info_text">
+                      <div class="card-top__additional-info_text-wrap">
+                        <div class="card-top__additional-info_title">Сертификаты</div>
+                        <a class="card-top__additional-info_subtitle" href="#!">АРТЕ Сертификат соответствия на светильники№2</a>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="card-top__additional-info_wrap">
-                  <button class="btn-reset card-top__icon card-top__pdf"></button>
-                  <div class="card-top__additional-info_text">
-                    <div class="card-top__additional-info_text-wrap">
-                      <div class="card-top__additional-info_title">Технические рисунки</div>
-                      <a class="card-top__additional-info_subtitle" href="#!">A3988SP-12AB_drawing</a>
+                  <div class="card-top__additional-info_wrap">
+                    <button class="btn-reset card-top__icon card-top__pdf"></button>
+                    <div class="card-top__additional-info_text">
+                      <div class="card-top__additional-info_text-wrap">
+                        <div class="card-top__additional-info_title">Технические рисунки</div>
+                        <a class="card-top__additional-info_subtitle" href="#!">A3988SP-12AB_drawing</a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1204,7 +1273,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </main>
     <footer class="footer" id="footer">
       <div class="container">
@@ -1253,7 +1322,10 @@
         <i></i>
         <p>Чтобы добавить товар в заказ, необходимо зарегистрироваться или войти в аккаунт</p>
         <!-- В ссылку ставим url на страницу вход/регистрация-->
-        <a class="dark-btn block-btn" href="">Зарегистрироваться</a>
+        <div class="order-war__buttons">
+          <a class="dark-btn block-btn" href="">Войти</a>
+          <a class="dark-btn block-btn" href="">Зарегистрироваться</a>
+        </div>
       </div>
     </div>
     <!-- Показываем модалку с помощью класса .visible-->
@@ -1291,12 +1363,14 @@
         <span class="order-war__close close"></span>
         <i></i>
         <p>
-          <b>Запрос выполнен успешно</b>
           <br >
           Товар добавлен в заказ
           <mark class="order-war__order-number"></mark>
         </p>
-        <button class="dark-btn block-btn close">Закрыть</button>
+        <div class="order-war__body-bottom">
+          <button class="dark-btn block-btn close">Продолжить покупку</button>
+          <a class="dark-btn block-btn" href="/admin/orders">Перейти в заказ</a>
+        </div>
       </div>
     </div>
     <!-- Показываем модалку с помощью класса .visible-->
@@ -1311,6 +1385,126 @@
           Для товара будет создан Новый заказ.
         </p>
         <button class="dark-btn block-btn">Да, добавить товар</button>
+      </div>
+    </div>
+    <div class="modal fast-view" id="fastView">
+      <div class="modal-wrapper order-war__body">
+        <div class="modal-close close"></div>
+        <div class="modal-top">
+          <div class="modal-top__container">
+            <div class="modal-top__title _js-modal-name">Потолочная люстра Tet-A-Tet</div>
+            <div class="modal-top__article _js-modal-code">A1704LM-5CC</div>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="card-top _js-card-top">
+            <div class="card-top__left">
+              <div class="card-slider">
+                <div class="card-slider__main"><img class="_js-modal-image" src="img/slider-1.jpg" loading="lazy" ></div>
+              </div>
+            </div>
+            <div class="card-top__right">
+              <div class="card-top__info">
+                <div class="card-top__btns"></div>
+                <div class="card-top__price">
+                  <div class="card-top__price_rrc">
+                    <div class="card-top__price_title">РРЦ:</div>
+                    <div class="card-top__price_value">
+                      <span class="_js-modal-price-rrc">6 780</span>
+                      ₽
+                    </div>
+                  </div>
+                  <div class="card-top__price_old">
+                    <div class="card-top__price_title">Ваша цена:</div>
+                    <div class="card-top__price_value">
+                      <span class="_js-modal-price">6 780</span>
+                      ₽
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-top__quantity">
+                <div class="card-top__quantity_changer">
+                  <button class="btn-reset btn--white changer__btn changer__btn_minus">—</button>
+                  <input class="changer__input _js-modal-quantity" type="text" min="1" maxlength="4" value="1" >
+                  <button class="btn-reset btn--white changer__btn changer__btn_plus">+</button>
+                </div>
+                <div class="card-top__quantity_value"><span class="_js-modal-count">234</span></div>
+              </div>
+              <div class="card-top__order">
+                <div class="custom-select">
+                  <div class="custom-select__top card-select__top">
+                    <!-- В data атрибут data-order-id добавляем ID заказа в который будет добавлять товар по умолчанию-->
+                    <!-- В data атрибут data-status пишем соответственно: Заказ в резерве - false, Заказ не оформлен - true, Новый заказ - new-->
+                    <!-- При первом рендере, всегда ставим в custom-select__value текст Новый заказ, значение data-order-id - пустое, data-status - new-->
+                    <div class="custom-select__value" data-order-id data-status="new">Дешевле</div>
+                    <div class="custom-select_open"></div>
+                  </div>
+                  <div class="custom-select__drop">
+                    <ul class="custom-select__list">
+                      <li class="custom-select__item custom-select__item--sort">
+                        <!-- Первым всегда идет опшен Новый заказ-->
+                        <!-- Для Нового заказа data-order-id оставляем без значения либо пустая строка-->
+                        <!-- Для Нового заказа data-status ставим в значение new-->
+                        <label class="custom-select__option" data-order-id data-status="new" title="Новый заказ">
+                          <input class="invisible" type="radio" name="order" checked >
+                          <span>Новый заказ</span>
+                        </label>
+                      </li>
+                      <li class="custom-select__item custom-select__item--sort">
+                        <label class="custom-select__option" data-order-id="11125678-ord" data-status="true" title="Заказ № 11125678-ord">
+                          <input class="invisible" type="radio" name="order" >
+                          <span>Заказ № 11125678-ord</span>
+                          <mark>Заказ не оформлен</mark>
+                        </label>
+                      </li>
+                      <li class="custom-select__item custom-select__item--sort">
+                        <label class="custom-select__option" data-order-id="22225678-ord" data-status="false" title="Заказ № 22225678-ord">
+                          <input class="invisible" type="radio" name="order" >
+                          <span>Заказ № 22225678-ord</span>
+                          <mark>В резерве</mark>
+                        </label>
+                      </li>
+                      <li class="custom-select__item custom-select__item--sort">
+                        <label class="custom-select__option" data-order-id="33325678-ord" data-status="true" title="Заказ № 33325678-ord">
+                          <input class="invisible" type="radio" name="order" >
+                          <span>Заказ № 33325678-ord</span>
+                          <mark>Заказ не оформлен</mark>
+                        </label>
+                      </li>
+                      <li class="custom-select__item custom-select__item--sort">
+                        <label class="custom-select__option" data-order-id="44425678-ord" data-status="false" title="Заказ № 44425678-ord">
+                          <input class="invisible" type="radio" name="order" >
+                          <span>Заказ № 44425678-ord</span>
+                          <mark>В резерве</mark>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Если пользователь залогинен, к кнопке Добавить в заказ добавляем аттрибут data-product-id со значением id текущего продукта-->
+                <button class="btn-reset default-btn card-top__btn_order _js-modal-add" data-product-id="777-1234567-prod">Добавить в заказ</button>
+              </div>
+              <div class="card-top__down">
+                <div class="card-top__down_title">Итого заказ:</div>
+                <div class="card-top__down_total">
+                  <span class="_js-modal-total">20 340</span>
+                  ₽
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Показываем модалку с помощью класса .visible-->
+    <div class="order-war" id="success">
+      <!-- Показываем контент с помощью класса .visible-->
+      <div class="order-war__body">
+        <span class="order-war__close close"></span>
+        <i></i>
+        <p>Товар успешно добавлен в заказ</p>
+        <button class="dark-btn block-btn close">Продолжить покупки</button>
       </div>
     </div>
     <script src="js/vendor.min.js"></script>
@@ -1341,11 +1535,11 @@
         video.setAttribute("style", "max-width: 50%; height: auto;");
 
         var title = document.createElement("h1");
-        title.setAttribute("style", 'width: 100%; max-width: 700px; text-align: center; font-family: "Open Sans", sans-serif; line-height: 1.3; margin-bottom: 1em; margin-top: 0; font-size: 26px; padding-left: 20px; padding-right: 20px;');
+        title.setAttribute("style", "width: 100%; max-width: 700px; text-align: center; font-family: sans-serif; line-height: 1.3; margin-bottom: 1em; margin-top: 0; font-size: 26px; padding-left: 20px; padding-right: 20px;");
         title.innerText = "К сожалению, мы не поддерживаем браузер Internet Explorer 11 и более ранние версии!";
 
         var text = document.createElement("p");
-        text.setAttribute("style", 'width: 100%; max-width: 400px; text-align: center; font-family: "Open Sans", sans-serif; line-height: 1.3; margin-bottom: 3em; font-size: 18px; padding-left: 20px; padding-right: 20px;');
+        text.setAttribute("style", "width: 100%; max-width: 400px; text-align: center; font-family: sans-serif; line-height: 1.3; margin-bottom: 3em; font-size: 18px; padding-left: 20px; padding-right: 20px;");
         text.innerText = "Для просмотра сайта, воспользуйтесь более новой версией браузера.";
 
         body.setAttribute("style", "display: flex; flex-direction: column; align-items: center; justify-content: center;");

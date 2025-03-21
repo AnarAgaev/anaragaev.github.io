@@ -1,0 +1,62 @@
+[
+  {
+    "id": "new",
+    "number": "Новый заказ",
+    "status": "",
+    "default": false
+  },
+  {
+    "id": 3000983,
+    "number": "TLS3000983",
+    "status": "Не оформлен",
+    "default": false
+  },
+  {
+    "id": 3000994,
+    "number": "TLS3000994",
+    "status": "В резерве",
+    "default": false
+  },
+  {
+    "id": 4000997,
+    "number": "TLS4000997",
+    "status": "В резерве",
+    "default": false
+  },
+  {
+    "id": 4000999,
+    "number": "TLS4000999",
+    "status": "Не оформлен",
+    "default": false
+  },
+  {
+    "id": 4001003,
+    "number": "TLS4001003",
+    "status": "Не оформлен",
+    "default": false
+  },
+  {
+    "id": 4001004,
+    "number": "TLS4001004",
+    "status": "Не оформлен",
+    "default": false
+  },
+  {
+    "id": 4001005,
+    "number": "TLS4001005",
+    "status": "Не оформлен",
+    "default": false
+  },
+  {
+    "id": 4001006,
+    "number": "TLS4001006",
+    "status": "Не оформлен",
+    "default": false
+  },
+  {
+    "id": 4001007,
+    "number": "TLS4001007",
+    "status": "Не оформлен",
+    "default": true
+  }
+]

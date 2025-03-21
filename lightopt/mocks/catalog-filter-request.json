@@ -1,194 +1,281 @@
 {
-    "isLogged": true,
-    "data": [{
-        "id": 8130,
-        "title": "Подвесной светильник Arte Lamp TRENTO A9291SP-1CC",
-        "new": true,
-        "sale": true,
-        "image": "https:\/\/ms.fandeco.ru\/assets\/images\/products\/1251\/big\/a9291sp-1cc.jpg",
-        "show_artikul": "A9291SP-1CC",
-        "in_stock": 0,
-        "price": 2080,
-        "url": "\/products\/8130",
-        "like": null
-    }, {
-        "id": 8122,
-        "title": "Подвесной светильник Arte Lamp OGLIO A9273SP-1CC",
-        "new": false,
-        "image": "https:\/\/ms.fandeco.ru\/assets\/images\/products\/4007\/big\/a9273sp-1cc.jpg",
-        "show_artikul": "A9273SP-1CC",
-        "in_stock": 0,
-        "price": 5630,
-        "url": "\/products\/8122",
-        "like": {}
-    }, {
-        "id": 8126,
-        "title": "Подвесной светильник Arte Lamp FERRICO A9256SP-1BG",
-        "new": false,
-        "image": "https:\/\/ms.fandeco.ru\/assets\/images\/products\/3985\/big\/a9256sp-1bg.jpg",
-        "show_artikul": "A9256SP-1BG",
-        "in_stock": 0,
-        "price": 5430,
-        "url": "\/products\/8126",
-        "like": null
-    }, {
-        "id": 8174,
-        "title": "Подвесной светильник Arte Lamp HALL A9247SP-1AB",
-        "new": false,
-        "image": "https:\/\/ms.fandeco.ru\/assets\/images\/products\/3980\/big\/a9247sp-1ab.jpg",
-        "show_artikul": "A9247SP-1AB",
-        "in_stock": 0,
-        "price": 2700,
-        "url": "\/products\/8174",
-        "like": null
-    }, {
-        "id": 8175,
-        "title": "Светильник Arte Lamp CUBES A9247SP-1SS",
-        "new": false,
-        "image": "https:\/\/ms.fandeco.ru\/assets\/images\/products\/3981\/big\/a9247sp-1ss.jpg",
-        "show_artikul": "A9247SP-1SS",
-        "in_stock": 0,
-        "price": 1800,
-        "url": "\/products\/8175",
-        "like": null
-    }, {
-        "id": 8125,
-        "title": "Подвесной светильник Arte Lamp PASSATO A9255SP-1BG",
-        "new": false,
-        "image": "https:\/\/ms.fandeco.ru\/assets\/images\/products\/3984\/big\/a9255sp-1bg-1.jpg",
-        "show_artikul": "A9255SP-1BG",
-        "in_stock": 0,
-        "price": 2700,
-        "url": "\/products\/8125",
-        "like": null
-    }, {
-        "id": 8190,
-        "title": "Подвесной светильник Arte Lamp KIDS A9222SP-1WH",
-        "new": false,
-        "image": "https:\/\/ms.fandeco.ru\/assets\/images\/products\/3952\/big\/a9222sp-1wh.jpg",
-        "show_artikul": "A9222SP-1WH",
-        "in_stock": 0,
-        "price": 900,
-        "url": "\/products\/8190",
-        "like": {}
-    }, {
-        "id": 8132,
-        "title": "Подвесной светильник Arte Lamp RICARDO A9186SP-1CC",
-        "new": false,
-        "image": "https:\/\/ms.fandeco.ru\/assets\/images\/products\/1217\/big\/a9186sp-1cc.jpg",
-        "show_artikul": "A9186SP-1CC",
-        "in_stock": 0,
-        "price": 1020,
-        "url": "\/products\/8132",
-        "like": null
-    }, {
-        "id": 8114,
-        "title": "Подвесной светильник Arte Lamp PANDORA A9183SP-1BK",
-        "new": false,
-        "image": "https:\/\/ms.fandeco.ru\/assets\/images\/products\/1209\/big\/a9183sp-1bk-1.jpg",
-        "show_artikul": "A9183SP-1BK",
-        "in_stock": 4,
-        "price": 7990,
-        "url": "\/products\/8114",
-        "like": null
-    }, {
-        "id": 8104,
-        "title": "Подвесной светильник Arte Lamp CICLONE A9155SP-1WH",
-        "new": false,
-        "image": "https:\/\/ms.fandeco.ru\/assets\/images\/products\/1204\/big\/a9155sp-1wh.jpg",
-        "show_artikul": "A9155SP-1WH",
-        "in_stock": 0,
-        "price": 9930,
-        "url": "\/products\/8104",
-        "like": null
-    }, {
-        "id": 8127,
-        "title": "Подвесной светильник Arte Lamp BENE A9179SP-1CK",
-        "new": false,
-        "image": "https:\/\/ms.fandeco.ru\/assets\/images\/products\/3917\/big\/a9179sp-1ck.jpg",
-        "show_artikul": "A9179SP-1CK",
-        "in_stock": 0,
-        "price": 2480,
-        "url": "\/products\/8127",
-        "like": {}
-    }, {
-        "id": 8115,
-        "title": "Подвесной светильник Arte Lamp PANDORA A9183SP-1BG",
-        "new": false,
-        "image": "https:\/\/ms.fandeco.ru\/assets\/images\/products\/3931\/big\/a9183sp-1bg-1.jpg",
-        "show_artikul": "A9183SP-1BG",
-        "in_stock": 0,
-        "price": 4800,
-        "url": "\/products\/8115",
-        "like": null
-    }],
+    "total": 11,
+    "data": [
+        "<li class=\"catalog-grid__item\">\n    <div class=\"card-product _js-card-product\" data-id=\"61329\">\n        <div class=\"card-product__view\">\n            <a href=\"https://template-kirill-provider.massive.ru/products/61329\" class=\"card-product__pic\">\n                <img src=\"https://ms.fandeco.ru/assets/images/products/1104/big/a7603ap-1wh.jpg\" class=\"_js-card-image\" alt=\"\" loading=\"lazy\">\n            </a>\n            <div class=\"card-product__badges\">\n                                            </div>\n            <div class=\"card-product__actions\">\n                <span class=\"card-product__actions-item card-product__actions-item_favorite\">\n                        \n                    <i class=\" checked  \" data-id=\"61329\" ></i>\n                </span>\n            </div>\n        </div>\n        <div class=\"card-product__desc\">\n            <div class=\"card-product__text\">\n                <a href=\"https://template-kirill-provider.massive.ru/products/61329\" class=\"card-product__title _js-card-name\">Бра Arte Lamp TWIST A7603AP-1WH</a>\n                <span class=\"card-product__code _js-card-code\">A7603AP-1WH</span>\n            </div>\n            <div class=\"card-product__data\">\n                <p class=\"card-product__count\">В наличии: <span class=\"_js-card-count\">7412</span> шт.</p>\n                <span class=\"card-product__price\"><span class=\"_js-card-price\">1890</span> р.</span>\n            </div>\n        </div>\n        <div class=\"card-product__bottom\">\n            <div class=\"card-top__quantity_changer card-product__bottom-calc\">\n                <button class=\"btn-reset btn--white changer__btn changer__btn_minus card-product__bottom-minus\">—</button>\n                <input class=\"changer__input card-product__bottom-count _js-card-quantity\" type=\"text\" min=\"1\" max=\"7412\" maxlength=\"4\" value=\"1\">\n                <button class=\"btn-reset btn--white changer__btn changer__btn_plus card-product__bottom-plus\">+</button>\n            </div>\n            <div class=\"card-product__bottom-buy _js-open-fast-view\">Заказать</div>\n        </div>\n    </div>\n</li>\n",
+        "<li class=\"catalog-grid__item\">\n    <div class=\"card-product _js-card-product\" data-id=\"61330\">\n        <div class=\"card-product__view\">\n            <a href=\"https://template-kirill-provider.massive.ru/products/61330\" class=\"card-product__pic\">\n                <img src=\"https://ms.fandeco.ru/assets/images/products/1103/big/a7603ap-1bk.jpg\" class=\"_js-card-image\" alt=\"\" loading=\"lazy\">\n            </a>\n            <div class=\"card-product__badges\">\n                                            </div>\n            <div class=\"card-product__actions\">\n                <span class=\"card-product__actions-item card-product__actions-item_favorite\">\n                        \n                    <i class=\" checked  \" data-id=\"61330\" ></i>\n                </span>\n            </div>\n        </div>\n        <div class=\"card-product__desc\">\n            <div class=\"card-product__text\">\n                <a href=\"https://template-kirill-provider.massive.ru/products/61330\" class=\"card-product__title _js-card-name\">Бра Arte Lamp TWIST A7603AP-1BK</a>\n                <span class=\"card-product__code _js-card-code\">A7603AP-1BK</span>\n            </div>\n            <div class=\"card-product__data\">\n                <p class=\"card-product__count\">В наличии: <span class=\"_js-card-count\">94</span> шт.</p>\n                <span class=\"card-product__price\"><span class=\"_js-card-price\">1890</span> р.</span>\n            </div>\n        </div>\n        <div class=\"card-product__bottom\">\n            <div class=\"card-top__quantity_changer card-product__bottom-calc\">\n                <button class=\"btn-reset btn--white changer__btn changer__btn_minus card-product__bottom-minus\">—</button>\n                <input class=\"changer__input card-product__bottom-count _js-card-quantity\" type=\"text\" min=\"1\" max=\"94\" maxlength=\"4\" value=\"1\">\n                <button class=\"btn-reset btn--white changer__btn changer__btn_plus card-product__bottom-plus\">+</button>\n            </div>\n            <div class=\"card-product__bottom-buy _js-open-fast-view\">Заказать</div>\n        </div>\n    </div>\n</li>\n",
+        "<li class=\"catalog-grid__item\">\n    <div class=\"card-product _js-card-product\" data-id=\"151771\">\n        <div class=\"card-product__view\">\n            <a href=\"https://template-kirill-provider.massive.ru/products/151771\" class=\"card-product__pic\">\n                <img src=\"https://ms.fandeco.ru/assets/images/products/185/big/a1423ap-1bk.jpg\" class=\"_js-card-image\" alt=\"\" loading=\"lazy\">\n            </a>\n            <div class=\"card-product__badges\">\n                                            </div>\n            <div class=\"card-product__actions\">\n                <span class=\"card-product__actions-item card-product__actions-item_favorite\">\n                        \n                    <i class=\" \" data-id=\"151771\" ></i>\n                </span>\n            </div>\n        </div>\n        <div class=\"card-product__desc\">\n            <div class=\"card-product__text\">\n                <a href=\"https://template-kirill-provider.massive.ru/products/151771\" class=\"card-product__title _js-card-name\">Декоративная подсветка Arte Lamp SCATOLA A1423AP-1BK</a>\n                <span class=\"card-product__code _js-card-code\">A1423AP-1BK</span>\n            </div>\n            <div class=\"card-product__data\">\n                <p class=\"card-product__count\">В наличии: <span class=\"_js-card-count\">629</span> шт.</p>\n                <span class=\"card-product__price\"><span class=\"_js-card-price\">2400</span> р.</span>\n            </div>\n        </div>\n        <div class=\"card-product__bottom\">\n            <div class=\"card-top__quantity_changer card-product__bottom-calc\">\n                <button class=\"btn-reset btn--white changer__btn changer__btn_minus card-product__bottom-minus\">—</button>\n                <input class=\"changer__input card-product__bottom-count _js-card-quantity\" type=\"text\" min=\"1\" max=\"629\" maxlength=\"4\" value=\"1\">\n                <button class=\"btn-reset btn--white changer__btn changer__btn_plus card-product__bottom-plus\">+</button>\n            </div>\n            <div class=\"card-product__bottom-buy _js-open-fast-view\">Заказать</div>\n        </div>\n    </div>\n</li>\n",
+        "<li class=\"catalog-grid__item\">\n    <div class=\"card-product _js-card-product\" data-id=\"151786\">\n        <div class=\"card-product__view\">\n            <a href=\"https://template-kirill-provider.massive.ru/products/151786\" class=\"card-product__pic\">\n                <img src=\"https://ms.fandeco.ru/assets/images/products/186/big/a1423ap-1wh.jpg\" class=\"_js-card-image\" alt=\"\" loading=\"lazy\">\n            </a>\n            <div class=\"card-product__badges\">\n                                            </div>\n            <div class=\"card-product__actions\">\n                <span class=\"card-product__actions-item card-product__actions-item_favorite\">\n                        \n                    <i class=\" checked  \" data-id=\"151786\" ></i>\n                </span>\n            </div>\n        </div>\n        <div class=\"card-product__desc\">\n            <div class=\"card-product__text\">\n                <a href=\"https://template-kirill-provider.massive.ru/products/151786\" class=\"card-product__title _js-card-name\">Декоративная подсветка Arte Lamp SCATOLA A1423AP-1WH</a>\n                <span class=\"card-product__code _js-card-code\">A1423AP-1WH</span>\n            </div>\n            <div class=\"card-product__data\">\n                <p class=\"card-product__count\">В наличии: <span class=\"_js-card-count\">178</span> шт.</p>\n                <span class=\"card-product__price\"><span class=\"_js-card-price\">2700</span> р.</span>\n            </div>\n        </div>\n        <div class=\"card-product__bottom\">\n            <div class=\"card-top__quantity_changer card-product__bottom-calc\">\n                <button class=\"btn-reset btn--white changer__btn changer__btn_minus card-product__bottom-minus\">—</button>\n                <input class=\"changer__input card-product__bottom-count _js-card-quantity\" type=\"text\" min=\"1\" max=\"178\" maxlength=\"4\" value=\"1\">\n                <button class=\"btn-reset btn--white changer__btn changer__btn_plus card-product__bottom-plus\">+</button>\n            </div>\n            <div class=\"card-product__bottom-buy _js-open-fast-view\">Заказать</div>\n        </div>\n    </div>\n</li>\n",
+        "<li class=\"catalog-grid__item\">\n    <div class=\"card-product _js-card-product\" data-id=\"61339\">\n        <div class=\"card-product__view\">\n            <a href=\"https://template-kirill-provider.massive.ru/products/61339\" class=\"card-product__pic\">\n                <img src=\"https://ms.fandeco.ru/assets/images/products/3722/big/a8231ap-1wh.jpg\" class=\"_js-card-image\" alt=\"\" loading=\"lazy\">\n            </a>\n            <div class=\"card-product__badges\">\n                                            </div>\n            <div class=\"card-product__actions\">\n                <span class=\"card-product__actions-item card-product__actions-item_favorite\">\n                        \n                    <i class=\" checked  \" data-id=\"61339\" ></i>\n                </span>\n            </div>\n        </div>\n        <div class=\"card-product__desc\">\n            <div class=\"card-product__text\">\n                <a href=\"https://template-kirill-provider.massive.ru/products/61339\" class=\"card-product__title _js-card-name\">Бра Arte Lamp ELECTRA A8231AP-1WH</a>\n                <span class=\"card-product__code _js-card-code\">A8231AP-1WH</span>\n            </div>\n            <div class=\"card-product__data\">\n                <p class=\"card-product__count\">В наличии: <span class=\"_js-card-count\">1114</span> шт.</p>\n                <span class=\"card-product__price\"><span class=\"_js-card-price\">4490</span> р.</span>\n            </div>\n        </div>\n        <div class=\"card-product__bottom\">\n            <div class=\"card-top__quantity_changer card-product__bottom-calc\">\n                <button class=\"btn-reset btn--white changer__btn changer__btn_minus card-product__bottom-minus\">—</button>\n                <input class=\"changer__input card-product__bottom-count _js-card-quantity\" type=\"text\" min=\"1\" max=\"1114\" maxlength=\"4\" value=\"1\">\n                <button class=\"btn-reset btn--white changer__btn changer__btn_plus card-product__bottom-plus\">+</button>\n            </div>\n            <div class=\"card-product__bottom-buy _js-open-fast-view\">Заказать</div>\n        </div>\n    </div>\n</li>\n",
+        "<li class=\"catalog-grid__item\">\n    <div class=\"card-product _js-card-product\" data-id=\"61340\">\n        <div class=\"card-product__view\">\n            <a href=\"https://template-kirill-provider.massive.ru/products/61340\" class=\"card-product__pic\">\n                <img src=\"https://ms.fandeco.ru/assets/images/products/3721/big/a8231ap-1bk.jpg\" class=\"_js-card-image\" alt=\"\" loading=\"lazy\">\n            </a>\n            <div class=\"card-product__badges\">\n                                            </div>\n            <div class=\"card-product__actions\">\n                <span class=\"card-product__actions-item card-product__actions-item_favorite\">\n                        \n                    <i class=\" checked  \" data-id=\"61340\" ></i>\n                </span>\n            </div>\n        </div>\n        <div class=\"card-product__desc\">\n            <div class=\"card-product__text\">\n                <a href=\"https://template-kirill-provider.massive.ru/products/61340\" class=\"card-product__title _js-card-name\">Бра Arte Lamp ELECTRA A8231AP-1BK</a>\n                <span class=\"card-product__code _js-card-code\">A8231AP-1BK</span>\n            </div>\n            <div class=\"card-product__data\">\n                <p class=\"card-product__count\">В наличии: <span class=\"_js-card-count\">1133</span> шт.</p>\n                <span class=\"card-product__price\"><span class=\"_js-card-price\">4490</span> р.</span>\n            </div>\n        </div>\n        <div class=\"card-product__bottom\">\n            <div class=\"card-top__quantity_changer card-product__bottom-calc\">\n                <button class=\"btn-reset btn--white changer__btn changer__btn_minus card-product__bottom-minus\">—</button>\n                <input class=\"changer__input card-product__bottom-count _js-card-quantity\" type=\"text\" min=\"1\" max=\"1133\" maxlength=\"4\" value=\"1\">\n                <button class=\"btn-reset btn--white changer__btn changer__btn_plus card-product__bottom-plus\">+</button>\n            </div>\n            <div class=\"card-product__bottom-buy _js-open-fast-view\">Заказать</div>\n        </div>\n    </div>\n</li>\n",
+        "<li class=\"catalog-grid__item\">\n    <div class=\"card-product _js-card-product\" data-id=\"151769\">\n        <div class=\"card-product__view\">\n            <a href=\"https://template-kirill-provider.massive.ru/products/151769\" class=\"card-product__pic\">\n                <img src=\"https://ms.fandeco.ru/assets/images/products/316/big/a1718ap-1wh.jpg\" class=\"_js-card-image\" alt=\"\" loading=\"lazy\">\n            </a>\n            <div class=\"card-product__badges\">\n                                            </div>\n            <div class=\"card-product__actions\">\n                <span class=\"card-product__actions-item card-product__actions-item_favorite\">\n                        \n                    <i class=\" \" data-id=\"151769\" ></i>\n                </span>\n            </div>\n        </div>\n        <div class=\"card-product__desc\">\n            <div class=\"card-product__text\">\n                <a href=\"https://template-kirill-provider.massive.ru/products/151769\" class=\"card-product__title _js-card-name\">Декоративная подсветка Arte Lamp TRIO A1718AP-1WH</a>\n                <span class=\"card-product__code _js-card-code\">A1718AP-1WH</span>\n            </div>\n            <div class=\"card-product__data\">\n                <p class=\"card-product__count\">В наличии: <span class=\"_js-card-count\">314</span> шт.</p>\n                <span class=\"card-product__price\"><span class=\"_js-card-price\">4990</span> р.</span>\n            </div>\n        </div>\n        <div class=\"card-product__bottom\">\n            <div class=\"card-top__quantity_changer card-product__bottom-calc\">\n                <button class=\"btn-reset btn--white changer__btn changer__btn_minus card-product__bottom-minus\">—</button>\n                <input class=\"changer__input card-product__bottom-count _js-card-quantity\" type=\"text\" min=\"1\" max=\"314\" maxlength=\"4\" value=\"1\">\n                <button class=\"btn-reset btn--white changer__btn changer__btn_plus card-product__bottom-plus\">+</button>\n            </div>\n            <div class=\"card-product__bottom-buy _js-open-fast-view\">Заказать</div>\n        </div>\n    </div>\n</li>\n",
+        "<li class=\"catalog-grid__item\">\n    <div class=\"card-product _js-card-product\" data-id=\"61343\">\n        <div class=\"card-product__view\">\n            <a href=\"https://template-kirill-provider.massive.ru/products/61343\" class=\"card-product__pic\">\n                <img src=\"https://ms.fandeco.ru/assets/images/products/3726/big/a8233ap-1wh.jpg\" class=\"_js-card-image\" alt=\"\" loading=\"lazy\">\n            </a>\n            <div class=\"card-product__badges\">\n                                            </div>\n            <div class=\"card-product__actions\">\n                <span class=\"card-product__actions-item card-product__actions-item_favorite\">\n                        \n                    <i class=\" checked  \" data-id=\"61343\" ></i>\n                </span>\n            </div>\n        </div>\n        <div class=\"card-product__desc\">\n            <div class=\"card-product__text\">\n                <a href=\"https://template-kirill-provider.massive.ru/products/61343\" class=\"card-product__title _js-card-name\">Бра Arte Lamp ELECTRA A8233AP-1WH</a>\n                <span class=\"card-product__code _js-card-code\">A8233AP-1WH</span>\n            </div>\n            <div class=\"card-product__data\">\n                <p class=\"card-product__count\">В наличии: <span class=\"_js-card-count\">1087</span> шт.</p>\n                <span class=\"card-product__price\"><span class=\"_js-card-price\">5290</span> р.</span>\n            </div>\n        </div>\n        <div class=\"card-product__bottom\">\n            <div class=\"card-top__quantity_changer card-product__bottom-calc\">\n                <button class=\"btn-reset btn--white changer__btn changer__btn_minus card-product__bottom-minus\">—</button>\n                <input class=\"changer__input card-product__bottom-count _js-card-quantity\" type=\"text\" min=\"1\" max=\"1087\" maxlength=\"4\" value=\"1\">\n                <button class=\"btn-reset btn--white changer__btn changer__btn_plus card-product__bottom-plus\">+</button>\n            </div>\n            <div class=\"card-product__bottom-buy _js-open-fast-view\">Заказать</div>\n        </div>\n    </div>\n</li>\n",
+        "<li class=\"catalog-grid__item\">\n    <div class=\"card-product _js-card-product\" data-id=\"61344\">\n        <div class=\"card-product__view\">\n            <a href=\"https://template-kirill-provider.massive.ru/products/61344\" class=\"card-product__pic\">\n                <img src=\"https://ms.fandeco.ru/assets/images/products/3725/big/a8233ap-1bk.jpg\" class=\"_js-card-image\" alt=\"\" loading=\"lazy\">\n            </a>\n            <div class=\"card-product__badges\">\n                                            </div>\n            <div class=\"card-product__actions\">\n                <span class=\"card-product__actions-item card-product__actions-item_favorite\">\n                        \n                    <i class=\" \" data-id=\"61344\" ></i>\n                </span>\n            </div>\n        </div>\n        <div class=\"card-product__desc\">\n            <div class=\"card-product__text\">\n                <a href=\"https://template-kirill-provider.massive.ru/products/61344\" class=\"card-product__title _js-card-name\">Бра Arte Lamp ELECTRA A8233AP-1BK</a>\n                <span class=\"card-product__code _js-card-code\">A8233AP-1BK</span>\n            </div>\n            <div class=\"card-product__data\">\n                <p class=\"card-product__count\">В наличии: <span class=\"_js-card-count\">1054</span> шт.</p>\n                <span class=\"card-product__price\"><span class=\"_js-card-price\">5290</span> р.</span>\n            </div>\n        </div>\n        <div class=\"card-product__bottom\">\n            <div class=\"card-top__quantity_changer card-product__bottom-calc\">\n                <button class=\"btn-reset btn--white changer__btn changer__btn_minus card-product__bottom-minus\">—</button>\n                <input class=\"changer__input card-product__bottom-count _js-card-quantity\" type=\"text\" min=\"1\" max=\"1054\" maxlength=\"4\" value=\"1\">\n                <button class=\"btn-reset btn--white changer__btn changer__btn_plus card-product__bottom-plus\">+</button>\n            </div>\n            <div class=\"card-product__bottom-buy _js-open-fast-view\">Заказать</div>\n        </div>\n    </div>\n</li>\n",
+        "<li class=\"catalog-grid__item\">\n    <div class=\"card-product _js-card-product\" data-id=\"61341\">\n        <div class=\"card-product__view\">\n            <a href=\"https://template-kirill-provider.massive.ru/products/61341\" class=\"card-product__pic\">\n                <img src=\"https://ms.fandeco.ru/assets/images/products/3724/big/a8232ap-1wh.jpg\" class=\"_js-card-image\" alt=\"\" loading=\"lazy\">\n            </a>\n            <div class=\"card-product__badges\">\n                                            </div>\n            <div class=\"card-product__actions\">\n                <span class=\"card-product__actions-item card-product__actions-item_favorite\">\n                        \n                    <i class=\" checked  \" data-id=\"61341\" ></i>\n                </span>\n            </div>\n        </div>\n        <div class=\"card-product__desc\">\n            <div class=\"card-product__text\">\n                <a href=\"https://template-kirill-provider.massive.ru/products/61341\" class=\"card-product__title _js-card-name\">Бра Arte Lamp ELECTRA A8232AP-1WH</a>\n                <span class=\"card-product__code _js-card-code\">A8232AP-1WH</span>\n            </div>\n            <div class=\"card-product__data\">\n                <p class=\"card-product__count\">В наличии: <span class=\"_js-card-count\">530</span> шт.</p>\n                <span class=\"card-product__price\"><span class=\"_js-card-price\">5390</span> р.</span>\n            </div>\n        </div>\n        <div class=\"card-product__bottom\">\n            <div class=\"card-top__quantity_changer card-product__bottom-calc\">\n                <button class=\"btn-reset btn--white changer__btn changer__btn_minus card-product__bottom-minus\">—</button>\n                <input class=\"changer__input card-product__bottom-count _js-card-quantity\" type=\"text\" min=\"1\" max=\"530\" maxlength=\"4\" value=\"1\">\n                <button class=\"btn-reset btn--white changer__btn changer__btn_plus card-product__bottom-plus\">+</button>\n            </div>\n            <div class=\"card-product__bottom-buy _js-open-fast-view\">Заказать</div>\n        </div>\n    </div>\n</li>\n",
+        "<li class=\"catalog-grid__item\">\n    <div class=\"card-product _js-card-product\" data-id=\"61342\">\n        <div class=\"card-product__view\">\n            <a href=\"https://template-kirill-provider.massive.ru/products/61342\" class=\"card-product__pic\">\n                <img src=\"https://ms.fandeco.ru/assets/images/products/3723/big/a8232ap-1bk.jpg\" class=\"_js-card-image\" alt=\"\" loading=\"lazy\">\n            </a>\n            <div class=\"card-product__badges\">\n                                            </div>\n            <div class=\"card-product__actions\">\n                <span class=\"card-product__actions-item card-product__actions-item_favorite\">\n                        \n                    <i class=\" checked  \" data-id=\"61342\" ></i>\n                </span>\n            </div>\n        </div>\n        <div class=\"card-product__desc\">\n            <div class=\"card-product__text\">\n                <a href=\"https://template-kirill-provider.massive.ru/products/61342\" class=\"card-product__title _js-card-name\">Бра Arte Lamp ELECTRA A8232AP-1BK</a>\n                <span class=\"card-product__code _js-card-code\">A8232AP-1BK</span>\n            </div>\n            <div class=\"card-product__data\">\n                <p class=\"card-product__count\">В наличии: <span class=\"_js-card-count\">643</span> шт.</p>\n                <span class=\"card-product__price\"><span class=\"_js-card-price\">5390</span> р.</span>\n            </div>\n        </div>\n        <div class=\"card-product__bottom\">\n            <div class=\"card-top__quantity_changer card-product__bottom-calc\">\n                <button class=\"btn-reset btn--white changer__btn changer__btn_minus card-product__bottom-minus\">—</button>\n                <input class=\"changer__input card-product__bottom-count _js-card-quantity\" type=\"text\" min=\"1\" max=\"643\" maxlength=\"4\" value=\"1\">\n                <button class=\"btn-reset btn--white changer__btn changer__btn_plus card-product__bottom-plus\">+</button>\n            </div>\n            <div class=\"card-product__bottom-buy _js-open-fast-view\">Заказать</div>\n        </div>\n    </div>\n</li>\n"
+    ],
+    "isLogged": false,
     "pagination": {
-        "total": 441,
+        "total": 11,
         "perPage": 12,
-        "currentPage": 2,
-        "totalPages": 37,
-        "currentPageUrl": "\/categories\/podvesnye-svetilniki?&page=2",
-        "nextPageUrl": "\/categories\/podvesnye-svetilniki?&page=3",
-        "links": [{
-            "url": null,
-            "label": "&laquo; Previous",
-            "active": false
-        }, {
-            "url": "\/categories\/podvesnye-svetilniki?&page=1",
-            "label": "1",
-            "active": false
-        }, {
-            "url": "\/categories\/podvesnye-svetilniki?&page=2",
-            "label": "2",
-            "active": true
-        }, {
-            "url": "\/categories\/podvesnye-svetilniki?&page=3",
-            "label": "3",
-            "active": false
-        }, {
-            "url": "\/categories\/podvesnye-svetilniki?&page=4",
-            "label": "4",
-            "active": false
-        }, {
-            "url": "\/categories\/podvesnye-svetilniki?&page=5",
-            "label": "5",
-            "active": false
-        }, {
-            "url": "\/categories\/podvesnye-svetilniki?&page=6",
-            "label": "6",
-            "active": false
-        }, {
-            "url": "\/categories\/podvesnye-svetilniki?&page=7",
-            "label": "7",
-            "active": false
-        }, {
-            "url": "\/categories\/podvesnye-svetilniki?&page=8",
-            "label": "8",
-            "active": false
-        }, {
-            "url": "\/categories\/podvesnye-svetilniki?&page=9",
-            "label": "9",
-            "active": false
-        }, {
-            "url": "\/categories\/podvesnye-svetilniki?&page=10",
-            "label": "10",
-            "active": false
-        }, {
-            "url": null,
-            "label": "...",
-            "active": false
-        }, {
-            "url": "\/categories\/podvesnye-svetilniki?&page=36",
-            "label": "36",
-            "active": false
-        }, {
-            "url": "\/categories\/podvesnye-svetilniki?&page=37",
-            "label": "37",
-            "active": false
-        }, {
-            "url": "\/categories\/podvesnye-svetilniki?&page=2",
-            "label": "Next &raquo;",
-            "active": false
-        }]
+        "currentPage": 1,
+        "totalPages": 1,
+        "links": [
+            {
+                "url": null,
+                "label": "&laquo; Previous",
+                "active": false
+            },
+            {
+                "url": "?page=1",
+                "label": "1",
+                "active": true
+            },
+            {
+                "url": null,
+                "label": "Next &raquo;",
+                "active": false
+            }
+        ]
+    },
+    "filters": {
+        "price": {
+            "type": "range",
+            "open": true,
+            "name": "цена",
+            "field": "price",
+            "step": 1,
+            "max": 5390,
+            "min": 1630,
+            "values": {
+                "min": 1630,
+                "max": 5390
+            }
+        },
+        "new": {
+            "type": "bool",
+            "open": false,
+            "name": "Новый",
+            "field": "new",
+            "badge": "new",
+            "badge_color": "black",
+            "count": 0,
+            "value": 0
+        },
+        "sale": {
+            "type": "bool",
+            "open": false,
+            "name": "Распродажа",
+            "field": "sale",
+            "badge": "sale",
+            "badge_color": "red",
+            "count": 0,
+            "value": 0
+        },
+        "in_stock": {
+            "type": "bool",
+            "open": false,
+            "name": "В наличии",
+            "field": "in_stock",
+            "badge": null,
+            "badge_color": "black",
+            "count": 11,
+            "value": true
+        },
+        "vendor_id": {
+            "type": "checkbox",
+            "open": false,
+            "name": "Производитель",
+            "field": "vendor_id",
+            "titles": {
+                "132": "Voltega"
+            },
+            "values": {
+                "132": 11
+            }
+        },
+        "lamp_style": {
+            "type": "checkbox",
+            "open": false,
+            "name": "Стиль лампы",
+            "field": "lamp_style",
+            "titles": {
+                "Современный": "Современный"
+            },
+            "values": {
+                "Современный": 11
+            }
+        },
+        "collection": {
+            "type": "checkbox",
+            "open": false,
+            "name": "Коллекция",
+            "field": "collection",
+            "titles": {
+                "TRIO": "TRIO",
+                "SCATOLA": "SCATOLA",
+                "ECLIPSE OVAL": "ECLIPSE OVAL",
+                "LUCCIOLA": "LUCCIOLA",
+                "MANIGLIA": "MANIGLIA",
+                "CASSETTA": "CASSETTA",
+                "TAMBURELLO": "TAMBURELLO",
+                "SCORCIO": "SCORCIO",
+                "TWIST": "TWIST",
+                "ELECTRA": "ELECTRA",
+                "ADHIL": "ADHIL"
+            },
+            "values": {
+                "TRIO": 1,
+                "SCATOLA": 2,
+                "ECLIPSE OVAL": 0,
+                "LUCCIOLA": 0,
+                "MANIGLIA": 0,
+                "CASSETTA": 0,
+                "TAMBURELLO": 0,
+                "SCORCIO": 0,
+                "TWIST": 2,
+                "ELECTRA": 6,
+                "ADHIL": 0
+            }
+        },
+        "armature_material": {
+            "type": "checkbox",
+            "open": false,
+            "name": "Материал арматуры",
+            "field": "armature_material",
+            "titles": {
+                "Металл": "Металл",
+                "Алюминий": "Алюминий",
+                "Пластик": "Пластик"
+            },
+            "values": {
+                "Металл": 7,
+                "Алюминий": 2,
+                "Пластик": 2
+            }
+        },
+        "armature_color": {
+            "type": "checkbox",
+            "open": false,
+            "name": "Цвет арматуры",
+            "field": "armature_color",
+            "titles": {
+                "Белый": "Белый",
+                "Чёрный": "Чёрный",
+                "Серебристый": "Серебристый"
+            },
+            "values": {
+                "Белый": 6,
+                "Чёрный": 5,
+                "Серебристый": 0
+            }
+        },
+        "ip_class": {
+            "type": "checkbox",
+            "open": false,
+            "name": "IP",
+            "field": "ip_class",
+            "titles": {
+                "20": 20,
+                "54": 54
+            },
+            "values": {
+                "20": 11,
+                "54": 0
+            }
+        },
+        "mesto_prim": {
+            "type": "checkbox",
+            "open": false,
+            "name": "Место применения",
+            "field": "mesto_prim",
+            "titles": {
+                "В комнату": "В комнату",
+                "В квартиру": "В квартиру"
+            },
+            "values": {
+                "В комнату": 4,
+                "В квартиру": 7
+            }
+        },
+        "lamp_type": {
+            "type": "checkbox",
+            "open": false,
+            "name": "Тип лампы",
+            "field": "lamp_type",
+            "titles": {
+                "Светодиодная": "Светодиодная"
+            },
+            "values": {
+                "Светодиодная": 11
+            }
+        },
+        "plafond_material": {
+            "type": "checkbox",
+            "open": false,
+            "name": "Материал плафона",
+            "field": "plafond_material",
+            "titles": {
+                "Металл": "Металл",
+                "Без плафона": "Без плафона",
+                "Пластик": "Пластик"
+            },
+            "values": {
+                "Металл": 2,
+                "Без плафона": 7,
+                "Пластик": 2
+            }
+        },
+        "length": {
+            "type": "range",
+            "open": false,
+            "name": "Длина",
+            "field": "length",
+            "step": 1,
+            "max": 30,
+            "min": 0,
+            "values": {
+                "min": 0,
+                "max": 30
+            }
+        },
+        "height": {
+            "type": "range",
+            "open": false,
+            "name": "Высота",
+            "field": "height",
+            "step": 1,
+            "max": 52,
+            "min": 6,
+            "values": {
+                "min": 6,
+                "max": 52
+            }
+        },
+        "width": {
+            "type": "range",
+            "open": false,
+            "name": "Ширина",
+            "field": "width",
+            "step": 1,
+            "max": 10,
+            "min": 3,
+            "values": {
+                "min": 3,
+                "max": 10
+            }
+        },
+        "ploshad_osvesheniya": {
+            "type": "range",
+            "open": false,
+            "name": "Площадь освещения",
+            "field": "ploshad_osvesheniya",
+            "step": 1,
+            "max": 3,
+            "min": 0.52,
+            "values": {
+                "min": 0.52,
+                "max": 3
+            }
+        }
     }
 }
