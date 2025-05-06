@@ -92,20 +92,36 @@
             <div class="catalog-filters">
               <div class="catalog-filter catalog-filter--open">
                 <div class="catalog-filter__top">
-                  <h3 class="catalog-filter__title catalog-filter__title--active">Заголовок категории</h3>
+                  <h3 class="catalog-filter__title catalog-filter__title--active">Каталог</h3>
                   <div class="catalog-filter__toggle"></div>
                 </div>
                 <div class="catalog-filter__bottom">
-                  <ul class="catalog-filter__list">
+                  <!-- Только самому первому .catalog-filter__list добавляем класс .active так как он всегда должен быть раскрыт-->
+                  <ul class="catalog-filter__list active">
                     <li class="catalog-filter__item"><a class="catalog-filter__link" href="#!">Ссылка подкатегории</a></li>
                     <li class="catalog-filter__item"><a class="catalog-filter__link" href="#!">Ссылка подкатегории</a></li>
                     <li class="catalog-filter__item">
-                      <a class="catalog-filter__link catalog-filter__link_title" href="#!">Заголовок/ссылка подкатегории</a>
+                      <!-- Ко всем ссылкам заголовкам списков (т.е. у кого есть вложенные элементы), добавлять класс .catalog-filter__link_title-->
+                      <!-- Только в заголовке подкатегории которая одновременно является ссылкой добавить внутрь ссылку Все внутрь div с текстом заголовка списка-->
+                      <!-- Для всех заголовков списков добавлять тег i внутрь-->
+                      <!-- Если нужно по-дефолту показать какой-либо список, то добавляем класс .visible к .catalog-filter__link.catalog-filter__link_title-->
+                      <div class="catalog-filter__link catalog-filter__link_title">
+                        <div>
+                          Заголовок/ссылка подкатегории
+                          <a href="#!">Все</a>
+                        </div>
+                        <i></i>
+                      </div>
+                      <!-- Если нужно по-дефолту показать какой-либо список, то ему добавляем класс .visible-->
                       <ul class="catalog-filter__list">
                         <li class="catalog-filter__item"><a class="catalog-filter__link" href="#!">Ссылка под-подкатегории</a></li>
                         <li class="catalog-filter__item"><a class="catalog-filter__link" href="#!">Ссылка под-подкатегории</a></li>
                         <li class="catalog-filter__item">
-                          <a class="catalog-filter__link catalog-filter__link_title" href="#!">Заголовок/ссылка под-подкатегории</a>
+                          <div class="catalog-filter__link catalog-filter__link_title">
+                            Просто заголовок подкатегории
+                            <!-- Для всех заголовков списков добавлять тег i внутрь-->
+                            <i></i>
+                          </div>
                           <ul class="catalog-filter__list">
                             <li class="catalog-filter__item"><a class="catalog-filter__link" href="#!">Ссылка под-под-подкатегории</a></li>
                             <li class="catalog-filter__item"><a class="catalog-filter__link" href="#!">Ссылка под-под-категории с длинным текстом в несколько строк</a></li>
