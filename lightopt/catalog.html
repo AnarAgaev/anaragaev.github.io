@@ -20,14 +20,15 @@
       window.filterApiLink = "https://master-provider.massive.ru/api/categories/330"; // Ссылка на API фильтра (каталог) - только на странице с фильтрами
       window.addProductApiLink = "mocks/add-product-request.json"; // Ссылка на API добавить товар в заказ - только на странице товара
       window.catalogLink = "index.html"; // Ссылка на страницу каталога - на каждой странице
-      window.listOrders = "https://technolight.pro/api/orders/getforcatalog"; // Ссылка на список заказов
+      window.listOrders = "mocks/get-request-list-orders.json"; // Ссылка на список заказов
+      //- window.listOrders = "https://technolight.pro/api/orders/getforcatalog" // Ссылка на список заказов
 
       // !!! Обрати внимание, что в конце ссылки слэш !!!
       window.searchRequestLink = "https://technolight.pro/api/products/search/"; // Ссылка на API поиска - на каждой странице
 
       window.addToFavoriteLink = "mocks/favorite-request-success.json"; // Ссылка на API добавить товар в избранное
       window.removeFromFavoriteLink = "mocks/favorite-request-success.json"; // Ссылка на API удалить товар из избранного
-      //- window.removeFromFavoriteLink = 'mocks/favorite-request-error.json' // Не переносить! Нужен для теста ошибки запроса
+      //- window.removeFromFavoriteLink = "mocks/favorite-request-error.json" // Не переносить! Нужен для теста ошибки запроса
     </script>
   </head>
   <body class="page-catalog" id="body">
@@ -916,7 +917,7 @@
                     <!-- В data атрибут data-order-id добавляем ID заказа в который будет добавлять товар по умолчанию-->
                     <!-- В data атрибут data-status пишем соответственно: Заказ в резерве - false, Заказ не оформлен - true, Новый заказ - new-->
                     <!-- При первом рендере, всегда ставим в custom-select__value текст Новый заказ, значение data-order-id - пустое, data-status - new-->
-                    <div class="custom-select__value" data-order-id data-status="new">Дешевле</div>
+                    <div class="custom-select__value" data-order-id data-status="new">Новый заказ</div>
                     <div class="custom-select_open"></div>
                   </div>
                   <div class="custom-select__drop">
@@ -931,30 +932,51 @@
                         </label>
                       </li>
                       <li class="custom-select__item custom-select__item--sort">
-                        <label class="custom-select__option" data-order-id="11125678-ord" data-status="true" title="Заказ № 11125678-ord">
+                        <label class="custom-select__option" data-order-id="TLS8000355" data-status="false" title="Заказ № TLS8000355">
                           <input class="invisible" type="radio" name="order" >
-                          <span>Заказ № 11125678-ord</span>
-                          <mark>Заказ не оформлен</mark>
-                        </label>
-                      </li>
-                      <li class="custom-select__item custom-select__item--sort">
-                        <label class="custom-select__option" data-order-id="22225678-ord" data-status="false" title="Заказ № 22225678-ord">
-                          <input class="invisible" type="radio" name="order" >
-                          <span>Заказ № 22225678-ord</span>
+                          <span>Заказ № TLS8000355</span>
                           <mark>В резерве</mark>
                         </label>
                       </li>
                       <li class="custom-select__item custom-select__item--sort">
-                        <label class="custom-select__option" data-order-id="33325678-ord" data-status="true" title="Заказ № 33325678-ord">
+                        <label class="custom-select__option" data-order-id="TL8000602" data-status="false" title="Заказ № TL8000602">
                           <input class="invisible" type="radio" name="order" >
-                          <span>Заказ № 33325678-ord</span>
-                          <mark>Заказ не оформлен</mark>
+                          <span>Заказ № TL8000602</span>
+                          <mark>В резерве</mark>
                         </label>
                       </li>
                       <li class="custom-select__item custom-select__item--sort">
-                        <label class="custom-select__option" data-order-id="44425678-ord" data-status="false" title="Заказ № 44425678-ord">
+                        <label class="custom-select__option" data-order-id="TL8006950" data-status="true" title="Заказ № TL8006950">
                           <input class="invisible" type="radio" name="order" >
-                          <span>Заказ № 44425678-ord</span>
+                          <span>Заказ № TL8006950</span>
+                          <mark>Не оформлен</mark>
+                        </label>
+                      </li>
+                      <li class="custom-select__item custom-select__item--sort">
+                        <label class="custom-select__option" data-order-id="TL8006961" data-status="true" title="Заказ № TL8006961">
+                          <input class="invisible" type="radio" name="order" >
+                          <span>Заказ № TL8006961</span>
+                          <mark>Не оформлен</mark>
+                        </label>
+                      </li>
+                      <li class="custom-select__item custom-select__item--sort">
+                        <label class="custom-select__option" data-order-id="TEST8008844" data-status="true" title="Заказ № TEST8008844">
+                          <input class="invisible" type="radio" name="order" >
+                          <span>Заказ № TEST8008844</span>
+                          <mark>Не оформлен</mark>
+                        </label>
+                      </li>
+                      <li class="custom-select__item custom-select__item--sort">
+                        <label class="custom-select__option" data-order-id="TEST8008847" data-status="false" title="Заказ № TEST8008847">
+                          <input class="invisible" type="radio" name="order" >
+                          <span>Заказ № TEST8008847</span>
+                          <mark>В резерве</mark>
+                        </label>
+                      </li>
+                      <li class="custom-select__item custom-select__item--sort">
+                        <label class="custom-select__option" data-order-id="TEST8008848" data-status="false" title="Заказ № TEST8008848">
+                          <input class="invisible" type="radio" name="order" >
+                          <span>Заказ № TEST8008848</span>
                           <mark>В резерве</mark>
                         </label>
                       </li>
