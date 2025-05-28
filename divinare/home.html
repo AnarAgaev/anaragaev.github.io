@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Главная страница</title>
         <meta name="figma" content="@@figma">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
         <link rel="stylesheet" href="common/bootstrap.css">
         <link rel="stylesheet" href="css/main.min.css">
         <meta name="description" content="">
@@ -21,7 +22,7 @@
 
                     <div class="header_logo">
                         <a href="#">
-                            <img src="images/logo.svg" alt="">
+                            <img src="https://aws.massive.ru/divinare.ru/inc/images/logo.svg" alt="">
                         </a>
                     </div>
 
@@ -653,152 +654,86 @@
             </div>
         </section>
 
-<section class="main_slider">
-    <div class="main_slider_swiper">
+<section class="grandslider">
+    <div class="swiper">
         <div class="swiper-wrapper">
-
             <div class="swiper-slide">
-                <div class="main_slider__video-wrap">
-                    <video loop="" class="media media_desc"
-                        src="https://aws.massive.ru/divinare/sliders/video/Decorato_1903х694.mp4"
-                        poster="https://aws.massive.ru/divinare/sliders/video/Decorato_1903x694.jpg"></video>
-                    <video loop="" class="media media_tab"
-                        src="https://aws.massive.ru/divinare/sliders/video/Decorato_992x362.mp4"
-                        poster="https://aws.massive.ru/divinare/sliders/video/Decorato_992x362.jpg"></video>
-                    <video loop="" class="media media_mob"
-                        src="https://aws.massive.ru/divinare/sliders/video/Decorato_768x768.mp4"
-                        poster="https://aws.massive.ru/divinare/sliders/video/Decorato_768x768.jpg"></video>
-                </div>
-                <!-- Кнопка с текстом для слайда с вдиео -->
-                <div class="main_slider_content main_slider_content_deco">
-                    <div class="main_slider_title">DECORATO.</div>
-                    <div class="main_slider_title">Трековая система на ремнях</div>
-                    <a href="#" class="btn">ПОДРОБНЕЕ</a>
-                </div>
-            </div>
-
-            <!-- Слайд ЧЕРНАЯ ПЯТНИЦА -- START -->
-            <div class="swiper-slide">
-                <div class="main_slider_swiper_img main_slider_swiper_img_black-friday">
-                    <img src="https://divinare.ru/inc/images/sldef.jpg" alt="" class="desk">
-                    <img src="https://divinare.ru/inc/images/sldefm.jpg" alt="" class="mob">
-                    <div class="main_slider_swiper_img_show">
-                        <img src="https://aws.massive.ru/black-friday/ban_div_des.jpeg" alt="" class="desk">
-                        <img src="https://aws.massive.ru/black-friday/ban_div_mob.jpeg" alt="" class="mob">
+                <div class="grandslider__slide">
+                    <div class="grandslider__media">
+                        <video loop="" class="grandslider__video grandslider__video_desc" src="https://aws.massive.ru/divinare.ru/sliders/video/Decorato_1903х694.mp4" poster="https://aws.massive.ru/divinare.ru/sliders/video/Decorato_1903x694.jpg"></video>
+                        <video loop="" class="grandslider__video grandslider__video_tab" src="https://aws.massive.ru/divinare.ru/sliders/video/Decorato_992x362.mp4" poster="https://aws.massive.ru/divinare.ru/sliders/video/Decorato_992x362.jpg"></video>
+                        <video loop="" class="grandslider__video grandslider__video_mob" src="https://aws.massive.ru/divinare.ru/sliders/video/Decorato_768x768.mp4" poster="https://aws.massive.ru/divinare.ru/sliders/video/Decorato_768x768.jpg"></video>
+                    </div>
+                    <div class="grandslider__desc">
+                        <div class="grandslider__content">
+                            <h3>DECORATO</h3>
+                            <p>Трековая система на ремнях</p>
+                            <a href="https://s3files.fandeco.org/link/65bd04b22?mode=view" class="btn" target="_blank">Скачать каталог</a>
+                        </div>
                     </div>
                 </div>
-                <div class="main_slider_content">
-                    <div class="main_slider_title">Черная пятница</div>
-                    <a href="https://divinare.ru/catalog/?sort=ms%7Cprice:desc&sale=1&in_stock=1" class="btn">ПОДРОБНЕЕ</a>
-                </div>
-            </div>
-            <!-- Слайд ЧЕРНАЯ ПЯТНИЦА -- FINISH -->
-
-            <!-- Слайд с видео -- START -->
-            <div class="swiper-slide">
-                <div class="main_slider__video-wrap">
-                    <video loop class="media media_desc" src="media/video-desc.mp4"
-                        poster="https://via.placeholder.com/1903x694/cccccc/000000.jpg?text=Постер+для+десктопа+1903х694"></video>
-                    <video loop class="media media_tab" src="media/video-tab.mp4"
-                        poster="https://via.placeholder.com/992x362/cccccc/000000.jpg?text=Постер+для+планшета+992x362"></video>
-                    <video loop class="media media_mob" src="media/video-mob.mp4"
-                        poster="https://via.placeholder.com/768x768/cccccc/000000.jpg?text=Постер+для+мобильных+768x768"></video>
-                    </video>
-                </div>
             </div>
             <div class="swiper-slide">
-                <div class="main_slider__video-wrap">
-                    <video loop class="media media_desc" src="media/video-desc.mp4"
-                        poster="https://via.placeholder.com/1903x694/cccccc/000000.jpg?text=Постер+для+десктопа+1903х694"></video>
-                    <video loop class="media media_tab" src="media/video-tab.mp4"
-                        poster="https://via.placeholder.com/992x362/cccccc/000000.jpg?text=Постер+для+планшета+992x362"></video>
-                    <video loop class="media media_mob" src="media/video-mob.mp4"
-                        poster="https://via.placeholder.com/768x768/cccccc/000000.jpg?text=Постер+для+мобильных+768x768"></video>
-                    </video>
-                </div>
-            </div>
-            <!-- Слайд с видео -- FINISH -->
-            
-            <div class="swiper-slide">
-                <div class="main_slider_swiper_img">
-                    <img src="https://divinare.ru/inc/images/sldef.jpg" alt="" class="desk">
-                    <img src="https://divinare.ru/inc/images/sldefm.jpg" alt="" class="mob">
-                    <div class="main_slider_swiper_img_show">
-                        <img src="https://9d2c73b6-1b6d-45e9-9faa-7fb794647734.selcdn.net/i/658/446aec8386.jpg" alt=""
-                            class="desk">
-                        <img src="https://9d2c73b6-1b6d-45e9-9faa-7fb794647734.selcdn.net/i/659/a3af2ca073.jpg" alt=""
-                            class="mob">
+                <div class="grandslider__slide">
+                    <div class="grandslider__media">
+                        <img class="grandslider__pic grandslider__pic_desc" src="https://9d2c73b6-1b6d-45e9-9faa-7fb794647734.selcdn.net/i/477/3a055203f1.jpg" alt="">
+                        <img class="grandslider__pic grandslider__pic_mob" src="https://9d2c73b6-1b6d-45e9-9faa-7fb794647734.selcdn.net/i/474/edce8dabfe.jpg" alt="">
+                    </div>
+                    <div class="grandslider__desc">
+                        <div class="grandslider__content">
+                            <h3>Новинки 2024</h3>
+                            <a href="/catalog/?new=1&amp;in_stock=1">Подробнее</a>
+                        </div>
                     </div>
                 </div>
-                <div class="main_slider_content">
-                    <div class="main_slider_title">Новогодние праздники вместе с Divinare</div>
-                    <a href="https://divinare.ru/novosti/novogodnie-prazdniki-vmeste-s-divinare"
-                        class="btn">ПОДРОБНЕЕ</a>
+            </div>
+            <div class="swiper-slide">
+                <div class="grandslider__slide">
+                    <div class="grandslider__media">
+                        <img class="grandslider__pic grandslider__pic_desc" src="https://aws.massive.ru/divinare.ru/inc/images/main_slider/m1.jpg" alt="">
+                        <img class="grandslider__pic grandslider__pic_mob" src="https://aws.massive.ru/divinare.ru/inc/images/main_slider/m1_mob.jpg" alt="">
+                    </div>
+                    <div class="grandslider__desc">
+                        <div class="grandslider__content">
+                            <h3>Каталог Divinare</h3>
+                            <a href="/catalog_brand">Подробнее</a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="main_slider_swiper_img">
-                    <img src="https://divinare.ru/inc/images/sldef.jpg" alt="" class="desk">
-                    <img src="https://divinare.ru/inc/images/sldefm.jpg" alt="" class="mob">
-                    <div class="main_slider_swiper_img_show">
-                        <img src="https://divinare.ru/inc/images/main_slider/m4.png" alt="" class="desk">
-                        <img src="https://divinare.ru/inc/images/main_slider/m4_mob.jpg" alt="" class="mob">
+                <div class="grandslider__slide">
+                    <div class="grandslider__media">
+                        <img class="grandslider__pic grandslider__pic_desc" src="https://aws.massive.ru/divinare.ru/inc/images/main_slider/m3.jpg" alt="">
+                        <img class="grandslider__pic grandslider__pic_mob" src="https://aws.massive.ru/divinare.ru/inc/images/main_slider/m3_mob.jpg" alt="">
                     </div>
-                </div>
-                <div class="main_slider_content">
-                    <div class="main_slider_title">
-                        <span class="ic"><img src="https://divinare.ru/inc/images/cub.svg" alt=""></span>
-                        3D модели
+                    <div class="grandslider__desc">
+                        <div class="grandslider__content">
+                            <h3>Коллекция Chloe</h3>
+                            <a href="/search/?query=chloe">Подробнее</a>
+                        </div>
                     </div>
-                    <a href="/catalog" class="btn">ПОДРОБНЕЕ</a>
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="main_slider_swiper_img">
-                    <img src="https://divinare.ru/inc/images/sldef.jpg" alt="" class="desk">
-                    <img src="https://divinare.ru/inc/images/sldefm.jpg" alt="" class="mob">
-                    <div class="main_slider_swiper_img_show">
-                        <img src="https://divinare.ru/inc/images/main_slider/m1.jpg" alt="" class="desk">
-                        <img src="https://divinare.ru/inc/images/main_slider/m1_mob.jpg" alt="" class="mob">
+                <div class="grandslider__slide">
+                    <div class="grandslider__media">
+                        <img class="grandslider__pic grandslider__pic_desc" src="https://aws.massive.ru/divinare.ru/inc/images/main_slider/m4.png" alt="">
+                        <img class="grandslider__pic grandslider__pic_mob" src="https://aws.massive.ru/divinare.ru/inc/images/main_slider/m4_mob.jpg" alt="">
                     </div>
-                </div>
-                <div class="main_slider_content">
-                    <div class="main_slider_title">Каталог Divinare</div>
-                    <a href="/catalog_brand" class="btn">ПОДРОБНЕЕ</a>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="main_slider_swiper_img">
-                    <img src="https://divinare.ru/inc/images/sldef.jpg" alt="" class="desk">
-                    <img src="https://divinare.ru/inc/images/sldefm.jpg" alt="" class="mob">
-                    <div class="main_slider_swiper_img_show">
-                        <img src="https://divinare.ru/inc/images/main_slider/m2.jpg" alt="" class="desk">
-                        <img src="https://divinare.ru/inc/images/main_slider/m2_mob.jpg" alt="" class="mob">
+                    <div class="grandslider__desc">
+                        <div class="grandslider__content">
+                            <h3>3D модели</h3>
+                            <a href="//s3files.divinare.ru/link/6502df8cd">Скачать 3D модели (2,7 Gb)</a>
+                        </div>
                     </div>
-                </div>
-                <div class="main_slider_content">
-                    <div class="main_slider_title">Уникальный дизайн</div>
-                    <a href="/search/?query=Уникальный+дизайн" class="btn">ПОДРОБНЕЕ</a>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="main_slider_swiper_img">
-                    <img src="https://divinare.ru/inc/images/sldef.jpg" alt="" class="desk">
-                    <img src="https://divinare.ru/inc/images/sldefm.jpg" alt="" class="mob">
-                    <div class="main_slider_swiper_img_show">
-                        <img src="https://divinare.ru/inc/images/main_slider/m3.jpg" alt="" class="desk">
-                        <img src="https://divinare.ru/inc/images/main_slider/m3_mob.jpg" alt="" class="mob">
-                    </div>
-                </div>
-                <div class="main_slider_content">
-                    <div class="main_slider_title">Коллекция Chloe</div>
-                    <a href="/search/?query=chloe" class="btn">ПОДРОБНЕЕ</a>
                 </div>
             </div>
         </div>
-        <div class="swiper-button-next"></div>
+
+        <div class="swiper-pagination"></div>
         <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination1"></div>
+        <div class="swiper-button-next"></div>
     </div>
 </section>
 <section class="new_slider">
@@ -809,16 +744,18 @@
         <div class="new_slider_swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <div class="unit unit_no_store product_modal_2751">
+                    <div class="unit unit_no_store">
                         <div class="element">
-                            <div class="the_marker"><span class="the_marker_el the_marker_el_new"><i>new</i></span></div>
+                            <div class="the_marker">
+                                <span class="the_marker_el the_marker_el_new">
+                                    <i>new</i>
+                                </span>
+                                <span class="the_marker_el the_marker_el_sale">
+                                    <i>sale</i>
+                                </span>
+                            </div>
                             <div class="imgwr">
-                                <a href="/catalog/podvesnyie-svetilniki/5012/06-sp-1">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAKgNzJ7bwAAAABJRU5ErkJggg=="
-                                        data-src="https://divinare.ru/assets/images/products/2751/small/501206-sp-1.jpg?v=1"
-                                        alt="Светильник Divinare LICH 5012/06 SP-1"
-                                        class="lazyload">
-                                </a>
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAKgNzJ7bwAAAABJRU5ErkJggg==" data-src="images/good1.png" alt="" class="lazyload">
                                 <!-- Верстка блока для карточеки с капелькой и/или tv иконкой -->
                                 <div class="card-badges">
                                     <a href="/news-detail.html" class="item item_link item_desc item_tv"></a>
@@ -829,408 +766,9 @@
                             </div>
                             <div class="the_content">
                                 <p class="tit">
-                                    <a href="/catalog/podvesnyie-svetilniki/5012/06-sp-1"></a>
-                                </p>
-                                <p class="article">
-                                    <i class="icon-3d"></i>
-                                    <a href=""><i class="icon-yt"></i></a>
-                                    <a class="link-after-icons" href="#">
-                                        5012/06 SP-1
+                                    <a href="">
+                                        Люстра Arte Lamp Rosaria
                                     </a>
-                                </p>
-                                <div class="d_flex">
-                                    <div class="el el1">
-                                        <div class="on_store">Нет в наличии</div>
-                                    </div>
-                                    <div class="el el2">
-                                        <div class="like_buttons">
-                                            <div class="comparison comparison-default " data-id="2751" data-list="default">
-                                                <button class="btn_link btn_link_weight comparison-add comparison-link" data-text=""></button>
-                                                <button class="btn_link btn_link_weight comparison-remove comparison-link" data-text=""></button>
-                                            </div>
-                                            <span class="favorites favorites-default " data-id="2751">
-                                                 <button class="favorites-add favorites-link btn_link btn_link_like " data-text=""></button>
-                                                 <button class="favorites-remove favorites-link btn_link btn_link_like " data-text=""></button>
-                                            </span>
-                                            <button class="btn_link btn_buy btn_link_add_to_cart"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="d_flex dflex_cost">
-                                    <div class="el el1">
-                                        <div class="the_cost">
-                                            <p data-price="7490">7 490 р.</p>
-                                        </div>
-                                    </div>
-                                    <div class="el el2">
-                                        <form method="post" class="ms2_form">
-                                            <input type="hidden" name="id" value="2751">
-                                            <input type="hidden" name="article" value="5012/06 SP-1">
-                                            <input type="hidden" name="name" value="Светильник  LICH ">
-                                            <input type="hidden" name="price" value="7490">
-                                            <input type="hidden" name="old_price" value="0">
-                                            <input type="hidden" name="sale" value="0">
-                                            <input type="hidden" name="new" value="1">
-                                            <input type="hidden" name="url" value="/catalog/podvesnyie-svetilniki/5012/06-sp-1">
-                                            <input type="hidden" name="thumb" value="https://divinare.ru/assets/images/products/2751/small/501206-sp-1.jpg">
-                                            <input type="hidden" name="count" value="1">
-                                            <button class="btn_buy" type="submit" name="ms2_action" value="cart/add" data-toggle="modal" data-target="#one_click">Купить</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="unit product_modal_2977 ">
-                        <div class="element">
-                            <div class="the_marker"><span class="the_marker_el the_marker_el_new"><i>new</i></span></div>
-                            <div class="imgwr">
-                                <a href="/catalog/lyustryi/podvesnyie-lyustryi/2654/17-lm-9">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAKgNzJ7bwAAAABJRU5ErkJggg=="
-                                        data-src="https://divinare.ru/assets/images/products/2977/small/265417-lm-9.jpg?v=1"
-                                        alt="Люстра подвесная Divinare BAROLO 2654/17 LM-9"
-                                        class="lazyload">
-                                </a>
-                                <!-- Верстка блока для карточеки с капелькой и/или tv иконкой -->
-                                <div class="card-badges">
-                                    <div class="item item_def item_desc item_tv"></div><div class="item item_def item_mob item_tv"></div>
-                                    <div class="item item_def item_desc item_wd"></div><div class="item item_def item_mob item_wd"></div>
-                                </div>
-                            </div>
-                            <div class="the_content">
-                                <p class="tit">
-                                    <a href="/catalog/lyustryi/podvesnyie-lyustryi/2654/17-lm-9"></a>
-                                </p>
-                                <p class="article">
-                                    <i class="icon-3d"></i>
-                                    <a href="/catalog/lyustryi/podvesnyie-lyustryi/2654/17-lm-9">2654/17 LM-9</a>
-                                </p>
-                                <div class="d_flex">
-                                    <div class="el el1">
-                                        <div class="on_store">В наличии: 41 шт.</div>
-                                    </div>
-                                    <div class="el el2">
-                                        <div class="like_buttons">
-                                            <div class="comparison comparison-default " data-id="2977" data-list="default">
-                                                <button class="btn_link btn_link_weight comparison-add comparison-link" data-text=""></button>
-                                                <button class="btn_link btn_link_weight comparison-remove comparison-link" data-text=""></button>
-                                            </div>
-                                            <span class="favorites favorites-default " data-id="2977">
-                                                 <button class="favorites-add favorites-link btn_link btn_link_like " data-text=""></button>
-                                                 <button class="favorites-remove favorites-link btn_link btn_link_like " data-text=""></button>
-                                            </span>
-                                            <button class="btn_link btn_buy btn_link_add_to_cart"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="d_flex dflex_cost">
-                                    <div class="el el1">
-                                        <div class="the_cost">
-                                            <p data-price="44990">44 990 р.</p>
-                                        </div>
-                                    </div>
-                                    <div class="el el2">
-                                        <form method="post" class="ms2_form">
-                                            <input type="hidden" name="id" value="2977">
-                                            <input type="hidden" name="article" value="2654/17 LM-9">
-                                            <input type="hidden" name="name" value="Люстра подвесная  BAROLO ">
-                                            <input type="hidden" name="price" value="44990">
-                                            <input type="hidden" name="old_price" value="0">
-                                            <input type="hidden" name="sale" value="0">
-                                            <input type="hidden" name="new" value="1">
-                                            <input type="hidden" name="url" value="/catalog/lyustryi/podvesnyie-lyustryi/2654/17-lm-9">
-                                            <input type="hidden" name="thumb" value="https://divinare.ru/assets/images/products/2977/small/265417-lm-9.jpg">
-                                            <input type="hidden" name="count" value="1">
-                                            <button class="btn_buy" type="submit" name="ms2_action" value="cart/add" data-toggle="modal" data-target="#one_click">Купить</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="unit product_modal_3018">
-                        <div class="element">
-                            <div class="the_marker"><span class="the_marker_el the_marker_el_new"><i>new</i></span></div>
-                            <div class="imgwr">
-                                <a href="/catalog/nastennyie-svetilniki-i-bra/bra/3132/26-ap-3">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAKgNzJ7bwAAAABJRU5ErkJggg=="
-                                        data-src="https://divinare.ru/assets/images/products/3018/small/313226-ap-3.jpg?v=1"
-                                        alt="Бра Divinare SALICE 3132/26 AP-3" class="lazyload">
-                                </a>
-                                <!-- Верстка блока для карточеки с капелькой и/или tv иконкой -->
-                                <div class="card-badges">
-                                    <div class="item item_def item_desc item_tv"></div><div class="item item_def item_mob item_tv"></div>
-                                    <div class="item item_def item_desc item_wd"></div><div class="item item_def item_mob item_wd"></div>
-                                </div>
-                            </div>
-                            <div class="the_content">
-                                <p class="tit">
-                                    <a href="/catalog/nastennyie-svetilniki-i-bra/bra/3132/26-ap-3"></a>
-                                </p>
-                                <p class="article">
-                                    <i class="icon-3d"></i>
-                                    <a href="/catalog/nastennyie-svetilniki-i-bra/bra/3132/26-ap-3">3132/26 AP-3</a>
-                                </p>
-                                <div class="d_flex">
-                                    <div class="el el1">
-                                        <div class="on_store">В наличии: 30 шт.</div>
-                                    </div>
-                                    <div class="el el2">
-                                        <div class="like_buttons">
-                                            <div class="comparison comparison-default " data-id="3018" data-list="default">
-                                                <button class="btn_link btn_link_weight comparison-add comparison-link" data-text=""></button>
-                                                <button class="btn_link btn_link_weight comparison-remove comparison-link" data-text=""></button>
-                                            </div>
-                                            <span class="favorites favorites-default " data-id="3018">
-                                                 <button class="favorites-add favorites-link btn_link btn_link_like " data-text=""></button>
-                                                 <button class="favorites-remove favorites-link btn_link btn_link_like " data-text=""></button>
-                                            </span>
-                                            <button class="btn_link btn_buy btn_link_add_to_cart"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="d_flex dflex_cost">
-                                    <div class="el el1">
-                                        <div class="the_cost">
-                                            <p data-price="11990">11 990 р.</p>
-                                        </div>
-                                    </div>
-                                    <div class="el el2">
-                                        <form method="post" class="ms2_form">
-                                            <input type="hidden" name="id" value="3018">
-                                            <input type="hidden" name="article" value="3132/26 AP-3">
-                                            <input type="hidden" name="name" value="Бра  SALICE ">
-                                            <input type="hidden" name="price" value="11990">
-                                            <input type="hidden" name="old_price" value="0">
-                                            <input type="hidden" name="sale" value="0">
-                                            <input type="hidden" name="new" value="1">
-                                            <input type="hidden" name="url" value="/catalog/nastennyie-svetilniki-i-bra/bra/3132/26-ap-3">
-                                            <input type="hidden" name="thumb" value="https://divinare.ru/assets/images/products/3018/small/313226-ap-3.jpg">
-                                            <input type="hidden" name="count" value="1">
-                                            <button class="btn_buy" type="submit" name="ms2_action" value="cart/add" data-toggle="modal" data-target="#one_click">Купить</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="unit product_modal_3019 ">
-                        <div class="element">
-                            <div class="the_marker"><span class="the_marker_el the_marker_el_new"><i>new</i></span></div>
-                            <div class="imgwr">
-                                <a href="/catalog/lyustryi/podvesnyie-lyustryi/2654/17-lm-6">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAKgNzJ7bwAAAABJRU5ErkJggg=="
-                                        data-src="https://divinare.ru/assets/images/products/3019/small/265417-lm-6.jpg?v=1"
-                                        alt="Люстра подвесная Divinare BAROLO 2654/17 LM-6" class="lazyload">
-                                </a>
-                            </div>
-                            <div class="the_content">
-                                <p class="tit">
-                                    <a href="/catalog/lyustryi/podvesnyie-lyustryi/2654/17-lm-6"></a>
-                                </p>
-                                <p class="article">
-                                    <i class="icon-3d"></i>
-                                    <a href="/catalog/lyustryi/podvesnyie-lyustryi/2654/17-lm-6">2654/17 LM-6</a>
-                                </p>
-                                <div class="d_flex">
-                                    <div class="el el1">
-                                        <div class="on_store">В наличии: 69 шт.</div>
-                                    </div>
-                                    <div class="el el2">
-                                        <div class="like_buttons">
-                                            <div class="comparison comparison-default " data-id="3019" data-list="default">
-                                                <button class="btn_link btn_link_weight comparison-add comparison-link" data-text=""></button>
-                                                <button class="btn_link btn_link_weight comparison-remove comparison-link" data-text=""></button>
-                                            </div>
-                                            <span class="favorites favorites-default " data-id="3019">
-                                                 <button class="favorites-add favorites-link btn_link btn_link_like " data-text=""></button>
-                                                 <button class="favorites-remove favorites-link btn_link btn_link_like " data-text=""></button>
-                                            </span>
-                                            <button class="btn_link btn_buy btn_link_add_to_cart"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="d_flex dflex_cost">
-                                    <div class="el el1">
-                                        <div class="the_cost">
-                                            <p data-price="32990">32 990 р.</p>
-                                        </div>
-                                    </div>
-                                    <div class="el el2">
-                                        <form method="post" class="ms2_form">
-                                            <input type="hidden" name="id" value="3019">
-                                            <input type="hidden" name="article" value="2654/17 LM-6">
-                                            <input type="hidden" name="name" value="Люстра подвесная  BAROLO ">
-                                            <input type="hidden" name="price" value="32990">
-                                            <input type="hidden" name="old_price" value="0">
-                                            <input type="hidden" name="sale" value="0">
-                                            <input type="hidden" name="new" value="1">
-                                            <input type="hidden" name="url" value="/catalog/lyustryi/podvesnyie-lyustryi/2654/17-lm-6">
-                                            <input type="hidden" name="thumb" value="https://divinare.ru/assets/images/products/3019/small/265417-lm-6.jpg">
-                                            <input type="hidden" name="count" value="1">
-                                            <button class="btn_buy" type="submit" name="ms2_action" value="cart/add" data-toggle="modal" data-target="#one_click">Купить</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="unit product_modal_3023 ">
-                        <div class="element">
-                            <div class="the_marker"><span class="the_marker_el the_marker_el_new"><i>new</i></span></div>
-                            <div class="imgwr">
-                                <a href="/catalog/lyustryi/podvesnyie-lyustryi/3132/26-sp-10">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAKgNzJ7bwAAAABJRU5ErkJggg=="
-                                        data-src="https://divinare.ru/assets/images/products/3023/small/313226-sp-10.jpg?v=1"
-                                        alt="Люстра Divinare SALICE 3132/26 SP-10" class="lazyload">
-                                </a>
-                                <!-- Верстка блока для карточеки с капелькой и/или tv иконкой -->
-                                <div class="card-badges">
-                                    <div class="item item_def item_desc item_tv"></div><div class="item item_def item_mob item_tv"></div>
-                                    <div class="item item_def item_desc item_wd"></div><div class="item item_def item_mob item_wd"></div>
-                                </div>
-                            </div>
-                            <div class="the_content">
-                                <p class="tit">
-                                    <a href="/catalog/lyustryi/podvesnyie-lyustryi/3132/26-sp-10"></a>
-                                </p>
-                                <p class="article">
-                                    <i class="icon-3d"></i>
-                                    <a href="/catalog/lyustryi/podvesnyie-lyustryi/3132/26-sp-10">3132/26 SP-10</a>
-                                </p>
-                                <div class="d_flex">
-                                    <div class="el el1">
-                                        <div class="on_store">В наличии: 2 шт.</div>
-                                    </div>
-                                    <div class="el el2">
-                                        <div class="like_buttons">
-                                            <div class="comparison comparison-default " data-id="3023" data-list="default">
-                                                <button class="btn_link btn_link_weight comparison-add comparison-link" data-text=""></button>
-                                                <button class="btn_link btn_link_weight comparison-remove comparison-link" data-text=""></button>
-                                            </div>
-                                            <span class="favorites favorites-default " data-id="3023">
-                                                 <button class="favorites-add favorites-link btn_link btn_link_like " data-text=""></button>
-                                                 <button class="favorites-remove favorites-link btn_link btn_link_like " data-text=""></button>
-                                            </span>
-                                            <button class="btn_link btn_buy btn_link_add_to_cart"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="d_flex dflex_cost">
-                                    <div class="el el1">
-                                        <div class="the_cost">
-                                            <p data-price="80990">80 990 р.</p>
-                                        </div>
-                                    </div>
-                                    <div class="el el2">
-                                        <form method="post" class="ms2_form">
-                                            <input type="hidden" name="id" value="3023">
-                                            <input type="hidden" name="article" value="3132/26 SP-10">
-                                            <input type="hidden" name="name" value="Люстра  SALICE ">
-                                            <input type="hidden" name="price" value="80990">
-                                            <input type="hidden" name="old_price" value="0">
-                                            <input type="hidden" name="sale" value="0">
-                                            <input type="hidden" name="new" value="1">
-                                            <input type="hidden" name="url" value="/catalog/lyustryi/podvesnyie-lyustryi/3132/26-sp-10">
-                                            <input type="hidden" name="thumb" value="https://divinare.ru/assets/images/products/3023/small/313226-sp-10.jpg">
-                                            <input type="hidden" name="count" value="1">
-                                            <button class="btn_buy" type="submit" name="ms2_action" value="cart/add" data-toggle="modal" data-target="#one_click">Купить</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="unit product_modal_3051">
-                        <div class="element">
-                            <div class="the_marker"><span class="the_marker_el the_marker_el_new"><i>new</i></span></div>
-                            <div class="imgwr">
-                                <a href="/catalog/lyustryi/podvesnyie-lyustryi/2654/17-lm-12">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAKgNzJ7bwAAAABJRU5ErkJggg=="
-                                        data-src="https://divinare.ru/assets/images/products/3051/small/265417-lm-12.jpg?v=1"
-                                        alt="Люстра подвесная Divinare BAROLO 2654/17 LM-12" class="lazyload">
-                                </a>
-                                <!-- Верстка блока для карточеки с капелькой и/или tv иконкой -->
-                                <div class="card-badges">
-                                    <div class="item item_def item_desc item_tv"></div><div class="item item_def item_mob item_tv"></div>
-                                    <div class="item item_def item_desc item_wd"></div><div class="item item_def item_mob item_wd"></div>
-                                </div>
-                            </div>
-                            <div class="the_content">
-                                <p class="tit">
-                                    <a href="/catalog/lyustryi/podvesnyie-lyustryi/2654/17-lm-12"></a>
-                                </p>
-                                <p class="article">
-                                    <i class="icon-3d"></i>
-                                    <a href="/catalog/lyustryi/podvesnyie-lyustryi/2654/17-lm-12">2654/17 LM-12</a>
-                                </p>
-                                <div class="d_flex">
-                                    <div class="el el1">
-                                        <div class="on_store">В наличии: 41 шт.</div>
-                                    </div>
-                                    <div class="el el2">
-                                        <div class="like_buttons">
-                                            <div class="comparison comparison-default " data-id="3051" data-list="default">
-                                                <button class="btn_link btn_link_weight comparison-add comparison-link" data-text=""></button>
-                                                <button class="btn_link btn_link_weight comparison-remove comparison-link" data-text=""></button>
-                                            </div>
-                                            <span class="favorites favorites-default " data-id="3051">
-                                                 <button class="favorites-add favorites-link btn_link btn_link_like " data-text=""></button>
-                                                 <button class="favorites-remove favorites-link btn_link btn_link_like " data-text=""></button>
-                                            </span>
-                                            <button class="btn_link btn_buy btn_link_add_to_cart"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="d_flex dflex_cost">
-                                    <div class="el el1">
-                                        <div class="the_cost">
-                                            <p data-price="68990">68 990 р.</p>
-                                        </div>
-                                    </div>
-                                    <div class="el el2">
-                                        <form method="post" class="ms2_form">
-                                            <input type="hidden" name="id" value="3051">
-                                            <input type="hidden" name="article" value="2654/17 LM-12">
-                                            <input type="hidden" name="name" value="Люстра подвесная  BAROLO ">
-                                            <input type="hidden" name="price" value="68990">
-                                            <input type="hidden" name="old_price" value="0">
-                                            <input type="hidden" name="sale" value="0">
-                                            <input type="hidden" name="new" value="1">
-                                            <input type="hidden" name="url" value="/catalog/lyustryi/podvesnyie-lyustryi/2654/17-lm-12">
-                                            <input type="hidden" name="thumb" value="https://divinare.ru/assets/images/products/3051/small/265417-lm-12.jpg">
-                                            <input type="hidden" name="count" value="1">
-                                            <button class="btn_buy" type="submit" name="ms2_action" value="cart/add" data-toggle="modal" data-target="#one_click">Купить</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide unit_double">
-                    <div class="unit product_modal_3057 ">
-                        <div class="element">
-                            <div class="the_marker"><span class="the_marker_el the_marker_el_new"><i>new</i></span></div>
-                            <div class="imgwr">
-                                <a href="/catalog/nastennyie-svetilniki-i-bra/bra/2654/17-ap-1">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAKgNzJ7bwAAAABJRU5ErkJggg=="
-                                        data-src="https://divinare.ru/assets/images/products/3057/265417-ap-1.jpg?v=1"
-                                        alt="Бра Divinare BAROLO 2654/17 AP-1" class="lazyload">
-                                </a>
-                                <!-- Верстка блока для карточеки с капелькой и/или tv иконкой -->
-                                <div class="card-badges">
-                                    <div class="item item_def item_desc item_tv"></div><div class="item item_def item_mob item_tv"></div>
-                                    <div class="item item_def item_desc item_wd"></div><div class="item item_def item_mob item_wd"></div>
-                                </div>
-                            </div>
-                            <div class="the_content">
-                                <p class="tit">
-                                    <a href="/catalog/nastennyie-svetilniki-i-bra/bra/2654/17-ap-1"></a>
                                 </p>
                                 <p class="article">
                                     <i class="icon-3d"></i>
@@ -1241,42 +779,99 @@
                                 </p>
                                 <div class="d_flex">
                                     <div class="el el1">
-                                        <div class="on_store">В наличии: 53 шт.</div>
+                                        <div class="on_store">
+                                            Нет в наличии
+                                        </div>
                                     </div>
                                     <div class="el el2">
                                         <div class="like_buttons">
-                                            <div class="comparison comparison-default " data-id="3057" data-list="default">
-                                                <button class="btn_link btn_link_weight comparison-add comparison-link" data-text=""></button>
-                                                <button class="btn_link btn_link_weight comparison-remove comparison-link" data-text=""></button>
-                                            </div>
-                                            <span class="favorites favorites-default " data-id="3057">
-                                                 <button class="favorites-add favorites-link btn_link btn_link_like " data-text=""></button>
-                                                 <button class="favorites-remove favorites-link btn_link btn_link_like " data-text=""></button>
-                                            </span>
-                                            <button class="btn_link btn_buy btn_link_add_to_cart"></button>
+                                            <button class="btn_link btn_link_weight" data-toggle="modal"
+                                                data-target="#compare"></button>
+                                            <button class="btn_link btn_link_like active" data-toggle="modal"
+                                                data-target="#liked">
+                                                <span class="the_val">99</span>
+                                            </button>
+                                            <button class="btn_link btn_buy" data-toggle="modal"
+                                                data-target="#good_cart"></button>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="d_flex dflex_cost">
                                     <div class="el el1">
                                         <div class="the_cost">
-                                            <p data-price="6990">6 990 р.</p>
+                                            <p>1 454 120 р.</p>
+                                            <del style="display: none;">1 458 120 р.</del>
                                         </div>
                                     </div>
                                     <div class="el el2">
-                                        <form method="post" class="ms2_form">
-                                            <input type="hidden" name="id" value="3057">
-                                            <input type="hidden" name="article" value="2654/17 AP-1">
-                                            <input type="hidden" name="name" value="Бра  BAROLO ">
-                                            <input type="hidden" name="price" value="6990">
-                                            <input type="hidden" name="old_price" value="0">
-                                            <input type="hidden" name="sale" value="0">
-                                            <input type="hidden" name="new" value="1">
-                                            <input type="hidden" name="url" value="/catalog/nastennyie-svetilniki-i-bra/bra/2654/17-ap-1">
-                                            <input type="hidden" name="thumb" value="https://divinare.ru/assets/images/products/3057/small/265417-ap-1.jpg">
-                                            <input type="hidden" name="count" value="1">
-                                            <button class="btn_buy" type="submit" name="ms2_action" value="cart/add" data-toggle="modal" data-target="#one_click">Купить</button>
-                                        </form>
+                                        <button class="btn_buy" data-toggle="modal" data-target="#good_cart">
+                                            Купить
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="unit">
+                        <div class="element">
+                            <div class="the_marker">
+                                <span class="the_marker_el the_marker_el_new">
+                                    <i>new</i>
+                                </span>
+                                <span class="the_marker_el the_marker_el_sale">
+                                    <i>sale</i>
+                                </span>
+                            </div>
+                            <div class="imgwr">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAKgNzJ7bwAAAABJRU5ErkJggg==" data-src="images/good1.png" alt="" class="lazyload">
+                                <!-- Верстка блока для карточеки с капелькой и/или tv иконкой -->
+                                <div class="card-badges">
+                                    <div class="item item_def item_desc item_tv"></div><div class="item item_def item_mob item_tv"></div>
+                                    <div class="item item_def item_desc item_wd"></div><div class="item item_def item_mob item_wd"></div>
+                                </div>
+                            </div>
+                            <div class="the_content">
+                                <p class="tit">
+                                    <a href="">
+                                        Люстра Arte Lamp Rosaria
+                                    </a>
+                                </p>
+                                <p class="article">
+                                    <i class="icon-3d"></i>
+                                    <a href="">
+                                        A8564PL-5RB
+                                    </a>
+                                </p>
+                                <div class="d_flex">
+                                    <div class="el el1">
+                                        <div class="on_store">
+                                            В наличии: 3000 шт.
+                                        </div>
+                                    </div>
+                                    <div class="el el2">
+                                        <div class="like_buttons">
+                                            <button class="btn_link btn_link_weight" data-toggle="modal"
+                                                data-target="#compare"></button>
+                                            <button class="btn_link btn_link_like active" data-toggle="modal"
+                                                data-target="#liked">
+                                                <span class="the_val">99</span>
+                                            </button>
+                                            <button class="btn_link btn_buy" data-toggle="modal"
+                                                data-target="#good_cart"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d_flex dflex_cost">
+                                    <div class="el el1">
+                                        <div class="the_cost">
+                                            <p>1 454 120 р.</p>
+                                            <del>1 458 120 р.</del>
+                                        </div>
+                                    </div>
+                                    <div class="el el2">
+                                        <button class="btn_buy" data-toggle="modal" data-target="#good_cart">
+                                            Купить
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -1284,15 +879,18 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="unit product_modal_3082 ">
+                    <div class="unit">
                         <div class="element">
-                            <div class="the_marker"><span class="the_marker_el the_marker_el_new"><i>new</i></span></div>
+                            <div class="the_marker">
+                                <span class="the_marker_el the_marker_el_new">
+                                    <i>new</i>
+                                </span>
+                                <span class="the_marker_el the_marker_el_sale">
+                                    <i>sale</i>
+                                </span>
+                            </div>
                             <div class="imgwr">
-                                <a href="/catalog/nastennyie-svetilniki-i-bra/bra/4504/17-ap-1">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAKgNzJ7bwAAAABJRU5ErkJggg=="
-                                        data-src="https://divinare.ru/assets/images/products/3082/small/450417-ap-1.jpg?v=1"
-                                        alt="Бра Divinare FAWARIS 4504/17 AP-1" class="lazyload">
-                                </a>
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAKgNzJ7bwAAAABJRU5ErkJggg==" data-src="images/good1.png" alt="" class="lazyload">
                                 <!-- Верстка блока для карточеки с капелькой и/или tv иконкой -->
                                 <div class="card-badges">
                                     <div class="item item_def item_desc item_tv"></div><div class="item item_def item_mob item_tv"></div>
@@ -1301,64 +899,63 @@
                             </div>
                             <div class="the_content">
                                 <p class="tit">
-                                    <a href="/catalog/nastennyie-svetilniki-i-bra/bra/4504/17-ap-1"></a>
+                                    <a href="">
+                                        Люстра Arte Lamp Rosaria
+                                    </a>
                                 </p>
                                 <p class="article">
                                     <i class="icon-3d"></i>
-                                    <a href="/catalog/nastennyie-svetilniki-i-bra/bra/4504/17-ap-1">4504/17 AP-1</a>
+                                    <a href="">
+                                        A8564PL-5RB
+                                    </a>
                                 </p>
                                 <div class="d_flex">
                                     <div class="el el1">
-                                        <div class="on_store">В наличии: 79 шт.</div>
+                                        <div class="on_store">
+                                            В наличии: 3000 шт.
+                                        </div>
                                     </div>
                                     <div class="el el2">
                                         <div class="like_buttons">
-                                            <div class="comparison comparison-default " data-id="3082" data-list="default">
-                                                <button class="btn_link btn_link_weight comparison-add comparison-link" data-text=""></button>
-                                                <button class="btn_link btn_link_weight comparison-remove comparison-link" data-text=""></button>
-                                            </div>
-                                            <span class="favorites favorites-default " data-id="3082">
-                                                 <button class="favorites-add favorites-link btn_link btn_link_like " data-text=""></button>
-                                                 <button class="favorites-remove favorites-link btn_link btn_link_like " data-text=""></button>
-                                            </span>
-                                            <button class="btn_link btn_buy btn_link_add_to_cart"></button>
+                                            <button class="btn_link btn_link_weight" data-toggle="modal"
+                                                data-target="#compare"></button>
+                                            <button class="btn_link btn_link_like active" data-toggle="modal"
+                                                data-target="#liked">
+                                                <span class="the_val">99</span>
+                                            </button>
+                                            <button class="btn_link btn_buy" data-toggle="modal"
+                                                data-target="#good_cart"></button>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="d_flex dflex_cost">
                                     <div class="el el1">
                                         <div class="the_cost">
-                                            <p data-price="4990">4 990 р.</p>
+                                            <p>1 454 120 р.</p>
+                                            <del>1 458 120 р.</del>
                                         </div>
                                     </div>
                                     <div class="el el2">
-                                        <form method="post" class="ms2_form">
-                                            <input type="hidden" name="id" value="3082">
-                                            <input type="hidden" name="article" value="4504/17 AP-1">
-                                            <input type="hidden" name="name" value="Бра  FAWARIS ">
-                                            <input type="hidden" name="price" value="4990">
-                                            <input type="hidden" name="old_price" value="0">
-                                            <input type="hidden" name="sale" value="0">
-                                            <input type="hidden" name="new" value="1">
-                                            <input type="hidden" name="url" value="/catalog/nastennyie-svetilniki-i-bra/bra/4504/17-ap-1">
-                                            <input type="hidden" name="thumb" value="https://divinare.ru/assets/images/products/3082/small/450417-ap-1.jpg">
-                                            <input type="hidden" name="count" value="1">
-                                            <button class="btn_buy" type="submit" name="ms2_action" value="cart/add" data-toggle="modal" data-target="#one_click">Купить</button>
-                                        </form>
+                                        <button class="btn_buy" data-toggle="modal" data-target="#good_cart">
+                                            Купить
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="unit product_modal_3085 ">
+                    <div class="unit">
                         <div class="element">
-                            <div class="the_marker"><span class="the_marker_el the_marker_el_new"><i>new</i></span></div>
+                            <div class="the_marker">
+                                <span class="the_marker_el the_marker_el_new">
+                                    <i>new</i>
+                                </span>
+                                <span class="the_marker_el the_marker_el_sale">
+                                    <i>sale</i>
+                                </span>
+                            </div>
                             <div class="imgwr">
-                                <a href="/catalog/lyustryi/podvesnyie-lyustryi/3509/01-lm-12">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAKgNzJ7bwAAAABJRU5ErkJggg=="
-                                        data-src="https://divinare.ru/assets/images/products/3085/small/350901-lm-12.jpg?v=1"
-                                        alt="Люстра Divinare CABRERA 3509/01 LM-12" class="lazyload">
-                                </a>
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAKgNzJ7bwAAAABJRU5ErkJggg==" data-src="images/good1.png" alt="" class="lazyload">
                                 <!-- Верстка блока для карточеки с капелькой и/или tv иконкой -->
                                 <div class="card-badges">
                                     <div class="item item_def item_desc item_tv"></div><div class="item item_def item_mob item_tv"></div>
@@ -1367,184 +964,46 @@
                             </div>
                             <div class="the_content">
                                 <p class="tit">
-                                    <a href="/catalog/lyustryi/podvesnyie-lyustryi/3509/01-lm-12"></a>
+                                    <a href="">
+                                        Люстра Arte Lamp Rosaria
+                                    </a>
                                 </p>
                                 <p class="article">
                                     <i class="icon-3d"></i>
-                                    <a href="/catalog/lyustryi/podvesnyie-lyustryi/3509/01-lm-12">3509/01 LM-12</a>
+                                    <a href="">
+                                        A8564PL-5RB
+                                    </a>
                                 </p>
                                 <div class="d_flex">
                                     <div class="el el1">
-                                        <div class="on_store">В наличии: 42 шт.</div>
+                                        <div class="on_store">
+                                            В наличии: 3000 шт.
+                                        </div>
                                     </div>
                                     <div class="el el2">
                                         <div class="like_buttons">
-                                            <div class="comparison comparison-default " data-id="3085" data-list="default">
-                                                <button class="btn_link btn_link_weight comparison-add comparison-link" data-text=""></button>
-                                                <button class="btn_link btn_link_weight comparison-remove comparison-link" data-text=""></button>
-                                            </div>
-                                            <span class="favorites favorites-default " data-id="3085">
-                                                 <button class="favorites-add favorites-link btn_link btn_link_like " data-text=""></button>
-                                                 <button class="favorites-remove favorites-link btn_link btn_link_like " data-text=""></button>
-                                            </span>
-                                            <button class="btn_link btn_buy btn_link_add_to_cart"></button>
+                                            <button class="btn_link btn_link_weight" data-toggle="modal"
+                                                data-target="#compare"></button>
+                                            <button class="btn_link btn_link_like active" data-toggle="modal"
+                                                data-target="#liked">
+                                                <span class="the_val">99</span>
+                                            </button>
+                                            <button class="btn_link btn_buy" data-toggle="modal"
+                                                data-target="#good_cart"></button>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="d_flex dflex_cost">
                                     <div class="el el1">
                                         <div class="the_cost">
-                                            <p data-price="108000">108 000 р.</p>
+                                            <p>1 454 120 р.</p>
+                                            <del>1 458 120 р.</del>
                                         </div>
                                     </div>
                                     <div class="el el2">
-                                        <form method="post" class="ms2_form">
-                                            <input type="hidden" name="id" value="3085">
-                                            <input type="hidden" name="article" value="3509/01 LM-12">
-                                            <input type="hidden" name="name" value="Люстра  CABRERA ">
-                                            <input type="hidden" name="price" value="108000">
-                                            <input type="hidden" name="old_price" value="0">
-                                            <input type="hidden" name="sale" value="0">
-                                            <input type="hidden" name="new" value="1">
-                                            <input type="hidden" name="url" value="/catalog/lyustryi/podvesnyie-lyustryi/3509/01-lm-12">
-                                            <input type="hidden" name="thumb" value="https://divinare.ru/assets/images/products/3085/small/350901-lm-12.jpg">
-                                            <input type="hidden" name="count" value="1">
-                                            <button class="btn_buy" type="submit" name="ms2_action" value="cart/add" data-toggle="modal" data-target="#one_click">Купить</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="unit product_modal_3086">
-                        <div class="element">
-                            <div class="the_marker"><span class="the_marker_el the_marker_el_new"><i>new</i></span></div>
-                            <div class="imgwr">
-                                <a href="/catalog/lyustryi/potolochnyie-lyustryi/4504/17-lm-8">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAKgNzJ7bwAAAABJRU5ErkJggg=="
-                                        data-src="https://divinare.ru/assets/images/products/3086/small/450417-lm-8.jpg?v=1"
-                                        alt="Люстра Divinare FAWARIS 4504/17 LM-8" class="lazyload">
-                                </a>
-                                <!-- Верстка блока для карточеки с капелькой и/или tv иконкой -->
-                                <div class="card-badges">
-                                    <div class="item item_def item_desc item_tv"></div><div class="item item_def item_mob item_tv"></div>
-                                    <div class="item item_def item_desc item_wd"></div><div class="item item_def item_mob item_wd"></div>
-                                </div>
-                            </div>
-                            <div class="the_content">
-                                <p class="tit">
-                                    <a href="/catalog/lyustryi/potolochnyie-lyustryi/4504/17-lm-8"></a>
-                                </p>
-                                <p class="article">
-                                    <i class="icon-3d"></i>
-                                    <a href="/catalog/lyustryi/potolochnyie-lyustryi/4504/17-lm-8">4504/17 LM-8</a>
-                                </p>
-                                <div class="d_flex">
-                                    <div class="el el1">
-                                        <div class="on_store">В наличии: 87 шт.</div>
-                                    </div>
-                                    <div class="el el2">
-                                        <div class="like_buttons">
-                                            <div class="comparison comparison-default " data-id="3086" data-list="default">
-                                                <button class="btn_link btn_link_weight comparison-add comparison-link" data-text=""></button>
-                                                <button class="btn_link btn_link_weight comparison-remove comparison-link" data-text=""></button>
-                                            </div>
-                                            <span class="favorites favorites-default " data-id="3086">
-                                                 <button class="favorites-add favorites-link btn_link btn_link_like " data-text=""></button>
-                                                 <button class="favorites-remove favorites-link btn_link btn_link_like " data-text=""></button>
-                                            </span>
-                                            <button class="btn_link btn_buy btn_link_add_to_cart"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="d_flex dflex_cost">
-                                    <div class="el el1">
-                                        <div class="the_cost">
-                                            <p data-price="32990">32 990 р.</p>
-                                        </div>
-                                    </div>
-                                    <div class="el el2">
-                                        <form method="post" class="ms2_form">
-                                            <input type="hidden" name="id" value="3086">
-                                            <input type="hidden" name="article" value="4504/17 LM-8">
-                                            <input type="hidden" name="name" value="Люстра  FAWARIS ">
-                                            <input type="hidden" name="price" value="32990">
-                                            <input type="hidden" name="old_price" value="0">
-                                            <input type="hidden" name="sale" value="0">
-                                            <input type="hidden" name="new" value="1">
-                                            <input type="hidden" name="url" value="/catalog/lyustryi/potolochnyie-lyustryi/4504/17-lm-8">
-                                            <input type="hidden" name="thumb" value="https://divinare.ru/assets/images/products/3086/small/450417-lm-8.jpg">
-                                            <input type="hidden" name="count" value="1">
-                                            <button class="btn_buy" type="submit" name="ms2_action" value="cart/add" data-toggle="modal" data-target="#one_click">Купить</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="unit product_modal_3093 ">
-                        <div class="element">
-                            <div class="the_marker"><span class="the_marker_el the_marker_el_new"><i>new</i></span></div>
-                            <div class="imgwr">
-                                <a href="/catalog/nastennyie-svetilniki-i-bra/bra/3509/01-ap-2">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAKgNzJ7bwAAAABJRU5ErkJggg=="
-                                        data-src="https://divinare.ru/assets/images/products/3093/small/350901-ap-2.jpg?v=1"
-                                        alt="Бра Divinare CABRERA 3509/01 AP-2" class="lazyload">
-                                </a>
-                                <!-- Верстка блока для карточеки с капелькой и/или tv иконкой -->
-                                <div class="card-badges">
-                                    <div class="item item_def item_desc item_tv"></div><div class="item item_def item_mob item_tv"></div>
-                                    <div class="item item_def item_desc item_wd"></div><div class="item item_def item_mob item_wd"></div>
-                                </div>
-                            </div>
-                            <div class="the_content">
-                                <p class="tit">
-                                    <a href="/catalog/nastennyie-svetilniki-i-bra/bra/3509/01-ap-2"></a>
-                                </p>
-                                <p class="article">
-                                    <i class="icon-3d"></i>
-                                    <a href="/catalog/nastennyie-svetilniki-i-bra/bra/3509/01-ap-2">3509/01 AP-2</a>
-                                </p>
-                                <div class="d_flex">
-                                    <div class="el el1">
-                                        <div class="on_store">В наличии: 38 шт.</div>
-                                    </div>
-                                    <div class="el el2">
-                                        <div class="like_buttons">
-                                            <div class="comparison comparison-default " data-id="3093" data-list="default">
-                                                <button class="btn_link btn_link_weight comparison-add comparison-link" data-text=""></button>
-                                                <button class="btn_link btn_link_weight comparison-remove comparison-link" data-text=""></button>
-                                            </div>
-                                            <span class="favorites favorites-default " data-id="3093">
-                                                 <button class="favorites-add favorites-link btn_link btn_link_like " data-text=""></button>
-                                                 <button class="favorites-remove favorites-link btn_link btn_link_like " data-text=""></button>
-                                            </span>
-                                            <button class="btn_link btn_buy btn_link_add_to_cart"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="d_flex dflex_cost">
-                                    <div class="el el1">
-                                        <div class="the_cost">
-                                            <p data-price="15990">15 990 р.</p>
-                                        </div>
-                                    </div>
-                                    <div class="el el2">
-                                        <form method="post" class="ms2_form">
-                                            <input type="hidden" name="id" value="3093">
-                                            <input type="hidden" name="article" value="3509/01 AP-2">
-                                            <input type="hidden" name="name" value="Бра  CABRERA ">
-                                            <input type="hidden" name="price" value="15990">
-                                            <input type="hidden" name="old_price" value="0">
-                                            <input type="hidden" name="sale" value="0">
-                                            <input type="hidden" name="new" value="1">
-                                            <input type="hidden" name="url" value="/catalog/nastennyie-svetilniki-i-bra/bra/3509/01-ap-2">
-                                            <input type="hidden" name="thumb" value="https://divinare.ru/assets/images/products/3093/small/350901-ap-2.jpg">
-                                            <input type="hidden" name="count" value="1">
-                                            <button class="btn_buy" type="submit" name="ms2_action" value="cart/add" data-toggle="modal" data-target="#one_click">Купить</button>
-                                        </form>
+                                        <button class="btn_buy" data-toggle="modal" data-target="#good_cart">
+                                            Купить
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -1552,81 +1011,78 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="unit product_modal_3116 ">
+                    <div class="unit">
                         <div class="element">
-                            <div class="the_marker"><span class="the_marker_el the_marker_el_new"><i>new</i></span></div>
+                            <div class="the_marker">
+                                <span class="the_marker_el the_marker_el_new">
+                                    <i>new</i>
+                                </span>
+                                <span class="the_marker_el the_marker_el_sale">
+                                    <i>sale</i>
+                                </span>
+                            </div>
                             <div class="imgwr">
-                                <a href="/catalog/lyustryi/podvesnyie-lyustryi/3509/01-lm-15">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAKgNzJ7bwAAAABJRU5ErkJggg=="
-                                        data-src="https://divinare.ru/assets/images/products/3116/small/350901-lm-15.jpg?v=1"
-                                        alt="Люстра Divinare CABRERA 3509/01 LM-15" class="lazyload">
-                                </a>
-                                <!-- Верстка блока для карточеки с капелькой и/или tv иконкой -->
-                                <div class="card-badges">
-                                    <div class="item item_def item_desc item_tv"></div><div class="item item_def item_mob item_tv"></div>
-                                    <div class="item item_def item_desc item_wd"></div><div class="item item_def item_mob item_wd"></div>
-                                </div>
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAKgNzJ7bwAAAABJRU5ErkJggg==" data-src="images/good1.png" alt="" class="lazyload">
                             </div>
                             <div class="the_content">
                                 <p class="tit">
-                                    <a href="/catalog/lyustryi/podvesnyie-lyustryi/3509/01-lm-15"></a>
+                                    <a href="">
+                                        Люстра Arte Lamp Rosaria
+                                    </a>
                                 </p>
                                 <p class="article">
                                     <i class="icon-3d"></i>
-                                    <a href="/catalog/lyustryi/podvesnyie-lyustryi/3509/01-lm-15">3509/01 LM-15</a>
+                                    <a href="">
+                                        A8564PL-5RB
+                                    </a>
                                 </p>
                                 <div class="d_flex">
                                     <div class="el el1">
-                                        <div class="on_store">В наличии: 24 шт.</div>
+                                        <div class="on_store">
+                                            В наличии: 3000 шт.
+                                        </div>
                                     </div>
                                     <div class="el el2">
                                         <div class="like_buttons">
-                                            <div class="comparison comparison-default " data-id="3116" data-list="default">
-                                                <button class="btn_link btn_link_weight comparison-add comparison-link" data-text=""></button>
-                                                <button class="btn_link btn_link_weight comparison-remove comparison-link" data-text=""></button>
-                                            </div>
-                                            <span class="favorites favorites-default " data-id="3116">
-                                                 <button class="favorites-add favorites-link btn_link btn_link_like " data-text=""></button>
-                                                 <button class="favorites-remove favorites-link btn_link btn_link_like " data-text=""></button>
-                                            </span>
-                                            <button class="btn_link btn_buy btn_link_add_to_cart"></button>
+                                            <button class="btn_link btn_link_weight" data-toggle="modal"
+                                                data-target="#compare"></button>
+                                            <button class="btn_link btn_link_like active" data-toggle="modal"
+                                                data-target="#liked">
+                                                <span class="the_val">99</span>
+                                            </button>
+                                            <button class="btn_link btn_buy" data-toggle="modal"
+                                                data-target="#good_cart"></button>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="d_flex dflex_cost">
                                     <div class="el el1">
                                         <div class="the_cost">
-                                            <p data-price="150000">150 000 р.</p>
+                                            <p>1 454 120 р.</p>
+                                            <del>1 458 120 р.</del>
                                         </div>
                                     </div>
                                     <div class="el el2">
-                                        <form method="post" class="ms2_form">
-                                            <input type="hidden" name="id" value="3116">
-                                            <input type="hidden" name="article" value="3509/01 LM-15">
-                                            <input type="hidden" name="name" value="Люстра  CABRERA ">
-                                            <input type="hidden" name="price" value="150000">
-                                            <input type="hidden" name="old_price" value="0">
-                                            <input type="hidden" name="sale" value="0">
-                                            <input type="hidden" name="new" value="1">
-                                            <input type="hidden" name="url" value="/catalog/lyustryi/podvesnyie-lyustryi/3509/01-lm-15">
-                                            <input type="hidden" name="thumb" value="https://divinare.ru/assets/images/products/3116/small/350901-lm-15.jpg">
-                                            <input type="hidden" name="count" value="1">
-                                            <button class="btn_buy" type="submit" name="ms2_action" value="cart/add" data-toggle="modal" data-target="#one_click">Купить</button>
-                                        </form>
+                                        <button class="btn_buy" data-toggle="modal" data-target="#good_cart">
+                                            Купить
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="unit product_modal_3133 ">
+                    <div class="unit">
                         <div class="element">
-                            <div class="the_marker"><span class="the_marker_el the_marker_el_new"><i>new</i></span></div>
+                            <div class="the_marker">
+                                <span class="the_marker_el the_marker_el_new">
+                                    <i>new</i>
+                                </span>
+                                <span class="the_marker_el the_marker_el_sale">
+                                    <i>sale</i>
+                                </span>
+                            </div>
                             <div class="imgwr">
-                                <a href="/catalog/lyustryi/potolochnyie-lyustryi/4504/17-lm-6">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAKgNzJ7bwAAAABJRU5ErkJggg=="
-                                        data-src="https://divinare.ru/assets/images/products/3133/small/450417-lm-6.jpg?v=1"
-                                        alt="Люстра Divinare FAWARIS 4504/17 LM-6" class="lazyload">
-                                </a>
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAKgNzJ7bwAAAABJRU5ErkJggg==" data-src="images/good1.png" alt="" class="lazyload">
                                 <!-- Верстка блока для карточеки с капелькой и/или tv иконкой -->
                                 <div class="card-badges">
                                     <div class="item item_def item_desc item_tv"></div><div class="item item_def item_mob item_tv"></div>
@@ -1635,50 +1091,46 @@
                             </div>
                             <div class="the_content">
                                 <p class="tit">
-                                    <a href="/catalog/lyustryi/potolochnyie-lyustryi/4504/17-lm-6"></a>
+                                    <a href="">
+                                        Люстра Arte Lamp Rosaria
+                                    </a>
                                 </p>
                                 <p class="article">
                                     <i class="icon-3d"></i>
-                                    <a href="/catalog/lyustryi/potolochnyie-lyustryi/4504/17-lm-6">4504/17 LM-6</a>
+                                    <a href="">
+                                        A8564PL-5RB
+                                    </a>
                                 </p>
                                 <div class="d_flex">
                                     <div class="el el1">
-                                        <div class="on_store">В наличии: 67 шт.</div>
+                                        <div class="on_store">
+                                            В наличии: 3000 шт.
+                                        </div>
                                     </div>
                                     <div class="el el2">
                                         <div class="like_buttons">
-                                            <div class="comparison comparison-default " data-id="3133" data-list="default">
-                                                <button class="btn_link btn_link_weight comparison-add comparison-link" data-text=""></button>
-                                                <button class="btn_link btn_link_weight comparison-remove comparison-link" data-text=""></button>
-                                            </div>
-                                            <span class="favorites favorites-default " data-id="3133">
-                                                 <button class="favorites-add favorites-link btn_link btn_link_like " data-text=""></button>
-                                                 <button class="favorites-remove favorites-link btn_link btn_link_like " data-text=""></button>
-                                            </span>
-                                            <button class="btn_link btn_buy btn_link_add_to_cart"></button>
+                                            <button class="btn_link btn_link_weight" data-toggle="modal"
+                                                data-target="#compare"></button>
+                                            <button class="btn_link btn_link_like active" data-toggle="modal"
+                                                data-target="#liked">
+                                                <span class="the_val">99</span>
+                                            </button>
+                                            <button class="btn_link btn_buy" data-toggle="modal"
+                                                data-target="#good_cart"></button>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="d_flex dflex_cost">
                                     <div class="el el1">
                                         <div class="the_cost">
-                                            <p data-price="24990">24 990 р.</p>
+                                            <p>1 454 120 р.</p>
+                                            <del>1 458 120 р.</del>
                                         </div>
                                     </div>
                                     <div class="el el2">
-                                        <form method="post" class="ms2_form">
-                                            <input type="hidden" name="id" value="3133">
-                                            <input type="hidden" name="article" value="4504/17 LM-6">
-                                            <input type="hidden" name="name" value="Люстра  FAWARIS ">
-                                            <input type="hidden" name="price" value="24990">
-                                            <input type="hidden" name="old_price" value="0">
-                                            <input type="hidden" name="sale" value="0">
-                                            <input type="hidden" name="new" value="1">
-                                            <input type="hidden" name="url" value="/catalog/lyustryi/potolochnyie-lyustryi/4504/17-lm-6">
-                                            <input type="hidden" name="thumb" value="https://divinare.ru/assets/images/products/3133/small/450417-lm-6.jpg">
-                                            <input type="hidden" name="count" value="1">
-                                            <button class="btn_buy" type="submit" name="ms2_action" value="cart/add" data-toggle="modal" data-target="#one_click">Купить</button>
-                                        </form>
+                                        <button class="btn_buy" data-toggle="modal" data-target="#good_cart">
+                                            Купить
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -1686,15 +1138,18 @@
                     </div>
                 </div>
                 <div class="swiper-slide unit_double">
-                    <div class="unit product_modal_3136 ">
+                    <div class="unit">
                         <div class="element">
-                            <div class="the_marker"><span class="the_marker_el the_marker_el_new"><i>new</i></span></div>
+                            <div class="the_marker">
+                                <span class="the_marker_el the_marker_el_new">
+                                    <i>new</i>
+                                </span>
+                                <span class="the_marker_el the_marker_el_sale">
+                                    <i>sale</i>
+                                </span>
+                            </div>
                             <div class="imgwr">
-                                <a href="/catalog/nastennyie-svetilniki-i-bra/bra/7568/02-ap-2">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAKgNzJ7bwAAAABJRU5ErkJggg=="
-                                        data-src="https://divinare.ru/assets/images/products/3136/756802-ap-2.jpg?v=1"
-                                        alt="Бра Divinare MEGAN 7568/02 AP-2" class="lazyload">
-                                </a>
+                                <img src="images/good2.jpg" alt="">
                                 <!-- Верстка блока для карточеки с капелькой и/или tv иконкой -->
                                 <div class="card-badges">
                                     <div class="item item_def item_desc item_tv"></div><div class="item item_def item_mob item_tv"></div>
@@ -1703,50 +1158,47 @@
                             </div>
                             <div class="the_content">
                                 <p class="tit">
-                                    <a href="/catalog/nastennyie-svetilniki-i-bra/bra/7568/02-ap-2"></a>
+                                    <a href="">
+                                        Люстра Arte Lamp Rosaria
+                                    </a>
                                 </p>
                                 <p class="article">
                                     <i class="icon-3d"></i>
-                                    <a href="/catalog/nastennyie-svetilniki-i-bra/bra/7568/02-ap-2">7568/02 AP-2</a>
+                                    <a href=""><i class="icon-yt"></i></a>
+                                    <a class="link-after-icons" href="#">
+                                        2654/17 AP-1
+                                    </a>
                                 </p>
                                 <div class="d_flex">
                                     <div class="el el1">
-                                        <div class="on_store">В наличии: 185 шт.</div>
+                                        <div class="on_store">
+                                            В наличии: 3000 шт.
+                                        </div>
                                     </div>
                                     <div class="el el2">
                                         <div class="like_buttons">
-                                            <div class="comparison comparison-default " data-id="3136" data-list="default">
-                                                <button class="btn_link btn_link_weight comparison-add comparison-link" data-text=""></button>
-                                                <button class="btn_link btn_link_weight comparison-remove comparison-link" data-text=""></button>
-                                            </div>
-                                            <span class="favorites favorites-default " data-id="3136">
-                                                 <button class="favorites-add favorites-link btn_link btn_link_like " data-text=""></button>
-                                                 <button class="favorites-remove favorites-link btn_link btn_link_like " data-text=""></button>
-                                            </span>
-                                            <button class="btn_link btn_buy btn_link_add_to_cart"></button>
+                                            <button class="btn_link btn_link_weight" data-toggle="modal"
+                                                data-target="#compare"></button>
+                                            <button class="btn_link btn_link_like active" data-toggle="modal"
+                                                data-target="#liked">
+                                                <span class="the_val">99</span>
+                                            </button>
+                                            <button class="btn_link btn_buy" data-toggle="modal"
+                                                data-target="#good_cart"></button>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="d_flex dflex_cost">
                                     <div class="el el1">
                                         <div class="the_cost">
-                                            <p data-price="16490">16 490 р.</p>
+                                            <p>1 454 120 р.</p>
+                                            <del>1 458 120 р.</del>
                                         </div>
                                     </div>
                                     <div class="el el2">
-                                        <form method="post" class="ms2_form">
-                                            <input type="hidden" name="id" value="3136">
-                                            <input type="hidden" name="article" value="7568/02 AP-2">
-                                            <input type="hidden" name="name" value="Бра  MEGAN ">
-                                            <input type="hidden" name="price" value="16490">
-                                            <input type="hidden" name="old_price" value="0">
-                                            <input type="hidden" name="sale" value="0">
-                                            <input type="hidden" name="new" value="1">
-                                            <input type="hidden" name="url" value="/catalog/nastennyie-svetilniki-i-bra/bra/7568/02-ap-2">
-                                            <input type="hidden" name="thumb" value="https://divinare.ru/assets/images/products/3136/small/756802-ap-2.jpg">
-                                            <input type="hidden" name="count" value="1">
-                                            <button class="btn_buy" type="submit" name="ms2_action" value="cart/add" data-toggle="modal" data-target="#one_click">Купить</button>
-                                        </form>
+                                        <button class="btn_buy" data-toggle="modal" data-target="#good_cart">
+                                            Купить
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -1754,15 +1206,18 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="unit product_modal_3140 ">
+                    <div class="unit unit_no_store">
                         <div class="element">
-                            <div class="the_marker"><span class="the_marker_el the_marker_el_new"><i>new</i></span></div>
+                            <div class="the_marker">
+                                <span class="the_marker_el the_marker_el_new">
+                                    <i>new</i>
+                                </span>
+                                <span class="the_marker_el the_marker_el_sale">
+                                    <i>sale</i>
+                                </span>
+                            </div>
                             <div class="imgwr">
-                                <a href="/catalog/lyustryi/podvesnyie-lyustryi/7568/02-lm-12">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAKgNzJ7bwAAAABJRU5ErkJggg=="
-                                        data-src="https://divinare.ru/assets/images/products/3140/small/756802-lm-12.jpg?v=1"
-                                        alt="Люстра подвесная Divinare MEGAN 7568/02 LM-12" class="lazyload">
-                                </a>
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAKgNzJ7bwAAAABJRU5ErkJggg==" data-src="images/good1.png" alt="" class="lazyload">
                                 <!-- Верстка блока для карточеки с капелькой и/или tv иконкой -->
                                 <div class="card-badges">
                                     <div class="item item_def item_desc item_tv"></div><div class="item item_def item_mob item_tv"></div>
@@ -1771,64 +1226,63 @@
                             </div>
                             <div class="the_content">
                                 <p class="tit">
-                                    <a href="/catalog/lyustryi/podvesnyie-lyustryi/7568/02-lm-12"></a>
+                                    <a href="">
+                                        Люстра Arte Lamp Rosaria
+                                    </a>
                                 </p>
                                 <p class="article">
                                     <i class="icon-3d"></i>
-                                    <a href="/catalog/lyustryi/podvesnyie-lyustryi/7568/02-lm-12">7568/02 LM-12</a>
+                                    <a href="">
+                                        A8564PL-5RB
+                                    </a>
                                 </p>
                                 <div class="d_flex">
                                     <div class="el el1">
-                                        <div class="on_store">В наличии: 105 шт.</div>
+                                        <div class="on_store">
+                                            В наличии: 3000 шт.
+                                        </div>
                                     </div>
                                     <div class="el el2">
                                         <div class="like_buttons">
-                                            <div class="comparison comparison-default " data-id="3140" data-list="default">
-                                                <button class="btn_link btn_link_weight comparison-add comparison-link" data-text=""></button>
-                                                <button class="btn_link btn_link_weight comparison-remove comparison-link" data-text=""></button>
-                                            </div>
-                                            <span class="favorites favorites-default " data-id="3140">
-                                                 <button class="favorites-add favorites-link btn_link btn_link_like " data-text=""></button>
-                                                 <button class="favorites-remove favorites-link btn_link btn_link_like " data-text=""></button>
-                                            </span>
-                                            <button class="btn_link btn_buy btn_link_add_to_cart"></button>
+                                            <button class="btn_link btn_link_weight" data-toggle="modal"
+                                                data-target="#compare"></button>
+                                            <button class="btn_link btn_link_like active" data-toggle="modal"
+                                                data-target="#liked">
+                                                <span class="the_val">99</span>
+                                            </button>
+                                            <button class="btn_link btn_buy" data-toggle="modal"
+                                                data-target="#good_cart"></button>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="d_flex dflex_cost">
                                     <div class="el el1">
                                         <div class="the_cost">
-                                            <p data-price="92990">92 990 р.</p>
+                                            <p>1 454 120 р.</p>
+                                            <del>1 458 120 р.</del>
                                         </div>
                                     </div>
                                     <div class="el el2">
-                                        <form method="post" class="ms2_form">
-                                            <input type="hidden" name="id" value="3140">
-                                            <input type="hidden" name="article" value="7568/02 LM-12">
-                                            <input type="hidden" name="name" value="Люстра подвесная  MEGAN ">
-                                            <input type="hidden" name="price" value="92990">
-                                            <input type="hidden" name="old_price" value="0">
-                                            <input type="hidden" name="sale" value="0">
-                                            <input type="hidden" name="new" value="1">
-                                            <input type="hidden" name="url" value="/catalog/lyustryi/podvesnyie-lyustryi/7568/02-lm-12">
-                                            <input type="hidden" name="thumb" value="https://divinare.ru/assets/images/products/3140/small/756802-lm-12.jpg">
-                                            <input type="hidden" name="count" value="1">
-                                            <button class="btn_buy" type="submit" name="ms2_action" value="cart/add" data-toggle="modal" data-target="#one_click">Купить</button>
-                                        </form>
+                                        <button class="btn_buy" data-toggle="modal" data-target="#good_cart">
+                                            Купить
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="unit product_modal_3141 ">
+                    <div class="unit">
                         <div class="element">
-                            <div class="the_marker"><span class="the_marker_el the_marker_el_new"><i>new</i></span></div>
+                            <div class="the_marker">
+                                <span class="the_marker_el the_marker_el_new">
+                                    <i>new</i>
+                                </span>
+                                <span class="the_marker_el the_marker_el_sale">
+                                    <i>sale</i>
+                                </span>
+                            </div>
                             <div class="imgwr">
-                                <a href="/catalog/nastennyie-svetilniki-i-bra/bra/7568/18-ap-2">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAKgNzJ7bwAAAABJRU5ErkJggg=="
-                                        data-src="https://divinare.ru/assets/images/products/3141/small/756818-ap-2.jpg?v=1"
-                                        alt="Бра Divinare MEGAN 7568/18 AP-2" class="lazyload">
-                                </a>
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAKgNzJ7bwAAAABJRU5ErkJggg==" data-src="images/good1.png" alt="" class="lazyload">
                                 <!-- Верстка блока для карточеки с капелькой и/или tv иконкой -->
                                 <div class="card-badges">
                                     <div class="item item_def item_desc item_tv"></div><div class="item item_def item_mob item_tv"></div>
@@ -1837,184 +1291,46 @@
                             </div>
                             <div class="the_content">
                                 <p class="tit">
-                                    <a href="/catalog/nastennyie-svetilniki-i-bra/bra/7568/18-ap-2"></a>
+                                    <a href="">
+                                        Люстра Arte Lamp Rosaria
+                                    </a>
                                 </p>
                                 <p class="article">
                                     <i class="icon-3d"></i>
-                                    <a href="/catalog/nastennyie-svetilniki-i-bra/bra/7568/18-ap-2">7568/18 AP-2</a>
+                                    <a href="">
+                                        A8564PL-5RB
+                                    </a>
                                 </p>
                                 <div class="d_flex">
                                     <div class="el el1">
-                                        <div class="on_store">В наличии: 204 шт.</div>
+                                        <div class="on_store">
+                                            В наличии: 3000 шт.
+                                        </div>
                                     </div>
                                     <div class="el el2">
                                         <div class="like_buttons">
-                                            <div class="comparison comparison-default " data-id="3141" data-list="default">
-                                                <button class="btn_link btn_link_weight comparison-add comparison-link" data-text=""></button>
-                                                <button class="btn_link btn_link_weight comparison-remove comparison-link" data-text=""></button>
-                                            </div>
-                                            <span class="favorites favorites-default " data-id="3141">
-                                                 <button class="favorites-add favorites-link btn_link btn_link_like " data-text=""></button>
-                                                 <button class="favorites-remove favorites-link btn_link btn_link_like " data-text=""></button>
-                                            </span>
-                                            <button class="btn_link btn_buy btn_link_add_to_cart"></button>
+                                            <button class="btn_link btn_link_weight" data-toggle="modal"
+                                                data-target="#compare"></button>
+                                            <button class="btn_link btn_link_like active" data-toggle="modal"
+                                                data-target="#liked">
+                                                <span class="the_val">99</span>
+                                            </button>
+                                            <button class="btn_link btn_buy" data-toggle="modal"
+                                                data-target="#good_cart"></button>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="d_flex dflex_cost">
                                     <div class="el el1">
                                         <div class="the_cost">
-                                            <p data-price="16490">16 490 р.</p>
+                                            <p>1 454 120 р.</p>
+                                            <del>1 458 120 р.</del>
                                         </div>
                                     </div>
                                     <div class="el el2">
-                                        <form method="post" class="ms2_form">
-                                            <input type="hidden" name="id" value="3141">
-                                            <input type="hidden" name="article" value="7568/18 AP-2">
-                                            <input type="hidden" name="name" value="Бра  MEGAN ">
-                                            <input type="hidden" name="price" value="16490">
-                                            <input type="hidden" name="old_price" value="0">
-                                            <input type="hidden" name="sale" value="0">
-                                            <input type="hidden" name="new" value="1">
-                                            <input type="hidden" name="url" value="/catalog/nastennyie-svetilniki-i-bra/bra/7568/18-ap-2">
-                                            <input type="hidden" name="thumb" value="https://divinare.ru/assets/images/products/3141/small/756818-ap-2.jpg">
-                                            <input type="hidden" name="count" value="1">
-                                            <button class="btn_buy" type="submit" name="ms2_action" value="cart/add" data-toggle="modal" data-target="#one_click">Купить</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="unit product_modal_3142 ">
-                        <div class="element">
-                            <div class="the_marker"><span class="the_marker_el the_marker_el_new"><i>new</i></span></div>
-                            <div class="imgwr">
-                                <a href="/catalog/lyustryi/podvesnyie-lyustryi/7568/02-lm-9">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAKgNzJ7bwAAAABJRU5ErkJggg=="
-                                        data-src="https://divinare.ru/assets/images/products/3142/small/756802-lm-9.jpg?v=1"
-                                        alt="Люстра Divinare MEGAN 7568/02 LM-9" class="lazyload">
-                                </a>
-                                <!-- Верстка блока для карточеки с капелькой и/или tv иконкой -->
-                                <div class="card-badges">
-                                    <div class="item item_def item_desc item_tv"></div><div class="item item_def item_mob item_tv"></div>
-                                    <div class="item item_def item_desc item_wd"></div><div class="item item_def item_mob item_wd"></div>
-                                </div>
-                            </div>
-                            <div class="the_content">
-                                <p class="tit">
-                                    <a href="/catalog/lyustryi/podvesnyie-lyustryi/7568/02-lm-9"></a>
-                                </p>
-                                <p class="article">
-                                    <i class="icon-3d"></i>
-                                    <a href="/catalog/lyustryi/podvesnyie-lyustryi/7568/02-lm-9">7568/02 LM-9</a>
-                                </p>
-                                <div class="d_flex">
-                                    <div class="el el1">
-                                        <div class="on_store">В наличии: 128 шт.</div>
-                                    </div>
-                                    <div class="el el2">
-                                        <div class="like_buttons">
-                                            <div class="comparison comparison-default " data-id="3142" data-list="default">
-                                                <button class="btn_link btn_link_weight comparison-add comparison-link" data-text=""></button>
-                                                <button class="btn_link btn_link_weight comparison-remove comparison-link" data-text=""></button>
-                                            </div>
-                                            <span class="favorites favorites-default " data-id="3142">
-                                                 <button class="favorites-add favorites-link btn_link btn_link_like " data-text=""></button>
-                                                 <button class="favorites-remove favorites-link btn_link btn_link_like " data-text=""></button>
-                                            </span>
-                                            <button class="btn_link btn_buy btn_link_add_to_cart"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="d_flex dflex_cost">
-                                    <div class="el el1">
-                                        <div class="the_cost">
-                                            <p data-price="73990">73 990 р.</p>
-                                        </div>
-                                    </div>
-                                    <div class="el el2">
-                                        <form method="post" class="ms2_form">
-                                            <input type="hidden" name="id" value="3142">
-                                            <input type="hidden" name="article" value="7568/02 LM-9">
-                                            <input type="hidden" name="name" value="Люстра  MEGAN ">
-                                            <input type="hidden" name="price" value="73990">
-                                            <input type="hidden" name="old_price" value="0">
-                                            <input type="hidden" name="sale" value="0">
-                                            <input type="hidden" name="new" value="1">
-                                            <input type="hidden" name="url" value="/catalog/lyustryi/podvesnyie-lyustryi/7568/02-lm-9">
-                                            <input type="hidden" name="thumb" value="https://divinare.ru/assets/images/products/3142/small/756802-lm-9.jpg">
-                                            <input type="hidden" name="count" value="1">
-                                            <button class="btn_buy" type="submit" name="ms2_action" value="cart/add" data-toggle="modal" data-target="#one_click">Купить</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="unit product_modal_3143 ">
-                        <div class="element">
-                            <div class="the_marker"><span class="the_marker_el the_marker_el_new"><i>new</i></span></div>
-                            <div class="imgwr">
-                                <a href="/catalog/lyustryi/podvesnyie-lyustryi/7568/02-sp-12">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAKgNzJ7bwAAAABJRU5ErkJggg=="
-                                        data-src="https://divinare.ru/assets/images/products/3143/small/756802-sp-12.jpg?v=1"
-                                        alt="Люстра Divinare MEGAN 7568/02 SP-12" class="lazyload">
-                                </a>
-                                <!-- Верстка блока для карточеки с капелькой и/или tv иконкой -->
-                                <div class="card-badges">
-                                    <div class="item item_def item_desc item_tv"></div><div class="item item_def item_mob item_tv"></div>
-                                    <div class="item item_def item_desc item_wd"></div><div class="item item_def item_mob item_wd"></div>
-                                </div>
-                            </div>
-                            <div class="the_content">
-                                <p class="tit">
-                                    <a href="/catalog/lyustryi/podvesnyie-lyustryi/7568/02-sp-12"></a>
-                                </p>
-                                <p class="article">
-                                    <i class="icon-3d"></i>
-                                    <a href="/catalog/lyustryi/podvesnyie-lyustryi/7568/02-sp-12">7568/02 SP-12</a>
-                                </p>
-                                <div class="d_flex">
-                                    <div class="el el1">
-                                        <div class="on_store">В наличии: 67 шт.</div>
-                                    </div>
-                                    <div class="el el2">
-                                        <div class="like_buttons">
-                                            <div class="comparison comparison-default " data-id="3143" data-list="default">
-                                                <button class="btn_link btn_link_weight comparison-add comparison-link" data-text=""></button>
-                                                <button class="btn_link btn_link_weight comparison-remove comparison-link" data-text=""></button>
-                                            </div>
-                                            <span class="favorites favorites-default " data-id="3143">
-                                                 <button class="favorites-add favorites-link btn_link btn_link_like " data-text=""></button>
-                                                 <button class="favorites-remove favorites-link btn_link btn_link_like " data-text=""></button>
-                                            </span>
-                                            <button class="btn_link btn_buy btn_link_add_to_cart"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="d_flex dflex_cost">
-                                    <div class="el el1">
-                                        <div class="the_cost">
-                                            <p data-price="89990">89 990 р.</p>
-                                        </div>
-                                    </div>
-                                    <div class="el el2">
-                                        <form method="post" class="ms2_form">
-                                            <input type="hidden" name="id" value="3143">
-                                            <input type="hidden" name="article" value="7568/02 SP-12">
-                                            <input type="hidden" name="name" value="Люстра  MEGAN ">
-                                            <input type="hidden" name="price" value="89990">
-                                            <input type="hidden" name="old_price" value="0">
-                                            <input type="hidden" name="sale" value="0">
-                                            <input type="hidden" name="new" value="1">
-                                            <input type="hidden" name="url" value="/catalog/lyustryi/podvesnyie-lyustryi/7568/02-sp-12">
-                                            <input type="hidden" name="thumb" value="https://divinare.ru/assets/images/products/3143/small/756802-sp-12.jpg">
-                                            <input type="hidden" name="count" value="1">
-                                            <button class="btn_buy" type="submit" name="ms2_action" value="cart/add" data-toggle="modal" data-target="#one_click">Купить</button>
-                                        </form>
+                                        <button class="btn_buy" data-toggle="modal" data-target="#good_cart">
+                                            Купить
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -2022,81 +1338,78 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="unit product_modal_3155 ">
+                    <div class="unit">
                         <div class="element">
-                            <div class="the_marker"><span class="the_marker_el the_marker_el_new"><i>new</i></span></div>
+                            <div class="the_marker">
+                                <span class="the_marker_el the_marker_el_new">
+                                    <i>new</i>
+                                </span>
+                                <span class="the_marker_el the_marker_el_sale">
+                                    <i>sale</i>
+                                </span>
+                            </div>
                             <div class="imgwr">
-                                <a href="/catalog/nastennyie-svetilniki-i-bra/bra/7204/17-ap-2">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAKgNzJ7bwAAAABJRU5ErkJggg=="
-                                        data-src="https://divinare.ru/assets/images/products/3155/small/720417-ap-2.jpg?v=1"
-                                        alt="Бра Divinare ROSALINDA 7204/17 AP-2" class="lazyload">
-                                </a>
-                                <!-- Верстка блока для карточеки с капелькой и/или tv иконкой -->
-                                <div class="card-badges">
-                                    <div class="item item_def item_desc item_tv"></div><div class="item item_def item_mob item_tv"></div>
-                                    <div class="item item_def item_desc item_wd"></div><div class="item item_def item_mob item_wd"></div>
-                                </div>
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAKgNzJ7bwAAAABJRU5ErkJggg==" data-src="images/good1.png" alt="" class="lazyload">
                             </div>
                             <div class="the_content">
                                 <p class="tit">
-                                    <a href="/catalog/nastennyie-svetilniki-i-bra/bra/7204/17-ap-2"></a>
+                                    <a href="">
+                                        Люстра Arte Lamp Rosaria
+                                    </a>
                                 </p>
                                 <p class="article">
                                     <i class="icon-3d"></i>
-                                    <a href="/catalog/nastennyie-svetilniki-i-bra/bra/7204/17-ap-2">7204/17 AP-2</a>
+                                    <a href="">
+                                        A8564PL-5RB
+                                    </a>
                                 </p>
                                 <div class="d_flex">
                                     <div class="el el1">
-                                        <div class="on_store">В наличии: 134 шт.</div>
+                                        <div class="on_store">
+                                            В наличии: 3000 шт.
+                                        </div>
                                     </div>
                                     <div class="el el2">
                                         <div class="like_buttons">
-                                            <div class="comparison comparison-default " data-id="3155" data-list="default">
-                                                <button class="btn_link btn_link_weight comparison-add comparison-link" data-text=""></button>
-                                                <button class="btn_link btn_link_weight comparison-remove comparison-link" data-text=""></button>
-                                            </div>
-                                            <span class="favorites favorites-default " data-id="3155">
-                                                 <button class="favorites-add favorites-link btn_link btn_link_like " data-text=""></button>
-                                                 <button class="favorites-remove favorites-link btn_link btn_link_like " data-text=""></button>
-                                            </span>
-                                            <button class="btn_link btn_buy btn_link_add_to_cart"></button>
+                                            <button class="btn_link btn_link_weight" data-toggle="modal"
+                                                data-target="#compare"></button>
+                                            <button class="btn_link btn_link_like active" data-toggle="modal"
+                                                data-target="#liked">
+                                                <span class="the_val">99</span>
+                                            </button>
+                                            <button class="btn_link btn_buy" data-toggle="modal"
+                                                data-target="#good_cart"></button>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="d_flex dflex_cost">
                                     <div class="el el1">
                                         <div class="the_cost">
-                                            <p data-price="16990">16 990 р.</p>
+                                            <p>1 454 120 р.</p>
+                                            <del>1 458 120 р.</del>
                                         </div>
                                     </div>
                                     <div class="el el2">
-                                        <form method="post" class="ms2_form">
-                                            <input type="hidden" name="id" value="3155">
-                                            <input type="hidden" name="article" value="7204/17 AP-2">
-                                            <input type="hidden" name="name" value="Бра  ROSALINDA ">
-                                            <input type="hidden" name="price" value="16990">
-                                            <input type="hidden" name="old_price" value="0">
-                                            <input type="hidden" name="sale" value="0">
-                                            <input type="hidden" name="new" value="1">
-                                            <input type="hidden" name="url" value="/catalog/nastennyie-svetilniki-i-bra/bra/7204/17-ap-2">
-                                            <input type="hidden" name="thumb" value="https://divinare.ru/assets/images/products/3155/small/720417-ap-2.jpg">
-                                            <input type="hidden" name="count" value="1">
-                                            <button class="btn_buy" type="submit" name="ms2_action" value="cart/add" data-toggle="modal" data-target="#one_click">Купить</button>
-                                        </form>
+                                        <button class="btn_buy" data-toggle="modal" data-target="#good_cart">
+                                            Купить
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="unit product_modal_3172 ">
+                    <div class="unit">
                         <div class="element">
-                            <div class="the_marker"><span class="the_marker_el the_marker_el_new"><i>new</i></span></div>
+                            <div class="the_marker">
+                                <span class="the_marker_el the_marker_el_new">
+                                    <i>new</i>
+                                </span>
+                                <span class="the_marker_el the_marker_el_sale">
+                                    <i>sale</i>
+                                </span>
+                            </div>
                             <div class="imgwr">
-                                <a href="/catalog/nastennyie-svetilniki-i-bra/bra/7205/17-ap-2">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAKgNzJ7bwAAAABJRU5ErkJggg=="
-                                        data-src="https://divinare.ru/assets/images/products/3172/small/720517-ap-2.jpg?v=1"
-                                        alt="Бра Divinare ALESSANDRO 7205/17 AP-2" class="lazyload">
-                                </a>
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAKgNzJ7bwAAAABJRU5ErkJggg==" data-src="images/good1.png" alt="" class="lazyload">
                                 <!-- Верстка блока для карточеки с капелькой и/или tv иконкой -->
                                 <div class="card-badges">
                                     <div class="item item_def item_desc item_tv"></div><div class="item item_def item_mob item_tv"></div>
@@ -2105,50 +1418,178 @@
                             </div>
                             <div class="the_content">
                                 <p class="tit">
-                                    <a href="/catalog/nastennyie-svetilniki-i-bra/bra/7205/17-ap-2"></a>
+                                    <a href="">
+                                        Люстра Arte Lamp Rosaria
+                                    </a>
                                 </p>
                                 <p class="article">
                                     <i class="icon-3d"></i>
-                                    <a href="/catalog/nastennyie-svetilniki-i-bra/bra/7205/17-ap-2">7205/17 AP-2</a>
+                                    <a href="">
+                                        A8564PL-5RB
+                                    </a>
                                 </p>
                                 <div class="d_flex">
                                     <div class="el el1">
-                                        <div class="on_store">В наличии: 20 шт.</div>
+                                        <div class="on_store">
+                                            В наличии: 3000 шт.
+                                        </div>
                                     </div>
                                     <div class="el el2">
                                         <div class="like_buttons">
-                                            <div class="comparison comparison-default " data-id="3172" data-list="default">
-                                                <button class="btn_link btn_link_weight comparison-add comparison-link" data-text=""></button>
-                                                <button class="btn_link btn_link_weight comparison-remove comparison-link" data-text=""></button>
-                                            </div>
-                                            <span class="favorites favorites-default " data-id="3172">
-                                                 <button class="favorites-add favorites-link btn_link btn_link_like " data-text=""></button>
-                                                 <button class="favorites-remove favorites-link btn_link btn_link_like " data-text=""></button>
-                                            </span>
-                                            <button class="btn_link btn_buy btn_link_add_to_cart"></button>
+                                            <button class="btn_link btn_link_weight" data-toggle="modal"
+                                                data-target="#compare"></button>
+                                            <button class="btn_link btn_link_like active" data-toggle="modal"
+                                                data-target="#liked">
+                                                <span class="the_val">99</span>
+                                            </button>
+                                            <button class="btn_link btn_buy" data-toggle="modal"
+                                                data-target="#good_cart"></button>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="d_flex dflex_cost">
                                     <div class="el el1">
                                         <div class="the_cost">
-                                            <p data-price="4990">4 990 р.</p>
+                                            <p>1 454 120 р.</p>
+                                            <del>1 458 120 р.</del>
                                         </div>
                                     </div>
                                     <div class="el el2">
-                                        <form method="post" class="ms2_form">
-                                            <input type="hidden" name="id" value="3172">
-                                            <input type="hidden" name="article" value="7205/17 AP-2">
-                                            <input type="hidden" name="name" value="Бра  ALESSANDRO ">
-                                            <input type="hidden" name="price" value="4990">
-                                            <input type="hidden" name="old_price" value="0">
-                                            <input type="hidden" name="sale" value="0">
-                                            <input type="hidden" name="new" value="1">
-                                            <input type="hidden" name="url" value="/catalog/nastennyie-svetilniki-i-bra/bra/7205/17-ap-2">
-                                            <input type="hidden" name="thumb" value="https://divinare.ru/assets/images/products/3172/small/720517-ap-2.jpg">
-                                            <input type="hidden" name="count" value="1">
-                                            <button class="btn_buy" type="submit" name="ms2_action" value="cart/add" data-toggle="modal" data-target="#one_click">Купить</button>
-                                        </form>
+                                        <button class="btn_buy" data-toggle="modal" data-target="#good_cart">
+                                            Купить
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="unit">
+                        <div class="element">
+                            <div class="the_marker">
+                                <span class="the_marker_el the_marker_el_new">
+                                    <i>new</i>
+                                </span>
+                                <span class="the_marker_el the_marker_el_sale">
+                                    <i>sale</i>
+                                </span>
+                            </div>
+                            <div class="imgwr">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAKgNzJ7bwAAAABJRU5ErkJggg==" data-src="images/good1.png" alt="" class="lazyload">
+                                <!-- Верстка блока для карточеки с капелькой и/или tv иконкой -->
+                                <div class="card-badges">
+                                    <div class="item item_def item_desc item_tv"></div><div class="item item_def item_mob item_tv"></div>
+                                    <div class="item item_def item_desc item_wd"></div><div class="item item_def item_mob item_wd"></div>
+                                </div>
+                            </div>
+                            <div class="the_content">
+                                <p class="tit">
+                                    <a href="">
+                                        Люстра Arte Lamp Rosaria
+                                    </a>
+                                </p>
+                                <p class="article">
+                                    <i class="icon-3d"></i>
+                                    <a href="">
+                                        A8564PL-5RB
+                                    </a>
+                                </p>
+                                <div class="d_flex">
+                                    <div class="el el1">
+                                        <div class="on_store">
+                                            В наличии: 3000 шт.
+                                        </div>
+                                    </div>
+                                    <div class="el el2">
+                                        <div class="like_buttons">
+                                            <button class="btn_link btn_link_weight" data-toggle="modal"
+                                                data-target="#compare"></button>
+                                            <button class="btn_link btn_link_like active" data-toggle="modal"
+                                                data-target="#liked">
+                                                <span class="the_val">99</span>
+                                            </button>
+                                            <button class="btn_link btn_buy" data-toggle="modal"
+                                                data-target="#good_cart"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d_flex dflex_cost">
+                                    <div class="el el1">
+                                        <div class="the_cost">
+                                            <p>1 454 120 р.</p>
+                                            <del>1 458 120 р.</del>
+                                        </div>
+                                    </div>
+                                    <div class="el el2">
+                                        <button class="btn_buy" data-toggle="modal" data-target="#good_cart">
+                                            Купить
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="unit">
+                        <div class="element">
+                            <div class="the_marker">
+                                <span class="the_marker_el the_marker_el_new">
+                                    <i>new</i>
+                                </span>
+                                <span class="the_marker_el the_marker_el_sale">
+                                    <i>sale</i>
+                                </span>
+                            </div>
+                            <div class="imgwr">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAKgNzJ7bwAAAABJRU5ErkJggg==" data-src="images/good1.png" alt="" class="lazyload">
+                                <!-- Верстка блока для карточеки с капелькой и/или tv иконкой -->
+                                <div class="card-badges">
+                                    <div class="item item_def item_desc item_tv"></div><div class="item item_def item_mob item_tv"></div>
+                                    <div class="item item_def item_desc item_wd"></div><div class="item item_def item_mob item_wd"></div>
+                                </div>
+                            </div>
+                            <div class="the_content">
+                                <p class="tit">
+                                    <a href="">
+                                        Люстра Arte Lamp Rosaria
+                                    </a>
+                                </p>
+                                <p class="article">
+                                    <i class="icon-3d"></i>
+                                    <a href="">
+                                        A8564PL-5RB
+                                    </a>
+                                </p>
+                                <div class="d_flex">
+                                    <div class="el el1">
+                                        <div class="on_store">
+                                            В наличии: 3000 шт.
+                                        </div>
+                                    </div>
+                                    <div class="el el2">
+                                        <div class="like_buttons">
+                                            <button class="btn_link btn_link_weight" data-toggle="modal"
+                                                data-target="#compare"></button>
+                                            <button class="btn_link btn_link_like active" data-toggle="modal"
+                                                data-target="#liked">
+                                                <span class="the_val">99</span>
+                                            </button>
+                                            <button class="btn_link btn_buy" data-toggle="modal"
+                                                data-target="#good_cart"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d_flex dflex_cost">
+                                    <div class="el el1">
+                                        <div class="the_cost">
+                                            <p>1 454 120 р.</p>
+                                            <del>1 458 120 р.</del>
+                                        </div>
+                                    </div>
+                                    <div class="el el2">
+                                        <button class="btn_buy" data-toggle="modal" data-target="#good_cart">
+                                            Купить
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -2156,15 +1597,18 @@
                     </div>
                 </div>
                 <div class="swiper-slide unit_double">
-                    <div class="unit product_modal_3174 ">
+                    <div class="unit">
                         <div class="element">
-                            <div class="the_marker"><span class="the_marker_el the_marker_el_new"><i>new</i></span></div>
+                            <div class="the_marker">
+                                <span class="the_marker_el the_marker_el_new">
+                                    <i>new</i>
+                                </span>
+                                <span class="the_marker_el the_marker_el_sale">
+                                    <i>sale</i>
+                                </span>
+                            </div>
                             <div class="imgwr">
-                                <a href="/catalog/lyustryi/podvesnyie-lyustryi/7203/17-ap-2">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAKgNzJ7bwAAAABJRU5ErkJggg=="
-                                        data-src="https://divinare.ru/assets/images/products/3174/720317-ap-2.jpg?v=1"
-                                        alt="Бра Divinare OPHELIA 7203/17 AP-2" class="lazyload">
-                                </a>
+                                <img src="images/good2.jpg" alt="">
                                 <!-- Верстка блока для карточеки с капелькой и/или tv иконкой -->
                                 <div class="card-badges">
                                     <div class="item item_def item_desc item_tv"></div><div class="item item_def item_mob item_tv"></div>
@@ -2173,50 +1617,46 @@
                             </div>
                             <div class="the_content">
                                 <p class="tit">
-                                    <a href="/catalog/lyustryi/podvesnyie-lyustryi/7203/17-ap-2"></a>
+                                    <a href="">
+                                        Люстра Arte Lamp Rosaria
+                                    </a>
                                 </p>
                                 <p class="article">
                                     <i class="icon-3d"></i>
-                                    <a href="/catalog/lyustryi/podvesnyie-lyustryi/7203/17-ap-2">7203/17 AP-2</a>
+                                    <a href="">
+                                        A8564PL-5RB
+                                    </a>
                                 </p>
                                 <div class="d_flex">
                                     <div class="el el1">
-                                        <div class="on_store">В наличии: 123 шт.</div>
+                                        <div class="on_store">
+                                            В наличии: 3000 шт.
+                                        </div>
                                     </div>
                                     <div class="el el2">
                                         <div class="like_buttons">
-                                            <div class="comparison comparison-default " data-id="3174" data-list="default">
-                                                <button class="btn_link btn_link_weight comparison-add comparison-link" data-text=""></button>
-                                                <button class="btn_link btn_link_weight comparison-remove comparison-link" data-text=""></button>
-                                            </div>
-                                            <span class="favorites favorites-default " data-id="3174">
-                                                 <button class="favorites-add favorites-link btn_link btn_link_like " data-text=""></button>
-                                                 <button class="favorites-remove favorites-link btn_link btn_link_like " data-text=""></button>
-                                            </span>
-                                            <button class="btn_link btn_buy btn_link_add_to_cart"></button>
+                                            <button class="btn_link btn_link_weight" data-toggle="modal"
+                                                data-target="#compare"></button>
+                                            <button class="btn_link btn_link_like active" data-toggle="modal"
+                                                data-target="#liked">
+                                                <span class="the_val">99</span>
+                                            </button>
+                                            <button class="btn_link btn_buy" data-toggle="modal"
+                                                data-target="#good_cart"></button>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="d_flex dflex_cost">
                                     <div class="el el1">
                                         <div class="the_cost">
-                                            <p data-price="17990">17 990 р.</p>
+                                            <p>1 454 120 р.</p>
+                                            <del>1 458 120 р.</del>
                                         </div>
                                     </div>
                                     <div class="el el2">
-                                        <form method="post" class="ms2_form">
-                                            <input type="hidden" name="id" value="3174">
-                                            <input type="hidden" name="article" value="7203/17 AP-2">
-                                            <input type="hidden" name="name" value="Бра  OPHELIA ">
-                                            <input type="hidden" name="price" value="17990">
-                                            <input type="hidden" name="old_price" value="0">
-                                            <input type="hidden" name="sale" value="0">
-                                            <input type="hidden" name="new" value="1">
-                                            <input type="hidden" name="url" value="/catalog/lyustryi/podvesnyie-lyustryi/7203/17-ap-2">
-                                            <input type="hidden" name="thumb" value="https://divinare.ru/assets/images/products/3174/small/720317-ap-2.jpg">
-                                            <input type="hidden" name="count" value="1">
-                                            <button class="btn_buy" type="submit" name="ms2_action" value="cart/add" data-toggle="modal" data-target="#one_click">Купить</button>
-                                        </form>
+                                        <button class="btn_buy" data-toggle="modal" data-target="#good_cart">
+                                            Купить
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -2479,6 +1919,7 @@
   </div>
 </section>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js" integrity="sha512-ju6u+4bPX50JQmgU97YOGAXmRMrD9as4LE05PdC3qycsGQmjGlfm041azyB1VfCXpkpt1i9gqXCT6XuxhBJtKg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="js/main.js"></script>
 </body>

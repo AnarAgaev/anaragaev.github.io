@@ -9374,33 +9374,40 @@ $(document).ready(() => {
 // Большой слайдер в шапке сайта --- FINISH
 function slidersCard(){
 
-	var galleryThumbs = new Swiper('.gallery-thumbs', {
-    direction: 'vertical',
-    spaceBetween: 20,
-    slidesPerView: 4,
-    freeMode: true,
+  var galleryThumbs = new Swiper('.gallery-thumbs', {
+    direction: 'horizontal',
+    spaceBetween: 10,
+    slidesPerView: "auto",
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
-    // loop: true,
-	  navigation: {
-	    nextEl: '.swiper-button-next',
-	    prevEl: '.swiper-button-prev',
-	  },
+	observer: true, // перестраивать при изменении одного из контейнеров (родитель или потомок)
+	observeParents: true, // перестраивать при изменении родителя
+	observeSlideChildren: true, // перестраивать при изменении потомка
+	watchOverflow: true,
+	navigation: {
+		nextEl: '.gallery-thumbs-wrap .swiper-button-next',
+		prevEl: '.gallery-thumbs-wrap .swiper-button-prev',
+	},
     breakpoints: {
-      320: {
-        direction: 'horizontal',
-        spaceBetween: 14,
-        slidesPerView: 3,
-      },
-      550: {
-        direction: 'horizontal',
-        slidesPerView: 4,
-      },
-      769: {
-        direction: 'vertical',
-      },
-    },
+		576: {
+			direction: 'horizontal',
+			spaceBetween: 20,
+		},
+		769: {
+			direction: 'vertical',
+			spaceBetween: 20,
+		},
+		993: {
+			direction: 'vertical',
+			spaceBetween: 10,
+		},
+		1201: {
+			direction: 'vertical',
+			spaceBetween: 20
+		}
+    }
   });
+
   var galleryTop = new Swiper('.gallery-top', {
     loop: true,
     navigation: {
@@ -9411,6 +9418,7 @@ function slidersCard(){
       swiper: galleryThumbs
     }
   });
+
   var slider4 = new Swiper('.card_characters_slider .swiper-container', {
     loop: true,
     slidesPerView: 1,
@@ -9564,10 +9572,11 @@ $(document).ready(function() {
 	slidersCard();
 	cardCharactersOpenList();
 	cardInfoBlock();
-  //buttonSliderDisable();
-  $(window).resize(function(){
-    //buttonSliderDisable();
-  });
+	//buttonSliderDisable();
+
+	$(window).resize(function(){
+		//buttonSliderDisable();
+	});
 });
 const defaultTooltipLayout = `
     <div class="tooltip tooltip_custom" role="tooltip">
@@ -9851,16 +9860,16 @@ function catalogSlider() {
   });
 }
 
-function catalogImgList() {
-  let a = $('.catalog_element').length
-  if (a) {
-    $('.catalog_element_img').each(function () {
-      let url = $(this).attr('data-img')
-      let img = 'url("' + url + '")'
-      $(this).css('background', img)
-    });
-  }
-}
+// function catalogImgList() {
+//   let a = $('.catalog_element').length
+//   if (a) {
+//     $('.catalog_element_img').each(function () {
+//       let url = $(this).attr('data-img')
+//       let img = 'url("' + url + '")'
+//       $(this).css('background', img)
+//     });
+//   }
+// }
 
 
 function readMoreCatalog() {
@@ -9872,6 +9881,6 @@ function readMoreCatalog() {
 
 $(document).ready(function () {
   catalogSlider();
-  catalogImgList();
+//   catalogImgList();
   readMoreCatalog()
 });

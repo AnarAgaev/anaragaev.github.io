@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Страница товара</title>
         <meta name="figma" content="@@figma">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
         <link rel="stylesheet" href="common/bootstrap.css">
         <link rel="stylesheet" href="css/main.min.css">
         <meta name="description" content="">
@@ -21,7 +22,7 @@
 
                     <div class="header_logo">
                         <a href="#">
-                            <img src="images/logo.svg" alt="">
+                            <img src="https://aws.massive.ru/divinare.ru/inc/images/logo.svg" alt="">
                         </a>
                     </div>
 
@@ -672,35 +673,54 @@
         <section class="card ">
             <div class="jcont">
                 <div class="card_main">
-                    <div class="card_main_sliders">
+                    <div class="card_main_sliders card_main_sliders_video">
                         <div class="card_main_sliders_left">
-                            <div class="swiper-container gallery-thumbs swiper-container-free-mode swiper-container-thumbs">
-                                <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
-                                    <div class="swiper-slide swiper-slide-visible swiper-slide-active" style="height: 107.5px; margin-bottom: 20px;">
-                                        <img data-url="https://divinare.ru/assets/images/products/2909/134102-lm-10.jpg" src="https://divinare.ru/assets/images/products/2909/small/134102-lm-10.jpg" alt="">
-                                    </div>
-                                    <div class="swiper-slide swiper-slide-visible swiper-slide-next swiper-slide-thumb-active" style="height: 107.5px; margin-bottom: 20px;">
-                                        <img data-url="https://divinare.ru/assets/images/products/2909/134102-lm-10-1.jpg" src="https://divinare.ru/assets/images/products/2909/small/134102-lm-10-1.jpg" alt="">
-                                    </div>
-                                    <div class="swiper-slide swiper-slide-visible" style="height: 107.5px; margin-bottom: 20px;">
-                                        <img data-url="https://divinare.ru/assets/images/products/2909/134102-lm-10-2.jpg" src="https://divinare.ru/assets/images/products/2909/small/134102-lm-10-2.jpg" alt="">
-                                    </div>
-                                    <div class="swiper-slide swiper-slide-visible" style="height: 107.5px; margin-bottom: 20px;">
-                                        <img data-url="https://divinare.ru/assets/images/products/2909/134102-lm-10-3.jpg" src="https://divinare.ru/assets/images/products/2909/small/134102-lm-10-3.jpg" alt="">
-                                    </div>
-                                    <div class="swiper-slide" style="height: 107.5px; margin-bottom: 20px;">
-                                        <img data-url="https://divinare.ru/assets/images/products/2909/134102-lm-10-interior.jpg" src="https://divinare.ru/assets/images/products/2909/small/134102-lm-10-interior.jpg" alt="">
-                                    </div>
-                                    <div class="swiper-slide" style="height: 107.5px; margin-bottom: 20px;">
-                                        <img data-url="https://divinare.ru/assets/images/products/2909/134102-lm-10-drawing.jpg" src="https://divinare.ru/assets/images/products/2909/small/134102-lm-10-drawing.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="swiper-button_wrap">
-                                    <div class="swiper-button-next swiper-button-blue" tabindex="0" role="button" aria-label="Next slide" aria-disabled="false"></div>
-                                    <div class="swiper-button-prev swiper-button-blue swiper-button-disabled" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="true"></div>
-                                </div>
-                                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                            <div class="card_main_rutube">
+                                <a class="card_main_rutube_play"
+									data-type="iframe"
+									data-fancybox="video"
+									href="https://rutube.ru/play/embed/0d2525d7c15958b81934bf4cb56f6947?getPlayOptions=pg_rating,is_adult"
+									title="">
+                                    <img src="https://aws.massive.ru/databus/products/divinare/59081/small/450417-lm-8.jpg" alt="" loading="lazy">
+                                </a>
                             </div>
+
+							<!-- Оборачиваем блок с классом .gallery-thumbs в .gallery-thumbs-wrap -->
+							<div class="gallery-thumbs-wrap">
+								<div class="swiper-container gallery-thumbs">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<img src="https://aws.massive.ru/databus/products/divinare/59081/small/450417-lm-8.jpg" alt="" loading="lazy">
+										</div>
+										<div class="swiper-slide">
+											<img src="https://aws.massive.ru/databus/products/divinare/59081/small/450417-lm-8-3.jpg" alt="" loading="lazy">
+										</div>
+										<div class="swiper-slide">
+											<img src="https://aws.massive.ru/databus/products/divinare/59081/small/450417-lm-8-drawing.jpg" alt="" loading="lazy">
+										</div>
+
+										<!-- Слайды с превью для видео --- START -->
+										<div class="swiper-slide">
+											<div class="gallery-top_video">
+												<img src="https://aws.massive.ru/fandeco.ru/logo/rt-sm.svg" alt="">
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="gallery-top_video">
+												<img src="https://aws.massive.ru/fandeco.ru/logo/yt-sm.svg" alt="">
+											</div>
+										</div>
+										<!-- Слайды с превью для видео --- FINISH -->
+
+									</div>
+								</div>
+							</div>
+
+							<!-- .swiper-notification выносим на 2 уровня выше, последним узлом в блоке .card_main_sliders_left -->
+							<div class="swiper-button_wrap">
+								<div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="true"></div>
+								<div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-disabled="false"></div>
+							</div>
                         </div>
                         <div class="swiper-container gallery-top">
                             <a class="link_fitting" href="#"></a>
@@ -722,65 +742,53 @@
                                 <i></i>
                                 <span>Похожие</span>
                             </a>
-                            <div class="swiper-wrapper" style="transform: translate3d(-1426px, 0px, 0px); transition-duration: 0ms;">
-                                <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="5" style="width: 713px;">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
                                     <div class="gallery-top_img">
-                                        <a data-fancybox="gallery" href="https://divinare.ru/assets/images/products/2909/134102-lm-10-drawing.jpg" title="Люстра Divinare SOPRANO 1341/02 LM-10 5">
-                                            <img data-url="https://divinare.ru/assets/images/products/2909/134102-lm-10-drawing.jpg" src="https://divinare.ru/assets/images/products/2909/big/134102-lm-10-drawing.jpg" alt="Люстра Divinare SOPRANO 1341/02 LM-10 5">
+                                        <a data-fancybox="gallery" href="https://aws.massive.ru/databus/products/divinare/59081/bigg/450417-lm-8.jpg?v=1747612800" title="">
+                                            <img src="https://aws.massive.ru/databus/products/divinare/59081/bigg/450417-lm-8.jpg" alt="" loading="lazy">
                                         </a>
                                     </div>
                                 </div>
-                                <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="0" style="width: 713px;">
+                                <div class="swiper-slide">
                                     <div class="gallery-top_img">
-                                        <a data-fancybox="gallery" href="https://divinare.ru/assets/images/products/2909/134102-lm-10.jpg" title="Люстра Divinare SOPRANO 1341/02 LM-10 0">
-                                            <img data-url="https://divinare.ru/assets/images/products/2909/134102-lm-10.jpg" src="https://divinare.ru/assets/images/products/2909/big/134102-lm-10.jpg" alt="Люстра Divinare SOPRANO 1341/02 LM-10 0">
+                                        <a data-fancybox="gallery" href="https://aws.massive.ru/databus/products/divinare/59081/bigg/450417-lm-8-3.jpg" title="">
+                                            <img src="https://aws.massive.ru/databus/products/divinare/59081/bigg/450417-lm-8-3.jpg" alt="" loading="lazy">
                                         </a>
                                     </div>
                                 </div>
-                                <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="1" style="width: 713px;">
+                                <div class="swiper-slide">
                                     <div class="gallery-top_img">
-                                        <a data-fancybox="gallery" href="https://divinare.ru/assets/images/products/2909/134102-lm-10-1.jpg" title="Люстра Divinare SOPRANO 1341/02 LM-10 1">
-                                            <img data-url="https://divinare.ru/assets/images/products/2909/134102-lm-10-1.jpg" src="https://divinare.ru/assets/images/products/2909/big/134102-lm-10-1.jpg" alt="Люстра Divinare SOPRANO 1341/02 LM-10 1">
+                                        <a data-fancybox="gallery" href="https://aws.massive.ru/databus/products/divinare/59081/bigg/450417-lm-8-drawing.jpg" title="">
+                                            <img src="https://aws.massive.ru/databus/products/divinare/59081/bigg/450417-lm-8-drawing.jpg" alt="" loading="lazy">
                                         </a>
                                     </div>
                                 </div>
-                                <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="2" style="width: 713px;">
-                                    <div class="gallery-top_img">
-                                        <a data-fancybox="gallery" href="https://divinare.ru/assets/images/products/2909/134102-lm-10-2.jpg" title="Люстра Divinare SOPRANO 1341/02 LM-10 2">
-                                            <img data-url="https://divinare.ru/assets/images/products/2909/134102-lm-10-2.jpg" src="https://divinare.ru/assets/images/products/2909/big/134102-lm-10-2.jpg" alt="Люстра Divinare SOPRANO 1341/02 LM-10 2">
+
+								<!-- Слайды с видео --- START -->
+                                <div class="swiper-slide">
+									<!-- Картинку кнопки вставляем первым дочерним узлом в .swiper-slide -->
+									<img src="https://aws.massive.ru/fandeco.ru/logo/rt-bg.svg" alt="" loading="lazy">
+                                    <div class="gallery-top_video">
+										<a href="https://rutube.ru/play/embed/98ba7de4f6e3683af5bcfc622747f493" data-fancybox="rt-slide-gallery" data-type="iframe">
+											<!-- Картинка для постера. Может отсутствовать -->
+											<img src="https://aws.massive.ru/databus/products/divinare/59081/bigg/450417-lm-8.jpg" alt="" loading="lazy">
+										</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+									<!-- Картинку кнопки вставляем первым дочерним узлом в .swiper-slide -->
+									<img src="https://aws.massive.ru/fandeco.ru/logo/yt-bg.svg" alt="" loading="lazy">
+                                    <div class="gallery-top_video">
+                                        <a data-fancybox href="https://www.youtube.com/embed/OXmtB7zFFLk" data-fancybox="yt-gallery">
+											<!-- Картинка для постера. Может отсутствовать -->
+											<img src="https://aws.massive.ru/databus/products/divinare/59081/bigg/450417-lm-8.jpg" alt="" loading="lazy">
                                         </a>
                                     </div>
                                 </div>
-                                <div class="swiper-slide" data-swiper-slide-index="3" style="width: 713px;">
-                                    <div class="gallery-top_img">
-                                        <a data-fancybox="gallery" href="https://divinare.ru/assets/images/products/2909/134102-lm-10-3.jpg" title="Люстра Divinare SOPRANO 1341/02 LM-10 3">
-                                            <img data-url="https://divinare.ru/assets/images/products/2909/134102-lm-10-3.jpg" src="https://divinare.ru/assets/images/products/2909/big/134102-lm-10-3.jpg" alt="Люстра Divinare SOPRANO 1341/02 LM-10 3">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide" data-swiper-slide-index="4" style="width: 713px;">
-                                    <div class="gallery-top_img">
-                                        <a data-fancybox="gallery" href="https://divinare.ru/assets/images/products/2909/134102-lm-10-interior.jpg" title="Люстра Divinare SOPRANO 1341/02 LM-10 4">
-                                            <img data-url="https://divinare.ru/assets/images/products/2909/134102-lm-10-interior.jpg" src="https://divinare.ru/assets/images/products/2909/big/134102-lm-10-interior.jpg" alt="Люстра Divinare SOPRANO 1341/02 LM-10 4">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide" data-swiper-slide-index="5" style="width: 713px;">
-                                    <div class="gallery-top_img">
-                                        <a data-fancybox="gallery" href="https://divinare.ru/assets/images/products/2909/134102-lm-10-drawing.jpg" title="Люстра Divinare SOPRANO 1341/02 LM-10 5">
-                                            <img data-url="https://divinare.ru/assets/images/products/2909/134102-lm-10-drawing.jpg" src="https://divinare.ru/assets/images/products/2909/big/134102-lm-10-drawing.jpg" alt="Люстра Divinare SOPRANO 1341/02 LM-10 5">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="0" style="width: 713px;">
-                                    <div class="gallery-top_img">
-                                        <a data-fancybox="gallery" href="https://divinare.ru/assets/images/products/2909/134102-lm-10.jpg" title="Люстра Divinare SOPRANO 1341/02 LM-10 0">
-                                            <img data-url="https://divinare.ru/assets/images/products/2909/134102-lm-10.jpg" src="https://divinare.ru/assets/images/products/2909/big/134102-lm-10.jpg" alt="Люстра Divinare SOPRANO 1341/02 LM-10 0">
-                                        </a>
-                                    </div>
-                                </div>
+								<!-- Слайды с видео --- FINISH -->
+
                             </div>
-                            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
                         </div>
                     </div>
                     <div class="card_main_content" itemprop="offers" itemscope="" itemtype="https://schema.org/Offer">
@@ -792,13 +800,13 @@
                         <div class="card_main_content_unit">
                             <div class="card_main_content_unit_top">
                                 <div class="card_main_content_unit_img">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAKgNzJ7bwAAAABJRU5ErkJggg=="
-                                        data-src="https://divinare.ru/assets/images/products/2909/small/134102-lm-10.jpg"
+                                    <img src="https://aws.massive.ru/databus/products/divinare/59081/small/450417-lm-8.jpg"
                                         alt="" class="lazyload">
                                 </div>
                                 <div class="card_main_content_unit_content">
                                     <div class="card_main_content_unit_content_title">Люстра Divinare SOPRANO </div>
                                     <div class="card_main_content_unit_content_article" itemprop="sku">
+                                        <a href="#"><i class="icon-ies"></i></a>
                                         <i class="icon-3d"></i>
                                         <a href="#"><i class="icon-yt"></i></a>
                                         1341/02 LM-10
@@ -882,12 +890,29 @@
                                 </div>
                                 <div class="card_main_content_unit_links_element banks">
                                     <div class="card_main_content_unit_links_title">
-                                        принимаем к оплате карты
+                                        оплата онлайн (карты, сбп)
                                     </div>
                                     <div class="card_main_content_unit_links_text">
                                         <div class="element">
-                                            <a data-toggle="modal" data-target="#halva">Халва</a>
-                                            <a data-toggle="modal" data-target="#halva">Совесть</a>
+                                            <ul class="element__list">
+                                                <li class="element__item element__item_visa">
+                                                    <span title="Visa"></span>
+                                                </li>
+                                                <li class="element__item element__item_mc">
+                                                    <span title="Mastercard"></span>
+                                                </li>
+                                                <li class="element__item element__item_mir">
+                                                    <span title="МИР"></span>
+                                                </li>
+                                                <li class="element__item element__item_sbp">
+                                                    <span title="СБП"></span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="element">
+                                            <a href="{"3608"|url}" class="color_blue" target="_blank">
+                                            Подробнее о способах оплаты
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -1317,7 +1342,7 @@
                                             <i></i>
                                             <span>
                                                 Фотометрические данные
-                                                <mark>A4770SP-1BK_ies_ldt</mark>
+                                                <mark>Какая-то ссылка с длинным текстом больше одной строки</mark>
                                             </span>
                                         </a>
                                     </li>
@@ -3239,6 +3264,7 @@
   </div>
 </section>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js" integrity="sha512-ju6u+4bPX50JQmgU97YOGAXmRMrD9as4LE05PdC3qycsGQmjGlfm041azyB1VfCXpkpt1i9gqXCT6XuxhBJtKg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="js/main.js"></script>
 </body>
