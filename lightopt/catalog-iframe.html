@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/main.min.css" >
     <link rel="stylesheet" href="css/pages/catalog-iframe.min.css" >
     <script>
-      window.filterApiLink = "https://master-provider.massive.ru/api/categories/330"; // Ссылка на API фильтра (каталог) - только на странице с фильтрами
+      window.filterApiLink = "https://technolight.pro/api/categories/330"; // Ссылка на API фильтра (каталог) - только на странице с фильтрами
       window.addProductApiLink = "mocks/add-product-request.json"; // Ссылка на API добавить товар в заказ - только на странице товара
       window.catalogLink = "index.html"; // Ссылка на страницу каталога - на каждой странице
       window.listOrders = "https://technolight.pro/api/orders/getforcatalog"; // Ссылка на список заказов
@@ -468,6 +468,227 @@
         </div>
       </section>
     </main>
+    <div class="spinner" id="spinner">
+      <div class="spinner__body">
+        <div class="spinner__item"></div>
+        <div class="spinner__item"></div>
+        <div class="spinner__item"></div>
+      </div>
+    </div>
+    <!-- Показываем модалку с помощью класса .visible-->
+    <div class="order-war" id="orderLoggedWar">
+      <!-- Показываем контент с помощью класса .visible-->
+      <div class="order-war__body">
+        <span class="order-war__close close"></span>
+        <i></i>
+        <p>Чтобы добавить товар в заказ, необходимо зарегистрироваться или войти в аккаунт</p>
+        <!-- В ссылку ставим url на страницу вход/регистрация-->
+        <div class="order-war__buttons">
+          <a class="dark-btn block-btn" href="">Войти</a>
+          <a class="dark-btn block-btn" href="">Зарегистрироваться</a>
+        </div>
+      </div>
+    </div>
+    <!-- Показываем модалку с помощью класса .visible-->
+    <div class="order-war" id="orderAddProductWar">
+      <!-- Показываем контент с помощью класса .visible-->
+      <div class="order-war__body">
+        <span class="order-war__close close"></span>
+        <i></i>
+        <p>
+          Вы уверены, что хотите добавить товар в заказ со статусом «В резерве»?
+          <br >
+          Заказ будет возвращён в статус «В обработке»
+        </p>
+        <button class="dark-btn block-btn">Да, добавить товар</button>
+      </div>
+    </div>
+    <!-- Показываем модалку с помощью класса .visible-->
+    <div class="order-war" id="orderError">
+      <!-- Показываем контент с помощью класса .visible-->
+      <div class="order-war__body">
+        <span class="order-war__close close"></span>
+        <i></i>
+        <p>
+          <b>Ошибка</b>
+          <br >
+          К сожалению, не удалось выполнить запрос
+        </p>
+        <button class="dark-btn block-btn close">Закрыть</button>
+      </div>
+    </div>
+    <!-- Показываем модалку с помощью класса .visible-->
+    <div class="order-war" id="orderApproved">
+      <!-- Показываем контент с помощью класса .visible-->
+      <div class="order-war__body">
+        <span class="order-war__close close"></span>
+        <i></i>
+        <p>
+          <br >
+          Товар добавлен в заказ
+          <mark class="order-war__order-number"></mark>
+        </p>
+        <div class="order-war__body-bottom">
+          <button class="dark-btn block-btn close">Продолжить покупку</button>
+          <a class="dark-btn block-btn" href="/admin/orders">Перейти в заказ</a>
+        </div>
+      </div>
+    </div>
+    <!-- Показываем модалку с помощью класса .visible-->
+    <div class="order-war" id="orderAddProductNewOrder">
+      <!-- Показываем контент с помощью класса .visible-->
+      <div class="order-war__body">
+        <span class="order-war__close close"></span>
+        <i></i>
+        <p>
+          Заказ не выбран.
+          <br >
+          Для товара будет создан Новый заказ.
+        </p>
+        <button class="dark-btn block-btn">Да, добавить товар</button>
+      </div>
+    </div>
+    <div class="modal fast-view" id="fastView">
+      <div class="modal-wrapper order-war__body">
+        <div class="modal-close close"></div>
+        <div class="modal-top">
+          <div class="modal-top__container">
+            <div class="modal-top__title _js-modal-name">Потолочная люстра Tet-A-Tet</div>
+            <div class="modal-top__article _js-modal-code">A1704LM-5CC</div>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="card-top _js-card-top">
+            <div class="card-top__left">
+              <div class="card-slider">
+                <div class="card-slider__main"><img class="_js-modal-image" src="img/slider-1.jpg" loading="lazy" ></div>
+              </div>
+            </div>
+            <div class="card-top__right">
+              <div class="card-top__info">
+                <div class="card-top__btns"></div>
+                <div class="card-top__price">
+                  <div class="card-top__price_rrc">
+                    <div class="card-top__price_title">РРЦ:</div>
+                    <div class="card-top__price_value">
+                      <span class="_js-modal-price-rrc">6 780</span>
+                      ₽
+                    </div>
+                  </div>
+                  <div class="card-top__price_old">
+                    <div class="card-top__price_title">Ваша цена:</div>
+                    <div class="card-top__price_value">
+                      <span class="_js-modal-price">6 780</span>
+                      ₽
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-top__quantity">
+                <div class="card-top__quantity_changer">
+                  <button class="btn-reset btn--white changer__btn changer__btn_minus">—</button>
+                  <input class="changer__input _js-modal-quantity" type="text" min="1" maxlength="4" value="1" >
+                  <button class="btn-reset btn--white changer__btn changer__btn_plus">+</button>
+                </div>
+                <div class="card-top__quantity_value"><span class="_js-modal-count">234</span></div>
+              </div>
+              <div class="card-top__order">
+                <div class="custom-select">
+                  <div class="custom-select__top card-select__top">
+                    <!-- В data атрибут data-order-id добавляем ID заказа в который будет добавлять товар по умолчанию-->
+                    <!-- В data атрибут data-status пишем соответственно: Заказ в резерве - false, Заказ не оформлен - true, Новый заказ - new-->
+                    <!-- При первом рендере, всегда ставим в custom-select__value текст Новый заказ, значение data-order-id - пустое, data-status - new-->
+                    <div class="custom-select__value" data-order-id data-status="new">Новый заказ</div>
+                    <div class="custom-select_open"></div>
+                  </div>
+                  <div class="custom-select__drop">
+                    <ul class="custom-select__list">
+                      <li class="custom-select__item custom-select__item--sort">
+                        <!-- Первым всегда идет опшен Новый заказ-->
+                        <!-- Для Нового заказа data-order-id оставляем без значения либо пустая строка-->
+                        <!-- Для Нового заказа data-status ставим в значение new-->
+                        <label class="custom-select__option" data-order-id data-status="new" title="Новый заказ">
+                          <input class="invisible" type="radio" name="order" checked >
+                          <span>Новый заказ</span>
+                        </label>
+                      </li>
+                      <li class="custom-select__item custom-select__item--sort">
+                        <label class="custom-select__option" data-order-id="TLS8000355" data-status="false" title="Заказ № TLS8000355">
+                          <input class="invisible" type="radio" name="order" >
+                          <span>Заказ № TLS8000355</span>
+                          <mark>В резерве</mark>
+                        </label>
+                      </li>
+                      <li class="custom-select__item custom-select__item--sort">
+                        <label class="custom-select__option" data-order-id="TL8000602" data-status="false" title="Заказ № TL8000602">
+                          <input class="invisible" type="radio" name="order" >
+                          <span>Заказ № TL8000602</span>
+                          <mark>В резерве</mark>
+                        </label>
+                      </li>
+                      <li class="custom-select__item custom-select__item--sort">
+                        <label class="custom-select__option" data-order-id="TL8006950" data-status="true" title="Заказ № TL8006950">
+                          <input class="invisible" type="radio" name="order" >
+                          <span>Заказ № TL8006950</span>
+                          <mark>Не оформлен</mark>
+                        </label>
+                      </li>
+                      <li class="custom-select__item custom-select__item--sort">
+                        <label class="custom-select__option" data-order-id="TL8006961" data-status="true" title="Заказ № TL8006961">
+                          <input class="invisible" type="radio" name="order" >
+                          <span>Заказ № TL8006961</span>
+                          <mark>Не оформлен</mark>
+                        </label>
+                      </li>
+                      <li class="custom-select__item custom-select__item--sort">
+                        <label class="custom-select__option" data-order-id="TEST8008844" data-status="true" title="Заказ № TEST8008844">
+                          <input class="invisible" type="radio" name="order" >
+                          <span>Заказ № TEST8008844</span>
+                          <mark>Не оформлен</mark>
+                        </label>
+                      </li>
+                      <li class="custom-select__item custom-select__item--sort">
+                        <label class="custom-select__option" data-order-id="TEST8008847" data-status="false" title="Заказ № TEST8008847">
+                          <input class="invisible" type="radio" name="order" >
+                          <span>Заказ № TEST8008847</span>
+                          <mark>В резерве</mark>
+                        </label>
+                      </li>
+                      <li class="custom-select__item custom-select__item--sort">
+                        <label class="custom-select__option" data-order-id="TEST8008848" data-status="false" title="Заказ № TEST8008848">
+                          <input class="invisible" type="radio" name="order" >
+                          <span>Заказ № TEST8008848</span>
+                          <mark>В резерве</mark>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Если пользователь залогинен, к кнопке Добавить в заказ добавляем аттрибут data-product-id со значением id текущего продукта-->
+                <button class="btn-reset default-btn card-top__btn_order _js-modal-add" data-product-id="777-1234567-prod">Добавить в заказ</button>
+              </div>
+              <div class="card-top__down">
+                <div class="card-top__down_title">Итого заказ:</div>
+                <div class="card-top__down_total">
+                  <span class="_js-modal-total">20 340</span>
+                  ₽
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Показываем модалку с помощью класса .visible-->
+    <div class="order-war" id="success">
+      <!-- Показываем контент с помощью класса .visible-->
+      <div class="order-war__body">
+        <span class="order-war__close close"></span>
+        <i></i>
+        <p>Товар успешно добавлен в заказ</p>
+        <button class="dark-btn block-btn close">Продолжить покупки</button>
+      </div>
+    </div>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js" defer></script>
     <script src="js/pages/catalog-iframe.min.js" defer></script>

@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/vendor.min.css" >
     <link rel="preload" href="css/main.min.css" as="style" >
     <link rel="stylesheet" href="css/main.min.css" >
-    <link rel="stylesheet" href="css/pages/index.min.css" >
+    <link rel="stylesheet" href="css/pages/products.min.css" >
     <script>
       window.filterApiLink = "https://master-provider.massive.ru/api/categories/330"; // Ссылка на API фильтра (каталог) - только на странице с фильтрами
       window.addProductApiLink = "mocks/add-product-request.json"; // Ссылка на API добавить товар в заказ - только на странице товара
@@ -31,7 +31,7 @@
       //- window.removeFromFavoriteLink = "mocks/favorite-request-error.json" // Не переносить! Нужен для теста ошибки запроса
     </script>
   </head>
-  <body class="page-index" id="body">
+  <body class="page-products" id="body">
     <header class="header" id="header">
       <div class="container">
         <div class="header-info">
@@ -2564,7 +2564,7 @@
     </div>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js" defer></script>
-    <script src="js/pages/index.min.js" defer></script>
+    <script src="js/pages/products.min.js" defer></script>
     <!-- Если по ТЗ не поддерживаем IE11, то оставляем, если поддерживаем, то убираем и тестируем поддержку IE11-->
     <script>
       if (navigator.userAgent.indexOf("MSIE") !== -1 || navigator.appVersion.indexOf("Trident/") > -1) {
