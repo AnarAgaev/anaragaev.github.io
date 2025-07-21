@@ -20,8 +20,9 @@
       window.filterApiLink = "https://master-provider.massive.ru/api/categories/330"; // Ссылка на API фильтра (каталог) - только на странице с фильтрами
       window.addProductApiLink = "mocks/add-product-request.json"; // Ссылка на API добавить товар в заказ - только на странице товара
       window.catalogLink = "index.html"; // Ссылка на страницу каталога - на каждой странице
+
       window.listOrders = "mocks/get-request-list-orders.json"; // Ссылка на список заказов
-      //- window.listOrders = "https://technolight.pro/api/orders/getforcatalog" // Ссылка на список заказов
+      //- window.listOrders = "https://prev-kirill-provider.massive.ru/rest/v1/orders/" // Ссылка на список заказов
 
       // !!! Обрати внимание, что в конце ссылки слэш !!!
       //- window.searchRequestLink = "https://technolight.pro/api/products/search/" // Ссылка на API поиска - на каждой странице
@@ -1853,6 +1854,7 @@
         <button class="dark-btn block-btn">Да, добавить товар</button>
       </div>
     </div>
+    <!-- Показать модалку .visible.show-->
     <div class="modal fast-view" id="fastView">
       <div class="modal-wrapper order-war__body">
         <div class="modal-close close"></div>
@@ -1875,7 +1877,10 @@
                 <div class="card-top__price">
                   <div class="card-top__price_crossed">
                     <div class="card-top__price_title">Рекомендуемая розничная цена:</div>
-                    <div class="card-top__price_value">6 840 ₽</div>
+                    <div class="card-top__price_value">
+                      <span class="_js-modal-price-rrc">6 840</span>
+                      ₽
+                    </div>
                   </div>
                   <div class="card-top__price_new">
                     <div class="card-top__price_title">Рекомендуемая розничная цена распродажа:</div>
@@ -1883,7 +1888,10 @@
                   </div>
                   <div class="card-top__price_old">
                     <div class="card-top__price_title">Ваша цена:</div>
-                    <div class="card-top__price_value">2 280 ₽</div>
+                    <div class="card-top__price_value">
+                      <span class="_js-modal-price">2 280</span>
+                      ₽
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1894,85 +1902,126 @@
                   <button class="btn-reset btn--white changer__btn changer__btn_plus">+</button>
                 </div>
                 <div class="card-top__quantity_value">
-                  <span class="in-stock">234 шт в наличии</span>
+                  <span class="in-stock _js-modal-count">234 шт в наличии</span>
                   <span class="not-available">Нет в наличии</span>
                   <span class="message">Какой-то текст комментария или сообщения на несколько строк</span>
                 </div>
               </div>
               <div class="card-top__order">
-                <div class="custom-select">
-                  <div class="custom-select__top card-select__top">
-                    <!-- В data атрибут data-order-id добавляем ID заказа в который будет добавлять товар по умолчанию-->
-                    <!-- В data атрибут data-status пишем соответственно: Заказ в резерве - false, Заказ не оформлен - true, Новый заказ - new-->
-                    <!-- При первом рендере, всегда ставим в custom-select__value текст Новый заказ, значение data-order-id - пустое, data-status - new-->
-                    <div class="custom-select__value" data-order-id data-status="new">Новый заказ</div>
-                    <div class="custom-select_open"></div>
+                <div class="card-top__order-wrap">
+                  <div class="card-top__order-status">
+                    <span>Заказ</span>
+                    <!-- По дефолту оставляем пустым-->
+                    <mark></mark>
                   </div>
-                  <div class="custom-select__drop">
-                    <ul class="custom-select__list">
-                      <li class="custom-select__item custom-select__item--sort">
-                        <!-- Первым всегда идет опшен Новый заказ-->
-                        <!-- Для Нового заказа data-order-id оставляем без значения либо пустая строка-->
-                        <!-- Для Нового заказа data-status ставим в значение new-->
-                        <label class="custom-select__option" data-order-id data-status="new" title="Новый заказ">
-                          <input class="invisible" type="radio" name="order" checked >
-                          <span>Новый заказ</span>
-                        </label>
-                      </li>
-                      <li class="custom-select__item custom-select__item--sort">
-                        <label class="custom-select__option" data-order-id="TLS8000355" data-status="false" title="Заказ № TLS8000355">
-                          <input class="invisible" type="radio" name="order" >
-                          <span>Заказ № TLS8000355</span>
-                          <mark>В резерве</mark>
-                        </label>
-                      </li>
-                      <li class="custom-select__item custom-select__item--sort">
-                        <label class="custom-select__option" data-order-id="TL8000602" data-status="false" title="Заказ № TL8000602">
-                          <input class="invisible" type="radio" name="order" >
-                          <span>Заказ № TL8000602</span>
-                          <mark>В резерве</mark>
-                        </label>
-                      </li>
-                      <li class="custom-select__item custom-select__item--sort">
-                        <label class="custom-select__option" data-order-id="TL8006950" data-status="true" title="Заказ № TL8006950">
-                          <input class="invisible" type="radio" name="order" >
-                          <span>Заказ № TL8006950</span>
-                          <mark>Не оформлен</mark>
-                        </label>
-                      </li>
-                      <li class="custom-select__item custom-select__item--sort">
-                        <label class="custom-select__option" data-order-id="TL8006961" data-status="true" title="Заказ № TL8006961">
-                          <input class="invisible" type="radio" name="order" >
-                          <span>Заказ № TL8006961</span>
-                          <mark>Не оформлен</mark>
-                        </label>
-                      </li>
-                      <li class="custom-select__item custom-select__item--sort">
-                        <label class="custom-select__option" data-order-id="TEST8008844" data-status="true" title="Заказ № TEST8008844">
-                          <input class="invisible" type="radio" name="order" >
-                          <span>Заказ № TEST8008844</span>
-                          <mark>Не оформлен</mark>
-                        </label>
-                      </li>
-                      <li class="custom-select__item custom-select__item--sort">
-                        <label class="custom-select__option" data-order-id="TEST8008847" data-status="false" title="Заказ № TEST8008847">
-                          <input class="invisible" type="radio" name="order" >
-                          <span>Заказ № TEST8008847</span>
-                          <mark>В резерве</mark>
-                        </label>
-                      </li>
-                      <li class="custom-select__item custom-select__item--sort">
-                        <label class="custom-select__option" data-order-id="TEST8008848" data-status="false" title="Заказ № TEST8008848">
-                          <input class="invisible" type="radio" name="order" >
-                          <span>Заказ № TEST8008848</span>
-                          <mark>В резерве</mark>
-                        </label>
-                      </li>
-                    </ul>
+                  <!-- Открыть селект по дефолту .custom-select--open-->
+                  <div class="custom-select">
+                    <div class="custom-select__top card-select__top">
+                      <!-- По дефолту можно отрендерить Новый заказ, далее он все равно перепишется дефолтным заказом пришедшем с бэка либо посмотреть как выставляется дефолтный заказ и повторить все его data аттрибуты-->
+                      <!-- При первом рендере, всегда ставим в custom-select__value текст Новый заказ, значение аттрибутов data-status="NEW_ORDER" data-status-text="Новый заказ"-->
+                      <div class="custom-select__value" data-status="NEW_ORDER" data-status-text="Новый заказ">Новый заказ</div>
+                      <div class="custom-select_open"></div>
+                    </div>
+                    <div class="custom-select__drop">
+                      <ul class="custom-select__list">
+                        <li class="custom-select__item custom-select__item--sort">
+                          <!-- Первым всегда идет опшен Новый заказ-->
+                          <!-- Для Нового заказа всегда ставим следующие data аттрибуты data-status="NEW_ORDER" data-status-text="Новый заказ"-->
+                          <label class="custom-select__option" data-status="NEW_ORDER" data-status-text="Новый заказ">
+                            <input class="invisible" type="radio" name="order" checked >
+                            <span>Новый заказ</span>
+                          </label>
+                        </li>
+                        <li class="custom-select__item custom-select__item--sort">
+                          <!-- В data-status ставим ТЕКСТ 'true' или 'false' в зависимости от того можно ли в заказ добавлять товары-->
+                          <!-- В data-status-text ставим текстовое значение статуса (В резерве, Не оформлен и т.д.)-->
+                          <label class="custom-select__option" data-order-id="8000355" data-article="TLS8000355" data-number1c="ЯР030481" data-created="03.07.2025" data-status="IN_ASSEMBLY" data-status-text="В сборке и доставке">
+                            <input class="invisible" type="radio" name="product-card-order" >
+                            <span>Заказ № TLS8000355 ЯР030481</span>
+                            <div>
+                              <i>от 03.07.2025</i>
+                              <mark>В сборке и доставке</mark>
+                            </div>
+                          </label>
+                        </li>
+                        <li class="custom-select__item custom-select__item--sort">
+                          <!-- В data-status ставим ТЕКСТ 'true' или 'false' в зависимости от того можно ли в заказ добавлять товары-->
+                          <!-- В data-status-text ставим текстовое значение статуса (В резерве, Не оформлен и т.д.)-->
+                          <label class="custom-select__option" data-order-id="8000602" data-article="TL8000602" data-number1c="ЯР030482" data-created="03.08.2025" data-status="RESERVED" data-status-text="В резерве">
+                            <input class="invisible" type="radio" name="product-card-order" >
+                            <span>Заказ № TL8000602 ЯР030482</span>
+                            <div>
+                              <i>от 03.08.2025</i>
+                              <mark>В резерве</mark>
+                            </div>
+                          </label>
+                        </li>
+                        <li class="custom-select__item custom-select__item--sort">
+                          <!-- В data-status ставим ТЕКСТ 'true' или 'false' в зависимости от того можно ли в заказ добавлять товары-->
+                          <!-- В data-status-text ставим текстовое значение статуса (В резерве, Не оформлен и т.д.)-->
+                          <label class="custom-select__option" data-order-id="8006950" data-article="TL8006950" data-number1c="ЯР030483" data-created="03.09.2025" data-status="NEW" data-status-text="Не оформлен">
+                            <input class="invisible" type="radio" name="product-card-order" >
+                            <span>Заказ № TL8006950 ЯР030483</span>
+                            <div>
+                              <i>от 03.09.2025</i>
+                              <mark>Не оформлен</mark>
+                            </div>
+                          </label>
+                        </li>
+                        <li class="custom-select__item custom-select__item--sort">
+                          <!-- В data-status ставим ТЕКСТ 'true' или 'false' в зависимости от того можно ли в заказ добавлять товары-->
+                          <!-- В data-status-text ставим текстовое значение статуса (В резерве, Не оформлен и т.д.)-->
+                          <label class="custom-select__option" data-order-id="8006961" data-article="TL8006961" data-number1c="ЯР030484" data-created="03.10.2025" data-status="NEW" data-status-text="Не оформлен">
+                            <input class="invisible" type="radio" name="product-card-order" >
+                            <span>Заказ № TL8006961 ЯР030484</span>
+                            <div>
+                              <i>от 03.10.2025</i>
+                              <mark>Не оформлен</mark>
+                            </div>
+                          </label>
+                        </li>
+                        <li class="custom-select__item custom-select__item--sort">
+                          <!-- В data-status ставим ТЕКСТ 'true' или 'false' в зависимости от того можно ли в заказ добавлять товары-->
+                          <!-- В data-status-text ставим текстовое значение статуса (В резерве, Не оформлен и т.д.)-->
+                          <label class="custom-select__option" data-order-id="8008844" data-article="TEST8008844" data-number1c="ЯР030485" data-created="03.11.2025" data-status="NEW" data-status-text="Не оформлен">
+                            <input class="invisible" type="radio" name="product-card-order" >
+                            <span>Заказ № TEST8008844 ЯР030485</span>
+                            <div>
+                              <i>от 03.11.2025</i>
+                              <mark>Не оформлен</mark>
+                            </div>
+                          </label>
+                        </li>
+                        <li class="custom-select__item custom-select__item--sort">
+                          <!-- В data-status ставим ТЕКСТ 'true' или 'false' в зависимости от того можно ли в заказ добавлять товары-->
+                          <!-- В data-status-text ставим текстовое значение статуса (В резерве, Не оформлен и т.д.)-->
+                          <label class="custom-select__option" data-order-id="8008847" data-article="TEST8008847" data-number1c="ЯР030486" data-created="03.12.2025" data-status="RESERVED" data-status-text="В резерве">
+                            <input class="invisible" type="radio" name="product-card-order" >
+                            <span>Заказ № TEST8008847 ЯР030486</span>
+                            <div>
+                              <i>от 03.12.2025</i>
+                              <mark>В резерве</mark>
+                            </div>
+                          </label>
+                        </li>
+                        <li class="custom-select__item custom-select__item--sort">
+                          <!-- В data-status ставим ТЕКСТ 'true' или 'false' в зависимости от того можно ли в заказ добавлять товары-->
+                          <!-- В data-status-text ставим текстовое значение статуса (В резерве, Не оформлен и т.д.)-->
+                          <label class="custom-select__option" data-order-id="8008848" data-article="TEST8008848" data-number1c="ЯР030487" data-created="03.17.2025" data-status="RESERVED" data-status-text="В резерве">
+                            <input class="invisible" type="radio" name="product-card-order" >
+                            <span>Заказ № TEST8008848 ЯР030487</span>
+                            <div>
+                              <i>от 03.17.2025</i>
+                              <mark>В резерве</mark>
+                            </div>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
                 <!-- Если пользователь залогинен, к кнопке Добавить в заказ добавляем аттрибут data-product-id со значением id текущего продукта-->
-                <button class="btn-reset default-btn card-top__btn_order _js-modal-add" data-product-id="777-1234567-prod">Добавить в заказ</button>
+                <button class="btn-reset default-btn card-top__btn_order _js-modal-add" data-product-id="102841-prod-example">Добавить в заказ</button>
               </div>
               <div class="card-top__down">
                 <div class="card-top__down_title">Итого заказ:</div>

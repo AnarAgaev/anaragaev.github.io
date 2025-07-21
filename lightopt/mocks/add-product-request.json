@@ -1,5 +1,103 @@
 {
-    "order": "000777-ord-new",
-    "product": "777-1234567-prod",
-    "count": 33
+	"data": {
+		"id": 800005,
+		"number": "TL800005",
+		"number_1c": "ЯР800005",
+		"uuid_1c": null,
+		"comment": null,
+		"readonly": 0,
+		"default": true,
+		"status": {
+			"current": {
+				"id": 1,
+				"name": "NEW",
+				"label": "Не оформлен",
+				"color": "info",
+				"uuid": null,
+				"sort": 2,
+				"group": "process",
+				"parent": null
+			},
+			"log": [
+				{
+					"id": 21788,
+					"status_name": "NEW",
+					"status": {
+						"id": 1,
+						"name": "NEW",
+						"label": "Не оформлен",
+						"color": "info",
+						"uuid": null,
+						"sort": 2,
+						"group": "process",
+						"parent": null
+					},
+					"created_at": "2025-07-14T12:43:05.000000Z"
+				},
+				{
+					"id": 21789,
+					"status_name": "NEW",
+					"status": {
+						"id": 1,
+						"name": "NEW",
+						"label": "Не оформлен",
+						"color": "info",
+						"uuid": null,
+						"sort": 2,
+						"group": "process",
+						"parent": null
+					},
+					"created_at": "2025-07-14T12:43:05.000000Z"
+				}
+			]
+		},
+		"shipping": {
+			"id": null,
+			"date": null,
+			"ttn_number": null,
+			"ttn_company": null
+		},
+		"info": {
+			"contract_id": 40,
+			"shop_id": null,
+			"counterparty_id": 22
+		},
+		"downloads": [],
+		"products": [
+			{
+				"id": 102841,
+				"article": "A1513PL-1BK",
+				"image": "https://shrunk.website.yandexcloud.net/images/1b/6c/1b6cc2cf2463cb9c83d820abde29cc4d/570x570/0.webp",
+				"stock": 2967,
+				"price": 599.5,
+				"base_price": 1090,
+				"page_url": "https://prev-kirill-provider.massive.ru/products/102841",
+				"count": 4,
+				"reserved": 0,
+				"disposal": 0,
+				"ordered": 0,
+				"delivery_date": null,
+				"delivery_status": null
+			},
+			{
+				"id": 181254,
+				"article": "2505/06 SP-16",
+				"image": "https://shrunk.website.yandexcloud.net/images/24/de/24deade16de3be705a1c7e09319bb7d2/570x570/0.webp",
+				"stock": 79,
+				"price": 9115.2,
+				"base_price": 18990,
+				"page_url": "https://prev-kirill-provider.massive.ru/products/181254",
+				"count": 1,
+				"reserved": 0,
+				"disposal": 0,
+				"ordered": 0,
+				"delivery_date": null,
+				"delivery_status": null
+			}
+		],
+		"meta": {
+			"created_at": "2025-07-14T12:43:05.000000Z",
+			"updated_at": "2025-07-18T13:03:21.000000Z"
+		}
+	}
 }
