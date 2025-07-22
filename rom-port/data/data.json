@@ -1,0 +1,141 @@
+{
+    "portfolio": [
+        {
+            "id": 1,
+            "number": "01",
+            "name": "Liberation",
+            "year": 2021,
+            "img": "img/liberation.jpg",
+            "project": {
+                "title": "E-commerce & Blog Interface",
+                "description": "I present to your attention the design concept of an online store combined with a blog. I wanted to pay tribute to a beautiful girl, a ceramist - Marina Lozova. I did not find anything better than to make this concept for her store.",
+                "contacts": {
+                    "dribbble": "https://dribbble.com/",
+                    "instagram": "https://www.instagram.com/"
+                },
+                "items": [
+                    {
+                        "description": "",
+                        "img": "img/icelandic.jpg"
+                    },
+                    {
+                        "description": "",
+                        "img": "img/app.jpg"
+                    },
+                    {
+                        "description": "",
+                        "img": "img/father.jpg"
+                    },
+                    {
+                        "description": "",
+                        "img": "img/icelandic.jpg"
+                    },
+                    {
+                        "description": "",
+                        "img": "img/liberation.jpg"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 2,
+            "number": "02",
+            "name": "Icelandic Mail App",
+            "year": 2022,
+            "img": "img/icelandic.jpg",
+            "project": {
+                "title": "E-commerce & Blog Interface",
+                "description": "I present to your attention the design concept of an online store combined with a blog. I wanted to pay tribute to a beautiful girl, a ceramist - Marina Lozova. I did not find anything better than to make this concept for her store.",
+                "contacts": {
+                    "dribbble": "https://dribbble.com/"
+                },
+                "items": [
+                    {
+                        "description": "",
+                        "img": "img/app.jpg"
+                    },
+                    {
+                        "description": "",
+                        "img": "img/liberation.jpg"
+                    },
+                    {
+                        "description": "",
+                        "img": "img/icelandic.jpg"
+                    },
+                    {
+                        "description": "",
+                        "img": "img/father.jpg"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 3,
+            "number": "03",
+            "name": "Name of the Project",
+            "year": 2023,
+            "img": "img/father.jpg",
+            "project": {
+                "title": "E-commerce & Blog Interface",
+                "description": "I present to your attention the design concept of an online store combined with a blog. I wanted to pay tribute to a beautiful girl, a ceramist - Marina Lozova. I did not find anything better than to make this concept for her store.",
+                "contacts": {
+                    "dribbble": "https://dribbble.com/",
+                    "instagram": "https://www.instagram.com/"
+                },
+                "items": [
+                    {
+                        "description": "",
+                        "img": "img/father.jpg"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 4,
+            "number": "04",
+            "name": "App",
+            "year": 2024,
+            "img": "img/app.jpg",
+            "project": {
+                "title": "E-commerce & Blog Interface",
+                "description": "I present to your attention the design concept of an online store combined with a blog. I wanted to pay tribute to a beautiful girl, a ceramist - Marina Lozova. I did not find anything better than to make this concept for her store.",
+                "contacts": {
+                    "instagram": "https://www.instagram.com/"
+                },
+                "items": [
+                    {
+                        "description": "",
+                        "img": "img/app.jpg"
+                    }
+                ]
+            }
+        }
+    ],
+    "about": {
+        "title": "Experienced, executive and with  sense of style UI/UX designer",
+        "skills": [
+            "I know and work in Figma, Adobe Photoshop / Illustrator/ After Effect, Axure",
+            "I use User Research, COM, User Flow, Wireframe's, Prototype Testing, MVP",
+            "I am developed guidelines, designed desktop and mobile app",
+            "I understand the specifics of working in large companies and work well in teams",
+            "Add skills include 2D illustration, animation, freehand drawing (painting and graphics)"
+        ],
+        "message": "I like to solve complex user tasks with elements of organization and management.  carefully work out design concepts, are focused on results, I learn quickly.",
+        "photo": ""
+    },
+    "contacts": {
+        "title": "Let’s connect!",
+        "message": "I’d love to hear from you; whether you want to learn more about my services, want to collaborate on a project, or simply just want to say hello.",
+        "instructions": "You can fill out the form or get in touch with me in Telegram, WhatsApp or by email",
+        "phone": "+7 980 701 17 18",
+        "mail": "roman.nadirovich@gmail.com",
+        "address": "https://formspree.io/f/mzbnaeqr",
+        "socials": {
+            "dribble": "https://dribbble.com/roman_nadirovich",
+            "instagram": "https://www.instagram.com/roman.nadirovich/",
+            "twitter": "https://twitter.com/roman_nadirovich",
+            "telegram": "https://t.me/roman_nadirovich"
+        }
+    }
+}
+
