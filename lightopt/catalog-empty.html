@@ -31,6 +31,8 @@
       window.addToFavoriteLink = "mocks/favorite-request-success.json"; // Ссылка на API добавить товар в избранное
       window.removeFromFavoriteLink = "mocks/favorite-request-success.json"; // Ссылка на API удалить товар из избранного
       //- window.removeFromFavoriteLink = "mocks/favorite-request-error.json" // Не переносить! Нужен для теста ошибки запроса
+
+      window.buyWithProductApiLink = "mocks/buy-with-product.json"; // Ссылка на API добавить товар в заказ - только на странице товара
     </script>
   </head>
   <body class="page-products" id="body">
@@ -1873,20 +1875,22 @@
             </div>
             <div class="card-top__right">
               <div class="card-top__info">
-                <div class="card-top__btns"></div>
                 <div class="card-top__price">
-                  <div class="card-top__price_crossed">
+                  <div class="card-top__price-item card-top__price_crossed">
                     <div class="card-top__price_title">Рекомендуемая розничная цена:</div>
                     <div class="card-top__price_value">
                       <span class="_js-modal-price-rrc">6 840</span>
                       ₽
                     </div>
                   </div>
-                  <div class="card-top__price_new">
+                  <div class="card-top__price-item card-top__price_new">
                     <div class="card-top__price_title">Рекомендуемая розничная цена распродажа:</div>
-                    <div class="card-top__price_value">3 760 ₽</div>
+                    <div class="card-top__price_value">
+                      <span class="_js-modal-price-sale">3 760</span>
+                      ₽
+                    </div>
                   </div>
-                  <div class="card-top__price_old">
+                  <div class="card-top__price-item card-top__price_old">
                     <div class="card-top__price_title">Ваша цена:</div>
                     <div class="card-top__price_value">
                       <span class="_js-modal-price">2 280</span>
@@ -1901,9 +1905,9 @@
                   <input class="changer__input _js-modal-quantity" type="text" min="1" maxlength="4" value="1" >
                   <button class="btn-reset btn--white changer__btn changer__btn_plus">+</button>
                 </div>
-                <div class="card-top__quantity_value">
+                <div class="card-top__quantity_value _js-modal-count">
                   <span class="info">Просто какой-то длинный текст</span>
-                  <span class="success _js-modal-count">234 шт в наличии</span>
+                  <span class="success">234 шт в наличии</span>
                   <span class="danger">Нет в наличии</span>
                   <span class="message">Какой-то текст комментария или сообщения на несколько строк</span>
                 </div>
@@ -2030,6 +2034,191 @@
                   <span class="_js-modal-total">20 340</span>
                   ₽
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal__slider fulfilled">
+          <span class="modal__slider-loader"></span>
+          <div class="modal__slider-body">
+            <h3>С этим товаром покупают</h3>
+            <div class="modal__slider-swiper">
+              <div class="swiper">
+                <div class="swiper-wrapper" id="buyWithProductList">
+                  <div class="swiper-slide modal__slider-slide">
+                    <div class="modal__slider-card">
+                      <mark class="modal__slider-card-new">new</mark>
+                      <i class="modal__slider-card-picture"><img src="" alt="" loading="lazy" ></i>
+                      <div class="modal__slider-card-body">
+                        <div class="modal__slider-card-caption">
+                          <a href="">
+                            <strong>Люстра Аrte Lamp Rosaria</strong>
+                            <span>A8564PL-5RB</span>
+                          </a>
+                          <button class="modal__slider-card-favorite" type="button"></button>
+                        </div>
+                        <div class="modal__slider-card-price">
+                          <p>898 000 руб.</p>
+                          <button class="modal__slider-card-buy" type="button"></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide modal__slider-slide">
+                    <div class="modal__slider-card">
+                      <mark class="modal__slider-card-new">new</mark>
+                      <i class="modal__slider-card-picture"><img src="" alt="" loading="lazy" ></i>
+                      <div class="modal__slider-card-body">
+                        <div class="modal__slider-card-caption">
+                          <a href="">
+                            <strong>Люстра Аrte Lamp Rosaria</strong>
+                            <span>A8564PL-5RB</span>
+                          </a>
+                          <button class="modal__slider-card-favorite selected" type="button"></button>
+                        </div>
+                        <div class="modal__slider-card-price">
+                          <p>898 000 руб.</p>
+                          <button class="modal__slider-card-buy selected" type="button"></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide modal__slider-slide">
+                    <div class="modal__slider-card">
+                      <mark class="modal__slider-card-new">new</mark>
+                      <i class="modal__slider-card-picture"><img src="" alt="" loading="lazy" ></i>
+                      <div class="modal__slider-card-body">
+                        <div class="modal__slider-card-caption">
+                          <a href="">
+                            <strong>Люстра Аrte Lamp Rosaria</strong>
+                            <span>A8564PL-5RB</span>
+                          </a>
+                          <button class="modal__slider-card-favorite selected" type="button"></button>
+                        </div>
+                        <div class="modal__slider-card-price">
+                          <p>898 000 руб.</p>
+                          <button class="modal__slider-card-buy selected" type="button"></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide modal__slider-slide">
+                    <div class="modal__slider-card">
+                      <mark class="modal__slider-card-new">new</mark>
+                      <i class="modal__slider-card-picture"><img src="" alt="" loading="lazy" ></i>
+                      <div class="modal__slider-card-body">
+                        <div class="modal__slider-card-caption">
+                          <a href="">
+                            <strong>Люстра Аrte Lamp Rosaria</strong>
+                            <span>A8564PL-5RB</span>
+                          </a>
+                          <button class="modal__slider-card-favorite" type="button"></button>
+                        </div>
+                        <div class="modal__slider-card-price">
+                          <p>898 000 руб.</p>
+                          <button class="modal__slider-card-buy" type="button"></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide modal__slider-slide">
+                    <div class="modal__slider-card">
+                      <mark class="modal__slider-card-new">new</mark>
+                      <i class="modal__slider-card-picture"><img src="" alt="" loading="lazy" ></i>
+                      <div class="modal__slider-card-body">
+                        <div class="modal__slider-card-caption">
+                          <a href="">
+                            <strong>Люстра Аrte Lamp Rosaria</strong>
+                            <span>A8564PL-5RB</span>
+                          </a>
+                          <button class="modal__slider-card-favorite selected" type="button"></button>
+                        </div>
+                        <div class="modal__slider-card-price">
+                          <p>898 000 руб.</p>
+                          <button class="modal__slider-card-buy selected" type="button"></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide modal__slider-slide">
+                    <div class="modal__slider-card">
+                      <mark class="modal__slider-card-new">new</mark>
+                      <i class="modal__slider-card-picture"><img src="" alt="" loading="lazy" ></i>
+                      <div class="modal__slider-card-body">
+                        <div class="modal__slider-card-caption">
+                          <a href="">
+                            <strong>Люстра Аrte Lamp Rosaria</strong>
+                            <span>A8564PL-5RB</span>
+                          </a>
+                          <button class="modal__slider-card-favorite selected" type="button"></button>
+                        </div>
+                        <div class="modal__slider-card-price">
+                          <p>898 000 руб.</p>
+                          <button class="modal__slider-card-buy selected" type="button"></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide modal__slider-slide">
+                    <div class="modal__slider-card">
+                      <mark class="modal__slider-card-new">new</mark>
+                      <i class="modal__slider-card-picture"><img src="" alt="" loading="lazy" ></i>
+                      <div class="modal__slider-card-body">
+                        <div class="modal__slider-card-caption">
+                          <a href="">
+                            <strong>Люстра Аrte Lamp Rosaria</strong>
+                            <span>A8564PL-5RB</span>
+                          </a>
+                          <button class="modal__slider-card-favorite" type="button"></button>
+                        </div>
+                        <div class="modal__slider-card-price">
+                          <p>898 000 руб.</p>
+                          <button class="modal__slider-card-buy" type="button"></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide modal__slider-slide">
+                    <div class="modal__slider-card">
+                      <mark class="modal__slider-card-new">new</mark>
+                      <i class="modal__slider-card-picture"><img src="" alt="" loading="lazy" ></i>
+                      <div class="modal__slider-card-body">
+                        <div class="modal__slider-card-caption">
+                          <a href="">
+                            <strong>Люстра Аrte Lamp Rosaria</strong>
+                            <span>A8564PL-5RB</span>
+                          </a>
+                          <button class="modal__slider-card-favorite selected" type="button"></button>
+                        </div>
+                        <div class="modal__slider-card-price">
+                          <p>898 000 руб.</p>
+                          <button class="modal__slider-card-buy selected" type="button"></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide modal__slider-slide">
+                    <div class="modal__slider-card">
+                      <mark class="modal__slider-card-new">new</mark>
+                      <i class="modal__slider-card-picture"><img src="" alt="" loading="lazy" ></i>
+                      <div class="modal__slider-card-body">
+                        <div class="modal__slider-card-caption">
+                          <a href="">
+                            <strong>Люстра Аrte Lamp Rosaria</strong>
+                            <span>A8564PL-5RB</span>
+                          </a>
+                          <button class="modal__slider-card-favorite selected" type="button"></button>
+                        </div>
+                        <div class="modal__slider-card-price">
+                          <p>898 000 руб.</p>
+                          <button class="modal__slider-card-buy selected" type="button"></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
               </div>
             </div>
           </div>

@@ -31,6 +31,8 @@
       window.addToFavoriteLink = "mocks/favorite-request-success.json"; // Ссылка на API добавить товар в избранное
       window.removeFromFavoriteLink = "mocks/favorite-request-success.json"; // Ссылка на API удалить товар из избранного
       //- window.removeFromFavoriteLink = "mocks/favorite-request-error.json" // Не переносить! Нужен для теста ошибки запроса
+
+      window.buyWithProductApiLink = "mocks/buy-with-product.json"; // Ссылка на API добавить товар в заказ - только на странице товара
     </script>
   </head>
   <body class="page-products" id="body">
@@ -1734,7 +1736,7 @@
               <ul class="catalog-grid__wrap">
                 <!-- Длинный текст-->
                 <li class="catalog-grid__item">
-                  <div class="card-product _js-card-product" data-id="180560" data-title="Точечный встраиваемый светильник Arte Lamp PRAKTISCH A1203PL-1AB" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="https://ms.fandeco.ru/assets/images/products/95/big/a1203pl-1ab.jpg" data-stock="Больше 100 шт. в наличии" data-opt_price="43.2" data-price="90" data-sale="false" data-new="false" data-is-favorite="false">
+                  <div class="card-product _js-card-product" data-id="180560" data-title="Люстра Аrte Lamp Rosaria" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="img/luster-1.png" data-stock='&lt;span class="success"&gt;В наличии: &gt; 10 шт&lt;/span&gt;' data-opt_price="31200" data-sale="false" data-new="false" data-is-favorite="false">
                     <div class="card-product__view">
                       <a class="card-product__pic" href="#!"><img class="_js-card-image" src="img/luster-1.png" alt="" loading="lazy" ></a>
                       <div class="card-product__badges">
@@ -1765,7 +1767,7 @@
                       <div class="card-product__data">
                         <div class="card-product__price card-product__price_accent">
                           <span>Ваша цена</span>
-                          <span>31 200 ₽</span>
+                          <span>31200 ₽</span>
                         </div>
                       </div>
                       <!-- Нет в наличии-->
@@ -1783,7 +1785,7 @@
                 </li>
                 <!-- Нет в наличии-->
                 <li class="catalog-grid__item">
-                  <div class="card-product _js-card-product" data-id="180560" data-title="Точечный встраиваемый светильник Arte Lamp PRAKTISCH A1203PL-1AB" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="https://ms.fandeco.ru/assets/images/products/95/big/a1203pl-1ab.jpg" data-stock="Больше 100 шт. в наличии" data-opt_price="43.2" data-price="90" data-sale="false" data-new="false" data-is-favorite="false">
+                  <div class="card-product _js-card-product" data-id="180560" data-title="Люстра Аrte Lamp Rosaria" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="img/luster-1.png" data-stock='&lt;span class="success"&gt;В наличии: &gt; 10 шт&lt;/span&gt;' data-opt_price="31200" data-sale="false" data-new="false" data-is-favorite="false" data-rrc_price="60000">
                     <div class="card-product__view">
                       <a class="card-product__pic" href="#!"><img class="_js-card-image" src="img/luster-1.png" alt="" loading="lazy" ></a>
                       <div class="card-product__badges">
@@ -1815,11 +1817,11 @@
                       <div class="card-product__data">
                         <div class="card-product__price">
                           <span>РРЦ</span>
-                          <span>60 000 ₽</span>
+                          <span>60000 ₽</span>
                         </div>
                         <div class="card-product__price card-product__price_accent">
                           <span>Ваша цена</span>
-                          <span>31 200 ₽</span>
+                          <span>31200 ₽</span>
                         </div>
                       </div>
                       <!-- Дефолтная карточка-->
@@ -1835,7 +1837,7 @@
                   </div>
                 </li>
                 <li class="catalog-grid__item">
-                  <div class="card-product _js-card-product" data-id="180560" data-title="Точечный встраиваемый светильник Arte Lamp PRAKTISCH A1203PL-1AB" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="https://ms.fandeco.ru/assets/images/products/95/big/a1203pl-1ab.jpg" data-stock="Больше 100 шт. в наличии" data-opt_price="43.2" data-price="90" data-sale="false" data-new="false" data-is-favorite="false">
+                  <div class="card-product _js-card-product" data-id="180560" data-title="Люстра Аrte Lamp Rosaria" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="img/luster-3.png" data-stock='&lt;span class="success"&gt;В наличии: &gt; 10 шт&lt;/span&gt;' data-opt_price="31201,77" data-sale="false" data-new="false" data-is-favorite="false" data-price_sale="45050" data-rrc_price="60000">
                     <div class="card-product__view">
                       <a class="card-product__pic" href="#!"><img class="_js-card-image" src="img/luster-3.png" alt="" loading="lazy" ></a>
                       <div class="card-product__badges">
@@ -1857,13 +1859,7 @@
                         <!-- Просто длинный текст --- info-->
                         <!-- Нет в наличии --- danger-->
                         <!-- Дефолтное количество --- success-->
-                        <p class="card-product__count">
-                          <span class="success">
-                            В наличии:
-                            <span class="_js-card-count">110</span>
-                            шт.
-                          </span>
-                        </p>
+                        <p class="card-product__count"><span class="success">В наличии: > 10 шт.</span></p>
                       </div>
                       <!-- Длинный текст-->
                       <!-- Нет в наличии-->
@@ -1871,15 +1867,15 @@
                       <div class="card-product__data">
                         <div class="card-product__price card-product__price_crossed">
                           <span>РРЦ</span>
-                          <span>60 000 ₽</span>
+                          <span>60000 ₽</span>
                         </div>
                         <div class="card-product__price">
                           <span>РРЦ распродажа</span>
-                          <span>45 050 ₽</span>
+                          <span>45050 ₽</span>
                         </div>
                         <div class="card-product__price card-product__price_accent">
                           <span>Ваша цена</span>
-                          <span>31 200 ₽</span>
+                          <span>31201,77 ₽</span>
                         </div>
                       </div>
                       <div class="card-product__bottom">
@@ -1894,7 +1890,7 @@
                   </div>
                 </li>
                 <li class="catalog-grid__item">
-                  <div class="card-product _js-card-product" data-id="180560" data-title="Точечный встраиваемый светильник Arte Lamp PRAKTISCH A1203PL-1AB" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="https://ms.fandeco.ru/assets/images/products/95/big/a1203pl-1ab.jpg" data-stock="Больше 100 шт. в наличии" data-opt_price="43.2" data-price="90" data-sale="false" data-new="false" data-is-favorite="false">
+                  <div class="card-product _js-card-product" data-id="180560" data-title="Люстра Аrte Lamp Rosaria" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="img/luster-1.png" data-stock='&lt;span class="success"&gt;В наличии: &gt; 10 шт&lt;/span&gt;' data-opt_price="31201,77" data-sale="false" data-new="false" data-is-favorite="false" data-price_sale="45050" data-rrc_price="60000">
                     <div class="card-product__view">
                       <a class="card-product__pic" href="#!"><img class="_js-card-image" src="img/luster-1.png" alt="" loading="lazy" ></a>
                       <div class="card-product__badges">
@@ -1916,13 +1912,7 @@
                         <!-- Просто длинный текст --- info-->
                         <!-- Нет в наличии --- danger-->
                         <!-- Дефолтное количество --- success-->
-                        <p class="card-product__count">
-                          <span class="success">
-                            В наличии:
-                            <span class="_js-card-count">110</span>
-                            шт.
-                          </span>
-                        </p>
+                        <p class="card-product__count"><span class="success">В наличии: > 10 шт.</span></p>
                       </div>
                       <!-- Длинный текст-->
                       <!-- Нет в наличии-->
@@ -1930,15 +1920,15 @@
                       <div class="card-product__data">
                         <div class="card-product__price card-product__price_crossed">
                           <span>РРЦ</span>
-                          <span>60 000 ₽</span>
+                          <span>60000 ₽</span>
                         </div>
                         <div class="card-product__price">
                           <span>РРЦ распродажа</span>
-                          <span>45 050 ₽</span>
+                          <span>45050 ₽</span>
                         </div>
                         <div class="card-product__price card-product__price_accent">
                           <span>Ваша цена</span>
-                          <span>31 200 ₽</span>
+                          <span>31201,77 ₽</span>
                         </div>
                       </div>
                       <div class="card-product__bottom">
@@ -1953,7 +1943,7 @@
                   </div>
                 </li>
                 <li class="catalog-grid__item">
-                  <div class="card-product _js-card-product" data-id="180560" data-title="Точечный встраиваемый светильник Arte Lamp PRAKTISCH A1203PL-1AB" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="https://ms.fandeco.ru/assets/images/products/95/big/a1203pl-1ab.jpg" data-stock="Больше 100 шт. в наличии" data-opt_price="43.2" data-price="90" data-sale="false" data-new="false" data-is-favorite="false">
+                  <div class="card-product _js-card-product" data-id="180560" data-title="Люстра Аrte Lamp Rosaria" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="img/luster-2.png" data-stock='&lt;span class="success"&gt;В наличии: &gt; 10 шт&lt;/span&gt;' data-opt_price="31201,77" data-sale="false" data-new="false" data-is-favorite="false" data-price_sale="45050" data-rrc_price="60000">
                     <div class="card-product__view">
                       <a class="card-product__pic" href="#!"><img class="_js-card-image" src="img/luster-2.png" alt="" loading="lazy" ></a>
                       <div class="card-product__badges">
@@ -1975,13 +1965,7 @@
                         <!-- Просто длинный текст --- info-->
                         <!-- Нет в наличии --- danger-->
                         <!-- Дефолтное количество --- success-->
-                        <p class="card-product__count">
-                          <span class="success">
-                            В наличии:
-                            <span class="_js-card-count">110</span>
-                            шт.
-                          </span>
-                        </p>
+                        <p class="card-product__count"><span class="success">В наличии: > 10 шт.</span></p>
                       </div>
                       <!-- Длинный текст-->
                       <!-- Нет в наличии-->
@@ -1989,15 +1973,15 @@
                       <div class="card-product__data">
                         <div class="card-product__price card-product__price_crossed">
                           <span>РРЦ</span>
-                          <span>60 000 ₽</span>
+                          <span>60000 ₽</span>
                         </div>
                         <div class="card-product__price">
                           <span>РРЦ распродажа</span>
-                          <span>45 050 ₽</span>
+                          <span>45050 ₽</span>
                         </div>
                         <div class="card-product__price card-product__price_accent">
                           <span>Ваша цена</span>
-                          <span>31 200 ₽</span>
+                          <span>31201,77 ₽</span>
                         </div>
                       </div>
                       <div class="card-product__bottom">
@@ -2012,7 +1996,7 @@
                   </div>
                 </li>
                 <li class="catalog-grid__item">
-                  <div class="card-product _js-card-product" data-id="180560" data-title="Точечный встраиваемый светильник Arte Lamp PRAKTISCH A1203PL-1AB" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="https://ms.fandeco.ru/assets/images/products/95/big/a1203pl-1ab.jpg" data-stock="Больше 100 шт. в наличии" data-opt_price="43.2" data-price="90" data-sale="false" data-new="false" data-is-favorite="false">
+                  <div class="card-product _js-card-product" data-id="180560" data-title="Люстра Аrte Lamp Rosaria" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="img/luster-3.png" data-stock='&lt;span class="success"&gt;В наличии: &gt; 10 шт&lt;/span&gt;' data-opt_price="31201,77" data-sale="false" data-new="false" data-is-favorite="false" data-price_sale="45050" data-rrc_price="60000">
                     <div class="card-product__view">
                       <a class="card-product__pic" href="#!"><img class="_js-card-image" src="img/luster-3.png" alt="" loading="lazy" ></a>
                       <div class="card-product__badges">
@@ -2034,13 +2018,7 @@
                         <!-- Просто длинный текст --- info-->
                         <!-- Нет в наличии --- danger-->
                         <!-- Дефолтное количество --- success-->
-                        <p class="card-product__count">
-                          <span class="success">
-                            В наличии:
-                            <span class="_js-card-count">110</span>
-                            шт.
-                          </span>
-                        </p>
+                        <p class="card-product__count"><span class="success">В наличии: > 10 шт.</span></p>
                       </div>
                       <!-- Длинный текст-->
                       <!-- Нет в наличии-->
@@ -2048,15 +2026,15 @@
                       <div class="card-product__data">
                         <div class="card-product__price card-product__price_crossed">
                           <span>РРЦ</span>
-                          <span>60 000 ₽</span>
+                          <span>60000 ₽</span>
                         </div>
                         <div class="card-product__price">
                           <span>РРЦ распродажа</span>
-                          <span>45 050 ₽</span>
+                          <span>45050 ₽</span>
                         </div>
                         <div class="card-product__price card-product__price_accent">
                           <span>Ваша цена</span>
-                          <span>31 200 ₽</span>
+                          <span>31201,77 ₽</span>
                         </div>
                       </div>
                       <div class="card-product__bottom">
@@ -2071,7 +2049,7 @@
                   </div>
                 </li>
                 <li class="catalog-grid__item">
-                  <div class="card-product _js-card-product" data-id="180560" data-title="Точечный встраиваемый светильник Arte Lamp PRAKTISCH A1203PL-1AB" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="https://ms.fandeco.ru/assets/images/products/95/big/a1203pl-1ab.jpg" data-stock="Больше 100 шт. в наличии" data-opt_price="43.2" data-price="90" data-sale="false" data-new="false" data-is-favorite="false">
+                  <div class="card-product _js-card-product" data-id="180560" data-title="Люстра Аrte Lamp Rosaria" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="img/luster-1.png" data-stock='&lt;span class="success"&gt;В наличии: &gt; 10 шт&lt;/span&gt;' data-opt_price="31201,77" data-sale="false" data-new="false" data-is-favorite="false" data-price_sale="45050" data-rrc_price="60000">
                     <div class="card-product__view">
                       <a class="card-product__pic" href="#!"><img class="_js-card-image" src="img/luster-1.png" alt="" loading="lazy" ></a>
                       <div class="card-product__badges">
@@ -2093,13 +2071,7 @@
                         <!-- Просто длинный текст --- info-->
                         <!-- Нет в наличии --- danger-->
                         <!-- Дефолтное количество --- success-->
-                        <p class="card-product__count">
-                          <span class="success">
-                            В наличии:
-                            <span class="_js-card-count">110</span>
-                            шт.
-                          </span>
-                        </p>
+                        <p class="card-product__count"><span class="success">В наличии: > 10 шт.</span></p>
                       </div>
                       <!-- Длинный текст-->
                       <!-- Нет в наличии-->
@@ -2107,15 +2079,15 @@
                       <div class="card-product__data">
                         <div class="card-product__price card-product__price_crossed">
                           <span>РРЦ</span>
-                          <span>60 000 ₽</span>
+                          <span>60000 ₽</span>
                         </div>
                         <div class="card-product__price">
                           <span>РРЦ распродажа</span>
-                          <span>45 050 ₽</span>
+                          <span>45050 ₽</span>
                         </div>
                         <div class="card-product__price card-product__price_accent">
                           <span>Ваша цена</span>
-                          <span>31 200 ₽</span>
+                          <span>31201,77 ₽</span>
                         </div>
                       </div>
                       <div class="card-product__bottom">
@@ -2130,7 +2102,7 @@
                   </div>
                 </li>
                 <li class="catalog-grid__item">
-                  <div class="card-product _js-card-product" data-id="180560" data-title="Точечный встраиваемый светильник Arte Lamp PRAKTISCH A1203PL-1AB" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="https://ms.fandeco.ru/assets/images/products/95/big/a1203pl-1ab.jpg" data-stock="Больше 100 шт. в наличии" data-opt_price="43.2" data-price="90" data-sale="false" data-new="false" data-is-favorite="false">
+                  <div class="card-product _js-card-product" data-id="180560" data-title="Люстра Аrte Lamp Rosaria" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="img/luster-2.png" data-stock='&lt;span class="success"&gt;В наличии: &gt; 10 шт&lt;/span&gt;' data-opt_price="31201,77" data-sale="false" data-new="false" data-is-favorite="false" data-price_sale="45050" data-rrc_price="60000">
                     <div class="card-product__view">
                       <a class="card-product__pic" href="#!"><img class="_js-card-image" src="img/luster-2.png" alt="" loading="lazy" ></a>
                       <div class="card-product__badges">
@@ -2152,13 +2124,7 @@
                         <!-- Просто длинный текст --- info-->
                         <!-- Нет в наличии --- danger-->
                         <!-- Дефолтное количество --- success-->
-                        <p class="card-product__count">
-                          <span class="success">
-                            В наличии:
-                            <span class="_js-card-count">110</span>
-                            шт.
-                          </span>
-                        </p>
+                        <p class="card-product__count"><span class="success">В наличии: > 10 шт.</span></p>
                       </div>
                       <!-- Длинный текст-->
                       <!-- Нет в наличии-->
@@ -2166,15 +2132,15 @@
                       <div class="card-product__data">
                         <div class="card-product__price card-product__price_crossed">
                           <span>РРЦ</span>
-                          <span>60 000 ₽</span>
+                          <span>60000 ₽</span>
                         </div>
                         <div class="card-product__price">
                           <span>РРЦ распродажа</span>
-                          <span>45 050 ₽</span>
+                          <span>45050 ₽</span>
                         </div>
                         <div class="card-product__price card-product__price_accent">
                           <span>Ваша цена</span>
-                          <span>31 200 ₽</span>
+                          <span>31201,77 ₽</span>
                         </div>
                       </div>
                       <div class="card-product__bottom">
@@ -2189,7 +2155,7 @@
                   </div>
                 </li>
                 <li class="catalog-grid__item">
-                  <div class="card-product _js-card-product" data-id="180560" data-title="Точечный встраиваемый светильник Arte Lamp PRAKTISCH A1203PL-1AB" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="https://ms.fandeco.ru/assets/images/products/95/big/a1203pl-1ab.jpg" data-stock="Больше 100 шт. в наличии" data-opt_price="43.2" data-price="90" data-sale="false" data-new="false" data-is-favorite="false">
+                  <div class="card-product _js-card-product" data-id="180560" data-title="Люстра Аrte Lamp Rosaria" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="img/luster-3.png" data-stock='&lt;span class="success"&gt;В наличии: &gt; 10 шт&lt;/span&gt;' data-opt_price="31201,77" data-sale="false" data-new="false" data-is-favorite="false" data-price_sale="45050" data-rrc_price="60000">
                     <div class="card-product__view">
                       <a class="card-product__pic" href="#!"><img class="_js-card-image" src="img/luster-3.png" alt="" loading="lazy" ></a>
                       <div class="card-product__badges">
@@ -2211,13 +2177,7 @@
                         <!-- Просто длинный текст --- info-->
                         <!-- Нет в наличии --- danger-->
                         <!-- Дефолтное количество --- success-->
-                        <p class="card-product__count">
-                          <span class="success">
-                            В наличии:
-                            <span class="_js-card-count">110</span>
-                            шт.
-                          </span>
-                        </p>
+                        <p class="card-product__count"><span class="success">В наличии: > 10 шт.</span></p>
                       </div>
                       <!-- Длинный текст-->
                       <!-- Нет в наличии-->
@@ -2225,15 +2185,15 @@
                       <div class="card-product__data">
                         <div class="card-product__price card-product__price_crossed">
                           <span>РРЦ</span>
-                          <span>60 000 ₽</span>
+                          <span>60000 ₽</span>
                         </div>
                         <div class="card-product__price">
                           <span>РРЦ распродажа</span>
-                          <span>45 050 ₽</span>
+                          <span>45050 ₽</span>
                         </div>
                         <div class="card-product__price card-product__price_accent">
                           <span>Ваша цена</span>
-                          <span>31 200 ₽</span>
+                          <span>31201,77 ₽</span>
                         </div>
                       </div>
                       <div class="card-product__bottom">
@@ -2248,7 +2208,7 @@
                   </div>
                 </li>
                 <li class="catalog-grid__item">
-                  <div class="card-product _js-card-product" data-id="180560" data-title="Точечный встраиваемый светильник Arte Lamp PRAKTISCH A1203PL-1AB" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="https://ms.fandeco.ru/assets/images/products/95/big/a1203pl-1ab.jpg" data-stock="Больше 100 шт. в наличии" data-opt_price="43.2" data-price="90" data-sale="false" data-new="false" data-is-favorite="false">
+                  <div class="card-product _js-card-product" data-id="180560" data-title="Люстра Аrte Lamp Rosaria" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="img/luster-1.png" data-stock='&lt;span class="success"&gt;В наличии: &gt; 10 шт&lt;/span&gt;' data-opt_price="31201,77" data-sale="false" data-new="false" data-is-favorite="false" data-price_sale="45050" data-rrc_price="60000">
                     <div class="card-product__view">
                       <a class="card-product__pic" href="#!"><img class="_js-card-image" src="img/luster-1.png" alt="" loading="lazy" ></a>
                       <div class="card-product__badges">
@@ -2270,13 +2230,7 @@
                         <!-- Просто длинный текст --- info-->
                         <!-- Нет в наличии --- danger-->
                         <!-- Дефолтное количество --- success-->
-                        <p class="card-product__count">
-                          <span class="success">
-                            В наличии:
-                            <span class="_js-card-count">110</span>
-                            шт.
-                          </span>
-                        </p>
+                        <p class="card-product__count"><span class="success">В наличии: > 10 шт.</span></p>
                       </div>
                       <!-- Длинный текст-->
                       <!-- Нет в наличии-->
@@ -2284,15 +2238,15 @@
                       <div class="card-product__data">
                         <div class="card-product__price card-product__price_crossed">
                           <span>РРЦ</span>
-                          <span>60 000 ₽</span>
+                          <span>60000 ₽</span>
                         </div>
                         <div class="card-product__price">
                           <span>РРЦ распродажа</span>
-                          <span>45 050 ₽</span>
+                          <span>45050 ₽</span>
                         </div>
                         <div class="card-product__price card-product__price_accent">
                           <span>Ваша цена</span>
-                          <span>31 200 ₽</span>
+                          <span>31201,77 ₽</span>
                         </div>
                       </div>
                       <div class="card-product__bottom">
@@ -2307,7 +2261,7 @@
                   </div>
                 </li>
                 <li class="catalog-grid__item">
-                  <div class="card-product _js-card-product" data-id="180560" data-title="Точечный встраиваемый светильник Arte Lamp PRAKTISCH A1203PL-1AB" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="https://ms.fandeco.ru/assets/images/products/95/big/a1203pl-1ab.jpg" data-stock="Больше 100 шт. в наличии" data-opt_price="43.2" data-price="90" data-sale="false" data-new="false" data-is-favorite="false">
+                  <div class="card-product _js-card-product" data-id="180560" data-title="Люстра Аrte Lamp Rosaria" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="img/luster-2.png" data-stock='&lt;span class="success"&gt;В наличии: &gt; 10 шт&lt;/span&gt;' data-opt_price="31201,77" data-sale="false" data-new="false" data-is-favorite="false" data-price_sale="45050" data-rrc_price="60000">
                     <div class="card-product__view">
                       <a class="card-product__pic" href="#!"><img class="_js-card-image" src="img/luster-2.png" alt="" loading="lazy" ></a>
                       <div class="card-product__badges">
@@ -2329,13 +2283,7 @@
                         <!-- Просто длинный текст --- info-->
                         <!-- Нет в наличии --- danger-->
                         <!-- Дефолтное количество --- success-->
-                        <p class="card-product__count">
-                          <span class="success">
-                            В наличии:
-                            <span class="_js-card-count">110</span>
-                            шт.
-                          </span>
-                        </p>
+                        <p class="card-product__count"><span class="success">В наличии: > 10 шт.</span></p>
                       </div>
                       <!-- Длинный текст-->
                       <!-- Нет в наличии-->
@@ -2343,15 +2291,15 @@
                       <div class="card-product__data">
                         <div class="card-product__price card-product__price_crossed">
                           <span>РРЦ</span>
-                          <span>60 000 ₽</span>
+                          <span>60000 ₽</span>
                         </div>
                         <div class="card-product__price">
                           <span>РРЦ распродажа</span>
-                          <span>45 050 ₽</span>
+                          <span>45050 ₽</span>
                         </div>
                         <div class="card-product__price card-product__price_accent">
                           <span>Ваша цена</span>
-                          <span>31 200 ₽</span>
+                          <span>31201,77 ₽</span>
                         </div>
                       </div>
                       <div class="card-product__bottom">
@@ -2366,7 +2314,7 @@
                   </div>
                 </li>
                 <li class="catalog-grid__item">
-                  <div class="card-product _js-card-product" data-id="180560" data-title="Точечный встраиваемый светильник Arte Lamp PRAKTISCH A1203PL-1AB" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="https://ms.fandeco.ru/assets/images/products/95/big/a1203pl-1ab.jpg" data-stock="Больше 100 шт. в наличии" data-opt_price="43.2" data-price="90" data-sale="false" data-new="false" data-is-favorite="false">
+                  <div class="card-product _js-card-product" data-id="180560" data-title="Люстра Аrte Lamp Rosaria" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="img/luster-3.png" data-stock='&lt;span class="success"&gt;В наличии: &gt; 10 шт&lt;/span&gt;' data-opt_price="31201,77" data-sale="false" data-new="false" data-is-favorite="false" data-price_sale="45050" data-rrc_price="60000">
                     <div class="card-product__view">
                       <a class="card-product__pic" href="#!"><img class="_js-card-image" src="img/luster-3.png" alt="" loading="lazy" ></a>
                       <div class="card-product__badges">
@@ -2388,13 +2336,7 @@
                         <!-- Просто длинный текст --- info-->
                         <!-- Нет в наличии --- danger-->
                         <!-- Дефолтное количество --- success-->
-                        <p class="card-product__count">
-                          <span class="success">
-                            В наличии:
-                            <span class="_js-card-count">110</span>
-                            шт.
-                          </span>
-                        </p>
+                        <p class="card-product__count"><span class="success">В наличии: > 10 шт.</span></p>
                       </div>
                       <!-- Длинный текст-->
                       <!-- Нет в наличии-->
@@ -2402,15 +2344,15 @@
                       <div class="card-product__data">
                         <div class="card-product__price card-product__price_crossed">
                           <span>РРЦ</span>
-                          <span>60 000 ₽</span>
+                          <span>60000 ₽</span>
                         </div>
                         <div class="card-product__price">
                           <span>РРЦ распродажа</span>
-                          <span>45 050 ₽</span>
+                          <span>45050 ₽</span>
                         </div>
                         <div class="card-product__price card-product__price_accent">
                           <span>Ваша цена</span>
-                          <span>31 200 ₽</span>
+                          <span>31201,77 ₽</span>
                         </div>
                       </div>
                       <div class="card-product__bottom">
@@ -2425,7 +2367,7 @@
                   </div>
                 </li>
                 <li class="catalog-grid__item">
-                  <div class="card-product _js-card-product" data-id="180560" data-title="Точечный встраиваемый светильник Arte Lamp PRAKTISCH A1203PL-1AB" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="https://ms.fandeco.ru/assets/images/products/95/big/a1203pl-1ab.jpg" data-stock="Больше 100 шт. в наличии" data-opt_price="43.2" data-price="90" data-sale="false" data-new="false" data-is-favorite="false">
+                  <div class="card-product _js-card-product" data-id="180560" data-title="Люстра Аrte Lamp Rosaria" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="img/luster-1.png" data-stock='&lt;span class="success"&gt;В наличии: &gt; 10 шт&lt;/span&gt;' data-opt_price="31201,77" data-sale="false" data-new="false" data-is-favorite="false" data-price_sale="45050" data-rrc_price="60000">
                     <div class="card-product__view">
                       <a class="card-product__pic" href="#!"><img class="_js-card-image" src="img/luster-1.png" alt="" loading="lazy" ></a>
                       <div class="card-product__badges">
@@ -2447,13 +2389,7 @@
                         <!-- Просто длинный текст --- info-->
                         <!-- Нет в наличии --- danger-->
                         <!-- Дефолтное количество --- success-->
-                        <p class="card-product__count">
-                          <span class="success">
-                            В наличии:
-                            <span class="_js-card-count">110</span>
-                            шт.
-                          </span>
-                        </p>
+                        <p class="card-product__count"><span class="success">В наличии: > 10 шт.</span></p>
                       </div>
                       <!-- Длинный текст-->
                       <!-- Нет в наличии-->
@@ -2461,15 +2397,15 @@
                       <div class="card-product__data">
                         <div class="card-product__price card-product__price_crossed">
                           <span>РРЦ</span>
-                          <span>60 000 ₽</span>
+                          <span>60000 ₽</span>
                         </div>
                         <div class="card-product__price">
                           <span>РРЦ распродажа</span>
-                          <span>45 050 ₽</span>
+                          <span>45050 ₽</span>
                         </div>
                         <div class="card-product__price card-product__price_accent">
                           <span>Ваша цена</span>
-                          <span>31 200 ₽</span>
+                          <span>31201,77 ₽</span>
                         </div>
                       </div>
                       <div class="card-product__bottom">
@@ -2484,7 +2420,7 @@
                   </div>
                 </li>
                 <li class="catalog-grid__item">
-                  <div class="card-product _js-card-product" data-id="180560" data-title="Точечный встраиваемый светильник Arte Lamp PRAKTISCH A1203PL-1AB" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="https://ms.fandeco.ru/assets/images/products/95/big/a1203pl-1ab.jpg" data-stock="Больше 100 шт. в наличии" data-opt_price="43.2" data-price="90" data-sale="false" data-new="false" data-is-favorite="false">
+                  <div class="card-product _js-card-product" data-id="180560" data-title="Люстра Аrte Lamp Rosaria" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="img/luster-2.png" data-stock='&lt;span class="success"&gt;В наличии: &gt; 10 шт&lt;/span&gt;' data-opt_price="31201,77" data-sale="false" data-new="false" data-is-favorite="false" data-price_sale="45050" data-rrc_price="60000">
                     <div class="card-product__view">
                       <a class="card-product__pic" href="#!"><img class="_js-card-image" src="img/luster-2.png" alt="" loading="lazy" ></a>
                       <div class="card-product__badges">
@@ -2506,13 +2442,7 @@
                         <!-- Просто длинный текст --- info-->
                         <!-- Нет в наличии --- danger-->
                         <!-- Дефолтное количество --- success-->
-                        <p class="card-product__count">
-                          <span class="success">
-                            В наличии:
-                            <span class="_js-card-count">110</span>
-                            шт.
-                          </span>
-                        </p>
+                        <p class="card-product__count"><span class="success">В наличии: > 10 шт.</span></p>
                       </div>
                       <!-- Длинный текст-->
                       <!-- Нет в наличии-->
@@ -2520,15 +2450,15 @@
                       <div class="card-product__data">
                         <div class="card-product__price card-product__price_crossed">
                           <span>РРЦ</span>
-                          <span>60 000 ₽</span>
+                          <span>60000 ₽</span>
                         </div>
                         <div class="card-product__price">
                           <span>РРЦ распродажа</span>
-                          <span>45 050 ₽</span>
+                          <span>45050 ₽</span>
                         </div>
                         <div class="card-product__price card-product__price_accent">
                           <span>Ваша цена</span>
-                          <span>31 200 ₽</span>
+                          <span>31201,77 ₽</span>
                         </div>
                       </div>
                       <div class="card-product__bottom">
@@ -2701,20 +2631,22 @@
             </div>
             <div class="card-top__right">
               <div class="card-top__info">
-                <div class="card-top__btns"></div>
                 <div class="card-top__price">
-                  <div class="card-top__price_crossed">
+                  <div class="card-top__price-item card-top__price_crossed">
                     <div class="card-top__price_title">Рекомендуемая розничная цена:</div>
                     <div class="card-top__price_value">
                       <span class="_js-modal-price-rrc">6 840</span>
                       ₽
                     </div>
                   </div>
-                  <div class="card-top__price_new">
+                  <div class="card-top__price-item card-top__price_new">
                     <div class="card-top__price_title">Рекомендуемая розничная цена распродажа:</div>
-                    <div class="card-top__price_value">3 760 ₽</div>
+                    <div class="card-top__price_value">
+                      <span class="_js-modal-price-sale">3 760</span>
+                      ₽
+                    </div>
                   </div>
-                  <div class="card-top__price_old">
+                  <div class="card-top__price-item card-top__price_old">
                     <div class="card-top__price_title">Ваша цена:</div>
                     <div class="card-top__price_value">
                       <span class="_js-modal-price">2 280</span>
@@ -2729,9 +2661,9 @@
                   <input class="changer__input _js-modal-quantity" type="text" min="1" maxlength="4" value="1" >
                   <button class="btn-reset btn--white changer__btn changer__btn_plus">+</button>
                 </div>
-                <div class="card-top__quantity_value">
+                <div class="card-top__quantity_value _js-modal-count">
                   <span class="info">Просто какой-то длинный текст</span>
-                  <span class="success _js-modal-count">234 шт в наличии</span>
+                  <span class="success">234 шт в наличии</span>
                   <span class="danger">Нет в наличии</span>
                   <span class="message">Какой-то текст комментария или сообщения на несколько строк</span>
                 </div>
@@ -2858,6 +2790,191 @@
                   <span class="_js-modal-total">20 340</span>
                   ₽
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal__slider fulfilled">
+          <span class="modal__slider-loader"></span>
+          <div class="modal__slider-body">
+            <h3>С этим товаром покупают</h3>
+            <div class="modal__slider-swiper">
+              <div class="swiper">
+                <div class="swiper-wrapper" id="buyWithProductList">
+                  <div class="swiper-slide modal__slider-slide">
+                    <div class="modal__slider-card">
+                      <mark class="modal__slider-card-new">new</mark>
+                      <i class="modal__slider-card-picture"><img src="" alt="" loading="lazy" ></i>
+                      <div class="modal__slider-card-body">
+                        <div class="modal__slider-card-caption">
+                          <a href="">
+                            <strong>Люстра Аrte Lamp Rosaria</strong>
+                            <span>A8564PL-5RB</span>
+                          </a>
+                          <button class="modal__slider-card-favorite" type="button"></button>
+                        </div>
+                        <div class="modal__slider-card-price">
+                          <p>898 000 руб.</p>
+                          <button class="modal__slider-card-buy" type="button"></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide modal__slider-slide">
+                    <div class="modal__slider-card">
+                      <mark class="modal__slider-card-new">new</mark>
+                      <i class="modal__slider-card-picture"><img src="" alt="" loading="lazy" ></i>
+                      <div class="modal__slider-card-body">
+                        <div class="modal__slider-card-caption">
+                          <a href="">
+                            <strong>Люстра Аrte Lamp Rosaria</strong>
+                            <span>A8564PL-5RB</span>
+                          </a>
+                          <button class="modal__slider-card-favorite selected" type="button"></button>
+                        </div>
+                        <div class="modal__slider-card-price">
+                          <p>898 000 руб.</p>
+                          <button class="modal__slider-card-buy selected" type="button"></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide modal__slider-slide">
+                    <div class="modal__slider-card">
+                      <mark class="modal__slider-card-new">new</mark>
+                      <i class="modal__slider-card-picture"><img src="" alt="" loading="lazy" ></i>
+                      <div class="modal__slider-card-body">
+                        <div class="modal__slider-card-caption">
+                          <a href="">
+                            <strong>Люстра Аrte Lamp Rosaria</strong>
+                            <span>A8564PL-5RB</span>
+                          </a>
+                          <button class="modal__slider-card-favorite selected" type="button"></button>
+                        </div>
+                        <div class="modal__slider-card-price">
+                          <p>898 000 руб.</p>
+                          <button class="modal__slider-card-buy selected" type="button"></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide modal__slider-slide">
+                    <div class="modal__slider-card">
+                      <mark class="modal__slider-card-new">new</mark>
+                      <i class="modal__slider-card-picture"><img src="" alt="" loading="lazy" ></i>
+                      <div class="modal__slider-card-body">
+                        <div class="modal__slider-card-caption">
+                          <a href="">
+                            <strong>Люстра Аrte Lamp Rosaria</strong>
+                            <span>A8564PL-5RB</span>
+                          </a>
+                          <button class="modal__slider-card-favorite" type="button"></button>
+                        </div>
+                        <div class="modal__slider-card-price">
+                          <p>898 000 руб.</p>
+                          <button class="modal__slider-card-buy" type="button"></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide modal__slider-slide">
+                    <div class="modal__slider-card">
+                      <mark class="modal__slider-card-new">new</mark>
+                      <i class="modal__slider-card-picture"><img src="" alt="" loading="lazy" ></i>
+                      <div class="modal__slider-card-body">
+                        <div class="modal__slider-card-caption">
+                          <a href="">
+                            <strong>Люстра Аrte Lamp Rosaria</strong>
+                            <span>A8564PL-5RB</span>
+                          </a>
+                          <button class="modal__slider-card-favorite selected" type="button"></button>
+                        </div>
+                        <div class="modal__slider-card-price">
+                          <p>898 000 руб.</p>
+                          <button class="modal__slider-card-buy selected" type="button"></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide modal__slider-slide">
+                    <div class="modal__slider-card">
+                      <mark class="modal__slider-card-new">new</mark>
+                      <i class="modal__slider-card-picture"><img src="" alt="" loading="lazy" ></i>
+                      <div class="modal__slider-card-body">
+                        <div class="modal__slider-card-caption">
+                          <a href="">
+                            <strong>Люстра Аrte Lamp Rosaria</strong>
+                            <span>A8564PL-5RB</span>
+                          </a>
+                          <button class="modal__slider-card-favorite selected" type="button"></button>
+                        </div>
+                        <div class="modal__slider-card-price">
+                          <p>898 000 руб.</p>
+                          <button class="modal__slider-card-buy selected" type="button"></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide modal__slider-slide">
+                    <div class="modal__slider-card">
+                      <mark class="modal__slider-card-new">new</mark>
+                      <i class="modal__slider-card-picture"><img src="" alt="" loading="lazy" ></i>
+                      <div class="modal__slider-card-body">
+                        <div class="modal__slider-card-caption">
+                          <a href="">
+                            <strong>Люстра Аrte Lamp Rosaria</strong>
+                            <span>A8564PL-5RB</span>
+                          </a>
+                          <button class="modal__slider-card-favorite" type="button"></button>
+                        </div>
+                        <div class="modal__slider-card-price">
+                          <p>898 000 руб.</p>
+                          <button class="modal__slider-card-buy" type="button"></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide modal__slider-slide">
+                    <div class="modal__slider-card">
+                      <mark class="modal__slider-card-new">new</mark>
+                      <i class="modal__slider-card-picture"><img src="" alt="" loading="lazy" ></i>
+                      <div class="modal__slider-card-body">
+                        <div class="modal__slider-card-caption">
+                          <a href="">
+                            <strong>Люстра Аrte Lamp Rosaria</strong>
+                            <span>A8564PL-5RB</span>
+                          </a>
+                          <button class="modal__slider-card-favorite selected" type="button"></button>
+                        </div>
+                        <div class="modal__slider-card-price">
+                          <p>898 000 руб.</p>
+                          <button class="modal__slider-card-buy selected" type="button"></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide modal__slider-slide">
+                    <div class="modal__slider-card">
+                      <mark class="modal__slider-card-new">new</mark>
+                      <i class="modal__slider-card-picture"><img src="" alt="" loading="lazy" ></i>
+                      <div class="modal__slider-card-body">
+                        <div class="modal__slider-card-caption">
+                          <a href="">
+                            <strong>Люстра Аrte Lamp Rosaria</strong>
+                            <span>A8564PL-5RB</span>
+                          </a>
+                          <button class="modal__slider-card-favorite selected" type="button"></button>
+                        </div>
+                        <div class="modal__slider-card-price">
+                          <p>898 000 руб.</p>
+                          <button class="modal__slider-card-buy selected" type="button"></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
               </div>
             </div>
           </div>
