@@ -132,12 +132,36 @@
             </div>
           </div>
           <ul class="header-info__menu">
-            <!-- Блок .header-logged показываем только когда пользователь залогинен-->
+            <!-- Для залогиненого пользователя в .header-info__logged добавляем ссылку на емэйл-->
             <div class="header-info__logged"><a href="mailto: email@email-company.ru">email@email-company.ru</a></div>
-            <li class="header-info__menu-item"><a class="header-info__btn btn-reset header-info__menu--acc" href="#!"></a></li>
-            <li class="header-info__menu-item"><a class="header-info__btn btn-reset header-info__menu--favorites" href="#!"></a></li>
+            <li class="header-info__menu-item">
+              <!-- Когда пользователь залогинен, .header-info__menu--acc делаем просто дивом <div>-->
+              <div class="header-info__btn btn-reset header-info__menu--acc">
+                <div class="header-info__tooltip">
+                  <div class="header-info__tooltip-body">
+                    <a href="#!">Личный кабинет</a>
+                    <a href="#!">Выход</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Блок .header-info__menu--favorites показываем только когда пользователь залогинен-->
+            <li class="header-info__menu-item">
+              <a class="header-info__btn btn-reset header-info__menu--favorites" href="#!">
+                <div class="header-info__tooltip">
+                  <div class="header-info__tooltip-body"><span>Избранное</span></div>
+                </div>
+              </a>
+            </li>
+            <!-- Блок .header-info__menu--order показываем только когда пользователь залогинен-->
+            <li class="header-info__menu-item">
+              <a class="header-info__btn btn-reset header-info__menu--order" href="#!">
+                <div class="header-info__tooltip">
+                  <div class="header-info__tooltip-body"><span>Вернуться к заказам</span></div>
+                </div>
+              </a>
+            </li>
             <li class="header-info__menu-item"><button class="header-info__btn btn-reset header-info__menu--burger"></button></li>
-            <li class="header-info__menu-item"><a class="header-info__btn btn-reset header-info__menu--order" href="#!"></a></li>
           </ul>
         </div>
         <nav class="nav">
@@ -151,6 +175,12 @@
             <li class="nav__item"><a class="nav__link" href="#!">Распродажа</a></li>
             <li class="nav__item"><a class="nav__link" href="#!">маркетинг</a></li>
             <li class="nav__item"><a class="nav__link" href="#!">контакты</a></li>
+            <li class="nav__item">
+              <a class="nav__link" href="tel:+78000000000">
+                <i class="nav__icon nav__icon_phone"></i>
+                8 800 999 99 99
+              </a>
+            </li>
           </ul>
         </nav>
         <nav class="nav-mobile">

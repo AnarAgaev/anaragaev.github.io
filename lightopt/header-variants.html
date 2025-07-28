@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/vendor.min.css" >
     <link rel="preload" href="css/main.min.css" as="style" >
     <link rel="stylesheet" href="css/main.min.css" >
-    <link rel="stylesheet" href="css/pages/catalog.min.css" >
+    <link rel="stylesheet" href="css/pages/products.min.css" >
     <script>
       window.filterApiLink = "https://master-provider.massive.ru/api/categories/330"; // Ссылка на API фильтра (каталог) - только на странице с фильтрами
       window.addProductApiLink = "mocks/add-product-request.json"; // Ссылка на API добавить товар в заказ - только на странице товара
@@ -35,7 +35,136 @@
       window.buyWithProductApiLink = "mocks/buy-with-product.json"; // Ссылка на API добавить товар в заказ - только на странице товара
     </script>
   </head>
-  <body class="page-catalog" id="body">
+  <body class="page-products" id="body">
+    <header class="header" id="header">
+      <div class="container">
+        <div class="header-info">
+          <a class="header-info__logo" href="/index.html"><img src="img/LightOpt.png" alt="" ></a>
+          <!-- Показываем поиск через класс .visible-->
+          <div class="search" id="search">
+            <span class="search__back"></span>
+            <div class="container">
+              <div class="search__top">
+                <a class="search__logo" href="/index.html"><img src="img/LightOpt.png" alt="" ></a>
+                <button class="search__burger"></button>
+              </div>
+              <div class="search__wrap">
+                <label class="search__controllers">
+                  <input class="search__input" type="text" placeholder="Поиск по каталогу" >
+                  <span class="search__loading" id="loadingSearch">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" width="30" height="30" style="shape-rendering: auto; display: block; background: rgb(255, 255, 255);" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <g>
+                        <g transform="translate(80,50)">
+                          <g transform="rotate(0)">
+                            <circle fill-opacity="1" fill="#000000" r="6" cy="0" cx="0">
+                              <animateTransform repeatCount="indefinite" dur="1s" keyTimes="0;1" values="1.5 1.5;1 1" begin="-0.8571428571428571s" type="scale" attributeName="transform"></animateTransform>
+                              <animate begin="-0.8571428571428571s" values="1;0" repeatCount="indefinite" dur="1s" keyTimes="0;1" attributeName="fill-opacity"></animate>
+                            </circle>
+                          </g>
+                        </g>
+                        <g transform="translate(68.704694055762,73.4549444740409)">
+                          <g transform="rotate(51.42857142857143)">
+                            <circle fill-opacity="0.8571428571428571" fill="#000000" r="6" cy="0" cx="0">
+                              <animateTransform repeatCount="indefinite" dur="1s" keyTimes="0;1" values="1.5 1.5;1 1" begin="-0.7142857142857143s" type="scale" attributeName="transform"></animateTransform>
+                              <animate begin="-0.7142857142857143s" values="1;0" repeatCount="indefinite" dur="1s" keyTimes="0;1" attributeName="fill-opacity"></animate>
+                            </circle>
+                          </g>
+                        </g>
+                        <g transform="translate(43.32437198131057,79.2478373654547)">
+                          <g transform="rotate(102.85714285714286)">
+                            <circle fill-opacity="0.7142857142857143" fill="#000000" r="6" cy="0" cx="0">
+                              <animateTransform repeatCount="indefinite" dur="1s" keyTimes="0;1" values="1.5 1.5;1 1" begin="-0.5714285714285714s" type="scale" attributeName="transform"></animateTransform>
+                              <animate begin="-0.5714285714285714s" values="1;0" repeatCount="indefinite" dur="1s" keyTimes="0;1" attributeName="fill-opacity"></animate>
+                            </circle>
+                          </g>
+                        </g>
+                        <g transform="translate(22.97093396292743,63.01651217352675)">
+                          <g transform="rotate(154.2857142857143)">
+                            <circle fill-opacity="0.5714285714285714" fill="#000000" r="6" cy="0" cx="0">
+                              <animateTransform repeatCount="indefinite" dur="1s" keyTimes="0;1" values="1.5 1.5;1 1" begin="-0.42857142857142855s" type="scale" attributeName="transform"></animateTransform>
+                              <animate begin="-0.42857142857142855s" values="1;0" repeatCount="indefinite" dur="1s" keyTimes="0;1" attributeName="fill-opacity"></animate>
+                            </circle>
+                          </g>
+                        </g>
+                        <g transform="translate(22.970933962927425,36.98348782647326)">
+                          <g transform="rotate(205.71428571428572)">
+                            <circle fill-opacity="0.42857142857142855" fill="#000000" r="6" cy="0" cx="0">
+                              <animateTransform repeatCount="indefinite" dur="1s" keyTimes="0;1" values="1.5 1.5;1 1" begin="-0.2857142857142857s" type="scale" attributeName="transform"></animateTransform>
+                              <animate begin="-0.2857142857142857s" values="1;0" repeatCount="indefinite" dur="1s" keyTimes="0;1" attributeName="fill-opacity"></animate>
+                            </circle>
+                          </g>
+                        </g>
+                        <g transform="translate(43.32437198131056,20.752162634545293)">
+                          <g transform="rotate(257.1428571428571)">
+                            <circle fill-opacity="0.2857142857142857" fill="#000000" r="6" cy="0" cx="0">
+                              <animateTransform repeatCount="indefinite" dur="1s" keyTimes="0;1" values="1.5 1.5;1 1" begin="-0.14285714285714285s" type="scale" attributeName="transform"></animateTransform>
+                              <animate begin="-0.14285714285714285s" values="1;0" repeatCount="indefinite" dur="1s" keyTimes="0;1" attributeName="fill-opacity"></animate>
+                            </circle>
+                          </g>
+                        </g>
+                        <g transform="translate(68.704694055762,26.545055525959103)">
+                          <g transform="rotate(308.5714285714286)">
+                            <circle fill-opacity="0.14285714285714285" fill="#000000" r="6" cy="0" cx="0">
+                              <animateTransform repeatCount="indefinite" dur="1s" keyTimes="0;1" values="1.5 1.5;1 1" begin="0s" type="scale" attributeName="transform"></animateTransform>
+                              <animate begin="0s" values="1;0" repeatCount="indefinite" dur="1s" keyTimes="0;1" attributeName="fill-opacity"></animate>
+                            </circle>
+                          </g>
+                        </g>
+                        <g></g>
+                      </g>
+                    </svg>
+                  </span>
+                  <button class="search__reset"><i id="resetSearchText"></i></button>
+                  <!-- По дефолту у ссылки НЕ ДОЛЖНО БЫТЬ аттрибута href-->
+                  <a class="search__req" id="searchButton"><i></i></a>
+                </label>
+                <!-- .success - успешный ответ-->
+                <!-- .fail - пустой ответ-->
+                <div class="search__results__wrap" id="searchingResults">
+                  <div class="search__results"><ul id="searchingList"></ul></div>
+                  <a class="search__all" id="searchingShowAll" href="#!">
+                    показать все результаты
+                    <span></span>
+                  </a>
+                  <div class="search__fail">К сожалению, по вашему запросу ничего не найдено</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul class="header-info__menu">
+            <!-- Для незалогиненого пользователя в .header-info__logged добавляем слово Вход-->
+            <div class="header-info__logged">Вход</div>
+            <li class="header-info__menu-item">
+              <a class="header-info__btn btn-reset header-info__menu--acc" href="#!">
+                <div class="header-info__tooltip">
+                  <div class="header-info__tooltip-body"><span>Вход в Личный кабинет</span></div>
+                </div>
+              </a>
+            </li>
+            <li class="header-info__menu-item"><button class="header-info__btn btn-reset header-info__menu--burger"></button></li>
+          </ul>
+        </div>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#!">
+                <i class="nav__icon nav__icon_catalog"></i>
+                каталог
+              </a>
+            </li>
+            <li class="nav__item"><a class="nav__link" href="#!">Распродажа</a></li>
+            <li class="nav__item"><a class="nav__link" href="#!">маркетинг</a></li>
+            <li class="nav__item"><a class="nav__link" href="#!">контакты</a></li>
+            <li class="nav__item">
+              <a class="nav__link" href="tel:+78000000000">
+                <i class="nav__icon nav__icon_phone"></i>
+                8 800 999 99 99
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <header class="header" id="header">
       <div class="container">
         <div class="header-info">
@@ -337,458 +466,8 @@
         </nav>
       </div>
     </header>
-    <main class="main" id="main">
-      <section class="breadcrumbs">
-        <div class="container">
-          <ul class="breadcrumbs__list">
-            <li class="breadcrumbs__item"><a href="#!">Главная</a></li>
-            <li class="breadcrumbs__item"><a href="#!">Продукция</a></li>
-          </ul>
-        </div>
-      </section>
-      <section class="container main-title">
-        <h1 class="main-title__title">
-          Заголовок страницы
-          <a href="#">Все</a>
-        </h1>
-        <span class="main-title__text-count">Подзаголовок страницы/доп. информация</span>
-      </section>
-      <section class="catalog-page">
-        <div class="container">
-          <div class="catalog-page__content">
-            <!-- Соседствующие блоки должны суммарно составлять 100 - это 1 ряд-->
-            <div class="catalog-page__card catalog-page__card_100">
-              <div class="catalog-page__pic catalog-page__pic_functional-osveshenie" style="background-image: url('img/catalog_1.png');" data-src="img/catalog_1.png"></div>
-              <div class="catalog-page__title">
-                <span>Функциональное освещение</span>
-                <i></i>
-              </div>
-              <div class="catalog-page__collapse">
-                <div class="catalog-page__inner">
-                  <ul>
-                    <!-- Только для li, лежащих на первом уровне вложенности, добавляем класс .catalog-page__root-->
-                    <li class="catalog-page__root">
-                      <div class="catalog-page__item-title" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/street-light.png">
-                        <div class="catalog-page__caption-link">
-                          Системы освещения
-                          <a href="#!">Все</a>
-                        </div>
-                        <i></i>
-                      </div>
-                      <div class="catalog-page__collapse">
-                        <div class="catalog-page__inner">
-                          <ul>
-                            <li>
-                              <div class="catalog-page__item-title">
-                                <div class="catalog-page__caption-link">
-                                  Магнитная трековая система EXPERT
-                                  <a href="#!">Все</a>
-                                </div>
-                                <i></i>
-                              </div>
-                              <div class="catalog-page__collapse">
-                                <div class="catalog-page__inner">
-                                  <ul>
-                                    <li><a class="catalog-page__item-title" href="#!">Аксессуары для магниной трековой системы EXPERT</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!">Магнитный шинопровод EXPERT</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!">Магнитный трековый светильник EXPERT</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!">Блок питания в шинопровод (трек) EXPERT</a></li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="catalog-page__item-title">
-                                <div class="catalog-page__caption-link">
-                                  Магнитная трековая система LINEA
-                                  <a href="#!">Все</a>
-                                </div>
-                                <i></i>
-                              </div>
-                              <div class="catalog-page__collapse">
-                                <div class="catalog-page__inner">
-                                  <ul>
-                                    <li><a class="catalog-page__item-title" href="#!">Магнитный шинопровод LINEA</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!">Магнитный трековый светильник LINEA</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!">Блок питания в шинопровод (трек) LINEA</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!">Аксессуары для магнитной трековой системы LINEA</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!">Аксессуары для магниной трековой системы LINEA</a></li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="catalog-page__item-title">
-                                <div class="catalog-page__caption-link">
-                                  Магнитная трековая система OPTIMA
-                                  <a href="#!">Все</a>
-                                </div>
-                                <i></i>
-                              </div>
-                              <div class="catalog-page__collapse">
-                                <div class="catalog-page__inner">
-                                  <ul>
-                                    <li><a class="catalog-page__item-title" href="#!">Магнитный шинопровод OPTIMA</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!">Магнитный трековый светильник OPTIMA</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!">Блок питания в шинопровод (трек) OPTIMA</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!">Аксессуары для магнитной трековой системы OPTIMA</a></li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="catalog-page__item-title">
-                                <div class="catalog-page__caption-link">
-                                  Магнитная трековая система RAPID
-                                  <a href="#!">Все</a>
-                                </div>
-                                <i></i>
-                              </div>
-                              <div class="catalog-page__collapse">
-                                <div class="catalog-page__inner">
-                                  <ul>
-                                    <li><a class="catalog-page__item-title" href="#!">Магнитный шинопровод RAPID</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!">Магнитный трековый светильник RAPID</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!">Блок питания в шинопровод (трек) RAPID</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!">Аксессуары для магнитной трековой системы RAPID</a></li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="catalog-page__item-title">
-                                <div class="catalog-page__caption-link">
-                                  Однофазная трековая система
-                                  <a href="#!">Все</a>
-                                </div>
-                                <i></i>
-                              </div>
-                              <div class="catalog-page__collapse">
-                                <div class="catalog-page__inner">
-                                  <ul>
-                                    <li><a class="catalog-page__item-title" href="#!">Трековые светильники светодиодные однофазные</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!">Трековые светильники под лампу однофазные</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!">Однофазные шинопроводы</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!">Аксессуары для однофазной трековой системы</a></li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="catalog-page__item-title">
-                                <div class="catalog-page__caption-link">
-                                  Трековая система на ремнях DECORATO
-                                  <a href="#!">Все</a>
-                                </div>
-                                <i></i>
-                              </div>
-                              <div class="catalog-page__collapse">
-                                <div class="catalog-page__inner">
-                                  <ul>
-                                    <li><a class="catalog-page__item-title" href="#!">Шинопровод текстильный DECORATO</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!">Трековые светильники DECORATO</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!">Блоки питания DECORATO</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!">Аксессуары DECORATO</a></li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="catalog-page__item-title">
-                                <div class="catalog-page__caption-link">
-                                  Ювелирная система освещения PRESTO
-                                  <a href="#!">Все</a>
-                                </div>
-                                <i></i>
-                              </div>
-                              <div class="catalog-page__collapse">
-                                <div class="catalog-page__inner">
-                                  <ul>
-                                    <li><a class="catalog-page__item-title" href="#!">Ювелирный шинопровод PRESTO</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!">Ювелирный трековый светильник PRESTO</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!">Аксессуары для ювелирной системы PRESTO</a></li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </li>
-                            <li><a class="catalog-page__item-title" href="#!">Троссовая система SKYCROSS</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="catalog-page__root"><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/light-source.png">Алюминиевые профили</a></li>
-                    <li class="catalog-page__root"><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/light-manage.png">Гибкий неон</a></li>
-                    <li class="catalog-page__root">
-                      <a class="catalog-page__item-title" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/adapters.png">
-                        <span>Настенные светильники</span>
-                        <i></i>
-                      </a>
-                      <div class="catalog-page__collapse">
-                        <div class="catalog-page__inner">
-                          <ul>
-                            <li><a class="catalog-page__item-title" href="#!">Настенные светильники</a></li>
-                            <li><a class="catalog-page__item-title" href="#!">Прикроватное освещение</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="catalog-page__root">
-                      <a class="catalog-page__item-title" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/adapters.png">
-                        <span>Потолочные светильники</span>
-                        <i></i>
-                      </a>
-                      <div class="catalog-page__collapse">
-                        <div class="catalog-page__inner">
-                          <ul>
-                            <li>
-                              <div class="catalog-page__item-title">
-                                <span>Встраиваемые светильники</span>
-                                <i></i>
-                              </div>
-                              <div class="catalog-page__collapse">
-                                <div class="catalog-page__inner">
-                                  <ul>
-                                    <li><a class="catalog-page__item-title" href="#!">Встраиваемые светильники под лампу</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!">Встраиваемые светодиодные светильники</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!">Гипсовые светильники</a></li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="catalog-page__item-title">
-                                <span>Накладные светильники</span>
-                                <i></i>
-                              </div>
-                              <div class="catalog-page__collapse">
-                                <div class="catalog-page__inner">
-                                  <ul>
-                                    <li><a class="catalog-page__item-title" href="#!">Гипсовые светильники</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!">Накладные светильники под лампу</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!">Накладные светодиодные светильники</a></li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="catalog-page__item-title">
-                                <span>Подвесные светильники</span>
-                                <i></i>
-                              </div>
-                              <div class="catalog-page__collapse">
-                                <div class="catalog-page__inner">
-                                  <ul>
-                                    <li><a class="catalog-page__item-title" href="#!">Подвесные светодиодные светильники</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!">Подвесные светильники светодиодные</a></li>
-                                    <li><a class="catalog-page__item-title" href="#!">Подвесные светильники под лампу</a></li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="catalog-page__root">
-                      <a class="catalog-page__item-title" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/adapters.png">
-                        <span>Светодиодные ленты</span>
-                        <i></i>
-                      </a>
-                      <div class="catalog-page__collapse">
-                        <div class="catalog-page__inner">
-                          <ul>
-                            <li><a class="catalog-page__item-title" href="#!">Комплектующие для светодиодных лент</a></li>
-                            <li><a class="catalog-page__item-title" href="#!">Светодиодные ленты 24В</a></li>
-                            <li><a class="catalog-page__item-title" href="#!">Светодиодные ленты 48В</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="catalog-page__card catalog-page__card_50">
-              <div class="catalog-page__pic catalog-page__pic_upravleniye-svetom" style="background-image: url('img/catalog_2.png');" data-src="img/catalog_2.png"></div>
-              <div class="catalog-page__title">
-                <span>Управление светом</span>
-                <i></i>
-              </div>
-              <div class="catalog-page__collapse">
-                <div class="catalog-page__inner">
-                  <ul>
-                    <li class="catalog-page__root"><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/adapters.png">Контроллеры</a></li>
-                    <li class="catalog-page__root"><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/street-light.png">Панель управления</a></li>
-                    <li class="catalog-page__root"><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/decor-light.png">Диммеры</a></li>
-                    <li class="catalog-page__root"><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/adapters.png">Релейные модули</a></li>
-                    <li class="catalog-page__root"><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/func-light.png">Пульты управления</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="catalog-page__card catalog-page__card_50">
-              <div class="catalog-page__pic catalog-page__pic_istochniki-sveta" style="background-image: url('img/catalog_3.png');" data-src="img/catalog_3.png"></div>
-              <div class="catalog-page__title">
-                <span>Источники света</span>
-                <i></i>
-              </div>
-              <div class="catalog-page__collapse">
-                <div class="catalog-page__inner">
-                  <ul>
-                    <li class="catalog-page__root"><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/street-light.png">Лампочки</a></li>
-                    <li class="catalog-page__root"><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/street-light.png">Светодиодные модули</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="catalog-page__card catalog-page__card_75">
-              <div class="catalog-page__pic catalog-page__pic_dekorativnoe-osvesheniye" style="background-image: url('img/catalog_4.png');" data-src="img/catalog_4.png"></div>
-              <div class="catalog-page__title">
-                <span>Декоративное освещение</span>
-                <i></i>
-              </div>
-              <div class="catalog-page__collapse">
-                <div class="catalog-page__inner">
-                  <ul>
-                    <li class="catalog-page__root">
-                      <a class="catalog-page__item-title" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/adapters.png">
-                        <span>Люстры</span>
-                        <i></i>
-                      </a>
-                      <div class="catalog-page__collapse">
-                        <div class="catalog-page__inner">
-                          <ul>
-                            <li><a class="catalog-page__item-title" href="#!">Подвесные люстры</a></li>
-                            <li><a class="catalog-page__item-title" href="#!">Потолочные люстры</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="catalog-page__root">
-                      <a class="catalog-page__item-title" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/adapters.png">
-                        <span>Настенные светильники</span>
-                        <i></i>
-                      </a>
-                      <div class="catalog-page__collapse">
-                        <div class="catalog-page__inner">
-                          <ul>
-                            <li><a class="catalog-page__item-title" href="#!">Бра</a></li>
-                            <li><a class="catalog-page__item-title" href="#!">Подсветка зеркал и картин</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="catalog-page__root">
-                      <a class="catalog-page__item-title" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/adapters.png">
-                        <span>Настольные лампы</span>
-                        <i></i>
-                      </a>
-                      <div class="catalog-page__collapse">
-                        <div class="catalog-page__inner">
-                          <ul>
-                            <li><a class="catalog-page__item-title" href="#!">Декоративные настольные лампы</a></li>
-                            <li><a class="catalog-page__item-title" href="#!">Офисные настольные лампы</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="catalog-page__root">
-                      <a class="catalog-page__item-title" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/adapters.png">
-                        <span>Светильники</span>
-                        <i></i>
-                      </a>
-                      <div class="catalog-page__collapse">
-                        <div class="catalog-page__inner">
-                          <ul>
-                            <li><a class="catalog-page__item-title" href="#!">Подвесные светильники</a></li>
-                            <li><a class="catalog-page__item-title" href="#!">Потолочные светильники</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="catalog-page__root">
-                      <a class="catalog-page__item-title" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/adapters.png">
-                        <span>Споты</span>
-                        <i></i>
-                      </a>
-                      <div class="catalog-page__collapse">
-                        <div class="catalog-page__inner">
-                          <ul>
-                            <li><a class="catalog-page__item-title" href="#!">Потолочные светильники</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="catalog-page__root"><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/func-light.png">Торшеры</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="catalog-page__card catalog-page__card_25">
-              <div class="catalog-page__pic catalog-page__pic_istochniki-pitaniya" style="background-image: url('img/catalog_5.png');" data-src="img/catalog_5.png"></div>
-              <div class="catalog-page__title">
-                <span>Источники питания</span>
-                <i></i>
-              </div>
-              <div class="catalog-page__collapse">
-                <div class="catalog-page__inner">
-                  <ul>
-                    <li class="catalog-page__root"><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/decor-light.png">Блоки питания 24В</a></li>
-                    <li class="catalog-page__root"><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/street-light.png">Блоки питания 48В</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="catalog-page__card catalog-page__card_75">
-              <div class="catalog-page__pic catalog-page__pic_ulichnoe-osvesheniye" style="background-image: url('img/catalog_6.png');" data-src="img/catalog_6.png"></div>
-              <div class="catalog-page__title">
-                <span>Уличное освещение</span>
-                <i></i>
-              </div>
-              <div class="catalog-page__collapse">
-                <div class="catalog-page__inner">
-                  <ul>
-                    <!-- Только для li, лежащих на первом уровне вложенности, добавляем класс .catalog-page__root-->
-                    <li class="catalog-page__root">
-                      <div class="catalog-page__item-title" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/street-light.png">
-                        <span>Ландшафтные светильники</span>
-                        <i></i>
-                      </div>
-                      <div class="catalog-page__collapse">
-                        <div class="catalog-page__inner">
-                          <ul>
-                            <li><a class="catalog-page__item-title" href="#!">Светильники на столбе</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="catalog-page__root"><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/street-light.png">Грунтовые светильники</a></li>
-                    <li class="catalog-page__root"><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/light-source.png">Подвесные светильники</a></li>
-                    <li class="catalog-page__root"><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/light-manage.png">Подсветка для лестниц</a></li>
-                    <li class="catalog-page__root"><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/adapters.png">Потолочные светильники</a></li>
-                    <li class="catalog-page__root"><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/acc.png">Фасадные светильники</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="catalog-page__card catalog-page__card_25">
-              <div class="catalog-page__pic catalog-page__pic_aksessouary-dlya-svetilnikov" style="background-image: url('img/catalog_7.png');" data-src="img/catalog_7.png"></div>
-              <div class="catalog-page__title">
-                <span>Аксессуары для светильников</span>
-                <i></i>
-              </div>
-              <div class="catalog-page__collapse">
-                <div class="catalog-page__inner">
-                  <ul>
-                    <li class="catalog-page__root"><a class="catalog-page__item-title" href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/street-light.png">Аксессуары для светильников</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+    <main class="main" id="main"></main>
+    <div class="back-to-orders" id="backToOrdersButton"><a class="btn--dark default-btn" href="#">Вернуться к заказам</a></div>
     <footer class="footer" id="footer">
       <div class="container">
         <div class="footer__content">
@@ -1282,7 +961,7 @@
     </div>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js" defer></script>
-    <script src="js/pages/catalog.min.js" defer></script>
+    <script src="js/pages/products.min.js" defer></script>
     <!-- Если по ТЗ не поддерживаем IE11, то оставляем, если поддерживаем, то убираем и тестируем поддержку IE11-->
     <script>
       if (navigator.userAgent.indexOf("MSIE") !== -1 || navigator.appVersion.indexOf("Trident/") > -1) {
