@@ -18,7 +18,10 @@
     <link rel="stylesheet" href="css/pages/universal.min.css" >
     <script>
       window.filterApiLink = "https://master-provider.massive.ru/api/categories/330"; // Ссылка на API фильтра (каталог) - только на странице с фильтрами
-      window.addProductApiLink = "mocks/add-product-request.json"; // Ссылка на API добавить товар в заказ - только на странице товара
+
+      window.addProductApiLink = "https://prev-kirill-provider.massive.ru/rest/v1/orders/add"; // Ссылка на API добавить товар в заказ - только на странице товара
+      //- window.addProductApiLink = "mocks/add-product-request.json" // Ссылка на API добавить товар в заказ - только на странице товара
+
       window.catalogLink = "index.html"; // Ссылка на страницу каталога - на каждой странице
 
       window.listOrders = "mocks/get-request-list-orders.json"; // Ссылка на список заказов
@@ -31,8 +34,6 @@
       window.addToFavoriteLink = "mocks/favorite-request-success.json"; // Ссылка на API добавить товар в избранное
       window.removeFromFavoriteLink = "mocks/favorite-request-success.json"; // Ссылка на API удалить товар из избранного
       //- window.removeFromFavoriteLink = "mocks/favorite-request-error.json" // Не переносить! Нужен для теста ошибки запроса
-
-      window.buyWithProductApiLink = "mocks/buy-with-product.json"; // Ссылка на API добавить товар в заказ - только на странице товара
     </script>
   </head>
   <body class="page-universal" id="body">
@@ -350,11 +351,15 @@
         </div>
       </section>
       <section class="container main-title">
-        <h1 class="main-title__title">
-          Заголовок страницы
-          <a href="#">Все</a>
-        </h1>
-        <span class="main-title__text-count">Подзаголовок страницы/доп. информация</span>
+        <div class="main-title__caption">
+          <h1 class="main-title__text">
+            Заголовок
+            <a class="main-title__inner-link" href="#!">ссылка внутри</a>
+            страницы
+          </h1>
+          <a class="main-title__outer-link" href="#!">Ссылка снаружи заголовка</a>
+        </div>
+        <span class="main-title__info">Доп. информация</span>
       </section>
       <section class="universal">
         <div class="container">

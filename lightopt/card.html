@@ -18,7 +18,10 @@
     <link rel="stylesheet" href="css/pages/card.min.css" >
     <script>
       window.filterApiLink = "https://master-provider.massive.ru/api/categories/330"; // Ссылка на API фильтра (каталог) - только на странице с фильтрами
-      window.addProductApiLink = "mocks/add-product-request.json"; // Ссылка на API добавить товар в заказ - только на странице товара
+
+      window.addProductApiLink = "https://prev-kirill-provider.massive.ru/rest/v1/orders/add"; // Ссылка на API добавить товар в заказ - только на странице товара
+      //- window.addProductApiLink = "mocks/add-product-request.json" // Ссылка на API добавить товар в заказ - только на странице товара
+
       window.catalogLink = "index.html"; // Ссылка на страницу каталога - на каждой странице
 
       window.listOrders = "mocks/get-request-list-orders.json"; // Ссылка на список заказов
@@ -31,8 +34,6 @@
       window.addToFavoriteLink = "mocks/favorite-request-success.json"; // Ссылка на API добавить товар в избранное
       window.removeFromFavoriteLink = "mocks/favorite-request-success.json"; // Ссылка на API удалить товар из избранного
       //- window.removeFromFavoriteLink = "mocks/favorite-request-error.json" // Не переносить! Нужен для теста ошибки запроса
-
-      window.buyWithProductApiLink = "mocks/buy-with-product.json"; // Ссылка на API добавить товар в заказ - только на странице товара
     </script>
   </head>
   <body class="page-card" id="body">
@@ -350,11 +351,15 @@
         </div>
       </section>
       <section class="container main-title">
-        <h1 class="main-title__title">
-          Заголовок страницы
-          <a href="#">Все</a>
-        </h1>
-        <span class="main-title__text-count">Подзаголовок страницы/доп. информация</span>
+        <div class="main-title__caption">
+          <h1 class="main-title__text">
+            Заголовок
+            <a class="main-title__inner-link" href="#!">ссылка внутри</a>
+            страницы
+          </h1>
+          <a class="main-title__outer-link" href="#!">Ссылка снаружи заголовка</a>
+        </div>
+        <span class="main-title__info">Доп. информация</span>
       </section>
       <section class="card">
         <div class="container">
@@ -785,7 +790,7 @@
                         <div class="swiper recommendationSlider">
                           <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                              <div class="card-product _js-card-product" data-id="180560" data-title="Люстра Аrte Lamp Rosaria" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="img/luster-3.png" data-stock="110" data-opt_price="31 200" data-sale="false" data-new="false" data-is-favorite="false" data-price_sale="45 050" data-rrc_price="60 000">
+                              <div class="card-product _js-card-product" data-id="133733" data-title="Люстра Аrte Lamp Rosaria" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="img/luster-3.png" data-stock="110" data-opt_price="31 200" data-sale="false" data-new="false" data-is-favorite="false" data-buy-with="https://prev-kirill-provider.massive.ru/api/products/133734/lamps" data-price_sale="45 050" data-rrc_price="60 000">
                                 <div class="card-product__view">
                                   <a class="card-product__pic" href="#!"><img class="_js-card-image" src="img/luster-3.png" alt="" loading="lazy" ></a>
                                   <div class="card-product__badges">
@@ -838,7 +843,7 @@
                               </div>
                             </div>
                             <div class="swiper-slide">
-                              <div class="card-product _js-card-product" data-id="180560" data-title="Люстра Аrte Lamp Rosaria" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="img/luster-1.png" data-stock="110" data-opt_price="31 200" data-sale="false" data-new="false" data-is-favorite="false" data-price_sale="45 050" data-rrc_price="60 000">
+                              <div class="card-product _js-card-product" data-id="133733" data-title="Люстра Аrte Lamp Rosaria" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="img/luster-1.png" data-stock="110" data-opt_price="31 200" data-sale="false" data-new="false" data-is-favorite="false" data-buy-with="https://prev-kirill-provider.massive.ru/api/products/133734/lamps" data-price_sale="45 050" data-rrc_price="60 000">
                                 <div class="card-product__view">
                                   <a class="card-product__pic" href="#!"><img class="_js-card-image" src="img/luster-1.png" alt="" loading="lazy" ></a>
                                   <div class="card-product__badges">
@@ -891,7 +896,7 @@
                               </div>
                             </div>
                             <div class="swiper-slide">
-                              <div class="card-product _js-card-product" data-id="180560" data-title="Люстра Аrte Lamp Rosaria" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="img/luster-2.png" data-stock="110" data-opt_price="31 200" data-sale="false" data-new="false" data-is-favorite="false" data-price_sale="45 050" data-rrc_price="60 000">
+                              <div class="card-product _js-card-product" data-id="133733" data-title="Люстра Аrte Lamp Rosaria" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="img/luster-2.png" data-stock="110" data-opt_price="31 200" data-sale="false" data-new="false" data-is-favorite="false" data-buy-with="https://prev-kirill-provider.massive.ru/api/products/133734/lamps" data-price_sale="45 050" data-rrc_price="60 000">
                                 <div class="card-product__view">
                                   <a class="card-product__pic" href="#!"><img class="_js-card-image" src="img/luster-2.png" alt="" loading="lazy" ></a>
                                   <div class="card-product__badges">
@@ -944,7 +949,7 @@
                               </div>
                             </div>
                             <div class="swiper-slide">
-                              <div class="card-product _js-card-product" data-id="180560" data-title="Люстра Аrte Lamp Rosaria" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="img/luster-3.png" data-stock="110" data-opt_price="31 200" data-sale="false" data-new="false" data-is-favorite="false" data-price_sale="45 050" data-rrc_price="60 000">
+                              <div class="card-product _js-card-product" data-id="133733" data-title="Люстра Аrte Lamp Rosaria" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="img/luster-3.png" data-stock="110" data-opt_price="31 200" data-sale="false" data-new="false" data-is-favorite="false" data-buy-with="https://prev-kirill-provider.massive.ru/api/products/133734/lamps" data-price_sale="45 050" data-rrc_price="60 000">
                                 <div class="card-product__view">
                                   <a class="card-product__pic" href="#!"><img class="_js-card-image" src="img/luster-3.png" alt="" loading="lazy" ></a>
                                   <div class="card-product__badges">
@@ -997,7 +1002,7 @@
                               </div>
                             </div>
                             <div class="swiper-slide">
-                              <div class="card-product _js-card-product" data-id="180560" data-title="Люстра Аrte Lamp Rosaria" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="img/luster-1.png" data-stock="110" data-opt_price="31 200" data-sale="false" data-new="false" data-is-favorite="false" data-price_sale="45 050" data-rrc_price="60 000">
+                              <div class="card-product _js-card-product" data-id="133733" data-title="Люстра Аrte Lamp Rosaria" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="img/luster-1.png" data-stock="110" data-opt_price="31 200" data-sale="false" data-new="false" data-is-favorite="false" data-buy-with="https://prev-kirill-provider.massive.ru/api/products/133734/lamps" data-price_sale="45 050" data-rrc_price="60 000">
                                 <div class="card-product__view">
                                   <a class="card-product__pic" href="#!"><img class="_js-card-image" src="img/luster-1.png" alt="" loading="lazy" ></a>
                                   <div class="card-product__badges">
@@ -1050,7 +1055,7 @@
                               </div>
                             </div>
                             <div class="swiper-slide">
-                              <div class="card-product _js-card-product" data-id="180560" data-title="Люстра Аrte Lamp Rosaria" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="img/luster-2.png" data-stock="110" data-opt_price="31 200" data-sale="false" data-new="false" data-is-favorite="false" data-price_sale="45 050" data-rrc_price="60 000">
+                              <div class="card-product _js-card-product" data-id="133733" data-title="Люстра Аrte Lamp Rosaria" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="img/luster-2.png" data-stock="110" data-opt_price="31 200" data-sale="false" data-new="false" data-is-favorite="false" data-buy-with="https://prev-kirill-provider.massive.ru/api/products/133734/lamps" data-price_sale="45 050" data-rrc_price="60 000">
                                 <div class="card-product__view">
                                   <a class="card-product__pic" href="#!"><img class="_js-card-image" src="img/luster-2.png" alt="" loading="lazy" ></a>
                                   <div class="card-product__badges">
@@ -1120,7 +1125,7 @@
                         <div class="swiper recommendationSlider">
                           <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                              <div class="card-product _js-card-product" data-id="180560" data-title="Люстра Аrte Lamp Rosaria" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="img/lamp-1.jpg" data-stock="110" data-opt_price="31 200" data-sale="false" data-new="false" data-is-favorite="false" data-price_sale="45 050" data-rrc_price="60 000">
+                              <div class="card-product _js-card-product" data-id="133733" data-title="Люстра Аrte Lamp Rosaria" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="img/lamp-1.jpg" data-stock="110" data-opt_price="31 200" data-sale="false" data-new="false" data-is-favorite="false" data-buy-with="https://prev-kirill-provider.massive.ru/api/products/133734/lamps" data-price_sale="45 050" data-rrc_price="60 000">
                                 <div class="card-product__view">
                                   <a class="card-product__pic" href="#!"><img class="_js-card-image" src="img/lamp-1.jpg" alt="" loading="lazy" ></a>
                                   <div class="card-product__badges">
@@ -1173,7 +1178,7 @@
                               </div>
                             </div>
                             <div class="swiper-slide">
-                              <div class="card-product _js-card-product" data-id="180560" data-title="Люстра Аrte Lamp Rosaria" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="img/lamp-2.jpg" data-stock="110" data-opt_price="31 200" data-sale="false" data-new="false" data-is-favorite="false" data-price_sale="45 050" data-rrc_price="60 000">
+                              <div class="card-product _js-card-product" data-id="133733" data-title="Люстра Аrte Lamp Rosaria" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="img/lamp-2.jpg" data-stock="110" data-opt_price="31 200" data-sale="false" data-new="false" data-is-favorite="false" data-buy-with="https://prev-kirill-provider.massive.ru/api/products/133734/lamps" data-price_sale="45 050" data-rrc_price="60 000">
                                 <div class="card-product__view">
                                   <a class="card-product__pic" href="#!"><img class="_js-card-image" src="img/lamp-2.jpg" alt="" loading="lazy" ></a>
                                   <div class="card-product__badges">
@@ -1226,7 +1231,7 @@
                               </div>
                             </div>
                             <div class="swiper-slide">
-                              <div class="card-product _js-card-product" data-id="180560" data-title="Люстра Аrte Lamp Rosaria" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="img/lamp-3.jpg" data-stock="110" data-opt_price="31 200" data-sale="false" data-new="false" data-is-favorite="false" data-price_sale="45 050" data-rrc_price="60 000">
+                              <div class="card-product _js-card-product" data-id="133733" data-title="Люстра Аrte Lamp Rosaria" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="img/lamp-3.jpg" data-stock="110" data-opt_price="31 200" data-sale="false" data-new="false" data-is-favorite="false" data-buy-with="https://prev-kirill-provider.massive.ru/api/products/133734/lamps" data-price_sale="45 050" data-rrc_price="60 000">
                                 <div class="card-product__view">
                                   <a class="card-product__pic" href="#!"><img class="_js-card-image" src="img/lamp-3.jpg" alt="" loading="lazy" ></a>
                                   <div class="card-product__badges">
@@ -1279,7 +1284,7 @@
                               </div>
                             </div>
                             <div class="swiper-slide">
-                              <div class="card-product _js-card-product" data-id="180560" data-title="Люстра Аrte Lamp Rosaria" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="img/lamp-4.jpg" data-stock="110" data-opt_price="31 200" data-sale="false" data-new="false" data-is-favorite="false" data-price_sale="45 050" data-rrc_price="60 000">
+                              <div class="card-product _js-card-product" data-id="133733" data-title="Люстра Аrte Lamp Rosaria" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="img/lamp-4.jpg" data-stock="110" data-opt_price="31 200" data-sale="false" data-new="false" data-is-favorite="false" data-buy-with="https://prev-kirill-provider.massive.ru/api/products/133734/lamps" data-price_sale="45 050" data-rrc_price="60 000">
                                 <div class="card-product__view">
                                   <a class="card-product__pic" href="#!"><img class="_js-card-image" src="img/lamp-4.jpg" alt="" loading="lazy" ></a>
                                   <div class="card-product__badges">
@@ -1332,7 +1337,7 @@
                               </div>
                             </div>
                             <div class="swiper-slide">
-                              <div class="card-product _js-card-product" data-id="180560" data-title="Люстра Аrte Lamp Rosaria" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="img/lamp-5.jpg" data-stock="110" data-opt_price="31 200" data-sale="false" data-new="false" data-is-favorite="false" data-price_sale="45 050" data-rrc_price="60 000">
+                              <div class="card-product _js-card-product" data-id="133733" data-title="Люстра Аrte Lamp Rosaria" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="img/lamp-5.jpg" data-stock="110" data-opt_price="31 200" data-sale="false" data-new="false" data-is-favorite="false" data-buy-with="https://prev-kirill-provider.massive.ru/api/products/133734/lamps" data-price_sale="45 050" data-rrc_price="60 000">
                                 <div class="card-product__view">
                                   <a class="card-product__pic" href="#!"><img class="_js-card-image" src="img/lamp-5.jpg" alt="" loading="lazy" ></a>
                                   <div class="card-product__badges">
@@ -1385,7 +1390,7 @@
                               </div>
                             </div>
                             <div class="swiper-slide">
-                              <div class="card-product _js-card-product" data-id="180560" data-title="Люстра Аrte Lamp Rosaria" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="img/lamp-2.jpg" data-stock="110" data-opt_price="31 200" data-sale="false" data-new="false" data-is-favorite="false" data-price_sale="45 050" data-rrc_price="60 000">
+                              <div class="card-product _js-card-product" data-id="133733" data-title="Люстра Аrte Lamp Rosaria" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="img/lamp-2.jpg" data-stock="110" data-opt_price="31 200" data-sale="false" data-new="false" data-is-favorite="false" data-buy-with="https://prev-kirill-provider.massive.ru/api/products/133734/lamps" data-price_sale="45 050" data-rrc_price="60 000">
                                 <div class="card-product__view">
                                   <a class="card-product__pic" href="#!"><img class="_js-card-image" src="img/lamp-2.jpg" alt="" loading="lazy" ></a>
                                   <div class="card-product__badges">
@@ -1438,7 +1443,7 @@
                               </div>
                             </div>
                             <div class="swiper-slide">
-                              <div class="card-product _js-card-product" data-id="180560" data-title="Люстра Аrte Lamp Rosaria" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="img/lamp-3.jpg" data-stock="110" data-opt_price="31 200" data-sale="false" data-new="false" data-is-favorite="false" data-price_sale="45 050" data-rrc_price="60 000">
+                              <div class="card-product _js-card-product" data-id="133733" data-title="Люстра Аrte Lamp Rosaria" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="img/lamp-3.jpg" data-stock="110" data-opt_price="31 200" data-sale="false" data-new="false" data-is-favorite="false" data-buy-with="https://prev-kirill-provider.massive.ru/api/products/133734/lamps" data-price_sale="45 050" data-rrc_price="60 000">
                                 <div class="card-product__view">
                                   <a class="card-product__pic" href="#!"><img class="_js-card-image" src="img/lamp-3.jpg" alt="" loading="lazy" ></a>
                                   <div class="card-product__badges">
@@ -1491,7 +1496,7 @@
                               </div>
                             </div>
                             <div class="swiper-slide">
-                              <div class="card-product _js-card-product" data-id="180560" data-title="Люстра Аrte Lamp Rosaria" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="img/lamp-4.jpg" data-stock="110" data-opt_price="31 200" data-sale="false" data-new="false" data-is-favorite="false" data-price_sale="45 050" data-rrc_price="60 000">
+                              <div class="card-product _js-card-product" data-id="133733" data-title="Люстра Аrte Lamp Rosaria" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="img/lamp-4.jpg" data-stock="110" data-opt_price="31 200" data-sale="false" data-new="false" data-is-favorite="false" data-buy-with="https://prev-kirill-provider.massive.ru/api/products/133734/lamps" data-price_sale="45 050" data-rrc_price="60 000">
                                 <div class="card-product__view">
                                   <a class="card-product__pic" href="#!"><img class="_js-card-image" src="img/lamp-4.jpg" alt="" loading="lazy" ></a>
                                   <div class="card-product__badges">
@@ -1544,7 +1549,7 @@
                               </div>
                             </div>
                             <div class="swiper-slide">
-                              <div class="card-product _js-card-product" data-id="180560" data-title="Люстра Аrte Lamp Rosaria" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="img/lamp-5.jpg" data-stock="110" data-opt_price="31 200" data-sale="false" data-new="false" data-is-favorite="false" data-price_sale="45 050" data-rrc_price="60 000">
+                              <div class="card-product _js-card-product" data-id="133733" data-title="Люстра Аrte Lamp Rosaria" data-article="A1203PL-1AB" data-href="http://127.0.0.1:45/products/94419" data-image="img/lamp-5.jpg" data-stock="110" data-opt_price="31 200" data-sale="false" data-new="false" data-is-favorite="false" data-buy-with="https://prev-kirill-provider.massive.ru/api/products/133734/lamps" data-price_sale="45 050" data-rrc_price="60 000">
                                 <div class="card-product__view">
                                   <a class="card-product__pic" href="#!"><img class="_js-card-image" src="img/lamp-5.jpg" alt="" loading="lazy" ></a>
                                   <div class="card-product__badges">

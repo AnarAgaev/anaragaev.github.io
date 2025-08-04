@@ -1,64 +1,212 @@
 {
 	"data": [
 		{
-			"id": "202483",
-			"title": "Светодиодная лампа Gauss Шар 7W 580Lm 4100K E14 105801207",
-			"article": "105801207_GAUSS",
-			"href": "https://technolight.pro/products/202483",
-			"image": "https://shrunk.website.yandexcloud.net/images/48/b4/48b4aa1f3616694acbf6e3a309c73455/570x570/0.webp",
-			"stock": "<span class=\"success\">В наличии: > 100 шт</span>",
-			"rrc_price":"271,32",
-			"price_sale": "220,11",
-			"opt_price": "178, 07",
-			"sale": "false",
-			"new": "true",
-			"favorite": "false",
-			"rank": "10"
+			"id": 47626,
+			"rank": 0,
+			"title": "Светодиодная лампа Gauss Софит 5W 500Lm 3000K GU10 101506105",
+			"url": "https://prev-kirill-provider.massive.ru/products/47626",
+			"image": "https://shrunk.website.yandexcloud.net/images/ad/73/ad73a2bfa1ace4e9ef70be6e0d02ac22/570x570/0.webp",
+			"article": "101506105_GAUSS",
+			"in_stock": "<span class=\"success\">В наличии: >100 шт</span>",
+			"stock": "<span class=\"success\">В наличии: >100 шт</span>",
+			"breadcrumbs": [
+				{
+					"name": "Источники света",
+					"url": "https://prev-kirill-provider.massive.ru/categories/istocniki-sveta"
+				},
+				{
+					"name": "Лампы",
+					"url": "https://prev-kirill-provider.massive.ru/categories/lampy"
+				}
+			],
+			"collection": {
+				"name": "SMD",
+				"url": "https://prev-kirill-provider.massive.ru/categories?filter%5Bin_stock%5D=1&filter%5Bcollection%5D=SMD"
+			},
+			"price": {
+				"rrc_price": "3 581, 27",
+				"sale_price": "3 510. 07",
+				"opt_price": 1703,
+				"sale": true,
+				"rec_price_showed": true,
+				"opt_price_showed": true
+			},
+			"favorite": true,
+			"new": false
 		},
 		{
-			"id": "121713",
-			"title": "Светодиодная филаментная лампа Gauss Шар 5W 450Lm 4100K E14 105801205",
-			"article": "105801205_GAUSS",
-			"href": "https://technolight.pro/products/121713",
-			"image": "https://shrunk.website.yandexcloud.net/images/c3/6e/c36e8f289ada7774ab0bcda8b837072f/570x570/0.webp",
-			"stock": "<span class=\"info\">Наличие уточняйте у менеджера</span>",
-			"rrc_price": "209.33",
-			"price_sale": "182.17",
-			"opt_price": "110",
-			"sale": "false",
-			"new": "true",
-			"favorite": "true",
-			"rank": "10"
+			"id": 229527,
+			"rank": 0,
+			"title": "Светодиодная лампа Gauss Софит 9W 830Lm 4100K GU10 101506209",
+			"url": "https://prev-kirill-provider.massive.ru/products/229527",
+			"image": "https://shrunk.website.yandexcloud.net/images/19/1b/191bfb37569f845e1fdd9f71cb43fc06/570x570/0.webp",
+			"article": "101506209_GAUSS",
+			"in_stock": "<span class=\"success\">В наличии: >1000 шт</span>",
+			"stock": "<span class=\"success\">В наличии: >1000 шт</span>",
+			"breadcrumbs": [
+				{
+					"name": "Источники света",
+					"url": "https://prev-kirill-provider.massive.ru/categories/istocniki-sveta"
+				},
+				{
+					"name": "Лампы",
+					"url": "https://prev-kirill-provider.massive.ru/categories/lampy"
+				}
+			],
+			"collection": {
+				"name": "SMD",
+				"url": "https://prev-kirill-provider.massive.ru/categories?filter%5Bin_stock%5D=1&filter%5Bcollection%5D=SMD"
+			},
+			"price": {
+				"rrc_price": 559,
+				"opt_price": 559,
+				"sale": false,
+				"rec_price_showed": true,
+				"opt_price_showed": true
+			},
+			"favorite": false,
+			"new": false
 		},
 		{
-			"id": "121708",
-			"title": "Светодиодная филаментная лампа Gauss Свеча на ветру 5W 420Lm 2700K E14 104801105",
-			"article": "104801105_GAUSS",
-			"href": "https://technolight.pro/products/121708",
-			"image": "https://shrunk.website.yandexcloud.net/images/ce/b1/ceb1611b14cdb4790ae5e9a82fda1070/570x570/0.webp",
-			"stock": "<span class=\"success\">В наличии: > 310 шт</span>",
-			"rrc_price": "4 221, 36",
-			"price_sale": "3 100, 34",
-			"opt_price": "2 300",
-			"sale": "false",
-			"new": "false",
-			"favorite": "false",
-			"rank": "10"
+			"id": 74326,
+			"rank": 0,
+			"title": "Светодиодная лампа Gauss Софит 7W 630Lm 4100K GU10 101506207",
+			"url": "https://prev-kirill-provider.massive.ru/products/74326",
+			"image": "https://shrunk.website.yandexcloud.net/images/f4/e7/f4e79a713b7ea310028f91d29c94016f/570x570/0.webp",
+			"article": "101506207_GAUSS",
+			"in_stock": "<span class=\"success\">В наличии: >1000 шт</span>",
+			"stock": "<span class=\"success\">В наличии: >1000 шт</span>",
+			"breadcrumbs": [
+				{
+					"name": "Источники света",
+					"url": "https://prev-kirill-provider.massive.ru/categories/istocniki-sveta"
+				},
+				{
+					"name": "Лампы",
+					"url": "https://prev-kirill-provider.massive.ru/categories/lampy"
+				}
+			],
+			"collection": {
+				"name": "SMD",
+				"url": "https://prev-kirill-provider.massive.ru/categories?filter%5Bin_stock%5D=1&filter%5Bcollection%5D=SMD"
+			},
+			"price": {
+				"rrc_price": 443,
+				"opt_price": 443,
+				"sale": false,
+				"rec_price_showed": true,
+				"opt_price_showed": true
+			},
+			"favorite": false,
+			"new": false
 		},
 		{
-			"id": "121661",
-			"title": "Светодиодная филаментная лампа Gauss Свеча 4,5W 420Lm 4100K E14 1031215",
-			"article": "1031215_GAUSS",
-			"href": "https://technolight.pro/products/121661",
-			"image": "https://shrunk.website.yandexcloud.net/images/fc/b6/fcb6139884efde8624ac06f0c5430e31/570x570/0.webp",
-			"stock": "<span class=\"danger\">Нет в наличии</span>",
-			"rrc_price": "1 455.22",
-			"price_sale": "955.73",
-			"opt_price": "740",
-			"sale": "false",
-			"new": "false",
-			"favorite": "false",
-			"rank": "10"
+			"id": 47618,
+			"rank": 0,
+			"title": "Светодиодная лампа Gauss Софит 5W 530Lm 4100K GU10 101506205",
+			"url": "https://prev-kirill-provider.massive.ru/products/47618",
+			"image": "https://shrunk.website.yandexcloud.net/images/31/a4/31a4f4d799c9722c949f1d70a0aedb8b/570x570/0.webp",
+			"article": "101506205_GAUSS",
+			"in_stock": "<span class=\"success\">В наличии: >100 шт</span>",
+			"stock": "<span class=\"success\">В наличии: >100 шт</span>",
+			"breadcrumbs": [
+				{
+					"name": "Источники света",
+					"url": "https://prev-kirill-provider.massive.ru/categories/istocniki-sveta"
+				},
+				{
+					"name": "Лампы",
+					"url": "https://prev-kirill-provider.massive.ru/categories/lampy"
+				}
+			],
+			"collection": {
+				"name": "SMD",
+				"url": "https://prev-kirill-provider.massive.ru/categories?filter%5Bin_stock%5D=1&filter%5Bcollection%5D=SMD"
+			},
+			"price": {
+				"rrc_price": 358,
+				"opt_price": 358,
+				"sale": false,
+				"rec_price_showed": true,
+				"opt_price_showed": true
+			},
+			"favorite": false,
+			"new": false
+		},
+		{
+			"id": 229380,
+			"rank": 0,
+			"title": "Светодиодная лампа Gauss Софит 9W 830Lm 3000K GU10 101506109",
+			"url": "https://prev-kirill-provider.massive.ru/products/229380",
+			"image": "https://shrunk.website.yandexcloud.net/images/64/7c/647c18635babf4dcbd15ffc1257d39ba/570x570/0.webp",
+			"article": "101506109_GAUSS",
+			"in_stock": "<span class=\"success\">В наличии: >100 шт</span>",
+			"stock": "<span class=\"success\">В наличии: >100 шт</span>",
+			"breadcrumbs": [
+				{
+					"name": "Источники света",
+					"url": "https://prev-kirill-provider.massive.ru/categories/istocniki-sveta"
+				},
+				{
+					"name": "Лампы",
+					"url": "https://prev-kirill-provider.massive.ru/categories/lampy"
+				}
+			],
+			"collection": {
+				"name": "SMD",
+				"url": "https://prev-kirill-provider.massive.ru/categories?filter%5Bin_stock%5D=1&filter%5Bcollection%5D=SMD"
+			},
+			"price": {
+				"rrc_price": 559,
+				"opt_price": 559,
+				"sale": false,
+				"rec_price_showed": true,
+				"opt_price_showed": true
+			},
+			"favorite": false,
+			"new": false
 		}
-	]
+	],
+	"links": {
+		"first": "https://prev-kirill-provider.massive.ru/api/products/94512/lamps?page=1",
+		"last": "https://prev-kirill-provider.massive.ru/api/products/94512/lamps?page=3",
+		"prev": null,
+		"next": "https://prev-kirill-provider.massive.ru/api/products/94512/lamps?page=2"
+	},
+	"meta": {
+		"current_page": 1,
+		"from": 1,
+		"last_page": 3,
+		"links": [
+			{
+				"url": null,
+				"label": "&laquo; Previous",
+				"active": false
+			},
+			{
+				"url": "https://prev-kirill-provider.massive.ru/api/products/94512/lamps?page=1",
+				"label": "1",
+				"active": true
+			},
+			{
+				"url": "https://prev-kirill-provider.massive.ru/api/products/94512/lamps?page=2",
+				"label": "2",
+				"active": false
+			},
+			{
+				"url": "https://prev-kirill-provider.massive.ru/api/products/94512/lamps?page=3",
+				"label": "3",
+				"active": false
+			},
+			{
+				"url": "https://prev-kirill-provider.massive.ru/api/products/94512/lamps?page=2",
+				"label": "Next &raquo;",
+				"active": false
+			}
+		],
+		"path": "https://prev-kirill-provider.massive.ru/api/products/94512/lamps",
+		"per_page": 5,
+		"to": 5,
+		"total": 13
+	}
 }
