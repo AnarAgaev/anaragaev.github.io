@@ -1,123 +1,157 @@
 {
-    "data": {
-        "id": 8015013,
-        "number": "TEST250805_8015013",
-        "number_1c": null,
-        "uuid_1c": null,
-        "comment": null,
-        "readonly": 0,
-        "order_url": "https:\/\/prev-kirill-provider.massive.ru\/admin\/orders\/8015013\/edit",
-        "default": false,
-        "status": {
-            "current": {
-                "id": 1,
-                "name": "NEW",
-                "label": "\u041d\u0435 \u043e\u0444\u043e\u0440\u043c\u043b\u0435\u043d",
-                "color": "info",
-                "uuid": null,
-                "sort": 2,
-                "group": "process",
-                "parent": null
-            },
-            "log": [
-                {
-                    "id": 22341,
-                    "status_name": "NEW",
-                    "status": {
-                        "id": 1,
-                        "name": "NEW",
-                        "label": "\u041d\u0435 \u043e\u0444\u043e\u0440\u043c\u043b\u0435\u043d",
-                        "color": "info",
-                        "uuid": null,
-                        "sort": 2,
-                        "group": "process",
-                        "parent": null
-                    },
-                    "created_at": "2025-08-05T09:19:22.000000Z"
-                }
-            ]
-        },
-        "shipping": {
-            "id": null,
-            "date": null,
-            "ttn_number": null,
-            "ttn_company": null
-        },
-        "info": {
-            "contract_id": 42,
-            "shop_id": null,
-            "counterparty_id": 23
-        },
-        "downloads": [],
-        "products": [
-            {
-                "id": 87013,
-                "article": "A2563AP-1PB",
-                "image": "https:\/\/shrunk.website.yandexcloud.net\/images\/a8\/37\/a837f1d19ac1f3786d00b0cb98b8a3b5\/570x570\/0.webp",
-                "stock": 50,
-                "stock_msg": "<span class=\"info\">\u0412\u044b\u0432\u043e\u0434\u0438\u0442\u0441\u044f \u0438\u0437 \u0430\u0441\u0441\u043e\u0440\u0442\u0438\u043c\u0435\u043d\u0442\u0430, \u0432 \u043d\u0430\u043b\u0438\u0447\u0438\u0438 \u043d\u0435 \u0431\u043e\u043b\u0435\u0435 50 \u0448\u0442<\/span>",
-                "price": 6859.2,
-                "base_price": 14290,
-                "page_url": "https:\/\/prev-kirill-provider.massive.ru\/products\/87013",
-                "count": 1,
-                "reserved": 0,
-                "disposal": 0,
-                "ordered": 0,
-                "delivery_date": null,
-                "delivery_status": null
-            },
-            {
-                "id": 102842,
-                "article": "A1513PL-1WH",
-                "image": "https:\/\/shrunk.website.yandexcloud.net\/images\/6d\/bb\/6dbb72b4b9a7007b2199a69d9f5f53c3\/570x570\/0.webp",
-                "stock": 3067,
-                "stock_msg": "<span class=\"success\">\u0412 \u043d\u0430\u043b\u0438\u0447\u0438\u0438: \u0411\u043e\u043b\u0435\u0435 1000 \u0448\u0442<\/span>",
-                "price": 523.2,
-                "base_price": 1090,
-                "page_url": "https:\/\/prev-kirill-provider.massive.ru\/products\/102842",
-                "count": 1,
-                "reserved": 0,
-                "disposal": 0,
-                "ordered": 0,
-                "delivery_date": null,
-                "delivery_status": null
-            },
-            {
-                "id": 121668,
-                "article": "102902115_GAUSS",
-                "image": "https:\/\/shrunk.website.yandexcloud.net\/images\/63\/f8\/63f805a1c2fa9ea2e5215a132039c816\/570x570\/0.webp",
-                "stock": 0,
-                "stock_msg": "<span class=\"danger\">\u041d\u0430\u043b\u0438\u0447\u0438\u0435 \u0443\u0442\u043e\u0447\u043d\u0438\u0442\u0435 \u0443 \u043c\u0435\u043d\u0435\u0434\u0436\u0435\u0440\u0430<\/span>",
-                "price": 402.98,
-                "base_price": 597,
-                "page_url": "https:\/\/prev-kirill-provider.massive.ru\/products\/121668",
-                "count": 1,
-                "reserved": 0,
-                "disposal": 0,
-                "ordered": 0,
-                "delivery_date": null,
-                "delivery_status": null
-            },
-            {
-                "id": 137019,
-                "article": "A1541AL-1BN",
-                "image": "https:\/\/shrunk.website.yandexcloud.net\/images\/41\/11\/4111314e3554d4166d443ccb6be55db3\/570x570\/0.webp",
-                "stock": 0,
-                "stock_msg": "<span class=\"danger\">\u0412\u044b\u0432\u0435\u0434\u0435\u043d \u0438\u0437 \u0430\u0441\u0441\u043e\u0440\u0442\u0438\u043c\u0435\u043d\u0442\u0430<\/span>",
-                "price": 2539.2,
-                "base_price": 5290,
-                "page_url": "https:\/\/prev-kirill-provider.massive.ru\/products\/137019",
-                "count": 1,
-                "reserved": 0,
-                "disposal": 0,
-                "ordered": 0,
-                "delivery_date": null,
-                "delivery_status": null
-            }
-        ],
-        "meta": {
-            "created_at": "2025-08-05T09:19:22.000000Z",
-            "updated_at": "2025-08-05T09:51:24.000000Z"
-        }
-    }
+	"data": {
+		"id": 8018208,
+		"number": "TL8018208",
+		"number_1c": null,
+		"uuid_1c": null,
+		"comment": "Тест",
+		"readonly": 0,
+		"is_test": true,
+		"order_url": "https:\/\/prev-kirill-provider.massive.ru\/admin\/orders\/8018208\/edit",
+		"default": false,
+		"status": {
+			"current": {
+				"id": 1,
+				"name": "NEW",
+				"label": "Не оформлен",
+				"color": "info",
+				"uuid": null,
+				"sort": 2,
+				"group": "process",
+				"parent": null
+			},
+			"log": [
+				{
+					"id": 823,
+					"status_name": "NEW",
+					"status": {
+						"id": 1,
+						"name": "NEW",
+						"label": "Не оформлен",
+						"color": "info",
+						"uuid": null,
+						"sort": 2,
+						"group": "process",
+						"parent": null
+					},
+					"created_at": "2025-08-25T06:29:05.000000Z"
+				}
+			]
+		},
+		"shipping": {
+			"id": null,
+			"date": null,
+			"ttn_number": null,
+			"ttn_company": null
+		},
+		"info": {
+			"contract_id": 912,
+			"shop_id": null,
+			"counterparty_id": 99
+		},
+		"downloads": [],
+		"products": [
+			{
+				"id": 154070,
+				"article": "A720206",
+				"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/8c\/91\/8c91328e1fb4db446d055b40eb0a500b\/570x570\/0.webp",
+				"stock": 162,
+				"stock_msg": "<span class=\"success\">В наличии: Не более 500 шт<\/span>",
+				"price": 4830,
+				"base_price": null,
+				"page_url": "https:\/\/prev-kirill-provider.massive.ru\/products\/article\/A720206",
+				"count": 3,
+				"reserved": 0,
+				"disposal": 0,
+				"ordered": 0,
+				"delivery_date": null,
+				"delivery_status": null
+			},
+			{
+				"id": 180394,
+				"article": "A22070-4K",
+				"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/89\/fa\/89fa70915bc6500796283b6c32331e21\/570x570\/0.webp",
+				"stock": 14361,
+				"stock_msg": "<span class=\"success\">В наличии: Более 1000 шт<\/span>",
+				"price": 860,
+				"base_price": null,
+				"page_url": "https:\/\/prev-kirill-provider.massive.ru\/products\/article\/A22070-4K",
+				"count": 5,
+				"reserved": 0,
+				"disposal": 0,
+				"ordered": 0,
+				"delivery_date": null,
+				"delivery_status": null
+			},
+			{
+				"id": 211928,
+				"article": "A6612PL-1BK",
+				"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/0c\/53\/0c53b12ade7c6b0add20072f735d7c45\/570x570\/0.webp",
+				"stock": 220,
+				"stock_msg": "<span class=\"success\">В наличии: Не более 500 шт<\/span>",
+				"price": 2490,
+				"base_price": null,
+				"page_url": "https:\/\/prev-kirill-provider.massive.ru\/products\/article\/A6612PL-1BK",
+				"count": 2,
+				"reserved": 0,
+				"disposal": 0,
+				"ordered": 0,
+				"delivery_date": null,
+				"delivery_status": null
+			},
+			{
+				"id": 225331,
+				"article": "A3010PL-1BK",
+				"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/1d\/0e\/1d0e4b92243b24c5a3c252b9efd4f937\/570x570\/0.webp",
+				"stock": 5809,
+				"stock_msg": "<span class=\"success\">В наличии: Более 1000 шт<\/span>",
+				"price": 600,
+				"base_price": null,
+				"page_url": "https:\/\/prev-kirill-provider.massive.ru\/products\/article\/A3010PL-1BK",
+				"count": 12,
+				"reserved": 0,
+				"disposal": 0,
+				"ordered": 0,
+				"delivery_date": null,
+				"delivery_status": null
+			},
+			{
+				"id": 225448,
+				"article": "A721005E",
+				"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/c7\/ba\/c7ba690c397d51586b608c6940527301\/570x570\/0.webp",
+				"stock": 2888,
+				"stock_msg": "<span class=\"success\">В наличии: Более 1000 шт<\/span>",
+				"price": 250,
+				"base_price": null,
+				"page_url": "https:\/\/prev-kirill-provider.massive.ru\/products\/article\/A721005E",
+				"count": 1,
+				"reserved": 0,
+				"disposal": 0,
+				"ordered": 0,
+				"delivery_date": null,
+				"delivery_status": null
+			},
+			{
+				"id": 225449,
+				"article": "A722205",
+				"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/4e\/ec\/4eec5b6e843729ba3ce039b57e56daf3\/570x570\/0.webp",
+				"stock": 2923,
+				"stock_msg": "<span class=\"success\">В наличии: Более 1000 шт<\/span>",
+				"price": 4740,
+				"base_price": null,
+				"page_url": "https:\/\/prev-kirill-provider.massive.ru\/products\/article\/A722205",
+				"count": 3,
+				"reserved": 0,
+				"disposal": 0,
+				"ordered": 0,
+				"delivery_date": null,
+				"delivery_status": null
+			}
+		],
+		"meta": {
+			"created_at_1c": null,
+			"created_at": "2025-08-25T06:29:05.000000Z",
+			"updated_at": "2025-08-25T06:44:03.000000Z"
+		}
+	}
 }
