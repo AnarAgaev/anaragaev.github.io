@@ -1,1 +1,1 @@
-{"scripts":["/assets/index-CkFudLKf.js"],"styles":["/assets/index-Dl0OcC3u.css"]}
+{"scripts":["/assets/index-BZxEliU3.js"],"styles":["/assets/index-BXx-rCBJ.css"]}
