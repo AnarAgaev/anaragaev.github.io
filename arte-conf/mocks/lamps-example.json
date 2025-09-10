@@ -1,0 +1,134 @@
+[
+	{
+		"id": 1,
+		"lengthOnTrack": 222,
+		"dimmer": false,
+		"colorTemperature": 300,
+		"power": "20",
+		"article": "A460206",
+		"price": 5678.20,
+		"img": "images/lamp1.webp",
+		"selected": false
+	},
+	{
+		"id": 2,
+		"lengthOnTrack": 222,
+		"dimmer": true,
+		"colorTemperature": 300,
+		"power": "20",
+		"article": "A460206",
+		"price": 3291.03,
+		"img": "images/lamp2.webp",
+		"selected": false
+	},
+	{
+		"id": 3,
+		"lengthOnTrack": 222,
+		"dimmer": false,
+		"colorTemperature": 300,
+		"power": "20",
+		"article": "A460206",
+		"price": 7825,
+		"img": "images/lamp3.webp",
+		"selected": false
+	},
+	{
+		"id": 4,
+		"lengthOnTrack": 222,
+		"dimmer": true,
+		"colorTemperature": 300,
+		"power": "20",
+		"article": "A460206",
+		"price": 5678.03,
+		"img": "images/lamp4.webp",
+		"selected": false
+	},
+	{
+		"id": 5,
+		"lengthOnTrack": 222,
+		"dimmer": false,
+		"colorTemperature": 300,
+		"power": "20",
+		"article": "A460206",
+		"price": 1678.33,
+		"img": "images/lamp5.webp",
+		"selected": false
+	},
+	{
+		"id": 6,
+		"lengthOnTrack": 222,
+		"dimmer": false,
+		"colorTemperature": 300,
+		"power": "20",
+		"article": "A460206",
+		"price": 2810.22,
+		"img": "images/lamp6.webp",
+		"selected": false
+	},
+	{
+		"id": 7,
+		"lengthOnTrack": 222,
+		"dimmer": true,
+		"colorTemperature": 300,
+		"power": "20",
+		"article": "A460206",
+		"price": 5678.03,
+		"img": "images/lamp7.webp",
+		"selected": false
+	},
+	{
+		"id": 8,
+		"lengthOnTrack": 222,
+		"dimmer": false,
+		"colorTemperature": 300,
+		"power": "20",
+		"article": "A460206",
+		"price": 5678.03,
+		"img": "images/lamp8.webp",
+		"selected": false
+	},
+	{
+		"id": 9,
+		"lengthOnTrack": 222,
+		"dimmer": false,
+		"colorTemperature": 300,
+		"power": "20",
+		"article": "A460206",
+		"price": 4200,
+		"img": "images/lamp9.webp",
+		"selected": false
+	},
+	{
+		"id": 10,
+		"lengthOnTrack": 222,
+		"dimmer": true,
+		"colorTemperature": 300,
+		"power": "20",
+		"article": "A460206",
+		"price": 7329.11,
+		"img": "images/lamp10.webp",
+		"selected": false
+	},
+	{
+		"id": 11,
+		"lengthOnTrack": 222,
+		"dimmer": false,
+		"colorTemperature": 300,
+		"power": "20",
+		"article": "A460206",
+		"price": 5678.03,
+		"img": "images/lamp11.webp",
+		"selected": false
+	},
+	{
+		"id": 12,
+		"lengthOnTrack": 222,
+		"dimmer": true,
+		"colorTemperature": 300,
+		"power": "20",
+		"article": "A460206",
+		"price": 5678.03,
+		"img": "images/lamp5.webp",
+		"selected": false
+	}
+]
