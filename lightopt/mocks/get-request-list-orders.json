@@ -1,18 +1,20 @@
 {
 	"data": [
 		{
-			"id": 8014415,
-			"number": "TL8014415",
-			"number_1c": "ЯР8014415",
+			"id": 8019757,
+			"number": "TEST250919_8019757",
+			"number_1c": null,
 			"uuid_1c": null,
-			"comment": null,
+			"comment": "Тестовый заказ! Не проводить",
 			"readonly": 0,
+			"is_test": true,
+			"order_url": "https:\/\/prev-kirill-provider.massive.ru\/admin\/orders\/8019757\/edit",
 			"default": false,
 			"status": {
 				"current": {
 					"id": 1,
-					"name": "RESERVED",
-					"label": "В резерве",
+					"name": "NEW",
+					"label": "Не оформлен",
 					"color": "info",
 					"uuid": null,
 					"sort": 2,
@@ -21,7 +23,7 @@
 				},
 				"log": [
 					{
-						"id": 21788,
+						"id": 3470,
 						"status_name": "NEW",
 						"status": {
 							"id": 1,
@@ -33,22 +35,7 @@
 							"group": "process",
 							"parent": null
 						},
-						"created_at": "2025-07-14T12:43:05.000000Z"
-					},
-					{
-						"id": 21789,
-						"status_name": "NEW",
-						"status": {
-							"id": 1,
-							"name": "NEW",
-							"label": "Не оформлен",
-							"color": "info",
-							"uuid": null,
-							"sort": 2,
-							"group": "process",
-							"parent": null
-						},
-						"created_at": "2025-07-14T12:43:05.000000Z"
+						"created_at": "2025-09-19T12:25:02.000000Z"
 					}
 				]
 			},
@@ -59,20 +46,174 @@
 				"ttn_company": null
 			},
 			"info": {
-				"contract_id": 40,
+				"contract_id": 912,
+				"shop_id": 59987,
+				"counterparty_id": 99
+			},
+			"downloads": [],
+			"products": [
+				{
+					"id": 225333,
+					"article": "A3010PL-1WH",
+					"title": "Декоративная рамка для безрамочного светильника Arte Lamp INTER A3010PL-1WH",
+					"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/19\/8e\/198e21086c3c42fdcce26340cb866593\/570x570\/0.webp",
+					"stock": 2006,
+					"stock_msg": "<span class=\"success\">В наличии: Более 1000 шт<\/span>",
+					"price": 570,
+					"base_price": 600,
+					"page_url": "https:\/\/prev-kirill-provider.massive.ru\/products\/article\/A3010PL-1WH",
+					"count": 1,
+					"reserved": 0,
+					"disposal": 0,
+					"ordered": 0,
+					"delivery_date": null,
+					"delivery_status": null
+				}
+			],
+			"meta": {
+				"created_at_1c": null,
+				"created_at": "2025-09-19T12:25:02.000000Z",
+				"updated_at": "2025-09-19T12:25:02.000000Z"
+			}
+		},
+		{
+			"id": 8019756,
+			"number": "TEST250919_8019756",
+			"number_1c": null,
+			"uuid_1c": null,
+			"comment": "Тестовый заказ! Не проводить",
+			"readonly": 0,
+			"is_test": true,
+			"order_url": "https:\/\/prev-kirill-provider.massive.ru\/admin\/orders\/8019756\/edit",
+			"default": false,
+			"status": {
+				"current": {
+					"id": 1,
+					"name": "NEW",
+					"label": "Не оформлен",
+					"color": "info",
+					"uuid": null,
+					"sort": 2,
+					"group": "process",
+					"parent": null
+				},
+				"log": [
+					{
+						"id": 3469,
+						"status_name": "NEW",
+						"status": {
+							"id": 1,
+							"name": "NEW",
+							"label": "Не оформлен",
+							"color": "info",
+							"uuid": null,
+							"sort": 2,
+							"group": "process",
+							"parent": null
+						},
+						"created_at": "2025-09-19T12:24:51.000000Z"
+					}
+				]
+			},
+			"shipping": {
+				"id": null,
+				"date": null,
+				"ttn_number": null,
+				"ttn_company": null
+			},
+			"info": {
+				"contract_id": 912,
+				"shop_id": 59987,
+				"counterparty_id": 99
+			},
+			"downloads": [],
+			"products": [
+				{
+					"id": 225333,
+					"article": "A3010PL-1WH",
+					"title": "Декоративная рамка для безрамочного светильника Arte Lamp INTER A3010PL-1WH",
+					"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/19\/8e\/198e21086c3c42fdcce26340cb866593\/570x570\/0.webp",
+					"stock": 2006,
+					"stock_msg": "<span class=\"success\">В наличии: Более 1000 шт<\/span>",
+					"price": 570,
+					"base_price": 600,
+					"page_url": "https:\/\/prev-kirill-provider.massive.ru\/products\/article\/A3010PL-1WH",
+					"count": 1,
+					"reserved": 0,
+					"disposal": 0,
+					"ordered": 0,
+					"delivery_date": null,
+					"delivery_status": null
+				}
+			],
+			"meta": {
+				"created_at_1c": null,
+				"created_at": "2025-09-19T12:24:51.000000Z",
+				"updated_at": "2025-09-19T12:24:51.000000Z"
+			}
+		},
+		{
+			"id": 8019754,
+			"number": "TEST250919_8019754",
+			"number_1c": null,
+			"uuid_1c": null,
+			"comment": null,
+			"readonly": 0,
+			"is_test": true,
+			"order_url": "https:\/\/prev-kirill-provider.massive.ru\/admin\/orders\/8019754\/edit",
+			"default": false,
+			"status": {
+				"current": {
+					"id": 1,
+					"name": "NEW",
+					"label": "Не оформлен",
+					"color": "info",
+					"uuid": null,
+					"sort": 2,
+					"group": "process",
+					"parent": null
+				},
+				"log": [
+					{
+						"id": 3467,
+						"status_name": "NEW",
+						"status": {
+							"id": 1,
+							"name": "NEW",
+							"label": "Не оформлен",
+							"color": "info",
+							"uuid": null,
+							"sort": 2,
+							"group": "process",
+							"parent": null
+						},
+						"created_at": "2025-09-19T11:59:37.000000Z"
+					}
+				]
+			},
+			"shipping": {
+				"id": null,
+				"date": null,
+				"ttn_number": null,
+				"ttn_company": null
+			},
+			"info": {
+				"contract_id": 912,
 				"shop_id": null,
-				"counterparty_id": 22
+				"counterparty_id": 99
 			},
 			"downloads": [],
 			"products": [
 				{
 					"id": 181254,
-					"article": "2505/06 SP-16",
-					"image": "https://shrunk.website.yandexcloud.net/images/24/de/24deade16de3be705a1c7e09319bb7d2/570x570/0.webp",
-					"stock": 79,
-					"price": 9115.2,
+					"article": "2505\/06 SP-16",
+					"title": "Трековый светильник Divinare DECORATO 2505\/06 SP-16",
+					"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/24\/de\/24deade16de3be705a1c7e09319bb7d2\/570x570\/0.webp",
+					"stock": 78,
+					"stock_msg": "<span class=\"success\">В наличии: Не более 100 шт<\/span>",
+					"price": 18040.5,
 					"base_price": 18990,
-					"page_url": "https://prev-kirill-provider.massive.ru/products/181254",
+					"page_url": "https:\/\/prev-kirill-provider.massive.ru\/products\/article\/2505%2F06%20SP-16",
 					"count": 1,
 					"reserved": 0,
 					"disposal": 0,
@@ -82,17 +223,20 @@
 				}
 			],
 			"meta": {
-				"created_at": "2025-07-14T12:43:05.000000Z",
-				"updated_at": "2025-07-14T12:43:10.000000Z"
+				"created_at_1c": null,
+				"created_at": "2025-09-19T11:59:37.000000Z",
+				"updated_at": "2025-09-19T11:59:37.000000Z"
 			}
 		},
 		{
-			"id": 8014409,
-			"number": "TL8014409",
+			"id": 8019744,
+			"number": "TL8019744",
 			"number_1c": null,
 			"uuid_1c": null,
-			"comment": "Тестовый заказ saveOrderListArticle",
+			"comment": "САМОВЫВОЗ 11,09",
 			"readonly": 0,
+			"is_test": false,
+			"order_url": "https:\/\/prev-kirill-provider.massive.ru\/admin\/orders\/8019744\/edit",
 			"default": false,
 			"status": {
 				"current": {
@@ -107,22 +251,37 @@
 				},
 				"log": [
 					{
-						"id": 21776,
-						"status_name": "NEW",
+						"id": 3457,
+						"status_name": "SENDING",
 						"status": {
-							"id": 1,
-							"name": "NEW",
-							"label": "Не оформлен",
-							"color": "info",
+							"id": 13,
+							"name": "SENDING",
+							"label": "Отправляется",
+							"color": "secondary",
 							"uuid": null,
-							"sort": 2,
+							"sort": 3,
 							"group": "process",
-							"parent": null
+							"parent": "IN_PROGRESS"
 						},
-						"created_at": "2025-07-14T12:16:02.000000Z"
+						"created_at": "2025-09-11T06:08:14.000000Z"
 					},
 					{
-						"id": 21777,
+						"id": 3446,
+						"status_name": "SENDING",
+						"status": {
+							"id": 13,
+							"name": "SENDING",
+							"label": "Отправляется",
+							"color": "secondary",
+							"uuid": null,
+							"sort": 3,
+							"group": "process",
+							"parent": "IN_PROGRESS"
+						},
+						"created_at": "2025-09-11T05:45:46.000000Z"
+					},
+					{
+						"id": 3445,
 						"status_name": "NEW",
 						"status": {
 							"id": 1,
@@ -134,7 +293,7 @@
 							"group": "process",
 							"parent": null
 						},
-						"created_at": "2025-07-14T12:16:02.000000Z"
+						"created_at": "2025-09-11T05:45:45.000000Z"
 					}
 				]
 			},
@@ -145,20 +304,22 @@
 				"ttn_company": null
 			},
 			"info": {
-				"contract_id": 40,
+				"contract_id": 59,
 				"shop_id": null,
-				"counterparty_id": 22
+				"counterparty_id": 41
 			},
 			"downloads": [],
 			"products": [
 				{
-					"id": 29042,
-					"article": "A1437PL-72WH",
-					"image": "https://shrunk.website.yandexcloud.net/images/01/42/0142e9b8798246f17ea02ba1f4c32cae/570x570/0.webp",
-					"stock": 68,
-					"price": 6475.2,
-					"base_price": 13490,
-					"page_url": "https://prev-kirill-provider.massive.ru/products/29042",
+					"id": 8109,
+					"article": "A8561SP-1CL",
+					"title": "Подвесной светильник Arte Lamp DILETTO A8561SP-1CL",
+					"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/e7\/93\/e793fc38d630c9c3f8acb401a27537b1\/570x570\/1.webp",
+					"stock": 0,
+					"stock_msg": "<span class=\"info\">Наличие уточните у менеджера<\/span>",
+					"price": 5130,
+					"base_price": 5990,
+					"page_url": "https:\/\/prev-kirill-provider.massive.ru\/products\/article\/A8561SP-1CL",
 					"count": 1,
 					"reserved": 0,
 					"disposal": 0,
@@ -167,29 +328,16 @@
 					"delivery_status": null
 				},
 				{
-					"id": 90291,
-					"article": "A160233",
-					"image": "https://shrunk.website.yandexcloud.net/images/b1/b2/b1b2b19a5bd2161f5fde7bb275270d0e/570x570/0.webp",
-					"stock": 3435,
-					"price": 110.4,
-					"base_price": 230,
-					"page_url": "https://prev-kirill-provider.massive.ru/products/90291",
-					"count": 1,
-					"reserved": 0,
-					"disposal": 0,
-					"ordered": 0,
-					"delivery_date": null,
-					"delivery_status": null
-				},
-				{
-					"id": 180557,
-					"article": "A484305I",
-					"image": "https://shrunk.website.yandexcloud.net/images/ba/26/ba260b92ad9cb363775d1aaa72f9376b/570x570/0.webp",
-					"stock": 971,
-					"price": 302.4,
-					"base_price": 630,
-					"page_url": "https://prev-kirill-provider.massive.ru/products/180557",
-					"count": 1,
+					"id": 102891,
+					"article": "A5645PL-2BK",
+					"title": "Точечный накладной светильник Arte Lamp FALCON A5645PL-2BK",
+					"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/66\/c4\/66c4a5f1c46a9077e2a3c98eb496f2a3\/570x570\/0.webp",
+					"stock": 415,
+					"stock_msg": "<span class=\"info\">Выводится из ассортимента, в наличии не более 500 шт<\/span>",
+					"price": 2236.8,
+					"base_price": 4660,
+					"page_url": "https:\/\/prev-kirill-provider.massive.ru\/products\/article\/A5645PL-2BK",
+					"count": 3,
 					"reserved": 0,
 					"disposal": 0,
 					"ordered": 0,
@@ -198,17 +346,20 @@
 				}
 			],
 			"meta": {
-				"created_at": "2025-07-14T12:16:02.000000Z",
-				"updated_at": "2025-07-14T12:16:13.000000Z"
+				"created_at_1c": null,
+				"created_at": "2025-09-11T05:45:45.000000Z",
+				"updated_at": "2025-09-11T06:08:17.000000Z"
 			}
 		},
 		{
-			"id": 8014407,
-			"number": "TL8014407",
+			"id": 8019743,
+			"number": "TL8019743",
 			"number_1c": null,
 			"uuid_1c": null,
-			"comment": "Тестовый заказ saveOrderFile",
+			"comment": null,
 			"readonly": 0,
+			"is_test": false,
+			"order_url": "https:\/\/prev-kirill-provider.massive.ru\/admin\/orders\/8019743\/edit",
 			"default": false,
 			"status": {
 				"current": {
@@ -223,22 +374,52 @@
 				},
 				"log": [
 					{
-						"id": 21772,
-						"status_name": "NEW",
+						"id": 3449,
+						"status_name": "SENDING",
 						"status": {
-							"id": 1,
-							"name": "NEW",
-							"label": "Не оформлен",
-							"color": "info",
+							"id": 13,
+							"name": "SENDING",
+							"label": "Отправляется",
+							"color": "secondary",
 							"uuid": null,
-							"sort": 2,
+							"sort": 3,
 							"group": "process",
-							"parent": null
+							"parent": "IN_PROGRESS"
 						},
-						"created_at": "2025-07-14T12:15:34.000000Z"
+						"created_at": "2025-09-11T05:52:21.000000Z"
 					},
 					{
-						"id": 21773,
+						"id": 3448,
+						"status_name": "SENDING",
+						"status": {
+							"id": 13,
+							"name": "SENDING",
+							"label": "Отправляется",
+							"color": "secondary",
+							"uuid": null,
+							"sort": 3,
+							"group": "process",
+							"parent": "IN_PROGRESS"
+						},
+						"created_at": "2025-09-11T05:46:28.000000Z"
+					},
+					{
+						"id": 3444,
+						"status_name": "SENDING",
+						"status": {
+							"id": 13,
+							"name": "SENDING",
+							"label": "Отправляется",
+							"color": "secondary",
+							"uuid": null,
+							"sort": 3,
+							"group": "process",
+							"parent": "IN_PROGRESS"
+						},
+						"created_at": "2025-09-11T05:38:47.000000Z"
+					},
+					{
+						"id": 3443,
 						"status_name": "NEW",
 						"status": {
 							"id": 1,
@@ -250,7 +431,7 @@
 							"group": "process",
 							"parent": null
 						},
-						"created_at": "2025-07-14T12:15:34.000000Z"
+						"created_at": "2025-09-11T05:38:38.000000Z"
 					}
 				]
 			},
@@ -261,272 +442,23 @@
 				"ttn_company": null
 			},
 			"info": {
-				"contract_id": 40,
+				"contract_id": 60,
 				"shop_id": null,
-				"counterparty_id": 22
+				"counterparty_id": 42
 			},
 			"downloads": [],
 			"products": [
-				{
-					"id": 47611,
-					"article": "105101107_GAUSS",
-					"image": "https://shrunk.website.yandexcloud.net/images/2d/be/2dbea1e4d0bb42a63fd35ecd8b40927b/570x570/0.webp",
-					"stock": 571,
-					"price": 106.65,
-					"base_price": 158,
-					"page_url": "https://prev-kirill-provider.massive.ru/products/47611",
-					"count": 4,
-					"reserved": 0,
-					"disposal": 0,
-					"ordered": 0,
-					"delivery_date": null,
-					"delivery_status": null
-				},
-				{
-					"id": 47619,
-					"article": "106001104_GAUSS",
-					"image": "https://shrunk.website.yandexcloud.net/images/7e/1f/7e1f7a598ca759629543d7381370d983/570x570/0.webp",
-					"stock": 6,
-					"price": 195.08,
-					"base_price": 289,
-					"page_url": "https://prev-kirill-provider.massive.ru/products/47619",
-					"count": 4,
-					"reserved": 0,
-					"disposal": 0,
-					"ordered": 0,
-					"delivery_date": null,
-					"delivery_status": null
-				},
-				{
-					"id": 121552,
-					"article": "101505209_GAUSS",
-					"image": "https://shrunk.website.yandexcloud.net/images/1a/c9/1ac9af52636a32d2b2273eeb78dbedd1/570x570/0.webp",
-					"stock": 87,
-					"price": 272.7,
-					"base_price": 404,
-					"page_url": "https://prev-kirill-provider.massive.ru/products/121552",
-					"count": 4,
-					"reserved": 0,
-					"disposal": 0,
-					"ordered": 0,
-					"delivery_date": null,
-					"delivery_status": null
-				},
-				{
-					"id": 123003,
-					"article": "103101210_GAUSS",
-					"image": "https://shrunk.website.yandexcloud.net/images/11/49/114938878bd6c22b7a0cd168c4a93549/570x570/0.webp",
-					"stock": 2234,
-					"price": 195.08,
-					"base_price": 289,
-					"page_url": "https://prev-kirill-provider.massive.ru/products/123003",
-					"count": 4,
-					"reserved": 0,
-					"disposal": 0,
-					"ordered": 0,
-					"delivery_date": null,
-					"delivery_status": null
-				},
-				{
-					"id": 182111,
-					"article": "102102410_GAUSS",
-					"image": "https://shrunk.website.yandexcloud.net/images/a1/60/a160291ce921a94d4a288201430aa309/570x570/0.webp",
-					"stock": 10,
-					"price": 710.1,
-					"base_price": 1052,
-					"page_url": "https://prev-kirill-provider.massive.ru/products/182111",
-					"count": 4,
-					"reserved": 0,
-					"disposal": 0,
-					"ordered": 0,
-					"delivery_date": null,
-					"delivery_status": null
-				}
-			],
-			"meta": {
-				"created_at": "2025-07-14T12:15:34.000000Z",
-				"updated_at": "2025-07-14T12:15:45.000000Z"
-			}
-		},
-		{
-			"id": 8014406,
-			"number": "TL8014406",
-			"number_1c": null,
-			"uuid_1c": null,
-			"comment": "Тестовый заказ saveOrderFileError",
-			"readonly": 0,
-			"default": false,
-			"status": {
-				"current": {
-					"id": 1,
-					"name": "NEW",
-					"label": "Не оформлен",
-					"color": "info",
-					"uuid": null,
-					"sort": 2,
-					"group": "process",
-					"parent": null
-				},
-				"log": [
-					{
-						"id": 21770,
-						"status_name": "NEW",
-						"status": {
-							"id": 1,
-							"name": "NEW",
-							"label": "Не оформлен",
-							"color": "info",
-							"uuid": null,
-							"sort": 2,
-							"group": "process",
-							"parent": null
-						},
-						"created_at": "2025-07-14T12:15:08.000000Z"
-					},
-					{
-						"id": 21771,
-						"status_name": "NEW",
-						"status": {
-							"id": 1,
-							"name": "NEW",
-							"label": "Не оформлен",
-							"color": "info",
-							"uuid": null,
-							"sort": 2,
-							"group": "process",
-							"parent": null
-						},
-						"created_at": "2025-07-14T12:15:08.000000Z"
-					}
-				]
-			},
-			"shipping": {
-				"id": null,
-				"date": null,
-				"ttn_number": null,
-				"ttn_company": null
-			},
-			"info": {
-				"contract_id": 40,
-				"shop_id": null,
-				"counterparty_id": 22
-			},
-			"downloads": [],
-			"products": [
-				{
-					"id": 44813,
-					"article": "A6905LM-3AB",
-					"image": "https://shrunk.website.yandexcloud.net/images/0a/f1/0af14494d0ad3fbf785d1c6672052405/570x570/0.webp",
-					"stock": 10,
-					"price": 5755.2,
-					"base_price": 11990,
-					"page_url": "https://prev-kirill-provider.massive.ru/products/44813",
-					"count": 2,
-					"reserved": 0,
-					"disposal": 0,
-					"ordered": 0,
-					"delivery_date": null,
-					"delivery_status": null
-				},
-				{
-					"id": 180380,
-					"article": "A150605S",
-					"image": "https://shrunk.website.yandexcloud.net/images/f8/33/f8339e8bc63b8e9c863dbcd139bbcf9e/570x570/0.webp",
-					"stock": 160,
-					"price": 268.8,
-					"base_price": 560,
-					"page_url": "https://prev-kirill-provider.massive.ru/products/180380",
-					"count": 8,
-					"reserved": 0,
-					"disposal": 0,
-					"ordered": 0,
-					"delivery_date": null,
-					"delivery_status": null
-				},
 				{
 					"id": 180383,
 					"article": "A161605S",
-					"image": "https://shrunk.website.yandexcloud.net/images/94/c3/94c3b51b4b2b53561dd3a863fb385e0a/570x570/0.webp",
-					"stock": 1225,
-					"price": 369.6,
+					"title": "Профиль угловой для ленты Arte Lamp SURFACE A161605S",
+					"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/94\/c3\/94c3b51b4b2b53561dd3a863fb385e0a\/570x570\/0.webp",
+					"stock": 1712,
+					"stock_msg": "<span class=\"success\">В наличии: Более 1000 шт<\/span>",
+					"price": 385,
 					"base_price": 770,
-					"page_url": "https://prev-kirill-provider.massive.ru/products/180383",
-					"count": 18,
-					"reserved": 0,
-					"disposal": 0,
-					"ordered": 0,
-					"delivery_date": null,
-					"delivery_status": null
-				},
-				{
-					"id": 180605,
-					"article": "A70RC-01CH-BK",
-					"image": "https://shrunk.website.yandexcloud.net/images/e5/79/e579ed7d538ad1e29828c9248b981172/570x570/0.webp",
-					"stock": 1115,
-					"price": 1291.2,
-					"base_price": 2690,
-					"page_url": "https://prev-kirill-provider.massive.ru/products/180605",
-					"count": 2,
-					"reserved": 0,
-					"disposal": 0,
-					"ordered": 0,
-					"delivery_date": null,
-					"delivery_status": null
-				},
-				{
-					"id": 180607,
-					"article": "A70RC-04CH-BK",
-					"image": "https://shrunk.website.yandexcloud.net/images/9e/ef/9eef73b6228c45667f5793f350df87b5/570x570/0.webp",
-					"stock": 1304,
-					"price": 1291.2,
-					"base_price": 2690,
-					"page_url": "https://prev-kirill-provider.massive.ru/products/180607",
-					"count": 1,
-					"reserved": 0,
-					"disposal": 0,
-					"ordered": 0,
-					"delivery_date": null,
-					"delivery_status": null
-				},
-				{
-					"id": 210220,
-					"article": "A80D-01CH-WF",
-					"image": "https://shrunk.website.yandexcloud.net/images/47/bb/47bb39d61369d088146569487e7ef440/570x570/0.webp",
-					"stock": 851,
-					"price": 2102.4,
-					"base_price": 4380,
-					"page_url": "https://prev-kirill-provider.massive.ru/products/210220",
-					"count": 6,
-					"reserved": 0,
-					"disposal": 0,
-					"ordered": 0,
-					"delivery_date": null,
-					"delivery_status": null
-				},
-				{
-					"id": 210221,
-					"article": "A90S-02CH-WF",
-					"image": "https://shrunk.website.yandexcloud.net/images/f5/61/f56126099302c64b87836d6312c9b7ff/570x570/0.webp",
-					"stock": 1814,
-					"price": 1339.2,
-					"base_price": 2790,
-					"page_url": "https://prev-kirill-provider.massive.ru/products/210221",
-					"count": 1,
-					"reserved": 0,
-					"disposal": 0,
-					"ordered": 0,
-					"delivery_date": null,
-					"delivery_status": null
-				},
-				{
-					"id": 215922,
-					"article": "A4092LM-5CC",
-					"image": "https://shrunk.website.yandexcloud.net/images/56/16/5616c64d52db2f7b297e4b43a0fde53d/570x570/0.webp",
-					"stock": 156,
-					"price": 8155.2,
-					"base_price": 16990,
-					"page_url": "https://prev-kirill-provider.massive.ru/products/215922",
-					"count": 2,
+					"page_url": "https:\/\/prev-kirill-provider.massive.ru\/products\/article\/A161605S",
+					"count": 5,
 					"reserved": 0,
 					"disposal": 0,
 					"ordered": 0,
@@ -535,17 +467,20 @@
 				}
 			],
 			"meta": {
-				"created_at": "2025-07-14T12:15:08.000000Z",
-				"updated_at": "2025-07-14T12:15:20.000000Z"
+				"created_at_1c": null,
+				"created_at": "2025-09-11T05:38:38.000000Z",
+				"updated_at": "2025-09-11T05:52:25.000000Z"
 			}
 		},
 		{
-			"id": 8014405,
-			"number": "TL8014405",
+			"id": 8019720,
+			"number": "TL8019720",
 			"number_1c": null,
 			"uuid_1c": null,
-			"comment": "Тестовый заказ saveOrderFile",
+			"comment": null,
 			"readonly": 0,
+			"is_test": false,
+			"order_url": "https:\/\/prev-kirill-provider.massive.ru\/admin\/orders\/8019720\/edit",
 			"default": false,
 			"status": {
 				"current": {
@@ -560,22 +495,97 @@
 				},
 				"log": [
 					{
-						"id": 21768,
-						"status_name": "NEW",
+						"id": 3451,
+						"status_name": "SENDING",
 						"status": {
-							"id": 1,
-							"name": "NEW",
-							"label": "Не оформлен",
-							"color": "info",
+							"id": 13,
+							"name": "SENDING",
+							"label": "Отправляется",
+							"color": "secondary",
 							"uuid": null,
-							"sort": 2,
+							"sort": 3,
 							"group": "process",
-							"parent": null
+							"parent": "IN_PROGRESS"
 						},
-						"created_at": "2025-07-14T12:14:43.000000Z"
+						"created_at": "2025-09-11T05:55:55.000000Z"
 					},
 					{
-						"id": 21769,
+						"id": 3450,
+						"status_name": "SENDING",
+						"status": {
+							"id": 13,
+							"name": "SENDING",
+							"label": "Отправляется",
+							"color": "secondary",
+							"uuid": null,
+							"sort": 3,
+							"group": "process",
+							"parent": "IN_PROGRESS"
+						},
+						"created_at": "2025-09-11T05:54:50.000000Z"
+					},
+					{
+						"id": 3447,
+						"status_name": "SENDING",
+						"status": {
+							"id": 13,
+							"name": "SENDING",
+							"label": "Отправляется",
+							"color": "secondary",
+							"uuid": null,
+							"sort": 3,
+							"group": "process",
+							"parent": "IN_PROGRESS"
+						},
+						"created_at": "2025-09-11T05:45:58.000000Z"
+					},
+					{
+						"id": 3441,
+						"status_name": "SENDING",
+						"status": {
+							"id": 13,
+							"name": "SENDING",
+							"label": "Отправляется",
+							"color": "secondary",
+							"uuid": null,
+							"sort": 3,
+							"group": "process",
+							"parent": "IN_PROGRESS"
+						},
+						"created_at": "2025-09-11T05:21:51.000000Z"
+					},
+					{
+						"id": 3412,
+						"status_name": "SENDING",
+						"status": {
+							"id": 13,
+							"name": "SENDING",
+							"label": "Отправляется",
+							"color": "secondary",
+							"uuid": null,
+							"sort": 3,
+							"group": "process",
+							"parent": "IN_PROGRESS"
+						},
+						"created_at": "2025-09-10T14:17:17.000000Z"
+					},
+					{
+						"id": 3411,
+						"status_name": "SENDING",
+						"status": {
+							"id": 13,
+							"name": "SENDING",
+							"label": "Отправляется",
+							"color": "secondary",
+							"uuid": null,
+							"sort": 3,
+							"group": "process",
+							"parent": "IN_PROGRESS"
+						},
+						"created_at": "2025-09-10T14:17:04.000000Z"
+					},
+					{
+						"id": 3409,
 						"status_name": "NEW",
 						"status": {
 							"id": 1,
@@ -587,7 +597,22 @@
 							"group": "process",
 							"parent": null
 						},
-						"created_at": "2025-07-14T12:14:43.000000Z"
+						"created_at": "2025-09-10T14:15:41.000000Z"
+					},
+					{
+						"id": 3410,
+						"status_name": "SENDING",
+						"status": {
+							"id": 13,
+							"name": "SENDING",
+							"label": "Отправляется",
+							"color": "secondary",
+							"uuid": null,
+							"sort": 3,
+							"group": "process",
+							"parent": "IN_PROGRESS"
+						},
+						"created_at": "2025-09-10T14:15:41.000000Z"
 					}
 				]
 			},
@@ -598,20 +623,22 @@
 				"ttn_company": null
 			},
 			"info": {
-				"contract_id": 40,
-				"shop_id": null,
-				"counterparty_id": 22
+				"contract_id": 56,
+				"shop_id": 11,
+				"counterparty_id": 38
 			},
 			"downloads": [],
 			"products": [
 				{
-					"id": 57397,
-					"article": "1201/02 AP-1",
-					"image": "https://shrunk.website.yandexcloud.net/images/22/be/22bec7fed538978492fd8822d2e592d3/570x570/0.webp",
-					"stock": 0,
-					"price": 1280,
-					"base_price": 3390,
-					"page_url": "https://prev-kirill-provider.massive.ru/products/57397",
+					"id": 151875,
+					"article": "A6065AP-1WH",
+					"title": "Декоративная подсветка Arte Lamp PARADISE A6065AP-1WH",
+					"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/14\/80\/1480039d7dc12f9956eb956016f362ec\/570x570\/0.webp",
+					"stock": 53,
+					"stock_msg": "<span class=\"success\">В наличии: Не более 100 шт<\/span>",
+					"price": 4145,
+					"base_price": 8290,
+					"page_url": "https:\/\/prev-kirill-provider.massive.ru\/products\/article\/A6065AP-1WH",
 					"count": 1,
 					"reserved": 0,
 					"disposal": 0,
@@ -620,13 +647,153 @@
 					"delivery_status": null
 				},
 				{
-					"id": 90291,
-					"article": "A160233",
-					"image": "https://shrunk.website.yandexcloud.net/images/b1/b2/b1b2b19a5bd2161f5fde7bb275270d0e/570x570/0.webp",
-					"stock": 3435,
-					"price": 110.4,
-					"base_price": 230,
-					"page_url": "https://prev-kirill-provider.massive.ru/products/90291",
+					"id": 215950,
+					"article": "A1623LM-10GO",
+					"title": "Подвесная люстра Arte Lamp CHARM A1623LM-10GO",
+					"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/55\/42\/5542848ed0e5d558605bfc12f7e15f98\/570x570\/0.webp",
+					"stock": 54,
+					"stock_msg": "<span class=\"success\">В наличии: Не более 100 шт<\/span>",
+					"price": 8995,
+					"base_price": 17990,
+					"page_url": "https:\/\/prev-kirill-provider.massive.ru\/products\/article\/A1623LM-10GO",
+					"count": 1,
+					"reserved": 0,
+					"disposal": 0,
+					"ordered": 0,
+					"delivery_date": null,
+					"delivery_status": null
+				},
+				{
+					"id": 225452,
+					"article": "A1623AP-2GO",
+					"title": "Бра Arte Lamp CHARM A1623AP-2GO",
+					"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/00\/f8\/00f827422b7dfe89c9878cf1a1bc1305\/570x570\/0.webp",
+					"stock": 17,
+					"stock_msg": "<span class=\"success\">В наличии: Не более 50 шт<\/span>",
+					"price": 2045,
+					"base_price": 4090,
+					"page_url": "https:\/\/prev-kirill-provider.massive.ru\/products\/article\/A1623AP-2GO",
+					"count": 2,
+					"reserved": 0,
+					"disposal": 0,
+					"ordered": 0,
+					"delivery_date": null,
+					"delivery_status": null
+				}
+			],
+			"meta": {
+				"created_at_1c": null,
+				"created_at": "2025-09-10T14:15:41.000000Z",
+				"updated_at": "2025-09-11T05:55:56.000000Z"
+			}
+		},
+		{
+			"id": 8019705,
+			"number": "TL8019705",
+			"number_1c": null,
+			"uuid_1c": null,
+			"comment": null,
+			"readonly": 0,
+			"is_test": false,
+			"order_url": "https:\/\/prev-kirill-provider.massive.ru\/admin\/orders\/8019705\/edit",
+			"default": false,
+			"status": {
+				"current": {
+					"id": 1,
+					"name": "NEW",
+					"label": "Не оформлен",
+					"color": "info",
+					"uuid": null,
+					"sort": 2,
+					"group": "process",
+					"parent": null
+				},
+				"log": [
+					{
+						"id": 3394,
+						"status_name": "SENDING",
+						"status": {
+							"id": 13,
+							"name": "SENDING",
+							"label": "Отправляется",
+							"color": "secondary",
+							"uuid": null,
+							"sort": 3,
+							"group": "process",
+							"parent": "IN_PROGRESS"
+						},
+						"created_at": "2025-09-10T12:34:26.000000Z"
+					},
+					{
+						"id": 3393,
+						"status_name": "SENDING",
+						"status": {
+							"id": 13,
+							"name": "SENDING",
+							"label": "Отправляется",
+							"color": "secondary",
+							"uuid": null,
+							"sort": 3,
+							"group": "process",
+							"parent": "IN_PROGRESS"
+						},
+						"created_at": "2025-09-10T12:30:00.000000Z"
+					},
+					{
+						"id": 3391,
+						"status_name": "NEW",
+						"status": {
+							"id": 1,
+							"name": "NEW",
+							"label": "Не оформлен",
+							"color": "info",
+							"uuid": null,
+							"sort": 2,
+							"group": "process",
+							"parent": null
+						},
+						"created_at": "2025-09-10T12:26:12.000000Z"
+					},
+					{
+						"id": 3392,
+						"status_name": "SENDING",
+						"status": {
+							"id": 13,
+							"name": "SENDING",
+							"label": "Отправляется",
+							"color": "secondary",
+							"uuid": null,
+							"sort": 3,
+							"group": "process",
+							"parent": "IN_PROGRESS"
+						},
+						"created_at": "2025-09-10T12:26:12.000000Z"
+					}
+				]
+			},
+			"shipping": {
+				"id": null,
+				"date": null,
+				"ttn_number": null,
+				"ttn_company": null
+			},
+			"info": {
+				"contract_id": 61,
+				"shop_id": null,
+				"counterparty_id": 43
+			},
+			"downloads": [],
+			"products": [
+				{
+					"id": 155926,
+					"article": "A7264PL-1BK",
+					"title": "Магнитный трековый светильник Arte Lamp OPTIMA A7264PL-1BK",
+					"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/50\/5c\/505c51d152825a21c771493111d37733\/570x570\/0.webp",
+					"stock": 1178,
+					"stock_msg": "<span class=\"success\">В наличии: Более 1000 шт<\/span>",
+					"price": 1575,
+					"base_price": 3150,
+					"page_url": "https:\/\/prev-kirill-provider.massive.ru\/products\/article\/A7264PL-1BK",
 					"count": 8,
 					"reserved": 0,
 					"disposal": 0,
@@ -635,14 +802,16 @@
 					"delivery_status": null
 				},
 				{
-					"id": 121635,
-					"article": "102502110_GAUSS",
-					"image": "https://shrunk.website.yandexcloud.net/images/7e/4c/7e4cf397b30a30ebad21b32d0468d43f/570x570/0.webp",
-					"stock": 152,
-					"price": 195.08,
-					"base_price": 289,
-					"page_url": "https://prev-kirill-provider.massive.ru/products/121635",
-					"count": 14,
+					"id": 155930,
+					"article": "A7266PL-1BK",
+					"title": "Магнитный трековый светильник Arte Lamp OPTIMA A7266PL-1BK",
+					"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/98\/da\/98da5e4ca740b5856f2f55020fc3bfbc\/570x570\/0.webp",
+					"stock": 899,
+					"stock_msg": "<span class=\"success\">В наличии: Не более 1000 шт<\/span>",
+					"price": 1185,
+					"base_price": 2370,
+					"page_url": "https:\/\/prev-kirill-provider.massive.ru\/products\/article\/A7266PL-1BK",
+					"count": 7,
 					"reserved": 0,
 					"disposal": 0,
 					"ordered": 0,
@@ -650,13 +819,32 @@
 					"delivery_status": null
 				},
 				{
-					"id": 180557,
-					"article": "A484305I",
-					"image": "https://shrunk.website.yandexcloud.net/images/ba/26/ba260b92ad9cb363775d1aaa72f9376b/570x570/0.webp",
-					"stock": 971,
-					"price": 302.4,
-					"base_price": 630,
-					"page_url": "https://prev-kirill-provider.massive.ru/products/180557",
+					"id": 157120,
+					"article": "A740306",
+					"title": "Коннектор токопроводящий прямой Arte Lamp OPTIMA A740306",
+					"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/83\/4c\/834c247c5c481ad4e9b8dc292b8ae28c\/570x570\/0.webp",
+					"stock": 557,
+					"stock_msg": "<span class=\"success\">В наличии: Не более 1000 шт<\/span>",
+					"price": 310,
+					"base_price": 620,
+					"page_url": "https:\/\/prev-kirill-provider.massive.ru\/products\/article\/A740306",
+					"count": 2,
+					"reserved": 0,
+					"disposal": 0,
+					"ordered": 0,
+					"delivery_date": null,
+					"delivery_status": null
+				},
+				{
+					"id": 157179,
+					"article": "A484405L",
+					"title": "Коннектор угловой для шинопровода Arte Lamp LINEA-ACCESSORIES A484405L",
+					"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/c6\/fd\/c6fd3ae54e4892b929621aa7e7675670\/570x570\/0.webp",
+					"stock": 1039,
+					"stock_msg": "<span class=\"success\">В наличии: Более 1000 шт<\/span>",
+					"price": 355,
+					"base_price": 710,
+					"page_url": "https:\/\/prev-kirill-provider.massive.ru\/products\/article\/A484405L",
 					"count": 5,
 					"reserved": 0,
 					"disposal": 0,
@@ -665,100 +853,84 @@
 					"delivery_status": null
 				},
 				{
-					"id": 202522,
-					"article": "73225_GAUSS",
-					"image": "https://shrunk.website.yandexcloud.net/images/de/b2/deb27c99c8f9441c16d8c7b26fdf50da/570x570/0.webp",
-					"stock": 12,
-					"price": 332.1,
-					"base_price": 492,
-					"page_url": "https://prev-kirill-provider.massive.ru/products/202522",
-					"count": 1,
+					"id": 180557,
+					"article": "A484305I",
+					"title": "Коннектор прямой для магнитного шинопровода Arte Lamp LINEA-ACCESSORIES A484305I",
+					"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/ba\/26\/ba260b92ad9cb363775d1aaa72f9376b\/570x570\/0.webp",
+					"stock": 869,
+					"stock_msg": "<span class=\"success\">В наличии: Не более 1000 шт<\/span>",
+					"price": 315,
+					"base_price": 630,
+					"page_url": "https:\/\/prev-kirill-provider.massive.ru\/products\/article\/A484305I",
+					"count": 2,
 					"reserved": 0,
 					"disposal": 0,
 					"ordered": 0,
 					"delivery_date": null,
 					"delivery_status": null
-				}
-			],
-			"meta": {
-				"created_at": "2025-07-14T12:14:43.000000Z",
-				"updated_at": "2025-07-14T12:14:54.000000Z"
-			}
-		},
-		{
-			"id": 8014404,
-			"number": "TL8014404",
-			"number_1c": null,
-			"uuid_1c": null,
-			"comment": "Тестовый заказ saveOrderAlterТестовый заказ changeOrderParams",
-			"readonly": 0,
-			"default": false,
-			"status": {
-				"current": {
-					"id": 1,
-					"name": "NEW",
-					"label": "Не оформлен",
-					"color": "info",
-					"uuid": null,
-					"sort": 2,
-					"group": "process",
-					"parent": null
 				},
-				"log": [
-					{
-						"id": 21766,
-						"status_name": "NEW",
-						"status": {
-							"id": 1,
-							"name": "NEW",
-							"label": "Не оформлен",
-							"color": "info",
-							"uuid": null,
-							"sort": 2,
-							"group": "process",
-							"parent": null
-						},
-						"created_at": "2025-07-14T12:13:53.000000Z"
-					},
-					{
-						"id": 21767,
-						"status_name": "NEW",
-						"status": {
-							"id": 1,
-							"name": "NEW",
-							"label": "Не оформлен",
-							"color": "info",
-							"uuid": null,
-							"sort": 2,
-							"group": "process",
-							"parent": null
-						},
-						"created_at": "2025-07-14T12:13:53.000000Z"
-					}
-				]
-			},
-			"shipping": {
-				"id": null,
-				"date": null,
-				"ttn_number": null,
-				"ttn_company": null
-			},
-			"info": {
-				"contract_id": 45,
-				"shop_id": 13,
-				"counterparty_id": 26
-			},
-			"downloads": [],
-			"products": [
 				{
-					"id": 29042,
-					"article": "A1437PL-72WH",
-					"image": "https://shrunk.website.yandexcloud.net/images/01/42/0142e9b8798246f17ea02ba1f4c32cae/570x570/0.webp",
-					"stock": 68,
-					"price": 6475.2,
-					"base_price": 13490,
-					"page_url": "https://prev-kirill-provider.massive.ru/products/29042",
-					"count": 1,
+					"id": 208782,
+					"article": "A742006N",
+					"title": "Блок питания 48V 150W для магнитной трековой системы ARTE LAMP OPTIMA A742006N",
+					"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/f7\/02\/f702224834b905c892377e71eb3d8924\/570x570\/0.webp",
+					"stock": 1071,
+					"stock_msg": "<span class=\"success\">В наличии: Более 1000 шт<\/span>",
+					"price": 1650,
+					"base_price": 3300,
+					"page_url": "https:\/\/prev-kirill-provider.massive.ru\/products\/article\/A742006N",
+					"count": 3,
+					"reserved": 0,
+					"disposal": 0,
+					"ordered": 0,
+					"delivery_date": null,
+					"delivery_status": null
+				},
+				{
+					"id": 225346,
+					"article": "A751306E",
+					"title": "Заглушка для магнитного шинопровода Arte Lamp OPTIMA-ACCESSORIES A751306E ДЛЯ ТРЕКА SLIM27 A752206",
+					"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/96\/35\/9635e2729d3c58a10418e91a7b0cd2f4\/570x570\/0.webp",
+					"stock": 1287,
+					"stock_msg": "<span class=\"success\">В наличии: Более 1000 шт<\/span>",
+					"price": 550,
+					"base_price": 1100,
+					"page_url": "https:\/\/prev-kirill-provider.massive.ru\/products\/article\/A751306E",
+					"count": 2,
+					"reserved": 0,
+					"disposal": 0,
+					"ordered": 0,
+					"delivery_date": null,
+					"delivery_status": null
+				},
+				{
+					"id": 225347,
+					"article": "A752206",
+					"title": "Магнитный шинопровод под натяжной потолок Arte Lamp OPTIMA-ACCESSORIES A752206",
+					"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/21\/f1\/21f12942b200e90deedc750b2fbb97e7\/570x570\/0.webp",
+					"stock": 345,
+					"stock_msg": "<span class=\"success\">В наличии: Не более 500 шт<\/span>",
+					"price": 6160,
+					"base_price": 12320,
+					"page_url": "https:\/\/prev-kirill-provider.massive.ru\/products\/article\/A752206",
+					"count": 9,
+					"reserved": 0,
+					"disposal": 0,
+					"ordered": 0,
+					"delivery_date": null,
+					"delivery_status": null
+				},
+				{
+					"id": 361226,
+					"article": "A740406N",
+					"title": "Коннектор гибкий для шинопровода Arte Lamp OPTIMA A740406N",
+					"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/da\/47\/da47aa6b35dd69209954d5952397f849\/570x570\/0.webp",
+					"stock": 561,
+					"stock_msg": "<span class=\"success\">В наличии: Не более 1000 шт<\/span>",
+					"price": 350,
+					"base_price": 700,
+					"page_url": "https:\/\/prev-kirill-provider.massive.ru\/products\/article\/A740406N",
+					"count": 4,
 					"reserved": 0,
 					"disposal": 0,
 					"ordered": 0,
@@ -767,47 +939,95 @@
 				}
 			],
 			"meta": {
-				"created_at": "2025-07-14T12:13:53.000000Z",
-				"updated_at": "2025-07-14T12:14:04.000000Z"
+				"created_at_1c": null,
+				"created_at": "2025-09-10T12:26:12.000000Z",
+				"updated_at": "2025-09-10T12:34:30.000000Z"
 			}
 		},
 		{
-			"id": 8014403,
-			"number": "TL8014403",
-			"number_1c": null,
-			"uuid_1c": null,
-			"comment": "Тестовый заказ saveOrderAlter",
+			"id": 8019695,
+			"number": "TL8019695",
+			"number_1c": "ЯР043821",
+			"uuid_1c": "f38368dd-8e39-11f0-8b0f-005056953bcb",
+			"comment": null,
 			"readonly": 0,
+			"is_test": false,
+			"order_url": "https:\/\/prev-kirill-provider.massive.ru\/admin\/orders\/8019695\/edit",
 			"default": false,
 			"status": {
 				"current": {
-					"id": 1,
-					"name": "NEW",
-					"label": "Не оформлен",
+					"id": 3,
+					"name": "RESERVED",
+					"label": "В резерве",
 					"color": "info",
-					"uuid": null,
-					"sort": 2,
+					"uuid": "8468ceae-f812-11ee-8afa-005056953bcb",
+					"sort": 6,
 					"group": "process",
 					"parent": null
 				},
 				"log": [
 					{
-						"id": 21764,
-						"status_name": "NEW",
+						"id": 3377,
+						"status_name": "RESERVED",
 						"status": {
-							"id": 1,
-							"name": "NEW",
-							"label": "Не оформлен",
+							"id": 3,
+							"name": "RESERVED",
+							"label": "В резерве",
 							"color": "info",
-							"uuid": null,
-							"sort": 2,
+							"uuid": "8468ceae-f812-11ee-8afa-005056953bcb",
+							"sort": 6,
 							"group": "process",
 							"parent": null
 						},
-						"created_at": "2025-07-14T12:13:15.000000Z"
+						"created_at": "2025-09-10T11:35:46.000000Z"
 					},
 					{
-						"id": 21765,
+						"id": 3375,
+						"status_name": "IN_PROGRESS",
+						"status": {
+							"id": 2,
+							"name": "IN_PROGRESS",
+							"label": "В обработке",
+							"color": "info",
+							"uuid": "8468cead-f812-11ee-8afa-005056953bcb",
+							"sort": 5,
+							"group": "pending",
+							"parent": null
+						},
+						"created_at": "2025-09-10T11:33:47.000000Z"
+					},
+					{
+						"id": 3374,
+						"status_name": "SEND",
+						"status": {
+							"id": 12,
+							"name": "SEND",
+							"label": "Отправлен",
+							"color": "secondary",
+							"uuid": null,
+							"sort": 4,
+							"group": "process",
+							"parent": "IN_PROGRESS"
+						},
+						"created_at": "2025-09-10T11:33:38.000000Z"
+					},
+					{
+						"id": 3372,
+						"status_name": "SENDING",
+						"status": {
+							"id": 13,
+							"name": "SENDING",
+							"label": "Отправляется",
+							"color": "secondary",
+							"uuid": null,
+							"sort": 3,
+							"group": "process",
+							"parent": "IN_PROGRESS"
+						},
+						"created_at": "2025-09-10T11:32:57.000000Z"
+					},
+					{
+						"id": 3371,
 						"status_name": "NEW",
 						"status": {
 							"id": 1,
@@ -819,7 +1039,7 @@
 							"group": "process",
 							"parent": null
 						},
-						"created_at": "2025-07-14T12:13:15.000000Z"
+						"created_at": "2025-09-10T11:32:25.000000Z"
 					}
 				]
 			},
@@ -830,70 +1050,135 @@
 				"ttn_company": null
 			},
 			"info": {
-				"contract_id": 40,
+				"contract_id": 53,
 				"shop_id": null,
-				"counterparty_id": 22
+				"counterparty_id": 35
 			},
-			"downloads": [],
+			"downloads": {
+				"order": [
+					{
+						"name": "excel",
+						"type": "order",
+						"link": "https:\/\/aws.massive.ru\/technolightpro\/order\/f38368dd-8e39-11f0-8b0f-005056953bcb\/order.xlsx"
+					},
+					{
+						"name": "pdf",
+						"type": "order",
+						"link": "https:\/\/aws.massive.ru\/technolightpro\/order\/f38368dd-8e39-11f0-8b0f-005056953bcb\/order.pdf"
+					}
+				]
+			},
 			"products": [
 				{
-					"id": 29042,
-					"article": "A1437PL-72WH",
-					"image": "https://shrunk.website.yandexcloud.net/images/01/42/0142e9b8798246f17ea02ba1f4c32cae/570x570/0.webp",
-					"stock": 68,
-					"price": 6475.2,
-					"base_price": 13490,
-					"page_url": "https://prev-kirill-provider.massive.ru/products/29042",
-					"count": 1,
-					"reserved": 0,
+					"id": 102891,
+					"article": "A5645PL-2BK",
+					"title": "Точечный накладной светильник Arte Lamp FALCON A5645PL-2BK",
+					"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/66\/c4\/66c4a5f1c46a9077e2a3c98eb496f2a3\/570x570\/0.webp",
+					"stock": 415,
+					"stock_msg": "<span class=\"info\">Выводится из ассортимента, в наличии не более 500 шт<\/span>",
+					"price": 2330,
+					"base_price": 4660,
+					"page_url": "https:\/\/prev-kirill-provider.massive.ru\/products\/article\/A5645PL-2BK",
+					"count": 4,
+					"reserved": 4,
 					"disposal": 0,
 					"ordered": 0,
 					"delivery_date": null,
-					"delivery_status": null
+					"delivery_status": ""
+				},
+				{
+					"id": 102892,
+					"article": "A5645PL-2WH",
+					"title": "Точечный накладной светильник Arte Lamp FALCON A5645PL-2WH",
+					"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/9c\/cb\/9ccb3271a8e3ad024caf8449d54548d7\/570x570\/0.webp",
+					"stock": 454,
+					"stock_msg": "<span class=\"info\">Выводится из ассортимента, в наличии не более 500 шт<\/span>",
+					"price": 2330,
+					"base_price": 4660,
+					"page_url": "https:\/\/prev-kirill-provider.massive.ru\/products\/article\/A5645PL-2WH",
+					"count": 12,
+					"reserved": 12,
+					"disposal": 0,
+					"ordered": 0,
+					"delivery_date": null,
+					"delivery_status": ""
 				}
 			],
 			"meta": {
-				"created_at": "2025-07-14T12:13:15.000000Z",
-				"updated_at": "2025-07-14T12:13:29.000000Z"
+				"created_at_1c": "2025-09-10T11:33:26.000000Z",
+				"created_at": "2025-09-10T11:32:25.000000Z",
+				"updated_at": "2025-09-10T11:35:46.000000Z"
 			}
 		},
 		{
-			"id": 8014402,
-			"number": "TL8014402",
-			"number_1c": null,
-			"uuid_1c": null,
-			"comment": "Тестовый заказ saveOrderAlter",
+			"id": 8019692,
+			"number": "TL8019692",
+			"number_1c": "ЯР043740",
+			"uuid_1c": "b888dfa8-8e09-11f0-8b0f-005056953bcb",
+			"comment": "заказ 1678",
 			"readonly": 0,
+			"is_test": false,
+			"order_url": "https:\/\/prev-kirill-provider.massive.ru\/admin\/orders\/8019692\/edit",
 			"default": false,
 			"status": {
 				"current": {
-					"id": 1,
-					"name": "NEW",
-					"label": "Не оформлен",
+					"id": 3,
+					"name": "RESERVED",
+					"label": "В резерве",
 					"color": "info",
-					"uuid": null,
-					"sort": 2,
+					"uuid": "8468ceae-f812-11ee-8afa-005056953bcb",
+					"sort": 6,
 					"group": "process",
 					"parent": null
 				},
 				"log": [
 					{
-						"id": 21762,
-						"status_name": "NEW",
+						"id": 3339,
+						"status_name": "RESERVED",
 						"status": {
-							"id": 1,
-							"name": "NEW",
-							"label": "Не оформлен",
+							"id": 3,
+							"name": "RESERVED",
+							"label": "В резерве",
 							"color": "info",
-							"uuid": null,
-							"sort": 2,
+							"uuid": "8468ceae-f812-11ee-8afa-005056953bcb",
+							"sort": 6,
 							"group": "process",
 							"parent": null
 						},
-						"created_at": "2025-07-14T12:13:09.000000Z"
+						"created_at": "2025-09-10T08:53:19.000000Z"
 					},
 					{
-						"id": 21763,
+						"id": 3338,
+						"status_name": "SEND",
+						"status": {
+							"id": 12,
+							"name": "SEND",
+							"label": "Отправлен",
+							"color": "secondary",
+							"uuid": null,
+							"sort": 4,
+							"group": "process",
+							"parent": "IN_PROGRESS"
+						},
+						"created_at": "2025-09-10T08:52:39.000000Z"
+					},
+					{
+						"id": 3337,
+						"status_name": "SENDING",
+						"status": {
+							"id": 13,
+							"name": "SENDING",
+							"label": "Отправляется",
+							"color": "secondary",
+							"uuid": null,
+							"sort": 3,
+							"group": "process",
+							"parent": "IN_PROGRESS"
+						},
+						"created_at": "2025-09-10T08:52:24.000000Z"
+					},
+					{
+						"id": 3331,
 						"status_name": "NEW",
 						"status": {
 							"id": 1,
@@ -905,7 +1190,7 @@
 							"group": "process",
 							"parent": null
 						},
-						"created_at": "2025-07-14T12:13:09.000000Z"
+						"created_at": "2025-09-10T08:47:32.000000Z"
 					}
 				]
 			},
@@ -916,126 +1201,126 @@
 				"ttn_company": null
 			},
 			"info": {
-				"contract_id": 40,
+				"contract_id": 78,
 				"shop_id": null,
-				"counterparty_id": 22
+				"counterparty_id": 60
 			},
-			"downloads": [],
-			"products": [
-				{
-					"id": 29042,
-					"article": "A1437PL-72WH",
-					"image": "https://shrunk.website.yandexcloud.net/images/01/42/0142e9b8798246f17ea02ba1f4c32cae/570x570/0.webp",
-					"stock": 68,
-					"price": 6475.2,
-					"base_price": 13490,
-					"page_url": "https://prev-kirill-provider.massive.ru/products/29042",
-					"count": 1,
-					"reserved": 0,
-					"disposal": 0,
-					"ordered": 0,
-					"delivery_date": null,
-					"delivery_status": null
-				}
-			],
-			"meta": {
-				"created_at": "2025-07-14T12:13:09.000000Z",
-				"updated_at": "2025-07-14T12:13:39.000000Z"
-			}
-		},
-		{
-			"id": 8014401,
-			"number": "TL8014401",
-			"number_1c": null,
-			"uuid_1c": null,
-			"comment": "Тестовый заказ saveOrderContract",
-			"readonly": 0,
-			"default": false,
-			"status": {
-				"current": {
-					"id": 1,
-					"name": "NEW",
-					"label": "Не оформлен",
-					"color": "info",
-					"uuid": null,
-					"sort": 2,
-					"group": "process",
-					"parent": null
-				},
-				"log": [
+			"downloads": {
+				"order": [
 					{
-						"id": 21760,
-						"status_name": "NEW",
-						"status": {
-							"id": 1,
-							"name": "NEW",
-							"label": "Не оформлен",
-							"color": "info",
-							"uuid": null,
-							"sort": 2,
-							"group": "process",
-							"parent": null
-						},
-						"created_at": "2025-07-14T12:12:22.000000Z"
+						"name": "excel",
+						"type": "order",
+						"link": "https:\/\/aws.massive.ru\/technolightpro\/order\/b888dfa8-8e09-11f0-8b0f-005056953bcb\/order.xlsx"
 					},
 					{
-						"id": 21761,
-						"status_name": "NEW",
-						"status": {
-							"id": 1,
-							"name": "NEW",
-							"label": "Не оформлен",
-							"color": "info",
-							"uuid": null,
-							"sort": 2,
-							"group": "process",
-							"parent": null
-						},
-						"created_at": "2025-07-14T12:12:22.000000Z"
+						"name": "pdf",
+						"type": "order",
+						"link": "https:\/\/aws.massive.ru\/technolightpro\/order\/b888dfa8-8e09-11f0-8b0f-005056953bcb\/order.pdf"
 					}
 				]
 			},
-			"shipping": {
-				"id": null,
-				"date": null,
-				"ttn_number": null,
-				"ttn_company": null
-			},
-			"info": {
-				"contract_id": 39,
-				"shop_id": null,
-				"counterparty_id": 22
-			},
-			"downloads": [],
 			"products": [
 				{
-					"id": 29349,
-					"article": "A7585PL-5WH",
-					"image": "https://shrunk.website.yandexcloud.net/images/3c/f5/3cf50a3277d9751e2c17a077afd85323/570x570/0.webp",
+					"id": 7654,
+					"article": "A1916SP-1GO",
+					"title": "Подвесной светильник Arte Lamp HANNAH A1916SP-1GO",
+					"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/d6\/43\/d643933dfc477cd612ba95e779f49dc3\/570x570\/0.webp",
+					"stock": 130,
+					"stock_msg": "<span class=\"success\">В наличии: Не более 500 шт<\/span>",
+					"price": 5995,
+					"base_price": 11990,
+					"page_url": "https:\/\/prev-kirill-provider.massive.ru\/products\/article\/A1916SP-1GO",
+					"count": 2,
+					"reserved": 2,
+					"disposal": 0,
+					"ordered": 0,
+					"delivery_date": null,
+					"delivery_status": ""
+				},
+				{
+					"id": 94606,
+					"article": "A2862PL-1WH",
+					"title": "Точечный встраиваемый светильник Arte Lamp MIRA A2862PL-1WH",
+					"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/a5\/ae\/a5ae327c165638915caa50abab36d72b\/570x570\/0.webp",
+					"stock": 6329,
+					"stock_msg": "<span class=\"success\">В наличии: Более 1000 шт<\/span>",
+					"price": 315,
+					"base_price": 630,
+					"page_url": "https:\/\/prev-kirill-provider.massive.ru\/products\/article\/A2862PL-1WH",
+					"count": 2,
+					"reserved": 2,
+					"disposal": 0,
+					"ordered": 0,
+					"delivery_date": null,
+					"delivery_status": ""
+				},
+				{
+					"id": 210023,
+					"article": "A22190-4K",
+					"title": "Светодиодный модуль Arte Lamp ORE A22190-4K",
+					"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/87\/26\/87263cd2aea40f1f8b70a09b49bab121\/570x570\/0.webp",
 					"stock": 0,
-					"price": 11490,
-					"base_price": null,
-					"page_url": "https://prev-kirill-provider.massive.ru/products/29349",
-					"count": 1,
-					"reserved": 0,
+					"stock_msg": "<span class=\"warning\">В пути, дата поступления: 11.10.2025<\/span>",
+					"price": 495,
+					"base_price": 990,
+					"page_url": "https:\/\/prev-kirill-provider.massive.ru\/products\/article\/A22190-4K",
+					"count": 35,
+					"reserved": 35,
 					"disposal": 0,
 					"ordered": 0,
 					"delivery_date": null,
-					"delivery_status": null
+					"delivery_status": ""
+				},
+				{
+					"id": 225345,
+					"article": "A8095PL-1WH",
+					"title": "Точечный встраиваемый светильник Arte Lamp DUCRE A8095PL-1WH",
+					"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/76\/85\/7685ecb5b87b4363aa1d97bcd66cb21f\/570x570\/0.webp",
+					"stock": 6515,
+					"stock_msg": "<span class=\"success\">В наличии: Более 1000 шт<\/span>",
+					"price": 420,
+					"base_price": 840,
+					"page_url": "https:\/\/prev-kirill-provider.massive.ru\/products\/article\/A8095PL-1WH",
+					"count": 36,
+					"reserved": 36,
+					"disposal": 0,
+					"ordered": 0,
+					"delivery_date": null,
+					"delivery_status": ""
+				},
+				{
+					"id": 229503,
+					"article": "101506105-D_GAUSS",
+					"title": "Светодиодная лампа Gauss Софит 5W 500Lm 3000K GU10 101506105-D",
+					"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/78\/8b\/788b105ddcdd4845b58f5a30ef5519a8\/570x570\/0.webp",
+					"stock": 0,
+					"stock_msg": "<span class=\"info\">Наличие уточните у менеджера<\/span>",
+					"price": 472.08,
+					"base_price": 821,
+					"page_url": "https:\/\/prev-kirill-provider.massive.ru\/products\/article\/101506105-D_GAUSS",
+					"count": 3,
+					"reserved": 0,
+					"disposal": 0,
+					"ordered": 3,
+					"delivery_date": "2025-09-11",
+					"delivery_status": "В пути"
 				}
 			],
 			"meta": {
-				"created_at": "2025-07-14T12:12:22.000000Z",
-				"updated_at": "2025-07-14T12:12:33.000000Z"
+				"created_at_1c": "2025-09-10T08:52:26.000000Z",
+				"created_at": "2025-09-10T08:47:32.000000Z",
+				"updated_at": "2025-09-10T10:49:59.000000Z"
 			}
 		},
 		{
-			"id": 8014400,
-			"number": "TL8014400",
+			"id": 8019690,
+			"number": "TL8019690",
 			"number_1c": null,
 			"uuid_1c": null,
-			"comment": "Тестовый заказ saveOrder",
+			"comment": null,
 			"readonly": 0,
+			"is_test": false,
+			"order_url": "https:\/\/prev-kirill-provider.massive.ru\/admin\/orders\/8019690\/edit",
 			"default": false,
 			"status": {
 				"current": {
@@ -1050,7 +1335,7 @@
 				},
 				"log": [
 					{
-						"id": 21758,
+						"id": 3324,
 						"status_name": "NEW",
 						"status": {
 							"id": 1,
@@ -1062,22 +1347,7 @@
 							"group": "process",
 							"parent": null
 						},
-						"created_at": "2025-07-14T12:11:54.000000Z"
-					},
-					{
-						"id": 21759,
-						"status_name": "NEW",
-						"status": {
-							"id": 1,
-							"name": "NEW",
-							"label": "Не оформлен",
-							"color": "info",
-							"uuid": null,
-							"sort": 2,
-							"group": "process",
-							"parent": null
-						},
-						"created_at": "2025-07-14T12:11:54.000000Z"
+						"created_at": "2025-09-10T08:17:58.000000Z"
 					}
 				]
 			},
@@ -1088,20 +1358,22 @@
 				"ttn_company": null
 			},
 			"info": {
-				"contract_id": 40,
+				"contract_id": 53,
 				"shop_id": null,
-				"counterparty_id": 22
+				"counterparty_id": 35
 			},
 			"downloads": [],
 			"products": [
 				{
-					"id": 29349,
-					"article": "A7585PL-5WH",
-					"image": "https://shrunk.website.yandexcloud.net/images/3c/f5/3cf50a3277d9751e2c17a077afd85323/570x570/0.webp",
+					"id": 151811,
+					"article": "A3143AP-2PB",
+					"title": "Декоративная подсветка Arte Lamp RAN A3143AP-2PB",
+					"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/68\/c2\/68c21e8c15412e98411b4204e4890f55\/570x570\/0.webp",
 					"stock": 0,
-					"price": 5515.2,
-					"base_price": 11490,
-					"page_url": "https://prev-kirill-provider.massive.ru/products/29349",
+					"stock_msg": "<span class=\"info\">Наличие уточните у менеджера<\/span>",
+					"price": 1095,
+					"base_price": 2190,
+					"page_url": "https:\/\/prev-kirill-provider.massive.ru\/products\/article\/A3143AP-2PB",
 					"count": 1,
 					"reserved": 0,
 					"disposal": 0,
@@ -1111,21 +1383,22 @@
 				}
 			],
 			"meta": {
-				"created_at": "2025-07-14T12:11:54.000000Z",
-				"updated_at": "2025-07-14T12:12:05.000000Z"
+				"created_at_1c": null,
+				"created_at": "2025-09-10T08:17:58.000000Z",
+				"updated_at": "2025-09-10T08:17:58.000000Z"
 			}
 		}
 	],
 	"links": {
-		"first": "https://prev-kirill-provider.massive.ru/rest/v1/orders?page=1",
-		"last": "https://prev-kirill-provider.massive.ru/rest/v1/orders?page=582",
+		"first": "mocks/get-request-list-orders.json",
+		"last": "mocks/get-request-list-orders-page-2.json",
 		"prev": null,
-		"next": "https://prev-kirill-provider.massive.ru/rest/v1/orders?page=2"
+		"next": "mocks/get-request-list-orders-page-2.json"
 	},
 	"meta": {
 		"current_page": 1,
 		"from": 1,
-		"last_page": 582,
+		"last_page": 2,
 		"links": [
 			{
 				"url": null,
@@ -1133,79 +1406,24 @@
 				"active": false
 			},
 			{
-				"url": "https://prev-kirill-provider.massive.ru/rest/v1/orders?page=1",
+				"url": "mocks/get-request-list-orders.json",
 				"label": "1",
 				"active": true
 			},
 			{
-				"url": "https://prev-kirill-provider.massive.ru/rest/v1/orders?page=2",
+				"url": "mocks/get-request-list-orders-page-2.json",
 				"label": "2",
 				"active": false
 			},
 			{
-				"url": "https://prev-kirill-provider.massive.ru/rest/v1/orders?page=3",
-				"label": "3",
-				"active": false
-			},
-			{
-				"url": "https://prev-kirill-provider.massive.ru/rest/v1/orders?page=4",
-				"label": "4",
-				"active": false
-			},
-			{
-				"url": "https://prev-kirill-provider.massive.ru/rest/v1/orders?page=5",
-				"label": "5",
-				"active": false
-			},
-			{
-				"url": "https://prev-kirill-provider.massive.ru/rest/v1/orders?page=6",
-				"label": "6",
-				"active": false
-			},
-			{
-				"url": "https://prev-kirill-provider.massive.ru/rest/v1/orders?page=7",
-				"label": "7",
-				"active": false
-			},
-			{
-				"url": "https://prev-kirill-provider.massive.ru/rest/v1/orders?page=8",
-				"label": "8",
-				"active": false
-			},
-			{
-				"url": "https://prev-kirill-provider.massive.ru/rest/v1/orders?page=9",
-				"label": "9",
-				"active": false
-			},
-			{
-				"url": "https://prev-kirill-provider.massive.ru/rest/v1/orders?page=10",
-				"label": "10",
-				"active": false
-			},
-			{
-				"url": null,
-				"label": "...",
-				"active": false
-			},
-			{
-				"url": "https://prev-kirill-provider.massive.ru/rest/v1/orders?page=581",
-				"label": "581",
-				"active": false
-			},
-			{
-				"url": "https://prev-kirill-provider.massive.ru/rest/v1/orders?page=582",
-				"label": "582",
-				"active": false
-			},
-			{
-				"url": "https://prev-kirill-provider.massive.ru/rest/v1/orders?page=2",
+				"url": "mocks/get-request-list-orders-page-2.json",
 				"label": "Next &raquo;",
 				"active": false
 			}
 		],
-		"path": "https://prev-kirill-provider.massive.ru/rest/v1/orders",
+		"path": "mocks/get-request-list-orders.json",
 		"per_page": 10,
 		"to": 10,
-		"total": 5817
+		"total": 17
 	}
 }
