@@ -19,8 +19,8 @@
     <script>
       window.filterApiLink = "https://technolight.pro/api/categories/330"; // Ссылка на API фильтра (каталог) - только на странице с фильтрами
 
-      window.addProductApiLink = "https://prev-kirill-provider.massive.ru/rest/v1/orders/add"; // Ссылка на API добавить товар в заказ - только на странице товара
-      //- window.addProductApiLink = "mocks/add-product-request.json" // Ссылка на API добавить товар в заказ - только на странице товара
+      //- window.addProductApiLink = "https://prev-kirill-provider.massive.ru/rest/v1/orders/add" // Ссылка на API добавить товар в заказ - только на странице товара
+      window.addProductApiLink = "mocks/add-product-request.json"; // Ссылка на API добавить товар в заказ - только на странице товара
 
       window.catalogLink = "index.html"; // Ссылка на страницу каталога - на каждой странице
 
@@ -853,7 +853,7 @@
                 <li class="custom-select__item">
                   <!-- Первым всегда идет опшен Все заказы checked-->
                   <label class="custom-select__option">
-                    <input class="invisible" type="checkbox" name="all" >
+                    <input class="invisible" type="checkbox" name="order-item" data-id="all" >
                     <span>Все заказы</span>
                   </label>
                 </li>
@@ -868,7 +868,7 @@
         </div>
         <div class="orders__list"></div>
         <div class="orders__total">
-          <mark>Итого по вашим заказам:</mark>
+          <mark>Итого:</mark>
           <span>62 458 280 р.</span>
         </div>
       </div>
