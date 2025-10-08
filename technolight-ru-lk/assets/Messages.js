@@ -1,0 +1,1 @@
+import{j as s,F as e,B as a}from"./index.js";import{C as r,P as t}from"./PageHeading.js";const i=()=>s.jsxs(r,{children:[s.jsx(e,{direction:{base:"column",md:"row"},gap:"4",justify:"space-between",children:s.jsx(t,{children:"Сообщения"})}),s.jsx(a,{children:"Messages"})]});export{i as default};

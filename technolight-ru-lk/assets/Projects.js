@@ -1,0 +1,1 @@
+import{j as e,F as s,B as r}from"./index.js";import{C as t,P as o}from"./PageHeading.js";const i=()=>e.jsxs(t,{children:[e.jsx(s,{direction:{base:"column",md:"row"},gap:"4",justify:"space-between",children:e.jsx(o,{children:"Мои проекты"})}),e.jsx(r,{children:"Projects"})]});export{i as default};
