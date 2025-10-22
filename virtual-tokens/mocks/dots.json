@@ -1,0 +1,1300 @@
+{
+	"is_admin": true,
+	"id": 8,
+	"height_calc_type": "sum",
+	"steps": {
+		"Монтажный комплект": [
+			[
+				"50002-WH"
+			],
+			[
+				"50002-BK"
+			]
+		],
+		"Светодиодный модуль": [
+			[
+				"44002-3K"
+			],
+			[
+				"44002-4K"
+			],
+			[
+				"44002-DTW"
+			],
+			[
+				"44002-27K"
+			]
+		],
+		"Линза": [
+			[
+				"43001-15"
+			],
+			[
+				"43001-36"
+			],
+			[
+				"43001-60"
+			]
+		],
+		"Светофильтр": [
+			[
+				"46001-F1"
+			],
+			[
+				null
+			]
+		],
+		"Декоративная рамка": [
+			[
+				"41021-BK"
+			],
+			[
+				"41021-WH"
+			],
+			[
+				"41021-GD"
+			],
+			[
+				"41022-BK"
+			],
+			[
+				"41022-WH"
+			],
+			[
+				"41022-GD"
+			]
+		],
+		"Фиксирующее кольцо": [
+			[
+				"42001-BK"
+			],
+			[
+				"42001-WW"
+			]
+		],
+		"Защитная накладка IP": [
+			[
+				"46001-44"
+			],
+			[
+				null
+			]
+		]
+	},
+	"stepsCount": {
+		"Монтажный комплект": 1,
+		"Светодиодный модуль": 1,
+		"Линза": 1,
+		"Светофильтр": 1,
+		"Декоративная рамка": 1,
+		"Фиксирующее кольцо": 1,
+		"Защитная накладка IP": 1
+	},
+	"hardFilterSteps": [],
+	"filters": {
+		"Монтажный комплект": {
+			"armature_color": "Цвет"
+		},
+		"Светодиодный модуль": {
+			"light_temperatures": "Цветовая температура, К"
+		},
+		"Линза": {
+			"light_angle": "Угол рассеивания"
+		},
+		"Декоративная рамка": {
+			"armature_color": "Цвет",
+			"lamp_style": "Стиль"
+		},
+		"Фиксирующее кольцо": {
+			"armature_color": "Цвет"
+		}
+	},
+	"characteristics": {
+		"Монтажный комплект": {
+			"armature_color": "Цвет монтажного комплекта",
+			"ip_class": "IP"
+		},
+		"Светодиодный модуль": {
+			"power": "Мощность",
+			"light_temperatures": "Цветовая температура",
+			"color_rendering_index": "Индекс цветопередачи"
+		},
+		"Линза": {
+			"ugr": "UGR",
+			"light_angle": "Угол рассеивания"
+		},
+		"Декоративная рамка": {
+			"armature_color": "Цвет декоративной рамки"
+		},
+		"Фиксирующее кольцо": {
+			"frame_type": "Тип корпуса"
+		}
+	},
+	"blacklists": [
+		[
+			"44002-DTW",
+			"43001-15",
+			"43001-36"
+		]
+	],
+	"titles": {
+		"50002-WH": "Монтажный компплект для накладного светильника белый",
+		"50002-BK": "Монтажный компплект для накладного светильника черный",
+		"46001-F1": "Светофильтр Ханикомб",
+		"41021-BK": "Декоративная рамка Симпл круглая черная",
+		"41021-WH": "Декоративная рамка Симпл круглая белая",
+		"41021-GD": "Декоративная рамка Симпл круглая золотая",
+		"41022-BK": "Декоративная рамка Лофт круглая черная",
+		"41022-WH": "Декоративная рамка Лофт круглая белая",
+		"41022-GD": "Декоративная рамка Лофт круглая золотая",
+		"44002-4K": "Модуль 9 Вт 4000К",
+		"44002-3K": "Модуль 9 Вт 3000К",
+		"43001-15": "Линза Слим 15°",
+		"43001-36": "Линза Слим 36°",
+		"43001-60": "Линза Слим 60°",
+		"42001-BK": "Фиксирующее кольцо"
+	},
+	"units": {
+		"color_rendering_index": "+",
+		"ip_class": " IP",
+		"light_angle": "°",
+		"light_flow": " Лм",
+		"light_temperatures": " K",
+		"power": " Вт"
+	},
+	"combos": [
+		{
+			"combo": {
+				"Линза": [
+					"43001-15"
+				],
+				"Светодиодный модуль": [
+					"44002-3K"
+				]
+			},
+			"name": "Фотометрические данные",
+			"light_flow": 886,
+			"files": [
+				{
+					"name": "Фотометрические данные 44002-3K+43001-15.rar",
+					"file": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/files\/invoices\/181\/Фотометрические данные 44002-3K+43001-15.rar?v=1760653332"
+				}
+			]
+		},
+		{
+			"combo": {
+				"Линза": [
+					"43001-36"
+				],
+				"Светодиодный модуль": [
+					"44002-3K"
+				]
+			},
+			"name": "Фотометрические данные",
+			"light_flow": 900,
+			"files": [
+				{
+					"name": "Фотометрические данные 44002-3K+43001-36.rar",
+					"file": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/files\/invoices\/182\/Фотометрические данные 44002-3K+43001-36.rar?v=1760653332"
+				}
+			]
+		},
+		{
+			"combo": {
+				"Линза": [
+					"43001-60"
+				],
+				"Светодиодный модуль": [
+					"44002-3K"
+				]
+			},
+			"name": "Фотометрические данные",
+			"light_flow": 912,
+			"files": [
+				{
+					"name": "Фотометрические данные 44002-3K+43001-60.rar",
+					"file": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/files\/invoices\/183\/Фотометрические данные 44002-3K+43001-60.rar?v=1760653332"
+				}
+			]
+		},
+		{
+			"combo": {
+				"Линза": [
+					"43001-15"
+				],
+				"Светодиодный модуль": [
+					"44002-4K"
+				]
+			},
+			"name": "Фотометрические данные",
+			"light_flow": 925,
+			"files": [
+				{
+					"name": "Фотометрические данные 44002-4K+43001-15.rar",
+					"file": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/files\/invoices\/184\/Фотометрические данные 44002-4K+43001-15.rar?v=1760653332"
+				}
+			]
+		},
+		{
+			"combo": {
+				"Линза": [
+					"43001-36"
+				],
+				"Светодиодный модуль": [
+					"44002-4K"
+				]
+			},
+			"name": "Фотометрические данные",
+			"light_flow": 951,
+			"files": [
+				{
+					"name": "Фотометрические данные 44002-4K+43001-36.rar",
+					"file": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/files\/invoices\/185\/Фотометрические данные 44002-4K+43001-36.rar?v=1760653332"
+				}
+			]
+		},
+		{
+			"combo": {
+				"Линза": [
+					"43001-60"
+				],
+				"Светодиодный модуль": [
+					"44002-4K"
+				]
+			},
+			"name": "Фотометрические данные",
+			"light_flow": 950,
+			"files": [
+				{
+					"name": "Фотометрические данные 44002-4K+43001-60.rar",
+					"file": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/files\/invoices\/186\/Фотометрические данные 44002-4K+43001-60.rar?v=1760653332"
+				}
+			]
+		},
+		{
+			"combo": {
+				"Декоративная рамка": [
+					"41021-BK"
+				],
+				"Монтажный комплект": [
+					"50002-WH"
+				]
+			},
+			"final_drawing": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/drawings\/invoices\/328.svg?v=1760653332",
+			"final_image": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/images\/invoices\/328.webp?v=1760653332"
+		},
+		{
+			"combo": {
+				"Декоративная рамка": [
+					"41021-GD"
+				],
+				"Монтажный комплект": [
+					"50002-WH"
+				]
+			},
+			"final_drawing": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/drawings\/invoices\/329.svg?v=1760653332",
+			"final_image": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/images\/invoices\/329.webp?v=1760653332"
+		},
+		{
+			"combo": {
+				"Декоративная рамка": [
+					"41021-WH"
+				],
+				"Монтажный комплект": [
+					"50002-BK"
+				]
+			},
+			"final_drawing": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/drawings\/invoices\/330.svg?v=1760653332",
+			"final_image": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/images\/invoices\/330.webp?v=1760653332"
+		},
+		{
+			"combo": {
+				"Декоративная рамка": [
+					"41021-BK"
+				],
+				"Монтажный комплект": [
+					"50002-BK"
+				]
+			},
+			"final_drawing": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/drawings\/invoices\/331.svg?v=1760653332",
+			"final_image": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/images\/invoices\/331.webp?v=1760653332"
+		},
+		{
+			"combo": {
+				"Декоративная рамка": [
+					"41021-GD"
+				],
+				"Монтажный комплект": [
+					"50002-BK"
+				]
+			},
+			"final_drawing": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/drawings\/invoices\/332.svg?v=1760653332",
+			"final_image": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/images\/invoices\/332.webp?v=1760653332"
+		},
+		{
+			"combo": {
+				"Декоративная рамка": [
+					"41022-WH"
+				],
+				"Монтажный комплект": [
+					"50002-WH"
+				]
+			},
+			"final_drawing": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/drawings\/invoices\/333.svg?v=1760653332",
+			"final_image": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/images\/invoices\/333.webp?v=1760653332"
+		},
+		{
+			"combo": {
+				"Декоративная рамка": [
+					"41022-BK"
+				],
+				"Монтажный комплект": [
+					"50002-BK"
+				]
+			},
+			"final_drawing": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/drawings\/invoices\/334.svg?v=1760653332",
+			"final_image": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/images\/invoices\/334.webp?v=1760653332"
+		},
+		{
+			"combo": {
+				"Декоративная рамка": [
+					"41022-GD"
+				],
+				"Монтажный комплект": [
+					"50002-WH"
+				]
+			},
+			"final_drawing": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/drawings\/invoices\/335.svg?v=1760653332",
+			"final_image": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/images\/invoices\/335.webp?v=1760653332"
+		},
+		{
+			"combo": {
+				"Декоративная рамка": [
+					"41022-BK"
+				],
+				"Монтажный комплект": [
+					"50002-WH"
+				]
+			},
+			"final_drawing": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/drawings\/invoices\/336.svg?v=1760653332",
+			"final_image": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/images\/invoices\/336.webp?v=1760653332"
+		},
+		{
+			"combo": {
+				"Декоративная рамка": [
+					"41022-GD"
+				],
+				"Монтажный комплект": [
+					"50002-BK"
+				]
+			},
+			"final_drawing": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/drawings\/invoices\/337.svg?v=1760653332",
+			"final_image": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/images\/invoices\/337.webp?v=1760653332"
+		},
+		{
+			"combo": {
+				"Декоративная рамка": [
+					"41022-WH"
+				],
+				"Монтажный комплект": [
+					"50002-BK"
+				]
+			},
+			"final_drawing": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/drawings\/invoices\/338.svg?v=1760653332",
+			"final_image": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/images\/invoices\/338.webp?v=1760653332"
+		},
+		{
+			"combo": {
+				"Декоративная рамка": [
+					"41021-WH"
+				],
+				"Монтажный комплект": [
+					"50002-WH"
+				]
+			},
+			"final_drawing": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/drawings\/invoices\/339.svg?v=1760653332",
+			"final_image": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/images\/invoices\/339.webp?v=1760653332"
+		},
+		{
+			"combo": {
+				"Монтажный комплект": [
+					"50002-WH",
+					"50002-BK"
+				]
+			},
+			"name": "Софт",
+			"files": [
+				{
+					"name": "Сборка и установка СОФТ.pdf",
+					"file": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/files\/invoices\/342\/Сборка и установка СОФТ.pdf?v=1760653332"
+				}
+			]
+		},
+		{
+			"combo": {
+				"Светофильтр": [
+					"46001-F1"
+				],
+				"Декоративная рамка": [
+					"41021-WH"
+				],
+				"Монтажный комплект": [
+					"50002-WH"
+				]
+			},
+			"final_drawing": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/drawings\/invoices\/845.svg?v=1760653332",
+			"final_image": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/images\/invoices\/845.webp?v=1760653332"
+		},
+		{
+			"combo": {
+				"Светофильтр": [
+					"46001-F1"
+				],
+				"Декоративная рамка": [
+					"41021-BK"
+				],
+				"Монтажный комплект": [
+					"50002-WH"
+				]
+			},
+			"final_drawing": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/drawings\/invoices\/846.svg?v=1760653332",
+			"final_image": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/images\/invoices\/846.webp?v=1760653332"
+		},
+		{
+			"combo": {
+				"Светофильтр": [
+					"46001-F1"
+				],
+				"Декоративная рамка": [
+					"41021-GD"
+				],
+				"Монтажный комплект": [
+					"50002-WH"
+				]
+			},
+			"final_drawing": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/drawings\/invoices\/847.svg?v=1760653332",
+			"final_image": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/images\/invoices\/847.webp?v=1760653332"
+		},
+		{
+			"combo": {
+				"Светофильтр": [
+					"46001-F1"
+				],
+				"Декоративная рамка": [
+					"41021-WH"
+				],
+				"Монтажный комплект": [
+					"50002-BK"
+				]
+			},
+			"final_drawing": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/drawings\/invoices\/848.svg?v=1760653332",
+			"final_image": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/images\/invoices\/848.webp?v=1760653332"
+		},
+		{
+			"combo": {
+				"Светофильтр": [
+					"46001-F1"
+				],
+				"Декоративная рамка": [
+					"41021-BK"
+				],
+				"Монтажный комплект": [
+					"50002-BK"
+				]
+			},
+			"final_drawing": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/drawings\/invoices\/849.svg?v=1760653332",
+			"final_image": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/images\/invoices\/849.webp?v=1760653332"
+		},
+		{
+			"combo": {
+				"Светофильтр": [
+					"46001-F1"
+				],
+				"Декоративная рамка": [
+					"41021-GD"
+				],
+				"Монтажный комплект": [
+					"50002-BK"
+				]
+			},
+			"final_drawing": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/drawings\/invoices\/850.svg?v=1760653332",
+			"final_image": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/images\/invoices\/850.webp?v=1760653332"
+		},
+		{
+			"combo": {
+				"Светофильтр": [
+					"46001-F1"
+				],
+				"Декоративная рамка": [
+					"41022-WH"
+				],
+				"Монтажный комплект": [
+					"50002-WH"
+				]
+			},
+			"final_drawing": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/drawings\/invoices\/851.svg?v=1760653332",
+			"final_image": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/images\/invoices\/851.webp?v=1760653332"
+		},
+		{
+			"combo": {
+				"Светофильтр": [
+					"46001-F1"
+				],
+				"Декоративная рамка": [
+					"41022-BK"
+				],
+				"Монтажный комплект": [
+					"50002-WH"
+				]
+			},
+			"final_drawing": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/drawings\/invoices\/852.svg?v=1760653332",
+			"final_image": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/images\/invoices\/852.webp?v=1760653332"
+		},
+		{
+			"combo": {
+				"Светофильтр": [
+					"46001-F1"
+				],
+				"Декоративная рамка": [
+					"41022-GD"
+				],
+				"Монтажный комплект": [
+					"50002-WH"
+				]
+			},
+			"final_drawing": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/drawings\/invoices\/853.svg?v=1760653332",
+			"final_image": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/images\/invoices\/853.webp?v=1760653332"
+		},
+		{
+			"combo": {
+				"Светофильтр": [
+					"46001-F1"
+				],
+				"Декоративная рамка": [
+					"41022-WH"
+				],
+				"Монтажный комплект": [
+					"50002-BK"
+				]
+			},
+			"final_drawing": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/drawings\/invoices\/854.svg?v=1760653332",
+			"final_image": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/images\/invoices\/854.webp?v=1760653332"
+		},
+		{
+			"combo": {
+				"Светофильтр": [
+					"46001-F1"
+				],
+				"Декоративная рамка": [
+					"41022-BK"
+				],
+				"Монтажный комплект": [
+					"50002-BK"
+				]
+			},
+			"final_drawing": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/drawings\/invoices\/855.svg?v=1760653332",
+			"final_image": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/images\/invoices\/855.webp?v=1760653332"
+		},
+		{
+			"combo": {
+				"Светофильтр": [
+					"46001-F1"
+				],
+				"Декоративная рамка": [
+					"41022-GD"
+				],
+				"Монтажный комплект": [
+					"50002-BK"
+				]
+			},
+			"final_drawing": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/drawings\/invoices\/856.svg?v=1760653332",
+			"final_image": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/images\/invoices\/856.webp?v=1760653332"
+		},
+		{
+			"combo": {
+				"Линза": [
+					"43001-15"
+				],
+				"Светодиодный модуль": [
+					"44002-DTW"
+				]
+			},
+			"name": "Фотометрические данные",
+			"light_flow": 759,
+			"files": [
+				{
+					"name": "Фотометрические данные 44002-DTW+43001-15.rar",
+					"file": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/files\/invoices\/989\/Фотометрические данные 44002-DTW+43001-15.rar?v=1760653332"
+				}
+			]
+		},
+		{
+			"combo": {
+				"Линза": [
+					"43001-36"
+				],
+				"Светодиодный модуль": [
+					"44002-DTW"
+				]
+			},
+			"name": "Фотометрические данные",
+			"light_flow": 757,
+			"files": [
+				{
+					"name": "Фотометрические данные 44002-DTW+43001-36.rar",
+					"file": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/files\/invoices\/990\/Фотометрические данные 44002-DTW+43001-36.rar?v=1760653332"
+				}
+			]
+		},
+		{
+			"combo": {
+				"Линза": [
+					"43001-60"
+				],
+				"Светодиодный модуль": [
+					"44002-DTW"
+				]
+			},
+			"name": "Фотометрические данные",
+			"light_flow": 791,
+			"files": [
+				{
+					"name": "Фотометрические данные 44002-DTW+43001-60.rar",
+					"file": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/files\/invoices\/991\/Фотометрические данные 44002-DTW+43001-60.rar?v=1760653332"
+				}
+			]
+		},
+		{
+			"combo": {
+				"Декоративная рамка": [
+					"41022-BK"
+				],
+				"Монтажный комплект": [
+					"50002-BK"
+				],
+				"Фиксирующее кольцо": [
+					"42001-BK"
+				]
+			},
+			"final_image": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/images\/invoices\/1533.webp?v=1760653332"
+		},
+		{
+			"combo": {
+				"Декоративная рамка": [
+					"41022-BK"
+				],
+				"Монтажный комплект": [
+					"50002-BK"
+				],
+				"Фиксирующее кольцо": [
+					"42001-WW"
+				]
+			},
+			"final_image": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/images\/invoices\/1534.webp?v=1760653332"
+		},
+		{
+			"combo": {
+				"Декоративная рамка": [
+					"41022-WH"
+				],
+				"Монтажный комплект": [
+					"50002-BK"
+				],
+				"Фиксирующее кольцо": [
+					"42001-WW"
+				]
+			},
+			"final_image": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/images\/invoices\/1535.webp?v=1760653332"
+		},
+		{
+			"combo": {
+				"Декоративная рамка": [
+					"41022-BK"
+				],
+				"Монтажный комплект": [
+					"50002-WH"
+				],
+				"Фиксирующее кольцо": [
+					"42001-BK"
+				]
+			},
+			"final_image": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/images\/invoices\/1536.webp?v=1760653332"
+		},
+		{
+			"combo": {
+				"Декоративная рамка": [
+					"41022-BK"
+				],
+				"Монтажный комплект": [
+					"50002-WH"
+				],
+				"Фиксирующее кольцо": [
+					"42001-WW"
+				]
+			},
+			"final_image": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/images\/invoices\/1537.webp?v=1760653332"
+		},
+		{
+			"combo": {
+				"Декоративная рамка": [
+					"41022-WH"
+				],
+				"Монтажный комплект": [
+					"50002-WH"
+				],
+				"Фиксирующее кольцо": [
+					"42001-BK"
+				]
+			},
+			"final_image": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/images\/invoices\/1538.webp?v=1760653332"
+		},
+		{
+			"combo": {
+				"Декоративная рамка": [
+					"41022-WH"
+				],
+				"Монтажный комплект": [
+					"50002-WH"
+				],
+				"Фиксирующее кольцо": [
+					"42001-WW"
+				]
+			},
+			"final_image": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/images\/invoices\/1539.webp?v=1760653332"
+		},
+		{
+			"combo": {
+				"Декоративная рамка": [
+					"41021-BK"
+				],
+				"Монтажный комплект": [
+					"50002-BK"
+				],
+				"Фиксирующее кольцо": [
+					"42001-BK"
+				]
+			},
+			"final_image": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/images\/invoices\/1540.webp?v=1760653332"
+		},
+		{
+			"combo": {
+				"Декоративная рамка": [
+					"41021-BK"
+				],
+				"Монтажный комплект": [
+					"50002-BK"
+				],
+				"Фиксирующее кольцо": [
+					"42001-WW"
+				]
+			},
+			"final_image": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/images\/invoices\/1541.webp?v=1760653332"
+		},
+		{
+			"combo": {
+				"Декоративная рамка": [
+					"41021-WH"
+				],
+				"Монтажный комплект": [
+					"50002-BK"
+				],
+				"Фиксирующее кольцо": [
+					"42001-BK"
+				]
+			},
+			"final_image": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/images\/invoices\/1542.webp?v=1760653332"
+		},
+		{
+			"combo": {
+				"Декоративная рамка": [
+					"41021-WH"
+				],
+				"Монтажный комплект": [
+					"50002-BK"
+				],
+				"Фиксирующее кольцо": [
+					"42001-WW"
+				]
+			},
+			"final_image": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/images\/invoices\/1543.webp?v=1760653332"
+		},
+		{
+			"combo": {
+				"Декоративная рамка": [
+					"41021-BK"
+				],
+				"Монтажный комплект": [
+					"50002-WH"
+				],
+				"Фиксирующее кольцо": [
+					"42001-BK"
+				]
+			},
+			"final_image": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/images\/invoices\/1544.webp?v=1760653332"
+		},
+		{
+			"combo": {
+				"Декоративная рамка": [
+					"41021-BK"
+				],
+				"Монтажный комплект": [
+					"50002-WH"
+				],
+				"Фиксирующее кольцо": [
+					"42001-WW"
+				]
+			},
+			"final_image": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/images\/invoices\/1545.webp?v=1760653332"
+		},
+		{
+			"combo": {
+				"Декоративная рамка": [
+					"41021-WH"
+				],
+				"Монтажный комплект": [
+					"50002-WH"
+				],
+				"Фиксирующее кольцо": [
+					"42001-BK"
+				]
+			},
+			"final_image": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/images\/invoices\/1546.webp?v=1760653332"
+		},
+		{
+			"combo": {
+				"Декоративная рамка": [
+					"41021-WH"
+				],
+				"Монтажный комплект": [
+					"50002-WH"
+				],
+				"Фиксирующее кольцо": [
+					"42001-WW"
+				]
+			},
+			"final_image": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/images\/invoices\/1547.webp?v=1760653332"
+		},
+		{
+			"combo": {
+				"Декоративная рамка": [
+					"41022-WH"
+				],
+				"Монтажный комплект": [
+					"50002-BK"
+				],
+				"Фиксирующее кольцо": [
+					"42001-BK"
+				]
+			},
+			"final_image": "https:\/\/aws.technolight.ru\/technolight\/public\/combo\/images\/invoices\/1548.webp?v=1760653332"
+		}
+	],
+	"videos": [],
+	"files": [
+		{
+			"name": "Инструкция по сборке",
+			"file": "https:\/\/s3files.fandeco.org\/link\/66c84ee14?mode=download"
+		}
+	],
+	"products": {
+		"41021-BK": {
+			"id": 10,
+			"article": "41021-BK",
+			"title": "Рамка Симпл 68 круглая RAL 9005 черная",
+			"ip_class": 20,
+			"price": 330,
+			"old_price": 0,
+			"sale": false,
+			"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/ea\/ee\/eaee2f8649f3c8cd6da08a11fa236d9a\/570x570\/0.webp",
+			"available": true,
+			"height_in_assembly": 16,
+			"color_rendering_index": "<>",
+			"lamp_style": "Симпл",
+			"frame_type": "",
+			"armature_color": "Чёрный",
+			"power": null,
+			"light_temperatures": "<>",
+			"light_angle": null,
+			"ugr": "",
+			"link": "\/products\/interernyi-svet\/dot-220v\/ramka-simpl-68-kruglaia\/41021-BK"
+		},
+		"41021-GD": {
+			"id": 28,
+			"article": "41021-GD",
+			"title": "Рамка Симпл 68 круглая сатинированное золото",
+			"ip_class": 20,
+			"price": 440,
+			"old_price": 0,
+			"sale": false,
+			"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/e6\/66\/e6660e589ff75795e6dc52bc2b314937\/570x570\/0.webp",
+			"available": true,
+			"height_in_assembly": 16,
+			"color_rendering_index": "<>",
+			"lamp_style": "Симпл",
+			"frame_type": "",
+			"armature_color": "Золотой",
+			"power": null,
+			"light_temperatures": "<>",
+			"light_angle": null,
+			"ugr": "",
+			"link": "\/products\/interernyi-svet\/dot-220v\/ramka-simpl-68-kruglaia\/41021-GD"
+		},
+		"41021-WH": {
+			"id": 11,
+			"article": "41021-WH",
+			"title": "Рамка Симпл 68 круглая RAL 9016 белая",
+			"ip_class": 20,
+			"price": 330,
+			"old_price": 0,
+			"sale": false,
+			"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/02\/94\/02947c4f43661f59e4b270b1a3e426e5\/570x570\/0.webp",
+			"available": true,
+			"height_in_assembly": 16,
+			"color_rendering_index": "<>",
+			"lamp_style": "Симпл",
+			"frame_type": "",
+			"armature_color": "Белый",
+			"power": null,
+			"light_temperatures": "<>",
+			"light_angle": null,
+			"ugr": "",
+			"link": "\/products\/interernyi-svet\/dot-220v\/ramka-simpl-68-kruglaia\/41021-WH"
+		},
+		"41022-BK": {
+			"id": 12,
+			"article": "41022-BK",
+			"title": "Рамка Лофт 68 круглая RAL 9005 черная",
+			"ip_class": 20,
+			"price": 250,
+			"old_price": 0,
+			"sale": false,
+			"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/7a\/d8\/7ad86f74f2ccbc621799b975c4e0fd29\/570x570\/0.webp",
+			"available": true,
+			"height_in_assembly": 16,
+			"color_rendering_index": "<>",
+			"lamp_style": "Лофт",
+			"frame_type": "",
+			"armature_color": "Чёрный",
+			"power": null,
+			"light_temperatures": "<>",
+			"light_angle": null,
+			"ugr": "",
+			"link": "\/products\/interernyi-svet\/dot-220v\/ramka-loft-68-kruglaia\/41022-BK"
+		},
+		"41022-GD": {
+			"id": 29,
+			"article": "41022-GD",
+			"title": "Рамка Лофт 68 круглая сатинированное золото",
+			"ip_class": 20,
+			"price": 320,
+			"old_price": 0,
+			"sale": false,
+			"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/20\/3f\/203fec44fba37db703dbd93f2164ce3f\/570x570\/0.webp",
+			"available": true,
+			"height_in_assembly": 16,
+			"color_rendering_index": "<>",
+			"lamp_style": "Лофт",
+			"frame_type": "",
+			"armature_color": "Золотой",
+			"power": null,
+			"light_temperatures": "<>",
+			"light_angle": null,
+			"ugr": "",
+			"link": "\/products\/interernyi-svet\/dot-220v\/ramka-loft-68-kruglaia\/41022-GD"
+		},
+		"41022-WH": {
+			"id": 13,
+			"article": "41022-WH",
+			"title": "Рамка Лофт 68 круглая RAL 9016 белая",
+			"ip_class": 20,
+			"price": 250,
+			"old_price": 0,
+			"sale": false,
+			"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/5a\/84\/5a84e7b6e24e25069422da3b8e4ea7c8\/570x570\/0.webp",
+			"available": true,
+			"height_in_assembly": 16,
+			"color_rendering_index": "<>",
+			"lamp_style": "Лофт",
+			"frame_type": "",
+			"armature_color": "Белый",
+			"power": null,
+			"light_temperatures": "<>",
+			"light_angle": null,
+			"ugr": "",
+			"link": "\/products\/interernyi-svet\/dot-220v\/ramka-loft-68-kruglaia\/41022-WH"
+		},
+		"42001-BK": {
+			"id": 16,
+			"article": "42001-BK",
+			"title": "Фиксирующее кольцо",
+			"ip_class": null,
+			"price": 830,
+			"old_price": 0,
+			"sale": false,
+			"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/8b\/e5\/8be5fea74e0a4d9e46f8bad243244df1\/570x570\/0.webp",
+			"available": true,
+			"height_in_assembly": 25,
+			"color_rendering_index": "<>",
+			"lamp_style": null,
+			"frame_type": "Неповоротная",
+			"armature_color": "Чёрный",
+			"power": null,
+			"light_temperatures": "<>",
+			"light_angle": null,
+			"ugr": "",
+			"link": "\/products\/interernyi-svet\/dot-220v\/fiksiruiushhee-kolco-nepovorotnoe-68\/42001-BK"
+		},
+		"42001-WW": {
+			"id": 960,
+			"article": "42001-WW",
+			"title": "Фиксирующее кольцо",
+			"ip_class": null,
+			"price": 930,
+			"old_price": 0,
+			"sale": false,
+			"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/be\/9a\/be9a5b7eb323cc3fcb4e67d1ec4337b3\/570x570\/0.webp",
+			"available": true,
+			"height_in_assembly": 0,
+			"color_rendering_index": "",
+			"lamp_style": null,
+			"frame_type": "Неповоротная",
+			"armature_color": "Белый",
+			"power": null,
+			"light_temperatures": "",
+			"light_angle": 0,
+			"ugr": "",
+			"link": "\/products\/interernyi-svet\/dot-220v\/fiksiruiushhee-kolco-nepovorotnoe-68\/42001-WW"
+		},
+		"43001-15": {
+			"id": 675,
+			"article": "43001-15",
+			"title": "Линза Слим 15° для Атом 6",
+			"ip_class": null,
+			"price": 580,
+			"old_price": 0,
+			"sale": false,
+			"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/25\/ef\/25efacc0a03947fe640f79311ed73e51\/570x570\/0.webp",
+			"available": true,
+			"height_in_assembly": 5,
+			"color_rendering_index": "<>",
+			"lamp_style": "Слим",
+			"frame_type": "",
+			"armature_color": "Чёрный",
+			"power": null,
+			"light_temperatures": "<>",
+			"light_angle": 15,
+			"ugr": "<19",
+			"link": "\/products\/interernyi-svet\/dot-220v\/linzy-slim\/43001-15"
+		},
+		"43001-36": {
+			"id": 676,
+			"article": "43001-36",
+			"title": "Линза Слим 36° для Атом 6",
+			"ip_class": null,
+			"price": 580,
+			"old_price": 0,
+			"sale": false,
+			"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/26\/5d\/265d4a973a0243fbc4e0090162efddcc\/570x570\/0.webp",
+			"available": true,
+			"height_in_assembly": 5,
+			"color_rendering_index": "<>",
+			"lamp_style": "Слим",
+			"frame_type": "",
+			"armature_color": "Чёрный",
+			"power": null,
+			"light_temperatures": "<>",
+			"light_angle": 36,
+			"ugr": "<19",
+			"link": "\/products\/interernyi-svet\/dot-220v\/linzy-slim\/43001-36"
+		},
+		"43001-60": {
+			"id": 677,
+			"article": "43001-60",
+			"title": "Линза Слим 60° для Атом 6",
+			"ip_class": null,
+			"price": 580,
+			"old_price": 0,
+			"sale": false,
+			"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/db\/17\/db17aa58e8271878606d61395e03930c\/570x570\/0.webp",
+			"available": true,
+			"height_in_assembly": 5,
+			"color_rendering_index": "<>",
+			"lamp_style": "Слим",
+			"frame_type": "",
+			"armature_color": "Чёрный",
+			"power": null,
+			"light_temperatures": "<>",
+			"light_angle": 60,
+			"ugr": "<19",
+			"link": "\/products\/interernyi-svet\/dot-220v\/linzy-slim\/43001-60"
+		},
+		"44002-27K": {
+			"id": 696,
+			"article": "44002-27K",
+			"title": "Светодиодный модуль Атом 9 36В 210мА 9Вт лм 2700К 93+",
+			"ip_class": 20,
+			"price": 2600,
+			"old_price": 0,
+			"sale": false,
+			"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/ce\/98\/ce98e5159d5711d67f10ace271f41e08\/570x570\/0.webp",
+			"available": true,
+			"height_in_assembly": 25,
+			"color_rendering_index": 93,
+			"lamp_style": null,
+			"frame_type": "",
+			"armature_color": "Чёрный",
+			"power": 9,
+			"light_temperatures": "2700",
+			"light_angle": null,
+			"ugr": "<>",
+			"link": "\/products\/interernyi-svet\/dot-220v\/svetodiodnyi-modul-atom-9\/44002-27K"
+		},
+		"44002-3K": {
+			"id": 682,
+			"article": "44002-3K",
+			"title": "Светодиодный модуль Атом 9 36В 210мА 9Вт 950лм 3000К 93+",
+			"ip_class": 20,
+			"price": 2600,
+			"old_price": 0,
+			"sale": false,
+			"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/56\/a5\/56a50ad431cb7ca049113156ef0cf150\/570x570\/0.webp",
+			"available": true,
+			"height_in_assembly": 25,
+			"color_rendering_index": 93,
+			"lamp_style": null,
+			"frame_type": "",
+			"armature_color": "Чёрный",
+			"power": 9,
+			"light_temperatures": "3000",
+			"light_angle": null,
+			"ugr": "<>",
+			"link": "\/products\/interernyi-svet\/dot-220v\/svetodiodnyi-modul-atom-9\/44002-3K"
+		},
+		"44002-4K": {
+			"id": 683,
+			"article": "44002-4K",
+			"title": "Светодиодный модуль Атом 9 36В 210мА 9Вт 980лм 4000К 93+",
+			"ip_class": 20,
+			"price": 2600,
+			"old_price": 0,
+			"sale": false,
+			"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/93\/3b\/933b136a8435ce20c6aaee848a783a79\/570x570\/0.webp",
+			"available": true,
+			"height_in_assembly": 25,
+			"color_rendering_index": 93,
+			"lamp_style": null,
+			"frame_type": "",
+			"armature_color": "Чёрный",
+			"power": 9,
+			"light_temperatures": "4000",
+			"light_angle": null,
+			"ugr": "<>",
+			"link": "\/products\/interernyi-svet\/dot-220v\/svetodiodnyi-modul-atom-9\/44002-4K"
+		},
+		"44002-DTW": {
+			"id": 752,
+			"article": "44002-DTW",
+			"title": "Светодиодный модуль Атом 10 36В 210мА 10Вт 1800-3000К 93+",
+			"ip_class": 20,
+			"price": 3130,
+			"old_price": 0,
+			"sale": false,
+			"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/a9\/c8\/a9c87a3d2874afc83bee63d772e38740\/570x570\/0.webp",
+			"available": true,
+			"height_in_assembly": 25,
+			"color_rendering_index": 93,
+			"lamp_style": null,
+			"frame_type": "",
+			"armature_color": "Чёрный",
+			"power": 10,
+			"light_temperatures": "1800-3000",
+			"light_angle": null,
+			"ugr": "<>",
+			"link": "\/products\/interernyi-svet\/dot-220v\/svetodiodnyi-modul-atom-10-dtw\/44002-DTW"
+		},
+		"46001-44": {
+			"id": 23,
+			"article": "46001-44",
+			"title": "Защитная накладка IP44 для рамки Симпл 68 круглая",
+			"ip_class": 44,
+			"price": 350,
+			"old_price": 0,
+			"sale": false,
+			"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/2c\/77\/2c776eb97d53f381674eb7564dc3f2e3\/570x570\/0.webp",
+			"available": true,
+			"height_in_assembly": 0,
+			"color_rendering_index": "<>",
+			"lamp_style": "Симпл",
+			"frame_type": "",
+			"armature_color": "Прозрачный",
+			"power": null,
+			"light_temperatures": "<>",
+			"light_angle": null,
+			"ugr": "",
+			"link": "\/products\/interernyi-svet\/dot-220v\/zashhitnaia-nakladka-ip44-dlia-ramki-simpl-68-kruglaia\/46001-44"
+		},
+		"46001-F1": {
+			"id": 18,
+			"article": "46001-F1",
+			"title": "Светофильтр Ханикомб 42",
+			"ip_class": 20,
+			"price": 510,
+			"old_price": 0,
+			"sale": false,
+			"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/83\/5a\/835a2fd315bccb0a933218514c9e1c0b\/570x570\/0.webp",
+			"available": true,
+			"height_in_assembly": 0,
+			"color_rendering_index": "<>",
+			"lamp_style": null,
+			"frame_type": "",
+			"armature_color": "Чёрный",
+			"power": null,
+			"light_temperatures": "<>",
+			"light_angle": null,
+			"ugr": "",
+			"link": "\/products\/interernyi-svet\/dot-220v\/svetofiltr-xanikomb-42\/46001-F1"
+		},
+		"50002-BK": {
+			"id": 766,
+			"article": "50002-BK",
+			"title": "Монтажный компплект для накладного светильника Софт RAL 9005 черный",
+			"ip_class": 20,
+			"price": 4530,
+			"old_price": 0,
+			"sale": false,
+			"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/bb\/7c\/bb7c50b8f55d4be5290e07f24e338ee9\/570x570\/0.webp",
+			"available": true,
+			"height_in_assembly": 0,
+			"color_rendering_index": "<>",
+			"lamp_style": "Софт",
+			"frame_type": "",
+			"armature_color": "Чёрный",
+			"power": null,
+			"light_temperatures": "<>",
+			"light_angle": null,
+			"ugr": "",
+			"link": "\/products\/interernyi-svet\/dot-220v\/montaznyi-komplekt-soft\/50002-BK"
+		},
+		"50002-WH": {
+			"id": 767,
+			"article": "50002-WH",
+			"title": "Монтажный компплект для накладного светильника Софт RAL 9016 белый",
+			"ip_class": 20,
+			"price": 4530,
+			"old_price": 0,
+			"sale": false,
+			"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/a7\/84\/a7842c0f38ce064e232eac9c7913a17a\/570x570\/0.webp",
+			"available": true,
+			"height_in_assembly": 0,
+			"color_rendering_index": "<>",
+			"lamp_style": "Софт",
+			"frame_type": "",
+			"armature_color": "Белый",
+			"power": null,
+			"light_temperatures": "<>",
+			"light_angle": null,
+			"ugr": "",
+			"link": "\/products\/interernyi-svet\/dot-220v\/montaznyi-komplekt-soft\/50002-WH"
+		}
+	}
+}
