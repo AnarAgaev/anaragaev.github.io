@@ -28,8 +28,7 @@
       //- window.listOrders = "https://prev-kirill-provider.massive.ru/rest/v1/orders/" // Ссылка на список заказов
 
       // !!! Обрати внимание, что в конце ссылки слэш !!!
-      //- window.searchRequestLink = "https://technolight.pro/api/products/search/" // Ссылка на API поиска - на каждой странице
-      window.searchRequestLink = "https://prev-kirill-provider.massive.ru/api/products/search/"; // Ссылка на API поиска - на каждой странице
+      window.searchRequestLink = "https://technolight.pro/api/products/search/"; // Ссылка на API поиска - на каждой странице
       //- window.searchRequestLink = "https://prev-kirill-provider.massive.ru/api/products/search/" // Ссылка на API поиска - на каждой странице
 
       window.addToFavoriteLink = "mocks/favorite-request-success.json"; // Ссылка на API добавить товар в избранное
@@ -349,6 +348,17 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="homepage__billboard-card">
+                  <!-- Для того чтобы установить кастомную позицию маркера на баннере, нужно добавить инлайновые стили top и right к HTML элементу с классом .erid-mark-->
+                  <!-- В значение data атрибута link (data-link) нужно записать ссылку, которая будет скопирована в буфер,-->
+                  <div class="erid-mark" data-link="https://example.com/?first">
+                    <i class="erid-mark__icon"></i>
+                    <span class="erid-mark__title">Реклама</span>
+                    <div class="erid-mark__tooltip">
+                      <span class="erid-mark__close"></span>
+                      <span class="erid-mark__info">Информация о рекламодателе</span>
+                      <span class="erid-mark__copy">Скопировать ссылку</span>
+                    </div>
+                  </div>
                   <div class="homepage__billboard-media homepage__billboard-media_mob"><img src="https://aws.massive.ru/technolight/images/billboard-home-page/slide1-mob.webp" alt="" loading="lazy" ></div>
                   <div class="homepage__billboard-media homepage__billboard-media_desk"><img src="https://aws.massive.ru/technolight/images/billboard-home-page/slide1-desk.webp" alt="" loading="lazy" ></div>
                   <div class="homepage__billboard-content">
@@ -360,6 +370,15 @@
               </div>
               <div class="swiper-slide">
                 <div class="homepage__billboard-card">
+                  <div class="erid-mark" data-link="https://example.com/?seccond">
+                    <i class="erid-mark__icon"></i>
+                    <span class="erid-mark__title">Реклама</span>
+                    <div class="erid-mark__tooltip">
+                      <span class="erid-mark__close"></span>
+                      <span class="erid-mark__info">Информация о рекламодателе</span>
+                      <span class="erid-mark__copy">Скопировать ссылку</span>
+                    </div>
+                  </div>
                   <div class="homepage__billboard-media homepage__billboard-media_mob"><img src="https://aws.massive.ru/technolight/images/billboard-home-page/slide2-mob.webp" alt="" loading="lazy" ></div>
                   <div class="homepage__billboard-media homepage__billboard-media_desk"><img src="https://aws.massive.ru/technolight/images/billboard-home-page/slide2-desk.webp" alt="" loading="lazy" ></div>
                   <div class="homepage__billboard-content">
@@ -370,6 +389,15 @@
               </div>
               <div class="swiper-slide">
                 <div class="homepage__billboard-card">
+                  <div class="erid-mark" data-link="https://example.com/?third">
+                    <i class="erid-mark__icon"></i>
+                    <span class="erid-mark__title">Реклама</span>
+                    <div class="erid-mark__tooltip">
+                      <span class="erid-mark__close"></span>
+                      <span class="erid-mark__info">Информация о рекламодателе</span>
+                      <span class="erid-mark__copy">Скопировать ссылку</span>
+                    </div>
+                  </div>
                   <div class="homepage__billboard-media homepage__billboard-media_mob"><img src="https://aws.massive.ru/technolight/images/billboard-home-page/slide3-mob.webp" alt="" loading="lazy" ></div>
                   <div class="homepage__billboard-media homepage__billboard-media_desk"><img src="https://aws.massive.ru/technolight/images/billboard-home-page/slide3-desk.webp" alt="" loading="lazy" ></div>
                   <div class="homepage__billboard-content"><a class="dark-btn" href="#!">Просто кнопка</a></div>
