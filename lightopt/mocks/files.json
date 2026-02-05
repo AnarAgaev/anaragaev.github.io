@@ -1,0 +1,328 @@
+[
+	{
+		"id": 1,
+		"name": "3D модель люстры арт-деко",
+		"link": "https://storage.example.com/files/artelamp/chandelier-3d.zip",
+		"brand": "artelamp",
+		"collection": "Venetian Dreams",
+		"article": "VD3D001",
+		"selected": false,
+		"type": "3d_models"
+	},
+	{
+		"id": 2,
+		"name": "3D модель настенного светильника",
+		"link": "https://storage.example.com/files/gauss/wall-light-3d.zip",
+		"brand": "gauss",
+		"collection": "Modern Geometry",
+		"article": "MG3D002",
+		"selected": false,
+		"type": "3d_models"
+	},
+	{
+		"id": 3,
+		"name": "3D модель торшера минимализм",
+		"link": "https://storage.example.com/files/werkel/floor-lamp-3d.zip",
+		"brand": "werkel",
+		"collection": "Nordic Simplicity",
+		"article": "NS3D003",
+		"selected": false,
+		"type": "3d_models"
+	},
+	{
+		"id": 4,
+		"name": "Фотометрические данные люстры кристалл",
+		"link": "https://storage.example.com/files/divinare/photometric-crystal.zip",
+		"brand": "divinare",
+		"collection": "Crystal Palace",
+		"article": "CPPD004",
+		"selected": false,
+		"type": "photometric_data"
+	},
+	{
+		"id": 5,
+		"name": "Фотометрические данные спота LED",
+		"link": "https://storage.example.com/files/gauss/photometric-spot.zip",
+		"brand": "gauss",
+		"collection": "TechLine Pro",
+		"article": "TLPD005",
+		"selected": false,
+		"type": "photometric_data"
+	},
+	{
+		"id": 6,
+		"name": "Сертификат качества ГОСТ",
+		"link": "assets/images/certificate.jpg",
+		"brand": "artelamp",
+		"collection": "Venetian Dreams",
+		"article": "VDSC006",
+		"selected": false,
+		"type": "certificates"
+	},
+	{
+		"id": 7,
+		"name": "Сертификат безопасности EU",
+		"link": "assets/images/certificate.jpg",
+		"brand": "werkel",
+		"collection": "Nordic Simplicity",
+		"article": "NSSC007",
+		"selected": false,
+		"type": "certificates"
+	},
+	{
+		"id": 8,
+		"name": "Сертификат соответствия",
+		"link": "assets/images/certificate.jpg",
+		"brand": "divinare",
+		"collection": "Crystal Palace",
+		"article": "CPSC008",
+		"selected": false,
+		"type": "certificates"
+	},
+	{
+		"id": 9,
+		"name": "Люстра в гостиной классика",
+		"link": "https://storage.example.com/files/artelamp/interior-livingroom.jpg",
+		"brand": "artelamp",
+		"collection": "Venetian Dreams",
+		"article": "VDIN009",
+		"selected": false,
+		"type": "interiors"
+	},
+	{
+		"id": 10,
+		"name": "Подвесной светильник в кухне",
+		"link": "https://storage.example.com/files/gauss/interior-kitchen.jpg",
+		"brand": "gauss",
+		"collection": "Modern Geometry",
+		"article": "MGIN010",
+		"selected": false,
+		"type": "interiors"
+	},
+	{
+		"id": 11,
+		"name": "Торшер в спальне",
+		"link": "https://storage.example.com/files/werkel/interior-bedroom.jpg",
+		"brand": "werkel",
+		"collection": "Nordic Simplicity",
+		"article": "NSIN011",
+		"selected": false,
+		"type": "interiors"
+	},
+	{
+		"id": 12,
+		"name": "Хрустальная люстра в столовой",
+		"link": "https://storage.example.com/files/divinare/interior-dining.jpg",
+		"brand": "divinare",
+		"collection": "Crystal Palace",
+		"article": "CPIN012",
+		"selected": false,
+		"type": "interiors"
+	},
+	{
+		"id": 13,
+		"name": "Презентация коллекции 2024",
+		"link": "https://storage.example.com/files/artelamp/presentation-2024.pdf",
+		"brand": "artelamp",
+		"collection": "Venetian Dreams",
+		"article": "VDPR013",
+		"selected": false,
+		"type": "presentation_materials"
+	},
+	{
+		"id": 14,
+		"name": "Каталог светильников премиум",
+		"link": "https://storage.example.com/files/divinare/catalog-premium.pdf",
+		"brand": "divinare",
+		"collection": "Crystal Palace",
+		"article": "CPPR014",
+		"selected": false,
+		"type": "presentation_materials"
+	},
+	{
+		"id": 15,
+		"name": "Техническая презентация LED",
+		"link": "https://storage.example.com/files/gauss/tech-presentation.pdf",
+		"brand": "gauss",
+		"collection": "TechLine Pro",
+		"article": "TLPR015",
+		"selected": false,
+		"type": "presentation_materials"
+	},
+	{
+		"id": 16,
+		"name": "Инструкция сборки люстры 5-рожковой",
+		"link": "assets/images/instruction.jpg",
+		"brand": "artelamp",
+		"collection": "Venetian Dreams",
+		"article": "VDIA016",
+		"selected": false,
+		"type": "assembly_instructions"
+	},
+	{
+		"id": 17,
+		"name": "Инструкция сборки трековой системы",
+		"link": "assets/images/instruction.jpg",
+		"brand": "gauss",
+		"collection": "TechLine Pro",
+		"article": "TLIA017",
+		"selected": false,
+		"type": "assembly_instructions"
+	},
+	{
+		"id": 18,
+		"name": "Инструкция сборки торшера",
+		"link": "assets/images/instruction.jpg",
+		"brand": "werkel",
+		"collection": "Nordic Simplicity",
+		"article": "NSIA018",
+		"selected": false,
+		"type": "assembly_instructions"
+	},
+	{
+		"id": 19,
+		"name": "Инструкция сборки подвеса хрусталь",
+		"link": "assets/images/instruction.jpg",
+		"brand": "divinare",
+		"collection": "Crystal Palace",
+		"article": "CPIA019",
+		"selected": false,
+		"type": "assembly_instructions"
+	},
+	{
+		"id": 20,
+		"name": "Обзор люстры в интерьере",
+		"link": "https://storage.example.com/files/artelamp/product-overview.mp4",
+		"brand": "artelamp",
+		"collection": "Venetian Dreams",
+		"article": "VDVO020",
+		"selected": false,
+		"просмотры": 1250,
+		"type": "product_videos",
+		"poster": "assets/images/video_1.jpg"
+	},
+	{
+		"id": 21,
+		"name": "Демонстрация RGB подсветки",
+		"link": "https://storage.example.com/files/gauss/rgb-demo.mp4",
+		"brand": "gauss",
+		"collection": "Modern Geometry",
+		"article": "MGVO021",
+		"selected": false,
+		"просмотры": 3420,
+		"type": "product_videos",
+		"poster": "assets/images/video_2.jpg"
+	},
+	{
+		"id": 22,
+		"name": "Хрустальная люстра при дневном свете",
+		"link": "https://storage.example.com/files/divinare/daylight-showcase.mp4",
+		"brand": "divinare",
+		"collection": "Crystal Palace",
+		"article": "CPVO022",
+		"selected": false,
+		"просмотры": 890,
+		"type": "product_videos",
+		"poster": "assets/images/video_3.jpg"
+	},
+	{
+		"id": 23,
+		"name": "Торшер с регулируемой высотой",
+		"link": "https://storage.example.com/files/werkel/adjustable-height.mp4",
+		"brand": "werkel",
+		"collection": "Nordic Simplicity",
+		"article": "NSVO023",
+		"selected": false,
+		"просмотры": 1560,
+		"type": "product_videos",
+		"poster": "assets/images/video_1.jpg"
+	},
+	{
+		"id": 24,
+		"name": "Умное освещение smart home",
+		"link": "https://storage.example.com/files/gauss/smart-home-integration.mp4",
+		"brand": "gauss",
+		"collection": "TechLine Pro",
+		"article": "TLVO024",
+		"selected": false,
+		"просмотры": 2780,
+		"type": "product_videos",
+		"poster": "assets/images/video_2.jpg"
+	},
+	{
+		"id": 25,
+		"name": "Видеоинструкция по монтажу",
+		"link": "https://storage.example.com/files/artelamp/installation-video.mp4",
+		"brand": "artelamp",
+		"collection": "Venetian Dreams",
+		"article": "VDVI025",
+		"selected": false,
+		"просмотры": 3100,
+		"type": "video_instructions",
+		"poster": "assets/images/shorts_1.jpg"
+	},
+	{
+		"id": 26,
+		"name": "Видео по подключению к Wi-Fi",
+		"link": "https://storage.example.com/files/gauss/wifi-setup.mp4",
+		"brand": "gauss",
+		"collection": "TechLine Pro",
+		"article": "TLVI026",
+		"selected": false,
+		"просмотры": 4250,
+		"type": "video_instructions",
+		"poster": "assets/images/shorts_2.jpg"
+	},
+	{
+		"id": 27,
+		"name": "Замена ламп в хрустальной люстре",
+		"link": "https://storage.example.com/files/divinare/bulb-replacement.mp4",
+		"brand": "divinare",
+		"collection": "Crystal Palace",
+		"article": "CPVI027",
+		"selected": false,
+		"просмотры": 1200,
+		"type": "video_instructions",
+		"poster": "assets/images/shorts_3.jpg"
+	},
+	{
+		"id": 28,
+		"name": "Руководство пользователя люстры",
+		"link": "https://storage.example.com/files/artelamp/user-manual-chandelier.pdf",
+		"brand": "artelamp",
+		"collection": "Venetian Dreams",
+		"article": "VDRE028",
+		"selected": false,
+		"type": "user_manuals"
+	},
+	{
+		"id": 29,
+		"name": "Руководство по уходу за хрусталем",
+		"link": "https://storage.example.com/files/divinare/crystal-care.pdf",
+		"brand": "divinare",
+		"collection": "Crystal Palace",
+		"article": "CPRE029",
+		"selected": false,
+		"type": "user_manuals"
+	},
+	{
+		"id": 30,
+		"name": "Руководство умного освещения",
+		"link": "https://storage.example.com/files/gauss/smart-lighting-guide.pdf",
+		"brand": "gauss",
+		"collection": "TechLine Pro",
+		"article": "TLRE030",
+		"selected": false,
+		"type": "user_manuals"
+	},
+	{
+		"id": 31,
+		"name": "Руководство по энергосбережению",
+		"link": "https://storage.example.com/files/werkel/energy-saving.pdf",
+		"brand": "werkel",
+		"collection": "Nordic Simplicity",
+		"article": "NSRE031",
+		"selected": false,
+		"type": "user_manuals"
+	}
+]

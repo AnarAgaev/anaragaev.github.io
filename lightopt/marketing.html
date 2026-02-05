@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" >
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+    <meta name="description" content="Write description for this page here" >
+    <meta name="keywords" content="Write keywords for this page here" >
+    <title>LightOPT</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" >
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" >
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" >
+    <link rel="icon" href="img/favicon.ico" >
+    <link rel="preload" href="css/vendor.min.css" as="style" >
+    <link rel="stylesheet" href="css/vendor.min.css" >
+    <link rel="preload" href="css/main.min.css" as="style" >
+    <link rel="stylesheet" href="css/main.min.css" >
+    <link rel="stylesheet" href="css/pages/marketing.min.css" >
+    <script>
+      window.filterApiLink = "https://technolight.pro/api/categories/330"; // Ссылка на API фильтра (каталог) - только на странице с фильтрами
+
+      //- window.addProductApiLink = "https://prev-kirill-provider.massive.ru/rest/v1/orders/add" // Ссылка на API добавить товар в заказ - только на странице товара
+      window.addProductApiLink = "mocks/add-product-request.json"; // Ссылка на API добавить товар в заказ - только на странице товара
+
+      window.catalogLink = "index.html"; // Ссылка на страницу каталога - на каждой странице
+
+      window.listOrders = "mocks/get-request-list-orders.json"; // Ссылка на список заказов
+      //- window.listOrders = "https://prev-kirill-provider.massive.ru/rest/v1/orders/" // Ссылка на список заказов
+
+      // !!! Обрати внимание, что в конце ссылки слэш !!!
+      window.searchRequestLink = "https://technolight.pro/api/products/search/"; // Ссылка на API поиска - на каждой странице
+      //- window.searchRequestLink = "https://prev-kirill-provider.massive.ru/api/products/search/" // Ссылка на API поиска - на каждой странице
+
+      window.addToFavoriteLink = "mocks/favorite-request-success.json"; // Ссылка на API добавить товар в избранное
+      window.removeFromFavoriteLink = "mocks/favorite-request-success.json"; // Ссылка на API удалить товар из избранного
+      //- window.removeFromFavoriteLink = "mocks/favorite-request-error.json" // Не переносить! Нужен для теста ошибки запроса
+
+      //- window.filesApiUrl = "mocks/documents.json"
+      window.filesApiUrl = "https://technolight.pro/api/documents";
+      window.filesDownUrl = "https://technolight.pro/api/documents/download";
+      window.filesSearchUrl = "https://technolight.pro/api/products/search/";
+    </script>
+  </head>
+  <body class="page-marketing" id="body">
+    <header class="header" id="header">
+      <div class="container">
+        <div class="header-info">
+          <a class="header-info__logo" href="/index.html"><img src="img/LightOpt.png" alt="" ></a>
+          <!-- Показываем поиск через класс .active-->
+          <div class="search" id="search">
+            <span class="search__back"></span>
+            <div class="container">
+              <div class="search__top">
+                <a class="search__logo" href="/index.html"><img src="img/LightOpt.png" alt="" ></a>
+                <button class="search__burger"></button>
+              </div>
+              <div class="search__wrap">
+                <label class="search__controllers">
+                  <input class="search__input" type="text" placeholder="Поиск по каталогу" >
+                  <span class="search__loading" id="loadingSearch">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" width="30" height="30" style="shape-rendering: auto; display: block; background: rgb(255, 255, 255);" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <g>
+                        <g transform="translate(80,50)">
+                          <g transform="rotate(0)">
+                            <circle fill-opacity="1" fill="#000000" r="6" cy="0" cx="0">
+                              <animateTransform repeatCount="indefinite" dur="1s" keyTimes="0;1" values="1.5 1.5;1 1" begin="-0.8571428571428571s" type="scale" attributeName="transform"></animateTransform>
+                              <animate begin="-0.8571428571428571s" values="1;0" repeatCount="indefinite" dur="1s" keyTimes="0;1" attributeName="fill-opacity"></animate>
+                            </circle>
+                          </g>
+                        </g>
+                        <g transform="translate(68.704694055762,73.4549444740409)">
+                          <g transform="rotate(51.42857142857143)">
+                            <circle fill-opacity="0.8571428571428571" fill="#000000" r="6" cy="0" cx="0">
+                              <animateTransform repeatCount="indefinite" dur="1s" keyTimes="0;1" values="1.5 1.5;1 1" begin="-0.7142857142857143s" type="scale" attributeName="transform"></animateTransform>
+                              <animate begin="-0.7142857142857143s" values="1;0" repeatCount="indefinite" dur="1s" keyTimes="0;1" attributeName="fill-opacity"></animate>
+                            </circle>
+                          </g>
+                        </g>
+                        <g transform="translate(43.32437198131057,79.2478373654547)">
+                          <g transform="rotate(102.85714285714286)">
+                            <circle fill-opacity="0.7142857142857143" fill="#000000" r="6" cy="0" cx="0">
+                              <animateTransform repeatCount="indefinite" dur="1s" keyTimes="0;1" values="1.5 1.5;1 1" begin="-0.5714285714285714s" type="scale" attributeName="transform"></animateTransform>
+                              <animate begin="-0.5714285714285714s" values="1;0" repeatCount="indefinite" dur="1s" keyTimes="0;1" attributeName="fill-opacity"></animate>
+                            </circle>
+                          </g>
+                        </g>
+                        <g transform="translate(22.97093396292743,63.01651217352675)">
+                          <g transform="rotate(154.2857142857143)">
+                            <circle fill-opacity="0.5714285714285714" fill="#000000" r="6" cy="0" cx="0">
+                              <animateTransform repeatCount="indefinite" dur="1s" keyTimes="0;1" values="1.5 1.5;1 1" begin="-0.42857142857142855s" type="scale" attributeName="transform"></animateTransform>
+                              <animate begin="-0.42857142857142855s" values="1;0" repeatCount="indefinite" dur="1s" keyTimes="0;1" attributeName="fill-opacity"></animate>
+                            </circle>
+                          </g>
+                        </g>
+                        <g transform="translate(22.970933962927425,36.98348782647326)">
+                          <g transform="rotate(205.71428571428572)">
+                            <circle fill-opacity="0.42857142857142855" fill="#000000" r="6" cy="0" cx="0">
+                              <animateTransform repeatCount="indefinite" dur="1s" keyTimes="0;1" values="1.5 1.5;1 1" begin="-0.2857142857142857s" type="scale" attributeName="transform"></animateTransform>
+                              <animate begin="-0.2857142857142857s" values="1;0" repeatCount="indefinite" dur="1s" keyTimes="0;1" attributeName="fill-opacity"></animate>
+                            </circle>
+                          </g>
+                        </g>
+                        <g transform="translate(43.32437198131056,20.752162634545293)">
+                          <g transform="rotate(257.1428571428571)">
+                            <circle fill-opacity="0.2857142857142857" fill="#000000" r="6" cy="0" cx="0">
+                              <animateTransform repeatCount="indefinite" dur="1s" keyTimes="0;1" values="1.5 1.5;1 1" begin="-0.14285714285714285s" type="scale" attributeName="transform"></animateTransform>
+                              <animate begin="-0.14285714285714285s" values="1;0" repeatCount="indefinite" dur="1s" keyTimes="0;1" attributeName="fill-opacity"></animate>
+                            </circle>
+                          </g>
+                        </g>
+                        <g transform="translate(68.704694055762,26.545055525959103)">
+                          <g transform="rotate(308.5714285714286)">
+                            <circle fill-opacity="0.14285714285714285" fill="#000000" r="6" cy="0" cx="0">
+                              <animateTransform repeatCount="indefinite" dur="1s" keyTimes="0;1" values="1.5 1.5;1 1" begin="0s" type="scale" attributeName="transform"></animateTransform>
+                              <animate begin="0s" values="1;0" repeatCount="indefinite" dur="1s" keyTimes="0;1" attributeName="fill-opacity"></animate>
+                            </circle>
+                          </g>
+                        </g>
+                        <g></g>
+                      </g>
+                    </svg>
+                  </span>
+                  <button class="search__reset"><i id="resetSearchText"></i></button>
+                  <!-- По дефолту у ссылки НЕ ДОЛЖНО БЫТЬ аттрибута href-->
+                  <a class="search__req" id="searchButton"><i></i></a>
+                </label>
+                <!-- .success - успешный ответ-->
+                <!-- .fail - пустой ответ-->
+                <div class="search__results__wrap" id="searchingResults">
+                  <div class="search__results"><ul id="searchingList"></ul></div>
+                  <a class="search__all" id="searchingShowAll" href="#!">
+                    показать все результаты
+                    <span></span>
+                  </a>
+                  <div class="search__fail">К сожалению, по вашему запросу ничего не найдено</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul class="header-info__menu">
+            <!-- Для залогиненого пользователя в .header-info__logged добавляем ссылку на емэйл-->
+            <div class="header-info__logged"><a href="mailto: email@email-company.ru">email@email-company.ru</a></div>
+            <li class="header-info__menu-item">
+              <!-- Когда пользователь залогинен, .header-info__menu--acc делаем просто дивом <div>-->
+              <div class="header-info__btn btn-reset header-info__menu--acc">
+                <div class="header-info__tooltip">
+                  <div class="header-info__tooltip-body">
+                    <a href="#!">Личный кабинет</a>
+                    <form method="POST" action="https://prev-kirill-provider.massive.ru/admin/logout">
+                      <input type="hidden" name="_token" value="L3Hb8ZpALTkMDm3gUMobAp1vDxOUAr0oQx6J6nDv" autocomplete="off" >
+                      <button>Выход</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Блок .header-info__menu--favorites показываем только когда пользователь залогинен-->
+            <li class="header-info__menu-item">
+              <a class="header-info__btn btn-reset header-info__menu--favorites" href="#!">
+                <div class="header-info__tooltip">
+                  <div class="header-info__tooltip-body"><span>Избранное</span></div>
+                </div>
+              </a>
+            </li>
+            <!-- Блок .header-info__menu--order показываем только когда пользователь залогинен-->
+            <li class="header-info__menu-item">
+              <a class="header-info__btn btn-reset header-info__menu--cart" href="#!">
+                <div class="header-info__tooltip">
+                  <div class="header-info__tooltip-body"><span>Вернуться к заказам</span></div>
+                </div>
+              </a>
+            </li>
+            <li class="header-info__menu-item"><button class="header-info__btn btn-reset header-info__menu--burger"></button></li>
+          </ul>
+        </div>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#!">
+                <i class="nav__icon nav__icon_catalog"></i>
+                каталог
+              </a>
+            </li>
+            <li class="nav__item"><a class="nav__link" href="#!">Распродажа</a></li>
+            <li class="nav__item"><a class="nav__link" href="#!">маркетинг</a></li>
+            <li class="nav__item"><a class="nav__link" href="#!">контакты</a></li>
+            <li class="nav__item">
+              <a class="nav__link" href="tel:+78000000000">
+                <i class="nav__icon nav__icon_phone"></i>
+                8 800 999 99 99
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="nav-mobile">
+          <div class="nav-mobile__header">
+            <a class="nav-mobile__header_logo" href="/index.html"><img src="img/LightOpt.png" alt="LightOpt" ></a>
+            <button class="btn-reset nav-mobile__header_close"></button>
+          </div>
+          <ul class="nav-mobile__list">
+            <li class="nav-mobile__item">
+              <div class="nav-mobile__title">
+                <div class="nav-mobile__title_wrap">
+                  <div class="nav-mobile__pic nav-mobile__pic-person"></div>
+                  <a class="nav-mobile__link" href="#!">Личный кабинет</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-mobile__item">
+              <div class="nav-mobile__title">
+                <div class="nav-mobile__title_wrap">
+                  <div class="nav-mobile__pic nav-mobile__pic-present"></div>
+                  <a class="nav-mobile__link nav-mobile__link_drop" href="#!">каталог</a>
+                </div>
+                <div class="nav-mobile__open-icon"></div>
+              </div>
+              <ul class="nav-mobile__list nav-mobile__list_drop drop-list drop-submenu">
+                <li class="drop-submenu__item">
+                  <div class="drop-submenu__title-wrap">
+                    <div class="drop-submenu__plus"></div>
+                    <div class="drop-submenu__title">Функциональное освещение</div>
+                  </div>
+                  <ul class="drop-submenu__list">
+                    <li class="drop-submenu__list-item"><a href="#!">• Системы освещения</a></li>
+                    <li class="drop-submenu__list-item"><a href="#!">• Витринные светильники</a></li>
+                    <li class="drop-submenu__list-item"><a href="#!">• Гибкий неон</a></li>
+                    <li class="drop-submenu__list-item"><a href="#!">• Настенные светильники</a></li>
+                    <li class="drop-submenu__list-item"><a href="#!">• Потолочные светильники</a></li>
+                    <li class="drop-submenu__list-item"><a href="#!">• Алюминиевые профили</a></li>
+                    <li class="drop-submenu__list-item"><a href="#!">• Светодиодные ленты</a></li>
+                  </ul>
+                </li>
+                <li class="drop-submenu__item">
+                  <div class="drop-submenu__title-wrap">
+                    <div class="drop-submenu__plus"></div>
+                    <div class="drop-submenu__title">Функциональное освещение</div>
+                  </div>
+                  <ul class="drop-submenu__list">
+                    <li class="drop-submenu__list-item"><a href="#!">• Системы освещения</a></li>
+                    <li class="drop-submenu__list-item"><a href="#!">• Витринные светильники</a></li>
+                  </ul>
+                </li>
+                <li class="drop-submenu__item">
+                  <div class="drop-submenu__title-wrap">
+                    <div class="drop-submenu__plus"></div>
+                    <div class="drop-submenu__title">Уличное освещение</div>
+                  </div>
+                  <ul class="drop-submenu__list">
+                    <li class="drop-submenu__list-item"><a href="#!">• Системы освещения</a></li>
+                    <li class="drop-submenu__list-item"><a href="#!">• Витринные светильники</a></li>
+                  </ul>
+                </li>
+                <li class="drop-submenu__item">
+                  <div class="drop-submenu__title-wrap">
+                    <div class="drop-submenu__plus"></div>
+                    <div class="drop-submenu__title">Источники света</div>
+                  </div>
+                  <ul class="drop-submenu__list">
+                    <li class="drop-submenu__list-item"><a href="#!">• Системы освещения</a></li>
+                    <li class="drop-submenu__list-item"><a href="#!">• Витринные светильники</a></li>
+                  </ul>
+                </li>
+                <li class="drop-submenu__item">
+                  <div class="drop-submenu__title-wrap">
+                    <div class="drop-submenu__plus"></div>
+                    <div class="drop-submenu__title">Управление светом</div>
+                  </div>
+                  <ul class="drop-submenu__list">
+                    <li class="drop-submenu__list-item"><a href="#!">• Системы освещения</a></li>
+                    <li class="drop-submenu__list-item"><a href="#!">• Витринные светильники</a></li>
+                  </ul>
+                </li>
+                <li class="drop-submenu__item">
+                  <div class="drop-submenu__title-wrap">
+                    <div class="drop-submenu__plus"></div>
+                    <div class="drop-submenu__title">Декоративное освещение</div>
+                  </div>
+                  <ul class="drop-submenu__list">
+                    <li class="drop-submenu__list-item"><a href="#!">• Системы освещения</a></li>
+                    <li class="drop-submenu__list-item"><a href="#!">• Витринные светильники</a></li>
+                  </ul>
+                </li>
+                <li class="drop-submenu__item">
+                  <div class="drop-submenu__title-wrap">
+                    <div class="drop-submenu__plus"></div>
+                    <div class="drop-submenu__title">Источники питания</div>
+                  </div>
+                  <ul class="drop-submenu__list">
+                    <li class="drop-submenu__list-item"><a href="#!">• Системы освещения</a></li>
+                    <li class="drop-submenu__list-item"><a href="#!">• Витринные светильники</a></li>
+                  </ul>
+                </li>
+                <li class="drop-submenu__item">
+                  <div class="drop-submenu__title-wrap">
+                    <div class="drop-submenu__plus"></div>
+                    <div class="drop-submenu__title">Аксессуары для светильников</div>
+                  </div>
+                  <ul class="drop-submenu__list">
+                    <li class="drop-submenu__list-item"><a href="#!">• Системы освещения</a></li>
+                    <li class="drop-submenu__list-item"><a href="#!">• Витринные светильники</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-mobile__item">
+              <div class="nav-mobile__title">
+                <div class="nav-mobile__title_wrap">
+                  <div class="nav-mobile__pic nav-mobile__pic-person"></div>
+                  <a class="nav-mobile__link" href="#!">Личный кабинет</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-mobile__item">
+              <div class="nav-mobile__title">
+                <div class="nav-mobile__title_wrap">
+                  <div class="nav-mobile__pic nav-mobile__pic-marketing"></div>
+                  <a class="nav-mobile__link" href="#!">Маркетинг</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-mobile__item">
+              <div class="nav-mobile__title">
+                <div class="nav-mobile__title_wrap">
+                  <div class="nav-mobile__pic nav-mobile__pic-sale"></div>
+                  <a class="nav-mobile__link" href="#!">Распродажа</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-mobile__item">
+              <div class="nav-mobile__title">
+                <div class="nav-mobile__title_wrap">
+                  <div class="nav-mobile__pic nav-mobile__pic-puzzles"></div>
+                  <a class="nav-mobile__link" href="#!">О бренде</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-mobile__item">
+              <div class="nav-mobile__title">
+                <div class="nav-mobile__title_wrap">
+                  <div class="nav-mobile__pic nav-mobile__pic-contacts"></div>
+                  <a class="nav-mobile__link" href="#!">Контакты</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main" id="main">
+      <section class="breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#!">Главная</a></li>
+            <li class="breadcrumbs__item"><span class="breadcrumbs__link">Маркетинг</span></li>
+          </ul>
+        </div>
+      </section>
+      <section class="container main-title">
+        <div class="main-title__caption">
+          <h1 class="main-title__text">
+            Заголовок
+            <a class="main-title__inner-link" href="#!">ссылка внутри</a>
+            страницы
+          </h1>
+          <a class="main-title__outer-link" href="#!">Ссылка снаружи заголовка</a>
+        </div>
+        <span class="main-title__info">Доп. информация</span>
+      </section>
+      <section class="marketing">
+        <div class="container">
+          <div class="marketing__error" id="marketingErr">
+            <h3>Не удалось загрузить данные приложения</h3>
+            <p>Попробуйте перезагрузить страницу через несколько минут. В&nbsp;случае повторного возникновения ошибки сообщите в&nbsp;поддержку.</p>
+          </div>
+          <div class="marketing__wrapper" id="downFilesApp">
+            <div class="marketing__filter-list">
+              <div class="marketing__filter-item">
+                <div class="single-selector" id="brandSelector">
+                  <div class="single-selector__caption">бренд</div>
+                  <button class="single-selector__trigger" type="button"><span>выберите значение</span></button>
+                  <div class="single-selector__dropdown">
+                    <button class="single-selector__option" type="button" data-value="artelamp">Arte Lamp</button>
+                    <button class="single-selector__option selected" type="button" data-value="divinare">Divinare</button>
+                    <button class="single-selector__option" type="button" data-value="gauss-lamps">Gauss лампочки</button>
+                    <button class="single-selector__option" type="button" data-value="werkel">Werkel</button>
+                  </div>
+                </div>
+              </div>
+              <div class="marketing__filter-item">
+                <div class="single-selector" id="collectionSelector">
+                  <div class="single-selector__caption">коллекция</div>
+                  <button class="single-selector__trigger" type="button"><span>выберите значение</span></button>
+                  <label class="single-selector__drop-filter">
+                    <input type="text" name="filter" >
+                    <i></i>
+                  </label>
+                  <div class="single-selector__dropdown">
+                    <button class="single-selector__option" type="button" data-value="smd">SMD</button>
+                    <button class="single-selector__option" type="button" data-value="basic">BASIC</button>
+                    <button class="single-selector__option" type="button" data-value="treno">TRENO</button>
+                    <button class="single-selector__option" type="button" data-value="filament">FILAMENT</button>
+                    <button class="single-selector__option" type="button" data-value="dimmer">DIMMER</button>
+                    <button class="single-selector__option" type="button" data-value="g4">G4</button>
+                    <button class="single-selector__option" type="button" data-value="london">LONDON</button>
+                    <button class="single-selector__option" type="button" data-value="galatea">GALATEA</button>
+                    <button class="single-selector__option" type="button" data-value="trapeze">TRAPEZE</button>
+                    <button class="single-selector__option" type="button" data-value="budapest">BUDAPEST</button>
+                    <button class="single-selector__option" type="button" data-value="intreccio">INTRECCIO</button>
+                    <button class="single-selector__option" type="button" data-value="avior">AVIOR</button>
+                    <button class="single-selector__option" type="button" data-value="lugo">LUGO</button>
+                    <button class="single-selector__option" type="button" data-value="optima">OPTIMA</button>
+                  </div>
+                </div>
+              </div>
+              <div class="marketing__filter-item">
+                <div class="search-selector" id="articleSearch">
+                  <div class="search-selector__caption">Артикул</div>
+                  <label class="search-selector__trigger">
+                    <input type="text" name="query" placeholder="Поиск по Артикулу" value="" >
+                    <i id="articleSearchProcessing"></i>
+                    <button type="button"></button>
+                  </label>
+                  <!-- Для того чтобы показать поисковую выдачу тогглим класс .visible на .search-selector__dropdown-->
+                  <div class="search-selector__fail" id="articleSearchFail">К сожалению, по вашему запросу ничего не найдено</div>
+                  <ul class="search-selector__dropdown" id="articleSearchResults">
+                    <li class="search-selector__option" data-value="A2412008-05-4K">
+                      <span>A2412008-05-4K</span>
+                      <p>Светодиодная лента 24V 9,6W/m 4000К 5м Arte Lamp AQUA TAPE</p>
+                    </li>
+                    <li class="search-selector__option selected" data-value="A6635PL-1BK">
+                      <span>A6635PL-1BK</span>
+                      <p>Светодиодная лента 24V 9,6W/m 4000К 5м Arte Lamp AQUA TAPE</p>
+                    </li>
+                    <li class="search-selector__option" data-value="A6650PL-1WH">
+                      <span>A6650PL-1WH</span>
+                      <p>Потолочный светильник Arte Lamp FADO</p>
+                    </li>
+                    <li class="search-selector__option" data-value="A6612PL-1BK">
+                      <span>A6612PL-1BK</span>
+                      <p>Потолочный светильник Arte Lamp FADO</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="marketing__filter-summary" id="marketingFilterSummary">
+              <button class="default-btn small-btn btn--white" id="resetFiltersButton" type="button">
+                <span>Очистить всё</span>
+                <i></i>
+              </button>
+              <button class="default-btn small-btn btn--dark" id="showFilesButton" type="button">
+                <span>Показать файлы (150)</span>
+                <i></i>
+              </button>
+            </div>
+            <ul class="marketing__chips" id="filteredChips">
+              <li data-value="artelamp">
+                <span>Artelamp</span>
+                <i></i>
+              </li>
+              <li data-value="divinare">
+                <span>Divinare</span>
+                <i></i>
+              </li>
+              <li data-value="gauss">
+                <span>gauss</span>
+                <i></i>
+              </li>
+              <li data-value="werkel">
+                <span>werkel</span>
+                <i></i>
+              </li>
+            </ul>
+            <!-- Показываем секцию выбора типа файлы через класс .visible-->
+            <ul class="marketing__card-list" id="marketingCards">
+              <li class="marketing__card-item">
+                <span>3D модели</span>
+                <i data-type="3d"></i>
+                <input type="checkbox" name="3d" >
+              </li>
+              <li class="marketing__card-item">
+                <span>Инструкции по сборке</span>
+                <i data-type="ai"></i>
+                <input type="checkbox" name="ai" >
+              </li>
+              <li class="marketing__card-item">
+                <span>Сертификаты</span>
+                <i data-type="cert"></i>
+                <input type="checkbox" name="cert" >
+              </li>
+              <li class="marketing__card-item">
+                <span>Технические рисунки</span>
+                <i data-type="drawing_pdf"></i>
+                <input type="checkbox" name="drawing_pdf" >
+              </li>
+              <li class="marketing__card-item">
+                <span>Презентационные материалы</span>
+                <i data-type="other"></i>
+                <input type="checkbox" name="other" >
+              </li>
+              <li class="marketing__card-item is-exists">
+                <span>Фотометрические данные</span>
+                <i data-type="photometric_data"></i>
+                <input type="checkbox" name="photometric_data" >
+              </li>
+              <li class="marketing__card-item is-exists">
+                <span>Интерьеры</span>
+                <i data-type="interiors"></i>
+                <input type="checkbox" name="interiors" >
+              </li>
+              <li class="marketing__card-item is-exists">
+                <span>Видео о товаре</span>
+                <i data-type="product_videos"></i>
+                <input type="checkbox" name="product_videos" >
+              </li>
+              <li class="marketing__card-item is-exists">
+                <span>Видеоинструкции</span>
+                <i data-type="video_instructions"></i>
+                <input type="checkbox" name="video_instructions" >
+              </li>
+              <li class="marketing__card-item is-exists">
+                <span>Руководство по эксплуатации</span>
+                <i data-type="user_manuals"></i>
+                <input type="checkbox" name="user_manuals" >
+              </li>
+            </ul>
+            <div class="marketing__files" id="marketingFiles">
+              <!-- Показываем секцию через класс .visible-->
+              <div class="marketing__files-section" data-type="cert">
+                <h3>Сертификаты</h3>
+                <div class="marketing__file-list">
+                  <div class="marketing__file-item">
+                    <div class="marketing__file-actions">
+                      <a href="assets/images/certificate.jpg" download="certificate" target="_blank"></a>
+                      <label><input class="invisible" type="checkbox" name="certificate" data-type="controller" ></label>
+                    </div>
+                    <img src="assets/images/certificate.jpg" alt="certificate" >
+                  </div>
+                  <div class="marketing__file-item">
+                    <div class="marketing__file-actions">
+                      <a href="assets/images/certificate.jpg" download="certificate" target="_blank"></a>
+                      <label><input class="invisible" type="checkbox" name="certificate" data-type="controller" checked ></label>
+                    </div>
+                    <img src="assets/images/certificate.jpg" alt="certificate" >
+                  </div>
+                  <div class="marketing__file-item">
+                    <div class="marketing__file-actions">
+                      <a href="assets/images/certificate.jpg" download="certificate" target="_blank"></a>
+                      <label><input class="invisible" type="checkbox" name="certificate" data-type="controller" ></label>
+                    </div>
+                    <img src="assets/images/certificate.jpg" alt="certificate" >
+                  </div>
+                  <div class="marketing__file-item">
+                    <div class="marketing__file-actions">
+                      <a href="assets/images/certificate.jpg" download="certificate" target="_blank"></a>
+                      <label><input class="invisible" type="checkbox" name="certificate" data-type="controller" ></label>
+                    </div>
+                    <img src="assets/images/certificate.jpg" alt="certificate" >
+                  </div>
+                  <div class="marketing__file-item">
+                    <div class="marketing__file-actions">
+                      <a href="assets/images/certificate.jpg" download="certificate" target="_blank"></a>
+                      <label><input class="invisible" type="checkbox" name="certificate" data-type="controller" ></label>
+                    </div>
+                    <img src="assets/images/certificate.jpg" alt="certificate" >
+                  </div>
+                </div>
+              </div>
+              <div class="marketing__files-section" data-type="ai">
+                <h3>Инструкции по сборке</h3>
+                <div class="marketing__file-list">
+                  <div class="marketing__file-item">
+                    <div class="marketing__file-actions">
+                      <a href="assets/images/instruction.jpg" download="instruction" target="_blank"></a>
+                      <label><input class="invisible" type="checkbox" name="certificate" data-type="controller" ></label>
+                    </div>
+                    <img src="assets/images/instruction.jpg" alt="instruction" >
+                  </div>
+                  <div class="marketing__file-item">
+                    <div class="marketing__file-actions">
+                      <a href="assets/images/instruction.jpg" download="instruction" target="_blank"></a>
+                      <label><input class="invisible" type="checkbox" name="certificate" data-type="controller" ></label>
+                    </div>
+                    <img src="assets/images/instruction.jpg" alt="instruction" >
+                  </div>
+                  <div class="marketing__file-item">
+                    <div class="marketing__file-actions">
+                      <a href="assets/images/instruction.jpg" download="instruction" target="_blank"></a>
+                      <label><input class="invisible" type="checkbox" name="certificate" data-type="controller" ></label>
+                    </div>
+                    <img src="assets/images/instruction.jpg" alt="instruction" >
+                  </div>
+                </div>
+              </div>
+              <div class="marketing__files-section" data-type="product_videos">
+                <h3>Видео о товаре</h3>
+                <div class="marketing__file-list marketing__file-list_video">
+                  <div class="marketing__file-item">
+                    <div class="marketing__file-video">
+                      <i><img src="assets/images/video_1.jpg" alt="video" ></i>
+                      <p>Видео инструкция Магнитной трековой системы и что-то там еще</p>
+                    </div>
+                  </div>
+                  <div class="marketing__file-item">
+                    <div class="marketing__file-video">
+                      <i><img src="assets/images/video_2.jpg" alt="video" ></i>
+                      <p>Видео инструкция Магнитной трековой системы и что-то там еще</p>
+                    </div>
+                  </div>
+                  <div class="marketing__file-item">
+                    <div class="marketing__file-video">
+                      <i><img src="assets/images/video_3.jpg" alt="video" ></i>
+                      <p>Видео инструкция Магнитной трековой системы и что-то там еще</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="marketing__files-section" data-type="video_instructions">
+                <h3>Shorts</h3>
+                <div class="marketing__file-list">
+                  <div class="marketing__file-item">
+                    <div class="marketing__file-shorts">
+                      <i><img src="assets/images/shorts_1.jpg" alt="short" ></i>
+                      <span>Магнитная трековая система</span>
+                      <p>
+                        <span>ARTE Lamp</span>
+                        <mark><span>2</span></mark>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="marketing__file-item">
+                    <div class="marketing__file-shorts">
+                      <i><img src="assets/images/shorts_2.jpg" alt="short" ></i>
+                      <span>Магнитная трековая система</span>
+                      <p>
+                        <span>ARTE Lamp</span>
+                        <mark><span>2</span></mark>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="marketing__file-item">
+                    <div class="marketing__file-shorts">
+                      <i><img src="assets/images/shorts_3.jpg" alt="short" ></i>
+                      <span>Магнитная трековая система</span>
+                      <p>
+                        <span>ARTE Lamp</span>
+                        <mark><span>2</span></mark>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="marketing__file-item">
+                    <div class="marketing__file-shorts">
+                      <i><img src="assets/images/shorts_4.jpg" alt="short" ></i>
+                      <span>Магнитная трековая система</span>
+                      <p>
+                        <span>ARTE Lamp</span>
+                        <mark><span>2</span></mark>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="marketing__file-item">
+                    <div class="marketing__file-shorts">
+                      <i><img src="assets/images/shorts_5.jpg" alt="short" ></i>
+                      <span>Магнитная трековая система</span>
+                      <p>
+                        <span>ARTE Lamp</span>
+                        <mark><span>2</span></mark>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="marketing__file-item">
+                    <div class="marketing__file-shorts">
+                      <i><img src="assets/images/shorts_6.jpg" alt="short" ></i>
+                      <span>Магнитная трековая система</span>
+                      <p>
+                        <span>ARTE Lamp</span>
+                        <mark><span>2</span></mark>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="marketing__files-section" data-type="3d">
+                <h3>3D Модели</h3>
+                <div class="marketing__file-list"></div>
+              </div>
+              <div class="marketing__files-section" data-type="drawing_pdf">
+                <h3>Технические рисунки</h3>
+                <div class="marketing__file-list"></div>
+              </div>
+              <div class="marketing__files-section" data-type="photometric_data">
+                <h3>Фотометрические данные</h3>
+                <div class="marketing__file-list"></div>
+              </div>
+              <div class="marketing__files-section" data-type="interiors">
+                <h3>Интерьеры</h3>
+                <div class="marketing__file-list"></div>
+              </div>
+              <div class="marketing__files-section" data-type="other">
+                <h3>Презентационные материалы</h3>
+                <div class="marketing__file-list"></div>
+              </div>
+              <div class="marketing__files-section" data-type="user_manuals">
+                <h3>Руководство по эксплуатации</h3>
+                <div class="marketing__file-list"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__bottom">
+            <div class="footer__bottom_text">
+              © 2019—2024 ООО Ярус ВСМ
+              <br >
+              Все права защищены
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="marketing-down" id="marketingDown">
+        <div class="container">
+          <div class="marketing-down__wrapper">
+            <p>
+              Выбрано файлов:
+              <span id="marketingDownCounter">4</span>
+            </p>
+            <div>
+              <button class="default-btn small-btn btn--white" id="marketingDownResetButton" type="button">
+                <span>Снять выделение</span>
+                <i></i>
+              </button>
+              <button class="default-btn small-btn btn--dark" id="marketingDownButton" type="button">
+                <span>Скачать архив</span>
+                <mark id="marketingDownSizeButton">(3,5 Мб)</mark>
+                <i></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="footer__nav">
+        <!-- Активному пункту меню, добавляем класс .active-->
+        <a class="footer__nav-item" href="#!">
+          <span class="pic pic_home"></span>
+          <span class="txt">Главная</span>
+        </a>
+        <button class="footer__nav-item" id="mobileSearchToggler">
+          <span class="pic pic_search"></span>
+          <span class="txt">Поиск</span>
+        </button>
+        <a class="footer__nav-item" href="#!">
+          <span class="pic pic_orders"></span>
+          <span class="txt">Заказы</span>
+        </a>
+        <a class="footer__nav-item" href="#!">
+          <span class="pic pic_account"></span>
+          <span class="txt">Аккаунт</span>
+        </a>
+      </nav>
+    </footer>
+    <div class="spinner" id="spinner">
+      <div class="spinner__body">
+        <div class="spinner__item"></div>
+        <div class="spinner__item"></div>
+        <div class="spinner__item"></div>
+      </div>
+    </div>
+    <!-- Показываем модалку с помощью класса .visible-->
+    <div class="order-war" id="orderLoggedWar">
+      <!-- Показываем контент с помощью класса .visible-->
+      <div class="order-war__body">
+        <span class="order-war__close close"></span>
+        <i></i>
+        <p>Чтобы добавить товар в заказ, необходимо зарегистрироваться или войти в аккаунт</p>
+        <!-- В ссылку ставим url на страницу вход/регистрация-->
+        <div class="order-war__buttons">
+          <a class="dark-btn block-btn" href="">Войти</a>
+          <a class="dark-btn block-btn" href="">Зарегистрироваться</a>
+        </div>
+      </div>
+    </div>
+    <!-- Показываем модалку с помощью класса .visible-->
+    <div class="order-war" id="orderAddProductWar">
+      <!-- Показываем контент с помощью класса .visible-->
+      <div class="order-war__body">
+        <span class="order-war__close close"></span>
+        <i></i>
+        <p>
+          Вы уверены, что хотите добавить товар в заказ со статусом «В резерве»?
+          <br >
+          Заказ будет возвращён в статус «В обработке»
+        </p>
+        <button class="dark-btn block-btn">Да, добавить товар</button>
+      </div>
+    </div>
+    <!-- Показываем модалку с помощью класса .visible-->
+    <div class="order-war" id="orderError">
+      <!-- Показываем контент с помощью класса .visible-->
+      <div class="order-war__body">
+        <span class="order-war__close close"></span>
+        <i></i>
+        <p>
+          <b>Ошибка</b>
+          <br >
+          К сожалению, не удалось выполнить запрос
+        </p>
+        <button class="dark-btn block-btn close">Закрыть</button>
+      </div>
+    </div>
+    <!-- Показываем модалку с помощью класса .visible-->
+    <div class="order-war" id="orderApproved">
+      <!-- Показываем контент с помощью класса .visible-->
+      <div class="order-war__body">
+        <span class="order-war__close close"></span>
+        <i></i>
+        <p>
+          <br >
+          Товар добавлен в заказ
+          <mark class="order-war__order-number"></mark>
+        </p>
+        <div class="order-war__body-bottom">
+          <button class="dark-btn block-btn close">Продолжить покупку</button>
+          <a class="dark-btn block-btn order_url" href="/admin/orders">Перейти в заказ</a>
+        </div>
+      </div>
+    </div>
+    <!-- Показываем модалку с помощью класса .visible-->
+    <div class="order-war" id="orderAddProductNewOrder">
+      <!-- Показываем контент с помощью класса .visible-->
+      <div class="order-war__body">
+        <span class="order-war__close close"></span>
+        <i></i>
+        <p>
+          Заказ не выбран.
+          <br >
+          Для товара будет создан Новый заказ.
+        </p>
+        <button class="dark-btn block-btn">Да, добавить товар</button>
+      </div>
+    </div>
+    <!-- Показать модалку .visible.show-->
+    <div class="modal fast-view" id="fastView">
+      <div class="modal-wrapper order-war__body">
+        <div class="modal-close close"></div>
+        <div class="modal-top">
+          <div class="modal-top__container">
+            <div class="modal-top__title _js-modal-name">Потолочная люстра Tet-A-Tet</div>
+            <div class="modal-top__article _js-modal-code">A1704LM-5CC</div>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="card-top _js-card-top">
+            <div class="card-top__left">
+              <div class="card-slider">
+                <div class="card-slider__main"><img class="_js-modal-image" src="img/slider-1.jpg" loading="lazy" ></div>
+              </div>
+            </div>
+            <div class="card-top__right">
+              <div class="card-top__info">
+                <div class="card-top__price">
+                  <div class="card-top__price-item card-top__price_crossed">
+                    <div class="card-top__price_title">Рекомендуемая розничная цена:</div>
+                    <div class="card-top__price_value">
+                      <span class="_js-modal-price-rrc">6 840</span>
+                      ₽
+                    </div>
+                  </div>
+                  <div class="card-top__price-item card-top__price_new">
+                    <div class="card-top__price_title">Рекомендуемая розничная цена распродажа:</div>
+                    <div class="card-top__price_value">
+                      <span class="_js-modal-price-sale">3 760</span>
+                      ₽
+                    </div>
+                  </div>
+                  <div class="card-top__price-item card-top__price_old">
+                    <div class="card-top__price_title">Ваша цена:</div>
+                    <div class="card-top__price_value">
+                      <span class="_js-modal-price">2 280</span>
+                      ₽
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-top__quantity">
+                <div class="card-top__quantity_changer">
+                  <button class="btn-reset btn--white changer__btn changer__btn_minus">—</button>
+                  <input class="changer__input _js-modal-quantity" type="text" min="1" maxlength="4" value="1" >
+                  <button class="btn-reset btn--white changer__btn changer__btn_plus">+</button>
+                </div>
+                <div class="card-top__quantity_value _js-modal-count">
+                  <span class="info">Просто какой-то длинный текст</span>
+                  <span class="success">234 шт в наличии</span>
+                  <span class="danger">Нет в наличии</span>
+                  <span class="message">Какой-то текст комментария или сообщения на несколько строк</span>
+                </div>
+              </div>
+              <div class="card-top__order">
+                <div class="card-top__order-wrap">
+                  <div class="card-top__order-status">
+                    <span>Заказ</span>
+                    <!-- По дефолту оставляем пустым-->
+                    <mark></mark>
+                  </div>
+                  <!-- Открыть селект по дефолту .custom-select--open-->
+                  <div class="custom-select">
+                    <div class="custom-select__top card-select__top">
+                      <!-- По дефолту можно отрендерить Новый заказ, далее он все равно перепишется дефолтным заказом пришедшем с бэка либо посмотреть как выставляется дефолтный заказ и повторить все его data аттрибуты-->
+                      <!-- При первом рендере, всегда ставим в custom-select__value текст Новый заказ, значение аттрибутов data-status="NEW_ORDER" data-status-text="Новый заказ"-->
+                      <div class="custom-select__value" data-status="NEW_ORDER" data-status-text="Новый заказ">Новый заказ</div>
+                      <div class="custom-select_open"></div>
+                    </div>
+                    <div class="custom-select__drop">
+                      <ul class="custom-select__list">
+                        <li class="custom-select__item custom-select__item--sort">
+                          <!-- Первым всегда идет опшен Новый заказ-->
+                          <!-- Для Нового заказа всегда ставим следующие data аттрибуты data-status="NEW_ORDER" data-status-text="Новый заказ"-->
+                          <label class="custom-select__option" data-status="NEW_ORDER" data-status-text="Новый заказ">
+                            <input class="invisible" type="radio" name="order" checked >
+                            <span>Новый заказ</span>
+                          </label>
+                        </li>
+                        <li class="custom-select__item custom-select__item--sort">
+                          <!-- В data-status ставим ТЕКСТ 'true' или 'false' в зависимости от того можно ли в заказ добавлять товары-->
+                          <!-- В data-status-text ставим текстовое значение статуса (В резерве, Не оформлен и т.д.)-->
+                          <label class="custom-select__option" data-order-id="8000355" data-article="TLS8000355" data-number1c="ЯР030481" data-created="03.07.2025" data-status="IN_ASSEMBLY" data-status-text="В сборке и доставке">
+                            <input class="invisible" type="radio" name="product-card-order" >
+                            <span>Заказ № TLS8000355 ЯР030481</span>
+                            <div>
+                              <i>от 03.07.2025</i>
+                              <mark>В сборке и доставке</mark>
+                            </div>
+                          </label>
+                        </li>
+                        <li class="custom-select__item custom-select__item--sort">
+                          <!-- В data-status ставим ТЕКСТ 'true' или 'false' в зависимости от того можно ли в заказ добавлять товары-->
+                          <!-- В data-status-text ставим текстовое значение статуса (В резерве, Не оформлен и т.д.)-->
+                          <label class="custom-select__option" data-order-id="8000602" data-article="TL8000602" data-number1c="ЯР030482" data-created="03.08.2025" data-status="RESERVED" data-status-text="В резерве">
+                            <input class="invisible" type="radio" name="product-card-order" >
+                            <span>Заказ № TL8000602 ЯР030482</span>
+                            <div>
+                              <i>от 03.08.2025</i>
+                              <mark>В резерве</mark>
+                            </div>
+                          </label>
+                        </li>
+                        <li class="custom-select__item custom-select__item--sort">
+                          <!-- В data-status ставим ТЕКСТ 'true' или 'false' в зависимости от того можно ли в заказ добавлять товары-->
+                          <!-- В data-status-text ставим текстовое значение статуса (В резерве, Не оформлен и т.д.)-->
+                          <label class="custom-select__option" data-order-id="8006950" data-article="TL8006950" data-number1c="ЯР030483" data-created="03.09.2025" data-status="NEW" data-status-text="Не оформлен">
+                            <input class="invisible" type="radio" name="product-card-order" >
+                            <span>Заказ № TL8006950 ЯР030483</span>
+                            <div>
+                              <i>от 03.09.2025</i>
+                              <mark>Не оформлен</mark>
+                            </div>
+                          </label>
+                        </li>
+                        <li class="custom-select__item custom-select__item--sort">
+                          <!-- В data-status ставим ТЕКСТ 'true' или 'false' в зависимости от того можно ли в заказ добавлять товары-->
+                          <!-- В data-status-text ставим текстовое значение статуса (В резерве, Не оформлен и т.д.)-->
+                          <label class="custom-select__option" data-order-id="8006961" data-article="TL8006961" data-number1c="ЯР030484" data-created="03.10.2025" data-status="NEW" data-status-text="Не оформлен">
+                            <input class="invisible" type="radio" name="product-card-order" >
+                            <span>Заказ № TL8006961 ЯР030484</span>
+                            <div>
+                              <i>от 03.10.2025</i>
+                              <mark>Не оформлен</mark>
+                            </div>
+                          </label>
+                        </li>
+                        <li class="custom-select__item custom-select__item--sort">
+                          <!-- В data-status ставим ТЕКСТ 'true' или 'false' в зависимости от того можно ли в заказ добавлять товары-->
+                          <!-- В data-status-text ставим текстовое значение статуса (В резерве, Не оформлен и т.д.)-->
+                          <label class="custom-select__option" data-order-id="8008844" data-article="TEST8008844" data-number1c="ЯР030485" data-created="03.11.2025" data-status="NEW" data-status-text="Не оформлен">
+                            <input class="invisible" type="radio" name="product-card-order" >
+                            <span>Заказ № TEST8008844 ЯР030485</span>
+                            <div>
+                              <i>от 03.11.2025</i>
+                              <mark>Не оформлен</mark>
+                            </div>
+                          </label>
+                        </li>
+                        <li class="custom-select__item custom-select__item--sort">
+                          <!-- В data-status ставим ТЕКСТ 'true' или 'false' в зависимости от того можно ли в заказ добавлять товары-->
+                          <!-- В data-status-text ставим текстовое значение статуса (В резерве, Не оформлен и т.д.)-->
+                          <label class="custom-select__option" data-order-id="8008847" data-article="TEST8008847" data-number1c="ЯР030486" data-created="03.12.2025" data-status="RESERVED" data-status-text="В резерве">
+                            <input class="invisible" type="radio" name="product-card-order" >
+                            <span>Заказ № TEST8008847 ЯР030486</span>
+                            <div>
+                              <i>от 03.12.2025</i>
+                              <mark>В резерве</mark>
+                            </div>
+                          </label>
+                        </li>
+                        <li class="custom-select__item custom-select__item--sort">
+                          <!-- В data-status ставим ТЕКСТ 'true' или 'false' в зависимости от того можно ли в заказ добавлять товары-->
+                          <!-- В data-status-text ставим текстовое значение статуса (В резерве, Не оформлен и т.д.)-->
+                          <label class="custom-select__option" data-order-id="8008848" data-article="TEST8008848" data-number1c="ЯР030487" data-created="03.17.2025" data-status="RESERVED" data-status-text="В резерве">
+                            <input class="invisible" type="radio" name="product-card-order" >
+                            <span>Заказ № TEST8008848 ЯР030487</span>
+                            <div>
+                              <i>от 03.17.2025</i>
+                              <mark>В резерве</mark>
+                            </div>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- Если пользователь залогинен, к кнопке Добавить в заказ добавляем аттрибут data-product-id со значением id текущего продукта-->
+                <button class="btn-reset default-btn card-top__btn_order _js-modal-add" data-product-id="102841-prod-example">Добавить в заказ</button>
+              </div>
+              <div class="card-top__down">
+                <div class="card-top__down_title">Итого заказ:</div>
+                <div class="card-top__down_total">
+                  <span class="_js-modal-total">20 340</span>
+                  ₽
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal__slider fulfilled">
+          <span class="modal__slider-loader"></span>
+          <div class="modal__slider-body">
+            <h3>С этим товаром покупают</h3>
+            <div class="modal__slider-swiper">
+              <div class="swiper">
+                <div class="swiper-wrapper" id="buyWithProductList"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Показываем модалку с помощью класса .visible-->
+    <div class="order-war" id="success">
+      <!-- Показываем контент с помощью класса .visible-->
+      <div class="order-war__body">
+        <span class="order-war__close close"></span>
+        <i></i>
+        <p>Товар успешно добавлен в заказ</p>
+        <button class="dark-btn block-btn close">Продолжить покупки</button>
+      </div>
+    </div>
+    <!-- Для того чтобы показать/скрыть модалку с заказами, тоглим класс .visible        .visible.initialized-->
+    <div class="orders" id="orders">
+      <div class="orders__back"></div>
+      <button class="orders__toggler"><span>все ваши заказы</span></button>
+      <div class="orders__header">
+        <h3 class="orders__title">Ваши заказы</h3>
+        <button class="orders__close"></button>
+      </div>
+      <div class="orders__body">
+        <div class="orders__selector">
+          <!-- Открыть селект по дефолту .custom-select--open-->
+          <div class="custom-select-order-selector">
+            <div class="custom-select__top">
+              <div class="custom-select__value" data-status data-status-text>Выберите заказ</div>
+              <div class="custom-select_open"></div>
+            </div>
+            <div class="custom-select__drop">
+              <ul class="custom-select__list">
+                <li class="custom-select__item">
+                  <!-- Первым всегда идет опшен Все заказы checked-->
+                  <label class="custom-select__option">
+                    <input class="invisible" type="checkbox" name="order-item" data-id="all" >
+                    <span>Все заказы</span>
+                  </label>
+                </li>
+              </ul>
+              <div class="orders__loader" id="ordersLoader">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="orders__list"></div>
+        <div class="orders__total">
+          <mark>Итого:</mark>
+          <span>62 458 280 р.</span>
+        </div>
+      </div>
+      <div class="orders__footer">
+        <a class="btn block-btn small-btn default-btn btn--dark" href="#!">перейти в заказы</a>
+        <button class="btn block-btn small-btn default-btn btn--white go-next">продолжить покупки</button>
+      </div>
+    </div>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js" defer></script>
+    <script src="js/pages/marketing.min.js" defer></script>
+    <!-- Если по ТЗ не поддерживаем IE11, то оставляем, если поддерживаем, то убираем и тестируем поддержку IE11-->
+    <script>
+      if (navigator.userAgent.indexOf("MSIE") !== -1 || navigator.appVersion.indexOf("Trident/") > -1) {
+        var scripts = document.querySelectorAll("script");
+        for (var i = 0; i < scripts.length; i++) {
+          if (scripts[i].src !== "") {
+            var node = scripts[i];
+            node.parentNode.removeChild(node);
+          }
+        }
+
+        var body = document.querySelector("body");
+        while (body.firstChild) {
+          body.removeChild(body.firstChild);
+        }
+
+        var video = document.createElement("video");
+        video.src = "https://aws.massive.ru/Blank Title/ie-not-supported.mp4";
+        video.autoplay = true;
+        video.loop = true;
+        video.muted = true;
+        video.playsInline = true;
+        video.setAttribute("style", "max-width: 50%; height: auto;");
+
+        var title = document.createElement("h1");
+        title.setAttribute("style", "width: 100%; max-width: 700px; text-align: center; font-family: sans-serif; line-height: 1.3; margin-bottom: 1em; margin-top: 0; font-size: 26px; padding-left: 20px; padding-right: 20px;");
+        title.innerText = "К сожалению, мы не поддерживаем браузер Internet Explorer 11 и более ранние версии!";
+
+        var text = document.createElement("p");
+        text.setAttribute("style", "width: 100%; max-width: 400px; text-align: center; font-family: sans-serif; line-height: 1.3; margin-bottom: 3em; font-size: 18px; padding-left: 20px; padding-right: 20px;");
+        text.innerText = "Для просмотра сайта, воспользуйтесь более новой версией браузера.";
+
+        body.setAttribute("style", "display: flex; flex-direction: column; align-items: center; justify-content: center;");
+        body.appendChild(title);
+        body.appendChild(text);
+        body.appendChild(video);
+      }
+    </script>
+  </body>
+</html>
