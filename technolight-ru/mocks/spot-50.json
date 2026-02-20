@@ -1,0 +1,1516 @@
+{
+	"data": {
+		"selector_view": "buttons",
+		"id": 21,
+		"alias": "spot-50",
+		"title": "Спот 50",
+		"type": "series",
+		"is_new": false,
+		"images": [
+			{
+				"name": "black",
+				"image": "public\/images\/category\/spot-50_black.webp"
+			},
+			{
+				"name": "white",
+				"image": "public\/images\/category\/spot-50_white.webp"
+			},
+			{
+				"name": "black-white",
+				"image": "public\/images\/category\/spot-50_black-white.webp"
+			}
+		],
+		"ip_class": null,
+		"videos": null,
+		"files": [
+			{
+				"id": 147675,
+				"url": "https:\/\/technolight.ru\/download\/147675",
+				"name": "Инструкция по установке"
+			},
+			{
+				"id": 137649,
+				"url": "https:\/\/technolight.ru\/download\/137649",
+				"name": "3D модель"
+			},
+			{
+				"id": 147648,
+				"url": "https:\/\/technolight.ru\/download\/147648",
+				"name": "Фотометрические данные"
+			}
+		],
+		"description": "<p><strong>Спот 50<\/strong><\/p><p>Серия Спот — это главный инструмент трековой системы для акцентного освещения. Корпус изготовлен из алюминия высокого давления, что обеспечивает необходимый теплоотвод. Светодиод CITIZEN с CRI 93+ и инновационная оптическая система обеспечивают высокое качество света, а Сменная оптика с углами рассеивания 18-36-60° и возможность применения светофильтров Спред\/Ханикомб. Управление осуществляется по протоколам 1-10В, DALI, Zigbee, а также по беспроводной системе управления CASAMBI.<\/p>",
+		"badges": [],
+		"gallery": [],
+		"fields": {
+			"armature_color": [
+				{
+					"value": "Чёрный",
+					"products": [
+						443,
+						451,
+						459,
+						470,
+						471,
+						503,
+						697,
+						987,
+						990
+					]
+				},
+				{
+					"value": "Черно-белый",
+					"products": [
+						444,
+						452,
+						460,
+						472,
+						473,
+						504,
+						988,
+						991
+					]
+				},
+				{
+					"value": "Белый",
+					"products": [
+						491,
+						492,
+						502,
+						505,
+						514,
+						515,
+						989,
+						992
+					]
+				}
+			],
+			"tip_upravleniya": [
+				{
+					"value": "NO DIM",
+					"products": [
+						443,
+						444,
+						459,
+						460,
+						491,
+						492,
+						697
+					]
+				},
+				{
+					"value": "1-10В",
+					"products": [
+						451,
+						452,
+						502,
+						503,
+						504,
+						505
+					]
+				},
+				{
+					"value": "DALI",
+					"products": [
+						470,
+						471,
+						472,
+						473,
+						514,
+						515
+					]
+				},
+				{
+					"value": "Zigbee",
+					"products": [
+						987,
+						988,
+						989,
+						990,
+						991,
+						992
+					]
+				}
+			],
+			"light_temperatures": [
+				{
+					"value": 3000,
+					"products": [
+						443,
+						444,
+						451,
+						452,
+						470,
+						472,
+						491,
+						502,
+						514,
+						987,
+						988,
+						989
+					]
+				},
+				{
+					"value": 4000,
+					"products": [
+						459,
+						460,
+						471,
+						473,
+						492,
+						503,
+						504,
+						505,
+						515,
+						990,
+						991,
+						992
+					]
+				},
+				{
+					"value": 2700,
+					"products": [
+						697
+					]
+				}
+			]
+		},
+		"translate": {
+			"armature_color": "Цвет",
+			"tip_upravleniya": "Тип управления",
+			"light_temperatures": "Цветовая температура",
+			"power_range_w": "Мощность W",
+			"input_voltage_v": "Входное напряжение",
+			"light_flow": "Световой поток",
+			"color_rendering_index": "Индекс цветопередачи",
+			"ripple_factor": "Коэффициент пульсации",
+			"light_angle": "Угол рассеивания",
+			"ugr": "UGR",
+			"ip_class": "Степень пыле-влагозащищенности",
+			"length": "Длина",
+			"width": "Ширина",
+			"diameter": "Диаметр",
+			"height": "Высота"
+		},
+		"specifications": {
+			"Тип упаковки": "PAP (код 20)",
+			"Производитель": "Technolight®",
+			"Оптика": "Линзы из поликарбоната, угол рассеивания — узкий 18°, средний 36° и широкий 60°, UGR<16.",
+			"Тип монтажа": "Светильники легко устанавливаются в трек. Держатся за счет магнитов и механических фиксаторов. Напряжение питания — 48В.",
+			"Конструкция": "Литьевой корпус из алюминия с порошковым покрытием белого (RAL 9016) и черного (RAL 9005) цвета, поворотный механизм на 355 градусов по горизонтали и 90 градусов по вертикали, магнитное крепление и механические фиксаторы для установки в трек, дополнительные световые аксессуары.",
+			"Дополнительно": "Ознакомьтесь с инструкцией по установке светильников до начала использования. Инструкция поставляется в комплекте вместе со светильником.",
+			"Источник света": "LED Citizen, 13Вт, 730-820лм, 3000K и 4000K, CRI 93+.",
+			"Степень защиты": "IP20",
+			"Регулировка яркости": "Недиммируемые, аналоговый 1-10В, цифровой протокол DALI."
+		},
+		"characteristics": [
+			"power_range_w",
+			"input_voltage_v",
+			"light_flow",
+			"light_temperatures",
+			"color_rendering_index",
+			"ripple_factor",
+			"light_angle",
+			"ugr",
+			"tip_upravleniya",
+			"ip_class",
+			"length",
+			"width",
+			"diameter",
+			"height",
+			"armature_color"
+		],
+		"units": {
+			"light_temperatures": " K",
+			"power_range_w": " Вт",
+			"input_voltage_v": " B",
+			"light_flow": " Лм",
+			"color_rendering_index": "+",
+			"light_angle": "°",
+			"ip_class": " IP",
+			"length": " см",
+			"width": " см",
+			"diameter": " см",
+			"height": " см"
+		},
+		"products_available": [
+			{
+				"id": 443,
+				"images": [
+					"https:\/\/shrunk.website.yandexcloud.net\/images\/63\/b1\/63b168540bc3d29c77c60bcc9d5ff7b7\/570x570\/0.webp"
+				],
+				"article_id": "165927",
+				"article_hash": "63b168540bc3d29c77c60bcc9d5ff7b7",
+				"article": "86113-3K-01-BK",
+				"title": "Спот 50 48В 13Вт 730лм 3000К 93+ 36° недиммируемый RAL 9005 черный",
+				"price": 8330,
+				"old_price": 0,
+				"sale": false,
+				"description": "<p>Серия Спот — это главный инструмент трековой системы для акцентного освещения.<\/p>\n<p>Корпус изготовлен из алюминия высокого давления, что обеспечивает необходимый теплоотвод. Светодиод CITIZEN с CRI 93+ и инновационная оптическая система обеспечивают высокое качество света, а Сменная оптика с углами рассеивания 18-36-60° и возможность применения светофильтров Спред\/Ханикомб.<\/p>\n<p>Управление осуществляется по протоколам 1-10В, DALI, Zigbee, а также по беспроводной системе управления CASAMBI.<\/p>",
+				"ignore_errors": 0,
+				"armature_color": "Чёрный",
+				"tip_upravleniya": "NO DIM",
+				"light_temperatures": 3000,
+				"power_range_w": 13,
+				"input_voltage_v": 48,
+				"light_flow": 730,
+				"color_rendering_index": 93,
+				"ripple_factor": "<1%",
+				"light_angle": 36,
+				"ugr": "<13",
+				"ip_class": 20,
+				"length": 12,
+				"width": 17.3,
+				"diameter": 5,
+				"height": 17.2,
+				"drawings": [
+					"https:\/\/aws.technolight.ru\/technolight\/public\/images\/drawings\/86113-3K-01-BK.svg?v=1771453036"
+				],
+				"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/63\/b1\/63b168540bc3d29c77c60bcc9d5ff7b7\/570x570\/0.webp",
+				"power": 0,
+				"root": [
+					"Системы"
+				],
+				"collection": [
+					"PROFI 48V"
+				],
+				"category": [
+					"Светильники"
+				],
+				"series": [
+					"Спот 50"
+				],
+				"accessories": [],
+				"tags": [],
+				"ban_sale": false,
+				"configuratorLink": null
+			},
+			{
+				"id": 444,
+				"images": [
+					"https:\/\/shrunk.website.yandexcloud.net\/images\/b5\/41\/b5418b390ddd605619c2b4b1c28c355c\/570x570\/0.webp"
+				],
+				"article_id": "165928",
+				"article_hash": "b5418b390ddd605619c2b4b1c28c355c",
+				"article": "86113-3K-01-WH",
+				"title": "Спот 50 48В 13Вт 730лм 3000К 93+ 36° недиммируемый RAL 9016 белый",
+				"price": 8330,
+				"old_price": 0,
+				"sale": false,
+				"description": "<p>Серия Спот — это главный инструмент трековой системы для акцентного освещения.<\/p>\n<p>Корпус изготовлен из алюминия высокого давления, что обеспечивает необходимый теплоотвод. Светодиод CITIZEN с CRI 93+ и инновационная оптическая система обеспечивают высокое качество света, а Сменная оптика с углами рассеивания 18-36-60° и возможность применения светофильтров Спред\/Ханикомб.<\/p>\n<p>Управление осуществляется по протоколам 1-10В, DALI, Zigbee, а также по беспроводной системе управления CASAMBI.<\/p>",
+				"ignore_errors": 0,
+				"armature_color": "Черно-белый",
+				"tip_upravleniya": "NO DIM",
+				"light_temperatures": 3000,
+				"power_range_w": 13,
+				"input_voltage_v": 48,
+				"light_flow": 730,
+				"color_rendering_index": 93,
+				"ripple_factor": "<1%",
+				"light_angle": 36,
+				"ugr": "<13",
+				"ip_class": 20,
+				"length": 12,
+				"width": 17.3,
+				"diameter": 5,
+				"height": 17.2,
+				"drawings": [
+					"https:\/\/aws.technolight.ru\/technolight\/public\/images\/drawings\/86113-3K-01-BK.svg?v=1771453036"
+				],
+				"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/b5\/41\/b5418b390ddd605619c2b4b1c28c355c\/570x570\/0.webp",
+				"power": 0,
+				"root": [
+					"Системы"
+				],
+				"collection": [
+					"PROFI 48V"
+				],
+				"category": [
+					"Светильники"
+				],
+				"series": [
+					"Спот 50"
+				],
+				"accessories": [],
+				"tags": [],
+				"ban_sale": false,
+				"configuratorLink": null
+			},
+			{
+				"id": 451,
+				"images": [
+					"https:\/\/shrunk.website.yandexcloud.net\/images\/6c\/71\/6c71f4b50badc532349b1e57d0d91f7d\/570x570\/0.webp"
+				],
+				"article_id": "165935",
+				"article_hash": "6c71f4b50badc532349b1e57d0d91f7d",
+				"article": "86113-3K-03-BK",
+				"title": "Спот 50 48В 13Вт 730лм 3000К 93+ 36° диммирование 1-10В RAL 9005 черный",
+				"price": 10630,
+				"old_price": 0,
+				"sale": false,
+				"description": "<p>Серия Спот — это главный инструмент трековой системы для акцентного освещения.<\/p>\n<p>Корпус изготовлен из алюминия высокого давления, что обеспечивает необходимый теплоотвод. Светодиод CITIZEN с CRI 93+ и инновационная оптическая система обеспечивают высокое качество света, а Сменная оптика с углами рассеивания 18-36-60° и возможность применения светофильтров Спред\/Ханикомб.<\/p>\n<p>Управление осуществляется по протоколам 1-10В, DALI, Zigbee, а также по беспроводной системе управления CASAMBI.<\/p>",
+				"ignore_errors": 0,
+				"armature_color": "Чёрный",
+				"tip_upravleniya": "1-10В",
+				"light_temperatures": 3000,
+				"power_range_w": 13,
+				"input_voltage_v": 48,
+				"light_flow": 730,
+				"color_rendering_index": 93,
+				"ripple_factor": "<1%",
+				"light_angle": 36,
+				"ugr": "<13",
+				"ip_class": 20,
+				"length": 12,
+				"width": 17.3,
+				"diameter": 5,
+				"height": 17.2,
+				"drawings": [
+					"https:\/\/aws.technolight.ru\/technolight\/public\/images\/drawings\/86113-3K-01-BK.svg?v=1771453036"
+				],
+				"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/6c\/71\/6c71f4b50badc532349b1e57d0d91f7d\/570x570\/0.webp",
+				"power": 0,
+				"root": [
+					"Системы"
+				],
+				"collection": [
+					"PROFI 48V"
+				],
+				"category": [
+					"Светильники"
+				],
+				"series": [
+					"Спот 50"
+				],
+				"accessories": [],
+				"tags": [],
+				"ban_sale": false,
+				"configuratorLink": null
+			},
+			{
+				"id": 452,
+				"images": [
+					"https:\/\/shrunk.website.yandexcloud.net\/images\/98\/fa\/98fa0990e07e28f3570e01a6c399efe0\/570x570\/0.webp"
+				],
+				"article_id": "165936",
+				"article_hash": "98fa0990e07e28f3570e01a6c399efe0",
+				"article": "86113-3K-03-WH",
+				"title": "Спот 50 48В 13Вт 730лм 3000К 93+ 36° диммирование 1-10В RAL 9016 белый",
+				"price": 10630,
+				"old_price": 0,
+				"sale": false,
+				"description": "<p>Серия Спот — это главный инструмент трековой системы для акцентного освещения.<\/p>\n<p>Корпус изготовлен из алюминия высокого давления, что обеспечивает необходимый теплоотвод. Светодиод CITIZEN с CRI 93+ и инновационная оптическая система обеспечивают высокое качество света, а Сменная оптика с углами рассеивания 18-36-60° и возможность применения светофильтров Спред\/Ханикомб.<\/p>\n<p>Управление осуществляется по протоколам 1-10В, DALI, Zigbee, а также по беспроводной системе управления CASAMBI.<\/p>",
+				"ignore_errors": 0,
+				"armature_color": "Черно-белый",
+				"tip_upravleniya": "1-10В",
+				"light_temperatures": 3000,
+				"power_range_w": 13,
+				"input_voltage_v": 48,
+				"light_flow": 730,
+				"color_rendering_index": 93,
+				"ripple_factor": "<1%",
+				"light_angle": 36,
+				"ugr": "<13",
+				"ip_class": 20,
+				"length": 12,
+				"width": 17.3,
+				"diameter": 5,
+				"height": 17.2,
+				"drawings": [
+					"https:\/\/aws.technolight.ru\/technolight\/public\/images\/drawings\/86113-3K-01-BK.svg?v=1771453036"
+				],
+				"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/98\/fa\/98fa0990e07e28f3570e01a6c399efe0\/570x570\/0.webp",
+				"power": 0,
+				"root": [
+					"Системы"
+				],
+				"collection": [
+					"PROFI 48V"
+				],
+				"category": [
+					"Светильники"
+				],
+				"series": [
+					"Спот 50"
+				],
+				"accessories": [],
+				"tags": [],
+				"ban_sale": false,
+				"configuratorLink": null
+			},
+			{
+				"id": 459,
+				"images": [
+					"https:\/\/shrunk.website.yandexcloud.net\/images\/56\/80\/568066913e4c98e5c743f9712f60c905\/570x570\/0.webp"
+				],
+				"article_id": "165943",
+				"article_hash": "568066913e4c98e5c743f9712f60c905",
+				"article": "86113-4K-01-BK",
+				"title": "Спот 50 48В 13Вт 820лм 4000К 93+ 36° недиммируемый RAL 9005 черный",
+				"price": 8330,
+				"old_price": 0,
+				"sale": false,
+				"description": "<p>Серия Спот — это главный инструмент трековой системы для акцентного освещения.<\/p>\n<p>Корпус изготовлен из алюминия высокого давления, что обеспечивает необходимый теплоотвод. Светодиод CITIZEN с CRI 93+ и инновационная оптическая система обеспечивают высокое качество света, а Сменная оптика с углами рассеивания 18-36-60° и возможность применения светофильтров Спред\/Ханикомб.<\/p>\n<p>Управление осуществляется по протоколам 1-10В, DALI, Zigbee, а также по беспроводной системе управления CASAMBI.<\/p>",
+				"ignore_errors": 0,
+				"armature_color": "Чёрный",
+				"tip_upravleniya": "NO DIM",
+				"light_temperatures": 4000,
+				"power_range_w": 13,
+				"input_voltage_v": 48,
+				"light_flow": 820,
+				"color_rendering_index": 93,
+				"ripple_factor": "<1%",
+				"light_angle": 36,
+				"ugr": "<13",
+				"ip_class": 20,
+				"length": 12,
+				"width": 17.3,
+				"diameter": 5,
+				"height": 17.2,
+				"drawings": [
+					"https:\/\/aws.technolight.ru\/technolight\/public\/images\/drawings\/86113-3K-01-BK.svg?v=1771453036"
+				],
+				"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/56\/80\/568066913e4c98e5c743f9712f60c905\/570x570\/0.webp",
+				"power": 0,
+				"root": [
+					"Системы"
+				],
+				"collection": [
+					"PROFI 48V"
+				],
+				"category": [
+					"Светильники"
+				],
+				"series": [
+					"Спот 50"
+				],
+				"accessories": [],
+				"tags": [],
+				"ban_sale": false,
+				"configuratorLink": null
+			},
+			{
+				"id": 460,
+				"images": [
+					"https:\/\/shrunk.website.yandexcloud.net\/images\/9b\/88\/9b885ae17fb62076aebcc72185e8ccdf\/570x570\/0.webp"
+				],
+				"article_id": "165944",
+				"article_hash": "9b885ae17fb62076aebcc72185e8ccdf",
+				"article": "86113-4K-01-WH",
+				"title": "Спот 50 48В 13Вт 820лм 4000К 93+ 36° недиммируемый RAL 9016 белый",
+				"price": 8330,
+				"old_price": 0,
+				"sale": false,
+				"description": "<p>Серия Спот — это главный инструмент трековой системы для акцентного освещения.<\/p>\n<p>Корпус изготовлен из алюминия высокого давления, что обеспечивает необходимый теплоотвод. Светодиод CITIZEN с CRI 93+ и инновационная оптическая система обеспечивают высокое качество света, а Сменная оптика с углами рассеивания 18-36-60° и возможность применения светофильтров Спред\/Ханикомб.<\/p>\n<p>Управление осуществляется по протоколам 1-10В, DALI, Zigbee, а также по беспроводной системе управления CASAMBI.<\/p>",
+				"ignore_errors": 0,
+				"armature_color": "Черно-белый",
+				"tip_upravleniya": "NO DIM",
+				"light_temperatures": 4000,
+				"power_range_w": 13,
+				"input_voltage_v": 48,
+				"light_flow": 820,
+				"color_rendering_index": 93,
+				"ripple_factor": "<1%",
+				"light_angle": 36,
+				"ugr": "<13",
+				"ip_class": 20,
+				"length": 12,
+				"width": 17.3,
+				"diameter": 5,
+				"height": 17.2,
+				"drawings": [
+					"https:\/\/aws.technolight.ru\/technolight\/public\/images\/drawings\/86113-3K-01-BK.svg?v=1771453036"
+				],
+				"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/9b\/88\/9b885ae17fb62076aebcc72185e8ccdf\/570x570\/0.webp",
+				"power": 0,
+				"root": [
+					"Системы"
+				],
+				"collection": [
+					"PROFI 48V"
+				],
+				"category": [
+					"Светильники"
+				],
+				"series": [
+					"Спот 50"
+				],
+				"accessories": [],
+				"tags": [],
+				"ban_sale": false,
+				"configuratorLink": null
+			},
+			{
+				"id": 470,
+				"images": [
+					"https:\/\/shrunk.website.yandexcloud.net\/images\/62\/bf\/62bf6a51a6e082b6f870892c53efa3a0\/570x570\/0.webp"
+				],
+				"article_id": "165954",
+				"article_hash": "62bf6a51a6e082b6f870892c53efa3a0",
+				"article": "86113-3K-04-BK",
+				"title": "Спот 50 48В 13Вт 730лм 3000К 93+ 36° диммирование DALI RAL 9005 черный",
+				"price": 11330,
+				"old_price": 0,
+				"sale": false,
+				"description": "<p>Серия Спот — это главный инструмент трековой системы для акцентного освещения.<\/p>\n<p>Корпус изготовлен из алюминия высокого давления, что обеспечивает необходимый теплоотвод. Светодиод CITIZEN с CRI 93+ и инновационная оптическая система обеспечивают высокое качество света, а Сменная оптика с углами рассеивания 18-36-60° и возможность применения светофильтров Спред\/Ханикомб.<\/p>\n<p>Управление осуществляется по протоколам 1-10В, DALI, Zigbee, а также по беспроводной системе управления CASAMBI.<\/p>",
+				"ignore_errors": 0,
+				"armature_color": "Чёрный",
+				"tip_upravleniya": "DALI",
+				"light_temperatures": 3000,
+				"power_range_w": 13,
+				"input_voltage_v": 48,
+				"light_flow": 730,
+				"color_rendering_index": 93,
+				"ripple_factor": "<1%",
+				"light_angle": 36,
+				"ugr": "<13",
+				"ip_class": 20,
+				"length": 12,
+				"width": 17.3,
+				"diameter": 5,
+				"height": 17.2,
+				"drawings": [
+					"https:\/\/aws.technolight.ru\/technolight\/public\/images\/drawings\/86113-3K-01-BK.svg?v=1771453036"
+				],
+				"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/62\/bf\/62bf6a51a6e082b6f870892c53efa3a0\/570x570\/0.webp",
+				"power": 0,
+				"root": [
+					"Системы"
+				],
+				"collection": [
+					"PROFI 48V"
+				],
+				"category": [
+					"Светильники"
+				],
+				"series": [
+					"Спот 50"
+				],
+				"accessories": [],
+				"tags": [],
+				"ban_sale": false,
+				"configuratorLink": null
+			},
+			{
+				"id": 471,
+				"images": [
+					"https:\/\/shrunk.website.yandexcloud.net\/images\/81\/51\/81515200bcc20c816f8238ead0f4e9e1\/570x570\/0.webp"
+				],
+				"article_id": "165955",
+				"article_hash": "81515200bcc20c816f8238ead0f4e9e1",
+				"article": "86113-4K-04-BK",
+				"title": "Спот 50 48В 13Вт 820лм 4000К 93+ 36° диммирование DALI RAL 9005 черный",
+				"price": 11330,
+				"old_price": 0,
+				"sale": false,
+				"description": "<p>Серия Спот — это главный инструмент трековой системы для акцентного освещения.<\/p>\n<p>Корпус изготовлен из алюминия высокого давления, что обеспечивает необходимый теплоотвод. Светодиод CITIZEN с CRI 93+ и инновационная оптическая система обеспечивают высокое качество света, а Сменная оптика с углами рассеивания 18-36-60° и возможность применения светофильтров Спред\/Ханикомб.<\/p>\n<p>Управление осуществляется по протоколам 1-10В, DALI, Zigbee, а также по беспроводной системе управления CASAMBI.<\/p>",
+				"ignore_errors": 0,
+				"armature_color": "Чёрный",
+				"tip_upravleniya": "DALI",
+				"light_temperatures": 4000,
+				"power_range_w": 13,
+				"input_voltage_v": 48,
+				"light_flow": 820,
+				"color_rendering_index": 93,
+				"ripple_factor": "<1%",
+				"light_angle": 36,
+				"ugr": "<13",
+				"ip_class": 20,
+				"length": 12,
+				"width": 17.3,
+				"diameter": 5,
+				"height": 17.2,
+				"drawings": [
+					"https:\/\/aws.technolight.ru\/technolight\/public\/images\/drawings\/86113-3K-01-BK.svg?v=1771453036"
+				],
+				"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/81\/51\/81515200bcc20c816f8238ead0f4e9e1\/570x570\/0.webp",
+				"power": 0,
+				"root": [
+					"Системы"
+				],
+				"collection": [
+					"PROFI 48V"
+				],
+				"category": [
+					"Светильники"
+				],
+				"series": [
+					"Спот 50"
+				],
+				"accessories": [],
+				"tags": [],
+				"ban_sale": false,
+				"configuratorLink": null
+			},
+			{
+				"id": 472,
+				"images": [
+					"https:\/\/shrunk.website.yandexcloud.net\/images\/f9\/05\/f905955778629ba8ba48c404516676c9\/570x570\/0.webp"
+				],
+				"article_id": "165956",
+				"article_hash": "f905955778629ba8ba48c404516676c9",
+				"article": "86113-3K-04-WH",
+				"title": "Спот 50 48В 13Вт 730лм 3000К 93+ 36° диммирование DALI RAL 9016 белый",
+				"price": 11330,
+				"old_price": 0,
+				"sale": false,
+				"description": "<p>Серия Спот — это главный инструмент трековой системы для акцентного освещения.<\/p>\n<p>Корпус изготовлен из алюминия высокого давления, что обеспечивает необходимый теплоотвод. Светодиод CITIZEN с CRI 93+ и инновационная оптическая система обеспечивают высокое качество света, а Сменная оптика с углами рассеивания 18-36-60° и возможность применения светофильтров Спред\/Ханикомб.<\/p>\n<p>Управление осуществляется по протоколам 1-10В, DALI, Zigbee, а также по беспроводной системе управления CASAMBI.<\/p>",
+				"ignore_errors": 0,
+				"armature_color": "Черно-белый",
+				"tip_upravleniya": "DALI",
+				"light_temperatures": 3000,
+				"power_range_w": 13,
+				"input_voltage_v": 48,
+				"light_flow": 730,
+				"color_rendering_index": 93,
+				"ripple_factor": "<1%",
+				"light_angle": 36,
+				"ugr": "<13",
+				"ip_class": 20,
+				"length": 12,
+				"width": 17.3,
+				"diameter": 5,
+				"height": 17.2,
+				"drawings": [
+					"https:\/\/aws.technolight.ru\/technolight\/public\/images\/drawings\/86113-3K-01-BK.svg?v=1771453036"
+				],
+				"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/f9\/05\/f905955778629ba8ba48c404516676c9\/570x570\/0.webp",
+				"power": 0,
+				"root": [
+					"Системы"
+				],
+				"collection": [
+					"PROFI 48V"
+				],
+				"category": [
+					"Светильники"
+				],
+				"series": [
+					"Спот 50"
+				],
+				"accessories": [],
+				"tags": [],
+				"ban_sale": false,
+				"configuratorLink": null
+			},
+			{
+				"id": 473,
+				"images": [
+					"https:\/\/shrunk.website.yandexcloud.net\/images\/b7\/63\/b76391faae722d9601e47b4f028374a6\/570x570\/0.webp"
+				],
+				"article_id": "165957",
+				"article_hash": "b76391faae722d9601e47b4f028374a6",
+				"article": "86113-4K-04-WH",
+				"title": "Спот 50 48В 13Вт 820лм 4000К 93+ 36° диммирование DALI RAL 9016 белый",
+				"price": 11330,
+				"old_price": 0,
+				"sale": false,
+				"description": "<p>Серия Спот — это главный инструмент трековой системы для акцентного освещения.<\/p>\n<p>Корпус изготовлен из алюминия высокого давления, что обеспечивает необходимый теплоотвод. Светодиод CITIZEN с CRI 93+ и инновационная оптическая система обеспечивают высокое качество света, а Сменная оптика с углами рассеивания 18-36-60° и возможность применения светофильтров Спред\/Ханикомб.<\/p>\n<p>Управление осуществляется по протоколам 1-10В, DALI, Zigbee, а также по беспроводной системе управления CASAMBI.<\/p>",
+				"ignore_errors": 0,
+				"armature_color": "Черно-белый",
+				"tip_upravleniya": "DALI",
+				"light_temperatures": 4000,
+				"power_range_w": 13,
+				"input_voltage_v": 48,
+				"light_flow": 820,
+				"color_rendering_index": 93,
+				"ripple_factor": "<1%",
+				"light_angle": 36,
+				"ugr": "<13",
+				"ip_class": 20,
+				"length": 12,
+				"width": 17.3,
+				"diameter": 5,
+				"height": 17.2,
+				"drawings": [
+					"https:\/\/aws.technolight.ru\/technolight\/public\/images\/drawings\/86113-3K-01-BK.svg?v=1771453036"
+				],
+				"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/b7\/63\/b76391faae722d9601e47b4f028374a6\/570x570\/0.webp",
+				"power": 0,
+				"root": [
+					"Системы"
+				],
+				"collection": [
+					"PROFI 48V"
+				],
+				"category": [
+					"Светильники"
+				],
+				"series": [
+					"Спот 50"
+				],
+				"accessories": [],
+				"tags": [],
+				"ban_sale": false,
+				"configuratorLink": null
+			},
+			{
+				"id": 491,
+				"images": [
+					"https:\/\/shrunk.website.yandexcloud.net\/images\/f2\/8b\/f28b20a488949dcc4c53eda4580116c3\/570x570\/0.webp"
+				],
+				"article_id": "165975",
+				"article_hash": "f28b20a488949dcc4c53eda4580116c3",
+				"article": "86113-3K-01-WW",
+				"title": "Спот 50 48В 13Вт 730лм 3000К 93+ 36° недиммируемый RAL 9016 белый",
+				"price": 8330,
+				"old_price": 0,
+				"sale": false,
+				"description": "<p>Серия Спот — это главный инструмент трековой системы для акцентного освещения.<\/p>\n<p>Корпус изготовлен из алюминия высокого давления, что обеспечивает необходимый теплоотвод. Светодиод CITIZEN с CRI 93+ и инновационная оптическая система обеспечивают высокое качество света, а Сменная оптика с углами рассеивания 18-36-60° и возможность применения светофильтров Спред\/Ханикомб.<\/p>\n<p>Управление осуществляется по протоколам 1-10В, DALI, Zigbee, а также по беспроводной системе управления CASAMBI.<\/p>",
+				"ignore_errors": 0,
+				"armature_color": "Белый",
+				"tip_upravleniya": "NO DIM",
+				"light_temperatures": 3000,
+				"power_range_w": 13,
+				"input_voltage_v": 48,
+				"light_flow": 730,
+				"color_rendering_index": 93,
+				"ripple_factor": "<1%",
+				"light_angle": 36,
+				"ugr": "<13",
+				"ip_class": 20,
+				"length": 12,
+				"width": 17.3,
+				"diameter": 5,
+				"height": 17.2,
+				"drawings": [
+					"https:\/\/aws.technolight.ru\/technolight\/public\/images\/drawings\/86113-3K-01-BK.svg?v=1771453036"
+				],
+				"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/f2\/8b\/f28b20a488949dcc4c53eda4580116c3\/570x570\/0.webp",
+				"power": 0,
+				"root": [
+					"Системы"
+				],
+				"collection": [
+					"PROFI 48V"
+				],
+				"category": [
+					"Светильники"
+				],
+				"series": [
+					"Спот 50"
+				],
+				"accessories": [],
+				"tags": [],
+				"ban_sale": false,
+				"configuratorLink": null
+			},
+			{
+				"id": 492,
+				"images": [
+					"https:\/\/shrunk.website.yandexcloud.net\/images\/93\/6a\/936a0cdc116a0685239fc9ab929f40b8\/570x570\/0.webp"
+				],
+				"article_id": "165976",
+				"article_hash": "936a0cdc116a0685239fc9ab929f40b8",
+				"article": "86113-4K-01-WW",
+				"title": "Спот 50 48В 13Вт 820лм 4000К 93+ 36° недиммируемый RAL 9016 белый",
+				"price": 8330,
+				"old_price": 0,
+				"sale": false,
+				"description": "<p>Серия Спот — это главный инструмент трековой системы для акцентного освещения.<\/p>\n<p>Корпус изготовлен из алюминия высокого давления, что обеспечивает необходимый теплоотвод. Светодиод CITIZEN с CRI 93+ и инновационная оптическая система обеспечивают высокое качество света, а Сменная оптика с углами рассеивания 18-36-60° и возможность применения светофильтров Спред\/Ханикомб.<\/p>\n<p>Управление осуществляется по протоколам 1-10В, DALI, Zigbee, а также по беспроводной системе управления CASAMBI.<\/p>",
+				"ignore_errors": 0,
+				"armature_color": "Белый",
+				"tip_upravleniya": "NO DIM",
+				"light_temperatures": 4000,
+				"power_range_w": 13,
+				"input_voltage_v": 48,
+				"light_flow": 820,
+				"color_rendering_index": 93,
+				"ripple_factor": "<1%",
+				"light_angle": 36,
+				"ugr": "<13",
+				"ip_class": 20,
+				"length": 12,
+				"width": 17.3,
+				"diameter": 5,
+				"height": 17.2,
+				"drawings": [
+					"https:\/\/aws.technolight.ru\/technolight\/public\/images\/drawings\/86113-3K-01-BK.svg?v=1771453036"
+				],
+				"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/93\/6a\/936a0cdc116a0685239fc9ab929f40b8\/570x570\/0.webp",
+				"power": 0,
+				"root": [
+					"Системы"
+				],
+				"collection": [
+					"PROFI 48V"
+				],
+				"category": [
+					"Светильники"
+				],
+				"series": [
+					"Спот 50"
+				],
+				"accessories": [],
+				"tags": [],
+				"ban_sale": false,
+				"configuratorLink": null
+			},
+			{
+				"id": 502,
+				"images": [
+					"https:\/\/shrunk.website.yandexcloud.net\/images\/79\/41\/7941682d714a2ef42a202421d7664e4d\/570x570\/0.webp"
+				],
+				"article_id": "165986",
+				"article_hash": "7941682d714a2ef42a202421d7664e4d",
+				"article": "86113-3K-03-WW",
+				"title": "Спот 50 48В 13Вт 730лм 3000К 93+ 36° диммирование 1-10В RAL 9016 белый",
+				"price": 10630,
+				"old_price": 0,
+				"sale": false,
+				"description": "<p>Серия Спот — это главный инструмент трековой системы для акцентного освещения.<\/p>\n<p>Корпус изготовлен из алюминия высокого давления, что обеспечивает необходимый теплоотвод. Светодиод CITIZEN с CRI 93+ и инновационная оптическая система обеспечивают высокое качество света, а Сменная оптика с углами рассеивания 18-36-60° и возможность применения светофильтров Спред\/Ханикомб.<\/p>\n<p>Управление осуществляется по протоколам 1-10В, DALI, Zigbee, а также по беспроводной системе управления CASAMBI.<\/p>",
+				"ignore_errors": 0,
+				"armature_color": "Белый",
+				"tip_upravleniya": "1-10В",
+				"light_temperatures": 3000,
+				"power_range_w": 13,
+				"input_voltage_v": 48,
+				"light_flow": 730,
+				"color_rendering_index": 93,
+				"ripple_factor": "<1%",
+				"light_angle": 36,
+				"ugr": "<13",
+				"ip_class": 20,
+				"length": 12,
+				"width": 17.3,
+				"diameter": 5,
+				"height": 17.2,
+				"drawings": [
+					"https:\/\/aws.technolight.ru\/technolight\/public\/images\/drawings\/86113-3K-01-BK.svg?v=1771453036"
+				],
+				"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/79\/41\/7941682d714a2ef42a202421d7664e4d\/570x570\/0.webp",
+				"power": 0,
+				"root": [
+					"Системы"
+				],
+				"collection": [
+					"PROFI 48V"
+				],
+				"category": [
+					"Светильники"
+				],
+				"series": [
+					"Спот 50"
+				],
+				"accessories": [],
+				"tags": [],
+				"ban_sale": false,
+				"configuratorLink": null
+			},
+			{
+				"id": 503,
+				"images": [
+					"https:\/\/shrunk.website.yandexcloud.net\/images\/a7\/d6\/a7d65b3cdce627adba97e0938bd0aaff\/570x570\/0.webp"
+				],
+				"article_id": "165987",
+				"article_hash": "a7d65b3cdce627adba97e0938bd0aaff",
+				"article": "86113-4K-03-BK",
+				"title": "Спот 50 48В 13Вт 820лм 4000К 93+ 36° диммирование 1-10В RAL 9005 черный",
+				"price": 10630,
+				"old_price": 0,
+				"sale": false,
+				"description": "<p>Серия Спот — это главный инструмент трековой системы для акцентного освещения.<\/p>\n<p>Корпус изготовлен из алюминия высокого давления, что обеспечивает необходимый теплоотвод. Светодиод CITIZEN с CRI 93+ и инновационная оптическая система обеспечивают высокое качество света, а Сменная оптика с углами рассеивания 18-36-60° и возможность применения светофильтров Спред\/Ханикомб.<\/p>\n<p>Управление осуществляется по протоколам 1-10В, DALI, Zigbee, а также по беспроводной системе управления CASAMBI.<\/p>",
+				"ignore_errors": 0,
+				"armature_color": "Чёрный",
+				"tip_upravleniya": "1-10В",
+				"light_temperatures": 4000,
+				"power_range_w": 13,
+				"input_voltage_v": 48,
+				"light_flow": 820,
+				"color_rendering_index": 93,
+				"ripple_factor": "<1%",
+				"light_angle": 36,
+				"ugr": "<13",
+				"ip_class": 20,
+				"length": 12,
+				"width": 17.3,
+				"diameter": 5,
+				"height": 17.2,
+				"drawings": [
+					"https:\/\/aws.technolight.ru\/technolight\/public\/images\/drawings\/86113-3K-01-BK.svg?v=1771453036"
+				],
+				"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/a7\/d6\/a7d65b3cdce627adba97e0938bd0aaff\/570x570\/0.webp",
+				"power": 0,
+				"root": [
+					"Системы"
+				],
+				"collection": [
+					"PROFI 48V"
+				],
+				"category": [
+					"Светильники"
+				],
+				"series": [
+					"Спот 50"
+				],
+				"accessories": [],
+				"tags": [],
+				"ban_sale": false,
+				"configuratorLink": null
+			},
+			{
+				"id": 504,
+				"images": [
+					"https:\/\/shrunk.website.yandexcloud.net\/images\/f8\/28\/f828329b5e06d200ceb4e804ac1ee26a\/570x570\/0.webp"
+				],
+				"article_id": "165988",
+				"article_hash": "f828329b5e06d200ceb4e804ac1ee26a",
+				"article": "86113-4K-03-WH",
+				"title": "Спот 50 48В 13Вт 820лм 4000К 93+ 36° диммирование 1-10В RAL 9016 белый",
+				"price": 10630,
+				"old_price": 0,
+				"sale": false,
+				"description": "<p>Серия Спот — это главный инструмент трековой системы для акцентного освещения.<\/p>\n<p>Корпус изготовлен из алюминия высокого давления, что обеспечивает необходимый теплоотвод. Светодиод CITIZEN с CRI 93+ и инновационная оптическая система обеспечивают высокое качество света, а Сменная оптика с углами рассеивания 18-36-60° и возможность применения светофильтров Спред\/Ханикомб.<\/p>\n<p>Управление осуществляется по протоколам 1-10В, DALI, Zigbee, а также по беспроводной системе управления CASAMBI.<\/p>",
+				"ignore_errors": 0,
+				"armature_color": "Черно-белый",
+				"tip_upravleniya": "1-10В",
+				"light_temperatures": 4000,
+				"power_range_w": 13,
+				"input_voltage_v": 48,
+				"light_flow": 820,
+				"color_rendering_index": 93,
+				"ripple_factor": "<1%",
+				"light_angle": 36,
+				"ugr": "<13",
+				"ip_class": 20,
+				"length": 12,
+				"width": 17.3,
+				"diameter": 5,
+				"height": 17.2,
+				"drawings": [
+					"https:\/\/aws.technolight.ru\/technolight\/public\/images\/drawings\/86113-3K-01-BK.svg?v=1771453036"
+				],
+				"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/f8\/28\/f828329b5e06d200ceb4e804ac1ee26a\/570x570\/0.webp",
+				"power": 0,
+				"root": [
+					"Системы"
+				],
+				"collection": [
+					"PROFI 48V"
+				],
+				"category": [
+					"Светильники"
+				],
+				"series": [
+					"Спот 50"
+				],
+				"accessories": [],
+				"tags": [],
+				"ban_sale": false,
+				"configuratorLink": null
+			},
+			{
+				"id": 505,
+				"images": [
+					"https:\/\/shrunk.website.yandexcloud.net\/images\/d2\/2c\/d22ceb3e7ae93aff9cf79942bf3a1154\/570x570\/0.webp"
+				],
+				"article_id": "165989",
+				"article_hash": "d22ceb3e7ae93aff9cf79942bf3a1154",
+				"article": "86113-4K-03-WW",
+				"title": "Спот 50 48В 13Вт 820лм 4000К 93+ 36° диммирование 1-10В RAL 9016 белый",
+				"price": 10630,
+				"old_price": 0,
+				"sale": false,
+				"description": "<p>Серия Спот — это главный инструмент трековой системы для акцентного освещения.<\/p>\n<p>Корпус изготовлен из алюминия высокого давления, что обеспечивает необходимый теплоотвод. Светодиод CITIZEN с CRI 93+ и инновационная оптическая система обеспечивают высокое качество света, а Сменная оптика с углами рассеивания 18-36-60° и возможность применения светофильтров Спред\/Ханикомб.<\/p>\n<p>Управление осуществляется по протоколам 1-10В, DALI, Zigbee, а также по беспроводной системе управления CASAMBI.<\/p>",
+				"ignore_errors": 0,
+				"armature_color": "Белый",
+				"tip_upravleniya": "1-10В",
+				"light_temperatures": 4000,
+				"power_range_w": 13,
+				"input_voltage_v": 48,
+				"light_flow": 820,
+				"color_rendering_index": 93,
+				"ripple_factor": "<1%",
+				"light_angle": 36,
+				"ugr": "<13",
+				"ip_class": 20,
+				"length": 12,
+				"width": 17.3,
+				"diameter": 5,
+				"height": 17.2,
+				"drawings": [
+					"https:\/\/aws.technolight.ru\/technolight\/public\/images\/drawings\/86113-3K-01-BK.svg?v=1771453036"
+				],
+				"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/d2\/2c\/d22ceb3e7ae93aff9cf79942bf3a1154\/570x570\/0.webp",
+				"power": 0,
+				"root": [
+					"Системы"
+				],
+				"collection": [
+					"PROFI 48V"
+				],
+				"category": [
+					"Светильники"
+				],
+				"series": [
+					"Спот 50"
+				],
+				"accessories": [],
+				"tags": [],
+				"ban_sale": false,
+				"configuratorLink": null
+			},
+			{
+				"id": 514,
+				"images": [
+					"https:\/\/shrunk.website.yandexcloud.net\/images\/e9\/7a\/e97aac14f05609a0263d1a6d5d0fc770\/570x570\/0.webp"
+				],
+				"article_id": "165998",
+				"article_hash": "e97aac14f05609a0263d1a6d5d0fc770",
+				"article": "86113-3K-04-WW",
+				"title": "Спот 50 48В 13Вт 730лм 3000К 93+ 36° диммирование DALI RAL 9016 белый",
+				"price": 11330,
+				"old_price": 0,
+				"sale": false,
+				"description": "<p>Серия Спот — это главный инструмент трековой системы для акцентного освещения.<\/p>\n<p>Корпус изготовлен из алюминия высокого давления, что обеспечивает необходимый теплоотвод. Светодиод CITIZEN с CRI 93+ и инновационная оптическая система обеспечивают высокое качество света, а Сменная оптика с углами рассеивания 18-36-60° и возможность применения светофильтров Спред\/Ханикомб.<\/p>\n<p>Управление осуществляется по протоколам 1-10В, DALI, Zigbee, а также по беспроводной системе управления CASAMBI.<\/p>",
+				"ignore_errors": 0,
+				"armature_color": "Белый",
+				"tip_upravleniya": "DALI",
+				"light_temperatures": 3000,
+				"power_range_w": 13,
+				"input_voltage_v": 48,
+				"light_flow": 730,
+				"color_rendering_index": 93,
+				"ripple_factor": "<1%",
+				"light_angle": 36,
+				"ugr": "<13",
+				"ip_class": 20,
+				"length": 12,
+				"width": 17.3,
+				"diameter": 5,
+				"height": 17.2,
+				"drawings": [
+					"https:\/\/aws.technolight.ru\/technolight\/public\/images\/drawings\/86113-3K-01-BK.svg?v=1771453036"
+				],
+				"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/e9\/7a\/e97aac14f05609a0263d1a6d5d0fc770\/570x570\/0.webp",
+				"power": 0,
+				"root": [
+					"Системы"
+				],
+				"collection": [
+					"PROFI 48V"
+				],
+				"category": [
+					"Светильники"
+				],
+				"series": [
+					"Спот 50"
+				],
+				"accessories": [],
+				"tags": [],
+				"ban_sale": false,
+				"configuratorLink": null
+			},
+			{
+				"id": 515,
+				"images": [
+					"https:\/\/shrunk.website.yandexcloud.net\/images\/2b\/b4\/2bb44d41260c76d4e6d9a664e23347fc\/570x570\/0.webp"
+				],
+				"article_id": "165999",
+				"article_hash": "2bb44d41260c76d4e6d9a664e23347fc",
+				"article": "86113-4K-04-WW",
+				"title": "Спот 50 48В 13Вт 820лм 4000К 93+ 36° диммирование DALI RAL 9016 белый",
+				"price": 11330,
+				"old_price": 0,
+				"sale": false,
+				"description": "<p>Серия Спот — это главный инструмент трековой системы для акцентного освещения.<\/p>\n<p>Корпус изготовлен из алюминия высокого давления, что обеспечивает необходимый теплоотвод. Светодиод CITIZEN с CRI 93+ и инновационная оптическая система обеспечивают высокое качество света, а Сменная оптика с углами рассеивания 18-36-60° и возможность применения светофильтров Спред\/Ханикомб.<\/p>\n<p>Управление осуществляется по протоколам 1-10В, DALI, Zigbee, а также по беспроводной системе управления CASAMBI.<\/p>",
+				"ignore_errors": 0,
+				"armature_color": "Белый",
+				"tip_upravleniya": "DALI",
+				"light_temperatures": 4000,
+				"power_range_w": 13,
+				"input_voltage_v": 48,
+				"light_flow": 820,
+				"color_rendering_index": 93,
+				"ripple_factor": "<1%",
+				"light_angle": 36,
+				"ugr": "<13",
+				"ip_class": 20,
+				"length": 12,
+				"width": 17.3,
+				"diameter": 5,
+				"height": 17.2,
+				"drawings": [
+					"https:\/\/aws.technolight.ru\/technolight\/public\/images\/drawings\/86113-3K-01-BK.svg?v=1771453036"
+				],
+				"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/2b\/b4\/2bb44d41260c76d4e6d9a664e23347fc\/570x570\/0.webp",
+				"power": 0,
+				"root": [
+					"Системы"
+				],
+				"collection": [
+					"PROFI 48V"
+				],
+				"category": [
+					"Светильники"
+				],
+				"series": [
+					"Спот 50"
+				],
+				"accessories": [],
+				"tags": [],
+				"ban_sale": false,
+				"configuratorLink": null
+			},
+			{
+				"id": 697,
+				"images": [
+					"https:\/\/shrunk.website.yandexcloud.net\/images\/66\/80\/6680b47b43990e72199bce5ace4900e4\/570x570\/0.webp"
+				],
+				"article_id": "196612",
+				"article_hash": "6680b47b43990e72199bce5ace4900e4",
+				"article": "86113-27K-01-BK",
+				"title": "Спот 50 48В 13Вт 740лм 2700К 93+ 36° недиммируемый RAL 9005 черный",
+				"price": 8330,
+				"old_price": 0,
+				"sale": false,
+				"description": "<p>Серия Спот — это главный инструмент трековой системы для акцентного освещения.<\/p>\n<p>Корпус изготовлен из алюминия высокого давления, что обеспечивает необходимый теплоотвод. Светодиод CITIZEN с CRI 93+ и инновационная оптическая система обеспечивают высокое качество света, а Сменная оптика с углами рассеивания 18-36-60° и возможность применения светофильтров Спред\/Ханикомб.<\/p>\n<p>Управление осуществляется по протоколам 1-10В, DALI, Zigbee, а также по беспроводной системе управления CASAMBI.<\/p>",
+				"ignore_errors": 0,
+				"armature_color": "Чёрный",
+				"tip_upravleniya": "NO DIM",
+				"light_temperatures": 2700,
+				"power_range_w": 13,
+				"input_voltage_v": 48,
+				"light_flow": 740,
+				"color_rendering_index": 93,
+				"ripple_factor": "<1%",
+				"light_angle": 36,
+				"ugr": "<13",
+				"ip_class": 20,
+				"length": 12,
+				"width": 17.3,
+				"diameter": 5,
+				"height": 17.2,
+				"drawings": [
+					"https:\/\/aws.technolight.ru\/technolight\/public\/images\/drawings\/86113-3K-01-BK.svg?v=1771453036"
+				],
+				"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/66\/80\/6680b47b43990e72199bce5ace4900e4\/570x570\/0.webp",
+				"power": 0,
+				"root": [
+					"Системы"
+				],
+				"collection": [
+					"PROFI 48V"
+				],
+				"category": [
+					"Светильники"
+				],
+				"series": [
+					"Спот 50"
+				],
+				"accessories": [],
+				"tags": [],
+				"ban_sale": false,
+				"configuratorLink": null
+			},
+			{
+				"id": 987,
+				"images": [
+					"https:\/\/shrunk.website.yandexcloud.net\/images\/60\/69\/6069483073f98571b70f827da92fd8e6\/570x570\/0.webp"
+				],
+				"article_id": "224879",
+				"article_hash": "6069483073f98571b70f827da92fd8e6",
+				"article": "86113-3K-06-BK",
+				"title": "Спот 50 48В 13Вт 730лм 3000К 93+ 36° диммирование Zigbee RAL 9005 черный",
+				"price": 12010,
+				"old_price": 0,
+				"sale": false,
+				"description": "<p>Серия Спот — это главный инструмент трековой системы для акцентного освещения.<\/p>\n<p>Корпус изготовлен из алюминия высокого давления, что обеспечивает необходимый теплоотвод. Светодиод CITIZEN с CRI 93+ и инновационная оптическая система обеспечивают высокое качество света, а Сменная оптика с углами рассеивания 18-36-60° и возможность применения светофильтров Спред\/Ханикомб.<\/p>\n<p>Управление осуществляется по протоколам 1-10В, DALI, Zigbee, а также по беспроводной системе управления CASAMBI.<\/p>",
+				"ignore_errors": 0,
+				"armature_color": "Чёрный",
+				"tip_upravleniya": "Zigbee",
+				"light_temperatures": 3000,
+				"power_range_w": 13,
+				"input_voltage_v": 48,
+				"light_flow": 730,
+				"color_rendering_index": 93,
+				"ripple_factor": "<1%",
+				"light_angle": 36,
+				"ugr": "<13",
+				"ip_class": 20,
+				"length": 12,
+				"width": 17.3,
+				"diameter": 5,
+				"height": 17.2,
+				"drawings": [
+					"https:\/\/aws.technolight.ru\/technolight\/public\/images\/drawings\/86113-3K-06-BK.svg?v=1771453036"
+				],
+				"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/60\/69\/6069483073f98571b70f827da92fd8e6\/570x570\/0.webp",
+				"power": 0,
+				"root": [
+					"Системы"
+				],
+				"collection": [
+					"PROFI 48V"
+				],
+				"category": [
+					"Светильники"
+				],
+				"series": [
+					"Спот 50"
+				],
+				"accessories": [],
+				"tags": [],
+				"ban_sale": false,
+				"configuratorLink": null
+			},
+			{
+				"id": 988,
+				"images": [
+					"https:\/\/shrunk.website.yandexcloud.net\/images\/df\/8d\/df8d613e78883d3f78f83a4fa498cf14\/570x570\/0.webp"
+				],
+				"article_id": "224880",
+				"article_hash": "df8d613e78883d3f78f83a4fa498cf14",
+				"article": "86113-3K-06-WH",
+				"title": "Спот 50 48В 13Вт 730лм 3000К 93+ 36° диммирование Zigbee RAL 9016 белый",
+				"price": 12010,
+				"old_price": 0,
+				"sale": false,
+				"description": "<p>Серия Спот — это главный инструмент трековой системы для акцентного освещения.<\/p>\n<p>Корпус изготовлен из алюминия высокого давления, что обеспечивает необходимый теплоотвод. Светодиод CITIZEN с CRI 93+ и инновационная оптическая система обеспечивают высокое качество света, а Сменная оптика с углами рассеивания 18-36-60° и возможность применения светофильтров Спред\/Ханикомб.<\/p>\n<p>Управление осуществляется по протоколам 1-10В, DALI, Zigbee, а также по беспроводной системе управления CASAMBI.<\/p>",
+				"ignore_errors": 0,
+				"armature_color": "Черно-белый",
+				"tip_upravleniya": "Zigbee",
+				"light_temperatures": 3000,
+				"power_range_w": 13,
+				"input_voltage_v": 48,
+				"light_flow": 730,
+				"color_rendering_index": 93,
+				"ripple_factor": "<1%",
+				"light_angle": 36,
+				"ugr": "<13",
+				"ip_class": 20,
+				"length": 12,
+				"width": 17.3,
+				"diameter": 5,
+				"height": 17.2,
+				"drawings": [
+					"https:\/\/aws.technolight.ru\/technolight\/public\/images\/drawings\/86113-3K-06-BK.svg?v=1771453036"
+				],
+				"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/df\/8d\/df8d613e78883d3f78f83a4fa498cf14\/570x570\/0.webp",
+				"power": 0,
+				"root": [
+					"Системы"
+				],
+				"collection": [
+					"PROFI 48V"
+				],
+				"category": [
+					"Светильники"
+				],
+				"series": [
+					"Спот 50"
+				],
+				"accessories": [],
+				"tags": [],
+				"ban_sale": false,
+				"configuratorLink": null
+			},
+			{
+				"id": 989,
+				"images": [
+					"https:\/\/shrunk.website.yandexcloud.net\/images\/cf\/9c\/cf9c51850153092adc9113ef52ffa57b\/570x570\/0.webp"
+				],
+				"article_id": "224881",
+				"article_hash": "cf9c51850153092adc9113ef52ffa57b",
+				"article": "86113-3K-06-WW",
+				"title": "Спот 50 48В 13Вт 730лм 3000К 93+ 36° диммирование Zigbee RAL 9016 белый",
+				"price": 12010,
+				"old_price": 0,
+				"sale": false,
+				"description": "<p>Серия Спот — это главный инструмент трековой системы для акцентного освещения.<\/p>\n<p>Корпус изготовлен из алюминия высокого давления, что обеспечивает необходимый теплоотвод. Светодиод CITIZEN с CRI 93+ и инновационная оптическая система обеспечивают высокое качество света, а Сменная оптика с углами рассеивания 18-36-60° и возможность применения светофильтров Спред\/Ханикомб.<\/p>\n<p>Управление осуществляется по протоколам 1-10В, DALI, Zigbee, а также по беспроводной системе управления CASAMBI.<\/p>",
+				"ignore_errors": 0,
+				"armature_color": "Белый",
+				"tip_upravleniya": "Zigbee",
+				"light_temperatures": 3000,
+				"power_range_w": 13,
+				"input_voltage_v": 48,
+				"light_flow": 730,
+				"color_rendering_index": 93,
+				"ripple_factor": "<1%",
+				"light_angle": 36,
+				"ugr": "<13",
+				"ip_class": 20,
+				"length": 12,
+				"width": 17.3,
+				"diameter": 5,
+				"height": 17.2,
+				"drawings": [
+					"https:\/\/aws.technolight.ru\/technolight\/public\/images\/drawings\/86113-3K-06-BK.svg?v=1771453036"
+				],
+				"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/cf\/9c\/cf9c51850153092adc9113ef52ffa57b\/570x570\/0.webp",
+				"power": 0,
+				"root": [
+					"Системы"
+				],
+				"collection": [
+					"PROFI 48V"
+				],
+				"category": [
+					"Светильники"
+				],
+				"series": [
+					"Спот 50"
+				],
+				"accessories": [],
+				"tags": [],
+				"ban_sale": false,
+				"configuratorLink": null
+			},
+			{
+				"id": 990,
+				"images": [
+					"https:\/\/shrunk.website.yandexcloud.net\/images\/39\/5a\/395ac434e698874c9ca60afc0da2e2e3\/570x570\/0.webp"
+				],
+				"article_id": "224882",
+				"article_hash": "395ac434e698874c9ca60afc0da2e2e3",
+				"article": "86113-4K-06-BK",
+				"title": "Спот 50 48В 13Вт 820лм 4000К 93+ 36° диммирование Zigbee RAL 9005 черный",
+				"price": 12010,
+				"old_price": 0,
+				"sale": false,
+				"description": "<p>Серия Спот — это главный инструмент трековой системы для акцентного освещения.<\/p>\n<p>Корпус изготовлен из алюминия высокого давления, что обеспечивает необходимый теплоотвод. Светодиод CITIZEN с CRI 93+ и инновационная оптическая система обеспечивают высокое качество света, а Сменная оптика с углами рассеивания 18-36-60° и возможность применения светофильтров Спред\/Ханикомб.<\/p>\n<p>Управление осуществляется по протоколам 1-10В, DALI, Zigbee, а также по беспроводной системе управления CASAMBI.<\/p>",
+				"ignore_errors": 0,
+				"armature_color": "Чёрный",
+				"tip_upravleniya": "Zigbee",
+				"light_temperatures": 4000,
+				"power_range_w": 13,
+				"input_voltage_v": 48,
+				"light_flow": 820,
+				"color_rendering_index": 93,
+				"ripple_factor": "<1%",
+				"light_angle": 36,
+				"ugr": "<13",
+				"ip_class": 20,
+				"length": 12,
+				"width": 17.3,
+				"diameter": 5,
+				"height": 17.2,
+				"drawings": [
+					"https:\/\/aws.technolight.ru\/technolight\/public\/images\/drawings\/86113-3K-06-BK.svg?v=1771453036"
+				],
+				"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/39\/5a\/395ac434e698874c9ca60afc0da2e2e3\/570x570\/0.webp",
+				"power": 0,
+				"root": [
+					"Системы"
+				],
+				"collection": [
+					"PROFI 48V"
+				],
+				"category": [
+					"Светильники"
+				],
+				"series": [
+					"Спот 50"
+				],
+				"accessories": [],
+				"tags": [],
+				"ban_sale": false,
+				"configuratorLink": null
+			},
+			{
+				"id": 991,
+				"images": [
+					"https:\/\/shrunk.website.yandexcloud.net\/images\/bd\/ab\/bdabc08eb259995ef050704061c3805f\/570x570\/0.webp"
+				],
+				"article_id": "224883",
+				"article_hash": "bdabc08eb259995ef050704061c3805f",
+				"article": "86113-4K-06-WH",
+				"title": "Спот 50 48В 13Вт 820лм 4000К 93+ 36° диммирование Zigbee RAL 9016 белый",
+				"price": 12010,
+				"old_price": 0,
+				"sale": false,
+				"description": "<p>Серия Спот — это главный инструмент трековой системы для акцентного освещения.<\/p>\n<p>Корпус изготовлен из алюминия высокого давления, что обеспечивает необходимый теплоотвод. Светодиод CITIZEN с CRI 93+ и инновационная оптическая система обеспечивают высокое качество света, а Сменная оптика с углами рассеивания 18-36-60° и возможность применения светофильтров Спред\/Ханикомб.<\/p>\n<p>Управление осуществляется по протоколам 1-10В, DALI, Zigbee, а также по беспроводной системе управления CASAMBI.<\/p>",
+				"ignore_errors": 0,
+				"armature_color": "Черно-белый",
+				"tip_upravleniya": "Zigbee",
+				"light_temperatures": 4000,
+				"power_range_w": 13,
+				"input_voltage_v": 48,
+				"light_flow": 820,
+				"color_rendering_index": 93,
+				"ripple_factor": "<1%",
+				"light_angle": 36,
+				"ugr": "<13",
+				"ip_class": 20,
+				"length": 12,
+				"width": 17.3,
+				"diameter": 5,
+				"height": 17.2,
+				"drawings": [
+					"https:\/\/aws.technolight.ru\/technolight\/public\/images\/drawings\/86113-3K-06-BK.svg?v=1771453036"
+				],
+				"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/bd\/ab\/bdabc08eb259995ef050704061c3805f\/570x570\/0.webp",
+				"power": 0,
+				"root": [
+					"Системы"
+				],
+				"collection": [
+					"PROFI 48V"
+				],
+				"category": [
+					"Светильники"
+				],
+				"series": [
+					"Спот 50"
+				],
+				"accessories": [],
+				"tags": [],
+				"ban_sale": false,
+				"configuratorLink": null
+			},
+			{
+				"id": 992,
+				"images": [
+					"https:\/\/shrunk.website.yandexcloud.net\/images\/9c\/cc\/9cccd1534282ec3f0632f498e7ee948d\/570x570\/0.webp"
+				],
+				"article_id": "224884",
+				"article_hash": "9cccd1534282ec3f0632f498e7ee948d",
+				"article": "86113-4K-06-WW",
+				"title": "Спот 50 48В 13Вт 820лм 4000К 93+ 36° диммирование Zigbee RAL 9016 белый",
+				"price": 12010,
+				"old_price": 0,
+				"sale": false,
+				"description": "<p>Серия Спот — это главный инструмент трековой системы для акцентного освещения.<\/p>\n<p>Корпус изготовлен из алюминия высокого давления, что обеспечивает необходимый теплоотвод. Светодиод CITIZEN с CRI 93+ и инновационная оптическая система обеспечивают высокое качество света, а Сменная оптика с углами рассеивания 18-36-60° и возможность применения светофильтров Спред\/Ханикомб.<\/p>\n<p>Управление осуществляется по протоколам 1-10В, DALI, Zigbee, а также по беспроводной системе управления CASAMBI.<\/p>",
+				"ignore_errors": 0,
+				"armature_color": "Белый",
+				"tip_upravleniya": "Zigbee",
+				"light_temperatures": 4000,
+				"power_range_w": 13,
+				"input_voltage_v": 48,
+				"light_flow": 820,
+				"color_rendering_index": 93,
+				"ripple_factor": "<1%",
+				"light_angle": 36,
+				"ugr": "<13",
+				"ip_class": 20,
+				"length": 12,
+				"width": 17.3,
+				"diameter": 5,
+				"height": 17.2,
+				"drawings": [
+					"https:\/\/aws.technolight.ru\/technolight\/public\/images\/drawings\/86113-3K-06-BK.svg?v=1771453036"
+				],
+				"image": "https:\/\/shrunk.website.yandexcloud.net\/images\/9c\/cc\/9cccd1534282ec3f0632f498e7ee948d\/570x570\/0.webp",
+				"power": 0,
+				"root": [
+					"Системы"
+				],
+				"collection": [
+					"PROFI 48V"
+				],
+				"category": [
+					"Светильники"
+				],
+				"series": [
+					"Спот 50"
+				],
+				"accessories": [],
+				"tags": [],
+				"ban_sale": false,
+				"configuratorLink": null
+			}
+		],
+		"sale": false
+	},
+	"is_admin": false
+}
