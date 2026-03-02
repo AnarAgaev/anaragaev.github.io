@@ -37,6 +37,9 @@
 
       //- window.filesApiUrl = "mocks/documents.json"
       window.filesApiUrl = "https://technolight.pro/api/documents";
+      window.filesApiUrl = "https://anaragaev.github.io/cdn/jsons/files-documents.json";
+      window.catalogsApiUrl = "https://anaragaev.github.io/cdn/jsons/catalogs.json";
+
       window.filesDownUrl = "https://technolight.pro/api/documents/download";
       window.filesSearchUrl = "https://technolight.pro/api/products/search/";
     </script>
@@ -372,337 +375,431 @@
             <h3>Не удалось загрузить данные приложения</h3>
             <p>Попробуйте перезагрузить страницу через несколько минут. В&nbsp;случае повторного возникновения ошибки сообщите в&nbsp;поддержку.</p>
           </div>
+          <!-- Показываем секцию выбора типа файлы через класс .visible.show-->
           <div class="marketing__wrapper" id="downFilesApp">
-            <div class="marketing__filter-list">
-              <div class="marketing__filter-item">
-                <div class="single-selector" id="brandSelector">
-                  <div class="single-selector__caption">бренд</div>
-                  <button class="single-selector__trigger" type="button"><span>выберите значение</span></button>
-                  <div class="single-selector__dropdown">
-                    <button class="single-selector__option" type="button" data-value="artelamp">Arte Lamp</button>
-                    <button class="single-selector__option selected" type="button" data-value="divinare">Divinare</button>
-                    <button class="single-selector__option" type="button" data-value="gauss-lamps">Gauss лампочки</button>
-                    <button class="single-selector__option" type="button" data-value="werkel">Werkel</button>
-                  </div>
+            <div class="marketing__tabs">
+              <button class="default-btn block-btn small-btn btn--dark" type="button" data-trigger="marketingTargetMedia"><span>медиа</span></button>
+              <button class="default-btn block-btn small-btn btn--white" type="button" data-trigger="marketingTargetCatalogs"><span>каталоги</span></button>
+            </div>
+            <div class="marketing__catalogs" id="marketingTargetCatalogs">
+              <h3 class="marketing__catalogs-caption">Каталоги</h3>
+              <div class="marketing__catalogs-list">
+                <div class="catalog-item">
+                  <i><img src="https://storage.yandexcloud.net/s3files/previews/2025/01K83B5RZPEK3451TEV3N8DESK.jpg" alt="ARTE Lamp 2025-2026" ></i>
+                  <p>
+                    <a href="https://s3files.fandeco.org/link/651579296?mode=download" target="_blank" download="download">ARTE Lamp 2025-2026</a>
+                    <span>223.89 MB</span>
+                  </p>
                 </div>
-              </div>
-              <div class="marketing__filter-item">
-                <div class="single-selector" id="collectionSelector">
-                  <div class="single-selector__caption">коллекция</div>
-                  <button class="single-selector__trigger" type="button"><span>выберите значение</span></button>
-                  <label class="single-selector__drop-filter">
-                    <input type="text" name="filter" >
-                    <i></i>
-                  </label>
-                  <div class="single-selector__dropdown">
-                    <button class="single-selector__option" type="button" data-value="smd">SMD</button>
-                    <button class="single-selector__option" type="button" data-value="basic">BASIC</button>
-                    <button class="single-selector__option" type="button" data-value="treno">TRENO</button>
-                    <button class="single-selector__option" type="button" data-value="filament">FILAMENT</button>
-                    <button class="single-selector__option" type="button" data-value="dimmer">DIMMER</button>
-                    <button class="single-selector__option" type="button" data-value="g4">G4</button>
-                    <button class="single-selector__option" type="button" data-value="london">LONDON</button>
-                    <button class="single-selector__option" type="button" data-value="galatea">GALATEA</button>
-                    <button class="single-selector__option" type="button" data-value="trapeze">TRAPEZE</button>
-                    <button class="single-selector__option" type="button" data-value="budapest">BUDAPEST</button>
-                    <button class="single-selector__option" type="button" data-value="intreccio">INTRECCIO</button>
-                    <button class="single-selector__option" type="button" data-value="avior">AVIOR</button>
-                    <button class="single-selector__option" type="button" data-value="lugo">LUGO</button>
-                    <button class="single-selector__option" type="button" data-value="optima">OPTIMA</button>
-                  </div>
+                <div class="catalog-item">
+                  <i><img src="https://storage.yandexcloud.net/s3files/previews/2025/01K83B5RZPEK3451TEV3N8DESK.jpg" alt="ARTE Lamp 2025-2026" ></i>
+                  <p>
+                    <a href="https://s3files.fandeco.org/link/651579296?mode=download" target="_blank" download="download">ARTE Lamp 2025-2026</a>
+                    <span>223.89 MB</span>
+                  </p>
                 </div>
-              </div>
-              <div class="marketing__filter-item">
-                <div class="search-selector" id="articleSearch">
-                  <div class="search-selector__caption">Артикул</div>
-                  <label class="search-selector__trigger">
-                    <input type="text" name="query" placeholder="Поиск по Артикулу" value="" >
-                    <i id="articleSearchProcessing"></i>
-                    <button type="button"></button>
-                  </label>
-                  <!-- Для того чтобы показать поисковую выдачу тогглим класс .visible на .search-selector__dropdown-->
-                  <div class="search-selector__fail" id="articleSearchFail">К сожалению, по вашему запросу ничего не найдено</div>
-                  <ul class="search-selector__dropdown" id="articleSearchResults">
-                    <li class="search-selector__option" data-value="A2412008-05-4K">
-                      <span>A2412008-05-4K</span>
-                      <p>Светодиодная лента 24V 9,6W/m 4000К 5м Arte Lamp AQUA TAPE</p>
-                    </li>
-                    <li class="search-selector__option selected" data-value="A6635PL-1BK">
-                      <span>A6635PL-1BK</span>
-                      <p>Светодиодная лента 24V 9,6W/m 4000К 5м Arte Lamp AQUA TAPE</p>
-                    </li>
-                    <li class="search-selector__option" data-value="A6650PL-1WH">
-                      <span>A6650PL-1WH</span>
-                      <p>Потолочный светильник Arte Lamp FADO</p>
-                    </li>
-                    <li class="search-selector__option" data-value="A6612PL-1BK">
-                      <span>A6612PL-1BK</span>
-                      <p>Потолочный светильник Arte Lamp FADO</p>
-                    </li>
-                  </ul>
+                <div class="catalog-item">
+                  <i><img src="https://storage.yandexcloud.net/s3files/previews/2025/01K83B5RZPEK3451TEV3N8DESK.jpg" alt="ARTE Lamp 2025-2026" ></i>
+                  <p>
+                    <a href="https://s3files.fandeco.org/link/651579296?mode=download" target="_blank" download="download">ARTE Lamp 2025-2026</a>
+                    <span>223.89 MB</span>
+                  </p>
                 </div>
               </div>
             </div>
-            <div class="marketing__filter-summary" id="marketingFilterSummary">
-              <button class="default-btn small-btn btn--white" id="resetFiltersButton" type="button">
-                <span>Очистить всё</span>
-                <i></i>
-              </button>
-              <button class="default-btn small-btn btn--dark" id="showFilesButton" type="button">
-                <span>Показать файлы (150)</span>
-                <i></i>
-              </button>
-            </div>
-            <ul class="marketing__chips" id="filteredChips">
-              <li data-value="artelamp">
-                <span>Artelamp</span>
-                <i></i>
-              </li>
-              <li data-value="divinare">
-                <span>Divinare</span>
-                <i></i>
-              </li>
-              <li data-value="gauss">
-                <span>gauss</span>
-                <i></i>
-              </li>
-              <li data-value="werkel">
-                <span>werkel</span>
-                <i></i>
-              </li>
-            </ul>
-            <!-- Показываем секцию выбора типа файлы через класс .visible-->
-            <ul class="marketing__card-list" id="marketingCards">
-              <li class="marketing__card-item">
-                <span>3D модели</span>
-                <i data-type="3d"></i>
-                <input type="checkbox" name="3d" >
-              </li>
-              <li class="marketing__card-item">
-                <span>Инструкции по сборке</span>
-                <i data-type="ai"></i>
-                <input type="checkbox" name="ai" >
-              </li>
-              <li class="marketing__card-item">
-                <span>Сертификаты</span>
-                <i data-type="cert"></i>
-                <input type="checkbox" name="cert" >
-              </li>
-              <li class="marketing__card-item">
-                <span>Технические рисунки</span>
-                <i data-type="drawing_pdf"></i>
-                <input type="checkbox" name="drawing_pdf" >
-              </li>
-              <li class="marketing__card-item">
-                <span>Презентационные материалы</span>
-                <i data-type="other"></i>
-                <input type="checkbox" name="other" >
-              </li>
-              <li class="marketing__card-item is-exists">
-                <span>Фотометрические данные</span>
-                <i data-type="photometric_data"></i>
-                <input type="checkbox" name="photometric_data" >
-              </li>
-              <li class="marketing__card-item is-exists">
-                <span>Интерьеры</span>
-                <i data-type="interiors"></i>
-                <input type="checkbox" name="interiors" >
-              </li>
-              <li class="marketing__card-item is-exists">
-                <span>Видео о товаре</span>
-                <i data-type="product_videos"></i>
-                <input type="checkbox" name="product_videos" >
-              </li>
-              <li class="marketing__card-item is-exists">
-                <span>Видеоинструкции</span>
-                <i data-type="video_instructions"></i>
-                <input type="checkbox" name="video_instructions" >
-              </li>
-              <li class="marketing__card-item is-exists">
-                <span>Руководство по эксплуатации</span>
-                <i data-type="user_manuals"></i>
-                <input type="checkbox" name="user_manuals" >
-              </li>
-            </ul>
-            <div class="marketing__files" id="marketingFiles">
-              <!-- Показываем секцию через класс .visible-->
-              <div class="marketing__files-section" data-type="cert">
-                <h3>Сертификаты</h3>
-                <div class="marketing__file-list">
-                  <div class="marketing__file-item">
-                    <div class="marketing__file-actions">
-                      <a href="assets/images/certificate.jpg" download="certificate" target="_blank"></a>
-                      <label><input class="invisible" type="checkbox" name="certificate" data-type="controller" ></label>
-                    </div>
-                    <img src="assets/images/certificate.jpg" alt="certificate" >
-                  </div>
-                  <div class="marketing__file-item">
-                    <div class="marketing__file-actions">
-                      <a href="assets/images/certificate.jpg" download="certificate" target="_blank"></a>
-                      <label><input class="invisible" type="checkbox" name="certificate" data-type="controller" checked ></label>
-                    </div>
-                    <img src="assets/images/certificate.jpg" alt="certificate" >
-                  </div>
-                  <div class="marketing__file-item">
-                    <div class="marketing__file-actions">
-                      <a href="assets/images/certificate.jpg" download="certificate" target="_blank"></a>
-                      <label><input class="invisible" type="checkbox" name="certificate" data-type="controller" ></label>
-                    </div>
-                    <img src="assets/images/certificate.jpg" alt="certificate" >
-                  </div>
-                  <div class="marketing__file-item">
-                    <div class="marketing__file-actions">
-                      <a href="assets/images/certificate.jpg" download="certificate" target="_blank"></a>
-                      <label><input class="invisible" type="checkbox" name="certificate" data-type="controller" ></label>
-                    </div>
-                    <img src="assets/images/certificate.jpg" alt="certificate" >
-                  </div>
-                  <div class="marketing__file-item">
-                    <div class="marketing__file-actions">
-                      <a href="assets/images/certificate.jpg" download="certificate" target="_blank"></a>
-                      <label><input class="invisible" type="checkbox" name="certificate" data-type="controller" ></label>
-                    </div>
-                    <img src="assets/images/certificate.jpg" alt="certificate" >
-                  </div>
-                </div>
-              </div>
-              <div class="marketing__files-section" data-type="ai">
-                <h3>Инструкции по сборке</h3>
-                <div class="marketing__file-list">
-                  <div class="marketing__file-item">
-                    <div class="marketing__file-actions">
-                      <a href="assets/images/instruction.jpg" download="instruction" target="_blank"></a>
-                      <label><input class="invisible" type="checkbox" name="certificate" data-type="controller" ></label>
-                    </div>
-                    <img src="assets/images/instruction.jpg" alt="instruction" >
-                  </div>
-                  <div class="marketing__file-item">
-                    <div class="marketing__file-actions">
-                      <a href="assets/images/instruction.jpg" download="instruction" target="_blank"></a>
-                      <label><input class="invisible" type="checkbox" name="certificate" data-type="controller" ></label>
-                    </div>
-                    <img src="assets/images/instruction.jpg" alt="instruction" >
-                  </div>
-                  <div class="marketing__file-item">
-                    <div class="marketing__file-actions">
-                      <a href="assets/images/instruction.jpg" download="instruction" target="_blank"></a>
-                      <label><input class="invisible" type="checkbox" name="certificate" data-type="controller" ></label>
-                    </div>
-                    <img src="assets/images/instruction.jpg" alt="instruction" >
-                  </div>
-                </div>
-              </div>
-              <div class="marketing__files-section" data-type="product_videos">
-                <h3>Видео о товаре</h3>
-                <div class="marketing__file-list marketing__file-list_video">
-                  <div class="marketing__file-item">
-                    <div class="marketing__file-video">
-                      <i><img src="assets/images/video_1.jpg" alt="video" ></i>
-                      <p>Видео инструкция Магнитной трековой системы и что-то там еще</p>
-                    </div>
-                  </div>
-                  <div class="marketing__file-item">
-                    <div class="marketing__file-video">
-                      <i><img src="assets/images/video_2.jpg" alt="video" ></i>
-                      <p>Видео инструкция Магнитной трековой системы и что-то там еще</p>
-                    </div>
-                  </div>
-                  <div class="marketing__file-item">
-                    <div class="marketing__file-video">
-                      <i><img src="assets/images/video_3.jpg" alt="video" ></i>
-                      <p>Видео инструкция Магнитной трековой системы и что-то там еще</p>
+            <div class="marketing__media active" id="marketingTargetMedia">
+              <div class="marketing__filter-list">
+                <div class="marketing__filter-item">
+                  <div class="single-selector" id="brandSelector">
+                    <div class="single-selector__caption">бренд</div>
+                    <button class="single-selector__trigger" type="button"><span>выберите значение</span></button>
+                    <div class="single-selector__dropdown">
+                      <button class="single-selector__option" type="button" data-value="artelamp">Arte Lamp</button>
+                      <button class="single-selector__option selected" type="button" data-value="divinare">Divinare</button>
+                      <button class="single-selector__option" type="button" data-value="gauss-lamps">Gauss лампочки</button>
+                      <button class="single-selector__option" type="button" data-value="werkel">Werkel</button>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="marketing__files-section" data-type="video_instructions">
-                <h3>Shorts</h3>
-                <div class="marketing__file-list">
-                  <div class="marketing__file-item">
-                    <div class="marketing__file-shorts">
-                      <i><img src="assets/images/shorts_1.jpg" alt="short" ></i>
-                      <span>Магнитная трековая система</span>
-                      <p>
-                        <span>ARTE Lamp</span>
-                        <mark><span>2</span></mark>
-                      </p>
-                    </div>
-                  </div>
-                  <div class="marketing__file-item">
-                    <div class="marketing__file-shorts">
-                      <i><img src="assets/images/shorts_2.jpg" alt="short" ></i>
-                      <span>Магнитная трековая система</span>
-                      <p>
-                        <span>ARTE Lamp</span>
-                        <mark><span>2</span></mark>
-                      </p>
-                    </div>
-                  </div>
-                  <div class="marketing__file-item">
-                    <div class="marketing__file-shorts">
-                      <i><img src="assets/images/shorts_3.jpg" alt="short" ></i>
-                      <span>Магнитная трековая система</span>
-                      <p>
-                        <span>ARTE Lamp</span>
-                        <mark><span>2</span></mark>
-                      </p>
-                    </div>
-                  </div>
-                  <div class="marketing__file-item">
-                    <div class="marketing__file-shorts">
-                      <i><img src="assets/images/shorts_4.jpg" alt="short" ></i>
-                      <span>Магнитная трековая система</span>
-                      <p>
-                        <span>ARTE Lamp</span>
-                        <mark><span>2</span></mark>
-                      </p>
-                    </div>
-                  </div>
-                  <div class="marketing__file-item">
-                    <div class="marketing__file-shorts">
-                      <i><img src="assets/images/shorts_5.jpg" alt="short" ></i>
-                      <span>Магнитная трековая система</span>
-                      <p>
-                        <span>ARTE Lamp</span>
-                        <mark><span>2</span></mark>
-                      </p>
-                    </div>
-                  </div>
-                  <div class="marketing__file-item">
-                    <div class="marketing__file-shorts">
-                      <i><img src="assets/images/shorts_6.jpg" alt="short" ></i>
-                      <span>Магнитная трековая система</span>
-                      <p>
-                        <span>ARTE Lamp</span>
-                        <mark><span>2</span></mark>
-                      </p>
+                <div class="marketing__filter-item">
+                  <div class="single-selector" id="collectionSelector">
+                    <div class="single-selector__caption">коллекция</div>
+                    <button class="single-selector__trigger" type="button"><span>выберите значение</span></button>
+                    <label class="single-selector__drop-filter">
+                      <input type="text" name="filter" >
+                      <i></i>
+                    </label>
+                    <div class="single-selector__dropdown">
+                      <button class="single-selector__option" type="button" data-value="smd">SMD</button>
+                      <button class="single-selector__option" type="button" data-value="basic">BASIC</button>
+                      <button class="single-selector__option" type="button" data-value="treno">TRENO</button>
+                      <button class="single-selector__option" type="button" data-value="filament">FILAMENT</button>
+                      <button class="single-selector__option" type="button" data-value="dimmer">DIMMER</button>
+                      <button class="single-selector__option" type="button" data-value="g4">G4</button>
+                      <button class="single-selector__option" type="button" data-value="london">LONDON</button>
+                      <button class="single-selector__option" type="button" data-value="galatea">GALATEA</button>
+                      <button class="single-selector__option" type="button" data-value="trapeze">TRAPEZE</button>
+                      <button class="single-selector__option" type="button" data-value="budapest">BUDAPEST</button>
+                      <button class="single-selector__option" type="button" data-value="intreccio">INTRECCIO</button>
+                      <button class="single-selector__option" type="button" data-value="avior">AVIOR</button>
+                      <button class="single-selector__option" type="button" data-value="lugo">LUGO</button>
+                      <button class="single-selector__option" type="button" data-value="optima">OPTIMA</button>
                     </div>
                   </div>
                 </div>
+                <div class="marketing__filter-item">
+                  <div class="search-selector" id="articleSearch">
+                    <div class="search-selector__caption">Артикул</div>
+                    <label class="search-selector__trigger">
+                      <input type="text" name="query" placeholder="Поиск по Артикулу" value="" >
+                      <i id="articleSearchProcessing"></i>
+                      <button type="button"></button>
+                    </label>
+                    <!-- Для того чтобы показать поисковую выдачу тогглим класс .visible на .search-selector__dropdown-->
+                    <div class="search-selector__fail" id="articleSearchFail">К сожалению, по вашему запросу ничего не найдено</div>
+                    <ul class="search-selector__dropdown" id="articleSearchResults">
+                      <li class="search-selector__option" data-value="A2412008-05-4K">
+                        <span>A2412008-05-4K</span>
+                        <p>Светодиодная лента 24V 9,6W/m 4000К 5м Arte Lamp AQUA TAPE</p>
+                      </li>
+                      <li class="search-selector__option selected" data-value="A6635PL-1BK">
+                        <span>A6635PL-1BK</span>
+                        <p>Светодиодная лента 24V 9,6W/m 4000К 5м Arte Lamp AQUA TAPE</p>
+                      </li>
+                      <li class="search-selector__option" data-value="A6650PL-1WH">
+                        <span>A6650PL-1WH</span>
+                        <p>Потолочный светильник Arte Lamp FADO</p>
+                      </li>
+                      <li class="search-selector__option" data-value="A6612PL-1BK">
+                        <span>A6612PL-1BK</span>
+                        <p>Потолочный светильник Arte Lamp FADO</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-              <div class="marketing__files-section" data-type="3d">
-                <h3>3D Модели</h3>
-                <div class="marketing__file-list"></div>
+              <div class="marketing__filter-summary" id="marketingFilterSummary">
+                <button class="default-btn small-btn btn--white" id="resetFiltersButton" type="button">
+                  <span>Очистить всё</span>
+                  <i></i>
+                </button>
+                <button class="default-btn small-btn btn--dark" id="showFilesButton" type="button">
+                  <span>Показать файлы (150)</span>
+                  <i></i>
+                </button>
               </div>
-              <div class="marketing__files-section" data-type="drawing_pdf">
-                <h3>Технические рисунки</h3>
-                <div class="marketing__file-list"></div>
-              </div>
-              <div class="marketing__files-section" data-type="photometric_data">
-                <h3>Фотометрические данные</h3>
-                <div class="marketing__file-list"></div>
-              </div>
-              <div class="marketing__files-section" data-type="interiors">
-                <h3>Интерьеры</h3>
-                <div class="marketing__file-list"></div>
-              </div>
-              <div class="marketing__files-section" data-type="other">
-                <h3>Презентационные материалы</h3>
-                <div class="marketing__file-list"></div>
-              </div>
-              <div class="marketing__files-section" data-type="user_manuals">
-                <h3>Руководство по эксплуатации</h3>
-                <div class="marketing__file-list"></div>
+              <ul class="marketing__chips" id="filteredChips">
+                <li data-value="artelamp">
+                  <span>Artelamp</span>
+                  <i></i>
+                </li>
+                <li data-value="divinare">
+                  <span>Divinare</span>
+                  <i></i>
+                </li>
+                <li data-value="gauss">
+                  <span>gauss</span>
+                  <i></i>
+                </li>
+                <li data-value="werkel">
+                  <span>werkel</span>
+                  <i></i>
+                </li>
+              </ul>
+              <!-- Показываем секцию выбора типа файлы через класс .visible-->
+              <ul class="marketing__card-list" id="marketingCards">
+                <li class="marketing__card-item">
+                  <span>3D модели</span>
+                  <i data-type="3d"></i>
+                  <input type="checkbox" name="3d" >
+                </li>
+                <li class="marketing__card-item">
+                  <span>Инструкции по сборке</span>
+                  <i data-type="ai"></i>
+                  <input type="checkbox" name="ai" >
+                </li>
+                <li class="marketing__card-item">
+                  <span>Сертификаты</span>
+                  <i data-type="cert"></i>
+                  <input type="checkbox" name="cert" >
+                </li>
+                <li class="marketing__card-item">
+                  <span>Технические рисунки</span>
+                  <i data-type="drawing_pdf"></i>
+                  <input type="checkbox" name="drawing_pdf" >
+                </li>
+                <li class="marketing__card-item">
+                  <span>Презентационные материалы</span>
+                  <i data-type="other"></i>
+                  <input type="checkbox" name="other" >
+                </li>
+                <li class="marketing__card-item">
+                  <span>Фотометрические данные</span>
+                  <i data-type="photometric_data"></i>
+                  <input type="checkbox" name="photometric_data" >
+                </li>
+                <li class="marketing__card-item">
+                  <span>Интерьеры</span>
+                  <i data-type="interiors"></i>
+                  <input type="checkbox" name="interiors" >
+                </li>
+                <li class="marketing__card-item">
+                  <span>Видео о товаре</span>
+                  <i data-type="product_videos"></i>
+                  <input type="checkbox" name="product_videos" >
+                </li>
+                <li class="marketing__card-item">
+                  <span>Видеоинструкции</span>
+                  <i data-type="video_instructions"></i>
+                  <input type="checkbox" name="video_instructions" >
+                </li>
+                <li class="marketing__card-item">
+                  <span>Руководство по эксплуатации</span>
+                  <i data-type="user_manuals"></i>
+                  <input type="checkbox" name="user_manuals" >
+                </li>
+              </ul>
+              <div class="marketing__files" id="marketingFiles">
+                <!-- Показываем секцию через класс .visible-->
+                <div class="marketing__files-section" data-type="cert">
+                  <h3>Сертификаты</h3>
+                  <div class="marketing__file-list">
+                    <div class="marketing__file-item">
+                      <div class="marketing__file-body">
+                        <div class="marketing__file-actions">
+                          <a href="assets/images/certificate.jpg" download="certificate" target="_blank"></a>
+                          <label><input class="invisible" type="checkbox" name="certificate" data-type="controller" ></label>
+                        </div>
+                        <div class="marketing__file-poster marketing__file-poster_3d">
+                          <i></i>
+                          <span>3d</span>
+                        </div>
+                      </div>
+                      <div class="marketing__file-preview">File name</div>
+                    </div>
+                    <div class="marketing__file-item">
+                      <div class="marketing__file-body">
+                        <div class="marketing__file-actions">
+                          <a href="assets/images/certificate.jpg" download="certificate" target="_blank"></a>
+                          <label><input class="invisible" type="checkbox" name="certificate" data-type="controller" checked ></label>
+                        </div>
+                        <div class="marketing__file-poster marketing__file-poster_pdf">
+                          <i></i>
+                          <span>pdf</span>
+                        </div>
+                      </div>
+                      <div class="marketing__file-preview">File name</div>
+                    </div>
+                    <div class="marketing__file-item">
+                      <div class="marketing__file-body">
+                        <div class="marketing__file-actions">
+                          <a href="assets/images/certificate.jpg" download="certificate" target="_blank"></a>
+                          <label><input class="invisible" type="checkbox" name="certificate" data-type="controller" ></label>
+                        </div>
+                        <div class="marketing__file-poster marketing__file-poster_mov">
+                          <i></i>
+                          <span>mov</span>
+                        </div>
+                      </div>
+                      <div class="marketing__file-preview">File name</div>
+                    </div>
+                    <div class="marketing__file-item">
+                      <div class="marketing__file-body">
+                        <div class="marketing__file-actions">
+                          <a href="assets/images/certificate.jpg" download="certificate" target="_blank"></a>
+                          <label><input class="invisible" type="checkbox" name="certificate" data-type="controller" ></label>
+                        </div>
+                        <div class="marketing__file-poster marketing__file-poster_jpg">
+                          <i></i>
+                          <span>jpg</span>
+                        </div>
+                      </div>
+                      <div class="marketing__file-preview">File name</div>
+                    </div>
+                    <div class="marketing__file-item">
+                      <div class="marketing__file-body">
+                        <div class="marketing__file-actions">
+                          <a href="assets/images/certificate.jpg" download="certificate" target="_blank"></a>
+                          <label><input class="invisible" type="checkbox" name="certificate" data-type="controller" ></label>
+                        </div>
+                        <div class="marketing__file-poster marketing__file-poster_ies">
+                          <i></i>
+                          <span>ies</span>
+                        </div>
+                      </div>
+                      <div class="marketing__file-preview">File name</div>
+                    </div>
+                    <div class="marketing__file-item">
+                      <div class="marketing__file-body">
+                        <div class="marketing__file-actions">
+                          <a href="assets/images/certificate.jpg" download="certificate" target="_blank"></a>
+                          <label><input class="invisible" type="checkbox" name="certificate" data-type="controller" ></label>
+                        </div>
+                        <div class="marketing__file-poster marketing__file-poster_zip">
+                          <i></i>
+                          <span>zip</span>
+                        </div>
+                      </div>
+                      <div class="marketing__file-preview">File name</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="marketing__files-section" data-type="ai">
+                  <h3>Инструкции по сборке</h3>
+                  <div class="marketing__file-list">
+                    <div class="marketing__file-item">
+                      <div class="marketing__file-body">
+                        <div class="marketing__file-actions">
+                          <a href="assets/images/certificate.jpg" download="certificate" target="_blank"></a>
+                          <label><input class="invisible" type="checkbox" name="certificate" data-type="controller" ></label>
+                        </div>
+                        <div class="marketing__file-poster marketing__file-poster_pdf">
+                          <i></i>
+                          <span>pdf</span>
+                        </div>
+                      </div>
+                      <div class="marketing__file-preview">File name</div>
+                    </div>
+                    <div class="marketing__file-item">
+                      <div class="marketing__file-body">
+                        <div class="marketing__file-actions">
+                          <a href="assets/images/certificate.jpg" download="certificate" target="_blank"></a>
+                          <label><input class="invisible" type="checkbox" name="certificate" data-type="controller" checked ></label>
+                        </div>
+                        <div class="marketing__file-poster marketing__file-poster_pdf">
+                          <i></i>
+                          <span>pdf</span>
+                        </div>
+                      </div>
+                      <div class="marketing__file-preview">File name</div>
+                    </div>
+                    <div class="marketing__file-item">
+                      <div class="marketing__file-body">
+                        <div class="marketing__file-actions">
+                          <a href="assets/images/certificate.jpg" download="certificate" target="_blank"></a>
+                          <label><input class="invisible" type="checkbox" name="certificate" data-type="controller" ></label>
+                        </div>
+                        <div class="marketing__file-poster marketing__file-poster_pdf">
+                          <i></i>
+                          <span>pdf</span>
+                        </div>
+                      </div>
+                      <div class="marketing__file-preview">File name</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="marketing__files-section" data-type="product_videos">
+                  <h3>Видео о товаре</h3>
+                  <div class="marketing__file-list marketing__file-list_video">
+                    <div class="marketing__file-item">
+                      <div class="marketing__file-video">
+                        <i><img src="assets/images/video_1.jpg" alt="video" ></i>
+                        <p>Видео инструкция Магнитной трековой системы и что-то там еще</p>
+                      </div>
+                    </div>
+                    <div class="marketing__file-item">
+                      <div class="marketing__file-video">
+                        <i><img src="assets/images/video_2.jpg" alt="video" ></i>
+                        <p>Видео инструкция Магнитной трековой системы и что-то там еще</p>
+                      </div>
+                    </div>
+                    <div class="marketing__file-item">
+                      <div class="marketing__file-video">
+                        <i><img src="assets/images/video_3.jpg" alt="video" ></i>
+                        <p>Видео инструкция Магнитной трековой системы и что-то там еще</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="marketing__files-section" data-type="video_instructions">
+                  <h3>Shorts</h3>
+                  <div class="marketing__file-list">
+                    <div class="marketing__file-item">
+                      <div class="marketing__file-shorts">
+                        <i><img src="assets/images/shorts_1.jpg" alt="short" ></i>
+                        <span>Магнитная трековая система</span>
+                        <p>
+                          <span>ARTE Lamp</span>
+                          <mark><span>2</span></mark>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="marketing__file-item">
+                      <div class="marketing__file-shorts">
+                        <i><img src="assets/images/shorts_2.jpg" alt="short" ></i>
+                        <span>Магнитная трековая система</span>
+                        <p>
+                          <span>ARTE Lamp</span>
+                          <mark><span>2</span></mark>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="marketing__file-item">
+                      <div class="marketing__file-shorts">
+                        <i><img src="assets/images/shorts_3.jpg" alt="short" ></i>
+                        <span>Магнитная трековая система</span>
+                        <p>
+                          <span>ARTE Lamp</span>
+                          <mark><span>2</span></mark>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="marketing__file-item">
+                      <div class="marketing__file-shorts">
+                        <i><img src="assets/images/shorts_4.jpg" alt="short" ></i>
+                        <span>Магнитная трековая система</span>
+                        <p>
+                          <span>ARTE Lamp</span>
+                          <mark><span>2</span></mark>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="marketing__file-item">
+                      <div class="marketing__file-shorts">
+                        <i><img src="assets/images/shorts_5.jpg" alt="short" ></i>
+                        <span>Магнитная трековая система</span>
+                        <p>
+                          <span>ARTE Lamp</span>
+                          <mark><span>2</span></mark>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="marketing__file-item">
+                      <div class="marketing__file-shorts">
+                        <i><img src="assets/images/shorts_6.jpg" alt="short" ></i>
+                        <span>Магнитная трековая система</span>
+                        <p>
+                          <span>ARTE Lamp</span>
+                          <mark><span>2</span></mark>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="marketing__files-section" data-type="3d">
+                  <h3>3D Модели</h3>
+                  <div class="marketing__file-list"></div>
+                </div>
+                <div class="marketing__files-section" data-type="drawing_pdf">
+                  <h3>Технические рисунки</h3>
+                  <div class="marketing__file-list"></div>
+                </div>
+                <div class="marketing__files-section" data-type="photometric_data">
+                  <h3>Фотометрические данные</h3>
+                  <div class="marketing__file-list"></div>
+                </div>
+                <div class="marketing__files-section" data-type="interiors">
+                  <h3>Интерьеры</h3>
+                  <div class="marketing__file-list"></div>
+                </div>
+                <div class="marketing__files-section" data-type="other">
+                  <h3>Презентационные материалы</h3>
+                  <div class="marketing__file-list"></div>
+                </div>
+                <div class="marketing__files-section" data-type="user_manuals">
+                  <h3>Руководство по эксплуатации</h3>
+                  <div class="marketing__file-list"></div>
+                </div>
               </div>
             </div>
           </div>
