@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Figma → Chakra UI: Гайд по переносу дизайна</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0d0f14;
+      --bg-card: #13161e;
+      --bg-code: #0a0c10;
+      --border: #1e2330;
+      --accent: #7c6af7;
+      --accent-soft: #a89ff5;
+      --accent-glow: rgba(124, 106, 247, 0.12);
+      --accent-dim: rgba(124, 106, 247, 0.25);
+      --green: #4ade80;
+      --yellow: #fbbf24;
+      --red: #f87171;
+      --text: #e2e6f0;
+      --text-muted: #7a8099;
+      --text-dim: #4a5068;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Manrope', sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+      min-height: 100vh;
+    }
+
+    /* ─── NOISE OVERLAY ─── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.4;
+    }
+
+    /* ─── GRID BG ─── */
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(var(--border) 1px, transparent 1px),
+        linear-gradient(90deg, var(--border) 1px, transparent 1px);
+      background-size: 48px 48px;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.3;
+    }
+
+    /* ─── GLOW ORBS ─── */
+    .orb {
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(120px);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .orb-1 {
+      width: 500px; height: 500px;
+      background: rgba(124, 106, 247, 0.07);
+      top: -100px; right: -100px;
+    }
+    .orb-2 {
+      width: 400px; height: 400px;
+      background: rgba(74, 222, 128, 0.04);
+      bottom: 10%; left: -100px;
+    }
+
+    /* ─── LAYOUT ─── */
+    .wrapper {
+      position: relative;
+      z-index: 1;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 80px 24px 120px;
+    }
+
+    /* ─── HEADER ─── */
+    header {
+      margin-bottom: 72px;
+      animation: fadeUp 0.6s ease both;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent-soft);
+      background: var(--accent-glow);
+      border: 1px solid var(--accent-dim);
+      border-radius: 4px;
+      padding: 4px 10px;
+      margin-bottom: 20px;
+    }
+
+    .tag::before {
+      content: '';
+      display: inline-block;
+      width: 6px; height: 6px;
+      background: var(--accent);
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      color: #fff;
+      margin-bottom: 16px;
+    }
+
+    h1 .arrow {
+      color: var(--accent);
+      font-weight: 400;
+      margin: 0 4px;
+    }
+
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 15px;
+      max-width: 540px;
+    }
+
+    /* ─── PROMPT BLOCK ─── */
+    .prompt-block {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent-dim);
+      border-radius: 10px;
+      padding: 28px 32px;
+      margin-bottom: 64px;
+      animation: fadeUp 0.6s 0.1s ease both;
+    }
+
+    .block-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .block-label.prompt { color: var(--yellow); }
+    .block-label.answer { color: var(--green); }
+
+    .block-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    .prompt-block p { color: var(--text-muted); margin-bottom: 10px; font-size: 15px; }
+    .prompt-block p:last-child { margin-bottom: 0; }
+    .prompt-block strong { color: var(--text); font-weight: 600; }
+    .prompt-block code {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 1px 6px;
+      color: var(--accent-soft);
+    }
+
+    /* ─── SECTIONS ─── */
+    .section {
+      margin-bottom: 60px;
+      animation: fadeUp 0.6s ease both;
+    }
+
+    h2 {
+      font-size: 22px;
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: -0.02em;
+      margin-bottom: 28px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    h2 .num {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      background: var(--accent-glow);
+      border: 1px solid var(--accent-dim);
+      border-radius: 4px;
+      padding: 3px 8px;
+    }
+
+    h3 {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--accent-soft);
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      font-size: 12px;
+      margin: 28px 0 12px;
+    }
+
+    h4 {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text-muted);
+      margin: 20px 0 8px;
+    }
+
+    p { color: var(--text-muted); margin-bottom: 12px; font-size: 15px; }
+    p:last-child { margin-bottom: 0; }
+
+    strong { color: var(--text); font-weight: 600; }
+
+    /* ─── NOTE BLOCK ─── */
+    .note {
+      background: rgba(124, 106, 247, 0.05);
+      border: 1px solid var(--accent-dim);
+      border-radius: 8px;
+      padding: 14px 18px;
+      font-size: 14px;
+      color: var(--accent-soft);
+      margin: 16px 0;
+      display: flex;
+      gap: 10px;
+    }
+    .note::before { content: '⚠️'; flex-shrink: 0; }
+
+    .tip {
+      background: rgba(74, 222, 128, 0.05);
+      border: 1px solid rgba(74, 222, 128, 0.2);
+      border-radius: 8px;
+      padding: 14px 18px;
+      font-size: 14px;
+      color: #86efac;
+      margin: 24px 0;
+      display: flex;
+      gap: 10px;
+    }
+    .tip::before { content: '💡'; flex-shrink: 0; }
+
+    /* ─── CODE BLOCKS ─── */
+    .code-wrap {
+      margin: 16px 0 24px;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+
+    .code-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #10131a;
+      padding: 10px 16px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .code-filename {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .code-lang {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-dim);
+    }
+
+    pre {
+      background: var(--bg-code);
+      padding: 22px 24px;
+      overflow-x: auto;
+      margin: 0;
+    }
+
+    code {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      line-height: 1.7;
+      color: #c9d1e0;
+    }
+
+    p code, li code {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 1px 6px;
+      font-size: 12.5px;
+      color: var(--accent-soft);
+    }
+
+    /* ─── SYNTAX HIGHLIGHT ─── */
+    .kw { color: #b78af7; }
+    .str { color: #86efac; }
+    .num { color: #fbbf24; }
+    .cm { color: #4a5068; font-style: italic; }
+    .fn { color: #7dd3fc; }
+    .prop { color: #93c5fd; }
+    .tag-c { color: #f9a8d4; }
+    .val { color: #fcd34d; }
+    .op { color: #94a3b8; }
+
+    /* ─── TABLE ─── */
+    .table-wrap { overflow-x: auto; margin: 16px 0 24px; border-radius: 8px; border: 1px solid var(--border); }
+
+    table { width: 100%; border-collapse: collapse; }
+    thead { background: #10131a; }
+    th {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      padding: 12px 18px;
+      text-align: left;
+    }
+    td {
+      padding: 12px 18px;
+      font-size: 14px;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border);
+    }
+    td:first-child { color: var(--text); font-weight: 600; }
+    tr:hover td { background: rgba(255,255,255,0.015); }
+
+    /* ─── CHECKLIST ─── */
+    .checklist {
+      list-style: none;
+      display: grid;
+      gap: 10px;
+      margin: 16px 0;
+    }
+
+    .checklist li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 14px;
+      color: var(--text-muted);
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px 16px;
+      transition: border-color 0.2s;
+    }
+
+    .checklist li:hover {
+      border-color: var(--accent-dim);
+    }
+
+    .check-icon {
+      width: 20px;
+      height: 20px;
+      background: rgba(74, 222, 128, 0.1);
+      border: 1px solid rgba(74, 222, 128, 0.3);
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+      font-size: 11px;
+    }
+
+    /* ─── FILE TREE ─── */
+    .file-tree {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      color: var(--text-muted);
+      background: var(--bg-code);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 22px 24px;
+      line-height: 2;
+    }
+
+    .file-tree .dir { color: #7dd3fc; font-weight: 600; }
+    .file-tree .file { color: #c9d1e0; }
+    .file-tree .comment { color: var(--text-dim); }
+
+    /* ─── STEP BADGE ─── */
+    .step {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 28px 0 12px;
+    }
+
+    .step-num {
+      width: 28px; height: 28px;
+      background: var(--accent-glow);
+      border: 1px solid var(--accent-dim);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--accent);
+      flex-shrink: 0;
+    }
+
+    .step-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    /* ─── FOOTER ─── */
+    footer {
+      margin-top: 80px;
+      padding-top: 32px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: gap;
+      gap: 12px;
+    }
+
+    footer p { font-size: 13px; color: var(--text-dim); margin: 0; }
+
+    /* ─── ANIMATIONS ─── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    .section:nth-child(1) { animation-delay: 0.1s; }
+    .section:nth-child(2) { animation-delay: 0.2s; }
+    .section:nth-child(3) { animation-delay: 0.3s; }
+    .section:nth-child(4) { animation-delay: 0.4s; }
+
+    @media (max-width: 600px) {
+      .wrapper { padding: 48px 16px 80px; }
+      pre { padding: 16px; }
+      .prompt-block { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+
+<div class="wrapper">
+
+  <!-- HEADER -->
+  <header>
+    <div class="tag">Senior Dev · Architect · Tech Lead</div>
+    <h1>Figma <span class="arrow">→</span> Chakra UI</h1>
+    <p class="subtitle">Гайд по правильному переносу дизайна: от токенов в Figma до нативных компонентов в Next.js без лишних пропсов.</p>
+  </header>
+
+  <!-- PROMPT -->
+  <div class="prompt-block">
+    <div class="block-label prompt">Промпт</div>
+    <p><strong>Контекст:</strong> Разработка фронтенда на Next.js + Chakra UI. Дизайнер только начинает делать макет. Нужен уникальный дизайн на базе компонентов Chakra UI.</p>
+    <p><strong>Задача 1:</strong> Что дизайнер должен добавить в макет, чтобы корректно перенести UI Kit в тему Chakra UI?</p>
+    <p><strong>Задача 2:</strong> Как правильно переносить дизайн из Figma в Chakra, чтобы в итоге использовать стандартные компоненты без кастомных пропсов?</p>
+    <p><strong>Пример:</strong> <code>&lt;Button variant="solid" size="sm"&gt;Кнопка&lt;/Button&gt;</code> — выглядит как в макете автоматически.</p>
+  </div>
+
+  <!-- PART 1 -->
+  <div class="section">
+    <h2><span class="num">ЧАСТЬ 1</span> Что дизайнер должен добавить в макет</h2>
+
+    <h3>1. Design Tokens — основа всего</h3>
+    <p>Дизайнер должен создать в Figma <strong>Local Variables</strong> и <strong>Styles</strong> со строгой структурой, которая маппится 1-в-1 на Chakra тему.</p>
+
+    <h4>Цвета — Color Variables</h4>
+    <div class="code-wrap">
+      <div class="code-header">
+        <span class="code-filename">Figma Local Variables → colors</span>
+        <span class="code-lang">naming</span>
+      </div>
+      <pre><code><span class="prop">brand</span><span class="op">/50, brand/100, brand/200 ... brand/900</span>   <span class="cm">← primary palette</span>
+<span class="prop">gray</span><span class="op">/50 ... gray/900</span>
+<span class="prop">red</span><span class="op">/50 ... red/900</span>                              <span class="cm">← для error states</span>
+<span class="prop">green</span><span class="op">/50 ... green/900</span>                          <span class="cm">← для success</span></code></pre>
+    </div>
+    <div class="note">Именно нотация <code>название/числовое значение</code> — она 1-в-1 ляжет в Chakra <code>colors</code></div>
+
+    <h4>Типографика — Text Styles</h4>
+    <div class="code-wrap">
+      <pre><code><span class="prop">heading</span><span class="op">/4xl, heading/3xl, heading/2xl, heading/xl, heading/lg</span>
+<span class="prop">body</span><span class="op">/lg, body/md, body/sm</span>
+<span class="prop">label</span><span class="op">/lg, label/md, label/sm</span></code></pre>
+    </div>
+
+    <h4>Spacing — Numeric Variables (шаг 4px)</h4>
+    <div class="code-wrap">
+      <pre><code><span class="prop">space</span><span class="op">/1</span> <span class="op">=</span> <span class="num">4px</span>
+<span class="prop">space</span><span class="op">/2</span> <span class="op">=</span> <span class="num">8px</span>
+<span class="prop">space</span><span class="op">/3</span> <span class="op">=</span> <span class="num">12px</span>
+<span class="prop">space</span><span class="op">/4</span> <span class="op">=</span> <span class="num">16px</span>   <span class="cm">← и далее</span></code></pre>
+    </div>
+    <p>Радиусы, тени, border-width — тоже переменными.</p>
+
+    <h3>2. Компонентные состояния</h3>
+    <p>Для каждого компонента дизайнер <strong>обязан</strong> нарисовать все состояния и все размеры.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Компонент</th><th>Обязательные состояния</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Button</td><td>default, hover, active, disabled, loading</td></tr>
+          <tr><td>Input</td><td>default, focus, error, disabled, filled</td></tr>
+          <tr><td>Card</td><td>default, hover, selected</td></tr>
+          <tr><td>Badge</td><td>каждый variant</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>И каждый <strong>size variant</strong>: <code>sm</code>, <code>md</code>, <code>lg</code></p>
+
+    <h3>3. Component Properties в Figma</h3>
+    <p>Компоненты создаются через <strong>Figma Component Properties</strong> — прямой аналог пропсов Chakra:</p>
+    <div class="code-wrap">
+      <pre><code><span class="fn">Button</span>
+  <span class="op">├──</span> <span class="prop">variant</span><span class="op">:</span> solid <span class="op">|</span> outline <span class="op">|</span> ghost <span class="op">|</span> link
+  <span class="op">├──</span> <span class="prop">colorScheme</span><span class="op">:</span> brand <span class="op">|</span> gray <span class="op">|</span> red <span class="op">|</span> green
+  <span class="op">├──</span> <span class="prop">size</span><span class="op">:</span> sm <span class="op">|</span> md <span class="op">|</span> lg
+  <span class="op">└──</span> <span class="prop">state</span><span class="op">:</span> default <span class="op">|</span> hover <span class="op">|</span> disabled <span class="op">|</span> loading</code></pre>
+    </div>
+  </div>
+
+  <!-- PART 2 -->
+  <div class="section">
+    <h2><span class="num">ЧАСТЬ 2</span> Перенос дизайна в Chakra тему</h2>
+
+    <h3>Архитектура файлов</h3>
+    <div class="file-tree">
+      <span class="dir">src/</span><br>
+      &nbsp;&nbsp;<span class="dir">theme/</span><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;<span class="file">index.ts</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">← сборка темы</span><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;<span class="dir">foundations/</span><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="file">colors.ts</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">← токены цветов</span><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="file">typography.ts</span>&nbsp;&nbsp;<span class="comment">← шрифты, размеры, веса</span><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="file">spacing.ts</span><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="file">radii.ts</span><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="file">shadows.ts</span><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;<span class="dir">components/</span><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="file">Button.ts</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">← переопределение компонента</span><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="file">Input.ts</span><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="file">Card.ts</span><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="file">Badge.ts</span>
+    </div>
+
+    <h3>Полный цикл на примере Button</h3>
+    <p>Дизайнер показал в Figma: primary bg <code>#7C3AED</code>, hover <code>#6D28D9</code>, radius <code>8px</code>, font-weight <code>600</code></p>
+
+    <div class="step">
+      <div class="step-num">1</div>
+      <span class="step-title">foundations/colors.ts</span>
+    </div>
+    <div class="code-wrap">
+      <div class="code-header">
+        <span class="code-filename">foundations/colors.ts</span>
+        <span class="code-lang">typescript</span>
+      </div>
+      <pre><code><span class="kw">export const</span> <span class="fn">colors</span> <span class="op">=</span> {
+  <span class="prop">brand</span>: {
+    <span class="num">50</span>:  <span class="str">'#F5F3FF'</span>,
+    <span class="num">100</span>: <span class="str">'#EDE9FE'</span>,
+    <span class="num">200</span>: <span class="str">'#DDD6FE'</span>,
+    <span class="num">300</span>: <span class="str">'#C4B5FD'</span>,
+    <span class="num">400</span>: <span class="str">'#A78BFA'</span>,
+    <span class="num">500</span>: <span class="str">'#8B5CF6'</span>,
+    <span class="num">600</span>: <span class="str">'#7C3AED'</span>,  <span class="cm">← primary default</span>
+    <span class="num">700</span>: <span class="str">'#6D28D9'</span>,  <span class="cm">← primary hover</span>
+    <span class="num">800</span>: <span class="str">'#5B21B6'</span>,
+    <span class="num">900</span>: <span class="str">'#4C1D95'</span>,
+  }
+}</code></pre>
+    </div>
+
+    <div class="step">
+      <div class="step-num">2</div>
+      <span class="step-title">components/Button.ts</span>
+    </div>
+    <div class="code-wrap">
+      <div class="code-header">
+        <span class="code-filename">components/Button.ts</span>
+        <span class="code-lang">typescript</span>
+      </div>
+      <pre><code><span class="kw">import</span> { <span class="fn">defineStyleConfig</span> } <span class="kw">from</span> <span class="str">'@chakra-ui/react'</span>
+
+<span class="kw">export const</span> <span class="fn">Button</span> <span class="op">=</span> <span class="fn">defineStyleConfig</span>({
+  <span class="prop">baseStyle</span>: {
+    <span class="prop">fontWeight</span>: <span class="str">'600'</span>,
+    <span class="prop">borderRadius</span>: <span class="str">'8px'</span>,
+    <span class="prop">_focus</span>: {
+      <span class="prop">boxShadow</span>: <span class="str">'0 0 0 3px var(--chakra-colors-brand-200)'</span>,
+    },
+  },
+  <span class="prop">sizes</span>: {
+    <span class="prop">sm</span>: { <span class="prop">h</span>: <span class="str">'36px'</span>, <span class="prop">px</span>: <span class="str">'16px'</span>, <span class="prop">fontSize</span>: <span class="str">'sm'</span> },
+    <span class="prop">md</span>: { <span class="prop">h</span>: <span class="str">'44px'</span>, <span class="prop">px</span>: <span class="str">'24px'</span>, <span class="prop">fontSize</span>: <span class="str">'md'</span> },
+    <span class="prop">lg</span>: { <span class="prop">h</span>: <span class="str">'52px'</span>, <span class="prop">px</span>: <span class="str">'32px'</span>, <span class="prop">fontSize</span>: <span class="str">'lg'</span> },
+  },
+  <span class="prop">variants</span>: {
+    <span class="prop">solid</span>: {
+      <span class="prop">bg</span>: <span class="str">'brand.600'</span>,
+      <span class="prop">color</span>: <span class="str">'white'</span>,
+      <span class="prop">_hover</span>: { <span class="prop">bg</span>: <span class="str">'brand.700'</span>, <span class="prop">_disabled</span>: { <span class="prop">bg</span>: <span class="str">'brand.600'</span> } },
+      <span class="prop">_active</span>: { <span class="prop">bg</span>: <span class="str">'brand.800'</span> },
+      <span class="prop">_disabled</span>: { <span class="prop">opacity</span>: <span class="num">0.4</span>, <span class="prop">cursor</span>: <span class="str">'not-allowed'</span> },
+    },
+    <span class="prop">outline</span>: {
+      <span class="prop">border</span>: <span class="str">'1.5px solid'</span>,
+      <span class="prop">borderColor</span>: <span class="str">'brand.600'</span>,
+      <span class="prop">color</span>: <span class="str">'brand.600'</span>,
+      <span class="prop">_hover</span>: { <span class="prop">bg</span>: <span class="str">'brand.50'</span> },
+      <span class="prop">_active</span>: { <span class="prop">bg</span>: <span class="str">'brand.100'</span> },
+    },
+    <span class="prop">ghost</span>: {
+      <span class="prop">color</span>: <span class="str">'brand.600'</span>,
+      <span class="prop">_hover</span>: { <span class="prop">bg</span>: <span class="str">'brand.50'</span> },
+    },
+  },
+  <span class="prop">defaultProps</span>: {
+    <span class="prop">variant</span>: <span class="str">'solid'</span>,
+    <span class="prop">size</span>: <span class="str">'md'</span>,
+    <span class="prop">colorScheme</span>: <span class="str">'brand'</span>,
+  },
+})</code></pre>
+    </div>
+
+    <div class="step">
+      <div class="step-num">3</div>
+      <span class="step-title">theme/index.ts — сборка</span>
+    </div>
+    <div class="code-wrap">
+      <div class="code-header">
+        <span class="code-filename">theme/index.ts</span>
+        <span class="code-lang">typescript</span>
+      </div>
+      <pre><code><span class="kw">import</span> { <span class="fn">extendTheme</span> } <span class="kw">from</span> <span class="str">'@chakra-ui/react'</span>
+<span class="kw">import</span> { <span class="fn">colors</span> } <span class="kw">from</span> <span class="str">'./foundations/colors'</span>
+<span class="kw">import</span> { <span class="fn">Button</span> } <span class="kw">from</span> <span class="str">'./components/Button'</span>
+
+<span class="kw">export const</span> <span class="fn">theme</span> <span class="op">=</span> <span class="fn">extendTheme</span>({
+  <span class="prop">colors</span>,
+  <span class="prop">fonts</span>: {
+    <span class="prop">heading</span>: <span class="str">`'Inter', sans-serif`</span>,
+    <span class="prop">body</span>: <span class="str">`'Inter', sans-serif`</span>,
+  },
+  <span class="prop">components</span>: {
+    <span class="fn">Button</span>,
+    <span class="cm">// Input,</span>
+    <span class="cm">// Card,</span>
+  },
+})</code></pre>
+    </div>
+
+    <div class="step">
+      <div class="step-num">4</div>
+      <span class="step-title">Использование в коде — никаких лишних пропсов</span>
+    </div>
+    <div class="code-wrap">
+      <div class="code-header">
+        <span class="code-filename">page.tsx</span>
+        <span class="code-lang">tsx</span>
+      </div>
+      <pre><code><span class="cm">// Кнопка выглядит как в макете — без кастомных пропсов!</span>
+<span class="op">&lt;</span><span class="tag-c">Button</span><span class="op">&gt;</span>Primary action<span class="op">&lt;/</span><span class="tag-c">Button</span><span class="op">&gt;</span>
+<span class="op">&lt;</span><span class="tag-c">Button</span> <span class="prop">variant</span><span class="op">=</span><span class="str">"outline"</span><span class="op">&gt;</span>Secondary<span class="op">&lt;/</span><span class="tag-c">Button</span><span class="op">&gt;</span>
+<span class="op">&lt;</span><span class="tag-c">Button</span> <span class="prop">size</span><span class="op">=</span><span class="str">"sm"</span><span class="op">&gt;</span>Small<span class="op">&lt;/</span><span class="tag-c">Button</span><span class="op">&gt;</span>
+<span class="op">&lt;</span><span class="tag-c">Button</span> <span class="prop">isDisabled</span><span class="op">&gt;</span>Disabled<span class="op">&lt;/</span><span class="tag-c">Button</span><span class="op">&gt;</span></code></pre>
+    </div>
+  </div>
+
+  <!-- CHECKLIST -->
+  <div class="section">
+    <h2><span class="num">ЧЕКЛИСТ</span> Для дизайнера</h2>
+    <ul class="checklist">
+      <li><span class="check-icon">✓</span>Color palette (50–900) для каждого цвета бренда</li>
+      <li><span class="check-icon">✓</span>Text Styles с именами <code>heading/xl</code>, <code>body/md</code> и т.д.</li>
+      <li><span class="check-icon">✓</span>Spacing variables кратные 4px</li>
+      <li><span class="check-icon">✓</span>Border radius variables (sm / md / lg)</li>
+      <li><span class="check-icon">✓</span>Shadow styles (sm / md / lg / xl)</li>
+      <li><span class="check-icon">✓</span>Каждый компонент — все variants × все sizes × все states</li>
+      <li><span class="check-icon">✓</span>Component Properties = variant, size, state, colorScheme</li>
+      <li><span class="check-icon">✓</span>Dark mode версии (если нужен темный режим)</li>
+      <li><span class="check-icon">✓</span>Breakpoints для адаптива: 480 / 768 / 992 / 1280 / 1536px</li>
+    </ul>
+
+    <div class="tip">
+      <div><strong>Главное правило:</strong> дизайнер работает в системе токенов → разработчик переносит токены в тему → компоненты используются нативно без лишних пропсов.</div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Figma → Chakra UI Guide · Next.js · Senior Dev / Architect</p>
+    <p>Сгенерировано Claude · Anthropic</p>
+  </footer>
+
+</div>
+</body>
+</html>
