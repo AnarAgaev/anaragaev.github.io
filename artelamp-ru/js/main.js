@@ -9936,6 +9936,29 @@ function menuPopup() {
 	});
 }
 
+function catalogTouchHandler() {
+	$('.main_menu>ul>li>a').on('touchstart', function (e) {
+		if (!window.matchMedia('(hover: none)').matches) return
+
+		var plate = $(this).closest('li').find('.plate')
+
+		if (!plate.length) return
+
+		e.preventDefault()
+
+		$('.main_menu>ul>li>.plate').not(plate).removeClass('active')
+		plate.toggleClass('active')
+	});
+
+	$(document).on('touchstart', function (e) {
+		if (!window.matchMedia('(hover: none)').matches) return
+
+		if (!$(e.target).closest('.main_menu').length) {
+			$('.main_menu>ul>li>.plate').removeClass('active')
+		}
+	})
+}
+
 function listingSelects() {
 	$('.listing_filters_units .the_select').niceSelect();
 }
@@ -10472,6 +10495,7 @@ $(document).ready(function () {
 	fixHeader();
 	fixHeaderSearch();
 	menuPopup();
+	catalogTouchHandler();
 	listingSelects();
 	listingFiltersListOpen();
 	cartCalc();
