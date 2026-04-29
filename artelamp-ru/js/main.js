@@ -9946,12 +9946,28 @@ function catalogTouchHandler() {
 
 		e.preventDefault()
 
-		$('.main_menu>ul>li>.plate').not(plate).removeClass('active')
-		plate.toggleClass('active')
+		if ($(window).width() < 1201) {
+			if (plate.hasClass('active')) {
+				plate.stop(true, true).slideUp(function () {
+					plate.find('.submenu').hide()
+					plate.find('.tit').removeClass('active')
+				})
+				plate.removeClass('active')
+				$(this).removeClass('active')
+			} else {
+				plate.stop(true, true).slideDown()
+				plate.addClass('active')
+				$(this).addClass('active')
+			}
+		} else {
+			$('.main_menu>ul>li>.plate').not(plate).removeClass('active')
+			plate.toggleClass('active')
+		}
 	});
 
 	$(document).on('touchstart', function (e) {
 		if (!window.matchMedia('(hover: none)').matches) return
+		if ($(window).width() < 1201) return
 
 		if (!$(e.target).closest('.main_menu').length) {
 			$('.main_menu>ul>li>.plate').removeClass('active')
