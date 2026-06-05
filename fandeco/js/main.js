@@ -14332,18 +14332,6 @@ function newProductcartCalc () {
     })
 }
 
-function newCardShopCheck () {
-    if ($('.new_card_shop_check').length !== 0) {
-        $('.new_card_shop_check input').on('input', (e) => {
-            if (e.target.checked) {
-                $('.new_card_shop_table_line--non').hide()
-            } else {
-                $('.new_card_shop_table_line--non').show()
-            }
-        })
-    }
-}
-
 function newCardArrowVisible () {
     var a = newCardArrowVisibleLength()
     var w = $(window).width()
@@ -14544,7 +14532,6 @@ $(document).ready(function () {
     newProductPrevNextArrows()
     newProductCharctersOpen()
     newProductcartCalc()
-    newCardShopCheck()
     newCardArrowVisible()
     newCardBuyRichShare()
     openFastView() /* НЕ ПЕРЕНОСИТЬ */
@@ -20773,7 +20760,346 @@ function initHideMapButtons() {
 window.addEventListener("load", () => {
     initShowMapButtons()
     initHideMapButtons()
+    initCheckoutModals()
+    initPickupMapModal()
 })
+
+/**
+ * ========================================
+ * Управление мобильными модальными окнами
+ * БЭМ-компонент: checkout-modal
+ * ========================================
+ */
+function initCheckoutModals() {
+  // Работаем только на мобильных (< 769px)
+  if (window.innerWidth >= 769) return;
+
+  // Находим все триггеры
+  const triggers = document.querySelectorAll('.checkout-trigger');
+  if (!triggers.length) return;
+
+  // Создаём overlay один раз
+  const overlay = createCheckoutOverlay();
+  document.body.appendChild(overlay);
+
+  // Навешиваем обработчики на каждый триггер
+  triggers.forEach(trigger => {
+    const sectionId = trigger.getAttribute('data-modal');
+    const modal = document.getElementById(sectionId);
+
+    if (!modal) {
+      console.warn(`Modal with id "${sectionId}" not found`);
+      return;
+    }
+
+    // Перемещаем модальное окно в body (чтобы z-index работал корректно)
+    document.body.appendChild(modal);
+
+    // Клик по триггеру - открыть модалку
+    trigger.addEventListener('click', () => {
+      openCheckoutModal(modal, overlay);
+    });
+
+    // Клик по кнопке закрытия
+    const closeBtn = modal.querySelector('.checkout-modal__close');
+    if (closeBtn) {
+      closeBtn.addEventListener('click', () => {
+        closeCheckoutModal(modal, overlay);
+      });
+    }
+
+    // Клик по overlay - закрыть модалку
+    overlay.addEventListener('click', () => {
+      closeCheckoutModal(modal, overlay);
+    });
+
+    // ESC для закрытия
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modal.classList.contains('is-active')) {
+        closeCheckoutModal(modal, overlay);
+      }
+    });
+  });
+
+  // Обработка изменения размера экрана
+  window.addEventListener('resize', debounceCheckout(function() {
+    if (window.innerWidth >= 769) {
+      const overlay = document.querySelector('.checkout-modal-overlay');
+      if (overlay) {
+        closeAllCheckoutModals(overlay);
+      }
+    }
+  }, 250));
+}
+
+function createCheckoutOverlay() {
+  const overlay = document.createElement('div');
+  overlay.className = 'checkout-modal-overlay';
+  overlay.setAttribute('aria-hidden', 'true');
+  return overlay;
+}
+
+function openCheckoutModal(modal, overlay) {
+  closeAllCheckoutModals(overlay);
+
+  modal.classList.add('is-active');
+  overlay.classList.add('is-active');
+  document.body.style.overflow = 'hidden';
+
+  const firstInput = modal.querySelector('input, select, textarea, button');
+  if (firstInput) {
+    setTimeout(() => firstInput.focus(), 100);
+  }
+
+  modal.setAttribute('aria-hidden', 'false');
+  overlay.setAttribute('aria-hidden', 'false');
+}
+
+function closeCheckoutModal(modal, overlay) {
+  modal.classList.remove('is-active');
+  overlay.classList.remove('is-active');
+  document.body.style.overflow = '';
+
+  modal.setAttribute('aria-hidden', 'true');
+  overlay.setAttribute('aria-hidden', 'true');
+
+  updateCheckoutTriggerPreview(modal);
+}
+
+function closeAllCheckoutModals(overlay) {
+  const activeModals = document.querySelectorAll('.checkout-modal.is-active');
+  activeModals.forEach(modal => {
+    modal.classList.remove('is-active');
+    modal.setAttribute('aria-hidden', 'true');
+  });
+  overlay.classList.remove('is-active');
+  document.body.style.overflow = '';
+}
+
+function updateCheckoutTriggerPreview(modal) {
+  const modalId = modal.id;
+  const trigger = document.querySelector(`[data-modal="${modalId}"]`);
+  if (!trigger) return;
+
+  const preview = trigger.querySelector('.checkout-trigger__preview');
+  if (!preview) return;
+
+  const previewText = collectCheckoutFormPreview(modal);
+
+  if (previewText) {
+    preview.textContent = previewText;
+    trigger.classList.add('checkout-trigger--completed');
+  } else {
+    preview.textContent = 'Не заполнено';
+    trigger.classList.remove('checkout-trigger--completed');
+  }
+}
+
+function collectCheckoutFormPreview(modal) {
+  // Для секции доставки/оплаты - собираем выбранную радио-кнопку
+  const checkedRadio = modal.querySelector('input[type="radio"]:checked');
+  if (checkedRadio) {
+    const label = modal.querySelector(`label[for="${checkedRadio.id}"]`);
+    if (label) {
+      const title = label.querySelector('.checkout-radio-card__title');
+      return title ? title.textContent.trim() : '';
+    }
+  }
+
+  // Для секции данных получателя - собираем имя
+  const nameInput = modal.querySelector('input[name="firstname"]');
+  const lastnameInput = modal.querySelector('input[name="lastname"]');
+  if (nameInput && lastnameInput && nameInput.value && lastnameInput.value) {
+    return `${lastnameInput.value} ${nameInput.value}`;
+  }
+
+  return '';
+}
+
+function debounceCheckout(func, wait) {
+  let timeout;
+  return function executedFunction(...args) {
+    const later = () => {
+      clearTimeout(timeout);
+      func(...args);
+    };
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+  };
+}
+
+/**
+ * ========================================
+ * Управление модальным окном выбора пункта самовывоза (Desktop)
+ * ========================================
+ */
+function initPickupMapModal() {
+  const modal = document.getElementById('pickup-map-modal');
+  if (!modal) return;
+
+  const triggers = document.querySelectorAll('[data-modal="pickup-map-modal"]');
+  const closeBtn = modal.querySelector('.pickup-map-modal__close');
+  const overlay = modal.querySelector('.pickup-map-modal__overlay');
+
+  if (triggers.length === 0) return;
+
+  // Открытие модального окна для всех триггеров
+  triggers.forEach(trigger => {
+    trigger.addEventListener('click', () => {
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  // Закрытие по кнопке
+  if (closeBtn) {
+    closeBtn.addEventListener('click', () => {
+      closePickupMapModal(modal);
+    });
+  }
+
+  // Закрытие по overlay
+  if (overlay) {
+    overlay.addEventListener('click', () => {
+      closePickupMapModal(modal);
+    });
+  }
+
+  // Закрытие по ESC
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.getAttribute('aria-hidden') === 'false') {
+      closePickupMapModal(modal);
+    }
+  });
+}
+
+function closePickupMapModal(modal) {
+  modal.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = '';
+}
+
+/**
+ * ========================================
+ * Управление блоками деталей доставки
+ * ========================================
+ */
+function initDeliveryDetailsToggle() {
+  // Находим все радио-кнопки доставки внутри checkout-radio-card
+  const deliveryRadios = document.querySelectorAll('.checkout-radio-card input[type="radio"][name="delivery"]');
+
+  if (deliveryRadios.length === 0) return;
+
+  deliveryRadios.forEach(radio => {
+    radio.addEventListener('change', function() {
+      // Скрываем все блоки деталей доставки
+      const detailsSections = document.querySelectorAll('.checkout-section--delivery-details');
+      detailsSections.forEach(section => {
+        section.style.display = 'none';
+      });
+
+      // Показываем нужный блок в зависимости от выбранной опции
+      if (this.id === 'delivery_1') {
+        // Курьером (по Москве) - показываем блок #section-courier-empty
+        const courierSection = document.getElementById('section-courier-empty');
+        if (courierSection) {
+          courierSection.style.display = 'block';
+        }
+      } else if (this.id === 'delivery_2') {
+        // Самовывоз из пунктов ТК - показываем блок #section-pickup-empty
+        const pickupSection = document.getElementById('section-pickup-empty');
+        if (pickupSection) {
+          pickupSection.style.display = 'block';
+        }
+      } else if (this.id === 'delivery_3') {
+        // Самовывоз из магазинов - показываем блок #section-shops
+        const shopsSection = document.getElementById('section-shops');
+        if (shopsSection) {
+          shopsSection.style.display = 'block';
+        }
+      }
+    });
+  });
+}
+
+/**
+ * ========================================
+ * Обработка кнопок добавления адреса
+ * ========================================
+ */
+function initCourierEmptyButton() {
+  const emptyButton = document.querySelector('#courier-empty-addresses .checkout-empty__btn');
+
+  if (!emptyButton) return;
+
+  emptyButton.addEventListener('click', function() {
+    openAddAddressModal();
+  });
+}
+
+function initAddNewAddressButton() {
+  const addButton = document.querySelector('.checkout-add-address-btn');
+
+  if (!addButton) return;
+
+  addButton.addEventListener('click', function() {
+    openAddAddressModal();
+  });
+}
+
+function openAddAddressModal() {
+  const modal = document.getElementById('add-address-modal');
+  if (!modal) return;
+
+  modal.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+}
+
+/**
+ * ========================================
+ * Инициализация модального окна "Указать адрес доставки"
+ * ========================================
+ */
+function initAddAddressModal() {
+  const modal = document.getElementById('add-address-modal');
+  if (!modal) return;
+
+  const closeBtn = modal.querySelector('.pickup-map-modal__close');
+  const overlay = modal.querySelector('.pickup-map-modal__overlay');
+
+  // Закрытие по кнопке
+  if (closeBtn) {
+    closeBtn.addEventListener('click', () => {
+      closeAddressModal(modal);
+    });
+  }
+
+  // Закрытие по overlay
+  if (overlay) {
+    overlay.addEventListener('click', () => {
+      closeAddressModal(modal);
+    });
+  }
+
+  // Закрытие по ESC
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.getAttribute('aria-hidden') === 'false') {
+      closeAddressModal(modal);
+    }
+  });
+}
+
+function closeAddressModal(modal) {
+  modal.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = '';
+}
+
+// Добавляем инициализацию в load event
+window.addEventListener("load", () => {
+  initDeliveryDetailsToggle();
+  initCourierEmptyButton();
+  initAddNewAddressButton();
+  initAddAddressModal();
+});
 
 // Страница каталоги
 /**

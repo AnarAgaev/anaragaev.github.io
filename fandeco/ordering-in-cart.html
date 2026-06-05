@@ -47,6 +47,12 @@
 </li><li class="widget_item">
     <a class="widget_link" href="catalogs.html">Каталоги</a>
 </li><li class="widget_item">
+    <a class="widget_link" href="checkout-mobile-demo.html">Checkout Mobile Demo</a>
+</li><li class="widget_item">
+    <a class="widget_link" href="checkout-ui-kit-demo.html">UI-кит страницы оформления заказа</a>
+</li><li class="widget_item">
+    <a class="widget_link" href="checkout.html">Оформление заказа</a>
+</li><li class="widget_item">
     <a class="widget_link" href="comparison.html">Сравнение</a>
 </li><li class="widget_item">
     <a class="widget_link" href="configurators.html">Конфигуратор</a>
@@ -746,56 +752,62 @@
                     <div class="new_cart_order" style="padding-bottom: 0">
                         <div class="new_cart_order_content">
                             <div class="new_cart_order_content_unit">
+                                <!-- Заголовок с выбором города -->
+                                <div class="checkout-header">
+                                    <h1 class="checkout-title">Оформление заказа</h1>
+                                    <div class="city-selector">
+                                        <select class="city-selector__select" id="city-select" name="city">
+                                            <option value="moscow" selected>Москва</option>
+                                            <option value="izhevsk">Ижевск</option>
+                                            <option value="krasnoyarsk">Красноярск</option>
+                                            <option value="grozny">Грозный</option>
+                                            <option value="ekaterinburg">Екатеринбург</option>
+                                        </select>
+                                    </div>
+                                </div>
+
                                 <p class="tit">1. Как вы хотите получить заказ?</p>
                                 <div class="check_units check_units_delivery" id="deliveries">
-                                    <div class="check_unit delivery_express_moskov">
+                                    <div class="check_unit delivery_express_moskov checkout-radio-card">
                                         <input type="radio" class="radio" name="delivery" value="1" data-delivery-day="0" data-delivery-date="30 июня" id="delivery_1" data-payments="[1,2,3,10]" checked="">
                                         <label class="check_unit_wrap" for="delivery_1">
-                              <span class="lab_check">
-                              Курьером (По Москве)
-                              </span>
-                                            <span class="text_list">
-                              <i>Стоимость доставки</i>
-                              <b class="ms3_approximatecost_cost">Бесплатно</b>
-                              </span>
-                                            <span class="text_list">
-                              <i>Ближайшая доставка</i>
-                              <b class="the_date ms3_approximatecost_day ">
-                              30 июня                </b>
-                              </span>
+                                            <div class="checkout-icon">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M18 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm1.5-9l1.96 2.5H17V9.5h2.5m-10 9C8.67 18.5 8 17.83 8 17s.67-1.5 1.5-1.5S11 16.17 11 17s-.67 1.5-1.5 1.5zM20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4z"/>
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                <div class="checkout-radio-card__title">Курьером</div>
+                                                <div class="checkout-radio-card__description">По Москве, <b class="ms3_approximatecost_cost">Бесплатно</b></div>
+                                            </div>
                                         </label>
                                     </div>
-                                    <div class="check_unit delivery_pickup_shop">
+                                    <div class="check_unit delivery_pickup_shop checkout-radio-card">
                                         <input type="radio" class="radio" name="delivery" value="2" data-delivery-day="0" data-delivery-date="8 июля" id="delivery_2" data-payments="[1,2,3,10]">
                                         <label class="check_unit_wrap" for="delivery_2">
-                              <span class="lab_check">
-                              Самовывоз из магазинов
-                              </span>
-                                            <span class="text_list">
-                              <i>Стоимость доставки</i>
-                              <b class="ms3_approximatecost_cost">Бесплатно</b>
-                              </span>
-                                            <span class="text_list">
-                              <i>Ближайшая доставка</i>
-                              <b class="the_date ms3_approximatecost_day ">
-                              8 июля                </b>
-                              </span>
+                                            <div class="checkout-icon">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                <div class="checkout-radio-card__title">Самовывоз</div>
+                                                <div class="checkout-radio-card__description">Из магазинов, <b class="ms3_approximatecost_cost">Бесплатно</b></div>
+                                            </div>
                                         </label>
                                     </div>
-                                    <div class="check_unit delivery_express_transport">
+                                    <div class="check_unit delivery_express_transport checkout-radio-card">
                                         <input type="radio" class="radio" name="delivery" value="5" data-delivery-day="0" data-delivery-date="2 июля" id="delivery_5" data-payments="[2,3,10]">
                                         <label class="check_unit_wrap" for="delivery_5">
-                              <span class="lab_check">
-                              Самовывоз из <strong class="ms3_approximatecost_points">1891</strong> <span class="ms3_approximatecost_points_dec">пункт</span> ТК
-                              </span>
-                                            <span class="text_list">
-                              <i>Стоимость доставки</i>
-                              <b class="ms3_approximatecost_cost">от <i>671</i> <i class="ic">₽</i></b>
-                              </span>
-                                            <span class="text_list">
-                              <i>Ближайшая доставка</i>
-                              <b class="the_date ms3_approximatecost_day ">через 9 дней</b>
-                              </span>
+                                            <div class="checkout-icon">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                <div class="checkout-radio-card__title">Самовывоз из ТК</div>
+                                                <div class="checkout-radio-card__description"><strong class="ms3_approximatecost_points">1891</strong> <span class="ms3_approximatecost_points_dec">пункт</span>, от <b class="ms3_approximatecost_cost"><i>671</i> <i class="ic">₽</i></b></div>
+                                            </div>
                                         </label>
                                     </div>
                                     <div class="info_nopay ms3_delivery_free" style="display: none">
@@ -951,8 +963,8 @@
                                         <div class="curier_delivery">
                                             <div class="order_form_unit">
                                                 <div class="controll_wrap input-parent">
-                                                    <label for="street">Выберите ваш адрес из списка*<span class="required-star">*</span></label>
-                                                    <input type="text" id="street" placeholder="Начните вводить адрес" name="street" value="" class="suggestions-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+                                                    <label for="street" class="checkout-label">Выберите ваш адрес из списка<span class="required-star">*</span></label>
+                                                    <input type="text" id="street" placeholder="Начните вводить адрес" name="street" value="" class="checkout-input suggestions-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
                                                     <div class="controll_wrap_dropdown _js-list-street-result"></div>
                                                 </div>
                                                 <div class="controll_wrap-toggle-container">
@@ -960,63 +972,63 @@
                                                         Не нашли адрес в списке?
                                                     </button>
                                                     <div class="controll_wrap input-parent">
-                                                        <label for="street2">Введите ваш адрес*</label>
-                                                        <input type="text" id="street2" placeholder="Если вы не смогли найти свой адрес через поиск, напиши его здесь" name="street2" value="" class="suggestions-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+                                                        <label for="street2" class="checkout-label">Введите ваш адрес<span class="required-star">*</span></label>
+                                                        <input type="text" id="street2" placeholder="Если вы не смогли найти свой адрес через поиск, напиши его здесь" name="street2" value="" class="checkout-input suggestions-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
                                                     </div>
                                                 </div>
 
                                                 <div class="controll_wrap-additional">
                                                     <div class="controll_wrap input-parent">
-                                                        <label for="apartment">Квартира/Офис</label>
+                                                        <label for="apartment" class="checkout-label">Квартира/Офис</label>
                                                         <input
                                                             type="text"
                                                             id="apartment"
                                                             placeholder="Номер квартиры или офиса"
                                                             name="apartment"
                                                             value=""
-                                                            class="suggestions-input"
+                                                            class="checkout-input suggestions-input"
                                                             autocomplete="off"
                                                             autocorrect="off"
                                                             autocapitalize="off"
                                                             spellcheck="false">
                                                     </div>
                                                     <div class="controll_wrap input-parent">
-                                                        <label for="entrance">Подъезд</label>
+                                                        <label for="entrance" class="checkout-label">Подъезд</label>
                                                         <input
                                                             type="text"
                                                             id="entrance"
                                                             placeholder="Номер подъезда"
                                                             name="entrance"
                                                             value=""
-                                                            class="suggestions-input"
+                                                            class="checkout-input suggestions-input"
                                                             autocomplete="off"
                                                             autocorrect="off"
                                                             autocapitalize="off"
                                                             spellcheck="false">
                                                     </div>
                                                     <div class="controll_wrap input-parent">
-                                                        <label for="floor">Этаж</label>
+                                                        <label for="floor" class="checkout-label">Этаж</label>
                                                         <input
                                                             type="text"
                                                             id="floor"
                                                             placeholder="Ваш этаж"
                                                             name="floor"
                                                             value=""
-                                                            class="suggestions-input"
+                                                            class="checkout-input suggestions-input"
                                                             autocomplete="off"
                                                             autocorrect="off"
                                                             autocapitalize="off"
                                                             spellcheck="false">
                                                     </div>
                                                     <div class="controll_wrap controll_wrap_note input-parent">
-                                                        <label for="note">Комментарий к адресу</label>
+                                                        <label for="note" class="checkout-label">Комментарий к адресу</label>
                                                         <input
                                                             type="text"
                                                             id="note"
                                                             placeholder="Например наличие лифта или домофона"
                                                             name="note"
                                                             value=""
-                                                            class="suggestions-input"
+                                                            class="checkout-input suggestions-input"
                                                             autocomplete="off"
                                                             autocorrect="off"
                                                             autocapitalize="off"
@@ -1053,77 +1065,88 @@
                                 </div>
                                 <p class="tit">3. Как вам будет удобнее оплатить заказ?</p>
                                 <div class="check_units check_units_banks check_units_payment" id="payments">
-                                    <div class="check_unit input-parent">
+                                    <div class="check_unit input-parent checkout-radio-card">
                                         <input type="radio" class="radio" id="payment_1" name="payment" value="1">
                                         <label for="payment_1" class="check_unit_wrap">
-                                            <span class="lab_check">Наличные или по карте</span>
-                                            <span class="text_list"><i>Оплата при получении товара наличными или через терминал</i></span>
+                                            <div>
+                                                <div class="checkout-radio-card__title">Наличные или по карте</div>
+                                                <div class="checkout-radio-card__description">Оплата при получении товара наличными или через терминал</div>
+                                            </div>
                                         </label>
                                     </div>
-                                    <div class="check_unit input-parent">
+                                    <div class="check_unit input-parent checkout-radio-card">
                                         <input type="radio" class="radio" id="payment_2" name="payment" value="2">
                                         <label for="payment_2" class="check_unit_wrap">
-                                            <span class="lab_check">Онлайн платеж по карте, СБП</span>
-                                            <span class="bank_list bank_list__cards">
-                                                <i class="icon_bank">
-                                                    <img src="https://cdn.fandeco.ru/assets/tpl/page/basket/images/new_cart/visa.svg" alt="">
-                                                </i>
-                                                <i class="icon_bank">
-                                                    <img src="https://cdn.fandeco.ru/assets/tpl/page/basket/images/new_cart/master.svg" alt="">
-                                                </i>
-                                                <i class="icon_bank">
-                                                    <img src="https://cdn.fandeco.ru/assets/tpl/page/basket/images/new_cart/mir.svg" alt="">
-                                                </i>
-                                                <i class="icon_bank">
-                                                    <img src="https://aws.massive.ru/fandeco.ru/assert/images/sbp.png" alt="">
-                                                </i>
-                                            </span>
+                                            <div>
+                                                <div class="checkout-radio-card__title">Онлайн платеж по карте, СБП</div>
+                                                <div class="bank_list bank_list__cards">
+                                                    <i class="icon_bank">
+                                                        <img src="https://cdn.fandeco.ru/assets/tpl/page/basket/images/new_cart/visa.svg" alt="">
+                                                    </i>
+                                                    <i class="icon_bank">
+                                                        <img src="https://cdn.fandeco.ru/assets/tpl/page/basket/images/new_cart/master.svg" alt="">
+                                                    </i>
+                                                    <i class="icon_bank">
+                                                        <img src="https://cdn.fandeco.ru/assets/tpl/page/basket/images/new_cart/mir.svg" alt="">
+                                                    </i>
+                                                    <i class="icon_bank">
+                                                        <img src="https://aws.massive.ru/fandeco.ru/assert/images/sbp.png" alt="">
+                                                    </i>
+                                                </div>
+                                            </div>
                                         </label>
                                     </div>
-                                    <div class="check_unit input-parent">
+                                    <div class="check_unit input-parent checkout-radio-card">
                                         <input type="radio" class="radio" id="payment_3" name="payment" value="3">
                                         <label for="payment_3" class="check_unit_wrap">
-                                            <span class="lab_check">Выставить счет</span>
-                                            <span class="text_list"><i>Менеджер компании выставит счет</i></span>
+                                            <div>
+                                                <div class="checkout-radio-card__title">Выставить счет</div>
+                                                <div class="checkout-radio-card__description">Менеджер компании выставит счет</div>
+                                            </div>
                                         </label>
                                     </div>
-                                    <div class="check_unit input-parent">
+                                    <div class="check_unit input-parent checkout-radio-card">
                                         <input type="radio" class="radio" id="payment_10" name="payment" value="10">
                                         <label for="payment_10" class="check_unit_wrap">
-                                            <span class="lab_check">Онлайн платеж</span>
-                                            <span class="bank_list">
-												<i class="icon_bank">
-													<img src="https://cdn.fandeco.ru/assets/tpl/page/basket/images/new_cart/hal.svg"alt="">
-												</i>
-											</span>
+                                            <div>
+                                                <div class="checkout-radio-card__title">Онлайн платеж</div>
+                                                <div class="bank_list">
+                                                    <i class="icon_bank">
+                                                        <img src="https://cdn.fandeco.ru/assets/tpl/page/basket/images/new_cart/hal.svg" alt="">
+                                                    </i>
+                                                </div>
+                                            </div>
                                         </label>
                                     </div>
 
                                     <!-- Кнопка Яндекс сплит --- START -->
-                                    <div class="check_unit input-parent">
+                                    <div class="check_unit input-parent checkout-radio-card">
                                         <input type="radio" class="radio" id="payment-split" name="payment" value="" checked>
-                                        <label for="payment-split"
-                                            class="check_unit_wrap">
-                                            <span class="lab_check">Оплата частями в Сплит</span>
-                                            <span class="bank_list">
-                                                <i class="icon_bank">
-                                                    <img src="https://aws.massive.ru/fandeco.ru/assert/images/ya-split.svg" alt="">
-                                                </i>
-                                            </span>
+                                        <label for="payment-split" class="check_unit_wrap">
+                                            <div>
+                                                <div class="checkout-radio-card__title">Оплата частями в Сплит</div>
+                                                <div class="bank_list">
+                                                    <i class="icon_bank">
+                                                        <img src="https://aws.massive.ru/fandeco.ru/assert/images/ya-split.svg" alt="">
+                                                    </i>
+                                                </div>
+                                            </div>
                                         </label>
                                     </div>
                                     <!-- Кнопка Яндекс сплит --- FINISH -->
 
                                     <!-- Кнопка долями со спойлером --- START -->
-                                    <div class="check_unit input-parent">
+                                    <div class="check_unit input-parent checkout-radio-card">
                                         <input type="radio" class="radio" id="payment_***" name="payment" value="***">
                                         <label for="payment_***" class="check_unit_wrap">
-                                            <span class="lab_check lab_check_dolyami">Долями — 4 платежа по 2040 р.</span>
-                                            <span class="bank_list">
-												<i class="icon_bank">
-													<img src="https://cdn.ms.fandeco.ru/i/648/49f25b3c7d.svg" alt="">
-												</i>
-											</span>
+                                            <div>
+                                                <div class="checkout-radio-card__title">Долями — 4 платежа по 2040 р.</div>
+                                                <div class="bank_list">
+                                                    <i class="icon_bank">
+                                                        <img src="https://cdn.ms.fandeco.ru/i/648/49f25b3c7d.svg" alt="">
+                                                    </i>
+                                                </div>
+                                            </div>
                                         </label>
                                     </div>
                                     <div class="digi-dolyame-scheme digi-dolyame-scheme--desktop">
@@ -1179,31 +1202,31 @@
                                 <p class="tit">4. Укажите данные получателя заказа</p>
                                 <div class="order_form_unit">
                                     <div class="controll_wrap input-parent required">
-                                        <label for="firstname">Ваша фамилия<span class="required-star">*</span></label>
-                                        <input type="text" id="firstname" placeholder="Иванов" name="receiver" value="" class="suggestions-input required" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="box-sizing: border-box;">
+                                        <label for="firstname" class="checkout-label">Ваша фамилия<span class="required-star">*</span></label>
+                                        <input type="text" id="firstname" placeholder="Иванов" name="receiver" value="" class="checkout-input suggestions-input required" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
                                     </div>
                                     <div class="controll_wrap input-parent required">
-                                        <label for="lastname">Ваше имя<span class="required-star">*</span></label>
-                                        <input type="text" id="lastname" placeholder="Петр" name="receiver" value="" class="suggestions-input required" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="box-sizing: border-box;">
+                                        <label for="lastname" class="checkout-label">Ваше имя<span class="required-star">*</span></label>
+                                        <input type="text" id="lastname" placeholder="Петр" name="receiver" value="" class="checkout-input suggestions-input required" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
                                     </div>
                                     <!-- <div class="controll_wrap input-parent required">
                                         <label for="surname">Ваше отчество</label>
                                         <input type="text" id="surname" placeholder="Иванович" name="receiver" value="" class="suggestions-input required" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="box-sizing: border-box;">
                                     </div> -->
                                     <div class="controll_wrap input-parent">
-                                        <label for="email">E-mail<span class="required-star">*</span></label>
-                                        <input type="text" id="email" placeholder="info@mail.ru" name="email" value="">
+                                        <label for="email" class="checkout-label">E-mail<span class="required-star">*</span></label>
+                                        <input type="text" id="email" placeholder="info@mail.ru" name="email" value="" class="checkout-input">
                                     </div>
                                     <div class="controll_wrap input-parent required">
-                                        <label for="phone">Телефон<span class="required-star">*</span></label>
+                                        <label for="phone" class="checkout-label">Телефон<span class="required-star">*</span></label>
                                         <div class="controll_wrap_phone">
-                                            <i class="numb_rus">+7</i><input type="text" id="phone" placeholder="( ___ ) ___-__-__" name="phone" value="" class="mask_controll required" inputmode="text">
+                                            <i class="numb_rus">+7</i><input type="text" id="phone" placeholder="( ___ ) ___-__-__" name="phone" value="" class="checkout-input mask_controll required" inputmode="text">
                                         </div>
                                     </div>
                                     <div class="controll_wrap input-parent">
                                         <div class="controll_wrap">
-                                            <label for="comment">Комментарии к заказу</label>
-                                            <textarea name="comment" id="comment" placeholder="Прошу перезвонить для уточнения параметров заказа"></textarea>
+                                            <label for="comment" class="checkout-label">Комментарии к заказу</label>
+                                            <textarea name="comment" id="comment" placeholder="Прошу перезвонить для уточнения параметров заказа" class="checkout-input"></textarea>
                                         </div>
                                     </div>
                                 </div>
@@ -1352,11 +1375,11 @@
                                     </div>
                                     <div class="order_form_send d-grid">
                                         <button type="submit" name="ms2_action" value="order/submit"
-                                                class="btn btn-primary btn-lg btn_send fast_order_btn_submit" style="">
+                                                class="checkout-btn-submit btn btn-primary btn-lg btn_send fast_order_btn_submit" style="">
                                             Оформить заказ
                                         </button>
                                         <button type="button"
-                                                class="btn btn-primary btn-lg  fast_order_btn_message btn_send"
+                                                class="checkout-btn-submit btn btn-primary btn-lg  fast_order_btn_message btn_send"
                                                 style="display: none;" data-original-title="" title="">
                                             Оформить заказ
                                         </button>
